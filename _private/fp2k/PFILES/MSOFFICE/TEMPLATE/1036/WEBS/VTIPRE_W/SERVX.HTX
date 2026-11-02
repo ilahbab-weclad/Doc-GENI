@@ -1,0 +1,161 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<meta name="Microsoft Border" content="<%Border%>">
+<%endif%>
+<title><%PageTitle%></title>
+</head>
+
+<body <%if DoTheme EQ False%> stylesrc="<%PageStyleSrc%>" <%endif%> >
+
+<%if DoTheme EQ False%>
+<%if DoTopLogo EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%LogoUrl%>" -->
+<%endif%>
+<%if StyleOption EQ 0%>
+<h1><%PageTitle%></h1>
+<%else%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%BannerImgUrl%>" 
+alt="[Bannière]" border="0" <%BannerImgSize%>> </p>
+<%endif%>
+<%if DoTopLinks EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%NavbarUrl%>" -->
+<%endif%>
+<%if UnderConstructionOption EQ 0%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%UnderconImgUrl%>" 
+alt="[En construction]" border="0" <%UnderconImgSize%>></p>
+<%endif%>
+<h2><%PageTitle%></h2>
+<%endif%>
+
+<p><!-- LOCALIZE this text -->Ceci est une brève description du service... </p>
+
+<h3><!-- LOCALIZE this heading -->Bénéfices</h3>
+
+<%if StyleOption EQ 0%>
+<!-- LOCALIZE the text in this bullet list -->
+<ul>
+    <li>Bénéfice 1</li>
+    <li>Bénéfice 2</li>
+    <li>Bénéfice 3</li>
+</ul>
+<%else%>
+<!-- LOCALIZE the text in this definition list -->
+<dl>
+    <dt> </dt>
+    <dd> <img src="<%BulletImgUrl%>" alt="[Puce]" border="0" width="<%BulletImgWidth%>" height="<%BulletImgHeight%>"> Bénéfice 1</dd>
+    <dt> </dt>
+    <dd> <img src="<%BulletImgUrl%>" alt="[Puce]" border="0"
+        width="<%BulletImgWidth%>" height="<%BulletImgHeight%>"> Bénéfice 2</dd>
+    <dt> </dt>
+    <dd> <img src="<%BulletImgUrl%>" alt="[Puce]" border="0"
+        width="<%BulletImgWidth%>" height="<%BulletImgHeight%>"> Bénéfice 3</dd>
+</dl>
+<%endif%>
+
+<%if DoServiceCapabilities EQ True%>
+<h3><!-- LOCALIZE this heading -->Compétences</h3>
+
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText"
+preview="Donnez au lecteur un aperçu de l'étendue de vos compétences dans ce domaine de services.
+Décomposez ce service en catégories fonctionnelles, puis décrivez les services spécifiques que vous offrez pour chacune de ces catégories." --> </p>
+
+<!-- LOCALIZE this definition list -->
+<dl>
+    <dt><strong>Compétence 1</strong> </dt>
+    <dd>Description de la compétence 1 </dd>
+    <dt><strong>Compétence 2</strong> </dt>
+    <dd>Description de la compétence 2 </dd>
+    <dt><strong>Compétence 3</strong> </dt>
+    <dd>Description de la compétence 3 </dd>
+</dl>
+<%endif%>
+
+<%if DoServiceReferences EQ True%>
+<h3><!-- LOCALIZE this heading -->Réalisations</h3>
+
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText"
+preview="Si possible, liez les titres ci-dessous à des pages contenant des extraits du travail effectué." --> </p>
+
+<!-- LOCALIZE this defintion list -->
+<dl>
+    <dt><strong>Réalisation 1</strong> </dt>
+    <dd>Description des services fournis </dd>
+    <dt><strong>Réalisation 2</strong> </dt>
+    <dd>Description des services fournis </dd>
+    <dt><strong>Réalisation 3</strong> </dt>
+    <dd>Description des services fournis </dd>
+</dl>
+<%endif%>
+
+<%if DoServiceInfoRequest EQ True%>
+<p> </p>
+<%if StyleOption EQ 0%>
+<hr>
+<%else%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%HRuleImgUrl%>" 
+alt="[Ligne séparatrice]" border="0" <%HRuleImgSize%>> </p>
+<%endif%>
+<p> </p>
+
+<form method="POST" webbot-action="--WEBBOT-SELF--">
+    <!--webbot bot="SaveResults" u-file="<%SaveResultsUrl%>"
+    s-format="<%SaveResultsFormat%>" b-label-fields="TRUE"
+    s-builtin-fields="Date Time REMOTE_NAME" -->
+
+    <!-- LOCALIZE the name of this hidden field -->
+    <input type="HIDDEN" name="ProduitOuService" value="<%PageTitle%>">
+
+    <h3><!-- LOCALIZE this heading -->Formulaire de demande d'informations</h3>
+
+    <p><!-- LOCALIZE the labels next to the form fields --> Sélectionnez les domaines concernés, et indiquez-nous comment vous contacter.</p>
+    <p><input type="CHECKBOX" name="EnvoiInfoProduit"
+    checked> Demande
+  d'informations sur le service<br>
+  <input type="CHECKBOX" name="EnvoiInfoSociete"> Demande d'informations sur
+  l'entreprise<br>
+  <input type="CHECKBOX" name="DemandeContactVendeur"> Demande de contact avec le
+  service des ventes<br>
+  </p>
+    
+    <!-- LOCALIZE this table -->
+    <table>
+    <tr><td align="right"><em>Nom</em></td><td><input type="TEXT" name="Nom" value size="35"></td></tr>
+    <tr><td align="right"><em>Titre</em></td><td><input type="TEXT" name="Titre" value size="35"></td></tr>
+    <tr><td align="right"><em>Société</em></td><td><input type="TEXT" name="Societe" value size="35"></td></tr>
+    <tr><td align="right"><em>Adresse</em></td><td><textarea name="Adresse" rows="5" cols="35"></textarea></td></tr>
+    <tr><td align="right"><em>Adresse de messagerie</em></td><td><input type="TEXT" name="Email" value size="35"></td></tr>
+    <tr><td align="right"><em>Téléphone</em></td><td><input type="TEXT" name="Telephone" value size="35"></td></tr>
+    </table>
+    <p><input type="SUBMIT" value="Envoyer"> <input
+    type="RESET" value="Effacer le contenu du formulaire"> </p>
+</form>
+<%endif%>
+
+<%if DoTheme EQ False%>
+<%if DoBottomLinks EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%NavbarUrl%>" -->
+<%endif%>
+<h5>
+<%if DoBottomWebmasterAddress EQ True%>
+<!-- LOCALIZE this line -->Envoyez un courrier électronique à <a href="<%WebmasterUrl%>"><!--webbot
+bot="Substitution" s-variable="<%WebVarWebmaster%>" --></a>pour toute question ou remarque concernant ce site Web.<br>
+<%endif%>
+<%if DoBottomCopyright EQ True%>
+<!-- LOCALIZE this line -->Copyright © <%CurrentYear%> <!--webbot bot="Substitution"
+s-variable="<%WebVarLongName%>" --><br>
+<%endif%>
+<%if DoBottomDateModified EQ True%>
+<!-- LOCALIZE this line -->Dernière modification&nbsp;: <!--webbot bot="TimeStamp" s-type="EDITED"
+s-format="%d %B %Y" -->
+<%endif%>
+</h5>
+<%endif%>
+
+</body>
+</html>

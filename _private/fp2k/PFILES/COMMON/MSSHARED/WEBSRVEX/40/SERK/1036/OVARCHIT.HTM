@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Architecture</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+
+	<TR>
+		<TD BGCOLOR="#000000"><IMG SRC="home.gif" WIDTH=103 HEIGHT=21
+ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH=100%><IMG 
+SRC="1ptrans.gif" WIDTH=1 
+HEIGHT=1 ALT="" BORDER=0></TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+<FONT FACE="Arial, Helvetica" SIZE=1><A HREF="http://www.microsoft.com/france" TARGET="_top"><IMG 
+SRC="msft.gif" WIDTH=91 
+HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+	
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+	
+	<!--WEB SITE TITLE AND LOGO START HERE-->
+
+	<TR>
+		<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD colspan="2" nowrap bgcolor="#666699" valign="middle" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+		
+		<!--WEB SITE TITLE AND LOGO END HERE-->
+		
+		<!--TOPIC TITLE AND BODY TEXT CELL STARTS HERE-->
+		
+		<TD rowspan="21" width="460">
+			<a name="top"></a><P><A HREF="ovpublis.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><font color="#666699"><b><sup>&nbsp;6 sur 6&nbsp;</sup></b></font><font color="#666699"><b><font size="+1">&nbsp;&nbsp;Architecture</font></b></font>
+
+<HR>
+
+			<A NAME="architecture"></A>
+
+			<p><A NAME="ovarchit.doc-1001"></A>Le système client FrontPage communique avec un serveur Web via WinSock et TCP/IP. Les Assistants et les applications personnalisées de l'ordinateur client communiquent avec le client FrontPage grâce à l'automatisation OLE. </P>
+				
+				<!--topic art starts-->
+				<P class=ART>
+				<IMG SRC="ovfeat01.gif" ALT="Architecture client/serveur de FrontPage" BORDER=0>
+				</P>
+				<!--topic art ends-->
+
+			<p>Le client FrontPage communique avec les extensions serveur à l'aide de HTTP, le protocole de communication des navigateurs et des serveurs Web. FrontPage implémente un mécanisme d'appel de procédure à distance en amont de la requête HTTP POST, pour que le client FrontPage puisse demander des documents, mettre à jour la liste des tâches, ajouter de nouveaux auteurs, etc.</P>
+
+			<p><A NAME="ovarchit.doc-1004"></A>Le serveur Web repère les requêtes POST adressées aux  programmes CGI (Common Gateway Interface) des extensions serveur et les dirige en conséquence. Des serveurs proxy (pare-feux) sécurisent la communication entre FrontPage, le client et le serveur.</P>
+
+
+				<!--NOTE structure start-->
+			
+				<P class=4>&nbsp;</P>
+				<P class=NT>
+				<P class=ART><img SRC="noterule.gif" width=475 height=15 border="0"></p>
+FrontPage n'utilise pas la requête HTTP&nbsp;PUT. Comme l'indique la spécification&nbsp;HTTP, PUT envoie un document à un serveur Web, mais peu de serveurs Web implémentent PUT. C'est pourquoi le client FrontPage utilise la requête HTTP POST, implémentée partout, pour communiquer avec les extensions serveur.
+<HR width=475></P>
+				<P class=6>&nbsp;</P>
+			
+				<!--NOTE structure end-->
+
+			<p><A NAME="ovarchit.doc-1005"></A>Dans la plupart des serveurs Web, l'accès aux extensions serveur FrontPage s'effectue via l'interface CGI, le mécanisme universel des extensions de serveur Web. L'implémentation de CGI varie quelque peu suivant les serveurs Web et les plates-formes. Par exemple, la plupart des serveurs UNIX appellent une extension CGI en l'exécutant séparément, tandis que Microsoft&nbsp;IIS sous Windows&nbsp;NT prend en charge ISAPI (Internet Server Applications Program Interface), une interface de communication de type CGI moins gourmande en ressources.</P>
+		</TD>
+			
+		<!--TOPIC TITLE AND BODY TEXT CELL ENDS HERE-->
+			
+		<!--FAR-RIGHT COLUMN SECTION ART CELL STARTS HERE-->
+			
+		<TD rowspan="15" nowrap>
+		<img SRC="ovart.gif" align="center" alt="Image de la section Présentation">
+		</TD>
+		
+		<!--FAR-RIGHT COLUMN SECTION ART CELL ENDS HERE-->
+		
+	</TR>
+
+	<!--LEFT-NAVIGATION MENUS START HERE-->
+	
+	<TR>
+		<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+ 		<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" href="ovwhatar.htm"><font color="#000000">&nbsp;&nbsp;Description des <BR>&nbsp;&nbsp;extensions serveur &nbsp;&nbsp;FrontPage</font></a></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" HREF="ovscenar.htm"><font color="#000000">&nbsp;&nbsp;Scénarios &nbsp;&nbsp;d'utilisation des<BR>&nbsp;&nbsp;extensions serveur &nbsp;&nbsp;FrontPage</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" HREF="ovfeatur.htm"><font color="#000000">&nbsp;&nbsp;Présentation des &nbsp;&nbsp;fonctionnalités</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" HREF="ovwhatis.htm"><font color="#000000">&nbsp;&nbsp;Qu'est-ce qu'un <BR>&nbsp;&nbsp;site Web FrontPage <BR>&nbsp;&nbsp;étendu ?</font></A></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+   		<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" HREF="ovpublis.htm"><font color="#000000">&nbsp;&nbsp;Publication de <BR>&nbsp;&nbsp;sites Web FrontPage <BR>&nbsp;&nbsp;étendus</font></A></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Architecture</font></A></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="scintro.htm"><font color="#000000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="adoview.htm"><font color="#000000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<!--LAST ROW STARTS-->
+	
+	<TR>
+    	<TD height="430" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+	<!--LAST ROW ENDS-->
+	
+</TABLE>
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_BEGIN-->
+
+<BR>
+
+<TABLE cellspacing="0" cellpadding="0" border=0>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+		<TD width="237" valign="top"><A HREF="ovpublis.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><font color="#666699"><b><sup>&nbsp;6 sur 6&nbsp;</sup></b></font></TD>
+    	
+  		<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+	</TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top"><HR></TD>
+ 	</TR>
+	
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+  	</TR>
+	
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

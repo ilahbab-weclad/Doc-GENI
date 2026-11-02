@@ -1,0 +1,42 @@
+<HTML>
+
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<%endif%>
+<TITLE><!-- LOCALIZE this title -->Couleurs du site Web</TITLE>
+</HEAD>
+
+<BODY <%WebColors%> >
+
+<H2><!-- LOCALIZE this heading -->Couleurs du site Web</H2>
+
+<HR>
+
+<P><!-- LOCALIZE this text -->Cette page a été générée par
+l'Assistant Discussion de FrontPage.</P>
+
+<P><!-- LOCALIZE this text -->Toutes les autres pages du groupe de discussion se réfèrent
+à cette page pour définir leurs couleurs. Les attributs partagés
+(et les balises HTML correspondantes) sont :</P>
+
+<!-- LOCALIZE the text in this bullet list (except for the tag names) -->
+<UL>
+<LI>l'image d'arrière-plan (BACKGROUND)
+<LI>la couleur d'arrière-plan (BGCOLOR)
+<LI>la couleur du texte (TEXT)
+<LI>la couleur d'un lien hypertexte non visité (LINK)
+<LI>la couleur d'un lien hypertexte visité (VLINK)
+<LI>la couleur d'un lien hypertexte sélectionné (ALINK)
+</UL>
+
+<P><!-- LOCALIZE this text -->Utilisez la boîte de dialogue Arrière-plan pour modifier les
+couleurs de cette page. Si vous enregistrez ensuite cette page,
+toutes les pages s'y référant seront automatiquement mises à
+jour de façon à utiliser les mêmes couleurs.</P>
+
+</BODY>
+
+</HTML>

@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>mail</title>
+<link rel="stylesheet" type="text/css" href="../geni_ie.css">
+<link rel="stylesheet" type="text/css" href="../geni_impression.css">
+</head>
+<body>
+<!--
+<body onLoad="document.transfer.submit()"> 
+<form name='transfer' action='m.html' method='post'> 
+<input name=fichier value='test' type=hidden type=text> 
+<textarea name=body type='hidden' style='visibility: hidden'> 
+test envoi mail
+</textarea> 
+<input TYPE=submit value=valider> 
+</form> 
+window.location.href = "mailto:jpkuntz@free.fr?subject="+document.nomForm.sujet.value+"&body="+document.nomForm.body.value; 
+-->
+
+<script language="javascript"> 
+function go() { 
+alert ('mail');
+window.location.href = "mailto:jpkuntz@free.fr?subject=test&body=email%0D%0ALigne2"; 
+window.location.href = "m.html"; 
+} 
+</script> 
+<form action="m.html" method="post" name="testmail" enctype="text/plain">
+<input type="button" value="go" onclick="javascript:go();">
+</form>
+
+<!-- AUTRE FONCTION MAIL -->
+<form action="mailto:jpkuntz@free.fr?subject=test" method="post" name="EnqueteAG" enctype="text/plain" ;> 
+<textarea name=body type='hidden' style='visibility: hidden'> 
+test envoi mail
+ligne 2
+ligne 3
+</textarea> 
+<input type="submit" onClick="window.location.href='m.html';" name="Submit" value="Envoyer le formulaire par e-mail" > 
+</form>
+
+
+<!-- AUTRE FONCTION MAIL -->
+<script language="javascript"> 
+function emailClt() 
+{ 
+chaine_mail = "mailto:jpkuntz@free.fr?subject= Demande du mot de passe client"; 
+chaine_mail += "&body= J'ai oublié mon mot de passe et je souhaite que vous puissiez me le renvoyer par email.%0D%0A %0D%0A"; 
+chaine_mail += " Mon nom d'utilisateur est : %0d%0A"; 
+chaine_mail += " Mon nom est : %0D%0A"; 
+chaine_mail += " Mon prénom est : "; 
+location.href = chaine_mail; 
+}
+</script>
+<form action="m.html" method="post" name="testmail" enctype="text/plain">
+<input type="button" value="emailclt" onclick="javascript:emailClt();">
+</form>
+
+</body>
+</html>

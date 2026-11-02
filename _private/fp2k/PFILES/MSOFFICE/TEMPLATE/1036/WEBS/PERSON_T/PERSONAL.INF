@@ -1,0 +1,17 @@
+; Localized	03/02/1999 04:46  (GMT)	7:4.1.211 	personal.inp
+
+[info]
+title=Site Web personnel
+description=Crée un site Web présentant vos centres d'intérêt, un album photo et une liste de vos sites Web favoris.
+structure=personal.map
+theme=strtedge 011
+border=tl
+[FileList]
+index.htm=
+myfav3.htm=
+interest.htm=
+favorite.htm=
+photo.htm=
+images\city.gif=images/city.gif
+images\frontpag.gif=images/frontpag.gif
+images\sunset.gif=images/sunset.gif

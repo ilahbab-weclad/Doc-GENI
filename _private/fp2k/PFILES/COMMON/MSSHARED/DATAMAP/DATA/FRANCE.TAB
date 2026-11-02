@@ -1,0 +1,9 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Description "France - Départments"
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 1
+    Name Char (23) Index 1 ;

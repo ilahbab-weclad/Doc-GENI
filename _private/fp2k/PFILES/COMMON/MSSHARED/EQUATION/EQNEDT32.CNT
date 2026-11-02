@@ -1,0 +1,45 @@
+:Base EQNEDT32.HLP>REF
+:Title Éditeur d'équations
+:Index Equation Editor Help=EQNEDT32.HLP
+:Link Equation Editor Help=Eqnedt32.hlp
+0 Éditeur d'équations
+1 Création et modification des équations
+2 Modification de la taille d'affichage d'une équation=ProChangingthesizeofthedisplayedequation
+2 Création d'une équation=procreatinganequation
+2 Suppression d'éléments dans une équation=ProMakingdeletions
+2 Modification d'une équation=ProOpeninganEquationEditorwindow
+2 Informations de base sur l'Éditeur d'équations=OvrEquationEditorBasics
+2 À quoi sert l'Éditeur d'équations ?=EquationExample
+2 Insertion de symboles et de modèles dans une équation=ProInsertingSymbolsAndTemplates
+2 Positionnement du point d'insertion dans une équation=ProPositioningtheinsertionpoint
+2 Sélection d'éléments dans une équation=ProSelectingitems
+2 Résolution des problèmes liés à l'Éditeur d'équations=EETroubleshooting
+2 Frappe de texte dans une équation=Tipsfortypingtext
+1 Application des styles et des polices dans les équations
+2 Application d'un style prédéfini différent au texte d'une équation=ProApplyingadifferentstyletotext
+2 Application d'un style différent uniquement au caractère suivant dans une équation=ProApplyingadifferentstyletothenextcharacteronly
+2 Application d'une mise en forme qui n'est pas affectée à un style de l'Éditeur d'équations=ProApplyingfontandcharacterformattingdirectly
+2 Modification d'un style de l'Éditeur d'équations=ProChoosingfontsforstyledefinitions
+2 Définition des styles dans l'Éditeur d'équations=ConventionalStyles
+2 Saisie de texte dans une équation=ProEnteringanEnglishphrase
+2 Mise en forme d'une équation terminée=Tipsforfinetuningthefinishedequation
+2 Utilisation des polices et des styles dans une équation=OvrStylesAndFonts
+1 Modification des tailles de l'élément mathématique dans les équations
+2 Application d'une taille aux éléments mathématiques dans une équation=ProApplyingtypesizes
+2 Modification de la définition de la taille d'un élément mathématique dans une équation=ProChangingsizedefinitions
+2 Tailles standard des éléments mathématiques dans les équations=StandardTypesizes
+2 Tailles des éléments mathématiques dans une équation=OvrTypesizes
+1 Espacement et alignement dans les équations
+2 Alignement d'une équation=ProAligningEquations
+2 Modification de la définition d'espacement dans une équation=ProChangingspacingdefinitions
+2 Modification de l'espacement dans une équation=ProAddingspacesinanequation
+2 Ajustements précis dans une équation=ProRepositioningpartsofanequationnudging
+2 Espacement et alignement dans une équation=OvrSpacingandAlignment
+1 Informations de référence
+2 Définitions (Éditeur d'équations)=definitions
+2 Insertion de symboles mathématiques dans une équation=EESymbols
+2 Insertion de modèles mathématiques dans une équation=EETemplates
+2 Guide du clavier (Éditeur d'équations)=keyboard
+2 Commandes des menus (Éditeur d'équations)=cmdindex
+1 Mise à niveau de l'Éditeur d'équations
+2 Mise à niveau de l'Éditeur d'équations : MathType=eehowUpgradingEquationEditorToMathType

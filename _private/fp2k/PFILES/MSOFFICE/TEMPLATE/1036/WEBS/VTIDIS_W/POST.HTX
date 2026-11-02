@@ -1,0 +1,86 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<%endif%>
+<title><!-- LOCALIZE this title --><%DiscussionTitle%>Formulaire d'envoi de </title>
+</head>
+
+<body <%if DoTheme EQ False%> stylesrc="<%PageStyleSrc%>" <%endif%> >
+
+<%if FramesOption LT 2%>
+<!--webbot bot="Include" tag="BODY" u-include="<%HeaderPageUrl%>" -->
+<%endif%>
+
+<h3><tt><!-- LOCALIZE this heading -->ENVOI D'UN ARTICLE</tt></h3>
+
+<form method="POST" action="--WEBBOT-SELF--">
+    <!--webbot bot="Discussion" s-dir-name="<%DiscussionDir%>"
+    s-article-format="HTML/BR"
+    u-header-url="<%ArticleHeaderPageUrl%>"
+    u-footer-url="<%ArticleFooterPageUrl%>" b-make-toc="FALSE"
+    s-toc-fields="<%TOCFields%>" b-label-fields="TRUE"
+    b-reverse-chronology="<%DoReverseOrder%>"
+    u-confirmation-url="<%ConfirmationPageUrl%>"
+    s-builtin-fields="<%BuiltinFields%>"
+    u-style-url="<%PageStyleSrc%>" -->
+
+    <p> 
+    <strong><!-- LOCALIZE this label -->Objet :</strong><br>
+    <input type="TEXT" name="<%SubjectField%>" size="<%TextWidth%>"> <br>
+
+    <%if WebProtectionOption EQ 1%>
+    <strong><!-- LOCALIZE this label -->De :</strong><br>
+    <input type="TEXT" name="<%FromField%>" size="<%TextWidth%>"> <br>
+    <%endif%>
+
+    <%if FieldsOption EQ 1%>
+    <!-- LOCALIZE the text in this option group (and the field name) -->
+    <select name="Categorie">
+    <option selected>Catégorie 1
+    <option>Catégorie 2
+    <option>Catégorie 3
+    <option>Catégorie 4
+    <option>Catégorie 5
+    </select>
+    <!-- LOCALIZE this comment bot -->
+    <!--webbot bot="PurpleText" 
+    preview="Personnalisez le contenu de ce menu déroulant." --> <br>
+    <%endif%>
+
+    <%if FieldsOption EQ 2%>
+    <!-- LOCALIZE the text in this option group (and the field name) -->
+    <select name="Produit">
+    <option selected>Produit 1
+    <option>Produit 2
+    <option>Produit 3
+    <option>Produit 4
+    <option>Produit 5
+    </select>
+    <!-- LOCALIZE this comment bot -->
+    <!--webbot bot="PurpleText" 
+    preview="Personnalisez le contenu de ce menu déroulant." --> <br>
+    <%endif%>
+
+    <strong><!-- LOCALIZE this label -->Commentaires :</strong><br>
+    <!-- LOCALIZE the name of this field -->
+    <textarea name="Commentaires" rows="6" cols="<%TextWidth%>"></textarea> <br>
+
+    <%if FramesOption LT 2%><br><%endif%>
+
+    <!-- LOCALIZE the labels on these buttons -->
+    <input type="SUBMIT" value="Envoyer"> <input
+    type="RESET" value="Effacer le contenu du formulaire"> </p>
+</form>
+
+<%if FramesOption LT 2%>
+<!--webbot bot="Include" tag="BODY" u-include="<%FooterPageUrl%>" -->
+<%endif%>
+
+</body>
+</html>
+

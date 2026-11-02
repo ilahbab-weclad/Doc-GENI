@@ -1,0 +1,748 @@
+                      Lisezof9.txt
+---------------------------------------------------------
+            FICHIER LISEZMOI MICROSOFT OFFICE 2000
+                       Juin 1999 
+  (c) 1999 Microsoft Corporation. Tous droits réservés.
+---------------------------------------------------------
+Ce document fournit des informations inédites ou de  
+dernière minute sur Office 2000, correspondant à la date 
+mentionnée ci-dessus. Au-delà de cette date,
+vous pouvez trouver des informations et des ressources 
+plus récentes sur le site Web Espace Office, accessible  
+en cliquant dans le menu ? (Aide) sur Office sur le Web.
+Vous pouvez également trouver d'autres informations,
+y compris sur les questions relatives au réseau ou à 
+l'administration, sur le site Web du Kit de Ressources 
+Techniques Office à l'adresse suivante (France et Canada) :
+http://www.microsoft.com/office/ork/
+
+Pour obtenir plus d'informations techniques sur Office, 
+visitez le site Web des Services de Support Technique 
+Microsoft à l'adresse suivante : 
+France : http://microsoft.com/france/support/ 
+Canada : http://www.microsoft.com/canada/french/support/ 
+
+
+Pour obtenir des informations de dernière minute spécifiques 
+à un produit Office 2000, consultez le fichier lisezmoi de
+ce produit. Pour Word, Excel, Outlook, PowerPoint, Access,
+et FrontPage, ces fichiers se trouvent sur le CD-ROM 1 dans
+PFILES\MSOFFICE\OFFICE. Pour Publisher et Outils de gestion 
+d'entreprise, le fichier se trouve à la racine du CD-ROM 2.
+En ce qui concerne PhotoDraw, le fichier est situé à la 
+racine du CD-ROM 3.
+ 
+
+Après installation, les fichiers lisezmoi pour Word, Excel,
+Outlook, PowerPoint, Access et FrontPage sont stockés dans 
+C:\Program Files\Microsoft Office\Office\.
+Pour PhotoDraw, le chemin d'accès est :
+C:\Program Files\Microsoft Office\Office\Setup\PhotoDraw.
+
+Les noms de fichiers sont :
+ 
+Lisezwd9.txt (Microsoft Word 2000)
+
+Lisezxl9.txt (Microsoft Excel 2000)
+
+Lisezol9.txt (Microsoft Outlook 2000) 
+
+Lisezpp9.txt (Microsoft PowerPoint 2000, inclus dans 
+Microsoft Office 2000 Standard, Professional et
+Premium)
+
+lisezac9.wri (Microsoft Access 2000, inclus dans 
+Microsoft Office 2000 Professional et Premium)
+
+lissezfp9.txt et lissezfps9.txt (Microsoft FrontPage 2000,
+inclus dans Microsoft Office 2000 Premium)
+
+lissezmoi.hlp (Microsoft Publisher 2000 et Outils de
+gestion d'entreprise Microsoft, les deux inclus dans
+Microsoft Office 2000 Édition PME, Professional et
+Premium)
+
+lissezmoi.wri (Microsoft PhotoDraw 2000, inclus dans
+Microsoft Office 2000 Premium)
+
+--------------------------
+Utilisation de ce document
+--------------------------
+
+Pour visualiser le fichier lisezmoi à l'écran dans le 
+Bloc-notes Windows, agrandissez la fenêtre du Bloc-notes. 
+Dans le menu Edition, cliquez sur Retour à la ligne automatique.
+Pour imprimer le fichier lisezmoi, ouvrez-le dans le
+Bloc-notes ou dans un autre logiciel de traitement de texte,
+puis utilisez la commande Imprimer du menu Fichier.
+
+--------
+SOMMAIRE
+--------
+
+INSTALLATION DE MICROSOFT OFFICE 2000
+* Configuration minimale requise pour Microsoft Office 2000
+* Désactivation de la protection antivirus avant d'exécuter 
+  le programme d'installation
+* L'utilisation de signes de ponctuation dans les noms de 
+  dossier lors de l'installation peut causer des problèmes. 
+* Installation d'Office 2000 en réseau. 
+* Un message demandant le code CD Key s'affiche lorsqu'Office 
+  est installé à partir d'une installation administrative.
+* Message inattendu au cours de l'installation
+* Installation d'Office 2000 sans supprimer la version bêta 2 
+* Les raccourcis Office 2000 du menu Programmes varient selon 
+  votre système d'exploitation.
+
+FONCTIONNEMENT DE MICROSOFT OFFICE 2000
+* Il se peut que les couleurs ne s'affichent pas correctement 
+  sur les moniteurs 256 couleurs.
+
+FONCTIONNEMENT DE MICROSOFT OFFICE WEB COMPONENTS
+* Modification d'une formule dans une cellule qui contient un 
+  lien hypertexte
+* Fonction de feuille de calcul ASC non prise en charge par le 
+  composant Spreadsheet
+
+PROBLÈMES RELATIFS À L'AIDE DE MICROSOFT OFFICE 2000
+* Obtention des outils de vérification Microsoft Office 2000
+
+PROBLÈMES RELATIFS AUX FONCTIONNALITÉS DES LANGUES DE DROITE À GAUCHE 
+* Impression des langues de droite à gauche
+
+PROBLÈMES RELATIFS AUX FONCTIONNALITÉS DES LANGUES ASIATIQUES
+* Problèmes d'affichage possibles lors de l'utilisation de
+  plusieurs polices asiatiques
+
+PROBLÈMES RELATIFS À MICROSOFT VISUAL BASIC ÉDITION APPLICATIONS
+* Objet Assistant
+* Méthode Add (collection CommandBars)
+* Méthode AddOfficeServerSubscription (Office Web Server)
+* Méthode FindControls
+* Propriété Context (objet CommandBar)
+* Modèle d'objet Chart Workspace (Office Web Components)
+* Événement SelectionChange (Office Web Components)
+* Méthode GetValue (Office Web Components)
+* Propriété HTMLData (Office Web Components)
+* Propriété KeyChar (Office Web Components)
+* Propriété RecordsetLabel (Office Web Components)
+* Propriété Value (Office Web Components)
+* Langue par défaut de Visual Basic Editor et Microsoft 
+  Script Editor
+* Nouvelles propriétés (VBA)
+* Utilisation de la touche F3 pour rechercher l'occurrence 
+  de texte suivante dans la fenêtre de code 
+
+PROBLÈMES RELATIFS AUX SCRIPTS, AU CODE HTML ET À D'AUTRES 
+FONCTIONS DE PROGRAMMATION
+* Système SENS (System Event Notification System)
+* Documentation de référence HTML
+* Versions Internet Explorer et édition du code HTML
+* Rubrique « Rubrique introuvable » (Microsoft Script Editor)
+
+________________________________________________________
+INSTALLATION DE MICROSOFT OFFICE 2000
+
+
+Configuration minimale requise pour Microsoft Office 2000
+---------------------------------------------------------
+Pour obtenir des informations sur la configuration requise
+pour l'installation de Microsoft Office 2000, visitez le
+site Web du Kit de Ressources Techniques à l'adresse suivante 
+(France et Canada) : 
+http://www.microsoft.com/office/ork/
+
+Mise à jour Access 2.0 par Office 2000
+-----------------------------------------------------------
+Dans le cas où vous souhaiteriez mettre à jour directement
+Access 2.0 par Office 2000 sous Windows 95 ou Windows 98 (Non Arabe),
+en utilisant une installation personnalisée, assurez-vous que 
+les Outils de vérification (Arabe) ne sont pas installés.
+
+Désactivation de la protection antivirus avant d'exécuter 
+le programme d'installation
+---------------------------------------------------------
+Certains programmes de protection antivirus, tels
+que VSafe.com et Norton AntiVirus AutoProtect, peuvent 
+interférer avec le programme d'installation Microsoft 
+Office 2000. Si vous utilisez un programme antivirus sur 
+votre ordinateur, désactivez-le avant d'exécuter l'installation. 
+(N'oubliez pas de réactiver ce programme lorsque l'installation 
+sera terminée.)
+
+
+L'utilisation de signes de ponctuation dans les noms de 
+dossier lors de l'installation peut causer des problèmes.
+---------------------------------------------------------
+N'utilisez pas de virgule (,), de guillemet simple (') ou 
+de point d'exclamation (!) dans le nom du dossier dans 
+lequel vous installez Microsoft Office 2000. Il vous est 
+conseillé d'utiliser le dossier par défaut ou d'employer 
+uniquement des lettres et des nombres.
+
+
+Installation d'Office 2000 en réseau.
+-------------------------------------
+>>>Pour créer un emplacement d'installation administrative 
+   pour Office 2000 :
+
+1. Créez un partage sur un serveur réseau pour l'emplacement 
+   d'installation administrative. L'espace disque disponible 
+   sur le partage réseau doit être au moins égal à 
+   550 mégaoctets (Mo).
+
+2. Connectez-vous au partage du serveur avec un
+   ordinateur qui exécute Microsoft Windows 95, 98 ou
+   Microsoft Windows NT et qui a les droits en écriture
+   sur le partage.
+
+3. Dans le menu Démarrer, cliquez sur Exécuter, puis sur
+   Parcourir.
+
+4. Sur le CD-ROM 1 d'Office situé sur le lecteur de 
+   CD-ROM, sélectionnez Setup.exe, puis cliquez sur Ouvrir.
+
+5. Sur la ligne de commande, à la suite de Setup.exe, tapez 
+
+   /A DATA1.MSI
+
+   et cliquez sur OK.
+
+   Par exemple :
+
+   e:\setup.exe /A DATA1.MSI
+
+6. Lorsque vous y êtes invité, entrez le nom de l'organisation
+   que vous voulez définir pour tous les utilisateurs qui
+   installeront Office à partir de cet emplacement. 
+
+7. Lorsque le système vous invite à indiquer un emplacement 
+   d'installation, entrez le nom du serveur et le partage que 
+   vous avez créé.
+
+Pour plus d'informations sur les problèmes de réseau et 
+d'administration, visitez le site Web du Kit de Ressources
+Techniques à l'adresse suivante (France et Canada) :
+http://www.microsoft.com/office/ork/
+
+
+Un message demandant le code CD Key s'affiche lorsqu'Office 
+est installé à partir d'une installation administrative.
+-----------------------------------------------------------
+Lorsque vous installez Office 2000 sur votre ordinateur à 
+partir d'une installation administrative sur un serveur, 
+un code CD Key peut vous être demandé. Cela peut arriver si
+l'administrateur système qui a créé l'installation 
+administrative n'a pas entré de code CD Key.
+ 
+Pour résoudre ce problème, demandez à l'administrateur
+système de créer une nouvelle installation administrative 
+et d'entrer le code CD Key dans la première boîte de 
+dialogue. Vous ne serez ainsi plus invité à fournir le 
+code CD Key lorsque vous installerez Office 2000 à partir 
+de cette nouvelle installation administrative.
+
+
+Message inattendu au cours de l'installation
+--------------------------------------------
+Si un message inattendu s'affiche lors de l'installation 
+d'Office et qu'il apparaît de nouveau lorsque vous essayez 
+de réinstaller Office, vous pouvez créer un fichier journal 
+qui aidera les Services de Support Technique de Microsoft à 
+résoudre le problème. Après avoir créé le fichier, contactez 
+les Services de Support Technique de Microsoft.
+
+>>>Pour créer le fichier journal :
+ 
+1. Cliquez sur le bouton Démarrer dans la barre des tâches,
+   puis sur Exécuter.
+2. Dans la zone Ouvrir, tapez : 
+ 
+   <CHEMIN>\SETUP.EXE /L*V C:\VERBOSELOG.TXT
+ 
+   où <CHEMIN> correspond à l'emplacement de Setup.exe. Par  
+   exemple, si vous procédez à une installation à partir d'un 
+   lecteur de CD-ROM, le texte que vous devez taper doit être 
+   semblable à ce qui suit :
+ 
+   D:\SETUP.EXE /L*V C:\VERBOSELOG.TXT
+ 
+3. Cliquez sur OK.
+ 
+   Le programme d'installation redémarrera et un fichier journal 
+   intitulé Verboselog.txt sera créé à la racine de votre 
+   lecteur C:.
+
+
+Installation d'Office 2000 sans supprimer la version bêta 2 
+-----------------------------------------------------------
+Lors du démarrage d'un des programmes Office 2000, 
+il se peut que le message suivant s'affiche :
+
+Informations requises manquantes dans le registre. 
+Impossible d'exécuter cette application. Réexécutez 
+le programme d'installation pour résoudre ce problème.
+
+Il peut également arriver que le programme se ferme après 
+quelques secondes.
+ 
+Vous pouvez rencontrer l'un ou l'autre des problèmes 
+mentionnés ci-dessus si vous avez installé Office 2000
+sans avoir supprimé la version bêta 2 (2221b) 
+d'Office 2000.
+
+>>>Pour supprimer la version bêta 2 :
+
+1. Cliquez sur le bouton Démarrer dans la barre des tâches,
+   pointez sur Paramètres et cliquez sur Panneau de 
+   configuration.
+2. Double-cliquez sur l'icône Ajout/Suppression de programmes.
+3. Dans la liste des programmes installés, cliquez sur Microsoft 
+   Office 2000 Premium (qui correspond à la version 
+   bêta 2 d'Office 2000).
+   Dans la liste, il devrait y avoir également Microsoft 
+   Office 2000 Premium (qui correspond à la version commercialisée
+   d'Office 2000.)
+4. Cliquez sur Ajouter/Supprimer.
+5. Cliquez sur Supprimer Office.
+6. Cliquez sur Oui lorsqu'un message vous invite à confirmer 
+   la suppression.
+
+
+Les raccourcis Office 2000 du menu Programmes varient
+selon votre système d'exploitation.
+-----------------------------------------------------
+Les raccourcis Office 2000 dans le menu Programmes peuvent
+présenter les problèmes suivants :
+ 
+1. Ils ne réparent pas automatiquement les programmes.
+ 
+   Ce problème survient, car votre système d'exploitation
+   ne prend pas en charge les raccourcis de Windows Installer.
+   Voici les versions de Microsoft Windows qui prennent en
+   charge ces raccourcis : 
+
+   * Windows 98
+   * Windows 95 avec Internet Explorer 4.01, Service Pack 1, 
+     et Active Desktop installés
+   * Microsoft Windows NT version 4 avec Internet Explorer 
+     4.01, Service Pack 1, et Active Desktop installés 
+
+   Remarque : Si vous installez Internet Explorer 5 sur un 
+   ordinateur exécutant Windows 95 ou Windows NT version 4 
+   sur lequel Internet Explorer 4.01, Service Pack 1 et 
+   Active Desktop sont installés, les raccourcis Windows 
+   Installer seront pris en charge. 
+
+2. Ils n'installent pas les programmes lors de la première
+   utilisation. 
+
+   Ce problème survient lorsque l'option Installé lors de la 
+   première utilisation n'est pas disponible pour les programmes 
+   Office dans la boîte de dialogue Sélection des composants au 
+   moment de l'installation. Cette option n'est pas disponible 
+   car votre système d'exploitation ne prend pas en charge 
+   les raccourcis Windows Installer. Ces derniers sont pris en 
+   charge par les systèmes d'exploitation indiqués à l'étape 1. 
+
+3. Ils n'affichent aucun chemin d'accès sous l'onglet Raccourci 
+   de la boîte de dialogue Propriétés du raccourci. 
+
+   Ce problème survient lorsque le raccourci est un raccourci 
+   Windows Installer. Les raccourcis Windows Installer ne font 
+   pas directement référence au chemin d'accès de la cible du 
+   raccourci. Ils contiennent un indicateur que Windows Installer 
+   traduit par le chemin d'accès de la cible du raccourci. Les 
+   raccourcis Windows Installer sont pris en charge par les 
+   systèmes d'exploitation indiqués à l'étape 1. 
+
+
+_________________________________________________________
+FONCTIONNEMENT DE MICROSOFT OFFICE 2000 
+
+
+Il se peut que les couleurs ne s'affichent pas correctement 
+sur les moniteurs 256 couleurs.
+----------------------------------------------------------
+Après avoir affiché les fenêtres contextuelles dans les 
+rubriques d'aide, il se peut que les couleurs associées à 
+certains éléments ne s'affichent pas correctement sur les 
+moniteurs 256 couleurs. Par exemple, les éléments suivants 
+peuvent apparaître différemment à l'écran une fois que vous 
+avez visualisé des fenêtres contextuelles :
+
+* Images bitmap
+* Images incorporées dans les fichiers
+* Compagnon Office 
+* Liens hypertexte
+
+Pour résoudre le problème d'affichage, changez la palette 
+de couleurs de votre moniteur.
+
+>>>Pour changer la palette de couleurs :
+
+1. Cliquez sur Démarrer dans la barre des tâches Windows,
+   pointez sur Paramètres, puis cliquez sur Panneau de
+   configuration.
+
+2. Double-cliquez sur l'icône Affichage.
+
+3. Sous l'onglet Paramètres, sélectionnez une option 
+   autre que 256 couleurs. Microsoft vous recommande de 
+   sélectionner une option proposant plus de 256 couleurs, 
+   si cette option est disponible.
+
+_________________________________________________________
+FONCTIONNEMENT DE MICROSOFT OFFICE WEB COMPONENTS
+
+Fonction de feuille de calcul ASC non prise en charge par 
+le composant Spreadsheet 
+---------------------------------------------------------
+La rubrique d'aide « Fonctions de feuille de calcul 
+Microsoft Excel non disponibles dans les feuilles Web » 
+ne répertorie pas la fonction de feuille de calcul ASC, mais
+cette fonction n'est pas disponible dans les feuilles 
+publiées sur le Web. Si vous publiez une feuille de 
+calcul contenant la fonction ASC, la fonction est 
+remplacée par la valeur qui en résulte.
+
+
+Modification d'une formule dans une cellule qui contient 
+un lien hypertexte
+--------------------------------------------------------
+La rubrique d'aide « Modification d'une formule dans une
+feuille de calcul »  stipule à tort que si la cellule 
+que vous voulez modifier contient un lien hypertexte,
+vous devez cliquer sur une cellule adjacente, utiliser une 
+touche de direction pour sélectionner la cellule à modifier 
+et cliquer une fois sur cette cellule. Si vous cliquez une 
+fois sur la cellule, vous accéderez à la page vers laquelle 
+le lien hypertexte pointe. En fait, une fois que vous avez
+utilisé une touche de direction pour sélectionner la cellule, 
+appuyez sur F2 pour commencer l'édition.
+
+_________________________________________________________
+PROBLÈMES RELATIFS À L'AIDE DE MICROSOFT OFFICE 2000 
+
+
+Obtention des outils de vérification Microsoft Office 2000
+----------------------------------------------------------
+Les outils de vérification Microsoft Office 2000 sont regroupés 
+dans une macro complémentaire pour Office 2000 qui contient tous 
+les outils linguistiques conçus par Microsoft pour plus de 
+30 langues. Vous pouvez vous les procurer auprès d'un revendeur 
+agréé. Les numéros de référence répertoriés dans l'aide sont 
+incorrects. Pour savoir comment obtenir les outils de vérification 
+Office 2000, visitez le site Web à l'adresse suivante : 
+France : http://www.microsoft.com/france/office/ 
+Canada : http://www.microsoft.com/canada/french/office 
+
+_____________________________________________________________________
+PROBLÈMES RELATIFS AUX FONCTIONNALITÉS DES LANGUES DE DROITE À GAUCHE
+
+
+Impression des langues de droite à gauche
+---------------------------------------------------------------------
+Certaines imprimantes requièrent des pilotes d'imprimante  
+mis à jour. 
+Veuillez contacter le fabricant de votre imprimante si vous 
+rencontrez des problèmes d'impression.
+
+_____________________________________________________________
+PROBLÈMES RELATIFS AUX FONCTIONNALITÉS DES LANGUES ASIATIQUES
+
+
+Problèmes d'affichage possibles lors de l'utilisation de
+plusieurs polices asiatiques
+-------------------------------------------------------------
+Si vous installez plusieurs polices asiatiques sur 
+des versions non asiatiques du système d'exploitation 
+Microsoft Windows NT version 4.0, vous pouvez rencontrer
+des problèmes d'affichage, tels que du texte très large,
+du texte vide ou de grandes zones vides dans Outlook ou
+dans Windows NT. C'est un problème connu dans Windows NT
+version 4.0 Service Pack 4 qui sera résolu dans une 
+version ultérieure du Service Pack pour Windows NT
+version 4.0.
+
+________________________________________________________________
+PROBLÈMES RELATIFS À MICROSOFT VISUAL BASIC ÉDITION APPLICATIONS
+
+
+Objet Assistant 
+----------------------------------------------------------------
+Le Compagnon par défaut est Trombine, et non Toufou comme
+indiqué dans la documentation.
+
+
+Méthode Add (collection CommandBars)
+------------------------------------
+L'argument Temporary est ignoré dans Microsoft Word et
+Microsoft Outlook. Vous devez supprimer manuellement tout
+élément temporaire ajouté à la collection CommandBars 
+avant de quitter l'application.
+
+
+Méthode AddOfficeServerSubscription (Office Web Server)
+-------------------------------------------------------
+L'argument MailTo de la méthode AddOfficeServerSubscription 
+est requis et n'est pas facultatif comme indiqué dans la 
+documentation.
+
+
+Méthode FindControls 
+--------------------
+Dans la syntaxe de cette méthode, le mot clé doit être  
+FindControls, et non FindControl comme indiqué dans la 
+documentation.
+
+
+Propriété Context (objet CommandBar)
+------------------------------------
+Dans Microsoft Word, la propriété est en lecture seule 
+et renvoie le nom complet (et le chemin d'accès du 
+disque) du modèle associé au document contenant l'objet 
+CommandBar. Dans tous les programmes Microsoft Office, 
+la propriété renvoie une chaîne vide et n'est pas prise
+en charge.
+
+
+Modèle d'objet Chart Workspace (Office Web Components)
+---------------------------------------------------------
+Le diagramme du modèle d'objet Chart Workspace est
+incorrect. Les objets WCPlotArea, WCScaling et
+WCSeriesCollection et tous leurs objets associés doivent  
+apparaître sous l'objet WCChartsk, et non sous l'objet 
+ChartSpace, comme indiqué dans la documentation. 
+De plus, l'objet WCCharts doit également contenir un
+objet WCTitle.
+
+
+Événement SelectionChange (Office Web Components)
+-------------------------------------------------
+Dans le gestionnaire d'événements SelectionChange du 
+composant Spreadsheet, aucune propriété de 
+l'objet SpreadsheetEventInfo n'est valide pour 
+cet événement, à l'exception de la propriété Range.
+
+
+Méthode GetValue (Office Web Components)
+----------------------------------------
+L'argument Dimension peut également être 
+chErrorBarPlusValues ou chErrorBarMinusValues pour 
+renvoyer les valeurs des objets personnalisés 
+WCErrorBars.
+
+
+Propriété HTMLData (Office Web Components)
+------------------------------------------
+Cette propriété est en lecture-écriture pour les objets
+Spreadsheet et en lecture seule pour les objets Range.
+
+
+Propriété KeyChar (Office Web Components)
+-----------------------------------------
+La propriété KeyChar renvoie une chaîne vide pour les 
+événements KeyDown et KeyUp.
+
+
+Propriété RecordsetLabel (Office Web Components)
+------------------------------------------------
+La propriété RecordsetLabel de l'objet
+RecordNavigationControl est analysée pour obtenir 
+des informations spécifiques à utiliser lors de 
+l'affichage de l'étiquette. Par exemple, les balises
+|0, |1 et |2 sont remplacées par des numéros 
+d'enregistrement lors de l'affichage. Si la propriété
+RecordsetLabel est égale à la chaîne "Catégories |0 sur 
+|2;Catégories |0-|1 sur |2", l'étiquette d'une page 
+groupée pourrait être "Catégories 1-5 sur 8", et celle 
+d'une page non groupée pourrait être "Catégories 1 sur 8".
+
+
+Propriété Value (Office Web Components)
+---------------------------------------
+La section Remarques de la propriété Value indique 
+que si la colonne spécifiée contient plus d'une cellule,
+cette propriété renvoie un tableau contenant les valeurs
+de toutes les cellules. Ceci est incorrect : la 
+propriété renvoie uniquement la valeur de la cellule 
+active de la colonne.
+
+
+Langue par défaut de Visual Basic Editor et Microsoft 
+Script Editor
+-----------------------------------------------------
+Visual Basic Editor et Microsoft Script Editor sont par 
+défaut en anglais si la page de code système active ne 
+prend pas en charge la langue de l'interface utilisateur.
+
+
+Nouvelles propriétés (VBA)
+--------------------------
+Les nouvelles propriétés qui s'appliquent aux modules de
+classe dans des projets autonomes sont les suivantes :
+
+* Propriété Instancing 
+
+  Définit une valeur spécifiant si vous pouvez créer des
+  instances d'une classe publique hors d'un projet, et
+  si c'est le cas, comment vous devez agir. Non 
+  disponible lors de l'exécution.
+
+  Valeurs
+
+  La propriété Instancing a les valeurs suivantes :
+
+  Valeur    Description
+  ------    -----------
+
+  1          Private (par défaut). D'autres applications
+             n'ont pas accès aux données de la 
+             bibliothèque de caractères concernant la
+             classe et ne peuvent pas créer d'instances à
+             partir de cette dernière. Les objets Private 
+             ne doivent être utilisés qu'à l'intérieur de 
+             votre composant. La propriété Instancing par 
+             défaut varie selon le type de projet. Private
+             est l'objet par défaut uniquement pour les 
+             modules de classe dans les projets autonomes.
+
+  2          PublicNotCreatable. D'autres applications peuvent
+             utiliser les objets de cette classe seulement si 
+             votre composant crée les objets en premier. 
+             D'autres applications ne peuvent pas utiliser la
+             fonction CreateObject ou New operator pour créer
+             des objets à partir de la classe.
+
+
+* Propriété Name
+
+  Renvoie le nom utilisé dans le code pour identifier une classe. 
+  En lecture seule lors de l'exécution.
+
+  Syntaxe
+
+  objet.Name
+
+  L'emplacement de l'objet représente l'expression d'un objet 
+  qui a la valeur d'une classe.
+
+  Remarques
+
+  La propriété Name d'un objet doit commencer par une 
+  lettre et comporter 40 caractères au maximum. 
+  Elle peut inclure des nombres et des caractères de 
+  soulignement (_), mais pas de signes de ponctuation 
+  ou d'espaces. Bien que la valeur de la propriété Name 
+  puisse être un mot clé, un nom de propriété ou le nom 
+  d'un autre objet, cela peut créer des conflits dans 
+  votre code.
+
+
+Utilisation de la touche F3 pour rechercher l'occurrence 
+de texte suivante dans la fenêtre de code
+--------------------------------------------------------
+Appuyez sur F3 pour trouver l'occurrence suivante 
+du texte précédemment recherché dans la fenêtre de 
+code, et non sur MAJ+F4 comme indiqué dans la  
+documentation.
+
+________________________________________________________
+PROBLÈMES RELATIFS AUX SCRIPTS, AU CODE HTML ET À D'AUTRES 
+FONCTIONS DE PROGRAMMATION
+
+
+Système SENS (System Event Notification System)
+----------------------------------------------------------
+Pour les programmeurs rédigeant pour le système SENS 
+(System Event Notification System) et les interfaces 
+IEventSubscription et IEventSystem, vous pouvez consulter 
+soit la documentation de ces interfaces sur le site MSDN 
+online à l'adresse suivante :
+
+France : http://www.microsoft.com/france/msdn/ 
+Canada : http://msdn.microsoft.com/
+
+soit une version de la plate-forme SDK ultérieure à celle 
+qui a été livrée avec MSDN au mois d'avril.
+
+
+Documentation de référence HTML 
+-------------------------------
+La documentation la plus récente sur HTML, DHTML et CSS 
+est disponible en ligne sur le site MSDN online à l'adresse 
+suivante :
+France : http://www.microsoft.com/france/msdn/ 
+Canada : http://msdn.microsoft.com/ 
+
+
+Versions Internet Explorer et édition du code HTML
+--------------------------------------------------
+La sélection fonctionne différemment dans Microsoft Script
+Editor pour les éléments sur site selon la version 
+d'Internet Explorer que vous avez installée. Un élément
+sur site correspond à tout élément qui dispose d'une hauteur 
+ou d'une largeur, tel qu'un BOUTON. 
+
+Avec Internet Explorer 4.01, la sélection des éléments sur
+site fonctionne comme suit :
+
+* Le premier clic sur un élément vous permet de modifier 
+  le texte au sein de cet élément.
+* Le second clic sur un élément sélectionne cet élément.
+* Double-cliquer sur un élément revient à sélectionner le
+  texte au sein de cet élément.
+
+Avec Internet Explorer 5.0, la sélection des éléments 
+sur site fonctionne comme suit :
+
+* Le premier clic sur un élément sélectionne cet élément.
+* Le second clic sur un élément vous permet de modifier 
+  le texte au sein de cet élément.
+* Double-cliquer sur l'élément affiche le code source de 
+  cet élément.
+
+  Remarque : La sélection des tableaux dans Internet 
+  Explorer 5.0 est la même que celle employée dans 
+  Internet Explorer 4.01.
+
+  De plus, Internet Explorer 5.0 préserve mieux les 
+  espaces blancs qu'Internet Explorer 4.01 lorsque 
+  vous passez d'un affichage à un autre dans l'éditeur.
+
+
+Rubrique « Rubrique introuvable » (Microsoft Script Editor)
+-----------------------------------------------------------
+Vous n'avez pas besoin de la bibliothèque MSDN ou du 
+CD-ROM de la bibliothèque MSDN pour afficher les rubriques 
+d'aide de Microsoft Script Editor. Si vous rencontrez la 
+rubrique « Rubrique introuvable », essayez l'une des 
+actions suivantes : 
+
+* Réinstallez Microsoft Script Editor à partir du  
+  programme d'installation de Microsoft Office.
+* Insérez le CD-ROM Microsoft Office dans le lecteur de
+  CD-ROM.
+
+
+Internet Explorer 5 - Assistant Connexion Internet
+---------------------------------------------------------- 
+Si, sous Windows 95, l'Assistant Connexion Internet ne
+s'exécute pas lorsqu'il est sélectionné depuis le dossier
+« Démarrer / Programmes / Accessoires / Communications » du
+menu Démarrer, navigatez vers le dossier « C:\Windows\Menu Démarrer\Programmes\Accessoires\Communications ».
+
+Sélectionnez le raccourci qui pointe vers l'Assistant de
+connexion.
+À partir du menu Fichier, choisissez Propriétés.
+Quand la boîte de dialogue « Propriétés de Assistant Connexion
+Internet » s'ouvre, choisissez l'onglet Raccourci.
+Dans le champs cible, saisissez 
+« C:\Progra~1\Intern~1\Assist~1\icwconn1.exe »
+(sans les guillemets).
+ 
+Vous pouvez également lancer l'Assistant Connexion Internet
+depuis le dossier
+C:\Program Files\Internet Explorer\Assistant de Connexion
+en double-cliquant sur le fichier ICWCONN1.EXE.

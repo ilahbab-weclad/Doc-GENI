@@ -1,0 +1,71 @@
+; Localized	03/24/1999 04:01  (GMT)	7:4.1.211 	awfext.ecf
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={9B243160-3745-11cf-8582-00AA00C01797}
+Path="awfext32.dll"
+Entry Point=10
+Client Version=4.0
+Extension Version=1.0
+Service Provider=AWFAX
+Misc Flags=MoreContexts;WarnIfNoDLL
+
+[Exchange Client Compatibility]
+Exchange Registry=1
+Exchange Extension Key="MicrosoftFax"
+
+; Exchange Context Map is *VIEWER, ADDRBOOK, *MESSAGE
+; The Exchange/Clients registry doesn't specify this.
+Exchange Context Map=011111111110000
+
+; Exchange Interface Map is IExchExtCommands, MessageEvents
+; The Exchange/Clients register doesn't specify this.
+Exchange Interface Map=1001000
+
+[Folder]
+Events=OnExtCommand
+Command Bars=50003
+Commands=SuppressNewFax;SuppressFaxHelp;SuppressFaxTools;Request;AdvancedSecurity;ShowOutgoing;FaxOptions
+Outlook Commands=ComposeNewFax;HelpFaxHelp;ToolsFaxTools;FaxRequest;FaxAdvancedSecurity;FaxShowOutgoing;FaxOptions
+Extension Outlook Commands=50000;50004;50003;50007;50008;50009;50010
+
+
+[Item]
+Events=OnExtCommand
+Contexts=MESSAGE;FAX
+
+[FAX]
+Message Class=IPM.Microsoft.Fax.Encrypted!;SIMPLE.POLL.MESSAGE!
+Events=OnReadSpecial
+
+[MESSAGE]
+Message Class=IPM.Note;IPM.Post;IPM.Resend;REPORT;IPM.Contact
+Commands=SuppressSendOptions;SuppressFaxWizard;SuppressNewFax;SuppressFaxHelp
+Outlook Commands=FileFaxSendOptions;ToolsFaxWizard;ComposeNewFax;HelpFaxHelp
+Extension Outlook Commands=50001;50002;50000;50004
+
+[Command]
+SuppressNewFax=50000;#75;Compose After ComposeNewMessage Suppress Enabled
+SuppressSendOptions=50001;#84;File After FileProperties Suppress Enabled
+SuppressFaxWizard=50002;#77;Tools After ToolsAddressBook Suppress Enabled
+SuppressFaxTools=50003;#78;Tools Before ToolsServices Suppress Submenu Enabled
+SuppressFaxHelp=50004;#76;Help After HelpHelp Suppress Enabled
+Request=50007;#79;50003 Suppress
+AdvancedSecurity=50008;#80;50003 Suppress
+ShowOutgoing=50009;#82;50003 Suppress
+FaxOptions=50010;#83;50003 Suppress
+
+[Strings]
+DisplayName = Microsoft Fax
+Description = Microsoft Fax
+
+; STR 75 - NewFax=New Fa&x
+; STR 78 - MicrosoftFaxTools=Microsoft Fa&x Tools
+; STR 84 - SendOptions=Send &Options
+; STR 77 - FaxAddressingWizard=Fax Addressing &Wizard...
+; STR 76 - MicrosoftFaxHelpTopics=Microsoft Fa&x Help Topics
+; STR 79 - Request=&Request a Fax...
+; STR 80 - AdvancedSecurity=&Advanced Security...
+; STR 82 - ShowOutgoing=S&how Outgoing Faxes
+; STR 83 - FaxOptions=&Options...
+

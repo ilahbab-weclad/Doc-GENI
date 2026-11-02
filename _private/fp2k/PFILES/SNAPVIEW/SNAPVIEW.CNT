@@ -1,0 +1,42 @@
+:Base snapview.hlp>Ref
+:Title Snapshot Viewer Version 9.0
+2 Ouvrir le fichier Lisez-moi pour obtenir des informations de dernière minute=!EF("Lisezmoi.txt","",1)
+1 Fonctionnement des instantanés d'état
+2 À propos des instantanés d'état et de Snapshot Viewer=acconAboutWorkingWithReportSnapshots
+2 Ouverture d'un instantané d'état=achowOpenReportSnapshotInSnapshotViewer@snapview.hlp>HowTo
+2 Affichage d'un instantané d'état=achowViewReportSnapshotInSnapshotViewer@snapview.hlp>HowTo
+2 Affichage d'un instantané d'état à divers degrés d'agrandissement=achowViewReportSnapshotAtDifferentMagnificationsInSnapshotViewer@snapview.hlp>HowTo
+2 Impression d'un instantané d'état=achowPrintReportSnapshotFromSnapshotViewer@snapview.hlp>HowTo
+2 Envoi d'un instantané d'état par courrier électronique au moyen de la comman...=achowSendReportSnapshotInElectronicMailMessageFromSnapshotViewer@snapview.hlp>HowTo
+2 Envoi d'un instantané d'état par courrier électronique au moyen de l'action...=achowAutomateSendingOfReportSnapshotInElectronicMail@snapview.hlp>Ref
+2 Création d'un instantané d'état=achowExportReportToSnapshotFormat@snapview.hlp>HowTo
+2 Création d'un instantané d'état avec l'action CopierVers et publication sur...=achowAutomateCreationOfSnapshotReport@snapview.hlp>Ref
+2 Touches de raccourci pour les instantanés d'état=acrefUseShortcutKeysInSnapshotViewer@snapview.hlp>Ref
+1 Dépannage de l'impression et de l'affichage des instantanés d'état
+2 Je ne parviens ni à ouvrir ni à créer un instantané d'état.=actbcICantOpenReportSnapshot@snapview.hlp>Ref
+2 Lorsque j'imprime un instantané d'état, j'obtiens la page World Wide Web au...=actbcIGetBlankPageWhenIPrintReportSnapshot@snapview.hlp>Ref
+2 Je ne parviens pas à envoyer un instantané d'état par courrier électronique.=actbcICantSendReportSnapshotInElectronicMail@snapview.hlp>Ref
+1 Référence du langage de Snapshot Viewer
+2 Événements
+3 Événements PremièrePage (FirstPage), DernièrePage (LastPage)=acevtFirstLastNextPrevPage>LangRef
+3 Événement En-cours de progression (Progress)=acevtProgress@snapview.hlp>LangRef
+3 Événement ModifÉtatPrêt (ReadyStateChange)=acevtReadyStateChanged@snapview.hlp>LangRef
+2 Méthodes
+3 Méthode AboutBox=acmthAboutBox@snapview.hlp>LangRef
+3 Méthodes FirstPage, LastPage, NextPage, PreviousPage=acmthFirstLastNextPreviousPage@snapview.hlp>LangRef
+3 Méthode PrintSnapshot=acmthPrintSnapshot@snapview.hlp>LangRef
+2 Propriétés
+3 Propriété AllowContextMenu=acproAllowContextMenu@snapview.hlp>LangRef
+3 Propriété CurrentPage=acproCurrentPage@snapview.hlp>LangRef
+3 Propriété Error=acproError@snapview.hlp>LangRef
+3 Propriété PageCount=acproPageCount@snapview.hlp>LangRef
+3 Propriété ReadyState=acproReadyState@snapview.hlp>LangRef
+3 Propriété ShowNavigationButtons=acproShowNavigationButtons@snapview.hlp>LangRef
+3 Propriété SnapshotPath=acproSnapshotPath@snapview.hlp>LangRef
+3 Propriété Zoom=acproZoom@snapview.hlp>LangRef
+1 Exportation d'instantanés d'état=acmthsendobjectandoutputto@snapview.hlp>LangRef
+1 Glossaire
+2 Remplir=IDH_acdefFill@snapview.hlp>Ref
+2 Instantané d'état=IDH_acdefReportSnapshot
+2 Snapshot Viewer=IDH_acdefSnapshotViewer@snapview.hlp>Ref
+2 Snapshot Viewer, contrôle=IDH_acdefSnapshotViewerActiveXControl@snapview.hlp>Ref

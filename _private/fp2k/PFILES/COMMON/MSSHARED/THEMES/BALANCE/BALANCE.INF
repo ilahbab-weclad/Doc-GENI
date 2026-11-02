@@ -1,0 +1,22 @@
+[info]
+title=Balance
+codepage=65001
+version=2.00
+format=2.00
+readonly=true
+
+[titles]
+1031 = Ausgewogen
+1036 = Balance
+1040 = Equilibrio
+3082 = Balance
+1043 = Weegschaal
+1046 = Balança
+1053 = Balans
+1044 = Balanse
+1030 = Balance
+1035 = Saldo
+1041 = バランス
+1042 = 시소
+1028 = 天平
+2052 = 平衡

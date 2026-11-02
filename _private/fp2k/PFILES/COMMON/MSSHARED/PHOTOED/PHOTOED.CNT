@@ -1,0 +1,74 @@
+:Base PhotoEd.hlp>HowTo
+:Title Aide de Photo Editor
+:Link PhotoEd.hlp
+1 Mise en route
+2 Démarrage de Photo Editor à partir d'un autre programme=ImagerhowStartPhotoEditorFromAnotherProgram
+2 Incorporation d'une image=ImagerhowEmbeddingAnImage
+2 Sortie de Photo Editor=ImagerhowQuitting
+1 Création et ouverture d'une image
+2 Création d'une nouvelle image=ImagerhowCreateANewImage
+2 Ouverture d'une image=ImagerhowOpenAnExistingImage
+2 Aperçu d'une image avant son ouverture=ImagerhowPreviewAnImageBeforeOpeningIt
+2 Création d'une image avec un arrière-plan de couleur=ImagerhowCreateANewImageWithAColoredBackground
+2 Choix de la résolution à l'ouverture d'une image Kodak Photo CD=ImagerhowChooseTheResolutionWhenOpeningAPhotoCDImage
+1 Scannérisation d'une image
+2 Scannérisation d'une image avec Photo Editor=ImagerhowScanAnImageWithPhotoEditor
+2 Sélection d'un scanneur=ImagerhowSelectAScanner
+1 Enregistrement et fermeture d'une image
+2 Enregistrement d'une nouvelle image=ImagerhowSaveANewImage
+2 Enregistrement d'une image existante=ImagerhowSaveAnExistingImage
+2 Enregistrement d'une copie d'image=ImagerhowSaveACopyOfAnImage
+2 Choix du facteur de qualité pour une image JPEG=ImagerhowChooseTheQualityFactorForAJPEGImage
+2 Fermeture d'une image active=ImagerhowCloseAnActiveImage
+1 Barre d'outils Photo Editor
+2 Sélection totale ou partielle d'une image=ImagerhowSelectAllOfAnImage
+2 Redimensionnement d'une sélection=ImagerhowResizeASelection
+2 Rotation d'une image=ImagerhowRotateAnImage
+2 Agrandissement ou réduction d'une image=ImagerhowZoomInAndOutOfAnImage
+2 Adoucissement d'une partie d'image=ImagerhowSmudgePartOfAnImage
+2 Accentuation d'une partie d'image=ImagerhowSharpenPartOfAnImage
+2 Création de zones transparentes dans une image=ImagerhowCreateTransparentAreasInAnImage
+2 Ajustement de la luminosité d'une image=ImagerhowAdjustTheBrightnessOfAnImage
+2 Ajustement du contraste d'une image=ImagerhowAdjustTheContrastOfAnImage
+2 Ajustement du gamma d'une image=ImagerhowAdjustTheGammaOfAnImage
+1 Coupage, copie et collage d'une image
+2 Sélection totale ou partielle d'une image=ImagerhowSelectAllOfAnImage
+2 Redimensionnement d'une sélection=ImagerhowResizeASelection
+2 Copie totale ou partielle d'une image=ImagerhowCopyAllOrPartOfAnImage
+2 Déplacement et collage d'une sélection à l'intérieur d'une même image=ImagerhowPasteASelectionWithinTheSameImage
+2 Déplacement total ou partiel d'une image vers un autre fichier ou une autre...=ImagerhowPasteAllOrPartOfAnImage
+2 Effacement total ou partiel d'une image=ImagerhowEraseAllOrPartOfAnImage
+2 Annulation ou suppression d'une sélection=ImagerhowDeleteAnSelection
+2 Annulation ou rétablissement de la dernière action=ImagerhowUndoOrRedoTheLastAction
+2 Annulation de plusieurs modifications=ImagerhowUndoMultipleChanges
+1 Modification d'une image
+2 Ajustement automatique de la qualité d'une image=ImagerhowAdjustTheImageQualityAutomatically
+2 Redimensionnement d'une image=ImagerhowResizeAnImage
+2 Rognage d'une image=ImagerhowCropAnImage
+2 Dépolissage d'une image=ImagerhowMatAnImage
+2 Rotation d'une image=ImagerhowRotateAnImage
+2 Création de zones transparentes dans une image=ImagerhowCreateTransparentAreasInAnImage
+2 Modification du format de fichier d'une image=ImagerhowChangeTheTypeOfAnImage
+2 Utilisation de couleurs, de la palette, de niveaux de gris ou de la monochro...=ImagerhowChangeTheNumberOfColorsInAnImage
+2 Modification de la résolution d'une image=ImagerhowChangeTheResolutionOfAnImage
+2 Choix d'une palette contenant moins de 256 couleurs=ImagerhowChooseAPaletteOfLessThan256Colors
+1 Application des effets
+2 Application d'effets artistiques=imhowApplyArtisticEffects
+2 Application d'effets spéciaux=imhowApplySpecialEffects
+1 Impression et envoi de courrier électronique
+2 Impression d'une image=ImagerhowPrintAnImage
+2 Positionnement d'une image dans la page=ImagerhowPositionAnImageOnThePage
+2 Choix de la taille d'impression d'une image=ImagerhowChooseASizeForAPrintedImage
+2 Création ou modification d'un demi-ton=ImagerhowCreateOrModifyHalftone
+2 Envoi d'une image par courrier électronique=ImagerhowSendAnImageByEmail
+1 Personnalisation de votre espace de travail
+2 Affichage ou masquage des règles=ImagerhowDisplayOrHideTheRulers
+2 Affichage ou masquage de la barre d'état=ImagerhowDisplayOrHideTheStatusBar
+2 Affichage ou masquage de la barre d'outils Standard=ImagerhowDisplayOrHideTheToolbar
+2 Déplacement de la barre d'outils Standard=ImagerhowMoveTheToolbar
+2 Modification de l'unité de mesure des règles=ImagerhowChangeTheUnitOfMeasurementOnTheRulers
+2 Affichage ou masquage de l'aide au cours de votre travail=ImagerhowDisplayHelpWhileYouWork
+2 Affichage de plusieurs images à la fois=ImagerhowViewMoreThanOneImageAtATime
+1 Référence
+2 Commandes du clavier=ImagerrefKeyboardCommands
+2 Résolution des problèmes=imrefWhatAreYouHavingTroubleWith

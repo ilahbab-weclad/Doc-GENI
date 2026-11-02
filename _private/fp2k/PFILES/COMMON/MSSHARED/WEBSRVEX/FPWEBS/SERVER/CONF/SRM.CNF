@@ -1,0 +1,160 @@
+#----------------------------------------------------------------------
+#
+#   SRM.CNF
+#
+# Server resource configuration for the FrontPage Personal Web Server
+#
+# The settings in this file control the document layout and name specs
+# that your server makes visible to users. The values in the comments
+# are the defaults built into the server.
+#
+# Server configuration commands are similar to those for the NCSA
+# server version 1.3R.  If you have questions please see the online
+# documentation at http://hoohoo.ncsa.uiuc.edu
+#
+# NOTE: path defaults are relative to the server's installation
+#       directory (ServerRoot). Paths should be given in Unix
+#       format (using '/').
+#
+#----------------------------------------------------------------------
+#
+# DocumentRoot: The directory out of which you will serve your
+# documents. By default, all requests are taken from this directory, but
+# aliases may be used to point to other locations.
+#
+DocumentRoot VCONTENT
+
+# DirectoryIndex: Name of the file to use as a pre-written HTML
+# directory index. This document, if present, will be opened when the
+# server receives a request containing a URL for the directory, instead
+# of generating a directory index.
+#
+# DirectoryIndex index.htm
+
+# AccessFileName: The name of the file to look for in each directory
+# for access control information. This file should have a name which is
+# blocked from appearing in server-generated indexes!
+#
+# AccessFileName #haccess.ctl
+
+# UserDir is not supported on Windows
+UserDir DISABLED
+
+# ========================
+# Aliasing and Redirection
+# ========================
+#
+# Redirect allows you to tell clients about documents which used to exist in
+# your server's namespace, but do not anymore. This allows you to tell the
+# clients where to look for the relocated document.
+#
+# Format: Redirect fakename url
+#
+
+# Aliases: Add here as many aliases as you need, up to 20. One useful
+# alias to have is one for the path to the icons used for the server-
+# generated directory indexes. The paths given below in the AddIcon
+# statements are relative.
+#
+# Format: Alias fakename realname
+#
+Alias /icons/ VSERVER/icons/
+
+# ScriptAlias: This controls which directories contain DOS server
+#              scripts.
+#
+# Format: ScriptAlias fakename realname
+#
+#ScriptAlias /cgi-dos/ VCONTENT/cgi-dos/
+
+# WinScriptAlias: This controls which directories contain Windows
+#              server scripts.
+#
+# Format: WinScriptAlias fakename realname
+#
+#WinScriptAlias /cgi-win/  VCONTENT/cgi-win/
+
+# =========================
+# MIME Content Type Control
+# =========================
+#
+# DefaultType is the default MIME type for documents which the server
+# cannot find the type of from filename extensions.
+#
+# DefaultType text/html
+DefaultType text/plain
+
+# AddType allows you to tweak MIME.TYP without actually editing it, or to
+# make certain files to be certain types.
+#
+# Format: AddType type/subtype ext1
+#
+
+# ReadmeName is the name of the README file the server will look for by
+# default.  The server will first look for name.htm, include it if found,
+# and it will then look for name.txt and include it as plaintext if found.
+# NOTE: Do not include an explicit extension, it is an error.
+#
+# Format: ReadmeName name
+#
+ReadmeName #readme
+
+# ============================
+# AUTOMATIC DIRECTORY INDEXING
+# ============================
+#
+# The server generates a directory index if there is no file in the
+# directory whose name matches DirectoryIndex.
+#
+# FancyIndexing: Whether you want fancy directory indexing or standard
+#
+# FancyIndexing on
+
+# IconsAreLinks: Whether the icons in a fancy index are links as
+# well as the file names.
+#
+# IconsAreLinks off
+
+# AddIcon tells the server which icon to show for different files or filename
+# extensions. In preparation for the upcoming Chicago version, you should
+# include explicit 3 character truncations for 4-character endings. Don't
+# rely on the DOS underpinnings to silently truncate for you.
+#
+AddIcon /icons/text.gif     .html   .htm    .txt    .ini
+AddIcon /icons/image.gif    .gif    .jpg    .jpe    .jpeg   .xbm    .tiff   .tif    .pic    .pict     .bmp
+AddIcon /icons/sound.gif    .au     .wav    .snd
+AddIcon /icons/movie.gif    .mpg    .mpe    .mpeg
+AddIcon /icons/binary.gif   .bin    .exe    .bat    .dll
+AddIcon /icons/back.gif     ..
+AddIcon /icons/menu.gif     ^^DIRECTORY^^
+AddIcon /icons/dblank.gif       ^^BLANKICON^^
+
+# DefaultIcon is which icon to show for files which do not have an icon
+# explicitly set.
+#
+DefaultIcon /icons/unknown.gif
+
+# AddDescription allows you to place a short description after a file in
+# server-generated indexes. A better place for these are in inidividual
+# "#haccess.ctl" files in individual directories.
+#
+# Format: AddDescription "description" filename
+#
+
+# IndexIgnore is a set of filenames which directory indexing should ignore
+# Here, I've disabled display of our readme and access control files,
+# plus anything that starts with a "~", which I use for annotation HTML
+# documents. I also have disabled some common editor backup file names.
+# Match is on file NAME.EXT only, and the usual * and ? meta-chars apply.
+#
+# WARNING: Be sure to set an ignore for your access control file(s)!!
+#
+# Format: IndexIgnore name1 name2...
+#
+IndexIgnore  ~* *.bak *.{* #readme.htm #haccess.ctl
+
+WinScriptAlias /cgi-bin/imagemap VCONTENT/cgi-bin/imagemap.exe
+# 
+WinScriptAlias /cgi-bin/htimage  VCONTENT/cgi-bin/htimage.exe
+
+## END ##

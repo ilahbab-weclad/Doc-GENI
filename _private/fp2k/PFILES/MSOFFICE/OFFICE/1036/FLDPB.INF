@@ -1,0 +1,204 @@
+; Localized	03/24/1999 04:01  (GMT)	7:4.1.211 	fldpb.inf
+[Version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[DefaultInstall]
+Copyfiles= EcfFile, DllFiles, SysFiles, SysFilesDiscardable, CfgFiles, IcoFiles, IcoSubdirFiles, TemplateFiles, InfFile, 95Files
+AddReg=FormReg, RegUninstallKey, RegUninstall
+DelFiles=Extend
+RegisterOCXs=RegisterOCXSection
+CustomDestination = InstDest
+UpdateADVDLLs = 1
+
+[DefaultInstall.NT] 
+Copyfiles= EcfFile, DllFiles, SysFiles, SysFilesDiscardable, CfgFiles, IcoFiles, IcoSubdirFiles, TemplateFiles, InfFile, NTFiles
+AddReg=FormReg, RegUninstallKey, RegUninstall.NT
+DelFiles=Extend
+RegisterOCXs=RegisterOCXSection
+CustomDestination = InstDest
+UpdateADVDLLs = 1
+
+[Uninstall]
+CustomDestination = UninstDest
+UnRegisterOCXs=RegisterOCXSection
+DelFiles=EcfFile, DllFiles, SysFilesDiscardable, CfgFiles, IcoFiles, IcoSubdirFiles, TemplateFiles, InfFile, Extend
+DelReg=FormReg, SettingsReg, RuntimeReg, RegUninstall, RegUninstallKey, RegActiveSetupKey
+RunPreSetupCommands=RunNFClean
+RunPostSetupCommands=RunUninstallForms
+BeginPrompt=ConfirmUninstall
+
+[Uninstall.NT]
+CustomDestination = UninstDest
+UnRegisterOCXs=RegisterOCXSection
+DelFiles=EcfFile, DllFiles, SysFilesDiscardable, CfgFiles, IcoFiles, IcoSubdirFiles, TemplateFiles, InfFile, Extend
+DelReg=FormReg, SettingsReg, RuntimeReg, RegUninstall.NT, RegUninstallKey, RegActiveSetupKey
+RunPreSetupCommands=RunNFClean
+RunPostSetupCommands=RunUninstallForms
+BeginPrompt=ConfirmUninstall
+
+[SourceDisksNames] 
+1="Outlook Net Folders Files",,1
+
+[SourceDisksFiles]
+fldpub.ecf=1		; office\addins
+fldpub.dll=1		; office
+;intlibd.dll
+msvcrtd.dll=1		; system32
+mfco42d.dll=1
+advpack.dll=1
+w95inf16.dll=1
+w95inf32.dll=1
+atl95.dll=1
+atlnt.dll=1
+fpatl.ocx=1
+nfclean.exe=1
+Conflict.cfg=1		; office\forms
+Multiple.cfg=1
+NewSubsc.cfg=1
+Request.cfg=1
+Sync.cfg=1
+Update.cfg=1
+cflictl.ico=1		; office\forms
+cflicts.ico=1
+forml.ico=1
+forms.ico=1
+fldpub.inf=1		; windows\inf
+newsubsc.oft=1		; office\templates\outlook
+Conflict.oft=1		; office\templates\outlook
+
+[DestinationDirs]
+DllFiles=49001
+SysFiles=11
+SysFilesDiscardable=11
+95Files=25
+NTFiles=25
+CfgFiles=49001,%IcoSubdir%
+IcoFiles=49001,%IcoSubdir%
+IcoSubdirFiles=49001,%IcoSubdir%
+TemplateFiles=49001,%TemplateSubdir%
+EcfFile=49001, %AddinsSubdir%
+InfFile=17
+Extend=25
+
+[EcfFile]
+fldpub.ecf
+
+[DllFiles]
+fldpub.dll
+
+[SysFilesDiscardable]
+;intlibd.dll
+fpatl.ocx
+nfclean.exe
+
+[95Files]
+atl.dll,atl95.dll,,0
+
+[NTFiles]
+atl.dll,atlnt.dll,,0
+
+[SysFiles]
+;advpack.dll
+;w95inf16.dll
+;w95inf32.dll
+mfco42d.dll
+msvcrtd.dll
+
+[CfgFiles]
+Conflict.cfg
+Multiple.cfg
+NewSubsc.cfg
+Request.cfg
+Sync.cfg
+Update.cfg
+
+[IcoFiles]
+cflictl.ico
+cflicts.ico
+
+[IcoSubdirFiles]
+forml.ico
+forms.ico
+
+[TemplateFiles]
+newsubsc.oft
+Conflict.oft
+
+[InfFile]
+fldpub.inf
+
+[Extend]
+extend.dat
+
+[FormReg]
+;"HKLM", SOFTWARE\Microsoft\Exchange\Client\Extensions,"Folder Publishing",0,"4.0;%49001%\fldpub.dll;1;11000000000100;1100010"
+"HKCR", CLSID\{9EEE8A7C-8472-11D0-8252-00AA00C01795},  ,          0, 
+"HKCR", CLSID\{9EEE8A7C-8472-11D0-8252-00AA00C01795}\BaseMsgCls,, 0, "IPM.Note"
+"HKCR", CLSID\{9EEE8A7C-8472-11D0-8252-00AA00C01795}\MsgCls,,     0, "IPM.Note.FolderPub.NewSubscriber"
+"HKCR", CLSID\{9EEE8A7C-8472-11D0-8252-00AA00C01795}\FormStg,,    0, %49001%\%TemplateSubdir%\"NEWSUBSC.OFT"
+
+"HKCR", CLSID\{9EEE8A7C-8472-11D0-8252-00AA00C01796},  ,          0, 
+"HKCR", CLSID\{9EEE8A7C-8472-11D0-8252-00AA00C01796}\BaseMsgCls,, 0, "IPM.Note"
+"HKCR", CLSID\{9EEE8A7C-8472-11D0-8252-00AA00C01796}\MsgCls,,     0, "IPM.Note.FolderPub.Conflict"
+"HKCR", CLSID\{9EEE8A7C-8472-11D0-8252-00AA00C01796}\FormStg,,    0, %49001%\%TemplateSubdir%\"CONFLICT.OFT"
+
+"HKLM", SOFTWARE\Microsoft\Office\8.0\Outlook\NetFolder,"EnableNetFolder", 0,"1"
+
+[SettingsReg]
+HKCU, %StrKeyLocation%, ,,
+
+[RuntimeReg]
+"HKCU", SOFTWARE\Microsoft\Office\8.0\Outlook\NetFolder
+
+[RegisterOCXSection]
+%11%\fpatl.ocx
+%49001%\fldpub.dll
+
+[RegUninstallKey] 
+HKLM,%UninstallKey% %Name%,"DisplayName",,%UninstallName%
+
+[RegUninstall]
+HKLM,%UninstallKey% %Name%,"UninstallString",,"RunDll32 advpack.dll,LaunchINFSection fldpub.inf, Uninstall" 
+
+[RegUninstall.NT]
+HKLM,%UninstallKey% %Name%,"UninstallString",,"RunDll32 advpack.dll,LaunchINFSection fldpub.inf, Uninstall" 
+
+[RegActiveSetupKey]
+HKLM,%ActiveSetupKey%
+
+[RunUninstallForms]
+;if exist %11%\..\extend.dat erase %11%\..\extend.dat
+
+[ConfirmUninstall]
+Prompt=%UninstallPrompt%
+ButtonType=OKCANC
+Title=%Name%
+
+[InstDest]
+49000=IsItThere,7			;Check for Outlook before installing.
+49001=WhereToPutIt,5			;Get location to put files
+
+[UninstDest]
+49001=WhereToPutIt,5			;Get location to put files
+ 
+[IsItThere] ;This section checks for the existence of Outlook on the users machine.
+"HKLM","%OutlookKey%","Path","%NoOutlook%",""
+
+[WhereToPutIt] ; Default install directory is Office directory.
+"HKLM","%OutlookKey%","Path","%InstallForms%",""
+"","","","Office Directory","C:\Program Files\Microsoft Office\Office"
+
+[Strings]
+Name = "Dossiers personnels partagés d'Outlook"
+UninstallName = "Dossiers personnels partagés de Microsoft Outlook (Supprimer seulement)"
+UninstallPrompt = "Ceci va désinstaller les dossiers personnels partagés. Êtes-vous sûr de vouloir continuer ?"
+StrKeyLocation = "Software\Microsoft\Office\8.0\Outlook\Folder Publishing"	;{Locked}
+OutlookKey = "SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\OUTLOOK.EXE"	;{Locked}
+NoOutlook = "Pour pouvoir utiliser ce produit, Microsoft Outlook doit être installé."
+IcoSubdir = "Forms"	;{Locked}
+TemplateSubdir = "..\Templa~1\Outlook"	;{Locked}
+AddinsSubdir = "Addins"	;{Locked}
+UninstallKey = "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\"	;{Locked}
+ActiveSetupKey = "SOFTWARE\Microsoft\Active Setup\Installed Components\{0ecae9e0-c066-11d0-b7a1-00609793926d}"	;{Locked}
+

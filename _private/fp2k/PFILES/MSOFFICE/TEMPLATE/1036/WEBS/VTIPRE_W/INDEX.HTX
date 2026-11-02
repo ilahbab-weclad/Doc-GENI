@@ -1,0 +1,127 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<meta name="Microsoft Border" content="<%Border%>">
+<%endif%>
+<title><%HomePageTitle%></title>
+</head>
+
+<body <%if DoTheme EQ False%> stylesrc="<%PageStyleSrc%>" <%endif%> >
+
+<%if DoTheme EQ False%>
+<%if DoTopLogo EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%LogoUrl%>" -->
+<%endif%>
+<%if StyleOption EQ 0%>
+<h1><%HomePageTitle%></h1>
+<%else%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%BannerImgUrl%>" 
+alt="[Bannière]" border="0" <%BannerImgSize%>> </p>
+<%endif%>
+<%if DoTopLinks EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%NavbarUrl%>" -->
+<%endif%>
+<%if UnderConstructionOption EQ 0%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%UnderconImgUrl%>" 
+alt="[En construction]" border="0" <%UnderconImgSize%>></p>
+<%endif%>
+<%endif%>
+
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText"
+preview="insérez ici un paragraphe d'introduction. Cette page d'accueil est la porte d'entrée de votre site Web, invitez les visiteurs à entrer et à parcourir vos informations." --> </p>
+
+<%if DoHomeMission EQ True%>
+<p> </p>
+<%if StyleOption EQ 0%>
+<hr>
+<%else%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%HRuleImgUrl%>" 
+alt="[Ligne séparatrice]" border="0" <%HRuleImgSize%>> </p>
+<%endif%>
+<p> </p>
+<h2><!-- LOCALIZE this heading -->Notre mission</h2>
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText"
+preview="écrivez une ou deux phrases décrivant les ambitions et la philosophie de votre entreprise." --> </p>
+<%endif%>
+
+<%if DoHomeProfile EQ True%>
+<p> </p>
+<%if StyleOption EQ 0%>
+<hr>
+<%else%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%HRuleImgUrl%>" 
+alt="[Ligne séparatrice]" border="0" <%HRuleImgSize%>> </p>
+<%endif%>
+
+<p> </p>
+<h2><!-- LOCALIZE this heading -->Profil de l'entreprise</h2>
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText"
+preview="décrivez qui vous êtes et quels bénéfices vous offrez à vos clients." --> </p>
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText"
+preview="si vous faites partie d'un groupe d'entreprises, listez-les ici." --> </p>
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText"
+preview="que pensent vos clients&nbsp;? Utilisez des extraits de commentaires de clients satisfaits." --> </p>
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText"
+preview="quelles sont les personnes qui composent votre entreprise&nbsp;? Vous pouvez inclure un message de votre président ou une présentation de vos membres fondateurs." --> </p>
+<%endif%>
+
+<%if DoHomeContactInfo EQ True%>
+<p> </p>
+<%if StyleOption EQ 0%>
+<hr>
+<%else%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%HRuleImgUrl%>" 
+alt="[Ligne séparatrice]" border="0" <%HRuleImgSize%>> </p>
+<%endif%>
+<p> </p>
+<h2><!-- LOCALIZE this heading -->Coordonnées</h2>
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText"
+preview="indiquez a vos lecteurs comment vous contacter. N'oubliez pas que votre site Web peut être accédé depuis partout dans le monde, donc indiquez des versions internationales de vos numéros de téléphone ou de fax. Il est aussi courant d'indiquer des adresses email pour les principaux points de contact, tels que le service des ventes et le support client." --> </p>
+
+<dl>
+    <dt><strong><!-- LOCALIZE this label -->Téléphone</strong> </dt>
+    <dd><!--webbot bot="Substitution" s-variable="<%WebVarPhone%>" --></dd>
+    <dt><strong><!-- LOCALIZE this label -->Télécopie</strong> </dt>
+    <dd><!--webbot bot="Substitution" s-variable="<%WebVarFAX%>" --></dd>
+    <dt><strong><!-- LOCALIZE this label -->Adresse postale</strong> </dt>
+    <dd><!--webbot bot="Substitution" s-variable="<%WebVarAddress%>" --></dd>
+    <dt><strong><!-- LOCALIZE this label -->Messagerie électronique</strong></dt>
+    <dd><!-- LOCALIZE this label -->Informations diverses&nbsp;: <a href="mailto:<%CompanyEmail%>"><!--webbot
+        bot="Substitution" s-variable="<%WebVarEmail%>" --></a><br>
+        <!-- LOCALIZE this label -->Ventes&nbsp;: <br>
+    <!-- LOCALIZE this label -->Support client&nbsp;: <br>
+    <!-- LOCALIZE this label -->Administrateur Web&nbsp;: <a href="mailto:<%CompanyWebMaster%>"><!--webbot
+        bot="Substitution" s-variable="<%WebVarWebmaster%>" --></a></dd>
+</dl>
+<%endif%>
+
+<%if DoTheme EQ False%>
+<%if DoBottomLinks EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%NavbarUrl%>" -->
+<%endif%>
+<h5>
+<%if DoBottomWebmasterAddress EQ True%>
+<!-- LOCALIZE this line -->Envoyez un courrier électronique à <a href="<%WebmasterUrl%>"><!--webbot
+bot="Substitution" s-variable="<%WebVarWebmaster%>" --></a>pour toute question ou commentaire concernant ce site
+Web.<br>
+<%endif%>
+<%if DoBottomCopyright EQ True%>
+<!-- LOCALIZE this line -->Copyright © <%CurrentYear%> <!--webbot bot="Substitution"
+s-variable="<%WebVarLongName%>" --><br>
+<%endif%>
+<%if DoBottomDateModified EQ True%>
+<!-- LOCALIZE this line -->Dernière modification&nbsp;: <!--webbot bot="TimeStamp" s-type="EDITED"
+s-format="%d %B %Y" -->
+<%endif%>
+</h5>
+<%endif%>
+
+</body>
+</html>
+
+

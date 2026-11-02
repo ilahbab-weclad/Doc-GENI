@@ -1,0 +1,369 @@
+<html>
+<head>
+<meta NAME="VERSION" CONTENT="9.0.0.2518">
+<title></title>
+
+
+<script LANGUAGE="javascript" src="global.js">
+<!--
+{
+
+	function writeBcast_CharSetInfo() {
+		document.write("<meta http-equiv=Content-Type content='text/html; charset= '+ BCAST_CHARSET +'\'>");
+		}
+    
+    writeBcast_CharSetInfo();
+     
+
+}
+//-->
+</script>
+
+
+<style type="text/css">
+<!--
+@import url(style.css);
+-->
+</style>
+
+<script LANGUAGE="JavaScript">
+<!--
+ {
+
+function writeCodeBaseNSMediaPlayer() {
+	document.write("<object ID='NSPLAY1' NAME='NSPLAY1' BORDER='0' WIDTH='0' HEIGHT='0' codebase=",NS_CORE, " CLASSID='clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95'> <param name='ControlType' value='nsNone'><param name='BufferingTime' value='1'> <param name='AutoRewind' value='1'><param name='AutoSize' value='0'> <param name='AutoStart' value='1'><param name='TransparentAtStart' value='1'><param name='InvokeURLs' value='0'> <param name='DefaultFrame' value='SlideDisplay'> </object> ");
+    }
+  
+
+  
+function writeCodeBaseFTS() {
+	document.write("<object ID='LoadFTS' NAME='LoadFTS' BORDER='0' WIDTH='0' HEIGHT='0'  codebase=", NS_FILE, " CLASSID='CLSID:26F24A93-1DA2-11D0-A334-00AA004A5FC5'</object>");    
+    }
+    
+    
+    
+function DisplayState(){
+	PLAY_STATE = NSPLAY1.PlayState;
+	switch (PLAY_STATE){
+		case "0":
+			window.status = NSPLAYER_WINDOW_STATUS_STOPPED;
+		case "1":
+			window.status = NSPLAYER_WINDOW_STATUS_PAUSED;
+		case "2":
+			window.status = NSPLAYER_WINDOW_STATUS_PLAYING;
+		case "3":
+			window.status = NSPLAYER_WINDOW_STATUS_WAITING;
+						}
+						}    
+						
+ }
+
+-->
+</script>
+
+<script LANGUAGE="JavaScript" for="window" event="onload">
+<!--
+     
+obj = document.all.item ("NSPLAY1");
+if (obj.readyState != 4){
+	 alert (NS_ERROR);
+     }
+
+
+
+  
+document.title = FEATURE_TITLE + " " + LOBBY_PAGE_LABEL;
+document.all.FEATURE_TITLE.innerText = FEATURE_TITLE;
+document.all.EVENT_TITLE.innerText = EVENT_TITLE;
+document.all.EVENT_PRESENTER.innerText = EVENT_PRESENTER;
+
+document.all.EVENT_CONTACT.innerHTML = '<a href="mailto:'+ EVENT_CONTACT +'?Subject=' + EVENT_TITLE + '">'+ EVENT_CONTACT +'</a>';
+
+document.all.EVENT_DESCRIPTION.innerHTML = EVENT_DESCRIPTION;
+document.all.EVENT_TITLE_LABEL.innerText = EVENT_TITLE_LABEL;
+PAGE_COLOR = "#000094";
+
+document.all.EVENT_PRESENTER_LABEL.innerText = EVENT_PRESENTER_LABEL;
+document.all.EVENT_CONTACT_LABEL.innerHTML = EVENT_CONTACT_LABEL;
+document.all.EVENT_DESCRIPTION_LABEL.innerText = EVENT_DESCRIPTION_LABEL;
+document.all.ReplayButton.innerText = REPLAY_BUTTON_LABEL; 
+document.all.ReplayButton.Title = REPLAY_BUTTON_TITLE;
+document.all.nsplayer.style.visibility = "hidden";
+
+if ((SHOW_TIME != "") && (SHOW_END_TIME !="")) {
+document.all.DATE_TIME_LABEL.innerText = DATE_TIME_LABEL;
+document.all.DATE_TIME.innerText = (SHOW_TIME_LOCAL + " - " + SHOW_END_TIME_LOCAL);
+}
+else {
+document.all.DATE_TIME_LABEL.style.visibility = "hidden";
+document.all.DATE_TIME.style.visibility = "hidden";
+
+}
+
+-->
+</script>
+
+<script LANGUAGE="JavaScript"> 
+<!--
+{
+
+function makeRelative(abpath) {
+
+    for(i=abpath.length; i>0; i--)
+      {
+        if( (abpath.charAt(i) == '\\') || (abpath.charAt(i) == '/') )
+            break;          
+      }
+
+	 relpath = abpath.substr( i+1 );
+     return relpath;
+}
+
+function startMediaPlayer() {
+  LATEST_ASX = STATUS_PAGE.ASX;
+  if ((NSPLAY1.PlayState != "2") && (LATEST_ASX != "")) {
+	NSPLAY1.Open (LATEST_ASX);
+	      }
+  else if (LATEST_ASX == "") {
+    NSPLAY1.Stop();
+    NSPLAY1.FileName = "unload";
+  }  
+
+  }  
+
+
+
+}
+-->
+</script>
+
+<script LANGUAGE="JavaScript" FOR="NSPLAY1" EVENT="PlayStateChange (OLD_PLAY_STATE, NEW_PLAY_STATE)">
+<!--
+{
+
+var CLIENT_SHOW_TIME = new Date(SHOW_TIME);
+var CLIENT_SHOW_END_TIME = new Date (SHOW_END_TIME);
+var UTC_SERVER_SHOW_TIME = CLIENT_SHOW_TIME.toUTCString();
+var CLIENT_CURRENT= new Date();
+
+var timeRemaining = ((CLIENT_SHOW_TIME.getTime()) - (CLIENT_CURRENT.getTime()));
+var timeEndRemaining = ((CLIENT_SHOW_END_TIME.getTime()) - (CLIENT_CURRENT.getTime()));
+if ((SHOW_TIME != "") && ( timeEndRemaining < 0))
+		      window.status = STATUS_AFTER;
+		    else
+		      DisplayState();
+}
+-->
+</script>
+<script LANGUAGE="VBScript">
+<!--
+
+		Dim bSlidesDownloaded
+		bSlidesDownloaded = False
+		Dim iNumSlidesDownloaded
+		iNumSlidesDownloaded = 0
+
+        Sub Window_OnLoad()
+      
+        If MULTICAST = 1 Then
+            CheckControls()
+        End If
+        End Sub
+
+
+        Sub CheckControls            
+            On Error Resume Next
+
+            If LoadFTS is Nothing Then
+                MsgBox (FTS_LOAD_ERROR)
+                FTS_LOADED = False
+            Else
+                FTS_LOADED = True
+            End If
+        
+            ' Wait until all objects are loaded.
+            If (FTS_LOADED = True) Then
+                LoadSlides()
+            End If
+
+        End Sub
+
+        Sub LoadSlides()
+			On Error Resume Next
+            
+            Call LoadFTS.FtsRegisterStatusCallback(0, 0, 0, 0, 0, 0, 0, 0, 0, 4+8+16+32+64, 0)
+                        
+			If LoadFTS.FtsStartFileTransferReceive(VS_FTS_IP, VS_FTS_PORT, "", "", 0, 17409) Then 
+				MsgBox ReturnError(StartError)
+            Else
+				window.status = FTS_WAITING_STATUS
+            End If
+
+        End Sub
+
+        Sub LoadFTS_FtsOnTransferStarted
+				window.status = FTS_STARTING_STATUS
+        End Sub
+        
+        Sub LoadFTS_FtsOnFileTransferStarted
+			window.status = FTS_RECEIVING_STATUS & LoadFTS.CurrentFilePath
+        End Sub
+
+        Sub LoadFTS_FtsOnFileTransferCompleted
+			'window.status = FTS_FINISH_STATUS
+        End Sub
+
+		Sub LoadFTS_FtsOnTransferCompleted			
+			If bSlidesDownloaded = True Then
+				iNumSlidesDownloaded = LoadFTS.NumFilesTransferred
+				Call KillFts
+			Else
+				bSlidesDownloaded=True
+			End If
+		End Sub
+
+		Sub LoadFTS_FtsOnStatusChanged
+			Cancelled = (LoadFTS.TransferStatus = 5) and (LoadFTS.Result = -2147467260)
+			If Cancelled Then 
+					window.status = FTS_FINISH_STATUS & iNumSlidesDownloaded & FTS_FINISH_STATUS_TRANS
+				End If
+		End Sub
+
+		Sub KillFts
+			On Error Resume Next
+			Call LoadFTS.FtsCancelFileTransferReceive
+		End SUB
+-->
+</script>
+
+
+<script LANGUAGE="JavaScript" FOR="NSPLAY1" EVENT="ScriptCommand(TypeOfCommand, anyParam)">
+<!--
+{
+
+if (SHOW_END_TIME != "") {
+   var CLIENT_SHOW_END_TIME = new Date (SHOW_END_TIME);
+   var CLIENT_CURRENT= new Date();  
+   var timeEndRemaining = ((CLIENT_SHOW_END_TIME.getTime()) - (CLIENT_CURRENT.getTime()));
+   }
+ else
+   var timeEndRemaining = 0;
+
+if (timeEndRemaining >= 0) {
+		clearInterval(TimerID);
+		if( window.statuspageloaded ) {
+		STATUS_PAGE.Clock.innerHTML = STATUS_DURING; 
+		}
+		Param = makeRelative(anyParam);
+		if (TypeOfCommand.toUpperCase() == "URL") {
+         	if (document.location.href != Param)
+  {
+	   			document.location.href = "event.htm";
+  }
+}
+}
+}
+-->
+</script>
+
+</head>
+
+<body background="nsnbg.gif" id="lobby">
+<button language="javascript" name="ReplayButton" id="ReplayButton" STYLE="cursor: hand;color: black;padding: 2;font-size:8pt;position:absolute; left: 750; top:100; height:25" onclick="location.href = 'event.htm#archive';">
+</button>
+
+<div id="LITTLE_BLUE_LINE" STYLE="position:absolute; left: 660; top:113;"><img src="blueline.gif" alt="blueline.gif" height="1" width="90"></div>
+
+<div align="left" id="logo" STYLE="position: absolute; font-weight: bold; top:10;"><img src="logo.GIF" alt="Logo.GIF" WIDTH="161" HEIGHT="34">
+
+<div align="center" id="FEATURE_TITLE" STYLE="font-weight: normal; font-size: 11px;letter-spacing: 2px;background-color: white;border-color:black; text-align: center; border-style: solid;border-width: 1px; position:relative; left:5px; top:0 ; width:165"></div>
+</div>
+
+<div id="BLUE_LINE" STYLE="position:absolute; left: 180; top:60;"><img src="blueline.gif" alt="blueline.gif" height="2" width="824"></div>
+
+<div id="STATUS_TICKER" STYLE="position:absolute; left: 110; top:100; width: 525; HEIGHT: 25">
+<iframe id="STATUS_PAGE" WIDTH="550" HEIGHT="25" ALIGN="CENTER" FRAMEBORDER="1" MARGINHEIGHT="0" MARGINWIDTH="5" NAME="STATUS_PAGE" SCROLLING="AUTO" SRC="l_status.htm"></iframe>
+</div>
+
+
+
+<TABLE WIDTH=75% ALIGN=top STYLE="font-weight:normal;font-size: 10pt;position:absolute; left: 10; top:150" BORDER=0 CELLSPACING=3 CELLPADDING=4>
+	<TR>
+		<TD WIDTH=85 NOWRAP  VALIGN=top ><div id="EVENT_TITLE_LABEL" class="labeleffect" ></div>
+</TD>
+		<TD  VALIGN=top><div id="EVENT_TITLE" class="labeleffect" ></div>
+</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=85 NOWRAP VALIGN=top><div id="EVENT_PRESENTER_LABEL" class="labeleffect" ></div>
+</TD>
+		<TD  VALIGN=top><div id="EVENT_PRESENTER" ></div>
+</TD>
+	</TR>
+	<TR>
+		<TD  WIDTH=85 NOWRAP  VALIGN=top><div id="DATE_TIME_LABEL" class="labeleffect"></div>
+</TD>
+		<TD  VALIGN=top><div id="DATE_TIME" ></div>
+</TD>
+	</TR>
+	<TR>
+		<TD  WIDTH=85 NOWRAP VALIGN=top><div id="EVENT_CONTACT_LABEL" class="labeleffect"></div>
+</TD>
+		<TD  VALIGN=top><div id="EVENT_CONTACT" STYLE="z-index:10"></div>
+</TD>
+	</TR>
+	<TR>
+		<TD  WIDTH=85 NOWRAP VALIGN=top><div id="EVENT_DESCRIPTION_LABEL" class="labeleffect"></div>
+</TD>
+		<TD  VALIGN=top><div id="EVENT_DESCRIPTION"></div>
+</TD>
+	</TR>
+</TABLE>
+
+<div align="right" id="nsplayer" STYLE="position:absolute; top:-500;">
+
+<script LANGUAGE="JavaScript"> 
+<!--
+ { 
+  writeCodeBaseNSMediaPlayer();
+  LATEST_ASX = STATUS_PAGE.ASX;
+  NSPLAY1.Mute = "1";
+  NSPLAY1.BaseURL  = BASE_URL;
+  NSPLAY1.SendPlayStateChangeEvents = "1";
+  window.status = NSPLAYER_WINDOW_STATUS_WAITING;
+  
+  }
+  
+ -->
+</script>
+
+
+
+<script LANGUAGE="JavaScript"> 
+<!--
+{
+obj = document.all.item ("NSPLAY1")
+
+ if ((STATUS_PAGE.SHOWHASENDED != "1")&& (obj.readyState == 4)){
+  var TimerID =  window.setInterval ("startMediaPlayer();", 2000);  
+  }
+}
+-->
+</script>
+</div>
+ 
+<div align="right" id="fts" STYLE="position:absolute; top:100;">
+<script LANGUAGE="JavaScript"> 
+ <!--
+{
+if (MULTICAST == "1"){
+  writeCodeBaseFTS();
+  }
+}
+ -->
+</script>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Présentation de la sécurité sous UNIX</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+
+	<TR>
+		<TD BGCOLOR="#000000"><IMG SRC="home.gif" WIDTH=103 HEIGHT=21
+ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH="100%"><IMG 
+SRC="1ptrans.gif" WIDTH=1 
+HEIGHT=1 ALT="" BORDER=0></TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+<FONT FACE="Arial, Helvetica" SIZE=1><A HREF="http://www.microsoft.com/france" TARGET="_top"><IMG 
+SRC="msft.gif" WIDTH=91 
+HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+
+	<!--WEB SITE TITLE AND LOGO START-->
+
+	<!--WEB SITE TITLE AND LOGO START-->
+	
+		<!--WEB SITE TITLE AND LOGO START-->
+
+	<TR>
+		<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD colspan="2" nowrap bgcolor="#666699" valign="middle" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+		
+		<!--WEB SITE TITLE AND LOGO END-->
+		
+		<!--TOPIC TITLE AND BODY TEXT CELL START-->
+		
+		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous UNIX</font></b></font>
+
+<HR>
+
+			<A NAME="unixsecurityoverview"></A><P><A HREF="scuni_1.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;2 sur 10&nbsp;</sup></b></font><A HREF="scuni_3.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;Présentation de la sécurité sous UNIX</FONT><p><A NAME="scunix.doc-1015"></A>Dans FrontPage, trois types d'utilisateurs sont définis pour chaque site Web FrontPage étendu&nbsp;: les administrateurs, les auteurs et les visiteurs du site. Les autorisations sont cumulatives&nbsp;: tous les auteurs peuvent le visiter et tous les administrateurs disposent des autorisations de création de site et de visite.</P>
+
+			<p><A NAME="scunix.doc-1016"></A>Chaque site (et sous-site) Web FrontPage étendu contient des copies de trois scripts CGI exécutables. Ces scripts sont créés dans des dossiers sous le dossier du niveau supérieur d'un site Web FrontPage étendu&nbsp;: admin.exe pour les outils d'administration, author.exe pour la création de sites Web et shtml.exe pour les composants exécutables pendant la navigation comme les programmes de traitement de formulaires. FrontPage effectue toutes les tâches de création de site et d'administration en envoyant des requêtes HTTP POST à ces scripts.</P>
+
+			<p>Les auteurs, administrateurs et visiteurs des sites Web FrontPage étendus sont répertoriés dans le fichier d'accès du serveur Web qui spécifie quels utilisateurs peuvent exécuter (POST) ces scripts&nbsp;:
+
+<UL>
+					<LI class=LB1>Les utilisateurs pouvant exécuter le script shtml.exe sont des visiteurs.
+
+	<LI class=LB1>Les utilisateurs pouvant exécuter le script author.exe sont des auteurs.
+
+	<LI class=LB1>Les utilisateurs pouvant exécuter le script admin.exe sont des administrateurs.
+</UL>
+			
+			<P class=4>&nbsp;</P>
+
+			<p><A NAME="scunix.doc-1021"></A>Dans FrontPage, la liste des administrateurs, auteurs et visiteurs est définie pour chaque site Web FrontPage étendu. Chaque sous-site Web FrontPage étendu hérite des autorisations (la liste précitée) de son site Web parent ou utilise les siennes. Comme tous les autres programmes CGI, les extensions serveur FrontPage ne peuvent s'exécuter que si elles sont stockées dans des répertoires exécutables.</P>
+
+			<p>Les extensions serveur FrontPage sont stockées dans trois répertoires sous la racine de chaque site Web FrontPage étendu&nbsp;:</P>
+
+			<p>/racine du site Web FrontPage étendu</p>
+
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/_vti_bin
+			
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shtml.exe
+
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/_vti_adm
+			
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;admin.exe
+
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/_vti_aut
+			
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author.exe
+
+			<P class=4>&nbsp;</P>
+			<p><A NAME="scunix.doc-1030"></A>Le fichier de configuration du serveur doit être modifié pour faire de _vti_bin, _vti_adm et _vti_aut des répertoires exécutables. Vous lancez et contrôlez cette opération avec <B>Fpsrvadm</B>, l'utilitaire d'administration de serveur de FrontPage.</P>
+
+			<p>Pour réduire l'espace disque total requis pour gérer les sites Web FrontPage étendus, les fichiers exécutables FrontPage stockés dans les répertoires _vti_* sont des amorces de fichiers exécutables. Chacune appelle un fichier exécutable complet installé dans le répertoire /usr/local/frontpage/version4.0/exes.</P>
+		</TD>
+		
+		<!--TOPIC TITLE AND BODY TEXT CELL END-->
+		
+		<!--FAR-RIGHT COLUMN SECTION ART START-->
+	
+		<TD rowspan="20" nowrap>
+			<img SRC="secart.gif" align="center" alt="Image de la section Sécurité">
+		</TD>
+		
+		<!--FAR-RIGHT COLUMN SECTION ART END-->
+
+	</TR>
+	
+	<!--LEFT-NAVIGATION MENUS START-->
+
+	<TR>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" href="scintro.htm"><font color="#000000">&nbsp;&nbsp;Introduction</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" href="scwin.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous <br>&nbsp;&nbsp;Windows NT</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="adoview.htm"><font color="#000000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+	<!--LAST ROW START-->
+
+	<TR>
+    	<TD height="665" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+		
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+
+<!--FOOTER_BEGIN-->
+<BR>
+
+<TABLE cellspacing="0" cellpadding="0" border=0>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD width="237" valign="top"><A HREF="scuni_1.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;2 sur 10&nbsp;</sup></b></font><A HREF="scuni_3.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A></TD>
+    	<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+ 	</TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+   </TR>
+   
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

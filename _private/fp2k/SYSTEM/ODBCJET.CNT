@@ -1,0 +1,163 @@
+:Base odbcjet.hlp
+:Title Aide sur les pilotes de base de données ODBC Microsoft
+:Index Aide sur les pilotes de base de données ODBC=odbcjet.hlp
+1 Généralités (tous utilisateurs)
+2 Généralités=Overview>ref
+2 Nouvelles caractéristiques=WhatsNew>ref
+2 Architecture des pilotes de base de données=DesktopDatabaseDriversArchitecture>ref
+2 Fichiers ISAM de pilote=DriverISAMs>ref
+2 Configurations matérielle et logicielle requises=Requirements>ref
+2 Fichiers des composants ODBC=ODBCComponentFiles>ref
+2 Support technique=ProductSupport>ref
+2 Installation des pilotes=SettingUpDrivers>ref
+1 Utilisation des sources de données (tous utilisateurs)
+2 Ajout d'une source de données=AddingADataSource>ref
+2 Conversion des sources de données=DataSourceConversion>ref
+2 Modification d'une source de données=ModifyingADataSource>ref
+2 Suppression d'une source de données=DeletingADataSource>ref
+2 Boîte de dialogue Installation ODBC
+3 Compte approximatif de lignes=ApproximateRowCount>ref
+3 Taille de mémoire-tampon=BufferSize>ref
+3 Ordre de tri=CollatingSequence>ref
+3 Nom de la source de données=DataSourceName>ref
+3 Base de données=Database>ref
+3 Définir le format=DefineFormat>ref
+3 Description=Description>ref
+3 Répertoire=Directory>ref
+3 Cryptage=Encryption>ref
+3 Exclusif=Exclusive>ref
+3 Spécification d'extension=ExtensionsList>ref
+3 Locale=Locale>ref
+3 Délai d'attente par page=PageTimeout>ref
+3 Lecture seule=ReadOnly>ref
+3 Lignes à balayer=RowsToScan>ref
+3 Sélectionner le répertoire=SelectDirectory>ref
+3 Sélectionner les index=SelectIndexes>ref
+3 Sélectionner un classeur=SelectWorkbook>ref
+3 Affichage des lignes supprimées=ShowDeletedRows>ref
+3 Base de données Système=SystemDatabase>ref
+3 Utilisation du répertoire en cours=UseCurrentDirectory>ref
+3 Nom d'utilisateur=UserName>ref
+3 Version=Version>ref
+2 Format Texte
+3 Définition du format Texte=TextFormat>ref
+3 Fichier SCHEMA.ini=SchemaIni>ref
+3 Format de fichier Texte (Avancé)=TextGrammar>ref
+2 Problèmes de connexion
+3 Saisie du mot de passe=PasswordEntry>ref
+3 Réparation d'une base de données (Avancé)=DatabaseRepair>ref
+3 Compactage d'une base de données (Avancé)=DatabaseCompaction>ref
+3 Jointures hétérogènes/tables attachées=HeterogeneousJoinsAttachedTables>ref
+3 Saisie du mot de passe=OpeningMicrosoftExcelTables>ref
+3 Fichiers protégés par mot de passe=PasswordProtectedFiles>ref
+3 Intégrité référentielle=ReferentialIntegrity>ref
+3 Échec au terme de connexions répétées=FailingAfterRepeatedConnections>ref
+3 Données Lotus 1-2-3/EMS=Lotus123DataEMSData>ref
+3 Support Visual Basic=VisualBasicSupport>ref
+1 Utilisateurs avancés
+2 Utilisation dynamique des sources de données (utilisateurs avancés)
+3 SQLDriverConnect=SQLDriverConnect>ref
+3 Chaînes de connexion (Avancé)=ConnectString>ref
+3 Ajout, modification ou suppression dynamique d'une source de données=AddingModifyingOrDeletingADataSourceDynamically>ref
+3 SQLConfigDataSource=SQLConfigDataSource
+2 Problèmes SQL (utilisateurs avancés)
+3 Conformité à SQL 92 (Avancé)=SQL92Compliance>ref
+3 Syntaxe supplémentaire SQL ODBC prise en charge (Avancé)=Add_Grammar>ref
+3 Grammaire SQL propre au pilote
+4 Prédicat BETWEEN=BETWEENPredicate>ref
+4 CREATE INDEX, instruction=CREATEINDEXStatement>ref
+4 Calcul sur les dates=DateArithmetic>ref
+4 Littéraux de date, heure et horodateur=DateTimeAndTimestampLiterals>ref
+4 DROP INDEX, instruction=DROPINDEXStatement>ref
+4 Fichier Texte de longueur fixe=FixedWidthTextFile>ref
+4 GROUP BY liste-d'expressions=GROUPBYExpressionList>ref
+4 ORDER BY expression-list=ORDERBYExpressionList>ref
+4 ORDER BY avec GROUP BY=ORDERBYWithGROUPBY>ref
+4 Jointures externes=OuterJoins>ref
+4 Fonctions scalaires=ScalarFunctions>ref
+4 Noms de table=TableNames>ref
+3 Limites de la grammaire SQL
+4 Limites des fonctions de regroupement=AggregateFunctionsLimitations>ref
+4 Limites de l'instruction ALTER TABLE=ALTERTABLEStatementLimitations>ref
+4 Limites du prédicat AND=ANDPredicatesLimitations>ref
+4 Limites de l'instruction CALL=CALLStatementLimitations>ref
+4 Limites des noms de colonne=ColumnNameLimitations>ref
+4 Limites de la fonction CONVERT=CONVERTFunctionLimitations>ref
+4 Limites de l'instruction CREATE INDEX=CREATEINDEXStatementLimitations>ref
+4 Limites de l'instruction CREATE TABLE=CREATETABLEStatementLimitations>ref
+4 Limites du calcul de la date=DateArithmeticLimitations>ref
+4 Limites de l’instruction DELETE=DELETEStatementLimitations>ref
+4 Limites du mot clé DISTINCT=DISTINCTKeywordLimitations>ref
+4 Limites de l’instruction DROP INDEX=DROPINDEXStatementLimitations
+4 Limites de l'instruction DROP TABLE=DROPTABLEStatementLimitations>ref
+4 Limites de la clause FROM=FROMClauseLimitations>ref
+4 Limites de la clause HAVING=HAVINGClauseLimitations>ref
+4 Limites des identificateurs=IdentifiersLimitations>ref
+4 Limites des noms d'index=IndexNameLimitations>ref
+4 Limites de l’instruction INSERT=INSERTStatementLimitations>ref
+4 Limites du prédicat LIKE=LIKEPredicateLimitations>ref
+4 Limites de NOT NULL=NOTNULLLimitations>ref
+4 Limites de la clause ORDER BY=ORDERBYClauseLimitations>ref
+4 Limites des requêtes paramétrées=ParameterizedQueryLimitations>ref
+4 Limites des mots réservés=ReservedWordLimitations>ref
+4 Limites des fonctions scalaires=ScalarFunctionLimitations>ref
+4 Limites de SELECT DISTINCT=SELECTDISTINCTLimitations>ref
+4 Limites de l'instruction SELECT=SELECTStatementLimitations>ref
+4 Limites des fonctions de définition=SetFunctionsLimitations>ref
+4 Limites de tri=SortingLimitations>ref
+4 Limites des chaînes=StringLimitations>ref
+4 Limites des noms de tables=TableNameLimitations>ref
+4 Limites des références de table=TableReferencesLimitations>ref
+4 Limites de l’instruction UPDATE=UPDATEStatementLimitations>ref
+4 Limites des vues=ViewsLimitations>ref
+4 Limites de la clause WHERE=WHEREClauseLimitations>ref
+4 Limites de la clause WHERE CURRENT OF=WHERECURRENTOFClauseLimitations>ref
+2 Types de données (utilisateurs avancés)
+3 Types de données Microsoft Access (Avancé)=AccessDataTypes>ref
+3 Types de données dBASE (Avancé)=dBASEDataTypes>ref
+3 Types de données Microsoft Excel (Avancé)=ExcelDataTypes>ref
+3 Types de données Paradox (Avancé)=ParadoxDataTypes>ref
+3 Types de données Text (Avancé)=TextDataTypes>ref
+3 Limites des types de données (Avancé)=DataTypeLimit>ref
+2 Messages d'erreur (utilisateurs avancés)
+3 Messages d'erreur (Avancé)=Errors>ref
+1 Programmeurs
+2 Valeurs renvoyées par SQLGetInfo (programmeurs)
+3 Valeurs renvoyées par SQLGetInfo (Programmation)=SQLGetInfoReturnValues>ref
+2 Fonctions de l'API ODBC (programmeurs)
+3 Fonctions de l'API ODBC prises en charge=SupportedODBCAPIFunctions>ref
+3 SQLBindParameter=SQLBindParameter>ref
+3 SQLColAttributes=SQLColAttributes>ref
+3 SQLColumns=SQLColumns>ref
+3 SQLConfigDataSource=SQLConfigDataSource>ref
+3 SQLGetCursorName=SQLGetCursorName>ref
+3 SQLGetData=SQLGetData>ref
+3 SQLGetInfo=SQLGetInfo>ref
+3 SQLGetStmtOption=SQLGetStmtOption>ref
+3 SQLGetTypeInfo=SQLGetTypeInfo>ref
+3 SQLMoreResults=SQLMoreResults>ref
+3 SQLPrepare=SQLPrepare>ref
+3 SQLProcedureColumns=SQLProcedureColumns>ref
+3 SQLProcedures=SQLProcedures>ref
+3 SQLSetConnectOption=SQLSetConnectOption>ref
+3 SQLSetCursorName=SQLSetCursorName>ref
+3 SQLGetInfo=SQLSetPos>ref
+3 SQLSetScrollOptions=SQLSetScrollOptions>ref
+3 SQLSetStmtOption=SQLSetStmtOption>ref
+3 SQLSpecialColumns=SQLSpecialColumns>ref
+3 SQLStatistics=SQLStatistics>ref
+3 SQLTables=SQLTables>ref
+3 SQLTransact=SQLTransact>ref
+2 Problèmes de mise en oeuvre (programmeurs)
+3 Erreurs arithmétiques=ArithmeticErrors>ref
+3 Adresse de base des pilotes=BaseAddressOfDrivers>ref
+3 Création et ouverture des tables=CreatingAndOpeningTables>ref
+3 Compatibilité=Compatibility>ref
+3 Descripteurs=Descriptors>ref
+3 Diagnostiques=Diagnostics>ref
+3 Fonctions acceptant les paramètres en chaîne=Functions_Accepting_String_Parameters>ref
+3 hstmts multiples=MultipleHstmts>ref
+3 Problèmes de performance=Performance_Issues>ref
+3 Lecture seule=ReadOnlyStatus>ref
+3 DLL d'installation=SetupDLL>ref
+3 DLL de conversion=TranslationDLLs>ref

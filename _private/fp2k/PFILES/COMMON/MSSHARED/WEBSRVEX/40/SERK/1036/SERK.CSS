@@ -1,0 +1,284 @@
+<!-- SERK Online version - Style Sheet Last updated - 8/18/98 -->
+<html>
+
+<head>
+<style>
+
+<!-- BODY = default paragraph font (edited by a-pennyp 8/17 -->
+	body		{background: #ffffff; font-family: Verdana, Arial, Helvetica, MS Sans Serif; font-size: 80%; margin-top: 0px; margin-left: 0px; margin-right: 0px;}
+	
+<!-- HYPERLINKS -->
+	a:link	{color: #003366;}
+	a:active	{color: #003366;}
+	a:visited	{color: #003366;}
+	
+	
+<!-- LISTS (edited by erin + klb 4/30 -->
+	ol		{font-size: 100%; margin-top: .5em; margin-bottom: 0em; margin-left: 4em;}
+	ul		{font-size: 100%; margin-top: .5em; margin-bottom: 0em;}
+	ol ul	{margin-top: .5em;}
+	ul ul	{margin-top: .5em;}
+	li		{margin-bottom: .7em; margin-left: -1em;}
+
+
+<!-- PREFORMATTING/CODE -->
+	pre		 {font-size: 100%; margin-top: 1.2em; margin-bottom: 1.2em;}
+	code	 {font-family: courier new, courier; font-size: 115%; }
+	
+<!-- TABLES -->
+
+	table	 {font-size: 100%; cellspacing: 0; cellpadding: 3; bordercolor: #DDDDDD; frame: below; rules: rows;}
+	th		{text-align: left; background: #DDDDDD; vertical-align: top;} <!--edited by a-pennyp 8/25-->
+	tr		{vertical-align: top;}
+	td		{margin: .25em; vertical-align: top; align: left;}
+	
+<!-- SIDEBARS -->
+    .borders {border-left:#333399 2px solid; border-right:#333399 2px solid; padding-left:18px; padding-right: 18px; padding-bottom: 18px;}
+
+
+<!-- PARAGRAPH -->
+	p		{margin-top: .6em; margin-bottom: .6em;}
+
+<!-- Character Styles -------------------------------------------------------------------------- -->
+
+	.ampm		{font-size: 80%; }
+	.callh		{font-weight: bold; color: "#0000ff";}
+	.callka		{font-weight: bold; color: "#0000ff";}
+	.callkn		{font-weight: bold; color: "#0000ff";}
+	.cah		{font-weight: bold; color: "#0000ff";}
+	.ctt		{font-size: 125%;}
+	.cte		{font-size: 125%; }
+	.ctfe		{font-size: 125% color=#FF0000 }
+	.copy		{font-size: 80%;}
+	.crbt		{font-style: italic;} 
+	.crh		{font-weight: bold; color: "#0000ff";}
+	.crkt		{font-weight: bold;}
+	.det		{font-weight: bold;}
+	.elnj		{font-weight: bold;}
+	.elnp		{font-weight: bold;}
+	.eln		{font-weight: bold;}
+	.emd		{ }
+	.ems		{ }
+	.end		{ }
+	.xa			{ }
+	.xeem		{font-weight: bold;}
+	.xsem		{font-weight: bold;}
+	.fnum		{ }
+	.fixt		{color: #ff0000;}	<!-- *fix this text for incorrectly used styles / red -->
+	.fr			{vertical-align: super;}
+	.ih			{font-weight: bold; color: "#0000ff";}
+	.jump		{ }	<!-- cc-don't think we need this -->
+	.kn			{font-size: 80%; text-transform: uppercase; }
+	.leej		{font-weight: bold;}	<!-- cc-don't think we need this -->
+	.leep		{font-weight: bold;}	<!-- cc-don't think we need this -->
+	.lee		{font-weight: bold;}
+	.lej		{ } <!-- cc-don't think we need this -->
+	.lep		{ } <!-- cc-don't think we need this -->
+	.le			{ }
+	.lnbrk		{ }
+	.lj			{font-weight: bold;}	<!-- cc-don't think we need this -->
+	.lp			{font-weight: bold;}	<!-- cc-don't think we need this -->
+	.l			{font-weight: bold;}
+	.menulink		{text-decoration: none; font-weight: bold; font-size: 85%; color: #000000}	<!-- added for SERK by a-pennyp 8/17 -->
+	.menulist		{text-decoration: none; font-weight: bold; text-indent: 2em;}	<!-- added for SERK by a-pennyp 8/17 -->
+	.nargj		{font-weight: bold; font-style: italic;} <!-- cc-don't think we need this -->
+	.nargp		{font-weight: bold; font-style: italic;} <!-- cc-don't think we need this -->
+	.narg		{font-weight: bold; font-style: italic;}
+	.ntrmj		{font-style: italic;} 	<!-- cc-don't think we need this -->
+	.ntrmp		{font-style: italic;} 	<!-- cc-don't think we need this -->
+	.ntrm		{font-style: italic;}
+	.nh			{font-weight: bold; color: "#0000ff";}
+	.op			{font-weight: bold;}
+	.ob			{ }
+	.pb			{ }
+	.pj			{font-style: italic;}
+	.pp			{font-style: italic;}
+	.p			{font-style: italic;}
+	.pop		{ } 	<!-- cc-don't think we need this -->
+	.proci		{font-family: MSIcons; color: "#0000ff";}
+	.procl		{font-weight: bold; color: "#0000ff";}
+	.reg		{font-size: 80%;}
+	.rc			{ } <!-- cc-do we need this?? -->
+	.sub		{font-size: 70%; vertical-align: sub;}
+	.sup		{font-size: 70%; vertical-align: super;}
+	.tfr		{font-size: 60% ;vertical-align: super;}
+	.title	{font-size: 130%; font-family: arial, helvetica; color: 000000; font-weight: bold;} <!-- added by a-pennyp for SERK -->
+	.tnum		{ }
+	.ts			{ }
+	.tph		{font-weight: bold; color: "#0000ff";}
+	.tm			{font-size: 80%;}
+	.wh			{font-weight: bold; color: "#0000ff";}
+
+<!-- Paragraph styles ------------------------------------------------------------------------- -->
+
+	.a			{ } 
+	.ab			{ } 
+	.alnsr		{ }
+	.callkt		{text-indent: -2em; margin-left: 2em;}
+	.cae		{margin-left: 2em; }
+	.cas		{margin-left: 2em; }
+	.cat		{margin-left: 2em; }
+	.cha		{ }
+    .chsum		{ }
+	.ct			{ }
+	.ctnsr		{ }
+	.cri		{margin-left: 2em;}
+	.crt		{margin-left: 2em;}
+	.dt1		{text-indent: -2em; margin-left: 2em;}
+	.dt2		{margin-left: 0em;}
+	.errd		{margin-left: 2em;}
+	.errm		{font-weight: bold;}
+	.errt		{font-style: italic; }
+	.exl		{color: "#0000ff"; } <!-- Blue box with white text in the doc. I can't get it to convert properly-->
+    .xend		{font-weight: bold;}
+	.xs			{font-weight: bold;}
+	.ft			{font-weight: bold;}
+	.fixp		{color: #00ff00;}	<!-- *fix this paragraph for incorrectly used styles / green -->
+	.foot		{font-size: 80%;}
+	.table  {border: #666666 solid 1px; background-color: #CC9999; valign: middle; align: left; font-weight: bold; padding: 6px; margin-left: .5px; margin-top: -1pt; line-height: .5 pt;}	<!-- added for SERK only edited by a-pennyp 8/17 -->
+	.table2 {border: #666666 solid 1px; valign: middle; align: left; font-weight: bold; padding: 6px; margin-left: .5px; margin-top: -1pt; line-height: .5 pt;}	<!-- added for SERK only edited by a-pennyp 8/17 -->
+
+
+<!-- Heading 3, Org Heading 1,h1 (edited 8/25 a-pennyp)-->
+	h1		{color: 000000; font-size: 190%; font-family: arial, helvetica; font-weight: bold; margin-bottom: .5em;}  <!--changed style to match iestyle.css -->
+	.cht		{font-size: 175%; margin-bottom: .5em;} <!--Chapter/Appendix Title. Changed to match the iestyle.css-->
+	.gt		{font-size: 145%; margin-bottom: .5em;} <!--Glossary Title-->
+	.ixt		{font-size: 145%; margin-bottom: .5em;} <!--Index Title-->
+	.int		{font-size: 145%; margin-bottom: .5em;} <!--Intro Title-->
+
+<!-- Heading 4, Org Heading 2,h2 (edited 8/18 a-pennyp) -->
+	h2			{font-size: 140%; font-family: arial, helvetica; margin-top: 1.5em; margin-bottom: .5em; color: 000000; font-weight: bold;}    <!--changed style to match iestyle.css-->   
+	
+<!-- Heading 5,Org Heading 3,h3 (edited 8/18 a-pennyp) -->
+	h3			{font-size: 130%; font-family: arial, helvetica; margin-top: .5em; margin-bottom: .5em; color: 000000; font-weight: bold;}	<!--changed style to match iestyle.css-->
+
+<!-- Heading 6,Org Heading 4,h4 (edited 8/18 a-pennyp) -->
+	h4		   {font-size: 120%; font-family: arial, helvetica; margin-top: 1.2em; margin-bottom: .5em; color: 000000; font-weight: bold;}	<!--changed style to match iestyle.css-->
+	
+<!-- Heading 7,Org Heading 5,h5 (edited 8/18 a-pennyp) -->
+	h5			{font-size: 110%; margin-top: 1.2em; margin-bottom: .5em; font-weight: bold;}
+	
+<!-- Heading 8,DO NOT USE_h8-->
+
+<!-- Heading 9,List Procedure Heading,lproch -->
+	.lproch		{font-weight: bold; color: "#000000";}	<!-- edited for SERK by a-pennyp 8/25 -->
+
+	.ict		{margin-left: 2.4em;}
+	.ilb		{margin-left: 0em;}
+	.ils		{margin-left: 0em;}
+	.it			{margin-left: 2em;}
+	.l1		{margin-left: -3em; list-style-type: none;}	<!-- added for SERK by a-pennyp 8/25 -->
+	.l2		{list-style-image: url("bullet.gif"); margin-left: 0em;}	<!--ValerK edited path to bullet.gif from images/bullet.gif to bullet.gif 10/19--><!-- added for SERK by a-pennyp 8/25 -->
+	.l3		{list-style-image: url("bullet.gif"); margin-left: 3em;}	<!--ValerK edited path to bullet.gif from images/bullet.gif to bullet.gif 10/19--><!-- added for SERK by a-pennyp 8/25 -->
+	.lalph2		{ } 
+	.la			{margin-left: 0em; }
+	.la2		{ }
+	.lb1		{list-style-image: url("bullet.gif");}	<!--ValerK edited path to bullet.gif from images/bullet.gif to bullet.gif 10/19--><!-- added for SERK by a-pennyp 8/17 -->
+	.lb2		{ list-style-image: url("bullet.gif");}	<!--ValerK edited path to bullet.gif from images/bullet.gif to bullet.gif 10/19--><!-- added for SERK by a-pennyp 8/17 -->
+	.lcae		{ }
+	.lcas		{ }
+	.lcat		{margin-left: 0em; }
+	.lct1		{margin-left: 0em;  }
+	.lct2		{margin-left: 0em; }
+	.ft1		{font-weight: bold;}
+	.ft2		{font-weight: bold;}
+	.lit		{margin-left: 0em; }
+	.lmc		{ }
+	.lnt		{margin-left: 0em; }
+	.lproc		{ list-style-image: url("bullet.gif");}	<!--ValerK edited path to bullet.gif from images/bullet.gif to bullet.gif 10/19--><!-- added for SERK by a-pennyp 8/17 -->
+	.lprocs		{ }
+	.lproct		{ }
+	.ls			{ }
+	.ls2		{ }
+	.lsyn1		{text-indent: -2em; margin-left: 2em;}
+	.lsyn2		{text-indent: -2em; margin-left: 2em;}
+	.lt1		{margin-left: 0em; }
+	.lt2		{margin-left: 0em; }
+	.ltpt		{margin-left: 0em; }
+	.nct		{margin-left: 2.4em;}
+	.nlb		{margin-left: 0em;}
+	.nls		{margin-left: 0em;}
+	.nt		{margin-left: 2em;}
+	.nsrnh		{font-size: 80%; text-transform: uppercase; }
+	.nsrt		{font-size: 80%;}
+	.proct		{ }
+	
+	.sbra		{margin-left: 4em; }
+	.sbrcrt		{margin-left: 4em; }
+	.sbrer		{margin-left: 4em; }
+	.sbres		{margin-left: 4em; }
+	.sbrespb	{margin-left: 4em; }
+	.sbrh		{margin-left: 3.2em; font-size: 125%; margin-top: 2em; margin-bottom: .5em;}
+	.sbrlb		{margin-left: 2em; }
+	.sbrle		{margin-left: 4em; }
+	.sbrsr		{margin-left: 4em; }
+	.sbrss		{margin-left: 4em; }
+	.sbrsspb	{margin-left: 4em; }
+	.sbrt		{margin-left: 4em; }
+
+<!-- spacing styles -->
+	.4			{line-height: 4pt;}
+	.6			{line-height: 6pt;}
+	.sansr		{line-height: 6pt;}
+	.satow		{line-height: 6pt;}
+	.satownsr	{line-height: 6pt;}
+<!-- end of spacing styles -->
+
+	.synnsr		{ }
+	.syn		{text-indent: -2em; margin-left: 2em;}	
+	
+	.tart		{margin-left: 0em; }
+	.tct		{margin-left: 0em; }
+	.tcrt		{margin-left: 0em; }
+	.tft		{margin-left: 0em;font-size: 75%; }
+	.tlb		{margin-left: 0em; }
+	.tls		{margin-left: 0em; }
+	.tnt		{margin-left: 0em; }
+	.tof		{text-align: right;}
+	.tproct		{margin-left: 0em;}
+	.tsyn		{text-indent: -2em; margin-left: 2em;}
+	.tt			{margin-left: 0em; }
+	.tti		{margin-left: 2em;}
+	.ttl		{font-weight: bold; font-color: #000000;} <!--edited by a-pennyp 8/25-->
+
+	.t			{ }
+	.tpi		{margin-left: 2em; }
+	.tplb		{margin-left: 0em; }
+	.tpls		{margin-left: 0em; }
+	.tpt		{margin-left: 2em;}
+	.toc2       {font-size: 85%; color: #003366; font-weight: bold;}
+	.toc3		{font-size: 85%; color: #003366; padding-left: 6px;}	
+	.toc4		{font-size: 100%; text-indent: -.8em; margin-left: 1.7em; }
+    .toc3highlight {font-size: 85%; font-weight: bold; color: "rgb(0,51,102)"; background: "#CCCCCC"; margin-top: -1px; padding: .6em; }
+	.toc5		{text-indent: -2em; margin-left: 6em;}	
+	.toch		{font-weight: bold;}	
+
+	.tsa		{margin-left: 4em; }
+	.tsaw		{margin-left: 4em; }
+	.tsawesb	{margin-left: 4em; }
+	.tsawssb	{margin-left: 4em; }
+	.tscrt		{margin-left: 4em; }
+	.tse		{margin-left: 4em; }
+	.tsetopb	{margin-left: 4em; }
+	.tsesb		{margin-left: 4em; }
+	.tsh1		{margin-left: 2.8em; }
+	.tsh2		{margin-left: 3.2em; font-size: 125%}
+	.tslb		{margin-left: 2em; }
+	.tsproct	{margin-left: 4em; }
+	.tss		{margin-left: 4em; }
+	.tsstopb	{margin-left: 4em; }
+	.tsssb		{margin-left: 4em; }
+	.tst		{margin-left: 4em; }	
+
+	.we			{margin-left: 2em; }
+	.wi			{margin-left: 2em; }
+	.ws			{margin-left: 2em; }
+	.wt			{margin-left: 2em;}
+	
+</style>
+<title></title>
+</head>
+
+<body>
+</body>
+</html>

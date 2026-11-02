@@ -1,0 +1,58 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<meta name="Microsoft Theme" content="<%Theme%>">
+<meta name="Microsoft Border" content="<%Border%>">
+<title><%ServicesPageTitle%></title>
+</head>
+
+<body>
+
+<%if NumServices GT 0%>
+
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText"
+preview="Insérez ici une présentation générale de vos services. Ajoutez des services à la liste ci-dessous dans l'ordre qui vous semble le plus approprié, et créez-y des liens hypertexte vers leurs pages individuelles." --> </p>
+
+<!-- LOCALIZE the text in this definition list -->
+<dl>
+<%if NumServices GT 0%>
+    <dt><strong><a href="<%Serv1Url%>">Nom du service 1</a></strong> </dt>
+    <dd> <p> Description du service 1...</p>
+        <p> </p>
+    </dd>
+<%endif%>
+<%if NumServices GT 1%>
+    <dt><strong><a href="<%Serv2Url%>">Nom du service 2</a></strong> </dt>
+    <dd> <p> Description du service 2...</p>
+        <p> </p>
+    </dd>
+<%endif%>
+<%if NumServices GT 2%>
+    <dt><strong><a href="<%Serv3Url%>">Nom du service 3</a></strong> </dt>
+    <dd> <p> Description du service 3...</p>
+        <p> </p>
+    </dd>
+<%endif%>
+<%if NumServices GT 3%>
+    <dt><strong><a href="<%Serv4Url%>">Nom du service 4</a></strong> </dt>
+    <dd> <p> Description du service 4...</p>
+        <p> </p>
+    </dd>
+<%endif%>
+<%if NumServices GT 4%>
+    <dt><strong><a href="<%Serv5Url%>">Nom du service 5</a></strong> </dt>
+    <dd> <p> Description du service 5...</p>
+        <p> </p>
+    </dd>
+<%endif%>
+</dl>
+<%endif%>
+
+</body>
+</html>
+
+
+

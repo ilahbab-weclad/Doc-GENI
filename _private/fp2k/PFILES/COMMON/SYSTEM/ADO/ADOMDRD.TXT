@@ -1,0 +1,35 @@
+---------------------------------------------------------------------------------
+Fichier Lisezmoi pour Microsoft ActiveX Data Objects (Multidimensionnel) (ADO MD)
+---------------------------------------------------------------------------------
+
+(c) 1998 Microsoft Corporation. Tous droits réservés.
+
+Ce document fournit des informations de dernière minute ou d'autres 
+indications en complément de la documentation de Microsoft ADO MD.
+
+------------------
+TABLE DES MATIÈRES
+------------------
+
+1. DESCRIPTION DU PRODUIT
+   
+2. NOTES TECHNIQUES
+
+3. ERREURS CONNUES, LIMITES ET SOLUTIONS
+
+-------------------------
+1. DESCRIPTION DU PRODUIT
+-------------------------
+Microsoft ActiveX Data Objects (Multidimensionnel) (ADO MD) facilite l'accès aux données multidimensionnelles écrites dans les langages Microsoft Visual Basic, Microsoft Visual C++ ou Microsoft Visual J++. ADO MD est un complément de Microsoft ActiveX Data Objects (ADO) incluant des objets spécifiques aux données multidimensionnelles tels que les objets CubeDef et Cellset. Avec ADO MD, vous pouvez aisément parcourir des schémas multidimensionnels, effectuer une requête sur un cube et récupérer les résultats.
+
+-------------------
+2. NOTES TECHNIQUES
+-------------------
+Aucune note technique n'est disponible actuellement.
+
+----------------------------------------
+3. ERREURS CONNUES, LIMITES ET SOLUTIONS
+----------------------------------------
+La liste ci-dessous répertorie les erreurs d'ADO MD identifiées à ce jour.
+
+Aucune erreur n'a été identifiée pour le momeent.

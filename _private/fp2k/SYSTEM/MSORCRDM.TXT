@@ -1,0 +1,37 @@
+------------------------------------
+Informations de mises à jour
+
+Pilote Microsoft(R) ODBC pour Oracle
+------------------------------------
+
+(c) 1998 Microsoft Corporation
+	  
+----------------------------
+Comment utiliser ce document
+----------------------------
+
+Pour afficher ce document dans le bloc-notes, maximisez la fenêtre du bloc-notes et cliquez sur Retour à la ligne automatique dans le menu Édition. Pour l'imprimer, ouvrez-le dans le bloc-notes ou dans tout autre logiciel de traitement de texte, puis utilisez la commande Imprimer du menu Fichier.
+
+Pour connaître les modifications apportées dans la nouvelle version de ce pilote, reportez-vous à la rubrique "Nouveautés" de ce fichier.
+
+------------
+PRÉSENTATION
+------------
+
+Le pilote Microsoft ODBC pour Oracle est conforme aux spécifications ODBC décrites dans le guide de référence du programmeur ODBC (Version 2.0 ou ultérieure) pour votre système d'exploitation. Ce pilote vous permet de connecter des applications supportant l'ODBC à des bases de données Oracle.
+
+
+----------------------
+Configuration minimale
+----------------------
+
+Pour utiliser le pilote Microsoft ODBC pour Oracle, vous devez avoir le logiciel client Oracle, version 7.3 ou ultérieure, installé sur votre ordinateur. Le pilote Microsoft ODBC pour Oracle supporte uniquement la version 2.3 ou une version ultérieure de SQL*Net 2.3. Pour plus d'informations sur les produits Oracle, reportez-vous à votre documentation Oracle.
+
+----------
+Nouveautés
+----------
+
+Cette version du pilote Microsoft ODBC pour Oracle comprends de nombreuses améliorations au niveau de la stabilité et de la performance. Aucune nouvelle fonction n'a cependant été ajoutée.
+
+Cette version du pilote Microsoft ODBC pour Oracle est plus stable car elle a été testée sur de nombreux systèmes tels que Microsoft Transaction Server et Internet Information Server.
+

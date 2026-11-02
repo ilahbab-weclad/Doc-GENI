@@ -1,0 +1,445 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Installer Microsoft Visual SourceSafe pour une utilisation avec FrontPage</TITLE>
+
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+	<TR>
+	<TD BGCOLOR="#000000">
+	<IMG SRC="home.gif" WIDTH=103 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+	<TD colspan="2" BGCOLOR="#000000" WIDTH=100%>
+	<IMG SRC="1ptrans.gif" WIDTH=1 HEIGHT=1 ALT="" BORDER=0></TD>
+	<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+	<FONT FACE="Arial, Helvetica" SIZE=1>
+	<A HREF="/" TARGET="_top">
+	<IMG SRC="msft.gif" WIDTH=91 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+	
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+	
+	<!--WEB SITE TITLE AND LOGO STARTS-->
+
+	<TR>
+	<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressource des extensions serveur Microsoft FrontPage"></TD>
+    <TD width="20" nowrap></TD>
+    <TD colspan="2" nowrap bgcolor="#666699" valign="center" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+</TR>
+
+<TR>
+    <TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    <TD width="20" nowrap></TD>
+	
+	<!--WEB SITE TITLE AND LOGO ENDS-->
+
+	<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
+	
+	<TD rowspan="21" width="460"><a name="top"></a><p><font color="#666699"><b><font size="+1">Tâches administratives avancées</font></b></font>
+
+<HR>
+
+	<UL>
+		<LI class=LB1><a href="#installingvsswithfp">Installer Microsoft Visual SourceSafe pour une utilisation avec FrontPage </A>
+		<LI class=LB1><a href="#ESI">Activation de l'intégration de Source Safe </A>
+		<LI class=LB1><a href="#YVSSC">Votre configuration Visual SourceSafe</A>
+		<LI class=LB1><a href="#1019">Fichier INI Visual SourceSafe</A>
+		<LI class=LB1><a href="#1020">Définition des autorisations pour le répertoire Visual SourceSafe</A>
+		<LI class=LB1><a href="#1021">Propriétés du service WWW </A>
+		<LI class=LB1><a href="#1022">Autorisations de comptes anonymes</A>
+	</UL>
+	
+	<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top">&nbsp;</TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+	<H3><A NAME="installingvsswithfp"></A>Installer Microsoft Visual SourceSafe pour une utilisation avec FrontPage </H3>
+
+	<p><A NAME="advss.doc-1008"></A>L'intégration à Microsoft Visual SourceSafe version&nbsp;5.0 ou ultérieure est disponible sur tous les serveurs Web gérés par FrontPage sous Microsoft&#174; Windows&nbsp;NT&#174; Server version&nbsp;4.0 ou ultérieure, Windows&nbsp;NT Workstation version&nbsp;4.0 ou ultérieure, et Windows&#174;&nbsp;95/98.</P>
+
+	<p>Sous Windows&nbsp;95, le Serveur Web personnel Microsoft nécessite la mise à jour Windows&nbsp;95 de DCOM (Distributed Component Object Model) pour fonctionner avec Visual SourceSafe. Pour plus d'informations, reportez-vous à <a href="http://www.microsoft.com/com/dcom/dcom1_2/default.htm">http://www.microsoft.com/com/dcom/dcom1_2/default.htm</a> (site en anglais).</P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="ESI"></A>Activation de l'intégration de SourceSafe </H3>
+
+	<p>Pour utiliser Visual SourceSafe avec FrontPage, vous devez choisir <B><span class=L>Activer l'intégration SourceSafe</span> </B>lors de l'installation de Visual SourceSafe&nbsp;: 
+
+<OL>
+			<LI class=LN>Exécutez le programme d'installation de Visual SourceSafe, Setup.exe, à partir du CD Visual SourceSafe.<LI class=LN>Sélectionnez l'option d'installation <B>Personnalisée</B>.<LI class=LN>Dans la boîte de dialogue <B>Personnalisée</B> de Visual SourceSafe, cliquez sur la case à cocher <B>Activer l'intégration SourceSafe</B>.<LI class=LN>Cliquez sur <B>Continuer</B>.</li>
+		</OL>
+
+	<P class=4>&nbsp;</P>
+	
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+	
+	<!-- Insert text from source file here. It's a lot and it's going to be ugly, but we can't add another file -rs -->
+
+<!--START_new text-->
+<H3><A Name="YVSSC"></A>Votre configuration Visual SourceSafe </H3>
+
+<P>Vous pouvez stocker votre base de données Visual SourceSafe sur le même ordinateur que celui du serveur Web (une base de données locale)  ou sur un ordinateur dIfférent (une base de données distante). Si la base de données se trouve sur le même ordinateur que le serveur Web mais qu'elle n'est accessible qu'en utilisant les chemins UNC, elle est considérée comme étant distante. Par exemple, la base de données suivante est distante car le fichier Srcsafe.ini sur l'ordinateur IIS comporte l'une des lignes suivantes :
+
+<P>Data_Path = X:\vssdata
+
+<P>Data_Path = \\IIS-Machine\vssdata 
+
+<P>Vous pouvez également consulter le registre pour savoir si la base est accessible par des chemins UNC ou des chemin mappés. 
+
+<P>Vous devez noter votre type de configuration, car si vous utilisez une base de données distante, vous devrez effectuer quelques étapes supplémentaires. 
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="advss.doc-1019"></A><A NAME="1019"></A>Fichier INI Visual SourceSafe</H3>
+
+<P>Les extensions serveur FrontPage doivent trouver un fichier Srcsafe.ini pour effectuer des opérations Visual SourceSafe via une automatisation OLE. Visual SourceSafe 5.0 utilise généralement la clé de registre HKEY_LOCAL_MACHINE\Software\Microsoft\SourceSafe\SCCServerPath. Bien que cette clé pointe vers le fichier Ssscc.dll dans le répertoire VSS\Win32, les extensions serveur FrontPage utilisent le fichier Srcsafe.ini dans le répertoire VSS. Visual SourceSafe 6.0 utilise normalement le fichier Srcsafe.ini lors de l'installation de Visual SourceSafe sur le serveur Web. 
+
+<P>Les procédures suivantes supposent que le serveur Web est un serveur IIS s'exécutant sous Windows NT&nbsp;4.0, que la base de données Visual SourceSafe est également sous Windows NT&nbsp;4.0 et que tous deux se trouvent sur des partitions NTFS.<BR>&nbsp;
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="advss.doc-1020"></A><A NAME="1020"></A>Autorisations pour les répertoires Visual SourceSafe </H3>
+
+<p>Vous devez définir des autorisations dans la structure de répertoires Visual SourceSafe et pour les fichiers. 
+
+		<OL>
+			<LI class=LN>Sur l'ordinateur sur lequel se trouve la base de données Visual SourceSafe, configurez les autorisations de sécurité et de partage pour les répertoires Visual SourceSafe :
+				<UL>
+					<LI class=LB1>Pour connaître les autorisations des répertoires, dans l'Explorateur Windows NT, cliquez avec le bouton droit de la souris, puis cliquez sur <B>Propriétés</B> dans le menu contextuel, cliquez sur l'onglet <B>Sécurité</B>, puis sur <B>Autorisations</B>. 
+						<p>Pour connaître les autorisations partagées, dans l'explorateur Windows NT, cliquez avec le bouton droit de la souris sur le répertoire partagé, cliquez sur <B>Propriétés</B> dans le menu contextuel, puis sur l'onglet <B>Partage</B>, et cliquez sur <B>Autorisations</B>. 
+					<LI class=LB1>Utiliser la commande <B>Modifier les autorisations</B> pour tous les comptes de connexion Visual SourceSafe pour tous les fichiers et sous-répertoires sous le répertoire d'installation du serveur Visual SourceSafe (y compris le répertoire de données Visual SourceSafe s'il se trouve à un emplacement différent). 
+						<p>On suppose que les comptes Administrateurs et Système auront le Contrôle total sur toute la hiérarchie Visual SourceSafe. Bien que des restrictions plus strictes soient possibles, les fonctionnalités de Visual SourceSafe peuvent moins bien fonctionner avec. 
+				</UL>
+				
+			<LI class=LN>Octroyez au moins les droits en lecture pour tous les comptes de connexion Visual SourceSafe pour les fichiers suivants :
+				<UL>
+					<LI class=LB1>Srcsafe.ini
+					<LI class=LB1>Um.dat
+					<LI class=LB1>Users.txt
+				</UL>	
+				
+				<p>Octroyez au moins les droits en lecture et en écriture à tous les comptes de connexion Visual SourceSafe pour les fichiers et répertoires suivants : 
+
+				<UL>
+					<LI class=LB1>Vss\Users\&lt;logon account directory&gt;\
+					<LI class=LB1>Vss\Data\
+					<LI class=LB1>Vss\Temp\
+					<LI class=LB1>Rights.dat
+					<LI class=LB1>Status.dat
+				</UL>	
+				
+	</OL>
+				
+	<P>Si vous utilisez une base de données distante Visual SourceSafe, vous devez effectuer les opérations suivantes.
+
+<UL>
+<LI class=LB1><a href="#advss.doc-1021">Propriétés du Service WWW </A>
+<LI class=LB1><a href="#advss.doc-1022">Autorisations de comptes anonymes </A>
+</UL>
+
+<P class=4>&nbsp;</P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="advss.doc-1021"></A><A NAME="1021"></A>Propriétés du Service WWW </H3>
+
+<p>Vous devez définir les propriétés du Service WWW sur le serveur Web. 
+
+	<OL>
+		<LI class=LN>Dans le Gestionnaire des services Internet, ouvrez le dossier <B>Internet Information Server</B>, cliquez avec le bouton droit de la souris sur le serveur Web, puis cliquez sur <B>Propriétés</B> dans le menu contextuel. 
+		<LI class=LN>Dans <B>Propriétés principales</B>, cliquez sur <B>Service WWW</B>, puis sur <B>Modifier</B>.
+		<LI class=LN>Cliquez sur l'onglet <B>Sécurité du répertoire</B>, puis sous <B>Connexions anonymes et contrôle d'authentification</B>, cliquez sur <B>Modifier</B>.
+		<LI class=LN>Cochez la case <B>De base (texte clair)</B> mais ne sélectionnez pas la case <B>Authentification Stimulation/Réponse de Windows NT </B>.
+	</OL>
+	
+	<P class=4>&nbsp;</P>
+	
+	<p>L'authentification Stimulation/Réponse de Windows NT est également appelé NTLM. Comme cette option n'est pas sélectionnée, les utilisateurs doivent entrer leur noms d'utilisateur et leur mot de passe de domaine lorsqu'ils ouvrent un site Web. Utilisez le format NomDomaine\NomUtilisateur pour le nom d'utilisateur lorsque vous travaillez sur différents domaines.
+
+	<p><B>Aucune authentification (accès anonyme autorisé)</B> est facultatif. 
+	
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img src="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+	
+	
+<H3><A NAME="advss.doc-1022"></A><A NAME="1022"></A>Autorisations de comptes anonymes</H3>
+
+<P>Si vous utilisez un compte anonyme (<B>Aucune authentification (accès anonyme autorisé)</B> est sélectionné dans la procédure ci-dessus ), procédez comme suit sur l'ordinateur disposant de la base de données Visual SourceSafe :
+
+	<OL>
+		<LI class=LN>Dans Gest. des utilisateurs pour les domaines, dans le menu <B>Utilisateur</B>, cliquez sur <B>Nouvel utilisateur</B> pour ajouter le compte anonyme sur le  serveur Web. Par exemple, si le compte anonyme sur le serveur Web est IUSR_WEBSRV, ajoutez cet utilisateur en tant que compte local.  
+		<LI class=LN>Donnez au compte le même mot de passe que celui qu'il possède sur le serveur Web. 
+		<LI class=LN>Cliquez sur <B>OK</B>.
+		<LI class=LN>Sous <B>Nom utilisateur</B>, cliquez sur le compte anonyme.
+		<LI class=LN>Dans le menu <B>Stratégies</B>, cliquez sur <B>Droits de l'utilisateur</B>. 
+		<LI class=LN>Dans la liste <B>Droit</B>, cliquez sur <B>Nom d'accès local</B>. Assurez-vous que le compte anonyme est répertorié dans la boîte <P>Accorder à individuellement ou en tant que membre d'un des groupes, puis cliquez sur <B>OK</B>. 
+	</OL>
+ 	
+	<P class=4>&nbsp;</P>
+	
+</TD>
+
+<!--END_new text-->
+	
+	<!--TOPIC TITLE AND BODY TEXT CELL ENDS-->
+	
+	<!--FAR-RIGHT COLUMN SECTION ART CELL STARTS-->
+	
+    <TD rowspan="15"><img SRC="admart.gif" align="top" alt="Illustration de la section Administration"></TD>
+	</TR>
+	
+	<!--FAR-RIGHT COLUMN SECTION ART CELL ENDS-->
+	
+	<!--LEFT-NAVIGATION MENU START-->
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="scintro.htm"><font color="#000000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink"><div class="table"><font color="#990000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adoview.htm"><font color="#000000">&nbsp;&nbsp;Outils et techniques &nbsp;&nbsp;d'administration</font></A></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adfpsr.htm"><font color="#000000">&nbsp;&nbsp;Fpsvradm</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="admmc.htm"><font color="#000000">&nbsp;&nbsp;Composant logiciel &nbsp;&nbsp;enfichable MMC</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adhtm.htm"><font color="#000000">&nbsp;&nbsp;Formulaires &nbsp;d'administration &nbsp;&nbsp;HTML</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adfpre.htm"><font color="#000000">&nbsp;&nbsp;Administration à &nbsp;&nbsp;distance</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Tâches &nbsp;&nbsp;administratives <BR>&nbsp;&nbsp;avancées</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<!--LAST ROW STARTS-->
+
+	<TR>
+    <TD height="2550" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_BEGIN-->
+
+<BR>
+
+<TABLE cellspacing="0" cellpadding="0" border=0>
+
+	<TR>
+	<TD width="170" valign="top">&nbsp;</TD>
+	<TD width="237" valign="top"><A HREF="adadv.htm"><img src="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></font></a></TD>
+	<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+	</TR>
+
+	<TR>
+	<TD width="170" valign="top">&nbsp;</TD>
+	<TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+
+	<TR>
+	<TD width="170" valign="top">&nbsp;</TD>
+	<TD colspan="2" width="475" valign="top">Dernière mise à jour&nbsp;: novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+    </TR>
+	
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

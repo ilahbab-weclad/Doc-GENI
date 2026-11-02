@@ -1,0 +1,34 @@
+; Localized	03/24/1999 04:01  (GMT)	7:4.1.211 	mtmolmnu.ecf
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={F23D7D20-D436-11cf-ACA1-00A0C9044E47}
+Path=MTMOLMNU.DLL
+Entry Point=1
+Client Version=4.0
+Extension Version=1.0
+Misc Flags=WindowsAddinPath
+
+[Exchange Client Compatibility]
+Exchange Registry=0
+Exchange Context Map=0100000000000
+Exchange Interface Map=1000000
+
+[Folder]
+Events=OnExtCommand
+Commands=RunApp;SendUpdates;ViewTeamStatus
+Outlook Commands=TasksTMForTeamMember;TasksTMSendUpdates;TasksTMViewTeamStatus
+Extension Outlook Commands=50001;50002;50003
+
+[Command]
+RunApp=50001;RunApp;Tasks Suppress
+SendUpdates=50002;SendUpdates;Tasks Suppress
+ViewTeamStatus=50003;ViewTeamStatus;Tasks Suppress
+
+[Strings]
+DisplayName = Commandes deTeam Manager pour les membres de l'équipe
+Description = Ajoute les commandes de Microsoft Team Manager pour les membres de l'équipe à Outlook
+RunApp = Team Manager p&our les membres de l'équipe	;{Locked}
+SendUpdates = &Envoyer les mises à jour...	;{Locked}
+ViewTeamStatus = &Afficher l'état de l'équipe	;{Locked}
+

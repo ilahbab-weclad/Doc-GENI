@@ -1,0 +1,345 @@
+------------------------------------------------------------------
+Microsoft(R) ActiveX(R) Data Objects version 2.1 Fichier Lisez-moi
+------------------------------------------------------------------
+
+(c) Microsoft Corporation 1998. Tous droits réservés.
+
+Ce document fournit des informations de dernière minute ou autres qui complètent la documentation de Microsoft ADO.
+
+------------------
+TABLE DES MATIÈRES
+------------------
+
+1. DESCRIPTION DE PRODUIT
+
+2. NOUVEAUX DISPOSITIFS
+2.1 Recherche et index
+2.2 Mises à jour et synchronisation en ligne
+2.3 Fournisseur permanent de Microsoft OLE DB
+2.4 Données de Microsoft formant le service OLE DB
+2.5 Fournisseur à distance de Microsoft OLE DB
+
+3. NOTES TECHNIQUES
+3.1 Perfectionnements de sécurité
+3.2 Comportement restrictif
+3.3 Configurations de sécurité personnalisées 
+
+4. ERREURS CONNUES, LIMITES ET SOLUTIONS
+
+-------------------------
+1. DESCRIPTION DU PRODUIT
+-------------------------
+
+ActiveX Data Objects (ADO) est une interface d'automatisation pour des données d'accès.
+ADO utilise l'interface OLE DB pour accéder à un large éventail d'émission de données, comprenant mais ne se limitant pas aux données fournies par l'intermédiaire de ODBC.
+
+Les utilisateurs de RDO et de DAO devraient rapidement se familiariser à la programmation de ADO car la conception intégrale de ADO provient de notre expérience de développement de ces interfaces.
+
+Microsoft Remote Data Service (RDS) est une composante de ADO qui fournit une connexion rapide et efficace des données ainsi qu'une édition de ces données pour des applications hébergées par Microsoft Internet.
+Il est basé sur le rapport client / serveur, une technologie distribuée qui fonctionne au-delà de HTTP, HTTPS (HTTP over Secure Sockets layer), ainsi que des protocoles d'application DCOM.
+En utilisant les données sécurisées ActiveX controls, RDS offre une programmation d'accès aux données dans le style Microsoft Visual Basic(R) aux réalisateurs de sites Web qui ont besoin de mettre en place des applications de données intensives, distribuées pour l'utilisation des corporations intranets et sur Internet.
+
+------------------------
+2.  NOUVEAUX DISPOSITIFS
+------------------------
+
+ADO 2.1 ajoute plusieurs nouveaux dispositifs pour des réalisateurs de sites Web.
+
+2.1 Recherche et index
+
+La méthode de recherche et la propriété d'ajout d'incrément rapide, place les données indexées des lignes dans un recordset.
+
+
+2.2 Mises à jour et synchronisation.
+
+Le nouveau mode de "mise à jour en ligne" permet à l'utilisateur un contrôle de mise à jour et de synchronisation pour des recordsets crées par une opération JOIN.
+Sept nouvelles propriétés dynamiques contrôlent le comportement de cinq méthodes existantes.
+
+2.3 Fournisseur permanent pour Microsoft OLE DB.
+
+Le fournisseur permanent pour Microsoft OLE DB, en accord avec la méthode Recordest Object's Save and Open, sauvegarde et restaure un enregistrement dans un fichier. Avec cette version, un recordset peut être sauvegardé dans le format Extensible Markup Language (XML),et les moyens standards de définir les étiquettes personnalisées par l'utilisateur pour des données peuvent être transportées à travers Internet.
+
+2.4 Données de Microsoft formant le service OLE DB
+
+Les données de Microsoft formant le service OLE DB, qui s'appuient sur Data Shaping, peuvent à présent :
+
+2.4.1 Restructurer les recordsets précédemment formés. Pour soutenir ce dispositif, les recordsets sont maintenant propriétaires d'un nom qui existe pour la durée de la connexion.
+2.4.2 Exécuter les calculs globaux sur une colonne à n'importe quel niveau d'un recordset formé, et pas uniquement pour les sous-dossiers immédiats des dossiers parents.
+2.4.3 Les commandes COMPUTE paramétrées peuvent avoir un nombre arbitraire de clauses COMPUTE intermédiaires entre la clause PARAMETER et l'argument de paramètre.
+
+2.5 Fournisseur à distance de Microsoft OLE DB
+
+Le fournisseur à distance de Microsoft OLE DB devient un fournisseur de service standard et acquiert de nouvelles propriétés dynamiques pour une prestation accrue, un plus grand contrôle de l'utilisateur, et une comptabilité parfaite avec ADO 2.0.
+
+-------------------
+3. NOTES TECHNIQUES
+-------------------
+
+3.1 Perfectionnements de sécurité
+
+Cette version inclut des perfectionnements de sécurité pour les objets ADO et RDS de manière à ce que certaines exécutions soient restreintes lorsque Internet Explorer est exécuté en mode " sécurisé ".
+
+3.1.1 Zones
+
+Vous pouvez installer différentes configurations de sécurité pour différentes "zones" dans Internet Explorer 4.0 afin de personnaliser le comportement des objets ADO/RDS dans ces zones. Les quatre zones suivantes sont définies dans Internet Explorer 4.0 :
+
+* Zone Internet
+* Zone intranet locale
+* Zone de sites restreints
+* Zone de sites sécurisés
+
+3.1.2 Niveaux de sécurité
+
+Pour chacune de ces zones, vous pouvez indiquer le niveau de sécurité utilisé. Les niveaux de sécurité suivants sont disponibles pour chaque zone :
+
+* Haut
+* Moyen
+* Bas 
+* Personnalisé
+
+Comme toute autre commande ActiveX, afin que les objets ADO/RDS fonctionnent sur Internet Explorer 4.0, le niveau de sécurité doit être réglé sur "moyen" ou "haut". Des configurations faites sur commande sont employées pour charger les objets ADO/RDS en mode sécurisé ou non sécurisé.
+
+
+3.2 Comportement restrictif.
+
+Par défaut, toute exécution non sécurisée sur des objets ADO/RDS dans Internet Explorer occasionnera une suggestion à l'utilisateur lors de l'accès aux pages de « Zone sécurisée locale »,  « Zone de sites sécurisés » et  de « Zones Internet ». Les opérations non sécurisées sur objets ADO/RDS sont mises hors service, par défaut, pour les pages chargées à partir de « zone de sites restreints ». Le comportement de ADO/RDS en exécutant ces modes est décrit ci-dessous :
+
+3.2.1 Objets sécurisés.
+
+Les objets suivant sont considérés comme « sécurisés ». Cela signifie que les opérations non sécurisées (dont le détail est donné au paragraphe 3.2.3) sont interdites dans un environnement sécurisé (par exemple Internet Explorer par défaut ; sauf si l'on utilise des configurations adaptées pour exécution dans un mode non sécurisé) et interdites dans un environnement non sécurisé (par exemple Visual Basic).
+
+a) Objet RDS.DataControl
+b) Objet RDS.DataSpace
+c) Objet ADO Recordset
+
+3.2.2 Opérations non sécurisées sur objets sécurisés.
+
+Les opérations suivantes sont considérées comme non sécurisées sur les objets « sécurisés » -- RDS.DataControl, RDS.DataSpace, ADO Recordset.
+Ces opérations sont interdites dans un environnement sécurisé mais autorisées dans un environnement non sécurisé.
+
+a. RDS.DataControl
+i) Tous scénarios à deux niveaux et DCOM sur l'objet RDS.DataControl. Cela signifie que vous ne pouvez établir de connexions de base de données directement sur votre ordinateur ou à partir des serveurs auxquels vous êtes connecté en utilisant le protocole DCOM.
+ii) Toutes les opérations à trois niveaux sous HTTP sont restreintes au serveur à partir duquel la page a été téléchargée. Cela signifie que la propriété du serveur sur l'objet RDS.DataControl doit correspondre au nom de l'hôte (http://serveur) à partir duquel la page a été téléchargée.
+
+b. RDS.DataSpace
+i) Tous scénarios à deux niveaux et DCOM sur l'objet RDS.DataSpace. Cela signifie que vous ne pouvez utiliser l'objet RDS.DataSpace pour appeler des objets de business directement sur votre appareil ou sous le protocole DCOM.
+ii) Tous les scénarios à trois niveaux sous HTTP sont restreints au serveur à partir duquel la page a été téléchargée. Cela signifie que le second paramètre de la méthode CreateObject « appellez l'objet DataSpace » doit désigner le même serveur que celui à partir duquel la page a été téléchargée.
+
+c. ADO Recordset
+i) Etablit toute connexion où le fournisseur d'accès n'est pas MS Remote. Le lien de connexion doit alors débuter par  « Fournisseur d'accès=MS Remote ». L'onglet « Remote Server » dans le lien de connexion doit porter le même nom que le serveur à partir duquel la page a été téléchargée. Les connexions locales à deux niveaux et DCOM ne sont pas autorisées.
+ii) Les opérations locales permanentes comme la sauvegarde d'un recordset sur le système local de fichiers et l'ouverture d'un recordset à partir d'un fichier directement sur l'ordinateur.
+
+
+3.3 Personnalisation de configurations de sécurité
+
+Le comportement ADO/RDS est contrôlé lors de la configuration pour l'option « Initialiser et séquencer les commandes ActiveX non désignées comme sécurisées ». Vous pouvez changer les configurations de sécurité en modifiant le niveau de sécurité pour une zone spécifique. Les configurations par défaut pour l'option « Initaliser et séquencer les commandes ActiveX non désignées comme sécurisées » pour la zone intranet sont les suivantes : 
+	Niveau de sécurité = Haut		Valeur = Invalider
+	Niveau de sécurité = Moyen		Valeur = Invalider
+	Niveau de sécurité = Bas		Valeur = Suggestion
+
+Pour les configurations par défaut dans d'autres zones de sécurité, veuillez vous reporter à la documentation relative à Internet Explorer.
+
+Lors de la modification du niveau de sécurité, vous pouvez modifier le comportement d'objets ADO Recordsets déconnectés exécutés dans le navigateur. Si vous souhaitez autoriser des opérations non sécurisées et que vous ne désirez pas qu'une suggestion apparaisse chaque fois qu'une telle opération et effectuée, vous devez expressément sélectionner la valeur « Enable » dans l'option mentionnée ci-dessus. Cela s'effectue en personnalisant les configurations de sécurité selon la description figurant ci-dessous.
+Veuillez également noter que pour effectuer une opération non sécurisée (telle que la sauvegarder dans le système local de fichiers) sur un recordset ADO  obtenu à partir du RDS DataControl, vous devez sélectionner la valeur « Enable » pour l'option mentionnée plus haut.  
+Pour ce type d'objets Recordset (obtenus à partir du RDS DataControl), la configuration de « Suggestion » s'effectue comme « Hors service ». 
+
+
+Vous pouvez ignorer les configurations par défaut en manipulant directement les configurations personnalisés pour l'option ci-dessus. Vous pouvez choisir d'invalider complètement les opérations non sécurisées (décrites plus haut), ou d'indiquer qu'un avertissement soit affiché à chaque fois qu'une telle opération est tentée, ou encore autoriser une telle opération sans aucun avertissement. Vous pouvez installer différentes configurations personnalisées pour différentes zones de sécurité. Les mesures suivantes doivent prises pour personnaliser vos configurations de sécurité pour une zone de sécurité spécifique : 
+
+
+ATTENTION : Veuillez noter qu'en autorisant « Initialiser et séquencer les commandes ActiveX non désignées comme sécurisées » (étape 5 ci-dessous), vous autorisez l'utilisation de TOUTE commande ActiveX, sécurisée ou non, au sein de pages Web (ce qui expose potentiellement le matériel d'un utilisateur à des contrôles malveillants ou à un code d'écriture malveillant).Il est recommandé de n'effectuer ceci que dans les zones de sécurité de  « l'intranet » ou des « sites sécurisés » et non dans la zone « Internet ».
+
+
+1- A partir du menu déroulant d'Internet Explorer 4.0,sélectionnez les options Internet pour faire apparaître la boîte de dialogue des options Internet. Sélectionner l'onglet de sécurité.
+2- A partir de la liste déroulante des zones, sélectionnez la zone que vous souhaitez configurer de façon personnalisée. 
+3- Sélectionner la personnalisation de la zone choisie. Ceci permet de placer l'icône de configuration dans la boîte de dialogue. 
+4- Cliquer sur configurations pour faire apparaître la boîte de dialogue de configuration de sécurité. 
+5- Si vous désirez autoriser des opérations non sécurisées (décrites au paragraphe 3.2.3) sur des objets ADO/RDS sans qu'aucun avertissement ne soit affiché, sélectionnez « Enable » pour l'option « Initialiser et séquencer des commandes ActiveX non désignées comme sécurisées » dans la boîte de dialogue des configuration de sécurité. Cliquez sur OK.
+6- Si vous voulez qu'un avertissement s'affiche chaque fois qu'une opération non sécurisée (décrite au paragraphe 3.2.3) est tentée sur des objets ADO/RDS, sélectionnez «Suggestions » pour l'option « Initialiser et séquencer des commandes ActiveX non désignées comme sécurisées » dans la boîte de dialogue des configurations de sécurité. Cliquez sur OK.
+7- Si vous désirez complètement invalider des opérations non sécurisées (décrites au paragraphe 3.2.3) sur des objets ADO/RDS, sélectionnez «Invalider» pour l'option « Initialisez et séquencez des commandes ActiveX non désignées comme sécurisées dans la boîte de dialogue des configurations de sécurité. Cliquez sur OK.
+8- Le cas échéant, répétez ces étapes pour personnaliser les configurations de sécurité pour d'autres zones de sécurité.
+9- Cliquez sur OK.
+
+
+A présent les objets ADO/RDS se comporteront selon le mode personnalisé demandé. Ces configurations affectent le comportement suivant des objets ADO/RDS (selon la description faite au paragraphe 3.2.3) dans la zone de sécurité spécifiée - établir des connexions locales à deux niveaux ;travailler sous DCOM ; se connecter à un autre serveur que celui à partir duquel la page a été téléchargée à l'origine ; sauvegarder et ouvrir un recordset vers / à partir des dossiers directement sur l'ordinateur.
+
+Si vous installez vos options personnalisées sur « Suggestion », l'avertissement suivant s'affichera lorsqu'une opération non sécurisée sera tentée sur des objets ADO/RDS :
+
+« La page accède à une source de données dans un autre domaine. Souhaitez-vous autoriser ceci ? » l'utilisateur a le choix de répondre « oui » ou « non ». S'il répond « oui », l'opération est terminée ; sinon elle échoue.
+
+----------------------------------------
+4. ERREURS CONNUES, LIMITES ET SOLUTIONS
+----------------------------------------
+
+4.1 La personnification de client dans RDS n'est pas couramment soutenue à cause de l'absence de support du système d'exploitation.
+4.2 Lors de la création de « Virtuals Servers » dans le serveur d'information Internet 4.0, les deux étapes suivantes sont nécessaires afin de configurer le serveur pour qu'il fonctionne avec RDS :
+
+A :  En installant le serveur, vérifiez « Allow execute Access »
+B :  Déplacez msaddcs.dll vers vroot\msadc, dans lequel vroot est le HOME DIRECTORY de votre serveur virtuel.
+
+4.3 En utilisant RDS sur un serveur IIS, le nombre d'amorçages crées par processeur peut-être contrôlé en manipulant l'enregistrement sur le serveur Web. Le nombre d'amorçages par processeur peut affecter l'exécution en cas d'un nombre trop élevé de connexions, ou de faibles connexions effectuant cependant des demandes de scénarios de grande taille. L'utilisateur devra en faire l'expérience afin d'obtenir les meilleurs résultats. La valeur spécifique à ajuster est :
+
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters\ADCthreads
+
+là où ADCThreads est un REG_DWORD dans l'intrevalle 1-50. La valeur par défaut est 6, et les valeurs incorrectes ont pour valeur par défaut 6 ou 50. Si la valeur spécifiée par la clé du registre est supérieure à 50, la valeur maximale est alors utilisée (c'est-à-dire 50). L'utilisateur ne doit normalement pas avoir besoin de créer cette valeur de registre ; par défaut elle n'est pas incluse dans le registre.
+
+4.4 Par défaut, l'installation de ADO utilise une configuration de Serveur DataFactory RDS « sûre » ce qui signifie que les options suivantes sont activées :
+
+	1. Datafactory requiert un descripteur 
+	   (rendu obligatoire par paramètre de clé de registre)
+
+	2. Msdfmap.handler, descripteur par défaut est enregistré, figure 
+	   dans la liste des descripteurs sûrs et est marqué comme descrpteur
+   par défaut.
+
+	3. Le fichier Msdfmap.ini figure dans le répertoire Windows. Vous 
+	   devez le configurer en fonction de vos besoins avant d'utiliser 
+	   RDS en mode trois tiers. 
+
+Vous pouvez également choisir une installation sans restrictions. Vous
+pouvez alors utiliser DataFactory directement sans les descripteurs personnalisés. Les utilisateurs peuvent toujours utiliser ces descripteurs en modifiant les paramètres de connexion mais ce n'est pas nécessaire.
+ 
+Le fichier de registre handsafe.reg permet de configurer les entrées de registres pour utiliser une configuration sûre.
+Pour utiliser ce mode sécurisé, exécutez handsafe.reg. 
+
+Le fichier de registre handunsf.reg permet de configurer les entrées de registres pour utiliser une configuration sans restrictions.
+Pour utiliser ce mode sans restrictions, exécutez handunsf.reg. 
+
+Pour de plus amples informations concernant l'utilisation des fonctions de personnalisation des descripteurs dans RDS, reportez-vous à l'article "Using the Customization Handler Feature in RDS 2.0," se trouvant à l'adresse suivante http://www.microsoft.com/data/techmat.htm
+
+4.5 La méthode Find permet de rechercher un Recordset dans la direction spécifiée, à partir de la ligne courante. La recherche se fait selon le critère utlisée. Si aucune position de ligne n'a été spécifiée avant d'utiliser la méthode Find, le système renvoie une erreur.
+
+4.6 Pour utiliser ADO 2.0 FetchProgress et FetchComplete Events  avec Visual Basic, il faut au minimum la version 6 de Visual Basic.
+
+4.7 Les opérations suivantes sont considérées « sécurisées » à utiliser dans les expressions DataShaping CALC :
+
+Abs,Asc,Atn, CBool, Cbyte, CCur, CDate, CDbl, Chr, ChrB, ChrW, Chr$, ChrB$, Cint, CLng, Cos, CSng, CStr, Cvar, CVDate, CVErr, Date, Date$,
+DateAdd, DateDiff, DatePart, DateSerial, DateValue, Day, DDB, Error, Error$, Exp, Fix, Format, Format$, FV, Hex, Hex$, Hour, IIF, InStr, Int, Ipmt, IRR, IsDate, IsEmpty, IsError, IsNull, IsNumeric, IsObject, LCase, Lcase$, Left, LeftB, Left$, LeftB$,Len, Log, LTrim, LTrim$, Mid, Mid$, Minute, MIRR, Months, Now, NPer , NPV, Oct, Oct$, Pmt, PPmt, PV, QBColor, Rate, RGB, Right, RightB, Right$, RightB$, Rnd, RTrim, Second, Sgn, Sin, SLN, Space, Space$, Sqr, Str, Str$, StrComp, StrConv, String, String$, SYD, Tan, Time, Time$, Timer, TimeSerial, TimeValue, Trim, Trim$, TypeName, UCase, UCase$, Val, VarType, Weekday, Year.
+
+4.8 ADO 2.1 ne reconnaît pas les objets Recordset hiérarchique persistant au format XML. 
+
+4.9  Vous ne pouvez mettre les données d'un Recordset en lecture seule en enregistrant les données en XML et en modifiant le fichier XML. L'ouverture du Recordset depuis le fichier XML provoquera une erreur si les données ont été modifiées.
+
+4.10 Le mot clé DISTINCT n'est pas pris en compte dans les résultats de requêtes lorque l'on utilise adUseClient ou la prise en charge à distance avec SQL Server 6.5 Service Pack 4. Il s'agit d'une erreur de SQL Server qui devrait être resolue dans un prochain service pack.
+
+4.11 Les valeurs DataTypeEnum répertoriées dans la rubrique Type Property du guide de référence ActiveX Data Objects Programmer contient des erreurs. Les valeurs d'énumération suivantes sont répertoriées mais n'existent pas et ne peuvent pas être utilisées :
+
+adArray, adByRef, adVector
+
+Les valeurs suivantes sont absentes de la liste mais elles existent et peuvent être utilisées :
+
+adChapter     Valeur de chapitre 4 octets utilisée pour identifier les lignes dans un ensemble de lignes enfant (DBTYPE_HCHAPTER).
+
+adDBFileTime  Valeur de fichier temps (DBTYPE_DBFILETIME).
+
+adFileTime    Valeur 64 bits représentant le nombre d'intervalles de 100 nanosecondes depuis janvier 1, 1601 (DBTYPE_FILETIME).
+
+adPropVariant Automation PROPVARIANT (DBTYPE_PROP_VARIANT).
+
+adVarNumeric  Valeur numérique (objet Parameter uniquement).
+
+4.12 La liste des valeurs valides pour le paramètre Options de la méthode Execute pour les objets Connection et Command contient des erreurs. La valeur following ExecuteOptionEnum est répertoriée de manière incorrecte par deux fois. Elle devrait apparaître une seule fois comme indiqué ci-après :
+
+adCmdTable    Indique qu'ADO devrait évaluer CommandText comme un nom de table et générer une requête SQL pour renvoyer toutes les lignes de la table nommée dans CommandText.
+
+La valeur CommandTypeEnum suivante est absente de la liste mais existe bien et peut être utilisée :
+
+adCmdFile     Indique que le fournisseur devrait évaluer CommandText comme un nom de fichier.
+
+Les valeurs ExecuteOptionEnum suivantes sont absentes de la liste mais existent bien et peuvent être utilisées :
+
+adAsyncFetchNonBlocking   Indique que le thread principal ne bloque jamais au cours de l'extraction. Si la ligne demandée n'a pas été extraite, la ligne en cours se déplace automatiquement vers la fin du fichier.
+
+adExecuteNoRecords        Indique que CommandText est une commande ou procédure stockée qui ne renvoit pas de lignes (par exemple, une commande qui insère uniquement des données). Si une ligne est extraite, elle est ignorée et renvoyée. Toujours associé à adCmdText et adCmdStoredProc. 
+
+4.13 La liste des valeurs QueryType Enum pour la méthode OpenSchema d'un objet Connection contient des erreurs. Les valeurs suivantes sont absentes de la liste mais existent bien et peuvent être utilisées :
+
+Enum			Restriction Columns
+
+adSchemaDBInfoKeywords	aucun
+
+adSchemaDBInfoLiterals	aucun
+
+adSchemaCubes		CATALOG_NAME
+			SCHEMA_NAME
+			CUBE_NAME
+
+adSchemaDimensions	CATALOG_NAME
+			SCHEMA_NAME
+			CUBE_NAME
+			DIMENSION_NAME
+			DIMENSION_UNIQUE_NAME
+
+adSchemaHierarchies	CATALOG_NAME
+			SCHEMA_NAME
+			CUBE_NAME
+			DIMENSION_UNIQUE_NAME
+			HIERARCHY_NAME
+			HIERARCHY_UNIQUE_NAME
+
+adSchemaLevels		CATALOG_NAME
+			SCHEMA_NAME
+			CUBE_NAME
+			DIMENSION_UNIQUE_NAME
+			HIERARCHY_UNIQUE_NAME
+			LEVEL_NAME
+			LEVEL_UNIQUE_NAME
+
+adSchemaMeasures	CATALOG_NAME
+			SCHEMA_NAME
+			CUBE_NAME
+			MEASURE_NAME
+			MEASURE_UNIQUE_NAME
+
+adSchemaProperties	CATALOG_NAME
+			SCHEMA_NAME
+			CUBE_NAME
+			DIMENSION_UNIQUE_NAME
+			HIERARCHY_UNIQUE_NAME
+			LEVEL_UNIQUE_NAME
+			MEMBER_UNIQUE_NAME
+			PROPERTY_TYPE
+			PROPERTY_NAME
+
+adSchemaMembers		CATALOG_NAME
+			SCHEMA_NAME
+			CUBE_NAME
+			DIMENSION_UNIQUE_NAME
+			HIERARCHY_UNIQUE_NAME
+			LEVEL_UNIQUE_NAME
+			LEVEL_NUMBER
+			MEMBER_NAME
+			MEMBER_UNIQUE_NAME
+			MEMBER_CAPTION
+			MEMBER_TYPE
+			Opérateur d'arborescence (voir ci-dessous)
+
+Sachez que les sept dernières valeurs Enum (de adSchemaCubes à adSchemaMembers) devraient être utilisées avec des fournisseurs de données multidimensionnelles. Pour plus d'informations, notamment sur la définition de la limite de l'opérateur d'arborescence pour adSchemaMembers, reportez-vous au guide de référence OLE DB for OLAP Programmer.
+
+4.14 Les valeurs AffectEnum répertoriées dans la rubrique relative à la méthode CancelBatch dans le guide de référence ActiveX Data Objects Programmer comportent une erreur. Les valeurs suivantes sont absentes de la liste mais existent bien et peuvent être utilisées :
+
+adAffectAllChapters     Annule les changements en attente pour tous les chapitres.
+
+
+4.15 La valeur adModeShareDenyNone ConnectModeEnum n'est pas correctement décrite dans la rubrique portant sur la propriété Mode. La description correcte est la suivante :
+
+adModeShareDenyNone	Permet à d'autres utilisateurs d'ouvrir une connexion avec tout type d'autorisation. Il est impossible de refuser un accès en lecture ou en écriture à d'autres utilisateurs.
+
+4.16 Dans les versions précédentes, la propriété Index renvoyait une erreur lorsqu'aucun index n'était défini pour l'objet Recordset. A partir d'ADO 2.1 dans MDAC 2.1 Service Pack 1, elle renvoie une chaîne vide et nùéchoue plus.
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

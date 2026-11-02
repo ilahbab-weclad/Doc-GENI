@@ -1,0 +1,319 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Paramètres des listes de contrôle d'accès</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+	
+	<TR>
+		<TD BGCOLOR="#000000"><IMG SRC="home.gif" WIDTH=103 HEIGHT=21
+ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH="100%"><IMG 
+SRC="1ptrans.gif" WIDTH=1 
+HEIGHT=1 ALT="" BORDER=0></TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+<FONT FACE="Arial, Helvetica" SIZE=1><A HREF="http://www.microsoft.com/france" TARGET="_top"><IMG 
+SRC="msft.gif" WIDTH=91 
+HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+	
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+	
+	<!--WEB SITE TITLE AND LOGO START-->
+
+	<TR>
+		<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD colspan="2" nowrap bgcolor="#666699" valign="middle" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+		
+		<!--WEB SITE TITLE AND LOGO END-->
+		
+		<!--TOPIC TITLE AND BODY TEXT CELL START-->
+		
+		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous Windows&nbsp;NT</font></b></font>
+
+<HR>
+
+			<A NAME="accesscontrollistsettings"></A><P><A HREF="scwin_3.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;4 sur 9&nbsp;</sup></b></font><A HREF="scwin_5.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;Paramètres des listes de contrôle d'accès</FONT>  <p><A NAME="scwinnt.doc-1049"></A>Les outils d'administration des extensions serveur FrontPage&nbsp;&#151;&nbsp;les utilitaires <B>Fpsrvadm</B> et <B>Fpremadm</B>, le composant logiciel enfichable de la console de gestion des extensions serveur FrontPage et les formulaires d'administration HTML des extensions serveur FrontPage&nbsp;&#151;&nbsp;modifient les listes de contrôle d'accès (ACL) des fichiers et des dossiers lorsqu'ils sont utilisés par l'administrateur d'un site Web FrontPage étendu. En outre, le client FrontPage définit les ACL pendant les opérations d'auteur. Par exemple, quand un auteur crée un dossier ou une page sur un site Web FrontPage étendu, le client FrontPage définit les ACL sur cette page ou ce dossier.</p>
+
+			<p><A NAME="scwinnt.doc-1050"></A>Le tableau suivant présente le jeu d'ACL d'un site Web FrontPage étendu. La première colonne identifie le type du dossier ou du fichier sur lequel les ACL sont définies. La deuxième colonne décrit le paramètre ACL pour ce fichier ou dossier. La troisième colonne ne concerne que les dossiers. Elle décrit les paramètres ACL pour le contenu créé dans ce dossier par un auteur ou un administrateur qui utilise le client FrontPage.</p>
+
+			<P class=4>&nbsp;</P>
+
+			<P class=TTL><B>Tableau 1 Autorisations pour le contenu d'un site Web FrontPage étendu sur IIS</B></P>
+
+				<TABLE cellspacing="0" cellpadding="4" rules="rows" frame="void">
+
+					<TR VALIGN="top" bgcolor="#DDDDDD">
+						<TH width=31% align="left"><BR>Dossier ou contenu du site Web</TH>
+	
+						<TH width=31% align="left"><BR>Paramètre&nbsp;de la liste de contrôle d'accès</TH>
+	
+						<TH width=38% align="left">Paramètre sur le contenu créé dans le dossier</TH>
+					</TR>
+
+					<TR VALIGN="top">
+						<TD class=TT width=31%>Dossier de niveau supérieur du site ou du sous-site Web racine</TD>
+						<TD class=TT width=31%>visiteurs : <BR>lire, exécuter
+<P class=TT>auteurs : <BR>lire, exécuter, <BR>écrire, supprimer</P>
+						<P class=TT>administrateurs&nbsp;: <BR>lire, exécuter, <BR>écrire, supprimer, <BR>changer des autorisations</P></TD>
+						<TD class=TT width=38%>visiteurs : <BR>lire
+<P class=TT>auteurs : <BR>lire, écrire <BR>supprimer</P>
+						<P class=TT>administrateurs&nbsp;: <BR>lire, écrire <BR>supprimer, <BR>changer des autorisations</P></TD>
+					</TR>
+
+					<TR VALIGN="top">
+						<TD class=TT width=31%>Dossier d'un site Web sous le dossier de niveau supérieur</TD>
+						<TD class=TT width=31%>visiteurs : <BR>lire
+<P class=TT>auteurs : <BR>lire, exécuter, <BR>écrire, supprimer</P>
+						<P class=TT>administrateurs&nbsp;: <BR>lire, exécuter, <BR>écrire, supprimer, changer&nbsp;des autorisations</P></TD>
+						<TD class=TT width=38%>visiteurs : <BR>lire
+<P class=TT>auteurs : <BR>lire, écrire, <BR>supprimer</P>
+						<P class=TT>administrateurs&nbsp;: <BR>lire, écrire, <BR>supprimer, <BR>changer des autorisations</P></TD>
+					</TR>
+
+					<TR VALIGN="top">
+						<TD class=TT width=31%>Dossier exécutable</TD>
+						<TD class=TT width=31%>Rendre un dossier exécutable ne modifie pas l'ACL actuelle.</TD>
+						<TD class=TT width=38%>Rendre un dossier exécutable ajoute à l'ACL actuelle les autorisations d'exécution pour les visiteurs, les auteurs et les administrateurs.</TD>
+					</TR>
+
+					<TR VALIGN="top">
+						<TD class=TT width=31%>Dossier contenant des résultats de formulaire</TD>
+						<TD class=TT width=31%>Si un dossier contient les résultats d'un programme de traitement de formulaire de discussion ou de base de données, FrontPage ajoute à l'ACL actuelle les autorisations d'écriture pour les visiteurs. </TD>
+						<TD class=TT width=38%>Si un dossier contient les résultats d'un programme de traitement de formulaire de discussion ou de base de données, FrontPage ajoute à l'ACL actuelle les autorisations d'écriture pour les visiteurs.</TD>
+					</TR>
+
+					<TR VALIGN="top">
+						<TD class=TT width=31%>Dossier FrontPage _vti_pvt</TD>
+						<TD class=TT width=31%>visiteurs : <BR>lire, exécuter, <BR>écrire, supprimer
+<P class=TT>auteurs : <BR>lire, exécuter, <BR>écrire, supprimer</P>
+						<P class=TT>administrateurs&nbsp;: <BR>lire,<BR>exécuter, écrire, <BR>supprimer, <BR>changer des autorisations</P></TD>
+						<TD class=TT width=38%>visiteurs : <BR>lire, écrire, <BR>supprimer
+<P class=TT>auteurs : <BR>lire, écrire, <BR>supprimer</P>
+						<P class=TT>administrateurs&nbsp;: <BR>lire, <BR>écrire, supprimer, <BR>changer des autorisations</P></TD>
+					</TR>
+
+					<TR VALIGN="top">
+						<TD class=TT width=31%>Dossier FrontPage _vti_log</TD>
+						<TD class=TT width=31%>visiteurs : <BR>lire, exécuter, <BR>écrire, supprimer
+<P class=TT>auteurs : <BR>lire, exécuter, <BR>écrire, supprimer</P>
+						<P class=TT>administrateurs&nbsp;: <BR>lire, exécuter, <BR>écrire, supprimer, <BR>changer des autorisations</P></TD>
+						<TD class=TT width=38%>visiteurs : <BR>lire, écrire, <BR>supprimer
+<P class=TT>auteurs : <BR>lire, écrire, <BR>supprimer</P>
+						<P class=TT>administrateurs&nbsp;: <BR>lire, écrire, <BR>supprimer, <BR>changer des autorisations</P></TD>
+					</TR>
+
+					<TR VALIGN="top">
+						<TD class=TT width=31%>Dossier FrontPage _vti_txt</TD>
+						<TD class=TT width=31%>visiteurs : <BR>lire, exécuter, <BR>écrire, supprimer
+<P class=TT>auteurs : <BR>lire, exécuter, <BR>écrire, supprimer</P>
+						<P class=TT>administrateurs&nbsp;: <BR>lire, exécuter, <BR>écrire, supprimer, <BR>changer des autorisations</P></TD>
+						<TD class=TT width=38%>visiteurs : <BR>lire, écrire, <BR>supprimer
+<P class=TT>auteurs : <BR>lire, écrire, <BR>supprimer</P>
+						<P class=TT>administrateurs&nbsp;: <BR>lire, écrire, <BR>supprimer, <BR>changer des autorisations</P></TD>
+					</TR>
+
+					<TR VALIGN="top">
+						<TD class=TT width=31%>Fichiers du site</TD>
+						<TD class=TT width=31%>visiteurs : <BR>lire
+<P class=TT>auteurs : <BR>lire, écrire, <BR>supprimer</P>
+						<P class=TT>administrateurs&nbsp;: <BR>lire, écrire, <BR>supprimer, <BR>changer des autorisations</P></TD>
+						<TD class=TT width=38%>-</TD>
+					</TR>
+
+					<TR VALIGN="top">
+						<TD class=TT width=31%>Fichiers du dossier contenant les résultats de formulaire</TD>
+						<TD class=TT width=31%>Ajoute à l'ACL actuelle les autorisations d'écriture pour les visiteurs. </TD>
+						<TD class=TT width=38%>-</TD>
+					</TR>
+				</TABLE>
+
+			<P class=6>&nbsp;</P>
+
+			<p><A NAME="scwinnt.doc-1051"></A>Quand un administrateur définit les ACL pour un site Web FrontPage étendu à l'aide de la commande <B>Autorisations</B> du client FrontPage, FrontPage affiche la liste des comptes de l'ordinateur Windows&nbsp;NT par défaut. Vous pouvez définir une liste restreinte d'utilisateurs et de groupes pour ne pas exposer aux regards tout le contenu de l'ordinateur Windows&nbsp;NTet les listes des comptes de domaine. Ainsi, vous protégez la confidentialité de votre communauté d'utilisateurs. Pour plus de détails, consultez <a href="scwin_7.htm">Restriction des listes de comptes Windows&nbsp;NT</a>.</p>
+
+<!--NOTE structure start-->
+			
+			<P class=6>&nbsp;</P>
+<p><p class=art><img SRC="noterule.gif" width=475 height=15 border="0"></p>
+
+<UL>
+					<LI class=LB1>FrontPage accorde le contrôle complet de tous les fichiers (all) (all) aux membres du groupe des administrateurs de Windows&nbsp;NT et au compte SYSTÈME.
+
+	<LI class=LB1><A NAME="scwinnt.doc-1053"></A>FrontPage ajoute les autorisations d'exécution pour les visiteurs, auteurs et administrateurs aux dossiers marqués avec une racine virtuelle exécutable. L'autorisation d'exécution n'est accordée que si le paramètre <B>Autoriser les auteurs à télécharger des exécutables</B> de la boîte de dialogue <B>Propriétés</B> est activé pour le site Web FrontPage étendu. Consultez <a href="admmc.htm">Composant logiciel enfichable de la console de gestion Microsoft FrontPage</A> pour plus de détails. Si ce paramètre est désactivé pour un site Web FrontPage étendu (la valeur par défaut), les autorisations d'exécution ne seront jamais appliquées et les autorisations de contenu par défaut seront utilisées même si le répertoire est exécutable. Dans IIS&nbsp;2.0 et IIS&nbsp;3.0, les autorisations d'exécution affectent tous les fichiers d'un répertoire, y compris les bibliothèques de liens dynamiques, les fichiers exécutables et les scripts interprétés comme les fichiers .asp et .pl. Dans IIS version&nbsp;4.0 et ultérieure, ces autorisations n'affectent que les bibliothèques de liens dynamiques et les fichiers exécutables mais (suivant la configuration du serveur) pas forcément les fichiers script interprétés. 
+
+	<LI class=LB1>Le paramètre du dossier des résultats de formulaire n'est utilisé par FrontPage que sur les fichiers qui contiennent les résultats d'un formulaire qui utilise le programme de traitement de formulaire par défaut. Pour un programme de traitement de formulaire de discussion, ce paramètre est placé dans le répertoire de cette discussion.
+
+	<LI class=LB1><A NAME="scwinnt.doc-1055"></A>Si l'option <B>Navigation anonyme autorisée </B> de la boîte de dialogue <B>Autorisations</B> du client FrontPage est activée, la navigation anonyme sur un site Web est implémentée. En d'autres termes, le compte anonyme IUSR_<I>nommachine</I> avec autorisation de lecture est ajouté aux ACL de tous les fichiers du site Web.
+</UL>
+
+
+
+<HR width=475></P>
+
+			<!--NOTE structure end-->
+			
+			<p class=4>&nbsp;</p>
+
+			
+				
+			</TD>
+			
+			<!--TOPIC TITLE AND BODY TEXT CELL END-->
+			
+			<!--FAR-RIGHT COLUMN SECTION ART START-->
+	
+			<TD rowspan="20" nowrap><!--Third-column art-->
+				<img SRC="secart.gif" align="center" alt="Image de la section Sécurité">
+			</TD>
+			
+			<!--FAR-RIGHT COLUMN SECTION ART END-->
+			
+		</TR>
+		
+		<!--LEFT-NAVIGATION MENUS START-->
+
+		<TR>
+			<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+			<TD width="20" nowrap></TD>
+		</TR>
+
+		<TR>
+    		<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    		<TD width="20" nowrap></TD>
+		</TR>
+
+		<TR><!--spacing row-->
+    		<TD height="10" width="150" nowrap></TD>
+    		<TD width="20" nowrap></TD>
+		</TR>
+
+		<TR>
+    		<TD width="150" nowrap><A class="menulink" href="scintro.htm"><font color="#000000">&nbsp;&nbsp;Introduction</font></A></TD>
+    		<TD width="20" nowrap></TD>
+		</TR>
+
+		<TR><!--spacing row-->
+    		<TD height="10" width="150" nowrap></TD>
+    		<TD width="20" nowrap></TD>
+		</TR>
+
+		<TR>
+    		<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous <br>&nbsp;&nbsp;Windows&nbsp;NT</font></A></TD>
+    		<TD width="20" nowrap></TD>
+		</TR>
+
+		<TR><!--spacing row-->
+    		<TD height="10" width="150" nowrap></TD>
+    		<TD width="20" nowrap></TD>
+		</TR>
+
+		<TR>
+    		<TD width="150" nowrap><A class="menulink" HREF="scuni.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    		<TD width="20" nowrap></TD>
+		</TR>
+
+		<TR><!--spacing row-->
+    		<TD height="10" width="150" nowrap></TD>
+    		<TD width="20" nowrap></TD>
+		</TR>
+
+		<TR>
+    		<TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    		<TD width="20" nowrap></TD>
+    		<TD></TD>
+		</TR>
+
+		<TR>
+    		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="adoview.htm"><font color="#000000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    		<TD width="20" nowrap></TD>
+    		<TD></TD>
+		</TR>
+
+		<TR>
+    		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    		<TD width="20" nowrap></TD>
+    		<TD></TD>
+		</TR>
+
+		<TR>
+    		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    		<TD width="20" nowrap></TD>
+    		<TD></TD>
+		</TR>
+		
+		<!--LAST ROW START-->
+
+		<TR>
+    		<TD height="2270" width="150" nowrap></TD>
+    		<TD width="20" nowrap></TD>
+    		<TD></TD>
+		</TR>
+		
+		<!--LAST ROW END-->
+		
+	<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+
+<!--FOOTER_BEGIN-->
+<BR>
+
+<TABLE cellspacing="0" cellpadding="0" border=0>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD width="237" valign="top"><A HREF="scwin_3.htm"><img SRC="previous.gif" vspace="1" hspace="0" border="0"><b><font color="#000000" style="text-decoration: none" size="2"><sup>&nbsp;4 sur 9&nbsp;</sup></b></font><A HREF="scwin_5.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    	<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+    </TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+   	</TR>
+	
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

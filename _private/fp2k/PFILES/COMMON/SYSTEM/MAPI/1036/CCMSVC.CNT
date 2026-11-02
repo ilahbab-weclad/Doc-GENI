@@ -1,0 +1,39 @@
+:Base Ccmsvc.HLP
+:Title Aide du service de messagerie cc:Mail
+1 Présentation du service de messagerie cc:Mail=Overview_of_the_cc_Mail_Service>(w95sec)
+1 Définition des informations de connexion à cc:Mail
+2 Modification de vos paramètres cc:Mail=To_change_your_cc_Mail_Settings>(w95sec)
+2 Modification de votre mot de passe cc:Mail=Changing_Your_cc_Mail_Password>(w95sec)
+1 Utilisation de cc:Mail
+2 Travail en mode autonome=Working_Offline>(w95sec)
+2 Désactivation et activation des messages entrants et sortants=To_disable_or_enable_incoming_or_outgoing_messages>(w95sec)
+2 Définition de l'option d'envoi de messages avec Exchange Rich Text Format=Sending_mail_with_Microsoft_RTF>(w95sec)
+2 Suppression automatique du courrier du bureau de poste cc:Mail=To_automatically_delete_mail_from_the_cc_Mail_postoffice>(w95sec)
+2 Modification de l'intervalle de réception de cc:Mail=Changing_time_interval_for_mail_delivery>(w95sec)
+2 Notification de la lecture ou de la distribution d'un message=To_set_delivery_and_receipts_for_a_message>(w95sec)
+2 Définition de la priorité d'un message=To_set_send_options_for_a_message>(w95sec)
+2 Saisie d'une adresse cc:Mail dans les zones À, Cc ou Cci=Typing_a_cc_Mail_Address_in_the_To_CC_or_BCC_Box>(w95sec)
+2 Saisie d'une adresse pour un autre bureau de poste, un autre télécopieur...=To_type_an_address_for_another_cc_Mail_postoffice_fax_or_gateway>(w95sec)
+1 Utilisation du carnet d'adresses
+2 Copie d'une adresse du dossier cc:Mail dans votre carnet d'adresses=To_copy_an_address_from_the_cc_Mail_Directory_to_your_address_book>(w95sec)
+2 Copie de listes de messagerie privées cc:Mail dans votre carnet d'adresses=Copying_cc_Mail_Private_Mail_Lists_to_Your_Personal_Address_Book>(w95sec)
+2 Ajout d'une adresse cc:Mail à votre carnet d'adresses=To_add_a_cc_Mail_address_in_your_address_book>(w95sec)
+2 Ajout d'une adresse pour un autre bureau de poste ou une autre passerelle...=To_create_Postoffice_or_Gateway_Addresses>(w95sec)
+2 Localisation d'une adresse dans le dossier cc:Mail=Searching_the_cc_Mail_Directory>(w95sec)
+2 Localisation d'une liste cc:Mail=Selecting_a_cc_Mail_List>(w95sec)
+2 Recherche d'une adresse=To_search_for_an_address>(w95sec)
+2 Utilisation d'une copie locale du dossier cc:Mail=Making_a_Local_Copy_of_the_cc_Mail_Directory>(w95sec)
+1 Importation de dossiers cc:Mail et de services télématiques
+2 Importation de messages de dossiers cc:Mail vers Microsoft Outlook=Import_cc_Mail_Folders>(w95sec)
+2 Importation de messages de services télématiques cc:Mail vers Microsoft Outlook=Import_cc_Mail_Bulletin_Boards>(w95sec)
+2 Mise à jour des messages des services télématiques cc:Mail vers Microsoft Outlook=Update_cc_Mail_Bulletin_Boards>(w95sec)
+1 Performances et dépannage
+2 Performances
+3 Amélioration du temps de réponse=Slow_response>(w95sec)
+2 Dépannage
+3 Impossible de visualiser les graphismes ou les objets incorporés du message=Cannot_see_message_s_embedded_graphics_or_objects>(w95sec)
+3 Impossible d'envoyer à un destinataire situé sur un autre bureau de poste cc:Mail=Can_t_send_to_cc_Mail_postoffice_recipient>(w95sec)
+3 Les modifications de la configuration ne sont pas prises en compte.=Configuration_changes_ignored>(w95sec)
+3 Envoi d'une pièce jointe (TNEF*.TMP) avec les messages=Extra_attachment_TNEF_TMP_sent_with_message>(w95sec)
+3 Le courrier entrant n'est pas supprimé du bureau de poste cc:Mail=Incoming_mail_not_removed_from_cc_Mail_postoffice>(w95sec)
+3 Aucun message cc:Mail n'est envoyé ou reçu.=No_cc_Mail_messages_being_delivered_or_received>(w95sec)

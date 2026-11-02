@@ -1,0 +1,22 @@
+[info]
+title=Tilt
+codepage=65001
+version=2.00
+format=2.00
+readonly=true
+
+[titles]
+1031 = Gekippt
+1036 = Flash
+1040 = Geometrico
+3082 = Planos inclinados
+1043 = Schuin vlak
+1046 = Inclinado
+1053 = Lutning
+1044 = Helling
+1030 = Hældning
+1035 = Kalteva
+1041 = 傾斜
+1042 = 경사
+1028 = 傾斜
+2052 = 倾斜

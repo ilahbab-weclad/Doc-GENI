@@ -1,0 +1,7 @@
+; Localized	03/02/1999 04:46  (GMT)	7:4.1.211 	threelev.inp
+
+[info]
+title=Hiérarchie imbriquée
+description=Crée une hiérarchie d'informations imbriquée. Les liens hypertexte généraux présents dans le cadre de gauche modifient le contenu spécifique du cadre supérieur droit.
+noframesURL=
+layout=[C(150,*)F("gauche",[R(20%,*)F("haut_droite","bas_droite")])]

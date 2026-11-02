@@ -1,0 +1,28 @@
+; Localized	03/02/1999 04:46  (GMT)	7:4.1.211 	fpcount.inp
+;
+; Copyright © 1997-99 Microsoft Corp.  All Rights Reserved.
+;
+; File: fpcount.inf
+; WebBot Hit Counter Component Information File
+;
+; Localize only the [HitCounter]name= and description= lines.
+
+
+
+
+[info]
+list=HitCounter
+clientarchitectures=WinI386,all
+vendor=Microsoft
+contact=http://www.microsoft.com
+version=2.1
+serverbinding=none
+clientbinding=BTL
+clientmodule=fpcntclt.btl
+[WinI386]
+clientbinding=dll
+clientmodule=fpcntclt.dll
+[HitCounter]
+name=Compteur d'accès
+description=Ajoute un compteur à votre page affichant le nombre de fois que celle-ci est accédée
+type=insert

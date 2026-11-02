@@ -1,0 +1,33 @@
+; Localized	03/24/1999 04:56  (GMT)	7:4.1.211 	Olfext.ecf
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={10813613-3392-11d1-BD8D-00805F0586F2}
+Path="<HomeDir>\OLFEXT.DLL"
+Entry Point=1
+Client Version=4.0
+Extension Version=1.0
+Service Provider=INTERSTOR
+Misc Flags=DllFromDarwin;WarnIfNoDLL
+
+[Exchange Client Compatibility]
+; Exchange Context Map is VIEWER
+Exchange Context Map=1101
+; Exchange Interface Map is PropertySheets
+Exchange Interface Map=000001
+
+[Session]
+Events=OnIdleStartup;OnDelivery
+
+[Folder]
+Events=AddPropSheetPages;OnCommand
+;2376 and 2373 are New Fax Message.
+Outlook Commands=2376;2373;1899
+
+[Property Sheet]
+Property Sheet Dialogs=ToolsOptions
+
+[Strings]
+DisplayName = Extension Symantec DelrinaFax Starter Edition
+Description = Extension Symantec DelrinaFax Starter Edition
+

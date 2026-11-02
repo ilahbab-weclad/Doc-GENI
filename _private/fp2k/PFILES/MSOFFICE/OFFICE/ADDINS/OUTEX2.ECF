@@ -1,0 +1,33 @@
+; Localized	03/24/1999 04:38  (GMT)	7:4.1.211 	outex2.ecf
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={683C95F0-0A80-11d1-9E2C-00A0C90D2899}
+Path="outex.dll"
+Entry Point=ExchangeRegExt
+Client Version=4.0
+Extension Version=1.0
+; This extension does not run in Internet Only (OMI).
+Service Provider=!INTERSTOR
+Misc Flags=NoOptimizeInterfaceMap;WarnIfNoDLL;DllFromDarwin
+
+[Exchange Client Compatibility]
+Exchange Registry=0
+Exchange Extension Key="Exchange Extensions"
+Exchange Context Map=010100000001100
+Exchange Interface Map=1101011
+
+; Need to have this [Folder] section to avoid Folder Assistant crash
+[Folder]
+Events=AddPropSheetPages
+
+[Property Sheet]
+Events=AddPropSheetPages
+Property Sheet Exclusion=Folder:#30148;Store:#30148
+Property Sheet Dialogs=CustomFormOptions;Message;Store;Folder
+
+[Strings]
+DisplayName = Pages de propriété des extensions Exchange
+Description = Absence du bureau, propriétés du dossier, formulaires
+; STR 30148 - Synchronization=Synchronization
+

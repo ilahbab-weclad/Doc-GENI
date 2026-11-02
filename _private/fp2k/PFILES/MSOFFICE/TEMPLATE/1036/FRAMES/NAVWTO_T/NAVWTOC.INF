@@ -1,0 +1,7 @@
+; Localized	03/02/1999 04:46  (GMT)	7:4.1.211 	navwtoc.inp
+
+[info]
+title=En-tête, pied de page et sommaire
+description=Crée des cadres de navigation en en-tête et en pied de page. Les liens hypertexte généraux de l'en-tête et du pied de page modifient le contenu spécifique du sommaire.
+noframesURL=
+layout=[R(64,*,64)F("haut",[C(150,*)F("sommaire","principal")],"bas")]

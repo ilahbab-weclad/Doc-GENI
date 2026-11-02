@@ -1,0 +1,10 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Description "Belgique"
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 2
+    PROVINCE Char (40) Index 1 ;
+    CODE Char (5) Index 2 ;

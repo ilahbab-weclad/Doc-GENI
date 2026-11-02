@@ -1,0 +1,540 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>TEST</title>
+
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+//D'autres scripts sur http://www.toutjavascript.com
+//Si vous utilisez ce script, merci de m'avertir !  < webmaster@toutjavascript.com >
+//Auteur original :Olivier Hondermarck  <webmaster@toutjavascript.com>
+//Modifs compatibilité Netscape 6/Mozilla : Cédric Lamalle 09/2001 <cedric@cpac.embrapa.br>
+//Correction Mac IE5 (Merci Fred)
+
+var IB=new Object;
+var posX=0;posY=0;
+var xOffset=10;yOffset=10;
+function AffBulle(texte) {
+  contenu="<TABLE border=0 cellspacing=0 cellpadding="+IB.NbPixel+"><TR bgcolor='"+IB.ColContour+"'><TD><TABLE border=0 cellpadding=2 cellspacing=0 bgcolor='"+IB.ColFond+"'><TR><TD><FONT size='-1' face='arial' color='"+IB.ColTexte+"'>"+texte+"</FONT></TD></TR></TABLE></TD></TR></TABLE>&nbsp;";
+  var finalPosX=posX-xOffset;
+  if (finalPosX<0) finalPosX=0;
+  if (document.layers) {
+    document.layers["bulle"].document.write(contenu);
+    document.layers["bulle"].document.close();
+    document.layers["bulle"].top=posY+yOffset;
+    document.layers["bulle"].left=finalPosX;
+    document.layers["bulle"].visibility="show";}
+  if (document.all) {
+    //var f=window.event;
+    //doc=document.body.scrollTop;
+    bulle.innerHTML=contenu;
+    document.all["bulle"].style.top=posY+yOffset;
+    document.all["bulle"].style.left=finalPosX;//f.x-xOffset;
+    document.all["bulle"].style.visibility="visible";
+  }
+  //modif CL 09/2001 - NS6 : celui-ci ne supporte plus document.layers mais document.getElementById
+  else if (document.getElementById) {
+    document.getElementById("bulle").innerHTML=contenu;
+    document.getElementById("bulle").style.top=posY+yOffset;
+    document.getElementById("bulle").style.left=finalPosX;
+    document.getElementById("bulle").style.visibility="visible";
+  }
+}
+function getMousePos(e) {
+  if (document.all) {
+  posX=event.x+document.body.scrollLeft; //modifs CL 09/2001 - IE : regrouper l'évènement
+  posY=event.y+document.body.scrollTop;
+  }
+  else {
+  posX=e.pageX; //modifs CL 09/2001 - NS6 : celui-ci ne supporte pas e.x et e.y
+  posY=e.pageY; 
+  }
+}
+function HideBulle() {
+    if (document.layers) {document.layers["bulle"].visibility="hide";}
+    if (document.all) {document.all["bulle"].style.visibility="hidden";}
+    else if (document.getElementById){document.getElementById("bulle").style.visibility="hidden";}
+}
+
+function InitBulle(ColTexte,ColFond,ColContour,NbPixel) {
+    IB.ColTexte=ColTexte;IB.ColFond=ColFond;IB.ColContour=ColContour;IB.NbPixel=NbPixel;
+    if (document.layers) {
+        window.captureEvents(Event.MOUSEMOVE);window.onMouseMove=getMousePos;
+        document.write("<LAYER name='bulle' top=0 left=0 visibility='hide'></LAYER>");
+    }
+    if (document.all) {
+        document.write("<DIV id='bulle' style='position:absolute;top:0;left:0;visibility:hidden'></DIV>");
+        document.onmousemove=getMousePos;
+    }
+    //modif CL 09/2001 - NS6 : celui-ci ne supporte plus document.layers mais document.getElementById
+    else if (document.getElementById) {
+            document.onmousemove=getMousePos;
+            document.write("<DIV id='bulle' style='position:absolute;top:0;left:0;visibility:hidden'></DIV>");
+    }
+
+}
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+//D'autres scripts sur http://www.toutjavascript.com
+//Si vous utilisez ce script, merci de m'avertir !
+var max=199;        // 50 caractères maximum
+function compter(f) {
+    var txt=f.zone.value;
+    var nb=txt.length;
+    if (nb>=max) { 
+        alert("Pas plus de "+max+" caractères dans ce champ");
+        f.zone.value=txt.substring(0,max);
+        nb=max;
+    }
+    f.nbcar.value=nb;
+}
+
+function timer() {
+    compter(document.forms["form1"]);
+    setTimeout("timer()",100);
+}
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+// D'autres scripts et des tutoriaux sur http://www.toutjavascript.com
+function PopupImage(img) {
+    titre="Popup Image - Surprise";
+    w=open("",'image','width=400,height=400,toolbar=no,scrollbars=no,resizable=yes');   
+    w.document.write("<HTML><HEAD><TITLE>"+titre+"</TITLE></HEAD>");
+    w.document.write("<SCRIPT language=javascript>function checksize()  { if (document.images[0].complete) {  window.resizeTo(document.images[0].width+12,document.images[0].height+30); window.focus();} else { setTimeout('check()',250) } }</"+"SCRIPT>");
+    w.document.write("<BODY onload='checksize()' leftMargin=0 topMargin=0 marginwidth=0 marginheight=0><IMG src='"+img+"' border=0>");
+    w.document.write("");
+    w.document.write("</BODY></HTML>");
+    w.document.close();
+}
+//-->
+</SCRIPT>
+<link rel="stylesheet" type="text/css" href="../geni_ie.css">
+<link rel="stylesheet" type="text/css" href="../geni_impression.css">
+<meta name="Microsoft Border" content="none, default">
+</head>
+
+<body>
+<!-- DEB IFRAME -->
+<h1>IFRAME</h1>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var page = "http://www.google.com/" ;
+var pw = "98%";
+var ph = "98%";
+
+
+function netscape(pageurl,ph,pw)
+  {
+  document.write('<LAYER NAME="fenetre" HEIGHT="');
+  document.write(ph);
+  document.write('" WIDTH="');
+  document.write(pw);
+  document.write('" SRC="');
+  document.write(pageurl);
+  document.write('"></LAYER>');
+  }
+function explorer(pageurl,ph,pw)
+ {
+  document.write('<IFRAME SRC="');
+  document.write(pageurl);
+  document.write('" HEIGHT="');
+  document.write(ph);
+  document.write('" WIDTH="');
+  document.write(pw);
+  document.write('"></IFRAME>');
+ }
+if ("Netscape" == navigator.appName) 
+{
+  netscape(page,ph,pw);
+}else{
+  explorer(page,ph,pw);
+} 
+-->
+</SCRIPT>
+<!-- FIN IFRAME -->
+
+<!--webbot bot="Include" U-Include="../page_entete_geni.htm" TAG="BODY" startspan -->
+<div id="menufixe" class="noprint" >
+<b>Liens rapides:</b>
+<br /><a href="#" onclick="history.go(-1);return false;">Retour</a>
+<br /><a href="../index.htm">Accueil usine</a>
+<br /><a href="../ag/index_ag.htm">Accueil agence</a>
+<br />
+<br /><a href="../generalites/GENI_prise_en_main.htm">Prise en main</a>
+<br /><a href="../generalites/GENI_requetes.htm">Requêtes (F2)</a>
+<br />
+<hr />
+<p align="center"><a href="http://www.rinaldi-structal.fr" target="_blank" style="text-decoration:none;"><img border="0" src="../images/ico/url.png">&nbsp;</a>
+<b><br>
+Sites Internet</b>
+<ol>
+<li><a href="http://www.rinaldi-structal.fr" target="_blank" style="text-decoration:none;">RS</a></li>
+<li><a href="http://www.structal.co.uk" target="_blank" style="text-decoration:none;">SUK</a></li>
+</ol>
+&nbsp;
+</div>
+
+<table border="0" width="100%">
+  <tr>
+    <td width="30%">
+    <img border="0" src="../images/rs_logo.jpg" width="117" height="52">   
+    </td>
+    <td width="70%" valign="middle" align="right" nowrap><em><font face="Tahoma" size="5" color="#006699">
+      </font></em></td>
+  </tr>
+</table>
+<div align="left"><font face="Tahoma" color="#006699" size="1">&nbsp;</font></div>
+<table border="1" width="100%" cellspacing="1" class="noprint">
+  <tr>
+    <td><table width="100%" cellspacing="0" border="0">
+  <tr>
+    <td width="20%" nowrap><font face="Courier New" size="2">
+    | <b>Accueil <a href="../index.htm">Geplog Usine</a> ou <a href="../ag/index_ag.htm">Geplog Agence</a> </b> || <a href="../FAQ.htm">FAQ</a>  
+    |</font>    
+    </td>
+    <td width="60%"><font size="2" face="Courier New" color="#660000">
+      <marquee align="middle">-----&gt; Vous pouvez contribuer à
+      l'amélioration de cette documentation en envoyant vos remarques à
+      l'auteur : cliquez sur le lien ci-contre,
+      merci...</marquee>
+      </font></td>
+    <td width="20%" align="right" nowrap><a href="mailto:jp.kuntz@rinaldi-structal.com?cc=h.badache@rinaldi-structal.com&subject='GENI : Commentaire doc en ligne'"><font face="Courier New" size="2">Contacter l'auteur</font></a></td>
+  </tr>
+</table></td></tr></table>
+<div align="left">
+  <table border="0" width="100%" cellspacing="3" style="border-bottom: 1 solid #993333"  class="noprint">
+  <tr>
+    <td width="54" bordercolor="#006699" valign="top" align="left"><img border="0" src="../images/ico/geni_ico.gif" width="36" height="36"></td>
+    <td bordercolor="#006699" valign="top" align="justify"> 
+    <font face="Arial" size="2"> 
+	   </font>
+    </td>
+  </tr>
+</table>
+<fieldset class="noprint"><legend><b><font color="#FF0000">Rappel pour les utilisateurs occasionnels</font></b></legend>
+la consultation des stocks se fait sur : Site = <b><font color="#006699" face="Courier New"> SP-PINON</font></b> - Magasin =
+  <font color="#006699" face="Courier New"><b> MG-PINON-00</b></font>
+<br />Dans les zones de couleur bleu ou grisé, vous pouvez faire apparaître une liste de choix en appuyant sur
+  <font face="Courier New"><a href="../generalites/GENI_liste_de_choix.htm">F4</a></font>.
+<br />Dans toutes les listes, il est possible de créer un filtre (une <b>requête</b>) avec les raccourcis
+  <font face="Courier New"> <a href="../generalites/GENI_requetes.htm"> F2</a> <img border="0" src="../images/ico_requete.gif" align="center" width="25" height="25">
+  Shift+F2 <img border="0" src="../images/ico_req_execute.gif" width="25" height="25"></font>
+</fieldset>
+<font face="Arial" size="1">
+<SCRIPT>
+<!--
+var txtgeni = "GENI - ";
+if ((navigator.appVersion.indexOf("MSIE") > 0)
+  && (parseInt(navigator.appVersion) >= 4)) {
+    var sText = "<U><SPAN STYLE='color:blue;cursor:hand;'";
+    sText += "onclick='window.external.AddFavorite(location.href,";
+    sText += "txtgeni+";
+    sText += "document.title);'>Ajouter la page aux favoris</SPAN></U>";
+    document.write(sText);
+}
+//-->
+</SCRIPT>
+</font>
+</div>
+<!--webbot bot="Include" endspan i-checksum="47271" -->
+
+<h2><font color="#006699">TESTS DIVERS POUR INTEGRATION DANS SITE</font></h2>
+
+<h1>COMPTE CARACTERES</h1>
+<FORM name="form1">
+Votre texte :<TEXTAREA name="zone" rows=4 cols="40" onkeypress="compter(this.form)"></TEXTAREA><BR>
+Nombre de caractères restant : <INPUT type="text" name="nbcar" size=3>
+</FORM>
+
+<h1>POPUP IMAGE</h1>
+<p align="left">
+<a href="javascript:PopupImage('../Images/article_F4.gif')" ONMOUSEOVER="window.status = 'Documentation GENI'; return true;" ONMOUSEOUT="window.status = ''; return true;">
+<img border="0" src="../Images/article_F4.gif" width="50%">
+</a>
+</p>
+
+<h1>INFOS BULLES</h1>
+<p align="left"><BIG>Script pour afficher des infos bulle personnalisées.</BIG>
+Les infos bulle se présentent sous la forme de cadre, dont les couleurs de texte, de fond, de contour ainsi que l'épaisseur du contour sont paramétrables.<BR>
+Les infos bulle apparaissent à l'endroit du curseur de souris et peuvent contenir tous les éléments HTML classiques (image, tableaux, ...). Elles disparaissent dès que la souris quitte le lien.<BR>
+Ce script d'infobulle est compatible Internet Explorer 4+ et Netscape 4+<BR><BR>
+
+<!-- appel à l'initialisation des infos bulles (laisser dans le BODY) -->
+<SCRIPT language="JavaScript">InitBulle("navy","#FFCC66","orange",1);
+// InitBulle(couleur de texte, couleur de fond, couleur de contour taille contour)
+</SCRIPT>
+
+<!-- Déclaration des liens avec les fonctions d'affichage des infos bulle : simple non ? -->
+<!-- REM : pour afficher une apostrophe ', écrivez \', idem avec les " -->
+<A href="#" onMouseOver="AffBulle('Info bulle du premier lien')" onMouseOut="HideBulle()">Premier Lien ----------------------------------------------------</A><BR>
+<A href="#" onMouseOver="AffBulle('Ce script permet d\'afficher des infos bulles très <BIG>simplement</BIG>,<BR> sur <I>plusieurs</I> lignes,<BR>avec des éléments HTML. ')" onMouseOut="HideBulle()">Deuxieme Lien</A><BR>
+<A href="#" onMouseOver="AffBulle('Autant d\'infos bulles que vous voulez ...')" onMouseOut="HideBulle()">Autre Lien</A>
+<BR><BR>
+<script>
+function affiche_etat_over(){
+
+}
+function affiche_etat_out(){
+
+}
+
+</script>
+
+<h1>AFFICHAGE BARRE ETAT</h1>
+<a href="#" ONMOUSEOVER="window.status = 'Documentation GENI'; return true;" ONMOUSEOUT="window.status = ''; return true;">Affichage dans barre d'état</a>
+<p align="left">&nbsp;
+<script src="../logobas.js"></script>
+
+
+<h1>METTRE EN FAVORIS</h1>
+<font face="Arial" size="1">
+<SCRIPT>
+<!--
+var txtgeni = "GENI2 - ";
+if ((navigator.appVersion.indexOf("MSIE") > 0)
+  && (parseInt(navigator.appVersion) >= 4)) {
+    var sText = "<U><SPAN STYLE='color:blue;cursor:hand;'";
+    sText += "onclick='window.external.AddFavorite(location.href,";
+    sText += "txtgeni+";
+    sText += "document.title);'>Ajouter la page aux favoris</SPAN></U>";
+    document.write(sText);
+}
+//-->
+</SCRIPT>
+</font>
+
+
+</p>
+<CENTER>
+
+
+<p>
+<h1><font color="#006699" face="Courier New">En cours d'écriture...</font></h1>
+</p>
+
+<p>
+<a href="../generalites/CalculPrix.htm">Doc_GENI/vrac/CalculPrix.htm</a>
+</p>
+
+<p>
+&nbsp;
+</p>
+
+<p>
+<b><font color="#006699" face="Courier New">Test...</font></b>
+</p>
+
+<p style="border-left: 4 solid #006699; padding-left: 5; padding-right: 0; padding-top: 0; padding-bottom: 0">
+<a href="../FAQ2.htm" target="_blank">Ouverture fenêtre dimensionnée</a>
+</p>
+
+<p style="border-left: 4 solid #006699; padding-left: 5; padding-right: 0; padding-top: 0; padding-bottom: 0">
+Ouverture page avec paramètre <a href="apercu_planning.htm?img=geni_anime.gif">Nouvelle page 1</a>
+</p>
+
+<p style="border-left: 4 solid #006699; padding-left: 5; padding-right: 0; padding-top: 0; padding-bottom: 0">
+<a href="mailto:jp.kuntz@rinaldi-structal.com&subject='GENI - '&body='Aide sur GENI'">E-mail</a>
+avec Adresse, Sujet, et Objet du message&nbsp;
+</p>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+////////////////////////////////////////////////
+// Récup welcom.bouygues - Convertisseur EUROS
+////////////////////////////////////////////////
+function SelectAll(Target) 
+{
+    if (Target.value=="0")
+        Target.value="";
+}
+function Set0(Target) 
+{
+    if (Target.value=="")
+        Target.value="0";
+}
+//////////////////////////////////////
+// Greffe pour pouvoir saisir les ','
+//////////////////////////////////////
+    function rectifSaisie(saisie){
+        var sortie="";
+            while(true){
+                virgule= saisie.indexOf(",");
+                if(virgule!=-1){
+                    sortie+=saisie.substring(0,virgule)+".";
+                    saisie=saisie.substring(virgule+1);
+                }// fin du if
+                else {
+                    sortie+=saisie
+                    break;
+                }// fin du else
+            }// fin du while
+        return sortie;
+    }// fin de rectifSaisie
+function CheckLen(Target) 
+{
+    francs = rectifSaisie(document.conversion.nbfrancs.value)
+    eurosbrut=francs/6.55957*100000
+    eurosbrut=Math.floor(eurosbrut)
+    euros=Math.round(eurosbrut)/100000
+    document.conversion.nbeuro.value = euros;
+}
+function CheckLen2(Target) 
+{
+    euros = rectifSaisie(document.conversion.nbeuro.value)
+    francsbrut=euros*6.55957*100000
+    francsbrut=Math.floor(francsbrut)
+    francs=Math.round(francsbrut)/100000
+    document.conversion.nbfrancs.value = francs;
+}
+// end hiding contents from old browsers  -->
+</SCRIPT>
+<table border="1" cellspacing="0">
+ <tr> 
+   <td align="center">
+   <b>Convertisseur</b>
+   </td>
+ </tr>
+  <tr>
+  <td><table width="189" border="0" cellspacing="0" cellpadding="1" align="center" dwcopytype="CopyTableCell">
+        <tr align="center">
+          <form name="conversion">
+            <td> 
+              <input type="text" size="12" name="nbfrancs" value="0" onFocus="SelectAll(this)" onKeyDown="CheckLen(this)" onKeyUp="CheckLen(this)" onBlur="Set0(this)" class="liste">
+              <font size="2">FRF</font></td>
+            <td> 
+              <input type="TEXT" name="nbeuro" size="12" value="0" onFocus="SelectAll(this)" onKeyDown="CheckLen2(this)" onKeyUp="CheckLen2(this)" onBlur="Set0(this)" class="liste">
+              <font size="2">EUR</font></td>
+          </form>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+
+<!-- DEB DEFILEMENT TEXTE -->
+<!-- DEBUT DU SCRIPT -->
+<STYLE TYPE="text/css">
+.ejs_scroll {font-size:10px;font-family:Verdana;color:#FFFFFF;}
+</STYLE>
+
+<script language="JavaScript1.2">
+ejs_scroll_largeur = 500;
+ejs_scroll_hauteur = 30;
+ejs_scroll_bgcolor = '#CCCCCC';
+/* Mettre ici le chemin de l'image de fond */
+ejs_scroll_background = "";
+/* Mettre ici le temps en secondes */
+ejs_scroll_pause_seconde = 3;
+
+ejs_scroll_message = new Array;
+ejs_scroll_message[0]='<a href="GENI_news_log.htm" target="_blank"><SPAN STYLE="color:#000000;">4 nouveautés dans la documentation GENI...</SPAN></a>';
+ejs_scroll_message[1]='<SPAN STYLE="color:#993333;">Ajout d\'un lien pour ajout aux favoris Internet Explorer</SPAN><font size="1" color="#000000"> ( 07-05-2002 )</font>';
+ejs_scroll_message[2]='<a href="gepix/index_gepix.htm" target="_blank"><SPAN STYLE="color:#993333;">Documentations GEPIX en attente d\'intégration...</SPAN></a><font size="1" color="#000000"> ( 10-04-2002 )</font>';
+ejs_scroll_message[3]='<a href="production/GENI_production_etiquettes.htm" target="_blank"><SPAN STYLE="color:#993333;">Production - Impression des étiquettes modules...</SPAN></a><font size="1" color="#000000"> ( 27-03-2002 )</font>';
+ejs_scroll_message[4]='<a href="stock/GENI_stock_pupitres.htm" target="_blank"><SPAN STYLE="color:#993333;" >Stock - Gestion des pupitres</SPAN></a><font size="1"  color="#000000"> ( 18-03-2002 )</font>';
+function d(texte)
+    {
+    document.write(texte);
+    }
+
+d('<DIV ID=ejs_scroll_relativ STYLE="position:relative;width:'+ejs_scroll_largeur+';height:'+ejs_scroll_hauteur+';background-color:'+ejs_scroll_bgcolor+';background-image:url('+ejs_scroll_background+')">');
+d('<DIV ID=ejs_scroll_cadre STYLE="position:absolute;width:'+(ejs_scroll_largeur-8)+';height:'+(ejs_scroll_hauteur-8)+';top:4;left:4;clip:rect(0 '+(ejs_scroll_largeur-8)+' '+(ejs_scroll_hauteur-8)+' 0)">');
+d('<div id=ejs_scroller_1 style="position:absolute;width:'+(ejs_scroll_largeur-8)+';left:0;top:0;" CLASS=ejs_scroll>'+ejs_scroll_message[0]+'</DIV>');
+d('<div id=ejs_scroller_2 style="position:absolute;width:'+(ejs_scroll_largeur-8)+';left:0;top:'+ejs_scroll_hauteur+';" CLASS=ejs_scroll>'+ejs_scroll_message[1]+'</DIV>');
+d('</DIV></DIV>');
+
+ejs_scroll_mode =1;
+ejs_scroll_actuel = 0;
+
+function ejs_scroll_start()
+    {
+    if(ejs_scroll_mode == 1)
+        {
+        ejs_scroller_haut = "ejs_scroller_1";
+        ejs_scroller_bas = "ejs_scroller_2";
+        ejs_scroll_mode = 0;
+        }
+    else
+        {
+        ejs_scroller_bas = "ejs_scroller_1";
+        ejs_scroller_haut = "ejs_scroller_2";
+        ejs_scroll_mode = 1;
+        }
+    ejs_scroll_nb_message = ejs_scroll_message.length-1;
+    if(ejs_scroll_actuel == ejs_scroll_nb_message)
+        ejs_scroll_suivant = 0;
+    else
+        ejs_scroll_suivant = ejs_scroll_actuel+1;
+    if(document.getElementById)
+        document.getElementById(ejs_scroller_bas).innerHTML = ejs_scroll_message[ejs_scroll_suivant];
+    ejs_scroll_top = 0;
+    if(document.getElementById)
+        setTimeout("ejs_scroll_action()",ejs_scroll_pause_seconde*1000)
+    }
+
+function ejs_scroll_action()
+    {
+    ejs_scroll_top -= 1;
+    document.getElementById(ejs_scroller_haut).style.top = ejs_scroll_top;
+    document.getElementById(ejs_scroller_bas).style.top = ejs_scroll_top+ejs_scroll_hauteur;
+    if((ejs_scroll_top+ejs_scroll_hauteur) > 0)
+        setTimeout("ejs_scroll_action()",10)
+    else
+        ejs_scroll_stop()
+    }
+
+function ejs_scroll_stop()
+    {
+    ejs_scroll_actuel = ejs_scroll_suivant;
+    ejs_scroll_start()
+    }
+
+window.onload = ejs_scroll_start;
+</SCRIPT>
+<!-- FIN DEFILEMENT TEXTE -->
+
+<br>
+
+Test pour habib
+<script>
+<!--
+function infohabib()
+{
+document.Ttest.pour.habib.info.value = "Test réussi"
+}
+-->
+</script>
+<form method="POST" action="../_derived/nortbots.htm" onSubmit="location.href='../_derived/nortbots.htm';return false;" webbot-action="--WEBBOT-SELF--" WEBBOT-onSubmit>
+  <!--webbot bot="SaveResults" startspan U-File="../_private/form_results.txt"
+  S-Format="TEXT/CSV" S-Label-Fields="TRUE" --><input TYPE="hidden" NAME="VTI-GROUP" VALUE="0"><!--webbot
+  bot="SaveResults" endspan i-checksum="43374" -->
+  <p>
+  <input type="text" name="Ttest.pour.habib.info" size="20">
+  <input type="submit" value="Envoyer" name="B1">
+  <input type="reset" value="Rétablir" name="B2">
+  <input type="Button" value="Test" name="btdefaut" onclick="infohabib()"></p>
+</form>
+<p>&nbsp;</p>
+
+<p><a href="../article/GENI_article.htm" target="_top"><img border="0" src="../Images/geni_ico.GIF" width="18" height="18"></a></p>
+
+
+
+<!--webbot bot="Include" U-Include="../page_pied_geni.htm" TAG="BODY" startspan --><table border="0" width="100%" cellspacing="1">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0">
+      <tr>
+        <td width="20%" nowrap><a href="../index.htm"><font face="Courier New" size="2">Accueil Geplog</font></a></td>
+        <td width="60%">&nbsp;</td>
+        <td width="20%" nowrap>&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table><!--webbot bot="Include" endspan i-checksum="43908" -->&nbsp;</center></body>
+
+</html>

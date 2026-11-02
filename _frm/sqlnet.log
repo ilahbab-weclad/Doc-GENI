@@ -1,0 +1,347 @@
+
+
+***********************************************************************
+Fatal NI connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=rs_credo_or)(Port=1521)))(CONNECT_DATA=(SID=ORCL)(GLOBAL_NAME=rs_credo_or.world)(CID=(PROGRAM=c:\ORANT\BIN\IFRUN60.EXE)(HOST=RSCREDOTS2)(USER=geni-interne))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 27-JAN-2017 10:29:35
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12535
+    TNS-12535: TNS:operation timed out
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operation timed out
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=rs_credo_or)(Port=1521)))(CONNECT_DATA=(SID=ORCL)(GLOBAL_NAME=rs_credo_or.world)(CID=(PROGRAM=c:\ORANT\BIN\IFRUN60.EXE)(HOST=RSCREDOTS2)(USER=geni-interne))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 10-OCT-2018 17:06:33
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12535
+    TNS-12535: TNS:operation timed out
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operation timed out
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12546, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=rs_credo_or)(Port=1521)))(CONNECT_DATA=(SID=ORCL)(GLOBAL_NAME=rs_credo_or.world)(CID=(PROGRAM=C:\ORANT\BIN\ifrun60.EXE)(HOST=CREDO-HP1)(USER=tgerard))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 15-OCT-2018 09:12:08
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12206
+    TNS-12206: TNS:received a TNS error during navigation
+    ns main err code: 12546
+    TNS-12546: TNS:permission denied
+    ns secondary err code: 12560
+    nt main err code: 516
+    TNS-00516: Permission denied
+    nt secondary err code: 13
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=rs_credo_or)(Port=1521)))(CONNECT_DATA=(SID=ORCL)(GLOBAL_NAME=rs_credo_or.world)(CID=(PROGRAM=C:\ORANT\BIN\ifrun60.EXE)(HOST=CREDO-MUNIERB)(USER=MUNIER))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 18-DEC-2018 08:46:52
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12541
+    TNS-12541: TNS:no listener
+    ns secondary err code: 12560
+    nt main err code: 511
+    TNS-00511: No listener
+    nt secondary err code: 61
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=rs_credo_or)(Port=1521)))(CONNECT_DATA=(SID=ORCL)(GLOBAL_NAME=rs_credo_or.world)(CID=(PROGRAM=C:\ORANT\BIN\ifrun60.EXE)(HOST=CREDO-MUNIERB)(USER=MUNIER))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 18-DEC-2018 08:47:01
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12541
+    TNS-12541: TNS:no listener
+    ns secondary err code: 12560
+    nt main err code: 511
+    TNS-00511: No listener
+    nt secondary err code: 61
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12514, connecting to:
+ (DESCRIPTION=(CONNECT_DATA=(SID=*)(SERVICE_NAME=rs-credo-or12c)(CID=(PROGRAM=C:\ORANT\BIN\ifrun60.EXE)(HOST=CREDO-KUNTZ3)(USER=KUNTZ)))(ADDRESS=(PROTOCOL=TCP)(HOST=rs-credo-or12c)(PORT=1521)))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 25-MAY-2021 11:47:38
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12204
+    TNS-12204: TNS:received data refused from an application
+    ns main err code: 12564
+    TNS-12564: TNS:connection refused
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12546, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=RS-CREDO-OR12C)(Port=1521)))(CONNECT_DATA=(SID=RS12)(GLOBAL_NAME=RS-CREDO-OR12C.world)(CID=(PROGRAM=C:\ORANT\BIN\ifrun60.EXE)(HOST=CREDO-MUNIERB)(USER=munier))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 29-JUN-2022 15:27:24
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12206
+    TNS-12206: TNS:received a TNS error during navigation
+    ns main err code: 12546
+    TNS-12546: TNS:permission denied
+    ns secondary err code: 12560
+    nt main err code: 516
+    TNS-00516: Permission denied
+    nt secondary err code: 13
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12546, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=RS-CREDO-OR12C)(Port=1521)))(CONNECT_DATA=(SID=RS12)(GLOBAL_NAME=RS-CREDO-OR12C.world)(CID=(PROGRAM=C:\ORANT\BIN\ifrun60.EXE)(HOST=CREDO-MUNIERB)(USER=munier))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 29-JUN-2022 15:27:36
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12206
+    TNS-12206: TNS:received a TNS error during navigation
+    ns main err code: 12546
+    TNS-12546: TNS:permission denied
+    ns secondary err code: 12560
+    nt main err code: 516
+    TNS-00516: Permission denied
+    nt secondary err code: 13
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12505, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=RS-CREDO-OR12C)(Port=1521)))(CONNECT_DATA=(SID=RS12)(GLOBAL_NAME=RS-CREDO-OR12C.world)(CID=(PROGRAM=C:\ORANT\BIN\ifrun60.EXE)(HOST=CREDO-JOABERNHA)(USER=jpforny))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 31-JUL-2023 11:16:06
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12564
+    TNS-12564: TNS:connection refused
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12505, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=RS-CREDO-OR12C)(Port=1521)))(CONNECT_DATA=(SID=RS12)(GLOBAL_NAME=RS-CREDO-OR12C.world)(CID=(PROGRAM=C:\ORANT\BIN\ifrun60.EXE)(HOST=CREDO-JOABERNHA)(USER=jpforny))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 31-JUL-2023 11:16:19
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12564
+    TNS-12564: TNS:connection refused
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12505, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=RS-CREDO-OR12C)(Port=1521)))(CONNECT_DATA=(SID=RS12)(GLOBAL_NAME=RS-CREDO-OR12C.world)(CID=(PROGRAM=C:\ORANT\BIN\ifrun60.EXE)(HOST=CREDO-JOABERNHA)(USER=jpforny))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 31-JUL-2023 11:16:20
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12564
+    TNS-12564: TNS:connection refused
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12505, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=RS-CREDO-OR12C)(Port=1521)))(CONNECT_DATA=(SID=RS12)(GLOBAL_NAME=RS-CREDO-OR12C.world)(CID=(PROGRAM=C:\ORANT\BIN\ifrun60.EXE)(HOST=CREDO-SIMONUTT4)(USER=jbernhard))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 31-JUL-2023 11:16:32
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12564
+    TNS-12564: TNS:connection refused
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12505, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=RS-CREDO-OR12C)(Port=1521)))(CONNECT_DATA=(SID=RS12)(GLOBAL_NAME=RS-CREDO-OR12C.world)(CID=(PROGRAM=C:\ORANT\BIN\ifrun60.EXE)(HOST=CREDO-JOABERNHA)(USER=jpforny))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 31-JUL-2023 11:16:34
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12564
+    TNS-12564: TNS:connection refused
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12505, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=RS-CREDO-OR12C)(Port=1521)))(CONNECT_DATA=(SID=RS12)(GLOBAL_NAME=RS-CREDO-OR12C.world)(CID=(PROGRAM=C:\ORANT\BIN\ifrun60.EXE)(HOST=CREDO-SIMONUTT4)(USER=jbernhard))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 31-JUL-2023 11:16:36
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12564
+    TNS-12564: TNS:connection refused
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12505, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=RS-CREDO-OR12C)(Port=1521)))(CONNECT_DATA=(SID=RS12)(GLOBAL_NAME=RS-CREDO-OR12C.world)(CID=(PROGRAM=C:\ORANT\BIN\ifrun60.EXE)(HOST=CREDO-JOABERNHA)(USER=jpforny))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 31-JUL-2023 11:16:55
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12564
+    TNS-12564: TNS:connection refused
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12505, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=RS-CREDO-OR12C)(Port=1521)))(CONNECT_DATA=(SID=RS12)(GLOBAL_NAME=RS-CREDO-OR12C.world)(CID=(PROGRAM=C:\ORANT\BIN\ifrun60.EXE)(HOST=CREDO-SIMONUTT4)(USER=jbernhard))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 31-JUL-2023 11:17:23
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12564
+    TNS-12564: TNS:connection refused
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12505, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=TCP.world)(PROTOCOL=TCP)(Host=RS-CREDO-OR12C)(Port=1521)))(CONNECT_DATA=(SID=RS12)(GLOBAL_NAME=RS-CREDO-OR12C.world)(CID=(PROGRAM=C:\ORANT\BIN\ifrun60.EXE)(HOST=CREDO-SIMONUTT4)(USER=jbernhard))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 8.0.6.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 8.0.6.0.0 - Production
+  Time: 31-JUL-2023 11:17:27
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12564
+    TNS-12564: TNS:connection refused
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0

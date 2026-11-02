@@ -1,0 +1,44 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<%endif%>
+<title><!-- LOCALIZE this title -->En-tête de <%DiscussionTitle%></title>
+</head>
+
+<body <%if DoTheme EQ False%> stylesrc="../<%PageStyleSrc%>" <%endif%> >
+
+<p> </p>
+
+<h1><%DiscussionTitle%></h1>
+
+<p>
+ [ 
+<%if HomeOption EQ 1%>
+<a href="../<%HomePageUrl%>" target="_top"><!-- LOCALIZE this text -->Page d'accueil</a> | 
+<%endif%>
+
+<%if FramesOption EQ 1%>
+<a href="../<%FramesetPageUrl%>" target="<%TopTarget%>"><!-- LOCALIZE this text -->Sommaire</a> | 
+<%else%>
+<%if DoTOC EQ True%>
+<a href="--WEBBOT-TOC-../<%ContentsPageUrl%>--" target="<%TopTarget%>"><!-- LOCALIZE this text -->Sommaire</a> | 
+<%endif%>
+<%endif%>
+
+<%if DoSearch EQ True%>
+<a href="../<%SearchPageUrl%>" target="<%TopTarget%>"><!-- LOCALIZE this text -->Recherche</a> | 
+<%endif%>
+
+<a href="../<%PostPageUrl%>" target="<%TopTarget%>"><!-- LOCALIZE this text -->Nouveau</a>
+
+ ]
+</p>
+
+<hr>
+</body>
+</html>

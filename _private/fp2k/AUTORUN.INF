@@ -1,0 +1,60 @@
+; Localized	03/31/1999 03:07  (GMT)	4:4.1.211 	autorun.inf
+[autorun]
+OPEN=install.EXE /AUTORUN
+ICON=install.EXE,1
+
+shell\configure=&Configurer...
+shell\configure\command=install.EXE
+
+shell\install=&Installer...
+shell\install\command=install.EXE
+
+[ProductFeatures]
+Feature1=ACCESSFiles
+Feature2=ProductFiles
+Feature3=WORDFiles
+Feature4=EXCELFiles
+Feature5=PPTFiles
+Feature6=OUTLOOKFiles
+
+[ProductInformation]
+ProductCode={0012040C-78E1-11D2-B60F-006097C998E7}
+DisplayName=Microsoft FrontPage 2000
+Version=9.0
+;Make this be 1 to do autorun even if the product is installed.  Default for Office
+;is to not autorun maintenance mode setup if the product is installed.
+;AutorunIfInstalled=1
+
+[ServicePack]
+NTVersion=4
+; 0x300 as a decimal number.
+SPLevel=768
+MessageText=Impossible d'installer %s sur cet ordinateur. Ce produit nécessite Microsoft Windows NT version 4.0 avec le Service Pack 3 ou version ultérieure. Téléchargez le Service Pack à partir de www.microsoft.com/france/, puis reprenez l'installation.
+
+[InstallFont]
+Font=Tahoma (TrueType)
+FontAlt=Tahoma(TrueType)
+FontAlt2=Tahoma
+Version=Version 2.30
+Path=Windows\Fonts\Tahoma.TTF
+Force=No
+
+[InstallFontBold]
+Font=Tahoma Bold (TrueType)
+FontAlt=Tahoma Bold(TrueType)
+FontAlt2=Tahoma Bold
+Version=Version 2.30
+Path=Windows\Fonts\TahomaBD.TTF
+Force=No
+
+[InstallMSI]
+;Make this be zero to aways suppress installing Windows installer
+;If this is missing or one, we upgrade Windows installer only on systems
+;prior to NT 5.
+;Make this be 2 to upgrade Windows installer even on NT 5 and later.
+InstMsi=2
+
+[IE]
+;before 5.00.0909.1400, IE uses msls3.dll 317.  After 5.00.0909.1400, IE uses msls3.dll 325
+Version=5.00.0909.1400
+MessageText=Cette version bêta de Microsoft Windows 2000 doit être mise à jour pour permettre l'installation de %s.

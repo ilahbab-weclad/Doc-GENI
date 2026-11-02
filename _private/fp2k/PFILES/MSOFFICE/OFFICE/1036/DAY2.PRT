@@ -1,0 +1,122 @@
+VIEW "Quotidien - fixe","Pleine page",,,1000,1000
+
+;=======================================================================
+; Header - Username, Date & Calendar
+;=======================================================================
+
+OBJECT	,RECTANGLE,0,0,1000,4
+	OPTIONS		BLACK
+
+OBJECT  ,RECTANGLE,0,4,700,85
+	OPTIONS		GRAY
+
+OBJECT	,RECTANGLE,0,85,10,185
+	OPTIONS		GRAY
+
+OBJECT	,RECTANGLE,0,180,700,185
+	OPTIONS		GRAY
+
+OBJECT	,RECTANGLE,695,4,1000,185
+	OPTIONS		GRAY
+
+OBJECT  ,RECTANGLE,0,0,1000,185
+
+OBJECT  ,TEXT,10,10,700,62
+	VALUE		"&USERNAME"
+	STYLES		styUserName
+
+OBJECT  ,TEXT,10,60,700,90
+	VALUE		"Evénements pour &PRINTDATE:"
+	STYLES		stySmallDate
+
+OBJECT  ,CALENDAR,700,5,990,185
+	STYLES		styCalendar
+	OPTIONS		2
+
+;=======================================================================
+; Notes and Events box
+;=======================================================================
+
+OBJECT	,RECTANGLE,10,85,695,180
+
+OBJECT	,EVENTS,0,0,0,0
+	STYLES		styApptText, styHeading
+	OPTIONS		0, 1
+
+OBJECT	,OVERFLOW,15,88,695,180
+	STYLES		styApptText
+	OPTIONS		MINIMAL, CONSUME, 0
+
+;=======================================================================
+; Timeframe and Schedule Box
+;=======================================================================
+
+OBJECT	,RECTANGLE,0,190,695,194
+	OPTIONS		BLACK
+
+OBJECT  ,RECTANGLE,0,194,695,978
+
+OBJECT  ,TIMEFRAME,0,194,80,978
+	STYLES		styTime
+
+OBJECT  ,SCHEDULE,80,194,695,978
+	STYLES		styApptText, styApptTime, styHeading
+	OPTIONS		4, 30, LOCATION, NONE, 0
+
+;=======================================================================
+; Other Appts box
+;=======================================================================
+
+OBJECT	,RECTANGLE,705,190,1000,194
+	OPTIONS		BLACK
+
+OBJECT  ,RECTANGLE,705,194,1000,575
+
+OBJECT	,TEXT,710,195,1000,225
+	STYLES		styHeading
+	VALUE		"Autres rendez-vous:"
+
+OBJECT	,APPTS,0,0,0,0
+	STYLES		styApptText, styApptTime, styHeading
+	RANGE		BEFORE,STARTTIME,OR,AFTER,ENDTIME
+	OPTIONS		LOCATION, NONE, 1, 0, 0
+
+OBJECT	,OVERFLOW,710,225,1000,575
+	STYLES		styApptText
+	OPTIONS		MINIMAL, CONSUME, 0
+
+;=======================================================================
+; To-Do List box
+;=======================================================================
+
+OBJECT	,RECTANGLE,705,575,1000,579
+	OPTIONS		BLACK
+
+OBJECT  ,RECTANGLE,705,579,1000,978
+
+OBJECT  ,TEXT,710,580,1000,610
+	STYLES		styHeading
+	VALUE		"Tâche (&FILTER):"
+
+OBJECT  ,TASKS,0,0,0,0
+	STYLES		styApptText, styTaskDue, styTaskCompleted, styProjectText, styHeading
+	OPTIONS		NONE, 1, 0
+
+OBJECT	,OVERFLOW,705,610,1000,978
+	STYLES		styApptText
+	OPTIONS		MINIMAL, CONSUME, 5
+
+;=======================================================================
+; Footer - Text and Page num.
+;=======================================================================
+
+OBJECT  ,TEXT,0,980,900,1000
+	VALUE		"Imprimé le &CURDATE à &CURTIME &TIMEZONE"
+	STYLES		stySmallFooter 
+	OPTIONS		ELLIPSIS, NONE, NONE
+
+OBJECT  ,TEXT,900,980,1000,1000
+	VALUE		"Page &PAGENUM "
+	STYLES		stySmallFooter
+	OPTIONS		RIGHT, NONE, NONE
+

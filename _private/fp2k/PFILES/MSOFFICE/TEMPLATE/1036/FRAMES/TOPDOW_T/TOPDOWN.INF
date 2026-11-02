@@ -1,0 +1,7 @@
+; Localized	03/02/1999 04:46  (GMT)	7:4.1.211 	topdown.inp
+
+[info]
+title=Hiérarchie verticale
+description=Crée une hiérarchie d'informations verticale. Les liens hypertexte généraux présents dans le cadre du sommet modifient le contenu spécifique du cadre du milieu.
+noframesURL=
+layout=[R(64,25%,*)F("haut","milieu","bas")]

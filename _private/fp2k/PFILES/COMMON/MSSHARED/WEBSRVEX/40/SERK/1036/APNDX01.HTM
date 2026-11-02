@@ -1,0 +1,680 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+<!--START_TOPIC HEAD-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Fichiers et autorisations pour serveurs Web UNIX</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--END_TOPIC HEAD-->
+
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+	
+	<TR>
+		<TD BGCOLOR="#000000">
+		<IMG SRC="home.gif" WIDTH=103 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0 hspace="0">
+		</TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH=100%>
+		<IMG SRC="1ptrans.gif" WIDTH=1 HEIGHT=1 ALT="" BORDER=0>
+		</TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+		<FONT FACE="Arial, Helvetica" SIZE=1>
+		<A HREF="/" TARGET="_top">
+		<IMG SRC="msft.gif" WIDTH=91 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0>
+		</A>
+		</FONT>
+		</TD>
+	</TR>
+	
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+
+</TABLE>
+
+
+<!--START_WEBSITE TITLE AND LOGO-->
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<TR>
+	    <TD colspan="3" bgcolor="#666699" valign="right" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>&nbsp;Kit de ressources des extensions serveur Microsoft FrontPage 2000</b></font></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	
+</TABLE>
+
+<!--END_WEBSITE TITLE AND LOGO-->
+
+
+<!--MAIN BODY STARTS HERE-->
+
+<TABLE cellspacing="0" cellpadding="0" width="650">
+
+<TR>
+	<TD width=20 nowrap></TD>
+   	<TD><a name="top"></a><P><font color="#666699"><b><font size="+1">Annexes</font></b></font>
+
+	<!--START_Header rule-->
+	
+	<HR>
+	
+	<!--END_Header rule-->
+	
+		<!--START_TOPIC TITLE AND BODY TEXT CELL-->
+	
+		<H3><A NAME="fpserverunixconfigurationfilesettings"></A>Fichiers et autorisations pour serveurs Web UNIX</H3>
+
+			<p><A NAME="apndx01.doc-1005"></A>Cette annexe répertorie les paramètres d'autorisation des répertoires et fichiers contenant les extensions serveur FrontPage. Les fichiers et répertoires indiqués dans cette annexe sont installés lors de l'installation initiale des extensions serveur FrontPage. À mesure que des serveurs virtuels sont ajoutés, les fichiers appropriés sont copiés à partir de ces répertoires. Cette annexe reflète les autorisations de fichiers et de répertoires telles qu'elles sont définies par le script fp_install.sh.
+
+				<P CLASS=4>&nbsp;</P>
+
+				<TABLE cols=5 width=548>
+				
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%>/usr/local/frontpage/version4.0/<BR>&nbsp;</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r--r--r--</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>LICENSE.TXT</TD>
+					<TD class=T width=45%>Contrat de licence du produit logiciel</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>dr-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>_vti_bin</TD>
+					<TD class=T width=45%>Répertoire CGI des extensions serveur</TD>
+				</TR>
+	
+				<TR VALIGN="top">
+					<TD class=T width=15%>dr-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>admcgi</TD>
+					<TD class=T width=45%>Répertoire des formulaires d'administration HTML</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>drwx--x--x</TD>
+					<TD class=T width=10%>racine</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>apache-fp</TD>
+					<TD class=T width=45%>Répertoire Apache</TD>
+				</TR>
+	
+				<TR VALIGN="top">
+					<TD class=T width=15%>dr-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>bin</TD>
+					<TD class=T width=45%>Répertoire des outils d'administration</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>change_server.sh</TD>
+					<TD class=T width=45%>Script d'installation du serveur Apache</TD>
+				</TR>
+	
+				<TR VALIGN="top">
+					<TD class=T width=15%>dr-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>exes</TD>
+					<TD class=T width=45%>Répertoire d'implémentation CGI des extensions serveur</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>fp_install.sh</TD>
+					<TD class=T width=45%>Script d'installation des extensions serveur</TD>
+				</TR>
+	
+				<TR VALIGN="top">
+					<TD class=T width=15%>-rw-rw-r--</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>frontpage.cnf</TD>
+					<TD class=T width=45%>Fichier de configuration des extensions serveur</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>dr-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>nls</TD>
+					<TD class=T width=45%>Répertoire des fichiers de prise en charge de la langue nationale</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r--r--r--</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>readme.htm</TD>
+					<TD class=T width=45%>Fichier d'informations sur les extensions serveur</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T width=15%>dr-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>serk</TD>
+					<TD class=T width=45%>Répertoire des documents du kit de ressources des extensions serveur</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>set_default_perms.sh</TD>
+					<TD class=T width=45%>Réinitialise les autorisations des fichiers d'extensions serveur</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%><P 	class=4>&nbsp;</P>/usr/local/frontpage/version4.0/_vti_bin:<BR>&nbsp;</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>dr-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>_vti_adm</TD>
+					<TD class=T width=45%>Répertoire stub administratif</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T width=15%>dr-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>_vti_aut</TD>
+					<TD class=T width=45%>Répertoire stub des opérations d'auteur</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>fpcount.exe</TD>
+					<TD class=T width=45%>Stub du composant compteur d'accès</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>shtml.exe</TD>
+					<TD class=T width=45%>Programme stub de navigation des extensions serveur</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%><P 	class=4>&nbsp;</P>/usr/local/frontpage/version4.0/_vti_bin/_vti_adm<BR>&nbsp;</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>admin.exe</TD>
+					<TD class=T width=45%>Programme stub d'administration des extensions serveur</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%><P 	class=4>&nbsp;</P>/usr/local/frontpage/version4.0/_vti_bin/_vti_aut<BR>&nbsp;</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>author.exe</TD>
+					<TD class=T width=45%>Programme stub d'opérations d'auteur des extensions serveur</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%><P 	class=4>&nbsp;</P>/usr/local/frontpage/version4.0/admcgi<BR>&nbsp;</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r--r--r--</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>*.htm</TD>
+					<TD class=T width=45%>HTML </TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r--r--r--</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>*.gif</TD>
+					<TD class=T width=45%>Images des formulaires d'administration HTML</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T width=15%>dr-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>scripts</TD>
+					<TD class=T width=45%>Répertoire exécutable côté serveur de l'administration HTML</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%><P 	class=4>&nbsp;</P>/usr/local/frontpage/version4.0/admin/scripts<BR>&nbsp;</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>fpadmcgi.exe</TD>
+					<TD class=T width=45%>Programme exécutable côté serveur de l'administration HTML</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%><P class=4>&nbsp;</P>/usr/local/frontpage/version4.0/apache-	fp<BR>&nbsp;</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>dr-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>_vti_bin</TD>
+					<TD class=T width=45%>Répertoire du programme stub du correctif logiciel Apache</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r--r--r--</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>fp-patch-apache_1.3.1</TD>
+					<TD class=T width=45%>Code source du correctif logiciel Apache FrontPage</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r--r--r--</TD>
+					<TD class=T width=10%>racine</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>fpexe.c</TD>
+					<TD class=T width=45%>Code source du programme fpexe</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r-xr-xr-x</TD>
+					<TD class=T width=10%>racine</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>httpd, httpd.compat</TD>
+					<TD class=T width=45%>Démons Apache corrigés standard</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-rw-------</TD>
+					<TD class=T width=10%>racine</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>suidkey</TD>
+					<TD class=T width=45%>Fichier clé personnalisé créé par change_server.sh</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-rw-------</TD>
+					<TD class=T width=10%>racine</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>suidkey.&lt;number&gt;<B> *</B></TD>
+					<TD class=T width=45%>Fichiers clés dynamiques créés par change_server.sh, un seul par opération Web</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%><P class=4>&nbsp;</P>/usr/local/frontpage/version4.0/apache-fp/_vti_bin<BR>&nbsp;</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-rwsr-xr-x</TD>
+					<TD class=T width=10%>racine</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>fpexe</TD>
+					<TD class=T width=45%>Programme stub Apache</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%><P 	class=4>&nbsp;</P>/usr/local/frontpage/version4.0/bin<BR>&nbsp;</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-rw-r--r--</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>_vti_inf.html</TD>
+					<TD class=T width=45%>Fichier d'informations FrontPage</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>fpsrvadm.exe</TD>
+					<TD class=T width=45%>Utilitaire d'administration des extensions serveur FrontPage</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T width=15%>-rw-r--r--</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>postinfo.html</TD>
+					<TD class=T width=45%>Fichier d'informations WebPost</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%><P 	class=4>&nbsp;</P>/usr/local/frontpage/version4.0/bin/10xx<BR>&nbsp;</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r--r--r--</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>fpext.msg</TD>
+					<TD class=T width=45%>Fichier de message des extensions serveur, dans le répertoire propre à chaque langue.</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%><P 	class=4>&nbsp;</P>/usr/local/frontpage/version4.0/exes<BR>&nbsp;</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=15%>dr-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>_vti_bin</TD>
+					<TD class=T width=45%>&nbsp;</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%><P 	class=4>&nbsp;</P>/usr/local/frontpage/version4.0/exes/_vti_bin<BR>&nbsp;</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=15%>dr-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>_vti_adm</TD>
+					<TD class=T width=45%>Répertoire du programme d'administration</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>dr-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>_vti_aut</TD>
+					<TD class=T width=45%>Répertoire du programme des opérations d'auteur</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>fpcount.exe</TD>
+					<TD class=T width=45%>Exécution du composant Compteur d'accès</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>shtml.exe</TD>
+					<TD class=T width=45%>Programme de navigation des extensions serveur</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%><P 	class=4>&nbsp;</P>/usr/local/frontpage/version4.0/exes/_vti_bin/_vti_adm<BR>&nbsp;</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>admin.exe</TD>
+					<TD class=T width=45%>Programme d'administration des extensions serveur</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%><P 	class=4>&nbsp;</P>/usr/local/frontpage/version4.0/exes/_vti_bin/_vti_aut<BR>&nbsp;</TD>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r-xr-xr-x</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>author.exe</TD>
+					<TD class=T width=45%>Programme d'opérations d'auteur des extensions serveur</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%><P class=4>&nbsp;</P>/usr/local/frontpage/version4.0/nls<BR>&nbsp;</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r--r--r--</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>*.nls</TD>
+					<TD class=T width=45%>Fichiers de description des pages de code</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T colspan=5 width=100%><P 	class=4>&nbsp;</P>/usr/local/frontpage/version4.0/nnnn/serk<BR>&nbsp;</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r--r--r--</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>*.htm</TD>
+					<TD class=T width=45%>Documents HTML du kit de ressources des extensions serveur</TD>
+				</TR>
+			
+			
+				<TR VALIGN="top">
+					<TD class=T width=15%>-r--r--r--</TD>
+					<TD class=T width=10%>bin</TD>
+					<TD class=T width=8%>bin</TD>
+					<TD class=T width=22%>*.gif</TD>
+					<TD class=T width=45%>Images du kit de ressources des extensions serveur</TD>
+				</TR>
+		
+			</TABLE>
+
+			<P class=6>&nbsp;</P>
+
+		<p><B>Autorisations des fichiers/répertoires de zones de contenu</B>
+
+		<p>La liste de fichiers présentée ci-dessous répertorie les emplacements et les autorisations pour les extensions serveur FrontPage d'un serveur UNIX, lorsque fpsrvadm.exe est exécuté avec l'umask recommandé de 022 par l'administrateur «&nbsp;kelly&nbsp;». Les autorisations ne permettent pas les accès en écriture de groupe. Ce sont <BR>644&nbsp;(rw-r—r--) pour les fichiers et 755&nbsp;(rwxr-xr-x) pour les répertoires.
+
+		<p>Pour générer toute autre autorisation, définissez votre umask comme il convient avant d'exécuter fpsrvadm.exe. Pour ajouter des administrateurs et des auteurs, utilisez la commande <B>Autorisations</B> de FrontPage.
+
+			<P CLASS=4>&nbsp;</P>
+
+			<TABLE cols=4 width=505>
+			
+				<TR VALIGN="top">
+					<TD class=T width=25%>drwxr-xr-x</TD>
+					<TD class=T width=24%>kelly</TD>
+					<TD class=T width=25%>volcano</TD>
+					<TD class=T width=26%>_vti_bin</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=25%>drwxr-xr-x</TD>
+					<TD class=T width=24%>kelly</TD>
+					<TD class=T width=25%>volcano</TD>
+					<TD class=T width=26%>_vti_cnf</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=25%>-rw-r--r--</TD>
+					<TD class=T width=24%>kelly</TD>
+					<TD class=T width=25%>volcano</TD>
+					<TD class=T width=26%>_vti_inf.html</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T width=25%>drwxr-xr-x</TD>
+					<TD class=T width=24%>kelly</TD>
+					<TD class=T width=25%>volcano</TD>
+					<TD class=T width=26%>_vti_log</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=25%>drwxr-xr-x</TD>
+					<TD class=T width=24%>kelly</TD>
+					<TD class=T width=25%>volcano</TD>
+					<TD class=T width=26%>_vti_pvt</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=25%>drwxr-xr-x</TD>
+					<TD class=T width=24%>kelly</TD>
+					<TD class=T width=25%>volcano</TD>
+					<TD class=T width=26%>_vti_txt</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T width=25%>-rw-r--r--</TD>
+					<TD class=T width=24%>kelly</TD>
+					<TD class=T width=25%>volcano</TD>
+					<TD class=T width=26%>index.html</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=25%>-rw-r--r--</TD>
+					<TD class=T width=24%>kelly</TD>
+					<TD class=T width=25%>volcano</TD>
+					<TD class=T width=26%>postinfo.html</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T colspan=4 width=100%><BR>_vti_bin:<BR>&nbsp;</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T width=25%>drwxr-xr-x</TD>
+					<TD class=T width=24%>kelly</TD>
+					<TD class=T width=25%>volcano</TD>
+					<TD class=T width=26%>_vti_adm</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=25%>drwxr-xr-x</TD>
+					<TD class=T width=24%>kelly</TD>
+					<TD class=T width=25%>volcano</TD>
+					<TD class=T width=26%>_vti_aut</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=25%>-r-sr-sr-x</TD>
+					<TD class=T width=24%>kelly</TD>
+					<TD class=T width=25%>volcano</TD>
+					<TD class=T width=26%>fpcount.exe</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T width=25%>-r-sr-sr-x</TD>
+					<TD class=T width=24%>kelly</TD>
+					<TD class=T width=25%>volcano</TD>
+					<TD class=T width=26%>shtml.exe</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T colspan=4 width=100%><BR>_vti_bin/_vti_adm:<BR>&nbsp;</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T width=25%>-r-sr-sr-x</TD>
+					<TD class=T width=24%>kelly</TD>
+					<TD class=T width=25%>volcano</TD>
+					<TD class=T width=26%>admin.exe</TD>
+				</TR>
+				
+				<TR VALIGN="top">
+					<TD class=T colspan=4 width=100%><BR>_vti_bin/_vti_aut:<BR>&nbsp;</TD>
+				</TR>
+		
+				<TR VALIGN="top">
+					<TD class=T width=25%>-r-sr-sr-x</TD>
+					<TD class=T width=24%>kelly</TD>
+					<TD class=T width=25%>volcano</TD>
+					<TD class=T width=26%>author.exe</TD>
+				</TR>
+				
+			</TABLE>
+		
+			<P class=6>&nbsp;</P>
+
+		<p>Pour une sécurité optimale, les fichiers sont créés dans FrontPage avec un umask 022. Afin de créer les fichiers avec un umask personnalisé, modifiez et compilez à nouveau les exécutables stub shtml.exe, author.exe, admin.exe et fpcount.exe. La source de ces fichiers se trouve sous /usr/local/frontpage/version4.0/srcs/fpsuid.c. Pour créer un umask personnalisé&nbsp;:
+
+			<OL>
+				<LI class=LN>Modifiez fpsuid.c, en changeant l'umask comme vous le souhaitez.
+			
+				<LI class=LN>Compilez une fois le fichier pour chaque exécutable stub.
+			
+				<LI class=LN>Remplacez les exécutables stub par les nouveaux.
+			</OL>
+
+
+		<P class=4>&nbsp;</P>
+
+		</TD>
+	</TR>
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_BEGIN-->
+
+<BR>
+
+<TABLE cellspacing="0" cellpadding="0" border=0 width="650">
+
+	<TR>
+	    <TD width="20" valign="top"></TD>
+	    <TD width="325" valign="top"><A HREF="apndxtoc.htm"><img SRC="back.gif" border="0"><font 	color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></A></font></TD>
+	    <TD width="325" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+	</TR>
+	
+	<TR>
+	    <TD width="20" valign="top"></TD>
+	    <TD colspan="3" width="650" valign="top"><HR></TD>
+	    
+	</TR>
+	
+	<TR>
+	    <TD width="20" valign="top"></TD>
+	    <TD colspan="2" width="650" valign="top">Dernière mise à jour&nbsp;:&nbsp;novembre 1998<BR>
+		<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+	    
+	</TR>
+	
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+</BODY>
+</HTML>

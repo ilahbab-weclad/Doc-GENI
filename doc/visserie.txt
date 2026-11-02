@@ -1,0 +1,25 @@
+VIS
+VIS CBHC - Vis à tête cylindrique bombée à six pans creux
+VIS CBLS - Vis à tête cylindrique bombée large fendue
+VIS CBLX - Vis à tête cylindrique bombée large à six lobes internes (TORX)
+VIS CBLZ - Vis à tête cylindrique bombée large à empreinte cruciforme
+VIS CBLZS - Vis à tête cylindrique bombée large à empreinte cruciforme fendue
+VIS CHC - Vis à tête cylindrique à six pans creux
+VIS CLS - Vis à tête cylindrique large fendue
+VIS CS - Vis à tête cylindrique fendue
+VIS CZHC - Vis à tête cylindrique basse à six pans creux
+VIS CZX - Vis à tête cylindrique basse à six lobes internes (TORX)
+VIS FBS - Vis à tête fraisée bombée fendue
+VIS FBX - Vis à tête fraisée bombée à six lobes internes (TORX)
+VIS FBZ - Vis à tête fraisée bombée à empreinte cruciforme
+VIS FHC - Vis à tête fraisée à six pans creux
+VIS FS - Vis à tête fraisée fendue
+VIS FX - Vis à tête fraisée à six lobes internes (TORX)
+VIS FZ - Vis à tête fraisée à empreinte cruciforme
+VIS HS - Vis à tête hexagonale fendue
+VIS RLS - Vis à tête ronde large (dite "poêlier") fendue
+VIS RLX - Vis à tête ronde large (dite "poêlier") à six lobes internes (TORX)
+VIS RLZ - Vis à tête ronde large (dite "poêlier") à empreinte cruciforme
+VIS STHC / HC - Vis sans tête à six pans creux à bout plat, cuvette, pointeau, teton …
+VIS TH / H - Vis à tête hexagonale
+ 

@@ -1,0 +1,4618 @@
+[Algérie] 42 
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Hijri New Year, 1998/04/27, 1419/01/01
+Hijri New Year, 1999/04/16, 1420/01/01
+Hijri New Year, 2000/04/05, 1421/01/01
+Hijri New Year, 2001/03/25, 1422/01/01
+Hijri New Year, 2002/03/14, 1423/01/01
+Independence Day, 1998/07/05
+Independence Day, 1999/07/05
+Independence Day, 2000/07/05
+Independence Day, 2001/07/05
+Independence Day, 2002/07/05
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Prophet Mohammed's Birthday, 1998/07/06, 1419/03/12
+Prophet Mohammed's Birthday, 1999/06/25, 1420/03/12
+Prophet Mohammed's Birthday, 2000/06/14, 1421/03/12
+Prophet Mohammed's Birthday, 2001/06/03, 1422/03/12
+Prophet Mohammed's Birthday, 2002/05/23, 1423/03/12
+[Argentine] 65 
+Children's Day, 1998/08/02
+Children's Day, 1999/08/01
+Children's Day, 2000/08/06
+Children's Day, 2001/08/05
+Children's Day, 2002/08/04
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Columbus Day, 1998/10/12
+Columbus Day, 1999/10/12
+Columbus Day, 2000/10/12
+Columbus Day, 2001/10/12
+Columbus Day, 2002/10/12
+Father's Day, 1998/06/21
+Father's Day, 1999/06/20
+Father's Day, 2000/06/18
+Father's Day, 2001/06/17
+Father's Day, 2002/06/16
+Flag Day, 1998/06/20
+Flag Day, 1999/06/20
+Flag Day, 2000/06/20
+Flag Day, 2001/06/20
+Flag Day, 2002/06/20
+Independence Day, 1998/07/09
+Independence Day, 1999/07/09
+Independence Day, 2000/07/09
+Independence Day, 2001/07/09
+Independence Day, 2002/07/09
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+Malvinas Day, 1998/06/08
+Malvinas Day, 1999/06/14
+Malvinas Day, 2000/06/12
+Malvinas Day, 2001/06/11
+Malvinas Day, 2002/06/10
+Mother's Day, 1998/05/10
+Mother's Day, 1999/05/09
+Mother's Day, 2000/05/14
+Mother's Day, 2001/05/13
+Mother's Day, 2002/05/12
+National Day, 1998/05/25
+National Day, 1999/05/25
+National Day, 2000/05/25
+National Day, 2001/05/25
+National Day, 2002/05/25
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+San Martin National Patriot Day, 1998/08/17
+San Martin National Patriot Day, 1999/08/17
+San Martin National Patriot Day, 2000/08/17
+San Martin National Patriot Day, 2001/08/17
+San Martin National Patriot Day, 2002/08/17
+Student's Day, 1998/09/21
+Student's Day, 1999/09/21
+Student's Day, 2000/09/21
+Student's Day, 2001/09/21
+Student's Day, 2002/09/21
+[Australie] 57 
+Anzac Day, 1998/04/25
+Anzac Day, 1999/04/25
+Anzac Day, 2000/04/25
+Anzac Day, 2001/04/25
+Anzac Day, 2002/04/25
+Australia Day, 1998/01/26
+Australia Day, 1999/01/26
+Australia Day, 2000/01/26
+Australia Day, 2001/01/26
+Australia Day, 2002/01/26
+Boxing Day - Observed, 1998/12/28
+Boxing Day - Observed, 1999/12/27
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Father's Day, 1998/06/21
+Father's Day, 1999/06/20
+Father's Day, 2000/06/18
+Father's Day, 2001/06/17
+Father's Day, 2002/06/16
+Good Friday, 1998/04/10
+Good Friday, 1999/04/02
+Good Friday, 2000/04/21
+Good Friday, 2001/04/13
+Good Friday, 2002/03/29
+Labour Day, 1998/10/05
+Labour Day, 1999/10/04
+Labour Day, 2000/10/02
+Labour Day, 2001/10/01
+Labour Day, 2002/10/07
+Mother's Day, 1998/05/10
+Mother's Day, 1999/05/09
+Mother's Day, 2000/05/14
+Mother's Day, 2001/05/13
+Mother's Day, 2002/05/12
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Queen's Birthday, 1998/06/08
+Queen's Birthday, 1999/06/14
+Queen's Birthday, 2000/06/12
+Queen's Birthday, 2001/06/11
+Queen's Birthday, 2002/06/10
+[Autriche] 75 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Ascension Day, 1998/05/21
+Ascension Day, 1999/05/13
+Ascension Day, 2000/06/01
+Ascension Day, 2001/05/24
+Ascension Day, 2002/05/09
+Assumption Day, 1998/08/15
+Assumption Day, 1999/08/15
+Assumption Day, 2000/08/15
+Assumption Day, 2001/08/15
+Assumption Day, 2002/08/15
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Corpus Christi Day, 1998/06/11
+Corpus Christi Day, 1999/06/03
+Corpus Christi Day, 2000/06/22
+Corpus Christi Day, 2001/06/14
+Corpus Christi Day, 2002/05/30
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Epiphany, 1998/01/06
+Epiphany, 1999/01/06
+Epiphany, 2000/01/06
+Epiphany, 2001/01/06
+Epiphany, 2002/01/06
+Immaculate Conception, 1998/12/08
+Immaculate Conception, 1999/12/08
+Immaculate Conception, 2000/12/08
+Immaculate Conception, 2001/12/08
+Immaculate Conception, 2002/12/08
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+National Day, 1998/10/26
+National Day, 1999/10/26
+National Day, 2000/10/26
+National Day, 2001/10/26
+National Day, 2002/10/26
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Whitmonday, 1998/06/01
+Whitmonday, 1999/05/24
+Whitmonday, 2000/06/12
+Whitmonday, 2001/06/04
+Whitmonday, 2002/05/20
+Whitsunday, 1998/05/31
+Whitsunday, 1999/05/23
+Whitsunday, 2000/06/11
+Whitsunday, 2001/06/03
+Whitsunday, 2002/05/19
+[Bahreïn] 58 
+Ashoora, 1998/05/06, 1419/1/10
+Ashoora, 1999/04/25, 1420/1/10
+Ashoora, 2000/04/14, 1421/1/10
+Ashoora, 2001/04/03, 1422/1/10
+Ashoora, 2002/03/23, 1423/1/10
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Adha (3rd day), 1998/04/09, 1418/12/12
+Eid al Adha (3rd day), 1999/03/29, 1419/12/12
+Eid al Adha (3rd day), 2000/03/17, 1420/12/12
+Eid al Adha (3rd day), 2001/03/07, 1421/12/12
+Eid al Adha (3rd day), 2002/02/24, 1422/12/12
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Eid al Fitr (3rd day), 1998/01/31, 1418/10/03
+Eid al Fitr (3rd day), 1999/01/20, 1419/10/03
+Eid al Fitr (3rd day), 2000/01/09, 1420/10/03
+Eid al Fitr (3rd day), 2000/12/29, 1421/10/03
+Eid al Fitr (3rd day), 2001/12/18, 1422/10/03
+Eid al Fitr (3rd day), 2002/12/07, 1423/10/03
+Hijri New Year, 1998/04/27, 1419/01/01
+Hijri New Year, 1999/04/16, 1420/01/01
+Hijri New Year, 2000/04/05, 1421/01/01
+Hijri New Year, 2001/03/25, 1422/01/01
+Hijri New Year, 2002/03/14, 1423/01/01
+National Holiday, 1998/12/16
+National Holiday, 1999/12/16
+National Holiday, 2000/12/16
+National Holiday, 2001/12/16
+National Holiday, 2002/12/16
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Prophet Mohammed's Birthday, 1998/07/06, 1419/03/12
+Prophet Mohammed's Birthday, 1999/06/25, 1420/03/12
+Prophet Mohammed's Birthday, 2000/06/14, 1421/03/12
+Prophet Mohammed's Birthday, 2001/06/03, 1422/03/12
+Prophet Mohammed's Birthday, 2002/05/23, 1423/03/12
+[Belgique] 80 
+Anniversaire du roi, 1999/11/15
+Anniversaire du roi, 2000/11/15
+Anniversaire du roi, 2001/11/15
+Anniversaire du roi, 2002/11/15
+Armistice 1918, 1999/11/11
+Armistice 1918, 2000/11/11
+Armistice 1918, 2001/11/11
+Armistice 1918, 2002/11/11
+Ascension, 1999/05/13
+Ascension, 2000/06/01
+Ascension, 2001/05/24
+Ascension, 2002/05/09
+Assomption, 1999/08/15
+Assomption, 2000/08/15
+Assomption, 2001/08/15
+Assomption, 2002/08/15
+Fête de la communauté flamande, 1999/07/11
+Fête de la communauté flamande, 2000/07/11
+Fête de la communauté flamande, 2001/07/11
+Fête de la communauté flamande, 2002/07/11
+Fête de la communauté francophone, 1999/09/27
+Fête de la communauté francophone, 2000/09/27
+Fête de la communauté francophone, 2001/09/27
+Fête de la communauté francophone, 2002/09/27
+Fête du travail, 2000/05/01
+Fête du travail, 2001/05/01
+Fête du travail, 2002/05/01
+Fête du travail, 2003/05/01
+Jour de l'an, 2000/01/01
+Jour de l'an, 2001/01/01
+Jour de l'an, 2002/01/01
+Jour de l'an, 2003/01/01
+Journée Nationale, 1999/07/21
+Journée Nationale, 2000/07/21
+Journée Nationale, 2001/07/21
+Journée Nationale, 2002/07/21
+Lendemain de Noël, 2000/12/26
+Lendemain de Noël, 2001/12/26
+Lendemain de Noël, 2002/12/26
+Lendemain de Noël, 2003/12/26
+Lundi de la Pentecôte, 2000/06/12
+Lundi de la Pentecôte, 2001/06/04
+Lundi de la Pentecôte, 2002/05/20
+Lundi de la Pentecôte, 2003/06/09
+Lundi de Pâques, 2000/04/24
+Lundi de Pâques, 2001/04/16
+Lundi de Pâques, 2002/04/01
+Lundi de Pâques, 2003/04/21
+Noël, 1999/12/25
+Noël, 2000/12/25
+Noël, 2001/12/25
+Noël, 2002/12/25
+Pâques, 2000/04/23
+Pâques, 2001/04/15
+Pâques, 2002/03/31
+Pâques, 2003/04/20
+Pentecôte, 2000/06/11
+Pentecôte, 2001/06/03
+Pentecôte, 2002/05/19
+Pentecôte, 2003/06/08
+Saint-Sylvestre, 2000/12/31
+Saint-Sylvestre, 2001/12/31
+Saint-Sylvestre, 2002/12/31
+Saint-Sylvestre, 2003/12/31
+Toussaint, 1999/11/01
+Toussaint, 2000/11/01
+Toussaint, 2001/11/01
+Toussaint, 2002/11/01
+[Bolivie] 20 
+Christmas, 1998/12/25
+Christmas, 1999/12/25
+Christmas, 2000/12/25
+Christmas, 2001/12/25
+Christmas, 2002/12/25
+Independence Day, 1998/08/06
+Independence Day, 1999/08/06
+Independence Day, 2000/08/06
+Independence Day, 2001/08/06
+Independence Day, 2002/08/06
+Labor day, 1998/05/01
+Labor day, 1999/05/01
+Labor day, 2000/05/01
+Labor day, 2001/05/01
+Labor day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+[Brésil] 95 
+Assumption, 1998/08/15
+Assumption, 1999/08/15
+Assumption, 2000/08/15
+Assumption, 2001/08/15
+Assumption, 2002/08/15
+Carnival (1st day), 1998/02/23
+Carnival (1st day), 1999/02/15
+Carnival (1st day), 2000/03/06
+Carnival (1st day), 2001/02/26
+Carnival (1st day), 2002/02/11
+Carnival (2nd day), 1998/02/24
+Carnival (2nd day), 1999/02/16
+Carnival (2nd day), 2000/03/07
+Carnival (2nd day), 2001/02/27
+Carnival (2nd day), 2002/02/12
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Christmas Eve, 1998/12/24
+Christmas Eve, 1999/12/24
+Christmas Eve, 2000/12/24
+Christmas Eve, 2001/12/24
+Christmas Eve, 2002/12/24
+Corpus Christi Day, 1998/06/11
+Corpus Christi Day, 1999/06/03
+Corpus Christi Day, 2000/06/22
+Corpus Christi Day, 2001/06/14
+Corpus Christi Day, 2002/05/30
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Finados, 1998/11/02
+Finados, 1999/11/02
+Finados, 2000/11/02
+Finados, 2001/11/02
+Finados, 2002/11/02
+Good Friday, 1998/04/10
+Good Friday, 1999/04/02
+Good Friday, 2000/04/21
+Good Friday, 2001/04/13
+Good Friday, 2002/03/29
+Immaculate Conception, 1998/12/08
+Immaculate Conception, 1999/12/08
+Immaculate Conception, 2000/12/08
+Immaculate Conception, 2001/12/08
+Immaculate Conception, 2002/12/08
+Independence Day, 1998/09/07
+Independence Day, 1999/09/07
+Independence Day, 2000/09/07
+Independence Day, 2001/09/07
+Independence Day, 2002/09/07
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+New Year's Eve, 1998/12/31
+New Year's Eve, 1999/12/31
+New Year's Eve, 2000/12/31
+New Year's Eve, 2001/12/31
+New Year's Eve, 2002/12/31
+Nossa Senhora de Aparecida, 1998/10/12
+Nossa Senhora de Aparecida, 1999/10/12
+Nossa Senhora de Aparecida, 2000/10/12
+Nossa Senhora de Aparecida, 2001/10/12
+Nossa Senhora de Aparecida, 2002/10/12
+Republic Day, 1998/11/15
+Republic Day, 1999/11/15
+Republic Day, 2000/11/15
+Republic Day, 2001/11/15
+Republic Day, 2002/11/15
+Rio de Janeiro Anniversary, 1998/01/20
+Rio de Janeiro Anniversary, 1999/01/20
+Rio de Janeiro Anniversary, 2000/01/20
+Rio de Janeiro Anniversary, 2001/01/20
+Rio de Janeiro Anniversary, 2002/01/20
+Sao Paulo Anniversary, 1998/01/25
+Sao Paulo Anniversary, 1999/01/25
+Sao Paulo Anniversary, 2000/01/25
+Sao Paulo Anniversary, 2001/01/25
+Sao Paulo Anniversary, 2002/01/25
+Tiradentes Day, 1998/04/21
+Tiradentes Day, 1999/04/21
+Tiradentes Day, 2000/04/21
+Tiradentes Day, 2001/04/21
+Tiradentes Day, 2002/04/21
+[Canada] 125 
+Action de grâces, 1999/10/11
+Action de grâces, 2000/10/09
+Action de grâces, 2001/10/08
+Action de grâces, 2002/10/14
+British Columbia Day, 1999/08/02
+British Columbia Day, 2000/08/07
+British Columbia Day, 2001/08/06
+British Columbia Day, 2002/08/05
+Congé Statutaire, 1999/08/02
+Congé Statutaire, 2000/08/07
+Congé Statutaire, 2001/08/06
+Congé Statutaire, 2002/08/05
+Discovery Day (Yukon), 1999/08/16
+Discovery Day (Yukon), 2000/08/21
+Discovery Day (Yukon), 2001/08/20
+Discovery Day (Yukon), 2002/08/05
+Family Day (Alberta), 2000/02/21
+Family Day (Alberta), 2001/02/19
+Family Day (Alberta), 2002/02/18
+Family Day (Alberta), 2003/02/17
+Fête de Dollard, 2000/05/22
+Fête de Dollard, 2001/05/21
+Fête de Dollard, 2002/05/20
+Fête de Dollard, 2003/05/19
+Fête des mères, 2000/05/14
+Fête des mères, 2001/05/13
+Fête des mères, 2002/05/12
+Fête des mères, 2003/05/11
+Fête des pères, 2000/06/18
+Fête des pères, 2001/06/17
+Fête des pères, 2002/06/16
+Fête des pères, 2003/06/15
+Fête du Canada (Dominion Day), 1999/07/01
+Fête du Canada (Dominion Day), 2000/07/01
+Fête du Canada (Dominion Day), 2001/07/01
+Fête du Canada (Dominion Day), 2002/07/01
+Fête du travail, 1999/09/06
+Fête du travail, 2000/09/04
+Fête du travail, 2001/09/03
+Fête du travail, 2002/09/02
+First Monday in August, 1999/08/02
+First Monday in August, 2000/08/07
+First Monday in August, 2001/08/06
+First Monday in August, 2002/08/05
+Halloween, 1999/10/31
+Halloween, 2000/10/31
+Halloween, 2001/10/31
+Halloween, 2002/10/31
+Jour de l'an, 2000/01/01
+Jour de l'an, 2001/01/01
+Jour de l'an, 2002/01/01
+Jour de l'an, 2003/01/01
+Jour des morts au champ d'honneur (Newfoundland), 1999/07/01
+Jour des morts au champ d'honneur(Newfoundland), 2000/07/01
+Jour des morts au champ d'honneur(Newfoundland), 2001/07/01
+Jour des morts au champ d'honneur(Newfoundland), 2002/07/01
+Journée du souvenir, 1999/11/11
+Journée du souvenir, 2000/11/11
+Journée du souvenir, 2001/11/11
+Journée du souvenir, 2002/11/11
+Lendemain de Noël, 1999/12/26
+Lendemain de Noël, 2000/12/26
+Lendemain de Noël, 2001/12/26
+Lendemain de Noël, 2002/12/26
+Lundi de Pâques, 2000/04/24
+Lundi de Pâques, 2001/04/16
+Lundi de Pâques, 2002/04/01
+Lundi de Pâques, 2003/04/21
+New Brunswick Day, 1999/08/02
+New Brunswick Day, 2000/08/07
+New Brunswick Day, 2001/08/06
+New Brunswick Day, 2002/08/05
+Noël, 1999/12/25
+Noël, 2000/12/25
+Noël, 2001/12/25
+Noël, 2002/12/25
+Pâques, 2000/04/23
+Pâques, 2001/04/15
+Pâques, 2002/03/31
+Pâques, 2003/04/20
+Saint-Jean Baptiste (Québec), 1999/06/24
+Saint-Jean Baptiste (Québec), 2000/06/24
+Saint-Jean Baptiste (Québec), 2001/06/24
+Saint-Jean Baptiste (Québec), 2002/06/24
+Saint-Patrick, 2000/03/17
+Saint-Patrick, 2001/03/17
+Saint-Patrick, 2002/03/17
+Saint-Patrick, 2003/03/17
+Saint-Valentin, 2000/02/14
+Saint-Valentin, 2001/02/14
+Saint-Valentin, 2002/02/14
+Saint-Valentin, 2003/02/14
+Saskatchevan Day, 1999/08/02
+Saskatchevan Day, 2000/08/07
+Saskatchevan Day, 2001/08/06
+Saskatchevan Day, 2002/08/05
+Vendredi Saint, 2000/04/21
+Vendredi Saint, 2001/04/13
+Vendredi Saint, 2002/04/13
+Vendredi Saint, 2003/03/29
+[Chili] 45 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Armed Forces Day, 1998/09/19
+Armed Forces Day, 1999/09/19
+Armed Forces Day, 2000/09/19
+Armed Forces Day, 2001/09/19
+Armed Forces Day, 2002/09/19
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Christmas Eve, 1998/12/24
+Christmas Eve, 1999/12/24
+Christmas Eve, 2000/12/24
+Christmas Eve, 2001/12/24
+Christmas Eve, 2002/12/24
+Columbus Day, 1998/10/12
+Columbus Day, 1999/10/12
+Columbus Day, 2000/10/12
+Columbus Day, 2001/10/12
+Columbus Day, 2002/10/12
+Independence Day, 1998/09/18
+Independence Day, 1999/09/18
+Independence Day, 2000/09/18
+Independence Day, 2001/09/18
+Independence Day, 2002/09/18
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+St. Peter's and St. Paul's Day, 1998/06/29
+St. Peter's and St. Paul's Day, 1999/06/29
+St. Peter's and St. Paul's Day, 2000/06/29
+St. Peter's and St. Paul's Day, 2001/06/29
+St. Peter's and St. Paul's Day, 2002/06/29
+[Fêtes religieuses chrétiennes] 125 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Ascension Day, 1998/05/21
+Ascension Day, 1999/05/13
+Ascension Day, 2000/06/01
+Ascension Day, 2001/05/24
+Ascension Day, 2002/05/09
+Ash Wednesday, 1998/02/25
+Ash Wednesday, 1999/02/17
+Ash Wednesday, 2000/03/08
+Ash Wednesday, 2001/02/28
+Ash Wednesday, 2002/02/13
+Assumption, 1998/08/15
+Assumption, 1999/08/15
+Assumption, 2000/08/15
+Assumption, 2001/08/15
+Assumption, 2002/08/15
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Christmas Eve, 1998/12/24
+Christmas Eve, 1999/12/24
+Christmas Eve, 2000/12/24
+Christmas Eve, 2001/12/24
+Christmas Eve, 2002/12/24
+Corpus Christi Day, 1998/06/11
+Corpus Christi Day, 1999/06/03
+Corpus Christi Day, 2000/06/22
+Corpus Christi Day, 2001/06/14
+Corpus Christi Day, 2002/05/30
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Epiphany, 1998/01/06
+Epiphany, 1999/01/06
+Epiphany, 2000/01/06
+Epiphany, 2001/01/06
+Epiphany, 2002/01/06
+First Sunday of Advent, 1998/11/29
+First Sunday of Advent, 1999/11/28
+First Sunday of Advent, 2000/12/03
+First Sunday of Advent, 2001/12/02
+First Sunday of Advent, 2002/12/01
+Fourth Sunday of Advent, 1998/12/20
+Fourth Sunday of Advent, 1999/12/19
+Fourth Sunday of Advent, 2000/12/24
+Fourth Sunday of Advent, 2001/12/23
+Fourth Sunday of Advent, 2002/12/22
+Good Friday, 1998/04/10
+Good Friday, 1999/04/02
+Good Friday, 2000/04/21
+Good Friday, 2001/04/13
+Good Friday, 2002/03/29
+Immaculate Conception, 1998/12/08
+Immaculate Conception, 1999/12/08
+Immaculate Conception, 2000/12/08
+Immaculate Conception, 2001/12/08
+Immaculate Conception, 2002/12/08
+Mary - Mother of God, 1998/01/01
+Mary - Mother of God, 1999/01/01
+Mary - Mother of God, 2000/01/01
+Mary - Mother of God, 2001/01/01
+Mary - Mother of God, 2002/01/01
+Maundy Thursday, 1998/04/09
+Maundy Thursday, 1999/04/01
+Maundy Thursday, 2000/04/20
+Maundy Thursday, 2001/04/12
+Maundy Thursday, 2002/03/28
+Palm Sunday, 1998/04/05
+Palm Sunday, 1999/03/28
+Palm Sunday, 2000/04/16
+Palm Sunday, 2001/04/08
+Palm Sunday, 2002/03/24
+Quinquagesima Sunday, 1998/02/22
+Quinquagesima Sunday, 1999/02/14
+Quinquagesima Sunday, 2000/03/05
+Quinquagesima Sunday, 2001/02/25
+Quinquagesima Sunday, 2002/02/10
+Second Sunday of Advent, 1998/12/06
+Second Sunday of Advent, 1999/12/05
+Second Sunday of Advent, 2000/12/10
+Second Sunday of Advent, 2001/12/09
+Second Sunday of Advent, 2002/12/08
+St. Joseph, 1998/03/19
+St. Joseph, 1999/03/19
+St. Joseph, 2000/03/19
+St. Joseph, 2001/03/19
+St. Joseph, 2002/03/19
+St. Peter & St. Paul, 1998/06/29
+St. Peter & St. Paul, 1999/06/29
+St. Peter & St. Paul, 2000/06/29
+St. Peter & St. Paul, 2001/06/29
+St. Peter & St. Paul, 2002/06/29
+Third Sunday of Advent, 1998/12/13
+Third Sunday of Advent, 1999/12/12
+Third Sunday of Advent, 2000/12/17
+Third Sunday of Advent, 2001/12/16
+Third Sunday of Advent, 2002/12/15
+Trinity Sunday, 1998/06/07
+Trinity Sunday, 1999/05/30
+Trinity Sunday, 2000/06/18
+Trinity Sunday, 2001/06/10
+Trinity Sunday, 2002/05/26
+Whitmonday, 1998/06/01
+Whitmonday, 1999/05/24
+Whitmonday, 2000/06/12
+Whitmonday, 2001/06/04
+Whitmonday, 2002/05/20
+Whitsunday, 1998/05/31
+Whitsunday, 1999/05/23
+Whitsunday, 2000/06/11
+Whitsunday, 2001/06/03
+Whitsunday, 2002/05/19
+[Colombie] 45 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Assumption Day, 1998/08/15
+Assumption Day, 1999/08/15
+Assumption Day, 2000/08/15
+Assumption Day, 2001/08/15
+Assumption Day, 2002/08/15
+Boyaca Battle, 1998/08/07
+Boyaca Battle, 1999/08/07
+Boyaca Battle, 2000/08/07
+Boyaca Battle, 2001/08/07
+Boyaca Battle, 2002/08/07
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Columbus Day, 1998/10/12
+Columbus Day, 1999/10/12
+Columbus Day, 2000/10/12
+Columbus Day, 2001/10/12
+Columbus Day, 2002/10/12
+Independence Day, 1998/07/20
+Independence Day, 1999/07/20
+Independence Day, 2000/07/20
+Independence Day, 2001/07/20
+Independence Day, 2002/07/20
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+St. Peter & St. Paul, 1998/06/29
+St. Peter & St. Paul, 1999/06/29
+St. Peter & St. Paul, 2000/06/29
+St. Peter & St. Paul, 2001/06/29
+St. Peter & St. Paul, 2002/06/29
+[Costa Rica] 50 
+Anexion de Guanacaste, 1998/07/25
+Anexion de Guanacaste, 1999/07/25
+Anexion de Guanacaste, 2000/07/25
+Anexion de Guanacaste, 2001/07/25
+Anexion de Guanacaste, 2002/07/25
+Assumption Day, 1998/08/15
+Assumption Day, 1999/08/15
+Assumption Day, 2000/08/15
+Assumption Day, 2001/08/15
+Assumption Day, 2002/08/15
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Columbus Day, 1998/10/12
+Columbus Day, 1999/10/12
+Columbus Day, 2000/10/12
+Columbus Day, 2001/10/12
+Columbus Day, 2002/10/12
+Dia de la Virgen de los Angeles, 1998/08/02
+Dia de la Virgen de los Angeles, 1999/08/02
+Dia de la Virgen de los Angeles, 2000/08/02
+Dia de la Virgen de los Angeles, 2001/08/02
+Dia de la Virgen de los Angeles, 2002/08/02
+Independence Day, 1998/09/15
+Independence Day, 1999/09/15
+Independence Day, 2000/09/15
+Independence Day, 2001/09/15
+Independence Day, 2002/09/15
+Juan Santamaria, 1998/04/11
+Juan Santamaria, 1999/04/11
+Juan Santamaria, 2000/04/11
+Juan Santamaria, 2001/04/11
+Juan Santamaria, 2002/04/11
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Traspaso de Poderes, 1998/05/08
+Traspaso de Poderes, 1999/05/08
+Traspaso de Poderes, 2000/05/08
+Traspaso de Poderes, 2001/05/08
+Traspaso de Poderes, 2002/05/08
+[Croatie] 55 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Assumption Day, 1998/08/15
+Assumption Day, 1999/08/15
+Assumption Day, 2000/08/15
+Assumption Day, 2001/08/15
+Assumption Day, 2002/08/15
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Day of Antifascist Struggle, 1998/06/22
+Day of Antifascist Struggle, 1999/06/22
+Day of Antifascist Struggle, 2000/06/22
+Day of Antifascist Struggle, 2001/06/22
+Day of Antifascist Struggle, 2002/06/22
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Epiphany, 1998/01/06
+Epiphany, 1999/01/06
+Epiphany, 2000/01/06
+Epiphany, 2001/01/06
+Epiphany, 2002/01/06
+Homeland Thanksgiving Day, 1998/08/05
+Homeland Thanksgiving Day, 1999/08/05
+Homeland Thanksgiving Day, 2000/08/05
+Homeland Thanksgiving Day, 2001/08/05
+Homeland Thanksgiving Day, 2002/08/05
+Labor Day, 1998/05/01
+Labor Day, 1999/05/01
+Labor Day, 2000/05/01
+Labor Day, 2001/05/01
+Labor Day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Statehood Day, 1998/05/30
+Statehood Day, 1999/05/30
+Statehood Day, 2000/05/30
+Statehood Day, 2001/05/30
+Statehood Day, 2002/05/30
+[République Tchèque] 55 
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Christmas Eve, 1998/12/24
+Christmas Eve, 1999/12/24
+Christmas Eve, 2000/12/24
+Christmas Eve, 2001/12/24
+Christmas Eve, 2002/12/24
+Constantin and Methodius, 1998/07/05
+Constantin and Methodius, 1999/07/05
+Constantin and Methodius, 2000/07/05
+Constantin and Methodius, 2001/07/05
+Constantin and Methodius, 2002/07/05
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Independence Day, 1998/10/28
+Independence Day, 1999/10/28
+Independence Day, 2000/10/28
+Independence Day, 2001/10/28
+Independence Day, 2002/10/28
+Jan Hus, 1998/07/06
+Jan Hus, 1999/07/06
+Jan Hus, 2000/07/06
+Jan Hus, 2001/07/06
+Jan Hus, 2002/07/06
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+Liberation Day, 1998/05/08
+Liberation Day, 1999/05/08
+Liberation Day, 2000/05/08
+Liberation Day, 2001/05/08
+Liberation Day, 2002/05/08
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+[Danemark] 65 
+Anniversaire de la constitution, 1998/06/05
+Anniversaire de la constitution, 1999/06/05
+Anniversaire de la constitution, 2000/06/05
+Anniversaire de la constitution, 2001/06/05
+Anniversaire de la constitution, 2002/06/05
+Ascension, 1998/05/21
+Ascension, 1999/05/13
+Ascension, 2000/06/01
+Ascension, 2001/05/24
+Ascension, 2002/05/09
+Jeudi Saint, 1998/04/09
+Jeudi Saint, 1999/04/01
+Jeudi Saint, 2000/04/20
+Jeudi Saint, 2001/04/12
+Jeudi Saint, 2002/03/28
+Jour de l'an, 1998/01/01
+Jour de l'an, 1999/01/01
+Jour de l'an, 2000/01/01
+Jour de l'an, 2001/01/01
+Jour de l'an, 2002/01/01
+Lendemain de Noël, 1998/12/26
+Lendemain de Noël, 1999/12/26
+Lendemain de Noël, 2000/12/26
+Lendemain de Noël, 2001/12/26
+Lendemain de Noël, 2002/12/26
+Lundi de la Pentecôte, 1998/06/01
+Lundi de la Pentecôte, 1999/05/24
+Lundi de la Pentecôte, 2000/06/12
+Lundi de la Pentecôte, 2001/06/04
+Lundi de la Pentecôte, 2002/05/20
+Lundi de Pâques, 1998/04/13
+Lundi de Pâques, 1999/04/05
+Lundi de Pâques, 2000/04/24
+Lundi de Pâques, 2001/04/16
+Lundi de Pâques, 2002/04/01
+Noël, 1998/12/25
+Noël, 1999/12/25
+Noël, 2000/12/25
+Noël, 2001/12/25
+Noël, 2002/12/25
+Pâques, 1998/04/12
+Pâques, 1999/04/04
+Pâques, 2000/04/23
+Pâques, 2001/04/15
+Pâques, 2002/03/31
+Pentecôte, 1998/05/31
+Pentecôte, 1999/05/23
+Pentecôte, 2000/06/11
+Pentecôte, 2001/06/03
+Pentecôte, 2002/05/19
+Vendredi Saint, 1998/04/10
+Vendredi Saint, 1999/04/02
+Vendredi Saint, 2000/04/21
+Vendredi Saint, 2001/04/13
+Vendredi Saint, 2002/03/29
+[Équateur] 60 
+Carnival (1st day), 1998/02/23
+Carnival (1st day), 1999/02/15
+Carnival (1st day), 2000/03/06
+Carnival (1st day), 2001/02/26
+Carnival (1st day), 2002/02/11
+Carnival (2nd day), 1998/02/24
+Carnival (2nd day), 1999/02/16
+Carnival (2nd day), 2000/03/07
+Carnival (2nd day), 2001/02/27
+Carnival (2nd day), 2002/02/12
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Columbus Day, 1998/10/12
+Columbus Day, 1999/10/12
+Columbus Day, 2000/10/12
+Columbus Day, 2001/10/12
+Columbus Day, 2002/10/12
+Independence Day, 1998/08/10
+Independence Day, 1999/08/10
+Independence Day, 2000/08/10
+Independence Day, 2001/08/10
+Independence Day, 2002/08/10
+Independence of Cuenca Day, 1998/11/03
+Independence of Cuenca Day, 1999/11/03
+Independence of Cuenca Day, 2000/11/03
+Independence of Cuenca Day, 2001/11/03
+Independence of Cuenca Day, 2002/11/03
+Independence of Guayaquil Day, 1998/10/09
+Independence of Guayaquil Day, 1999/10/09
+Independence of Guayaquil Day, 2000/10/09
+Independence of Guayaquil Day, 2001/10/09
+Independence of Guayaquil Day, 2002/10/09
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+Memorial Day, 1998/11/02
+Memorial Day, 1999/11/02
+Memorial Day, 2000/11/02
+Memorial Day, 2001/11/02
+Memorial Day, 2002/11/02
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Pichincha Day, 1998/05/24
+Pichincha Day, 1999/05/24
+Pichincha Day, 2000/05/24
+Pichincha Day, 2001/05/24
+Pichincha Day, 2002/05/24
+Simon Bolivar Day, 1998/07/24
+Simon Bolivar Day, 1999/07/24
+Simon Bolivar Day, 2000/07/24
+Simon Bolivar Day, 2001/07/24
+Simon Bolivar Day, 2002/07/24
+[Égypte] 93 
+Armed Forces Day, 1998/10/06
+Armed Forces Day, 1999/10/06
+Armed Forces Day, 2000/10/06
+Armed Forces Day, 2001/10/06
+Armed Forces Day, 2002/10/06
+Christmas (Eastern), 1998/01/07
+Christmas (Eastern), 1999/01/07
+Christmas (Eastern), 2000/01/07
+Christmas (Eastern), 2001/01/07
+Christmas (Eastern), 2002/01/07
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Adha (3rd day), 1998/04/09, 1418/12/12
+Eid al Adha (3rd day), 1999/03/29, 1419/12/12
+Eid al Adha (3rd day), 2000/03/17, 1420/12/12
+Eid al Adha (3rd day), 2001/03/07, 1421/12/12
+Eid al Adha (3rd day), 2002/02/24, 1422/12/12
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Eid al Fitr (3rd day), 1998/01/31, 1418/10/03
+Eid al Fitr (3rd day), 1999/01/20, 1419/10/03
+Eid al Fitr (3rd day), 2000/01/09, 1420/10/03
+Eid al Fitr (3rd day), 2000/12/29, 1421/10/03
+Eid al Fitr (3rd day), 2001/12/18, 1422/10/03
+Eid al Fitr (3rd day), 2002/12/07, 1423/10/03
+Evacuation Day, 1998/06/18
+Evacuation Day, 1999/06/18
+Evacuation Day, 2000/06/18
+Evacuation Day, 2001/06/18
+Evacuation Day, 2002/06/18
+Hijri New Year, 1998/04/27, 1419/01/01
+Hijri New Year, 1999/04/16, 1420/01/01
+Hijri New Year, 2000/04/05, 1421/01/01
+Hijri New Year, 2001/03/25, 1422/01/01
+Hijri New Year, 2002/03/14, 1423/01/01
+Independence Day, 1998/02/28
+Independence Day, 1999/02/28
+Independence Day, 2000/02/28
+Independence Day, 2001/02/28
+Independence Day, 2002/02/28
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Prophet Mohammed's Birthday, 1998/07/06, 1419/03/12
+Prophet Mohammed's Birthday, 1999/06/25, 1420/03/12
+Prophet Mohammed's Birthday, 2000/06/14, 1421/03/12
+Prophet Mohammed's Birthday, 2001/06/03, 1422/03/12
+Prophet Mohammed's Birthday, 2002/05/23, 1423/03/12
+Revolution Day, 1998/07/23
+Revolution Day, 1999/07/23
+Revolution Day, 2000/07/23
+Revolution Day, 2001/07/23
+Revolution Day, 2002/07/23
+Sinai Liberation Day, 1998/04/25
+Sinai Liberation Day, 1999/04/25
+Sinai Liberation Day, 2000/04/25
+Sinai Liberation Day, 2001/04/25
+Sinai Liberation Day, 2002/04/25
+Union Day, 1998/02/22
+Union Day, 1999/02/22
+Union Day, 2000/02/22
+Union Day, 2001/02/22
+Union Day, 2002/02/22
+Victory Day, 1998/12/23
+Victory Day, 1999/12/23
+Victory Day, 2000/12/23
+Victory Day, 2001/12/23
+Victory Day, 2002/12/23
+[Finlande] 100 
+Aleksis Kivi Day, 1998/10/10
+Aleksis Kivi Day, 1999/10/10
+Aleksis Kivi Day, 2000/10/10
+Aleksis Kivi Day, 2001/10/10
+Aleksis Kivi Day, 2002/10/10
+All Saints' Day, 1998/11/07
+All Saints' Day, 1999/11/06
+All Saints' Day, 2000/11/04
+All Saints' Day, 2001/11/03
+All Saints' Day, 2002/11/02
+Ascension Day, 1998/05/21
+Ascension Day, 1999/05/13
+Ascension Day, 2000/06/01
+Ascension Day, 2001/05/24
+Ascension Day, 2002/05/09
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Christmas Eve, 1998/12/24
+Christmas Eve, 1999/12/24
+Christmas Eve, 2000/12/24
+Christmas Eve, 2001/12/24
+Christmas Eve, 2002/12/24
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Epiphany, 1998/01/06
+Epiphany, 1999/01/06
+Epiphany, 2000/01/06
+Epiphany, 2001/01/06
+Epiphany, 2002/01/06
+Good Friday, 1998/04/10
+Good Friday, 1999/04/02
+Good Friday, 2000/04/21
+Good Friday, 2001/04/13
+Good Friday, 2002/03/29
+Independence Day, 1998/12/06
+Independence Day, 1999/12/06
+Independence Day, 2000/12/06
+Independence Day, 2001/12/06
+Independence Day, 2002/12/06
+Kalevala Day, 1998/02/28
+Kalevala Day, 1999/02/28
+Kalevala Day, 2000/02/28
+Kalevala Day, 2001/02/28
+Kalevala Day, 2002/02/28
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+Maundy Thursday, 1998/04/09
+Maundy Thursday, 1999/04/01
+Maundy Thursday, 2000/04/20
+Maundy Thursday, 2001/04/12
+Maundy Thursday, 2002/03/28
+Memorial Day, 1998/05/19
+Memorial Day, 1999/05/19
+Memorial Day, 2000/05/19
+Memorial Day, 2001/05/19
+Memorial Day, 2002/05/19
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Palm Sunday, 1998/04/05
+Palm Sunday, 1999/03/28
+Palm Sunday, 2000/04/16
+Palm Sunday, 2001/04/08
+Palm Sunday, 2002/03/24
+Swedish Day, 1998/11/06
+Swedish Day, 1999/11/06
+Swedish Day, 2000/11/06
+Swedish Day, 2001/11/06
+Swedish Day, 2002/11/06
+Valentine's Day, 1998/02/14
+Valentine's Day, 1999/02/14
+Valentine's Day, 2000/02/14
+Valentine's Day, 2001/02/14
+Valentine's Day, 2002/02/14
+Whitsunday, 1998/05/31
+Whitsunday, 1999/05/23
+Whitsunday, 2000/06/11
+Whitsunday, 2001/06/03
+Whitsunday, 2002/05/19
+[France] 56 
+Anniversaire 1945, 2000/05/08
+Anniversaire 1945, 2001/05/08
+Anniversaire 1945, 2002/05/08
+Anniversaire 1945, 2003/05/08
+Armistice 1918, 1999/11/11
+Armistice 1918, 2000/11/11
+Armistice 1918, 2001/11/11
+Armistice 1918, 2002/11/11
+Ascension, 1999/05/13
+Ascension, 2000/06/01
+Ascension, 2001/05/24
+Ascension, 2002/05/09
+Assomption, 1999/08/15
+Assomption, 2000/08/15
+Assomption, 2001/08/15
+Assomption, 2002/08/15 
+Dimanche du Quinquagésime, 2000/03/05
+Dimanche du Quinquagésime, 2001/02/25
+Dimanche du Quinquagésime, 2002/02/10
+Dimanche du Quinquagésime, 2003/03/02
+Fête du travail, 2000/05/01
+Fête du travail, 2001/05/01
+Fête du travail, 2002/05/01
+Fête du travail, 2003/05/01
+Fête Nationale, 1999/07/14
+Fête Nationale, 2000/07/14
+Fête Nationale, 2001/07/14
+Fête Nationale, 2002/07/14
+Jour de l'an, 2000/01/01
+Jour de l'an, 2001/01/01
+Jour de l'an, 2002/01/01
+Jour de l'an, 2003/01/01
+Lundi de la Pentecôte, 2000/06/12
+Lundi de la Pentecôte, 2001/06/04
+Lundi de la Pentecôte, 2002/05/20
+Lundi de la Pentecôte, 2003/06/09
+Lundi de Pâques, 2000/04/24
+Lundi de Pâques, 2001/04/16
+Lundi de Pâques, 2002/04/01
+Lundi de Pâques, 2003/04/21
+Noël, 1999/12/25
+Noël, 2000/12/25
+Noël, 2001/12/25
+Noël, 2002/12/25
+Pâques, 2000/04/23
+Pâques, 2001/04/15
+Pâques, 2002/03/31
+Pâques, 2003/04/20
+Pentecôte, 2000/06/11
+Pentecôte, 2001/06/03
+Pentecôte, 2002/05/19
+Pentecôte, 2003/06/08
+Toussaint, 1999/11/01
+Toussaint, 2000/11/01
+Toussaint, 2001/11/01
+Toussaint, 2002/11/01
+[Allemagne] 80 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Ascension Day, 1998/05/21
+Ascension Day, 1999/05/13
+Ascension Day, 2000/06/01
+Ascension Day, 2001/05/24
+Ascension Day, 2002/05/09
+Assumption Day, 1998/08/15
+Assumption Day, 1999/08/15
+Assumption Day, 2000/08/15
+Assumption Day, 2001/08/15
+Assumption Day, 2002/08/15
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Corpus Christi Day, 1998/06/11
+Corpus Christi Day, 1999/06/03
+Corpus Christi Day, 2000/06/22
+Corpus Christi Day, 2001/06/14
+Corpus Christi Day, 2002/05/30
+Day of German Unity, 1998/10/03
+Day of German Unity, 1999/10/03
+Day of German Unity, 2000/10/03
+Day of German Unity, 2001/10/03
+Day of German Unity, 2002/10/03
+Day of Prayer and Repentance, 1998/11/18
+Day of Prayer and Repentance, 1999/11/17
+Day of Prayer and Repentance, 2000/11/15
+Day of Prayer and Repentance, 2001/11/21
+Day of Prayer and Repentance, 2002/11/20
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Epiphany, 1998/01/06
+Epiphany, 1999/01/06
+Epiphany, 2000/01/06
+Epiphany, 2001/01/06
+Epiphany, 2002/01/06
+Good Friday, 1998/04/10
+Good Friday, 1999/04/02
+Good Friday, 2000/04/21
+Good Friday, 2001/04/13
+Good Friday, 2002/03/29
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Whitmonday, 1998/06/01
+Whitmonday, 1999/05/24
+Whitmonday, 2000/06/12
+Whitmonday, 2001/06/04
+Whitmonday, 2002/05/20
+Whitsunday, 1998/05/31
+Whitsunday, 1999/05/23
+Whitsunday, 2000/06/11
+Whitsunday, 2001/06/03
+Whitsunday, 2002/05/19
+[Grèce] 65 
+Ash Monday, 1998/03/02
+Ash Monday, 1999/02/22
+Ash Monday, 2000/03/13
+Ash Monday, 2001/03/05
+Ash Monday, 2002/02/18
+Assumption Day, 1998/08/15
+Assumption Day, 1999/08/15
+Assumption Day, 2000/08/15
+Assumption Day, 2001/08/15
+Assumption Day, 2002/08/15
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Easter (Orthodox), 1998/04/19
+Easter (Orthodox), 1999/04/11
+Easter (Orthodox), 2000/04/30
+Easter (Orthodox), 2001/04/15
+Easter (Orthodox), 2002/05/05
+Easter Monday (Orthodox), 1998/04/20
+Easter Monday (Orthodox), 1999/04/12
+Easter Monday (Orthodox), 2000/05/01
+Easter Monday (Orthodox), 2001/04/16
+Easter Monday (Orthodox), 2002/05/06
+Epiphany, 1998/01/06
+Epiphany, 1999/01/06
+Epiphany, 2000/01/06
+Epiphany, 2001/01/06
+Epiphany, 2002/01/06
+Good Friday (Orthodox), 1998/04/17
+Good Friday (Orthodox), 1999/04/09
+Good Friday (Orthodox), 2000/04/28
+Good Friday (Orthodox), 2001/04/13
+Good Friday (Orthodox), 2002/05/03
+Holy Ghost's Day, 1998/06/08
+Holy Ghost's Day, 1999/05/31
+Holy Ghost's Day, 2000/06/19
+Holy Ghost's Day, 2001/06/04
+Holy Ghost's Day, 2002/06/24
+Independence Day, 1998/03/25
+Independence Day, 1999/03/25
+Independence Day, 2000/03/25
+Independence Day, 2001/03/25
+Independence Day, 2002/03/25
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+National Holiday, 1998/10/28
+National Holiday, 1999/10/28
+National Holiday, 2000/10/28
+National Holiday, 2001/10/28
+National Holiday, 2002/10/28
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+[Hong Kong] 85 
+Buddha's Birthday, 1998/05/03
+Buddha's Birthday, 1999/05/22
+Buddha's Birthday, 2000/05/11
+Buddha's Birthday, 2001/04/30
+Buddha's Birthday, 2002/05/19
+Chinese New Year (1st day), 1998/01/28
+Chinese New Year (1st day), 1999/02/16
+Chinese New Year (1st day), 2000/02/05
+Chinese New Year (1st day), 2001/01/24
+Chinese New Year (1st day), 2002/02/12
+Chinese New Year (2nd day), 1998/01/29
+Chinese New Year (2nd day), 1999/02/17
+Chinese New Year (2nd day), 2000/02/06
+Chinese New Year (2nd day), 2001/01/25
+Chinese New Year (2nd day), 2002/02/13
+Chinese New Year (3rd day), 1998/01/30
+Chinese New Year (3rd day), 1999/02/18
+Chinese New Year (3rd day), 2000/02/07
+Chinese New Year (3rd day), 2001/01/26
+Chinese New Year (3rd day), 2002/02/14
+Ching Ming Festival, 1998/04/06
+Ching Ming Festival, 1999/04/05
+Ching Ming Festival, 2000/04/05
+Ching Ming Festival, 2001/04/05
+Ching Ming Festival, 2002/04/05
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Chung Yeung Festival, 1998/10/28
+Chung Yeung Festival, 1999/10/18
+Chung Yeung Festival, 2000/10/06
+Chung Yeung Festival, 2001/10/25
+Chung Yeung Festival, 2002/10/14
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Good Friday, 1998/04/10
+Good Friday, 1999/04/02
+Good Friday, 2000/04/21
+Good Friday, 2001/04/13
+Good Friday, 2002/03/29
+HK Returning to China (SAR Establishment Day), 1998/07/01
+HK Returning to China (SAR Establishment Day), 1999/07/01
+HK Returning to China (SAR Establishment Day), 2000/07/01
+HK Returning to China (SAR Establishment Day), 2001/07/01
+HK Returning to China (SAR Establishment Day), 2002/07/01
+Labour Day, 1998/05/01
+Labour Day, 1999/05/01
+Labour Day, 2000/05/01
+Labour Day, 2001/05/01
+Labour Day, 2002/05/01
+National Day, 1998/10/01
+National Day, 1999/10/01
+National Day, 2000/10/01
+National Day, 2001/10/01
+National Day, 2002/10/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+The day following Good Friday, 1998/04/11
+The day following Good Friday, 1999/04/03
+The day following Good Friday, 2000/04/22
+The day following Good Friday, 2001/04/14
+The day following Good Friday, 2002/03/30
+The day following the Chinese Mid-Autumn Festival, 1998/10/06
+The day following the Chinese Mid-Autumn Festival, 1999/09/25
+The day following the Chinese Mid-Autumn Festival, 2000/09/13
+The day following the Chinese Mid-Autumn Festival, 2001/10/02
+The day following the Chinese Mid-Autumn Festival, 2002/09/22
+The first week-day after Christmas day, 1998/12/28
+The first week-day after Christmas day, 1999/12/27
+The first week-day after Christmas day, 2000/12/26
+The first week-day after Christmas day, 2001/12/26
+The first week-day after Christmas day, 2002/12/26
+Tuen Ng Festival, 1998/05/30
+Tuen Ng Festival, 1999/06/18
+Tuen Ng Festival, 2000/06/06
+Tuen Ng Festival, 2001/06/25
+Tuen Ng Festival, 2002/06/15
+[Hongrie] 55 
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Christmas Day - Second Day, 1998/12/26
+Christmas Day - Second Day, 1999/12/26
+Christmas Day - Second Day, 2000/12/26
+Christmas Day - Second Day, 2001/12/26
+Christmas Day - Second Day, 2002/12/26
+Day of the Republic, 1998/10/23
+Day of the Republic, 1999/10/23
+Day of the Republic, 2000/10/23
+Day of the Republic, 2001/10/23
+Day of the Republic, 2002/10/23
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+National Holiday, 1998/03/15
+National Holiday, 1999/03/15
+National Holiday, 2000/03/15
+National Holiday, 2001/03/15
+National Holiday, 2002/03/15
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+St. Stephen's Day, 1998/08/20
+St. Stephen's Day, 1999/08/20
+St. Stephen's Day, 2000/08/20
+St. Stephen's Day, 2001/08/20
+St. Stephen's Day, 2002/08/20
+Whitmonday, 1998/06/01
+Whitmonday, 1999/05/24
+Whitmonday, 2000/06/12
+Whitmonday, 2001/06/04
+Whitmonday, 2002/05/20
+Whitsunday, 1998/05/31
+Whitsunday, 1999/05/23
+Whitsunday, 2000/06/11
+Whitsunday, 2001/06/03
+Whitsunday, 2002/05/19
+[Indonésie] 25 
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Independence Day, 1998/08/17
+Independence Day, 1999/08/17
+Independence Day, 2000/08/17
+Independence Day, 2001/08/17
+Independence Day, 2002/08/17
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Nyepi Day, 1998/03/29
+Nyepi Day, 1999/04/17
+Nyepi Day, 2000/04/06
+Nyepi Day, 2001/03/26
+Nyepi Day, 2002/03/17
+Waisak Day, 1998/05/10
+Waisak Day, 1999/05/29
+Waisak Day, 2000/05/18
+Waisak Day, 2001/05/07
+Waisak Day, 2002/05/26
+[Irak] 78 
+17 July Revolution Day, 1998/07/17
+17 July Revolution Day, 1999/07/17
+17 July Revolution Day, 2000/07/17
+17 July Revolution Day, 2001/07/17
+17 July Revolution Day, 2002/07/17
+8 February Revolution Day, 1998/02/08
+8 February Revolution Day, 1999/02/08
+8 February Revolution Day, 2000/02/08
+8 February Revolution Day, 2001/02/08
+8 February Revolution Day, 2002/02/08
+Army Day, 1998/01/06
+Army Day, 1999/01/06
+Army Day, 2000/01/06
+Army Day, 2001/01/06
+Army Day, 2002/01/06
+Ashoora, 1998/05/06
+Ashoora, 1998/05/06, 1419/1/10
+Ashoora, 1999/04/25, 1420/1/10
+Ashoora, 2000/04/14, 1421/1/10
+Ashoora, 2001/04/03, 1422/1/10
+Ashoora, 2002/03/23, 1423/1/10
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Adha (3rd day), 1998/04/09, 1418/12/12
+Eid al Adha (3rd day), 1999/03/29, 1419/12/12
+Eid al Adha (3rd day), 2000/03/17, 1420/12/12
+Eid al Adha (3rd day), 2001/03/07, 1421/12/12
+Eid al Adha (3rd day), 2002/02/24, 1422/12/12
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Eid al Fitr (3rd day), 1998/01/31, 1418/10/03
+Eid al Fitr (3rd day), 1999/01/20, 1419/10/03
+Eid al Fitr (3rd day), 2000/01/09, 1420/10/03
+Eid al Fitr (3rd day), 2000/12/29, 1421/10/03
+Eid al Fitr (3rd day), 2001/12/18, 1422/10/03
+Eid al Fitr (3rd day), 2002/12/07, 1423/10/03
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Prophet Mohammed's Birthday, 1998/07/06, 1419/03/12
+Prophet Mohammed's Birthday, 1999/06/25, 1420/03/12
+Prophet Mohammed's Birthday, 2000/06/14, 1421/03/12
+Prophet Mohammed's Birthday, 2001/06/03, 1422/03/12
+Prophet Mohammed's Birthday, 2002/05/23, 1423/03/12
+Republic Day, 1998/07/14
+Republic Day, 1999/07/14
+Republic Day, 2000/07/14
+Republic Day, 2001/07/14
+Republic Day, 2002/07/14
+Spring Day, 1998/03/21
+Spring Day, 1999/03/21
+Spring Day, 2000/03/21
+Spring Day, 2001/03/21
+Spring Day, 2002/03/21
+[Irlande] 40 
+Bank Holiday, 1998/08/03
+Bank Holiday, 1999/08/02
+Bank Holiday, 2000/08/07
+Bank Holiday, 2001/08/06
+Bank Holiday, 2002/08/05
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+June Holiday, 1998/06/01
+June Holiday, 1999/06/07
+June Holiday, 2000/06/05
+June Holiday, 2001/06/04
+June Holiday, 2002/06/03
+Labor Day - May Day, 1998/05/04
+Labor Day - May Day, 1999/05/03
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/07
+Labor Day - May Day, 2002/05/06
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+October Holiday, 1998/10/26
+October Holiday, 1999/10/25
+October Holiday, 2000/10/30
+October Holiday, 2001/10/29
+October Holiday, 2002/10/28
+St. Patrick's Day, 1998/03/17
+St. Patrick's Day, 1999/03/17
+St. Patrick's Day, 2000/03/17
+St. Patrick's Day, 2001/03/17
+St. Patrick's Day, 2002/03/17
+[Fêtes religieuses islamiques] 58  
+1st of Ramadan, 1998/12/19, 1419/09/01
+1st of Ramadan, 1999/12/08, 1420/09/01
+1st of Ramadan, 2000/11/27, 1421/09/01
+1st of Ramadan, 2001/11/16, 1422/09/01
+1st of Ramadan, 2002/11/05, 1423/09/01
+Arafat, 1998/04/06, 1418/12/09
+Arafat, 1999/03/26, 1419/12/09
+Arafat, 2000/03/14, 1420/12/09
+Arafat, 2001/03/04, 1421/12/09
+Arafat, 2002/02/21, 1422/12/09
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Adha (3rd day), 1998/04/09, 1418/12/12
+Eid al Adha (3rd day), 1999/03/29, 1419/12/12
+Eid al Adha (3rd day), 2000/03/17, 1420/12/12
+Eid al Adha (3rd day), 2001/03/07, 1421/12/12
+Eid al Adha (3rd day), 2002/02/24, 1422/12/12
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Eid al Fitr (3rd day), 1998/01/31, 1418/10/03
+Eid al Fitr (3rd day), 1999/01/20, 1419/10/03
+Eid al Fitr (3rd day), 2000/01/09, 1420/10/03
+Eid al Fitr (3rd day), 2000/12/29, 1421/10/03
+Eid al Fitr (3rd day), 2001/12/18, 1422/10/03
+Eid al Fitr (3rd day), 2002/12/07, 1423/10/03
+Hijri New Year, 1998/04/27, 1419/01/01
+Hijri New Year, 1999/04/16, 1420/01/01
+Hijri New Year, 2000/04/05, 1421/01/01
+Hijri New Year, 2001/03/25, 1422/01/01
+Hijri New Year, 2002/03/14, 1423/01/01
+Lailat al-Ma'raj, 1998/11/16, 1419/07/27
+Lailat al-Ma'raj, 1999/11/05, 1420/07/27
+Lailat al-Ma'raj, 2000/10/25, 1421/07/27
+Lailat al-Ma'raj, 2001/10/14, 1422/07/27
+Lailat al-Ma'raj, 2002/10/03, 1423/07/27
+Prophet Mohammed's Birthday, 1998/07/06, 1419/03/12
+Prophet Mohammed's Birthday, 1999/06/25, 1420/03/12
+Prophet Mohammed's Birthday, 2000/06/14, 1421/03/12
+Prophet Mohammed's Birthday, 2001/06/03, 1422/03/12
+Prophet Mohammed's Birthday, 2002/05/23, 1423/03/12
+[Israël] 15 
+Yom Haatzmaut, 1998/05/01
+Yom Haatzmaut, 1999/04/21
+Yom Haatzmaut, 2000/05/10
+Yom Haatzmaut, 2001/04/28
+Yom Haatzmaut, 2002/04/17
+Yom Hashoah, 1998/04/23
+Yom Hashoah, 1999/04/13
+Yom Hashoah, 2000/05/02
+Yom Hashoah, 2001/04/20
+Yom Hashoah, 2002/04/09
+Yom Hazikaron, 1998/04/30
+Yom Hazikaron, 1999/04/20
+Yom Hazikaron, 2000/05/09
+Yom Hazikaron, 2001/04/27
+Yom Hazikaron, 2002/04/16
+[Italie] 55 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Assumption Day, 1998/08/15
+Assumption Day, 1999/08/15
+Assumption Day, 2000/08/15
+Assumption Day, 2001/08/15
+Assumption Day, 2002/08/15
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Epiphany, 1998/01/06
+Epiphany, 1999/01/06
+Epiphany, 2000/01/06
+Epiphany, 2001/01/06
+Epiphany, 2002/01/06
+Immaculate Conception, 1998/12/08
+Immaculate Conception, 1999/12/08
+Immaculate Conception, 2000/12/08
+Immaculate Conception, 2001/12/08
+Immaculate Conception, 2002/12/08
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+Liberation Day, 1998/04/25
+Liberation Day, 1999/04/25
+Liberation Day, 2000/04/25
+Liberation Day, 2001/04/25
+Liberation Day, 2002/04/25
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+[Japon] 83 
+Autumnal Equinox, 1998/09/23
+Autumnal Equinox, 1999/09/23
+Autumnal Equinox, 2000/09/23
+Autumnal Equinox, 2002/09/23
+Autumnal Equinox (Observed), 2001/09/24
+Children's Day, 1998/05/05
+Children's Day, 1999/05/05
+Children's Day, 2000/05/05
+Children's Day, 2001/05/05
+Children's Day, 2002/05/05
+Children's Day (Observed), 2002/05/06
+Coming of Age Day, 1998/01/15
+Coming of Age Day, 1999/01/15
+Coming of Age Day, 2000/01/10
+Coming of Age Day, 2001/01/08
+Coming of Age Day, 2002/01/14
+Constitution Day, 1998/05/03
+Constitution Day, 1999/05/03
+Constitution Day, 2000/05/03
+Constitution Day, 2001/05/03
+Constitution Day, 2002/05/03
+Constitution Day (Observed), 1998/05/04
+Culture Day, 1998/11/03
+Culture Day, 1999/11/03
+Culture Day, 2000/11/03
+Culture Day, 2001/11/03
+Culture Day, 2002/11/03
+Culture Day (Observed), 2002/11/04
+Emperor's Birthday, 1998/12/23
+Emperor's Birthday, 1999/12/23
+Emperor's Birthday, 2000/12/23
+Emperor's Birthday, 2001/12/23
+Emperor's Birthday, 2002/12/23
+Emperor's Birthday (Observed), 2001/12/24
+Greenery Day, 1998/04/29
+Greenery Day, 1999/04/29
+Greenery Day, 2000/04/29
+Greenery Day, 2001/04/29
+Greenery Day, 2002/04/29
+Greenery Day (Observed), 2001/04/30
+Health Sport's Day, 1998/10/10
+Health Sport's Day, 1999/10/10
+Health Sport's Day, 2000/10/09
+Health Sport's Day, 2001/10/08
+Health Sport's Day, 2002/10/14
+Health Sport's Day (Observed), 1999/10/11
+Labor Thanksgiving Day, 1998/11/23
+Labor Thanksgiving Day, 1999/11/23
+Labor Thanksgiving Day, 2000/11/23
+Labor Thanksgiving Day, 2001/11/23
+Labor Thanksgiving Day, 2002/11/23
+Marine Day, 1998/07/20
+Marine Day, 1999/07/20
+Marine Day, 2000/07/20
+Marine Day, 2001/07/20
+Marine Day, 2002/07/20
+National Day, 1998/05/04
+National Day, 1999/05/04
+National Day, 2000/05/04
+National Day, 2001/05/04
+National Day, 2002/05/04
+National Foundation Day, 1998/02/11
+National Foundation Day, 1999/02/11
+National Foundation Day, 2000/02/11
+National Foundation Day, 2001/02/11
+National Foundation Day, 2002/02/11
+National Foundation Day (Observed), 2001/02/12
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Respect for the Aged Day, 1998/09/15
+Respect for the Aged Day, 1999/09/15
+Respect for the Aged Day, 2000/09/15
+Respect for the Aged Day, 2001/09/15
+Respect for the Aged Day, 2002/09/15
+Respect for the Aged Day (Observed), 2002/09/16
+Vernal Equinox Day, 1998/03/21
+Vernal Equinox Day, 2000/03/20
+Vernal Equinox Day, 2001/03/20
+Vernal Equinox Day, 2002/03/21
+Vernal Equinox Day (Observed), 1999/03/22
+[Fêtes religieuses juives] 60 
+Fast of 10th Tevet, 1998/12/29
+Fast of 10th Tevet, 1999/12/19
+Fast of 10th Tevet, 2001/01/05
+Fast of 10th Tevet, 2001/12/25
+Fast of 10th Tevet, 2002/12/15
+Fast of 17th Tamuz, 1998/07/12
+Fast of 17th Tamuz, 1999/07/01
+Fast of 17th Tamuz, 2000/07/20
+Fast of 17th Tamuz, 2001/07/08
+Fast of 17th Tamuz, 2002/06/27
+Hanukkah, 1998/12/14
+Hanukkah, 1999/12/04
+Hanukkah, 2000/12/22
+Hanukkah, 2001/12/10
+Hanukkah, 2002/11/30
+Hanukkah (2nd day), 1998/12/15
+Hanukkah (2nd day), 1999/12/05
+Hanukkah (2nd day), 2000/12/23
+Hanukkah (2nd day), 2001/12/11
+Hanukkah (2nd day), 2002/12/01
+Hanukkah (3rd day), 1998/12/16
+Hanukkah (3rd day), 1999/12/06
+Hanukkah (3rd day), 2000/12/24
+Hanukkah (3rd day), 2001/12/12
+Hanukkah (3rd day), 2002/12/02
+Hanukkah (4th day), 1998/12/17
+Hanukkah (4th day), 1999/12/07
+Hanukkah (4th day), 2000/12/25
+Hanukkah (4th day), 2001/12/13
+Hanukkah (4th day), 2002/12/03
+Hanukkah (5th day), 1998/12/18
+Hanukkah (5th day), 1999/12/08
+Hanukkah (5th day), 2000/12/26
+Hanukkah (5th day), 2001/12/14
+Hanukkah (5th day), 2002/12/04
+Hanukkah (6th day), 1998/12/19
+Hanukkah (6th day), 1999/12/09
+Hanukkah (6th day), 2000/12/27
+Hanukkah (6th day), 2001/12/15
+Hanukkah (6th day), 2002/12/05
+Hanukkah (7th day), 1998/12/20
+Hanukkah (7th day), 1999/12/10
+Hanukkah (7th day), 2000/12/28
+Hanukkah (7th day), 2001/12/16
+Hanukkah (7th day), 2002/12/06
+Hanukkah (8th day), 1998/12/21
+Hanukkah (8th day), 1999/12/11
+Hanukkah (8th day), 2000/12/29
+Hanukkah (8th day), 2001/12/17
+Hanukkah (8th day), 2002/12/07
+Hol H'Moed Passover (1st day), 1998/04/12
+Hol H'Moed Passover (1st day), 1999/04/02
+Hol H'Moed Passover (1st day), 2000/04/21
+Hol H'Moed Passover (1st day), 2001/04/09
+Hol H'Moed Passover (1st day), 2002/03/29
+Hol H'Moed Passover (2nd day), 1998/04/13
+Hol H'Moed Passover (2nd day), 1999/04/03
+Hol H'Moed Passover (2nd day), 2000/04/22
+Hol H'Moed Passover (2nd day), 2001/04/10
+Hol H'Moed Passover (2nd day), 2002/03/30
+Hol H'Moed Passover (3rd day), 1998/04/14
+Hol H'Moed Passover (3rd day), 1999/04/04
+Hol H'Moed Passover (3rd day), 2000/04/23
+Hol H'Moed Passover (3rd day), 2001/04/11
+Hol H'Moed Passover (3rd day), 2002/03/31
+Hol H'Moed Passover (4th day), 1998/04/15
+Hol H'Moed Passover (4th day), 1999/04/05
+Hol H'Moed Passover (4th day), 2000/04/24
+Hol H'Moed Passover (4th day), 2001/04/12
+Hol H'Moed Passover (4th day), 2002/04/01
+Hol H'Moed Passover (5th day), 1998/04/16
+Hol H'Moed Passover (5th day), 1999/04/06
+Hol H'Moed Passover (5th day), 2000/04/25
+Hol H'Moed Passover (5th day), 2001/04/13
+Hol H'Moed Passover (5th day), 2002/04/02
+Hol H'Moed Sukkot (1st day), 1998/10/06
+Hol H'Moed Sukkot (1st day), 1999/09/26
+Hol H'Moed Sukkot (1st day), 2000/10/15
+Hol H'Moed Sukkot (1st day), 2001/10/03
+Hol H'Moed Sukkot (1st day), 2002/09/22
+Hol H'Moed Sukkot (2nd day), 1998/10/07
+Hol H'Moed Sukkot (2nd day), 1999/09/27
+Hol H'Moed Sukkot (2nd day), 2000/10/16
+Hol H'Moed Sukkot (2nd day), 2001/10/04
+Hol H'Moed Sukkot (2nd day), 2002/09/23
+Hol H'Moed Sukkot (3rd day), 1998/10/08
+Hol H'Moed Sukkot (3rd day), 1999/09/28
+Hol H'Moed Sukkot (3rd day), 2000/10/17
+Hol H'Moed Sukkot (3rd day), 2001/10/05
+Hol H'Moed Sukkot (3rd day), 2002/09/24
+Hol H'Moed Sukkot (4th day), 1998/10/09
+Hol H'Moed Sukkot (4th day), 1999/09/29
+Hol H'Moed Sukkot (4th day), 2000/10/18
+Hol H'Moed Sukkot (4th day), 2001/10/06
+Hol H'Moed Sukkot (4th day), 2002/09/25
+Hol H'Moed Sukkot (5th day), 1998/10/10
+Hol H'Moed Sukkot (5th day), 1999/09/30
+Hol H'Moed Sukkot (5th day), 2000/10/19
+Hol H'Moed Sukkot (5th day), 2001/10/07
+Hol H'Moed Sukkot (5th day), 2002/09/26
+Isru Hag (Passover), 1998/04/18
+Isru Hag (Passover), 1999/04/08
+Isru Hag (Passover), 2000/04/27
+Isru Hag (Passover), 2001/04/15
+Isru Hag (Passover), 2002/04/04
+Isru Hag (Shavuot), 1998/06/01
+Isru Hag (Shavuot), 1999/05/22
+Isru Hag (Shavuot), 2000/06/10
+Isru Hag (Shavuot), 2001/05/29
+Isru Hag (Shavuot), 2002/05/18
+Lag B'Omer, 1998/05/14
+Lag B'Omer, 1999/05/04
+Lag B'Omer, 2000/05/23
+Lag B'Omer, 2001/05/11
+Lag B'Omer, 2002/04/30
+Passover, 1998/04/11
+Passover, 1999/04/01
+Passover, 2000/04/20
+Passover, 2001/04/08
+Passover, 2002/03/28
+Passover 7th day, 1998/04/17
+Passover 7th day, 1999/04/07
+Passover 7th day, 2000/04/26
+Passover 7th day, 2001/04/14
+Passover 7th day, 2002/04/03
+Purim, 1998/03/12
+Purim, 1999/03/02
+Purim, 2000/03/21
+Purim, 2001/03/09
+Purim, 2002/02/26
+Purim Katan, 2000/02/20
+Rosh Hashanah, 1998/09/21
+Rosh Hashanah, 1999/09/11
+Rosh Hashanah, 2000/09/30
+Rosh Hashanah, 2001/09/18
+Rosh Hashanah, 2002/09/07
+Shavuot, 1998/05/31
+Shavuot, 1999/05/21
+Shavuot, 2000/06/09
+Shavuot, 2001/05/28
+Shavuot, 2002/05/17
+Sh'mini Atzeret, 1998/10/12
+Sh'mini Atzeret, 1999/10/02
+Sh'mini Atzeret, 2000/10/21
+Sh'mini Atzeret, 2001/10/09
+Sh'mini Atzeret, 2002/09/28
+Shushan Purim, 1998/03/13
+Shushan Purim, 1999/03/03
+Shushan Purim, 2000/03/22
+Shushan Purim, 2001/03/10
+Shushan Purim, 2002/02/27
+Simchat Torah, 1998/10/13
+Simchat Torah, 1999/10/03
+Simchat Torah, 2000/10/22
+Simchat Torah, 2001/10/10
+Simchat Torah, 2002/09/29
+Sukkot, 1998/10/05
+Sukkot, 1999/09/25
+Sukkot, 2000/10/14
+Sukkot, 2001/10/02
+Sukkot, 2002/09/21
+Taanit Ester, 1998/03/11
+Taanit Ester, 1999/03/01
+Taanit Ester, 2000/03/20
+Taanit Ester, 2001/03/08
+Taanit Ester, 2002/02/25
+Tisha B'Av, 1998/08/02
+Tisha B'Av, 1999/07/22
+Tisha B'Av, 2000/08/10
+Tisha B'Av, 2001/07/29
+Tisha B'Av, 2002/07/18
+Tu B'Shevat, 1998/02/11
+Tu B'Shevat, 1999/02/01
+Tu B'Shevat, 2000/01/22
+Tu B'Shevat, 2001/02/08
+Tu B'Shevat, 2002/01/28
+Yom Kippur, 1998/09/30
+Yom Kippur, 1999/09/20
+Yom Kippur, 2000/10/09
+Yom Kippur, 2001/09/27
+Yom Kippur, 2002/09/16
+[Jordanie] 88 
+Arab League Day, 1998/03/22
+Arab League Day, 1999/03/22
+Arab League Day, 2000/03/22
+Arab League Day, 2001/03/22
+Arab League Day, 2002/03/22
+Arab Renaissance Day, 1998/06/10
+Arab Renaissance Day, 1999/06/10
+Arab Renaissance Day, 2000/06/10
+Arab Renaissance Day, 2001/06/10
+Arab Renaissance Day, 2002/06/10
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Eid Al  Isra' Wal Mi'raj, 1998/11/16, 1419/07/27
+Eid Al  Isra' Wal Mi'raj, 1999/11/05, 1420/07/27
+Eid Al  Isra' Wal Mi'raj, 2000/10/25, 1421/07/27
+Eid Al  Isra' Wal Mi'raj, 2001/10/14, 1422/07/27
+Eid Al  Isra' Wal Mi'raj, 2002/10/03, 1423/07/27
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Adha (3rd day), 1998/04/09, 1418/12/12
+Eid al Adha (3rd day), 1999/03/29, 1419/12/12
+Eid al Adha (3rd day), 2000/03/17, 1420/12/12
+Eid al Adha (3rd day), 2001/03/07, 1421/12/12
+Eid al Adha (3rd day), 2002/02/24, 1422/12/12
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Eid al Fitr (3rd day), 1998/01/31, 1418/10/03
+Eid al Fitr (3rd day), 1999/01/20, 1419/10/03
+Eid al Fitr (3rd day), 2000/01/09, 1420/10/03
+Eid al Fitr (3rd day), 2000/12/29, 1421/10/03
+Eid al Fitr (3rd day), 2001/12/18, 1422/10/03
+Eid al Fitr (3rd day), 2002/12/07, 1423/10/03
+Hijri New Year, 1998/04/27, 1419/01/01
+Hijri New Year, 1999/04/16, 1420/01/01
+Hijri New Year, 2000/04/05, 1421/01/01
+Hijri New Year, 2001/03/25, 1422/01/01
+Hijri New Year, 2002/03/14, 1423/01/01
+Independence Day, 1998/05/25
+Independence Day, 1999/05/25
+Independence Day, 2000/05/25
+Independence Day, 2001/05/25
+Independence Day, 2002/05/25
+King Hussein's Accession Day, 1998/08/11
+King Hussein's Accession Day, 1999/08/11
+King Hussein's Accession Day, 2000/08/11
+King Hussein's Accession Day, 2001/08/11
+King Hussein's Accession Day, 2002/08/11
+King Hussein's Birthday, 1998/11/14
+King Hussein's Birthday, 1999/11/14
+King Hussein's Birthday, 2000/11/14
+King Hussein's Birthday, 2001/11/14
+King Hussein's Birthday, 2002/11/14
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Tree Day (Arbor Day), 1998/01/15
+Tree Day (Arbor Day), 1999/01/15
+Tree Day (Arbor Day), 2000/01/15
+Tree Day (Arbor Day), 2001/01/15
+Tree Day (Arbor Day), 2002/01/15
+[Corée] 80 
+Arbor Day - Shingmogil, 1998/04/05
+Arbor Day - Shingmogil, 1999/04/05
+Arbor Day - Shingmogil, 2000/04/05
+Arbor Day - Shingmogil, 2001/04/05
+Arbor Day - Shingmogil, 2002/04/05
+Buddha's Birthday - Sokkatanshinil, 1998/05/03
+Buddha's Birthday - Sokkatanshinil, 1999/05/22
+Buddha's Birthday - Sokkatanshinil, 2000/05/11
+Buddha's Birthday - Sokkatanshinil, 2001/05/01
+Buddha's Birthday - Sokkatanshinil, 2002/05/19
+Children's Day - Orininal, 1998/05/05
+Children's Day - Orininal, 1999/05/05
+Children's Day - Orininal, 2000/05/05
+Children's Day - Orininal, 2001/05/05
+Children's Day - Orininal, 2002/05/05
+Christmas Day - Songtanil, 1998/12/25
+Christmas Day - Songtanil, 1999/12/25
+Christmas Day - Songtanil, 2000/12/25
+Christmas Day - Songtanil, 2001/12/25
+Christmas Day - Songtanil, 2002/12/25
+Constitution Day - Chehonjol, 1998/07/17
+Constitution Day - Chehonjol, 1999/07/17
+Constitution Day - Chehonjol, 2000/07/17
+Constitution Day - Chehonjol, 2001/07/17
+Constitution Day - Chehonjol, 2002/07/17
+Harvest Moon Festival - Chusok (1st day), 1998/10/04
+Harvest Moon Festival - Chusok (1st day), 1999/09/23
+Harvest Moon Festival - Chusok (1st day), 2000/09/11
+Harvest Moon Festival - Chusok (1st day), 2001/09/30
+Harvest Moon Festival - Chusok (1st day), 2002/09/20
+Harvest Moon Festival - Chusok (3rd day), 1998/10/06
+Harvest Moon Festival - Chusok (3rd day), 1999/09/25
+Harvest Moon Festival - Chusok (3rd day), 2000/09/13
+Harvest Moon Festival - Chusok (3rd day), 2001/10/02
+Harvest Moon Festival - Chusok (3rd day), 2002/09/22
+Harvest Moon Festival - Chusok (actual holiday), 1998/10/05
+Harvest Moon Festival - Chusok (actual holiday), 1999/09/24
+Harvest Moon Festival - Chusok (actual holiday), 2000/09/12
+Harvest Moon Festival - Chusok (actual holiday), 2001/10/01
+Harvest Moon Festival - Chusok (actual holiday), 2002/09/21
+Independence Movement Day - Samiljol, 1998/03/01
+Independence Movement Day - Samiljol, 1999/03/01
+Independence Movement Day - Samiljol, 2000/03/01
+Independence Movement Day - Samiljol, 2001/03/01
+Independence Movement Day - Samiljol, 2002/03/01
+Liberation Day -  Kwangbokchol, 1998/08/15
+Liberation Day -  Kwangbokchol, 1999/08/15
+Liberation Day -  Kwangbokchol, 2000/08/15
+Liberation Day -  Kwangbokchol, 2001/08/15
+Liberation Day -  Kwangbokchol, 2002/08/15
+Lunar New Year's Day - Sol (1st day), 1998/01/27
+Lunar New Year's Day - Sol (1st day), 1999/02/15
+Lunar New Year's Day - Sol (1st day), 2000/02/04
+Lunar New Year's Day - Sol (1st day), 2001/01/23
+Lunar New Year's Day - Sol (1st day), 2002/02/11
+Lunar New Year's Day - Sol (3rd day), 1998/01/29
+Lunar New Year's Day - Sol (3rd day), 1999/02/17
+Lunar New Year's Day - Sol (3rd day), 2000/02/06
+Lunar New Year's Day - Sol (3rd day), 2001/01/25
+Lunar New Year's Day - Sol (3rd day), 2002/02/13
+Lunar New Year's Day - Sol (actual holiday), 1998/01/28
+Lunar New Year's Day - Sol (actual holiday), 1999/02/16
+Lunar New Year's Day - Sol (actual holiday), 2000/02/05
+Lunar New Year's Day - Sol (actual holiday), 2001/01/24
+Lunar New Year's Day - Sol (actual holiday), 2002/02/12
+Memorial Day - Hyonchung-il, 1998/06/06
+Memorial Day - Hyonchung-il, 1999/06/06
+Memorial Day - Hyonchung-il, 2000/06/06
+Memorial Day - Hyonchung-il, 2001/06/06
+Memorial Day - Hyonchung-il, 2002/06/06
+National Founding Day - Kaechonjol, 1998/10/03
+National Founding Day - Kaechonjol, 1999/10/03
+National Founding Day - Kaechonjol, 2000/10/03
+National Founding Day - Kaechonjol, 2001/10/03
+National Founding Day - Kaechonjol, 2002/10/03
+New Year's Day - Shinjong, 1998/01/01
+New Year's Day - Shinjong, 1999/01/01
+New Year's Day - Shinjong, 2000/01/01
+New Year's Day - Shinjong, 2001/01/01
+New Year's Day - Shinjong, 2002/01/01
+[Koweït] 68 
+Arafat, 1998/04/06, 1418/12/09
+Arafat, 1999/03/26, 1419/12/09
+Arafat, 2000/03/14, 1420/12/09
+Arafat, 2001/03/04, 1421/12/09
+Arafat, 2002/02/21, 1422/12/09
+Eid Al  Isra' Wal Mi'raj, 1998/11/16, 1419/07/27
+Eid Al  Isra' Wal Mi'raj, 1999/11/05, 1420/07/27
+Eid Al  Isra' Wal Mi'raj, 2000/10/25, 1421/07/27
+Eid Al  Isra' Wal Mi'raj, 2001/10/14, 1422/07/27
+Eid Al  Isra' Wal Mi'raj, 2002/10/03, 1423/07/27
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Adha (3rd day), 1998/04/09, 1418/12/12
+Eid al Adha (3rd day), 1999/03/29, 1419/12/12
+Eid al Adha (3rd day), 2000/03/17, 1420/12/12
+Eid al Adha (3rd day), 2001/03/07, 1421/12/12
+Eid al Adha (3rd day), 2002/02/24, 1422/12/12
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Eid al Fitr (3rd day), 1998/01/31, 1418/10/03
+Eid al Fitr (3rd day), 1999/01/20, 1419/10/03
+Eid al Fitr (3rd day), 2000/01/09, 1420/10/03
+Eid al Fitr (3rd day), 2000/12/29, 1421/10/03
+Eid al Fitr (3rd day), 2001/12/18, 1422/10/03
+Eid al Fitr (3rd day), 2002/12/07, 1423/10/03
+Hijri New Year, 1998/04/27, 1419/01/01
+Hijri New Year, 1999/04/16, 1420/01/01
+Hijri New Year, 2000/04/05, 1421/01/01
+Hijri New Year, 2001/03/25, 1422/01/01
+Hijri New Year, 2002/03/14, 1423/01/01
+Liberation Day, 1998/02/26
+Liberation Day, 1999/02/26
+Liberation Day, 2000/02/26
+Liberation Day, 2001/02/26
+Liberation Day, 2002/02/26
+National Day, 1998/02/25
+National Day, 1999/02/25
+National Day, 2000/02/25
+National Day, 2001/02/25
+National Day, 2002/02/25
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Prophet Mohammed's Birthday, 1998/07/06, 1419/03/12
+Prophet Mohammed's Birthday, 1999/06/25, 1420/03/12
+Prophet Mohammed's Birthday, 2000/06/14, 1421/03/12
+Prophet Mohammed's Birthday, 2001/06/03, 1422/03/12
+Prophet Mohammed's Birthday, 2002/05/23, 1423/03/12
+[Liban] 88 
+All Saints' day, 1998/11/01
+All Saints' day, 1999/11/01
+All Saints' day, 2000/11/01
+All Saints' day, 2001/11/01
+All Saints' day, 2002/11/01
+Ashoora, 1998/05/06, 1419/1/10
+Ashoora, 1999/04/25, 1420/1/10
+Ashoora, 2000/04/14, 1421/1/10
+Ashoora, 2001/04/03, 1422/1/10
+Ashoora, 2002/03/23, 1423/1/10
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Adha (3rd day), 1998/04/09, 1418/12/12
+Eid al Adha (3rd day), 1999/03/29, 1419/12/12
+Eid al Adha (3rd day), 2000/03/17, 1420/12/12
+Eid al Adha (3rd day), 2001/03/07, 1421/12/12
+Eid al Adha (3rd day), 2002/02/24, 1422/12/12
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Eid al Fitr (3rd day), 1998/01/31, 1418/10/03
+Eid al Fitr (3rd day), 1999/01/20, 1419/10/03
+Eid al Fitr (3rd day), 2000/01/09, 1420/10/03
+Eid al Fitr (3rd day), 2000/12/29, 1421/10/03
+Eid al Fitr (3rd day), 2001/12/18, 1422/10/03
+Eid al Fitr (3rd day), 2002/12/07, 1423/10/03
+Hijri New Year, 1998/04/27, 1419/01/01
+Hijri New Year, 1999/04/16, 1420/01/01
+Hijri New Year, 2000/04/05, 1421/01/01
+Hijri New Year, 2001/03/25, 1422/01/01
+Hijri New Year, 2002/03/14, 1423/01/01
+Independence Day, 1998/11/22
+Independence Day, 1999/11/22
+Independence Day, 2000/11/22
+Independence Day, 2001/11/22
+Independence Day, 2002/11/22
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+Martyrs' Day, 1998/05/06
+Martyrs' Day, 1999/05/06
+Martyrs' Day, 2000/05/06
+Martyrs' Day, 2001/05/06
+Martyrs' Day, 2002/05/06
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Prophet Mohammed's Birthday, 1998/07/06, 1419/03/12
+Prophet Mohammed's Birthday, 1999/06/25, 1420/03/12
+Prophet Mohammed's Birthday, 2000/06/14, 1421/03/12
+Prophet Mohammed's Birthday, 2001/06/03, 1422/03/12
+Prophet Mohammed's Birthday, 2002/05/23, 1423/03/12
+Saint Maron, 1998/02/09
+Saint Maron, 1999/02/09
+Saint Maron, 2000/02/09
+Saint Maron, 2001/02/09
+Saint Maron, 2002/02/09
+Saint Mary's Day, 1998/08/15
+Saint Mary's Day, 1999/08/15
+Saint Mary's Day, 2000/08/15
+Saint Mary's Day, 2001/08/15
+Saint Mary's Day, 2002/08/15
+[Libye] 10 
+Independence Day, 1998/12/24
+Independence Day, 1999/12/24
+Independence Day, 2000/12/24
+Independence Day, 2001/12/24
+Independence Day, 2002/12/24
+Revolution Day, 1998/09/01
+Revolution Day, 1999/09/01
+Revolution Day, 2000/09/01
+Revolution Day, 2001/09/01
+Revolution Day, 2002/09/01
+[Luxembourg] 75 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Ascension Day, 1998/05/21
+Ascension Day, 1999/05/13
+Ascension Day, 2000/06/01
+Ascension Day, 2001/05/24
+Ascension Day, 2002/05/09
+Assumption Day, 1998/08/15
+Assumption Day, 1999/08/15
+Assumption Day, 2000/08/15
+Assumption Day, 2001/08/15
+Assumption Day, 2002/08/15
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Day of the French speaking community, 1998/09/27
+Day of the French speaking community, 1999/09/27
+Day of the French speaking community, 2000/09/27
+Day of the French speaking community, 2001/09/27
+Day of the French speaking community, 2002/09/27
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Grand Duc's Birthday, 1998/06/23
+Grand Duc's Birthday, 1999/06/23
+Grand Duc's Birthday, 2000/06/23
+Grand Duc's Birthday, 2001/06/23
+Grand Duc's Birthday, 2002/06/23
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+National Day, 1998/06/23
+National Day, 1999/06/23
+National Day, 2000/06/23
+National Day, 2001/06/23
+National Day, 2002/06/23
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Quinquagesima Sunday, 1998/02/22
+Quinquagesima Sunday, 1999/02/14
+Quinquagesima Sunday, 2000/03/05
+Quinquagesima Sunday, 2001/02/25
+Quinquagesima Sunday, 2002/02/10
+Whitmonday, 1998/06/01
+Whitmonday, 1999/05/24
+Whitmonday, 2000/06/12
+Whitmonday, 2001/06/04
+Whitmonday, 2002/05/20
+Whitsunday, 1998/05/31
+Whitsunday, 1999/05/23
+Whitsunday, 2000/06/11
+Whitsunday, 2001/06/03
+Whitsunday, 2002/05/19
+[Malaisie] 20 
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+National Day, 1998/08/31
+National Day, 1999/08/31
+National Day, 2000/08/31
+National Day, 2001/08/31
+National Day, 2002/08/31
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+[Mexique] 80 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+All Souls' Day, 1998/11/02
+All Souls' Day, 1999/11/02
+All Souls' Day, 2000/11/02
+All Souls' Day, 2001/11/02
+All Souls' Day, 2002/11/02
+Anniversary of the Battle of Puebla, 1998/05/05
+Anniversary of the Battle of Puebla, 1999/05/05
+Anniversary of the Battle of Puebla, 2000/05/05
+Anniversary of the Battle of Puebla, 2001/05/05
+Anniversary of the Battle of Puebla, 2002/05/05
+Anniversary of the Revolution, 1998/11/20
+Anniversary of the Revolution, 1999/11/20
+Anniversary of the Revolution, 2000/11/20
+Anniversary of the Revolution, 2001/11/20
+Anniversary of the Revolution, 2002/11/20
+Benito Juarez's Birthday, 1998/03/21
+Benito Juarez's Birthday, 1999/03/21
+Benito Juarez's Birthday, 2000/03/21
+Benito Juarez's Birthday, 2001/03/21
+Benito Juarez's Birthday, 2002/03/21
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Cinco de Mayo, 1998/05/05
+Cinco de Mayo, 1999/05/05
+Cinco de Mayo, 2000/05/05
+Cinco de Mayo, 2001/05/05
+Cinco de Mayo, 2002/05/05
+Columbus Day, 1998/10/12
+Columbus Day, 1999/10/12
+Columbus Day, 2000/10/12
+Columbus Day, 2001/10/12
+Columbus Day, 2002/10/12
+Constitution Day, 1998/02/05
+Constitution Day, 1999/02/05
+Constitution Day, 2000/02/05
+Constitution Day, 2001/02/05
+Constitution Day, 2002/02/05
+Day of the President's Report, 1998/09/01
+Day of the President's Report, 1999/09/01
+Day of the President's Report, 2000/09/01
+Day of the President's Report, 2001/09/01
+Day of the President's Report, 2002/09/01
+Flag Day, 1998/02/24
+Flag Day, 1999/02/24
+Flag Day, 2000/02/24
+Flag Day, 2001/02/24
+Flag Day, 2002/02/24
+Independence Day, 1998/09/16
+Independence Day, 1999/09/16
+Independence Day, 2000/09/16
+Independence Day, 2001/09/16
+Independence Day, 2002/09/16
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+Mother's Day, 1998/05/10
+Mother's Day, 1999/05/09
+Mother's Day, 2000/05/14
+Mother's Day, 2001/05/13
+Mother's Day, 2002/05/12
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Our Lady of Guadalupe, 1998/12/12
+Our Lady of Guadalupe, 1999/12/12
+Our Lady of Guadalupe, 2000/12/12
+Our Lady of Guadalupe, 2001/12/12
+Our Lady of Guadalupe, 2002/12/12
+[Maroc] 83 
+Commemoration of Green March, 1998/11/06
+Commemoration of Green March, 1999/11/06
+Commemoration of Green March, 2000/11/06
+Commemoration of Green March, 2001/11/06
+Commemoration of Green March, 2002/11/06
+Commemoration of Wadi Al-Dahab, 1998/08/14
+Commemoration of Wadi Al-Dahab, 1999/08/14
+Commemoration of Wadi Al-Dahab, 2000/08/14
+Commemoration of Wadi Al-Dahab, 2001/08/14
+Commemoration of Wadi Al-Dahab, 2002/08/14
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Adha (3rd day), 1998/04/09, 1418/12/12
+Eid al Adha (3rd day), 1999/03/29, 1419/12/12
+Eid al Adha (3rd day), 2000/03/17, 1420/12/12
+Eid al Adha (3rd day), 2001/03/07, 1421/12/12
+Eid al Adha (3rd day), 2002/02/24, 1422/12/12
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Eid al Fitr (3rd day), 1998/01/31, 1418/10/03
+Eid al Fitr (3rd day), 1999/01/20, 1419/10/03
+Eid al Fitr (3rd day), 2000/01/09, 1420/10/03
+Eid al Fitr (3rd day), 2000/12/29, 1421/10/03
+Eid al Fitr (3rd day), 2001/12/18, 1422/10/03
+Eid al Fitr (3rd day), 2002/12/07, 1423/10/03
+Hijri New Year, 1998/04/27, 1419/01/01
+Hijri New Year, 1999/04/16, 1420/01/01
+Hijri New Year, 2000/04/05, 1421/01/01
+Hijri New Year, 2001/03/25, 1422/01/01
+Hijri New Year, 2002/03/14, 1423/01/01
+Independence Day, 1998/11/18
+Independence Day, 1999/11/18
+Independence Day, 2000/11/18
+Independence Day, 2001/11/18
+Independence Day, 2002/11/18
+King Hassan II's Accession Day, 1998/03/03
+King Hassan II's Accession Day, 1999/03/03
+King Hassan II's Accession Day, 2000/03/03
+King Hassan II's Accession Day, 2001/03/03
+King Hassan II's Accession Day, 2002/03/03
+King Hassan II's Birthday, 1998/07/09
+King Hassan II's Birthday, 1999/07/09
+King Hassan II's Birthday, 2000/07/09
+King Hassan II's Birthday, 2001/07/09
+King Hassan II's Birthday, 2002/07/09
+Labor Day, 1998/05/01
+Labor Day, 1999/05/01
+Labor Day, 2000/05/01
+Labor Day, 2001/05/01
+Labor Day, 2002/05/01
+National Holiday, 1998/01/11
+National Holiday, 1999/01/11
+National Holiday, 2000/01/11
+National Holiday, 2001/01/11
+National Holiday, 2002/01/11
+Prophet Mohammed's Birthday, 1998/07/06, 1419/03/12
+Prophet Mohammed's Birthday, 1999/06/25, 1420/03/12
+Prophet Mohammed's Birthday, 2000/06/14, 1421/03/12 
+Prophet Mohammed's Birthday, 2001/06/03, 1422/03/12
+Prophet Mohammed's Birthday, 2002/05/23, 1423/03/12
+Revolution du Roi et du Peuple, 1998/08/20
+Revolution du Roi et du Peuple, 1999/08/20
+Revolution du Roi et du Peuple, 2000/08/20
+Revolution du Roi et du Peuple, 2001/08/20
+Revolution du Roi et du Peuple, 2002/08/20
+[Pays-Bas] 65 
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Day of the Queen's Speech, 1998/09/15
+Day of the Queen's Speech, 1999/09/21
+Day of the Queen's Speech, 2000/09/19
+Day of the Queen's Speech, 2001/09/18
+Day of the Queen's Speech, 2002/09/17
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Labor Day, 1998/05/01
+Labor Day, 1999/05/01
+Labor Day, 2000/05/01
+Labor Day, 2001/05/01
+Labor Day, 2002/05/01
+Liberation Day, 1998/05/05
+Liberation Day, 1999/05/05
+Liberation Day, 2000/05/05
+Liberation Day, 2001/05/05
+Liberation Day, 2002/05/05
+Memorial Day, 1998/05/04
+Memorial Day, 1999/05/04
+Memorial Day, 2000/05/04
+Memorial Day, 2001/05/04
+Memorial Day, 2002/05/04
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+New Year's Eve, 1998/12/31
+New Year's Eve, 1999/12/31
+New Year's Eve, 2000/12/31
+New Year's Eve, 2001/12/31
+New Year's Eve, 2002/12/31
+Queen's Birthday, 1998/04/30
+Queen's Birthday, 1999/04/30
+Queen's Birthday, 2000/04/30
+Queen's Birthday, 2001/04/30
+Queen's Birthday, 2002/04/30
+Whitmonday, 1998/06/01
+Whitmonday, 1999/05/24
+Whitmonday, 2000/06/12
+Whitmonday, 2001/06/04
+Whitmonday, 2002/05/20
+Whitsunday, 1998/05/31
+Whitsunday, 1999/05/23
+Whitsunday, 2000/06/11
+Whitsunday, 2001/06/03
+Whitsunday, 2002/05/19
+[Nouvelle-Zélande] 45 
+Anzac Day, 1998/04/25
+Anzac Day, 1999/04/25
+Anzac Day, 2000/04/25
+Anzac Day, 2001/04/25
+Anzac Day, 2002/04/25
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Day after New Year's Day, 1998/01/02
+Day after New Year's Day, 1999/01/02
+Day after New Year's Day, 2000/01/02
+Day after New Year's Day, 2001/01/02
+Day after New Year's Day, 2002/01/02
+Labor Day, 1998/10/26
+Labor Day, 1999/10/25
+Labor Day, 2000/10/23
+Labor Day, 2001/10/22
+Labor Day, 2002/10/28
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Queen's Birthday, 1998/06/01
+Queen's Birthday, 1999/06/07
+Queen's Birthday, 2000/06/05
+Queen's Birthday, 2001/06/04
+Queen's Birthday, 2002/06/03
+Waitangi Day, 1998/02/06
+Waitangi Day, 1999/02/06
+Waitangi Day, 2000/02/06
+Waitangi Day, 2001/02/06
+Waitangi Day, 2002/02/06
+Westland Anniversary, 1998/12/01
+Westland Anniversary, 1999/12/01
+Westland Anniversary, 2000/12/01
+Westland Anniversary, 2001/12/01
+Westland Anniversary, 2002/12/01
+[Norvège] 75 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Ascension Day, 1998/05/21
+Ascension Day, 1999/05/13
+Ascension Day, 2000/06/01
+Ascension Day, 2001/05/24
+Ascension Day, 2002/05/09
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Constitution Day, 1998/05/17
+Constitution Day, 1999/05/17
+Constitution Day, 2000/05/17
+Constitution Day, 2001/05/17
+Constitution Day, 2002/05/17
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Good Friday, 1998/04/10
+Good Friday, 1999/04/02
+Good Friday, 2000/04/21
+Good Friday, 2001/04/13
+Good Friday, 2002/03/29
+Holy Thursday, 1998/04/09
+Holy Thursday, 1999/04/01
+Holy Thursday, 2000/04/20
+Holy Thursday, 2001/04/12
+Holy Thursday, 2002/03/28
+King Harald's Birthday, 1998/02/21
+King Harald's Birthday, 1999/02/21
+King Harald's Birthday, 2000/02/21
+King Harald's Birthday, 2001/02/21
+King Harald's Birthday, 2002/02/21
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+New Year's Eve, 1998/12/31
+New Year's Eve, 1999/12/31
+New Year's Eve, 2000/12/31
+New Year's Eve, 2001/12/31
+New Year's Eve, 2002/12/31
+Pentecost Day, 1998/05/31
+Pentecost Day, 1999/05/23
+Pentecost Day, 2000/06/11
+Pentecost Day, 2001/06/03
+Pentecost Day, 2002/05/19
+Second Day of Easter, 1998/04/13
+Second Day of Easter, 1999/04/05
+Second Day of Easter, 2000/04/24
+Second Day of Easter, 2001/04/16
+Second Day of Easter, 2002/04/01
+Whitmonday, 1998/06/01
+Whitmonday, 1999/05/24
+Whitmonday, 2000/06/12
+Whitmonday, 2001/06/04
+Whitmonday, 2002/05/20
+[Oman] 38 
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Adha (3rd day), 1998/04/09, 1418/12/12
+Eid al Adha (3rd day), 1999/03/29, 1419/12/12
+Eid al Adha (3rd day), 2000/03/17, 1420/12/12
+Eid al Adha (3rd day), 2001/03/07, 1421/12/12
+Eid al Adha (3rd day), 2002/02/24, 1422/12/12
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Eid al Fitr (3rd day), 1998/01/31, 1418/10/03
+Eid al Fitr (3rd day), 1999/01/20, 1419/10/03
+Eid al Fitr (3rd day), 2000/01/09, 1420/10/03
+Eid al Fitr (3rd day), 2000/12/29, 1421/10/03
+Eid al Fitr (3rd day), 2001/12/18, 1422/10/03
+Eid al Fitr (3rd day), 2002/12/07, 1423/10/03
+National Day, 1998/11/18
+National Day, 1999/11/18
+National Day, 2000/11/18
+National Day, 2001/11/18
+National Day, 2002/11/18
+[Paraguay] 40 
+Assumption Day, 1998/08/15
+Assumption Day, 1999/08/15
+Assumption Day, 2000/08/15
+Assumption Day, 2001/08/15
+Assumption Day, 2002/08/15
+Chaco Peace Day, 1998/06/12
+Chaco Peace Day, 1999/06/12
+Chaco Peace Day, 2000/06/12
+Chaco Peace Day, 2001/06/12
+Chaco Peace Day, 2002/06/12
+Christmas, 1998/12/25
+Christmas, 1999/12/25
+Christmas, 2000/12/25
+Christmas, 2001/12/25
+Christmas, 2002/12/25
+Columbus Day, 1998/10/12
+Columbus Day, 1999/10/12
+Columbus Day, 2000/10/12
+Columbus Day, 2001/10/12
+Columbus Day, 2002/10/12
+Day of Heroes, 1998/03/01
+Day of Heroes, 1999/03/01
+Day of Heroes, 2000/03/01
+Day of Heroes, 2001/03/01
+Day of Heroes, 2002/03/01
+Independence Day, 1998/05/14
+Independence Day, 1999/05/14
+Independence Day, 2000/05/14
+Independence Day, 2001/05/14
+Independence Day, 2002/05/14
+Labor day, 1998/05/01
+Labor day, 1999/05/01
+Labor day, 2000/05/01
+Labor day, 2001/05/01
+Labor day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+[Pérou] 40 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Christmas Eve, 1998/12/24
+Christmas Eve, 1999/12/24
+Christmas Eve, 2000/12/24
+Christmas Eve, 2001/12/24
+Christmas Eve, 2002/12/24
+Independence Day, 1998/07/28
+Independence Day, 1999/07/28
+Independence Day, 2000/07/28
+Independence Day, 2001/07/28
+Independence Day, 2002/07/28
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Rose of Lima Day, 1998/08/30
+Rose of Lima Day, 1999/08/30
+Rose of Lima Day, 2000/08/30
+Rose of Lima Day, 2001/08/30
+Rose of Lima Day, 2002/08/30
+St. Peter's and St. Paul's Day, 1998/06/29
+St. Peter's and St. Paul's Day, 1999/06/29
+St. Peter's and St. Paul's Day, 2000/06/29
+St. Peter's and St. Paul's Day, 2001/06/29
+St. Peter's and St. Paul's Day, 2002/06/29
+[Philippines] 45 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Day of Valor, 1998/04/09
+Day of Valor, 1999/04/09
+Day of Valor, 2000/04/09
+Day of Valor, 2001/04/09
+Day of Valor, 2002/04/09
+Independence Day, 1998/06/12
+Independence Day, 1999/06/12
+Independence Day, 2000/06/12
+Independence Day, 2001/06/12
+Independence Day, 2002/06/12
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+National Heroes Day, 1998/11/30
+National Heroes Day, 1999/11/30
+National Heroes Day, 2000/11/30
+National Heroes Day, 2001/11/30
+National Heroes Day, 2002/11/30
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+People Power Day, 1998/02/25
+People Power Day, 1999/02/25
+People Power Day, 2000/02/25
+People Power Day, 2001/02/25
+People Power Day, 2002/02/25
+Rizal Day, 1998/12/30
+Rizal Day, 1999/12/30
+Rizal Day, 2000/12/30
+Rizal Day, 2001/12/30
+Rizal Day, 2002/12/30
+[Pologne] 55 
+3rd of May Constitution Anniversary, 1998/05/03
+3rd of May Constitution Anniversary, 1999/05/03
+3rd of May Constitution Anniversary, 2000/05/03
+3rd of May Constitution Anniversary, 2001/05/03
+3rd of May Constitution Anniversary, 2002/05/03
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Assumption Day, 1998/08/15
+Assumption Day, 1999/08/15
+Assumption Day, 2000/08/15
+Assumption Day, 2001/08/15
+Assumption Day, 2002/08/15
+Boxing Day, 1998/12/26
+Boxing Day, 1999/12/26
+Boxing Day, 2000/12/26
+Boxing Day, 2001/12/26
+Boxing Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Corpus Christi Day, 1998/06/11
+Corpus Christi Day, 1999/06/03
+Corpus Christi Day, 2000/06/22
+Corpus Christi Day, 2001/06/14
+Corpus Christi Day, 2002/05/30
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Independence Day, 1998/11/11
+Independence Day, 1999/11/11
+Independence Day, 2000/11/11
+Independence Day, 2001/11/11
+Independence Day, 2002/11/11
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+[Portugal] 70 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Assumption Day, 1998/08/15
+Assumption Day, 1999/08/15
+Assumption Day, 2000/08/15
+Assumption Day, 2001/08/15
+Assumption Day, 2002/08/15
+Carnival, 1998/02/24
+Carnival, 1999/02/16
+Carnival, 2000/03/07
+Carnival, 2001/02/27
+Carnival, 2002/02/12
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Corpus Christi Day, 1998/06/11
+Corpus Christi Day, 1999/06/03
+Corpus Christi Day, 2000/06/22
+Corpus Christi Day, 2001/06/14
+Corpus Christi Day, 2002/05/30
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Good Friday, 1998/04/10
+Good Friday, 1999/04/02
+Good Friday, 2000/04/21
+Good Friday, 2001/04/13
+Good Friday, 2002/03/29
+Immaculate Conception, 1998/12/08
+Immaculate Conception, 1999/12/08
+Immaculate Conception, 2000/12/08
+Immaculate Conception, 2001/12/08
+Immaculate Conception, 2002/12/08
+Institution of the Republic Day, 1998/10/05
+Institution of the Republic Day, 1999/10/05
+Institution of the Republic Day, 2000/10/05
+Institution of the Republic Day, 2001/10/05
+Institution of the Republic Day, 2002/10/05
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+Liberty's Day , 1998/04/25
+Liberty's Day , 1999/04/25
+Liberty's Day , 2000/04/25
+Liberty's Day , 2001/04/25
+Liberty's Day , 2002/04/25
+National Day, 1998/06/10
+National Day, 1999/06/10
+National Day, 2000/06/10
+National Day, 2001/06/10
+National Day, 2002/06/10
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Restoration of Independence Day, 1998/12/01
+Restoration of Independence Day, 1999/12/01
+Restoration of Independence Day, 2000/12/01
+Restoration of Independence Day, 2001/12/01
+Restoration of Independence Day, 2002/12/01
+[Porto Rico (USA)] 80 
+Anniversary of Eugenio Maria de Hostos, 1998/01/12
+Anniversary of Eugenio Maria de Hostos, 1999/01/11
+Anniversary of Eugenio Maria de Hostos, 2000/01/10
+Anniversary of Eugenio Maria de Hostos, 2001/01/08
+Anniversary of Eugenio Maria de Hostos, 2002/01/14
+Anniversary of Jose de Diego, 1998/04/20
+Anniversary of Jose de Diego, 1999/04/19
+Anniversary of Jose de Diego, 2000/04/17
+Anniversary of Jose de Diego, 2001/04/16
+Anniversary of Jose de Diego, 2002/04/15
+Anniversary of Munoz Rivera, 1998/07/20
+Anniversary of Munoz Rivera, 1999/07/19
+Anniversary of Munoz Rivera, 2000/07/17
+Anniversary of Munoz Rivera, 2001/07/16
+Anniversary of Munoz Rivera, 2002/07/15
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Constitution Day, 1998/07/25
+Constitution Day, 1999/07/25
+Constitution Day, 2000/07/25
+Constitution Day, 2001/07/25
+Constitution Day, 2002/07/25
+Dia de Accion de Gracias, 1998/11/25
+Dia de Accion de Gracias, 1999/11/24
+Dia de Accion de Gracias, 2000/11/22
+Dia de Accion de Gracias, 2001/11/28
+Dia de Accion de Gracias, 2002/11/27
+Dia de la Raza, 1998/10/12
+Dia de la Raza, 1999/10/12
+Dia de la Raza, 2000/10/12
+Dia de la Raza, 2001/10/12
+Dia de la Raza, 2002/10/12
+Discovery of Puerto Rico, 1998/11/19
+Discovery of Puerto Rico, 1999/11/19
+Discovery of Puerto Rico, 2000/11/19
+Discovery of Puerto Rico, 2001/11/19
+Discovery of Puerto Rico, 2002/11/19
+Epiphany, 1998/01/06
+Epiphany, 1999/01/06
+Epiphany, 2000/01/06
+Epiphany, 2001/01/06
+Epiphany, 2002/01/06
+Independence Day, 1998/07/04
+Independence Day, 1999/07/04
+Independence Day, 2000/07/04
+Independence Day, 2001/07/04
+Independence Day, 2002/07/04
+Labor Day, 1998/09/07
+Labor Day, 1999/09/06
+Labor Day, 2000/09/04
+Labor Day, 2001/09/03
+Labor Day, 2002/09/02
+Liberation Day, 1998/03/22
+Liberation Day, 1999/03/22
+Liberation Day, 2000/03/22
+Liberation Day, 2001/03/22
+Liberation Day, 2002/03/22
+Martin Luther King Day, 1998/01/19
+Martin Luther King Day, 1999/01/18
+Martin Luther King Day, 2000/01/17
+Martin Luther King Day, 2001/01/15
+Martin Luther King Day, 2002/01/21
+Memorial Day, 1998/05/25
+Memorial Day, 1999/05/31
+Memorial Day, 2000/05/29
+Memorial Day, 2001/05/28
+Memorial Day, 2002/05/27
+Natalicio de Jose C. Barbosa, 1998/07/27
+Natalicio de Jose C. Barbosa, 1999/07/26
+Natalicio de Jose C. Barbosa, 2000/07/24
+Natalicio de Jose C. Barbosa, 2001/07/23
+Natalicio de Jose C. Barbosa, 2002/07/22
+Veteran's Day, 1998/11/11
+Veteran's Day, 1999/11/11
+Veteran's Day, 2000/11/11
+Veteran's Day, 2001/11/11
+Veteran's Day, 2002/11/11
+[Qatar] 38 
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Adha (3rd day), 1998/04/09, 1418/12/12
+Eid al Adha (3rd day), 1999/03/29, 1419/12/12
+Eid al Adha (3rd day), 2000/03/17, 1420/12/12
+Eid al Adha (3rd day), 2001/03/07, 1421/12/12
+Eid al Adha (3rd day), 2002/02/24, 1422/12/12
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Eid al Fitr (3rd day), 1998/01/31, 1418/10/03
+Eid al Fitr (3rd day), 1999/01/20, 1419/10/03
+Eid al Fitr (3rd day), 2000/01/09, 1420/10/03
+Eid al Fitr (3rd day), 2000/12/29, 1421/10/03
+Eid al Fitr (3rd day), 2001/12/18, 1422/10/03
+Eid al Fitr (3rd day), 2002/12/07, 1423/10/03
+Independence Day, 1998/09/03
+Independence Day, 1999/09/03
+Independence Day, 2000/09/03
+Independence Day, 2001/09/03
+Independence Day, 2002/09/03
+[Roumanie] 25 
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Day after Christmas, 1998/12/26
+Day after Christmas, 1999/12/26
+Day after Christmas, 2000/12/26
+Day after Christmas, 2001/12/26
+Day after Christmas, 2002/12/26
+Day after New Year's Day, 1998/01/02
+Day after New Year's Day, 1999/01/02
+Day after New Year's Day, 2000/01/02
+Day after New Year's Day, 2001/01/02
+Day after New Year's Day, 2002/01/02
+National Day, 1998/12/01
+National Day, 1999/12/01
+National Day, 2000/12/01
+National Day, 2001/12/01
+National Day, 2002/12/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+[Russie] 50 
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Constitution Day, 1998/12/12
+Constitution Day, 1999/12/12
+Constitution Day, 2000/12/12
+Constitution Day, 2001/12/12
+Constitution Day, 2002/12/12
+Day of Russia, 1998/06/12
+Day of Russia, 1999/06/12
+Day of Russia, 2000/06/12
+Day of Russia, 2001/06/12
+Day of Russia, 2002/06/12
+International Women's Day, 1998/03/08
+International Women's Day, 1999/03/08
+International Women's Day, 2000/03/08
+International Women's Day, 2001/03/08
+International Women's Day, 2002/03/08
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+New Year's Day (2nd), 1998/01/02
+New Year's Day (2nd), 1999/01/02
+New Year's Day (2nd), 2000/01/02
+New Year's Day (2nd), 2001/01/02
+New Year's Day (2nd), 2002/01/02
+October Revolution Day, 1998/11/07
+October Revolution Day, 1999/11/07
+October Revolution Day, 2000/11/07
+October Revolution Day, 2001/11/07
+October Revolution Day, 2002/11/07
+Spring and Labor Day, 1998/05/01
+Spring and Labor Day, 1999/05/01
+Spring and Labor Day, 2000/05/01
+Spring and Labor Day, 2001/05/01
+Spring and Labor Day, 2002/05/01
+Spring and Labor Day (2nd day), 1998/05/02
+Spring and Labor Day (2nd day), 1999/05/02
+Spring and Labor Day (2nd day), 2000/05/02
+Spring and Labor Day (2nd day), 2001/05/02
+Spring and Labor Day (2nd day), 2002/05/02
+Victory Day, 1998/05/09
+Victory Day, 1999/05/09
+Victory Day, 2000/05/09
+Victory Day, 2001/05/09
+Victory Day, 2002/05/09
+[Arabie saoudite] 43 
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Adha (3rd day), 1998/04/09, 1418/12/12
+Eid al Adha (3rd day), 1999/03/29, 1419/12/12
+Eid al Adha (3rd day), 2000/03/17, 1420/12/12
+Eid al Adha (3rd day), 2001/03/07, 1421/12/12
+Eid al Adha (3rd day), 2002/02/24, 1422/12/12
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Eid al Fitr (3rd day), 1998/01/31, 1418/10/03
+Eid al Fitr (3rd day), 1999/01/20, 1419/10/03
+Eid al Fitr (3rd day), 2000/01/09, 1420/10/03
+Eid al Fitr (3rd day), 2000/12/29, 1421/10/03
+Eid al Fitr (3rd day), 2001/12/18, 1422/10/03
+Eid al Fitr (3rd day), 2002/12/07, 1423/10/03
+National Day, 1998/09/23
+National Day, 1999/09/23
+National Day, 2000/09/23
+National Day, 2001/09/23
+National Day, 2002/09/23
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+[Singapour] 41 
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Deepavali, 1998/10/19
+Deepavali, 1999/11/07
+Deepavali, 2000/10/26
+Deepavali, 2001/10/15
+Deepavali, 2002/11/03
+Hari Raya Haji, 1998/04/08
+Hari Raya Haji, 1999/03/28
+Hari Raya Haji, 2000/03/16
+Hari Raya Haji, 2001/03/06
+Hari Raya Haji, 2002/02/23
+Hari Raya Puasa, 1998/01/30
+Hari Raya Puasa, 1999/01/19
+Hari Raya Puasa, 2000/01/08
+Hari Raya Puasa, 2000/12/28
+Hari Raya Puasa, 2001/12/17
+Hari Raya Puasa, 2002/12/06
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+National Day, 1998/08/09
+National Day, 1999/08/09
+National Day, 2000/08/09
+National Day, 2001/08/09
+National Day, 2002/08/09
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Vesak Day, 1998/05/10
+Vesak Day, 1999/05/29
+Vesak Day, 2000/05/18
+Vesak Day, 2001/05/07
+Vesak Day, 2002/05/26
+[République slovaque] 70 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Christmas Eve, 1998/12/24
+Christmas Eve, 1999/12/24
+Christmas Eve, 2000/12/24
+Christmas Eve, 2001/12/24
+Christmas Eve, 2002/12/24
+Constantin and Methodius, 1998/07/05
+Constantin and Methodius, 1999/07/05
+Constantin and Methodius, 2000/07/05
+Constantin and Methodius, 2001/07/05
+Constantin and Methodius, 2002/07/05
+Constitution Day, 1998/09/01
+Constitution Day, 1999/09/01
+Constitution Day, 2000/09/01
+Constitution Day, 2001/09/01
+Constitution Day, 2002/09/01
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Good Friday, 1998/04/10
+Good Friday, 1999/04/02
+Good Friday, 2000/04/21
+Good Friday, 2001/04/13
+Good Friday, 2002/03/29
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+National Resistance Day, 1998/08/29
+National Resistance Day, 1999/08/29
+National Resistance Day, 2000/08/29
+National Resistance Day, 2001/08/29
+National Resistance Day, 2002/08/29
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Three Kings' Day, 1998/01/06
+Three Kings' Day, 1999/01/06
+Three Kings' Day, 2000/01/06
+Three Kings' Day, 2001/01/06
+Three Kings' Day, 2002/01/06
+Virgin Mary, 1998/09/15
+Virgin Mary, 1999/09/15
+Virgin Mary, 2000/09/15
+Virgin Mary, 2001/09/15
+Virgin Mary, 2002/09/15
+[Slovénie] 70 
+Assumption Day, 1998/08/15
+Assumption Day, 1999/08/15
+Assumption Day, 2000/08/15
+Assumption Day, 2001/08/15
+Assumption Day, 2002/08/15
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Culture Day, 1998/02/08
+Culture Day, 1999/02/08
+Culture Day, 2000/02/08
+Culture Day, 2001/02/08
+Culture Day, 2002/02/08
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Independence Day, 1998/12/26
+Independence Day, 1999/12/26
+Independence Day, 2000/12/26
+Independence Day, 2001/12/26
+Independence Day, 2002/12/26
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+Labor Day - May Day (observed), 1998/05/02
+Labor Day - May Day (observed), 1999/05/02
+Labor Day - May Day (observed), 2000/05/02
+Labor Day - May Day (observed), 2001/05/02
+Labor Day - May Day (observed), 2002/05/02
+National Day, 1998/06/25
+National Day, 1999/06/25
+National Day, 2000/06/25
+National Day, 2001/06/25
+National Day, 2002/06/25
+National Resistance Day, 1998/04/27
+National Resistance Day, 1999/04/27
+National Resistance Day, 2000/04/27
+National Resistance Day, 2001/04/27
+National Resistance Day, 2002/04/27
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+New Year's Day (observed), 1998/01/02
+New Year's Day (observed), 1999/01/02
+New Year's Day (observed), 2000/01/02
+New Year's Day (observed), 2001/01/02
+New Year's Day (observed), 2002/01/02
+Reformation Day, 1998/10/31
+Reformation Day, 1999/10/31
+Reformation Day, 2000/10/31
+Reformation Day, 2001/10/31
+Reformation Day, 2002/10/31
+Remembrance Day, 1998/11/01
+Remembrance Day, 1999/11/01
+Remembrance Day, 2000/11/01
+Remembrance Day, 2001/11/01
+Remembrance Day, 2002/11/01
+[Afrique du Sud] 55 
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Day of Goodwill, 1998/12/26
+Day of Goodwill, 1999/12/26
+Day of Goodwill, 2000/12/26
+Day of Goodwill, 2001/12/26
+Day of Goodwill, 2002/12/26
+Day of Reconciliation, 1998/12/16
+Day of Reconciliation, 1999/12/16
+Day of Reconciliation, 2000/12/16
+Day of Reconciliation, 2001/12/16
+Day of Reconciliation, 2002/12/16
+Family Day, 1998/04/13
+Family Day, 1999/04/05
+Family Day, 2000/04/24
+Family Day, 2001/04/16
+Family Day, 2002/04/01
+Good Friday, 1998/04/10
+Good Friday, 1999/04/02
+Good Friday, 2000/04/21
+Good Friday, 2001/04/13
+Good Friday, 2002/03/29
+Heritage Day, 1998/09/24
+Heritage Day, 1999/09/24
+Heritage Day, 2000/09/24
+Heritage Day, 2001/09/24
+Heritage Day, 2002/09/24
+Human Rights Day, 1998/03/21
+Human Rights Day, 1999/03/21
+Human Rights Day, 2000/03/21
+Human Rights Day, 2001/03/21
+Human Rights Day, 2002/03/21
+National Women's Day, 1998/08/09
+National Women's Day, 1999/08/09
+National Women's Day, 2000/08/09
+National Women's Day, 2001/08/09
+National Women's Day, 2002/08/09
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Workers Day, 1998/05/01
+Workers Day, 1999/05/01
+Workers Day, 2000/05/01
+Workers Day, 2001/05/01
+Workers Day, 2002/05/01
+Youth Day, 1998/06/16
+Youth Day, 1999/06/16
+Youth Day, 2000/06/16
+Youth Day, 2001/06/16
+Youth Day, 2002/06/16
+[Espagne] 40 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Assumption Day, 1998/08/15
+Assumption Day, 1999/08/15
+Assumption Day, 2000/08/15
+Assumption Day, 2001/08/15
+Assumption Day, 2002/08/15
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Columbus Day, 1998/10/12
+Columbus Day, 1999/10/12
+Columbus Day, 2000/10/12
+Columbus Day, 2001/10/12
+Columbus Day, 2002/10/12
+Epiphany, 1998/01/06
+Epiphany, 1999/01/06
+Epiphany, 2000/01/06
+Epiphany, 2001/01/06
+Epiphany, 2002/01/06
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Spanish Constitution Day, 1998/12/06
+Spanish Constitution Day, 1999/12/06
+Spanish Constitution Day, 2000/12/06
+Spanish Constitution Day, 2001/12/06
+Spanish Constitution Day, 2002/12/06
+[Suède] 85 
+All Saints' Day, 1998/11/01
+All Saints' Day, 1999/11/01
+All Saints' Day, 2000/11/01
+All Saints' Day, 2001/11/01
+All Saints' Day, 2002/11/01
+Ascension Day, 1998/05/21
+Ascension Day, 1999/05/13
+Ascension Day, 2000/06/01
+Ascension Day, 2001/05/24
+Ascension Day, 2002/05/09
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Christmas Eve, 1998/12/24
+Christmas Eve, 1999/12/24
+Christmas Eve, 2000/12/24
+Christmas Eve, 2001/12/24
+Christmas Eve, 2002/12/24
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Epiphany, 1998/01/06
+Epiphany, 1999/01/06
+Epiphany, 2000/01/06
+Epiphany, 2001/01/06
+Epiphany, 2002/01/06
+Good Friday, 1998/04/10
+Good Friday, 1999/04/02
+Good Friday, 2000/04/21
+Good Friday, 2001/04/13
+Good Friday, 2002/03/29
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+Maundy Thursday, 1998/04/09
+Maundy Thursday, 1999/04/01
+Maundy Thursday, 2000/04/20
+Maundy Thursday, 2001/04/12
+Maundy Thursday, 2002/03/28
+Midsummer Day, 1998/06/20
+Midsummer Day, 1999/06/26
+Midsummer Day, 2000/06/24
+Midsummer Day, 2001/06/23
+Midsummer Day, 2002/06/22
+Midsummer Eve, 1998/06/19
+Midsummer Eve, 1999/06/25
+Midsummer Eve, 2000/06/23
+Midsummer Eve, 2001/06/22
+Midsummer Eve, 2002/06/21
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+New Year's Eve, 1998/12/31
+New Year's Eve, 1999/12/31
+New Year's Eve, 2000/12/31
+New Year's Eve, 2001/12/31
+New Year's Eve, 2002/12/31
+Pentecost Day, 1998/05/31
+Pentecost Day, 1999/05/23
+Pentecost Day, 2000/06/11
+Pentecost Day, 2001/06/03
+Pentecost Day, 2002/05/19
+Whitmonday, 1998/06/01
+Whitmonday, 1999/05/24
+Whitmonday, 2000/06/12
+Whitmonday, 2001/06/04
+Whitmonday, 2002/05/20
+[Suisse] 68
+Ascension, 1999/05/13
+Ascension, 2000/06/01
+Ascension, 2001/05/24
+Ascension, 2002/05/09
+Assomption, 1999/08/15
+Assomption, 2000/08/15
+Assomption, 2001/08/15
+Assomption, 2002/08/15 
+Dimanche du Quinquagésime, 2000/03/05
+Dimanche du Quinquagésime, 2001/02/25
+Dimanche du Quinquagésime, 2002/02/10
+Dimanche du Quinquagésime, 2003/03/02
+Fête-Dieu, 1999/06/03
+Fête-Dieu, 2000/06/22
+Fête-Dieu, 2001/06/14
+Fête-Dieu, 2002/05/30
+Fête du travail, 2000/05/01
+Fête du travail, 2001/05/01
+Fête du travail, 2002/05/01
+Fête du travail, 2003/05/01
+Fête Nationale, 1999/08/01
+Fête Nationale, 2000/08/01
+Fête Nationale, 2001/08/01
+Fête Nationale, 2002/08/01
+Immaculée Conception, 1999/12/08
+Immaculée Conception, 2000/12/08
+Immaculée Conception, 2001/12/08
+Immaculée Conception, 2002/12/08
+Jour de l'an, 2000/01/01
+Jour de l'an, 2001/01/01
+Jour de l'an, 2002/01/01
+Jour de l'an, 2003/01/01
+Lendemain de Noël, 1999/12/26
+Lendemain de Noël, 2000/12/26
+Lendemain de Noël, 2001/12/26
+Lendemain de Noël, 2002/12/26
+Lendemain du Nouvel an, 2000/01/02
+Lendemain du Nouvel an, 2001/01/02
+Lendemain du Nouvel an, 2002/01/02
+Lendemain du Nouvel an, 2003/01/02
+Lundi de la Pentecôte, 2000/06/12
+Lundi de la Pentecôte, 2001/06/04
+Lundi de la Pentecôte, 2002/05/20
+Lundi de la Pentecôte, 2003/06/09
+Lundi de Pâques, 2000/04/24
+Lundi de Pâques, 2001/04/16
+Lundi de Pâques, 2002/04/01
+Lundi de Pâques, 2003/04/21
+Noël, 1999/12/25
+Noël, 2000/12/25
+Noël, 2001/12/25
+Noël, 2002/12/25
+Pâques, 2000/04/23
+Pâques, 2001/04/15
+Pâques, 2002/03/31
+Pâques, 2003/04/20
+Pentecôte, 2000/06/11
+Pentecôte, 2001/06/03
+Pentecôte, 2002/05/19
+Pentecôte, 2003/06/08
+Toussaint, 1999/11/01
+Toussaint, 2000/11/01
+Toussaint, 2001/11/01
+Toussaint, 2002/11/01
+Vendredi Saint, 2000/04/21
+Vendredi Saint, 2001/04/13
+Vendredi Saint, 2002/03/29
+Vendredi Saint, 2003/04/18
+[Syrie] 68 
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Adha (3rd day), 1998/04/09, 1418/12/12
+Eid al Adha (3rd day), 1999/03/29, 1419/12/12
+Eid al Adha (3rd day), 2000/03/17, 1420/12/12
+Eid al Adha (3rd day), 2001/03/07, 1421/12/12
+Eid al Adha (3rd day), 2002/02/24, 1422/12/12
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Eid al Fitr (3rd day), 1998/01/31, 1418/10/03
+Eid al Fitr (3rd day), 1999/01/20, 1419/10/03
+Eid al Fitr (3rd day), 2000/01/09, 1420/10/03
+Eid al Fitr (3rd day), 2000/12/29, 1421/10/03
+Eid al Fitr (3rd day), 2001/12/18, 1422/10/03
+Eid al Fitr (3rd day), 2002/12/07, 1423/10/03
+Independence Day, 1998/04/17
+Independence Day, 1999/04/17
+Independence Day, 2000/04/17
+Independence Day, 2001/04/17
+Independence Day, 2002/04/17
+Martyrs' Day, 1998/05/06
+Martyrs' Day, 1999/05/06
+Martyrs' Day, 2000/05/06
+Martyrs' Day, 2001/05/06
+Martyrs' Day, 2002/05/06
+National Unity Day, 1998/09/01
+National Unity Day, 1999/09/01
+National Unity Day, 2000/09/01
+National Unity Day, 2001/09/01
+National Unity Day, 2002/09/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Prophet Mohammed's Birthday, 1998/07/06, 1419/03/12
+Prophet Mohammed's Birthday, 1999/06/25, 1420/03/12
+Prophet Mohammed's Birthday, 2000/06/14, 1421/03/12
+Prophet Mohammed's Birthday, 2001/06/03, 1422/03/12
+Prophet Mohammed's Birthday, 2002/05/23, 1423/03/12
+Revolution Day, 1998/03/08
+Revolution Day, 1999/03/08
+Revolution Day, 2000/03/08
+Revolution Day, 2001/03/08
+Revolution Day, 2002/03/08
+[Thaïlande] 75 
+Asalaha Bucha, 1998/07/08
+Asalaha Bucha, 1999/07/27
+Asalaha Bucha, 2000/07/16
+Asalaha Bucha, 2001/07/05
+Asalaha Bucha, 2002/07/24
+Bank Holiday, 1998/07/01
+Bank Holiday, 1999/07/01
+Bank Holiday, 2000/07/01
+Bank Holiday, 2001/07/01
+Bank Holiday, 2002/07/01
+Chakri Day, 1998/04/06
+Chakri Day, 1999/04/06
+Chakri Day, 2000/04/06
+Chakri Day, 2001/04/06
+Chakri Day, 2002/04/06
+Chulalongkorn Day, 1998/10/23
+Chulalongkorn Day, 1999/10/23
+Chulalongkorn Day, 2000/10/23
+Chulalongkorn Day, 2001/10/23
+Chulalongkorn Day, 2002/10/23
+Constitution Day, 1998/12/10
+Constitution Day, 1999/12/10
+Constitution Day, 2000/12/10
+Constitution Day, 2001/12/10
+Constitution Day, 2002/12/10
+Coronation Day, 1998/05/05
+Coronation Day, 1999/05/05
+Coronation Day, 2000/05/05
+Coronation Day, 2001/05/05
+Coronation Day, 2002/05/05
+Khao Phansa, 1998/07/09
+Khao Phansa, 1999/07/27
+Khao Phansa, 2000/07/17
+Khao Phansa, 2001/07/06
+Khao Phansa, 2002/07/25
+King's Birthday, 1998/12/05
+King's Birthday, 1999/12/05
+King's Birthday, 2000/12/05
+King's Birthday, 2001/12/05
+King's Birthday, 2002/12/05
+Labor Day, 1998/05/01
+Labor Day, 1999/05/01
+Labor Day, 2000/05/01
+Labor Day, 2001/05/01
+Labor Day, 2002/05/01
+Markha Bucha Day, 1998/02/11
+Markha Bucha Day, 1999/03/01
+Markha Bucha Day, 2000/02/19
+Markha Bucha Day, 2001/02/08
+Markha Bucha Day, 2002/02/26
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+New Year's Eve, 1998/12/31
+New Year's Eve, 1999/12/31
+New Year's Eve, 2000/12/31
+New Year's Eve, 2001/12/31
+New Year's Eve, 2002/12/31
+Queen's Birthday, 1998/08/12
+Queen's Birthday, 1999/08/12
+Queen's Birthday, 2000/08/12
+Queen's Birthday, 2001/08/12
+Queen's Birthday, 2002/08/12
+Songkran Day, 1998/04/13
+Songkran Day, 1999/04/13
+Songkran Day, 2000/04/13
+Songkran Day, 2001/04/13
+Songkran Day, 2002/04/13
+Visakha Bucha, 1998/05/10
+Visakha Bucha, 1999/05/29
+Visakha Bucha, 2000/05/17
+Visakha Bucha, 2001/05/07
+Visakha Bucha, 2002/05/26
+[Tunisie] 78 
+Constitution Day, 1998/06/01
+Constitution Day, 1999/06/01
+Constitution Day, 2000/06/01
+Constitution Day, 2001/06/01
+Constitution Day, 2002/06/01
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Adha (3rd day), 1998/04/09, 1418/12/12
+Eid al Adha (3rd day), 1999/03/29, 1419/12/12
+Eid al Adha (3rd day), 2000/03/17, 1420/12/12
+Eid al Adha (3rd day), 2001/03/07, 1421/12/12
+Eid al Adha (3rd day), 2002/02/24, 1422/12/12
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Eid al Fitr (3rd day), 1998/01/31, 1418/10/03
+Eid al Fitr (3rd day), 1999/01/20, 1419/10/03
+Eid al Fitr (3rd day), 2000/01/09, 1420/10/03
+Eid al Fitr (3rd day), 2000/12/29, 1421/10/03
+Eid al Fitr (3rd day), 2001/12/18, 1422/10/03
+Eid al Fitr (3rd day), 2002/12/07, 1423/10/03
+Hijri New Year, 1998/04/27, 1419/01/01
+Hijri New Year, 1999/04/16, 1420/01/01
+Hijri New Year, 2000/04/05, 1421/01/01
+Hijri New Year, 2001/03/25, 1422/01/01
+Hijri New Year, 2002/03/14, 1423/01/01
+Independence Day, 1998/03/20
+Independence Day, 1999/03/20
+Independence Day, 2000/03/20
+Independence Day, 2001/03/20
+Independence Day, 2002/03/20
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+Martyrs' Day, 1998/04/09
+Martyrs' Day, 1999/04/09
+Martyrs' Day, 2000/04/09
+Martyrs' Day, 2001/04/09
+Martyrs' Day, 2002/04/09
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Prophet Mohammed's Birthday, 1998/07/06, 1419/03/12
+Prophet Mohammed's Birthday, 1999/06/25, 1420/03/12
+Prophet Mohammed's Birthday, 2000/06/14, 1421/03/12
+Prophet Mohammed's Birthday, 2001/06/03, 1422/03/12
+Prophet Mohammed's Birthday, 2002/05/23, 1423/03/12
+Republic Day, 1998/07/25
+Republic Day, 1999/07/25
+Republic Day, 2000/07/25
+Republic Day, 2001/07/25
+Republic Day, 2002/07/25
+Youth Day, 1998/03/21
+Youth Day, 1999/03/21
+Youth Day, 2000/03/21
+Youth Day, 2001/03/21
+Youth Day, 2002/03/21
+[Turquie] 49 
+Ataturk Remembrance - Youth and Sports Day, 1998/05/19
+Ataturk Remembrance - Youth and Sports Day, 1999/05/19
+Ataturk Remembrance - Youth and Sports Day, 2000/05/19
+Ataturk Remembrance - Youth and Sports Day, 2001/05/19
+Ataturk Remembrance - Youth and Sports Day, 2002/05/19
+First Day of Fasting, 1998/12/20
+First Day of Fasting, 1999/12/09
+First Day of Fasting, 2000/11/27
+Kurban Bayram (1st day), 1998/04/07
+Kurban Bayram (1st day), 1999/03/28
+Kurban Bayram (1st day), 2000/03/14
+Kurban Bayram (2nd day), 1998/04/08
+Kurban Bayram (2nd day), 1999/03/29
+Kurban Bayram (2nd day), 2000/03/17
+Kurban Bayram (3rd day), 1998/04/09
+Kurban Bayram (3rd day), 1999/03/30
+Kurban Bayram (3rd day), 2000/03/18
+Kurban Bayram (4th day), 1998/04/10
+Kurban Bayram (4th day), 1999/03/31
+Kurban Bayram (4th day), 2000/03/19
+National Sovereignty and World Children's Day, 1998/04/23
+National Sovereignty and World Children's Day, 1999/04/23
+National Sovereignty and World Children's Day, 2000/04/23
+National Sovereignty and World Children's Day, 2001/04/23
+National Sovereignty and World Children's Day, 2002/04/23
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Ramadan Bayram (1st day), 1999/01/19
+Ramadan Bayram (1st day), 2000/01/08
+Ramadan Bayram (1st day), 2000/12/27
+Ramadan Bayram (2nd day), 1999/01/20
+Ramadan Bayram (2nd day), 2000/01/09
+Ramadan Bayram (2nd day), 2000/12/28
+Ramadan Bayram (3rd day), 1999/01/21
+Ramadan Bayram (3rd day), 2000/01/10
+Ramadan Bayram (3rd day), 2000/12/29
+Republic Day, 1998/10/29
+Republic Day, 1999/10/29
+Republic Day, 2000/10/29
+Republic Day, 2001/10/29
+Republic Day, 2002/10/29
+Victory Day, 1998/08/30
+Victory Day, 1999/08/30
+Victory Day, 2000/08/30
+Victory Day, 2001/08/30
+Victory Day, 2002/08/30
+[Émirats arabes unis] 63 
+Eid Al  Isra' Wal Mi'raj, 1998/11/16, 1419/07/27
+Eid Al  Isra' Wal Mi'raj, 1999/11/05, 1420/07/27
+Eid Al  Isra' Wal Mi'raj, 2000/10/25, 1421/07/27
+Eid Al  Isra' Wal Mi'raj, 2001/10/14, 1422/07/27
+Eid Al  Isra' Wal Mi'raj, 2002/10/03, 1423/07/27
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Adha (3rd day), 1998/04/09, 1418/12/12
+Eid al Adha (3rd day), 1999/03/29, 1419/12/12
+Eid al Adha (3rd day), 2000/03/17, 1420/12/12
+Eid al Adha (3rd day), 2001/03/07, 1421/12/12
+Eid al Adha (3rd day), 2002/02/24, 1422/12/12
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Eid al Fitr (3rd day), 1998/01/31, 1418/10/03
+Eid al Fitr (3rd day), 1999/01/20, 1419/10/03
+Eid al Fitr (3rd day), 2000/01/09, 1420/10/03
+Eid al Fitr (3rd day), 2000/12/29, 1421/10/03
+Eid al Fitr (3rd day), 2001/12/18, 1422/10/03
+Eid al Fitr (3rd day), 2002/12/07, 1423/10/03
+Hijri New Year, 1998/04/27, 1419/01/01
+Hijri New Year, 1999/04/16, 1420/01/01
+Hijri New Year, 2000/04/05, 1421/01/01
+Hijri New Year, 2001/03/25, 1422/01/01
+Hijri New Year, 2002/03/14, 1423/01/01
+National Day, 1998/12/02
+National Day, 1999/12/02
+National Day, 2000/12/02
+National Day, 2001/12/02
+National Day, 2002/12/02
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Prophet Mohammed's Birthday, 1998/07/06, 1419/03/12
+Prophet Mohammed's Birthday, 1999/06/25, 1420/03/12
+Prophet Mohammed's Birthday, 2000/06/14, 1421/03/12
+Prophet Mohammed's Birthday, 2001/06/03, 1422/03/12
+Prophet Mohammed's Birthday, 2002/05/23, 1423/03/12
+Sheikh Zayed's Accession Day, 1998/08/06
+Sheikh Zayed's Accession Day, 1999/08/06
+Sheikh Zayed's Accession Day, 2000/08/06
+Sheikh Zayed's Accession Day, 2001/08/06
+Sheikh Zayed's Accession Day, 2002/08/06
+[Royaume-Uni] 55 
+Battle of the Boyne (N. Ireland), 1998/07/12
+Battle of the Boyne (N. Ireland), 1999/07/12
+Battle of the Boyne (N. Ireland), 2000/07/12
+Battle of the Boyne (N. Ireland), 2001/07/12
+Battle of the Boyne (N. Ireland), 2002/07/12
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Easter Monday, 1998/04/13
+Easter Monday, 1999/04/05
+Easter Monday, 2000/04/24
+Easter Monday, 2001/04/16
+Easter Monday, 2002/04/01
+Good Friday, 1998/04/10
+Good Friday, 1999/04/02
+Good Friday, 2000/04/21
+Good Friday, 2001/04/13
+Good Friday, 2002/03/29
+Late Summer Holiday, 1998/08/31
+Late Summer Holiday, 1999/08/30
+Late Summer Holiday, 2000/08/28
+Late Summer Holiday, 2001/08/27
+Late Summer Holiday, 2002/08/26
+May Day Bank Holiday, 1998/05/04
+May Day Bank Holiday, 1999/05/03
+May Day Bank Holiday, 2000/05/01
+May Day Bank Holiday, 2001/05/07
+May Day Bank Holiday, 2002/05/06
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Spring Bank Holiday, 1998/05/25
+Spring Bank Holiday, 1999/05/24
+Spring Bank Holiday, 2000/05/29
+Spring Bank Holiday, 2001/05/28
+Spring Bank Holiday, 2002/05/27
+St. Patrick's Day (N. Ireland), 1998/03/17
+St. Patrick's Day (N. Ireland), 1999/03/17
+St. Patrick's Day (N. Ireland), 2000/03/17
+St. Patrick's Day (N. Ireland), 2001/03/17
+St. Patrick's Day (N. Ireland), 2002/03/17
+[États-Unis] 115 
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Christmas Eve, 1998/12/24
+Christmas Eve, 1999/12/24
+Christmas Eve, 2000/12/24
+Christmas Eve, 2001/12/24
+Christmas Eve, 2002/12/24
+Columbus Day, 1998/10/12
+Columbus Day, 1999/10/11
+Columbus Day, 2000/10/09
+Columbus Day, 2001/10/08
+Columbus Day, 2002/10/14
+Easter, 1998/04/12
+Easter, 1999/04/04
+Easter, 2000/04/23
+Easter, 2001/04/15
+Easter, 2002/03/31
+Election Day, 1998/11/03
+Election Day, 1999/11/02
+Election Day, 2000/11/07
+Election Day, 2001/11/06
+Election Day, 2002/11/05
+Father's Day, 1998/06/21
+Father's Day, 1999/06/20
+Father's Day, 2000/06/18
+Father's Day, 2001/06/17
+Father's Day, 2002/06/16
+Flag Day, 1998/06/14
+Flag Day, 1999/06/14
+Flag Day, 2000/06/14
+Flag Day, 2001/06/14
+Flag Day, 2002/06/14
+Groundhog Day, 1998/02/02
+Groundhog Day, 1999/02/02
+Groundhog Day, 2000/02/02
+Groundhog Day, 2001/02/02
+Groundhog Day, 2002/02/02
+Halloween, 1998/10/31
+Halloween, 1999/10/31
+Halloween, 2000/10/31
+Halloween, 2001/10/31
+Halloween, 2002/10/31
+Independence Day, 1998/07/04
+Independence Day, 1999/07/04
+Independence Day, 2000/07/04
+Independence Day, 2001/07/04
+Independence Day, 2002/07/04
+Labor Day, 1998/09/07
+Labor Day, 1999/09/06
+Labor Day, 2000/09/04
+Labor Day, 2001/09/03
+Labor Day, 2002/09/02
+Lincoln's Birthday, 1998/02/12
+Lincoln's Birthday, 1999/02/12
+Lincoln's Birthday, 2000/02/12
+Lincoln's Birthday, 2001/02/12
+Lincoln's Birthday, 2002/02/12
+Martin Luther King Day, 1998/01/19
+Martin Luther King Day, 1999/01/18
+Martin Luther King Day, 2000/01/17
+Martin Luther King Day, 2001/01/15
+Martin Luther King Day, 2002/01/21
+Memorial Day, 1998/05/25
+Memorial Day, 1999/05/31
+Memorial Day, 2000/05/29
+Memorial Day, 2001/05/28
+Memorial Day, 2002/05/27
+Mother's Day, 1998/05/10
+Mother's Day, 1999/05/09
+Mother's Day, 2000/05/14
+Mother's Day, 2001/05/13
+Mother's Day, 2002/05/12
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+New Year's Eve, 1998/12/31
+New Year's Eve, 1999/12/31
+New Year's Eve, 2000/12/31
+New Year's Eve, 2001/12/31
+New Year's Eve, 2002/12/31
+President's Day, 1998/02/16
+President's Day, 1999/02/15
+President's Day, 2000/02/21
+President's Day, 2001/02/19
+President's Day, 2002/02/18
+Saint Patrick's Day, 1998/03/17
+Saint Patrick's Day, 1999/03/17
+Saint Patrick's Day, 2000/03/17
+Saint Patrick's Day, 2001/03/17
+Saint Patrick's Day, 2002/03/17
+Tax Day, 1998/04/15
+Tax Day, 1999/04/15
+Tax Day, 2000/04/17
+Tax Day, 2001/04/16
+Tax Day, 2002/04/15
+Thanksgiving Day, 1998/11/26
+Thanksgiving Day, 1999/11/25
+Thanksgiving Day, 2000/11/23
+Thanksgiving Day, 2001/11/22
+Thanksgiving Day, 2002/11/28
+Valentine's Day, 1998/02/14
+Valentine's Day, 1999/02/14
+Valentine's Day, 2000/02/14
+Valentine's Day, 2001/02/14
+Valentine's Day, 2002/02/14
+Veteran's Day, 1998/11/11
+Veteran's Day, 1999/11/11
+Veteran's Day, 2000/11/11
+Veteran's Day, 2001/11/11
+Veteran's Day, 2002/11/11
+[Uruguay] 65 
+Battle of Las Piedras, 1998/05/18
+Battle of Las Piedras, 1999/05/18
+Battle of Las Piedras, 2000/05/18
+Battle of Las Piedras, 2001/05/18
+Battle of Las Piedras, 2002/05/18
+Birth of Gral. Jose Artigas, 1998/06/19
+Birth of Gral. Jose Artigas, 1999/06/19
+Birth of Gral. Jose Artigas, 2000/06/19
+Birth of Gral. Jose Artigas, 2001/06/19
+Birth of Gral. Jose Artigas, 2002/06/19
+Boxing Day - St. Stephen's Day, 1998/12/26
+Boxing Day - St. Stephen's Day, 1999/12/26
+Boxing Day - St. Stephen's Day, 2000/12/26
+Boxing Day - St. Stephen's Day, 2001/12/26
+Boxing Day - St. Stephen's Day, 2002/12/26
+Carnival (1st day), 1998/02/23
+Carnival (1st day), 1999/02/15
+Carnival (1st day), 2000/03/06
+Carnival (1st day), 2001/02/26
+Carnival (1st day), 2002/02/11
+Carnival (2nd day), 1998/02/24
+Carnival (2nd day), 1999/02/16
+Carnival (2nd day), 2000/03/07
+Carnival (2nd day), 2001/02/27
+Carnival (2nd day), 2002/02/12
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Columbus Day, 1998/10/12
+Columbus Day, 1999/10/12
+Columbus Day, 2000/10/12
+Columbus Day, 2001/10/12
+Columbus Day, 2002/10/12
+Constitution Day, 1998/07/18
+Constitution Day, 1999/07/18
+Constitution Day, 2000/07/18
+Constitution Day, 2001/07/18
+Constitution Day, 2002/07/18
+Expedition of the 33, 1998/04/19
+Expedition of the 33, 1999/04/19
+Expedition of the 33, 2000/04/19
+Expedition of the 33, 2001/04/19
+Expedition of the 33, 2002/04/19
+Independence Day, 1998/08/25
+Independence Day, 1999/08/25
+Independence Day, 2000/08/25
+Independence Day, 2001/08/25
+Independence Day, 2002/08/25
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Queen's Birthday, 1998/04/30
+Queen's Birthday, 1999/04/30
+Queen's Birthday, 2000/04/30
+Queen's Birthday, 2001/04/30
+Queen's Birthday, 2002/04/30
+[Venezuela] 50 
+Battle of Carabobo, 1998/06/24
+Battle of Carabobo, 1999/06/24
+Battle of Carabobo, 2000/06/24
+Battle of Carabobo, 2001/06/24
+Battle of Carabobo, 2002/06/24
+Carnival (1st day), 1998/02/23
+Carnival (1st day), 1999/02/15
+Carnival (1st day), 2000/03/06
+Carnival (1st day), 2001/02/26
+Carnival (1st day), 2002/02/11
+Carnival (2nd day), 1998/02/24
+Carnival (2nd day), 1999/02/16
+Carnival (2nd day), 2000/03/07
+Carnival (2nd day), 2001/02/27
+Carnival (2nd day), 2002/02/12
+Christmas Day, 1998/12/25
+Christmas Day, 1999/12/25
+Christmas Day, 2000/12/25
+Christmas Day, 2001/12/25
+Christmas Day, 2002/12/25
+Columbus Day, 1998/10/12
+Columbus Day, 1999/10/12
+Columbus Day, 2000/10/12
+Columbus Day, 2001/10/12
+Columbus Day, 2002/10/12
+Declaration of Independence Day, 1998/04/19
+Declaration of Independence Day, 1999/04/19
+Declaration of Independence Day, 2000/04/19
+Declaration of Independence Day, 2001/04/19
+Declaration of Independence Day, 2002/04/19
+Independence Day, 1998/07/05
+Independence Day, 1999/07/05
+Independence Day, 2000/07/05
+Independence Day, 2001/07/05
+Independence Day, 2002/07/05
+Labor Day - May Day, 1998/05/01
+Labor Day - May Day, 1999/05/01
+Labor Day - May Day, 2000/05/01
+Labor Day - May Day, 2001/05/01
+Labor Day - May Day, 2002/05/01
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+Simon Bolivar Day, 1998/07/24
+Simon Bolivar Day, 1999/07/24
+Simon Bolivar Day, 2000/07/24
+Simon Bolivar Day, 2001/07/24
+Simon Bolivar Day, 2002/07/24
+[Yémen] 58 
+Eid al Adha (1st day), 1998/04/07, 1418/12/10
+Eid al Adha (1st day), 1999/03/27, 1419/12/10
+Eid al Adha (1st day), 2000/03/15, 1420/12/10
+Eid al Adha (1st day), 2001/03/05, 1421/12/10
+Eid al Adha (1st day), 2002/02/22, 1422/12/10
+Eid al Adha (2nd day), 1998/04/08, 1418/12/11
+Eid al Adha (2nd day), 1999/03/28, 1419/12/11
+Eid al Adha (2nd day), 2000/03/16, 1420/12/11
+Eid al Adha (2nd day), 2001/03/06, 1421/12/11
+Eid al Adha (2nd day), 2002/02/23, 1422/12/11
+Eid al Adha (3rd day), 1998/04/09, 1418/12/12
+Eid al Adha (3rd day), 1999/03/29, 1419/12/12
+Eid al Adha (3rd day), 2000/03/17, 1420/12/12
+Eid al Adha (3rd day), 2001/03/07, 1421/12/12
+Eid al Adha (3rd day), 2002/02/24, 1422/12/12
+Eid al Fitr (1st day), 1998/01/29, 1418/10/01
+Eid al Fitr (1st day), 1999/01/18, 1419/10/01
+Eid al Fitr (1st day), 2000/01/07, 1420/10/01
+Eid al Fitr (1st day), 2000/12/27, 1421/10/01
+Eid al Fitr (1st day), 2001/12/16, 1422/10/01
+Eid al Fitr (1st day), 2002/12/05, 1423/10/01
+Eid al Fitr (2nd day), 1998/01/30, 1418/10/02
+Eid al Fitr (2nd day), 1999/01/19, 1419/10/02
+Eid al Fitr (2nd day), 2000/01/08, 1420/10/02
+Eid al Fitr (2nd day), 2000/12/28, 1421/10/02
+Eid al Fitr (2nd day), 2001/12/17, 1422/10/02
+Eid al Fitr (2nd day), 2002/12/06, 1423/10/02
+Eid al Fitr (3rd day), 1998/01/31, 1418/10/03
+Eid al Fitr (3rd day), 1999/01/20, 1419/10/03
+Eid al Fitr (3rd day), 2000/01/09, 1420/10/03
+Eid al Fitr (3rd day), 2000/12/29, 1421/10/03
+Eid al Fitr (3rd day), 2001/12/18, 1422/10/03
+Eid al Fitr (3rd day), 2002/12/07, 1423/10/03
+Independence Day, 1998/11/30
+Independence Day, 1999/11/30
+Independence Day, 2000/11/30
+Independence Day, 2001/11/30
+Independence Day, 2002/11/30
+National Day, 1998/05/22
+National Day, 1999/05/22
+National Day, 2000/05/22
+National Day, 2001/05/22
+National Day, 2002/05/22
+New Year's Day, 1998/01/01
+New Year's Day, 1999/01/01
+New Year's Day, 2000/01/01
+New Year's Day, 2001/01/01
+New Year's Day, 2002/01/01
+October Revolution, 1998/10/14
+October Revolution, 1999/10/14
+October Revolution, 2000/10/14
+October Revolution, 2001/10/14
+October Revolution, 2002/10/14
+September Revolution, 1998/09/26
+September Revolution, 1999/09/26
+September Revolution, 2000/09/26
+September Revolution, 2001/09/26
+September Revolution, 2002/09/26

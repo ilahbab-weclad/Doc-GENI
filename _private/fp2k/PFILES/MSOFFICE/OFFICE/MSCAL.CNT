@@ -1,0 +1,75 @@
+:Base mscal.hlp>ref
+:Title Référence Contrôle Calendrier
+:Index Référence Contrôle Calendrier=mscal.hlp
+1 Référence Contrôle Calendrier
+2 Contrôle Calendrier=ccsumCalendarDescription@mscal.hlp>Langref
+2 Référence Contrôles ActiveX
+3 Informations sur les propriétés, les méthodes et les événements d'un contrôl...=acccUsingCustomControlLanguageElements@acvba80.hlp>Langref
+3 Éléments du langage Microsoft Access qui s'appliquent aux contrôles ActiveX=acccAccessLanguageElements@acvba80.hlp>Langref
+3 Boîte de dialogue des propriétés personnalisée du contrôle ActiveX=acccViewCustomControlProperties@acvba80.hlp>Langref
+3 Afficher la boîte À propos d'un contrôle ActiveX=acccViewCustomControlAboutBox@acvba80.hlp>Langref
+2 Exemples
+3 A-P
+4 Exemple de propriétés DayFont (PoliceJour) et GridFont (PoliceGrille)=ccproDayFontX@mscal.hlp>Langref
+4 Exemple propriété FirstDay (PremierJour) et de méthode Refresh=ccmthRefreshX@mscal.hlp>Langref
+4 Exemple de propriétés DayFont (PoliceJour) et GridFont (PoliceGrille)=ccproDayFontX@mscal.hlp>Langref
+4 Exemple de méthode NextDay=ccmthNextDayX@mscal.hlp>Langref
+4 Exemple de méthode NextMonth=ccmthNextMonthX@mscal.hlp>Langref
+4 Exemple de méthode NextWeek=ccmthNextWeekX@mscal.hlp>Langref
+4 Exemple de méthode NextYear=ccmthNextYearX@mscal.hlp>Langref
+4 Exemple de méthode PreviousDay=ccmthPreviousDayX@mscal.hlp>Langref
+4 Exemple de méthode PreviousMonth=ccmthPreviousMonthX@mscal.hlp>Langref
+4 Exemple de méthode PreviousWeek=ccmthPreviousWeekX@mscal.hlp>Langref
+4 Exemple de méthode PreviousYear=ccmthPreviousYearX@mscal.hlp>Langref
+3 Q-Z
+4 Exemple propriété FirstDay (PremierJour) et de méthode Refresh=ccmthRefreshX@mscal.hlp>Langref
+2 Événements
+3 A-P
+4 Événement AfterUpdate (Après MAJ) (contrôle Calendrier)=ccevtAfterUpdate@mscal.hlp>Langref
+4 Événement BeforeUpdate (Avant MAJ) (contrôle Calendrier)=ccevtBeforeUpdate@mscal.hlp>Langref
+4 Événement Click (Clic) (contrôle Calendrier)=ccevtClick@mscal.hlp>Langref
+4 Événement DblClick (Double-clic) (contrôle Calendrier)=ccevtDblClick@mscal.hlp>Langref
+4 Événements KeyDown (Touche appuyée), KeyUp (Touche relâchée) (contrôle Calen...=ccevtKeydown@mscal.hlp>Langref
+4 Événement KeyPress (Touche activée) (contrôle Calendrier)=ccevtKeypress@mscal.hlp>Langref
+4 Événements KeyDown (Touche appuyée), KeyUp (Touche relâchée) (contrôle Calen...=ccevtKeydown@mscal.hlp>Langref
+4 Événement NewMonth (Nouveau mois)=ccevtNewMonth@mscal.hlp>Langref
+4 Événement NewYear (Nouvelle année)=ccevtNewYear@mscal.hlp>Langref
+2 Méthodes
+3 A-P
+4 Méthode AboutBox=ccmthAboutBox@mscal.hlp>Langref
+4 Méthode NextDay=ccmthNextDay@mscal.hlp>Langref
+4 Méthode NextMonth=ccmthNextMonth@mscal.hlp>Langref
+4 Méthode NextWeek=ccmthNextWeek @mscal.hlp>Langref
+4 Méthode NextYear=ccmthNextYear @mscal.hlp>Langref
+4 Méthode PreviousDay=ccmthPreviousDay @mscal.hlp>Langref
+4 Méthode PreviousMonth=ccmthPreviousMonth@mscal.hlp>Langref
+4 Méthode PreviousWeek=ccmthPreviousWeek@mscal.hlp>Langref
+4 Méthode PreviousYear=ccmthPreviousYear@mscal.hlp>Langref
+3 Q-Z
+4 Méthode Refresh (contrôle Calendrier)=ccmthRefresh@mscal.hlp>Langref
+4 Méthode Today=ccmthToday@mscal.hlp>Langref
+2 Propriétés
+3 A-P
+4 Propriété BackColor (CouleurFond) (contrôle calendrier)=ccproBackColor@mscal.hlp>Langref
+4 Propriété Day (Jour)=ccproDay@mscal.hlp>Langref
+4 Propriété DayFont (PoliceJour)=ccproDayFont@mscal.hlp>Langref
+4 Propriété DayFontColor (CouleurPoliceJour)=ccproDayFontColor@mscal.hlp>Langref
+4 Propriété DayLength (LongueurJour)=ccproDayLength@mscal.hlp>Langref
+4 Propriété FirstDay (PremierJour)=ccproFirstDay@mscal.hlp>Langref
+4 Propriété GridCellEffect (AspectCellulesGrilles)=ccproGridLinesFormat@mscal.hlp>Langref
+4 Propriété GridFont (PoliceGrille)=ccproGridFont@mscal.hlp>Langref
+4 Propriété GridFontColor grille (CouleurPolice)=ccproGridFontColor@mscal.hlp>Langref
+4 Propriété GridLinesColor (CouleurQuadrillage)=ccproGridLinesColor@mscal.hlp>Langref
+4 Propriété Month (Mois)=ccproMonth@mscal.hlp>Langref
+4 Propriété MonthLength (LongueurMois)=ccproMonthLength@mscal.hlp>Langref
+3 Q-Z
+4 Propriété ShowDateSelectors (AffichSélecteursDate)=ccproShowDateSelectors@mscal.hlp>Langref
+4 Propriété ShowDays (AffichJours)=ccproShowDays@mscal.hlp>Langref
+4 Propriété ShowHorizontalGrid (AffichGrilleHorizontale)=ccproShowHorizontalGridlines@mscal.hlp>Langref
+4 Propriété ShowTitle (AffichTitre)=ccproShowTitle@mscal.hlp>Langref
+4 Propriété ShowVerticalGrid (AffichGrilleVerticale)=ccproShowVerticalGridlines@mscal.hlp>Langref
+4 Propriété TitleFont (PoliceTitre)=ccproTitleFont@mscal.hlp>Langref
+4 Propriété TitleFontColor (CouleurPoliceTitre)=ccproTitleFontColor@mscal.hlp>Langref
+4 Propriété Valeur (Value) (contrôle Calendrier)=ccproValue@mscal.hlp>Langref
+4 Propriété ValueIsNull (ValeurEstNulle) (contrôle Calendrier)=ccproValueIsNull@mscal.hlp>Langref
+4 Propriété Year (Année)=ccproYear@mscal.hlp>Langref

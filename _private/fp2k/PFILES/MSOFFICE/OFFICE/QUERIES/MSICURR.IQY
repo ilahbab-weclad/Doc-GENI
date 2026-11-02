@@ -1,0 +1,9 @@
+WEB
+1
+http://investor.msn.com/external/excel/quotes.asp?symbol=/ADY,/BPY,/CDY,/ZEY,/DMY,/SFY
+
+Selection=EntirePage
+Formatting=All
+PreFormattedTextToColumns=True
+ConsecutiveDelimitersAsOne=True
+SingleBlockTextImport=False

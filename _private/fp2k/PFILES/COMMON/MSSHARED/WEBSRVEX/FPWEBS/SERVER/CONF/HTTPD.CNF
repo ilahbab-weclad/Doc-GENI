@@ -1,0 +1,75 @@
+#----------------------------------------------------------------------
+#
+#   HTTPD.CNF
+#
+# Main server configuration for the FrontPage Personal Web Server
+#
+# This is the main server configuration file. It is best to
+# leave the directives in this file in the order they are in, or
+# things may not go the way you'd like.
+#
+# Do NOT simply read the instructions in here without understanding
+# what they do, if you are unsure consult the online docs.
+#
+# Server configuration commands are similar to those for the NCSA
+# server version 1.3R.  If you have questions please see the online
+# documentation at http://hoohoo.ncsa.uiuc.edu
+#
+# NOTE: path defaults are relative to the server's installation
+#       directory (ServerRoot). Paths should be given in Unix 
+#       format (using '/').
+#
+#----------------------------------------------------------------------
+
+# ServerRoot: The directory the server's config, error, and log files
+# are kept in. This should be specified on the startup command line.
+#
+# Format: ServerRoot <path>
+#
+ServerRoot VSERVER/
+
+# Port: The port the standalone listens to. 80 is the network standard.
+#
+Port 80
+
+# Timeout: The timeout applied to all network operations. It's the
+# maximum time for a network send or receive, and the maximum time that
+# a CGI script is allowed to take.  The default is 20 minutes (1200 seconds).
+#
+# Format: Timeout nn    (seconds)
+#
+# Timeout 1200
+
+# ServerAdmin: Your address, where problems with the server should be
+# e-mailed.
+#
+# Format: ServerAdmin <email addr>
+#
+# ServerAdmin www-admin
+
+# ErrorLog: The location of the error log file. If this does not start
+# with / or a drive spec (recommended!), ServerRoot is prepended to it.
+#
+# Format: ErrorLog <path/file>
+#
+# ErrorLog logs/error.log
+
+# TransferLog: The location of the transfer log file. If this does not
+# start with / or a drive spec (recommended!), ServerRoot is prepended to it.
+#
+# Format: TransferLog <path/file>
+#
+# TransferLog logs/access.log
+
+# ServerName allows you to set a host name which is sent back to clients for
+# your server if it's different than the one the program would get (i.e. use
+# "www" instead of the host's real name). Make sure your DNS is set up to
+# alias the name to your system!
+#
+# Format: ServerName <domain name>
+#
+# no default
+
+# Command line template for CGI WinExec
+# Uncomment next line for shorter form of command line
+ShellWinCmdTempl ~p ~v ~a

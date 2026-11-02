@@ -1,0 +1,472 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+<!--START_TOPIC HEAD-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Installation des extensions serveur FrontPage sous Unix</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--END_TOPIC HEAD-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<TR>
+		<TD BGCOLOR="#000000"><IMG SRC="home.gif" WIDTH=103 HEIGHT=21
+		ALT="Microsoft" BORDER=0 hspace="0"></TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH="100%"><IMG 
+		SRC="1ptrans.gif" WIDTH=1 
+		HEIGHT=1 ALT="" BORDER=0></TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+		<FONT FACE="Arial, Helvetica" SIZE=1><A HREF="/" TARGET="_top"><IMG 
+		SRC="msft.gif" WIDTH=91 
+		HEIGHT=21 ALT="Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+
+	<TR>
+		<td width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" 	width="150"></td>
+	    <td width="20" nowrap></td>
+	    <td colspan="2" nowrap bgcolor="#666699" valign="center" height="20" style="padding: 3pt; 	border: #666666 solid 1px;"><font color="#FFFFCC"><b>&nbsp;Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></td>
+	</TR>
+
+	<TR>
+    	<td width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></td>
+    	<td width="20" nowrap></td>
+
+    	<td rowspan="23" width="460" nowrap><a name="top"></a><P><font color="#666699"><b><font size="+1">Installation des extensions serveur  FrontPage sous UNIX</font></b></font>
+
+		<HR>
+
+		<H3><A NAME="whereyoucangetthefpse"></A>Moyens d'accès aux extensions serveur FrontPage</H3>
+
+			<p><A NAME="inunix.doc-1007"></A>Les extensions serveur Microsoft FrontPage&nbsp2000 pour les plates-formes UNIX sont disponibles pour téléchargement sur le site <A 			HREF="http://www.microsoft.com/frontpage">http://www.microsoft.com/france/frontpage</a>.
+			
+			<p><A NAME="inunix.doc-1008"></A>Le module d'installation destiné à une plate-forme UNIX est constitué du script d'installation, fp_install.sh, et d'un fichier tar compressé contenant tous les fichiers des extensions serveur. Le fichier tar est intitulé fp40.<I>plate-forme</I>.tar.Z, où <I>plate-forme</I> représente la plate-forme UNIX sur laquelle les extensions serveur seront installées. Ainsi, fp40.solaris.tar.Z est le fichier tar compressé destiné aux serveurs Solaris.
+
+
+		<H3><A NAME="fpsesupportedplatforms"></A>Plates-formes prenant en charge les extensions serveur FrontPage</H3>
+
+			<p><A NAME="inunix.doc-1009"></A>Le tableau qui suit énumère les serveurs Web tournant sous Unix pour lesquels des extensions serveur FrontPage sont disponibles.
+
+			<P class=4>&nbsp;</P>
+
+			<TABLE cols=2 width=480 cellspacing=0>
+			
+				<TR VALIGN="top">
+					<TH width=50%>Systèmes d'exploitation</TH>
+					<TH width=50%>Serveurs Web</TH>
+				</TR>
+			
+				<TR VALIGN="top">
+					<TD class=TT width=50%>Digital UNIX 3.2c, 4.0 (Alpha)
+					<P class=TT>BSD/OS 3.1 (Intel <I>x</I>86)</P>
+					
+					<P class=TT>BSD/OS 4.0 (Intel <I>x</I>86)</P>
+					
+					<P class=TT>Linux 3.03 (Red Hat Software) (Intel <I>x</I>86)</P>
+					
+					<P class=TT>HP/UX 9.03, 10.01 (PA-RISC)</P>
+					
+					<P class=TT>IRIX 5.3, 6.2 (Silicon Graphics)</P>
+					
+					<P class=TT>Solaris 2.4, 2.5, 2.6 (SPARC)</P>
+					
+					<P class=TT>Solaris 2.6 (Intel x86)</P>
+					
+					<P class=TT>AIX 3.2.5, 4.1, 4.2 (RS6000, PowerPC)</P>
+					
+					<P class=TT>SCO OpenServer5.0 (Intel <I>x</I>86)</P>
+					</TD>
+			
+					<TD class=TT width=50%>Apache 1.2.4, 1.3.3
+				<P class=TT>NCSA 1.5.2 (mais pas 1.5<I>a</I> et 1.5.1)</P>
+				
+				<P class=TT>Netscape Enterprise Server 3.0, 3.5.1</P>
+				
+				<P class=TT>Netscape FastTrack 2.0, 3.0.1</P>
+				
+				<P class=TT>Stronghold 2.3</P>
+					</TD>
+				</TR>
+			</TABLE>
+
+			<P class=6>&nbsp;</P>
+		
+
+		<H3><A NAME="whatgetsinstalled"></A>Composants installés</H3>
+
+			<p><A NAME="inunix.doc-1011"></A>Par défaut, les extensions serveur FrontPage sont installées dans le répertoire /usr/local/frontpage. Si vous choisissez un autre répertoire de destination, il doit exister un lien entre la zone d'installation et /usr/local/frontpage (le script d'installation se charge de la création de ce lien). Le répertoire /usr/local doit exister sur le serveur, que vous choisissiez ou non d'y installer les extensions serveur. Si ce répertoire est absent, le script d'installation le crée. </P>
+
+			<p>Le script d'installation met également en place les composants suivants&nbsp;:
+
+				<UL>
+					<LI class=LB1>Le programme  fpsrvadm.exe, outil d'administration des extensions serveur FrontPage et des sites Web FrontPage étendus, est installé dans le répertoire  /usr/local/frontpage/version4.0/bin/fpsrvadm.exe.
+
+					<LI class=LB1>Le <I>Kit de ressources des extensions serveur FrontPage</I> est un document HTML qui constitue une source d'informations très complète sur les extensions serveur. Il est installé dans le répertoire /usr/local/frontpage/version4.0/serk/<i>nnnn</i>/default.htm. Le dossier /<i>nnnn</i> correspond au nom numérique de la langue d'installation des extensions serveur FrontPage. Pour une installation en langue anglaise des États-Unis, par exemple, le chemin est /usr/local/frontpage/version4.0/serk/1033/default.htm.
+
+					<LI class=LB1>Les formulaires d'administration HTML sont placés dans le répertoire /usr/local/frontpage/version4.0/admcgi. Il s'agit des pages HTML permettant l'administration des extensions serveur à partir de tout ordinateur connecté à Internet, disposant de l'accès au serveur.
+
+					<LI class=LB1>Le correctif logiciel du serveur Apache permet l'installation d'une seule copie des extensions serveur FrontPage (il dispense de l'installation de versions stub des exécutables des extensions serveur sur chaque site Web FrontPage étendu). Les fichiers source et binaire du correctif Apache sont installés dans le répertoire /usr/local/frontpage/version4.0/apache-fp.
+
+					<LI class=LB1>D'autres fichiers d'extensions serveur, tels que les fichiers de messages et de configuration.
+				</UL>
+
+				<P class=4>&nbsp;</p>
+
+		<H3><A NAME="usingthesetupscript"></A>Exécution du script d'installation</H3>
+
+			<p><A NAME="inunix.doc-1018"></A>La procédure d'installation des extensions serveur FrontPage est réalisée en quatre étapes maximum, selon la configuration de chaque système. En premier lieu, les extensions serveur et les fichiers connexes sont décompressés, désarchivés (commande untar), puis stockés sur leurs emplacements respectifs sur l'ordinateur serveur. Si votre serveur Web possède une version antérieure des extensions serveur, le script d'installation procède ensuite à sa mise à niveau vers FrontPage 2000. Si, par contre, les extensions serveur n'ont jamais été mises en place sur le serveur Web, elles sont installées. En dernier lieu, si vous possédez des serveurs virtuels, les extensions serveur FrontPage sont installées sur les serveurs virtuels de votre choix.
+			
+			<p>Le script d'installation des extensions serveur FrontPage est intitulé fp_install.sh. Son exécution suppose une ouverture de session en tant que «&nbsp;root&nbsp;».
+			
+			<p><A NAME="inunix.doc-1020"></A><B>Désarchivage (untar) des extensions serveur FrontPage</B>
+
+				<OL>
+					<LI class=LN>Exécutez fp_install.sh.
+
+					<LI class=LN>Avant de procéder à l'installation des extensions serveur FrontPage&nbsp;2000, le script d'installation vous invite à créer une copie de sauvegarde du répertoire d'installation de FrontPage, du répertoire des fichiers de configuration du serveur et de tout répertoire de contenu. Il vous est également demandé de préciser le répertoire des extensions serveur.
+
+						<P class=LT1>Les extensions serveur sont installées par défaut dans le répertoire /usr/local/frontpage/. Vous pouvez accepter ce répertoire ou spécifier une autre destination. Dans ce dernier cas, un lien symbolique est créé entre le répertoire /usr/local/frontpage/ et le répertoire d'installation de votre choix. Le répertoire de destination doit se trouver sur une partition locale, laquelle ne doit pas être montée NOSUID.
+
+					<LI class=LN>Procédez au désarchivage (commande untar) et à la décompression du fichier tar des extensions serveur FrontPage, fp40.<I>plate-forme</I>.tar.Z. Si ce fichier tar ne réside pas dans le répertoire en cours, indiquez son emplacement. 
+
+					<p class=4>&nbsp;</p>
+
+	<A NAME="inunix.doc-1021"></A>
+	
+			<p><B>Mise à niveau de versions antérieures</B>
+
+
+				<LI class=LN>Le script d'installation vous propose ensuite de mettre à niveau les serveurs Web possédant une version antérieure des extensions serveur.
+					<p>Cela fait, vous pouvez configurer de manière interactive le niveau de sécurité de vos sites Web FrontPage étendus, ou laisser le soin à fp_install.sh de générer un script qui réalisera cette opération.</P>
+
+						<UL>
+							<LI class=LB1>Si vous choisissez l'option interactive, fp_install.sh sollicite l'identificateur d'utilisateur et l'identificateur de groupe UNIX de chaque site Web racine et de chaque sous-site Web mis à niveau. Le script d'installation exécute ensuite la commande chown sur le contenu de chaque site Web FrontPage étendu associé à l'utilisateur et au groupe spécifiés. fp-install.sh exécute également la commande chown et définit les identificateurs d'utilisateur sur les versions stub des exécutables des extensions serveur pour chaque site Web appartenant à l'utilisateur et au groupe spécifiés. Cette dernière étape n'est pas exécutée si le site Web FrontPage étendu réside sur le serveur Web Apache FrontPage avec correctif logiciel.
+
+							<LI class=LB1>Si vous choisissez l'option script, le script shell Bourne qui est créé se charge de toutes les opérations chown requises à l'aide de fpsrvadm.exe. Votre intervention se limite à l'édition du script pour préciser les identificateurs d'utilisateur et les identificateurs de groupe UNIX que vous souhaitez associer à chaque site Web. </LI>
+					</UL>
+
+					<p class=4>&nbsp;</p>
+
+
+				<p><A NAME="inunix.doc-1025"></A></P>
+
+				<p><B>Première installation sur un site Web racine et sur les sous-sites Web</B>
+
+
+					<LI class=LN>Le script d'installation vous propose ensuite de mettre en place les extensions serveur sur le site Web racine d'un serveur Web ne possédant pas ces extensions.
+<P class=LT1>Vous devez d'abord vous identifier en tant qu'administrateur du site Web et fournir un mot de passe. Vous devrez fournir ce même nom et mot de passe pour pouvoir effectuer des opérations d'administration et d'auteur sur le site Web à partir d'un client FrontPage. Après installation du site Web racine, vous devez indiquer le code du jeu de caractères local et la langue par défaut.</LI>
+
+				<LI class=LN>Vous êtes invité à créer des sous-sites Web sous le site Web racine.
+<P class=LT1>Au cours de l'installation des versions stub des extensions serveur sur un sous-site Web, il vous est demandé le nom de ce sous-site. Si le nom possède le format ~<I>nomsiteWeb</I> (site Web «&nbsp;par utilisateur&nbsp;»), il est automatiquement affecté au propriétaire du sous-site Web dans le système de fichiers UNIX. Sinon, vous devez préciser le nom du propriétaire. Le programme sollicite également le nom du propriétaire du groupe.
+
+					<P class=LT1>Vous devez préciser, pour chaque sous-site Web, votre nom administrateur et votre mot de passe.
+
+					<P class=LT1>Le script d'installation exécute ensuite la commande chown sur le contenu de chaque site Web FrontPage étendu associé à l'utilisateur et au groupe spécifiés. Si le site Web FrontPage étendu ne réside pas sur le serveur Web Apache FrontPage avec correctif logiciel, fp_install.sh exécute également la commande chown sur les versions stub des exécutables des extensions serveur. Pour plus d'informations, voir <a href="scuni_6.htm">Configuration des extensions serveur pour SUID/SGID</a>.
+
+					<P class=LT1>Les extensions serveur effectuent ensuite les opérations suivantes pour chaque site Web racine et chaque sous-site Web&nbsp;: 
+
+<UL>
+<LI class=LB1>Pour tous les serveurs Web à l'exception du serveur Apache FrontPage avec correctif logiciel, installation des versions stub des exécutables des extensions serveur dans le dossier _vti_bin du site Web.
+
+<LI class=LB1>Développement des composants FrontPage, tels que Insertion et Substitution.
+
+<LI class=LB1>Création de la carte des liens hypertexte du site Web FrontPage étendu.
+
+<LI class=LB1>Extraction des pages de titre.
+
+<LI class=LB1>Extraction des URL de base. 
+<P class=LT1><A NAME="inunix.doc-1031"></A>
+</LI>
+</UL>
+
+
+<p class=4>&nbsp;</p>
+
+
+<p><B>Installation sur les serveurs virtuels</B>
+
+
+	<LI class=LN>Le script d'installation vous propose ensuite d'installer les extensions serveur FrontPage&nbsp;2000 sur un ou plusieurs serveurs virtuels. Si vous choisissez cette option, vous devez fournir le nom du fichier de configuration du serveur qui contient la liste des serveurs virtuels. 
+<P class=LT1>Vous devez ensuite vous identifier en tant qu'administrateur du site Web et fournir un mot de passe. Vous devrez fournir ce même nom et mot de passe pour pouvoir effectuer des opérations d'administration et d'auteur sur le site Web à partir d'un poste client FrontPage. Après installation du site Web racine, vous devez indiquer le code du jeu de caractères local et la langue par défaut.
+</LI>
+
+	<LI class=LN>Vous êtes invité à créer des sous-sites Web sous le site Web racine.
+<P class=LT1>Au cours de l'installation des versions stub des extensions serveur sur un sous-site Web, il vous est demandé le nom de ce sous-site. Si le nom possède le format ~<I>nomsiteWeb</I> (site Web «&nbsp;par utilisateur&nbsp;»), il est automatiquement affecté au propriétaire du sous-site Web dans le système de fichiers UNIX. Sinon, vous devez préciser le nom du propriétaire. Le programme sollicite également le nom du propriétaire du groupe.
+
+<P class=LT1>Vous devez préciser, pour chaque sous-site Web, votre nom administrateur et votre mot de passe.
+
+<P class=LT1>Le script d'installation exécute ensuite la commande chown sur le contenu de chaque site Web FrontPage étendu associé à l'utilisateur et au groupe spécifiés. Si le site Web FrontPage étendu ne réside pas sur le serveur Web  Apache FrontPage avec correctif logiciel, fp_install.sh exécute également la commande chown sur les versions stub des exécutables des extensions serveur. Pour plus d'informations, voir <a href="scuni_6.htm">Configuration des extensions serveur pour SUID/SGID</a>.
+
+<P class=LT1>Les extensions serveur effectuent ensuite les opérations suivantes pour chaque site Web racine et chaque sous-site Web&nbsp;: 
+
+<UL>
+	<LI class=LB1>Pour tous les serveurs Web à l'exception du serveur Apache FrontPage avec correctif logiciel, installation des versions stub des exécutables des extensions serveur dans le dossier _vti_bin du site Web.
+
+	<LI class=LB1>Développement des composants FrontPage, tels que Insertion et Substitution.
+
+	<LI class=LB1>Création de la carte de liens hypertexte du site Web FrontPage étendu.
+
+	<LI class=LB1>Extraction des pages de titre.
+
+	<LI class=LB1>Extraction des URL de base. 
+</UL>
+
+</OL>
+
+<p class=4>&nbsp;</p>
+
+<p>Pour obtenir la liste complète des fichiers d'installation FrontPage, reportez-vous à <a href="apndx01.htm">Fichiers et autorisations sous UNIX</a>. Pour connaître les notions de sécurité indispensables à l'installation des extensions serveur sous UNIX, voir <a href="scuni_2.htm">Sécurité sous UNIX</a>. Pour toutes informations sur l'administration des extensions serveur FrontPage après leur installation, voir <a href="adoview.htm">Outils et techniques d'administration</a>.</P>
+
+<H3><A NAME="installingtheapachepatch"></A>Installation du correctif logiciel Apache</H3>
+
+<p><A NAME="inunix.doc-1039"></A>Sur certains serveurs Web,  tels que NCSA et Apache, les extensions serveur FrontPage doivent modifier le fichier de configuration du serveur pour désigner comme répertoires exécutables ceux qui contiennent les extensions serveur. La création d'un sous-site Web au moyen du client FrontPage exige une opération d'écriture sur les fichiers de configuration de ces serveurs Web. Or, le propriétaire d'un processus sur ces serveurs Web ne possédant généralement pas cette autorisation, les administrateurs ne peuvent pas créer de sous-sites Web FrontPage étendus par le biais du client FrontPage. Sur ces serveurs, l'utilitaire fpsrvadm.exe ou le programme fpinstall.sh doit être exécuté manuellement en tant que «&nbsp;root&nbsp;» sur l'hôte pour modifier le fichier de configuration du serveur Web et créer des sous-sites Web. </P>
+
+<p>Pour contourner cette restriction, FrontPage inclut un correctif logiciel optionnel pour le serveur Web Apache. Ce correctif logiciel copie les exécutables des extensions serveur FrontPage sur un emplacement central plutôt que sur chaque site Web FrontPage étendu. Les répertoires de chaque site Web n'ont plus besoin d'être marqués comme exécutables, et le client FrontPage est en mesure de créer des sites Web FrontPage étendus sans modifier les fichiers de configuration du serveur. </P>
+
+<p>Vous disposez de deux méthodes de conversion du serveur Web Apache actuel en serveur Web Apache FrontPage corrigé&nbsp;:
+
+<UL>
+	<LI class=LB1>Vous installez l'un des exécutables corrigés pré-compilés inclus dans le fichier tar des extensions serveur FrontPage. Cette procédure est présentée ci-dessous.
+
+	<LI class=LB1>Vous compilez manuellement votre serveur Apache actuel à l'aide des fichiers source du correctif logiciel Apache fourni. Cette méthode est décrite en détail dans la section <a href="inunix.htm#compilinginstallingyourownversionofapachepatch">Compilation et installation de votre propre version du correctif logiciel Apache</a>. 
+</UL>
+
+<p class=4>&nbsp;</p>
+
+<p>Vous installez le correctif logiciel Apache FrontPage pré-compilé à l'aide du script change_server.sh. Ce script vous guide dans la procédure de mise à niveau d'un serveur Apache vers le serveur Apache FrontPage corrigé et des sites Web Apache FrontPage étendus pour utilisation du correctif logiciel Apache FrontPage. Vous devez exécuter le script en tant que «&nbsp;root&nbsp;».</P>
+
+<p>Avant d'installer le correctif logiciel Apache FrontPage, faites une copie de sauvegarde du serveur Apache actuel, du répertoire d'installation de FrontPage, du répertoire contenant les fichiers de configuration du serveur et de toutes vos zones de contenu du site Web.</P>
+
+<p><b>Pour installer le correctif logiciel Apache FrontPage&nbsp;:</b>
+
+<OL>
+	<LI class=LN>Exécutez le script /usr/local/frontpage/version4.0/change_server.sh.
+
+	<LI class=LN>Indiquez l'emplacement du serveur Apache.
+<P class=LT1>Le script&nbsp;:
+
+<UL>
+	<LI class=LB1>Détermine la version du correctif logiciel Apache à installer&nbsp;: httpd.Compat si vous possédez une version du serveur Apache antérieure à 1.3.0&nbsp;; httpd dans tous les autres cas.
+
+	<LI class=LB1>Vérifie que le serveur actuel n'a pas déjà fait l'objet d'une mise à niveau.
+
+	<LI class=LB1>Place l'ancien démon Apache dans le fichier httpd.orig.
+
+	<LI class=LB1>Copie le correctif logiciel du serveur Apache FrontPage dans le répertoire approprié.
+
+	<LI class=LB1>Crée le fichier de clé personnalisée par défaut /usr/local/frontpage/currentversion/apache-fp/suidkey. Le propriétaire du fichier et ses attributs sont modifiés (commandes chown et chmode) pour une lecture et écriture seule par l'utilisateur «&nbsp;root&nbsp;». La valeur de la clé personnalisée par défaut est générée dynamiquement. Aux fins de sécurité, cette valeur doit toutefois être changée régulièrement avec redémarrage du serveur.
+</UL>
+</LI>
+
+	<LI class=LN>Le script vous propose de mettre à niveau tout serveur Apache FrontPage étendu vers le nouveau serveur avec correctif logiciel. Si vous choisissez cette option, le script&nbsp;:
+<UL>
+	<LI class=LB1>Met à jour le nom du serveur dans les fichiers de configuration FrontPage du répertoire /usr/local/frontpage.
+
+	<LI class=LB1>Appelle l'utilitaire fpsrvadm.exe qui met à niveau chaque zone de contenu des sites Web.
+
+	<LI class=LB1>Définit votre niveau de sécurité. Vous pouvez configurer de manière interactive le niveau de sécurité de vos sites Web FrontPage, ou laisser le soin à change_server.sh de générer un script (fp_chown.sh) qui réalisera cette opération.
+<P class=LT1>Si vous choisissez l'option interactive, le script sollicite l'identificateur d'utilisateur et l'identificateur de groupe UNIX de chaque site Web racine et de chaque sous-site Web mis à niveau. Pour chaque site Web FrontPage étendu,  change_server.sh exécute la commande chown sur tous les répertoires créés par FrontPage et sur tous les répertoires de fichiers de site Web qui seront associés à l'utilisateur et au groupe spécifiés. 
+
+<P class=LT1>Si vous choisissez l'option script, change_server.sh se charge de le générer. Votre intervention se limite à l'édition du script pour préciser les identificateurs d'utilisateur et les identificateurs de groupe UNIX que vous souhaitez associer à chaque site Web.
+</LI>
+</UL>
+</LI>
+<LI class=LN>Le programme vous propose de définir les autorisations par défaut.
+ <P class=LT1>Si vous acceptez, le script set_default_perms.sh qui est appelé définit les autorisations par défaut dans le répertoire /usr/local/frontpage/version4.0 et dans tous ses sous-répertoires. Pour obtenir la liste complète des autorisations par défaut des extensions serveur FrontPage, reportez-vous à «&nbsp;Fichiers et autorisations sous UNIX&nbsp;».
+
+</LI>
+</OL>
+
+<p class=4>&nbsp;</p>
+
+<p>Une fois le nouveau serveur installé, il faut encore que la version stub du serveur Apache FrontPage dans /usr/local/frontpage/version4.0/apache-fp/_vti_bin/fpexe appartienne à «&nbsp;root&nbsp;» et que l'identificateur d'utilisateur soit défini sur «&nbsp;root&nbsp;». change_server.sh se charge de cette opération.</P>
+
+<p>Redémarrez le serveur à la fin de l'installation du correctif logiciel Apache FrontPage.</P>
+
+<H3><A NAME="compilinginstallingyourownversionofapachepatch"></A>Compilation et installation de votre propre version du correctif logiciel Apache</H3>
+
+<p><A NAME="inunix.doc-1057"></A>Microsoft fournit le code source du correctif logiciel Apache FrontPage. Vous pouvez donc compiler un serveur Web Apache avec tout module personnalisé ou non standard à l'aide du correctif logiciel Apache FrontPage. La procédure qui suit vous indique la marche à suivre. Pour installer le correctif logiciel Apache FrontPage pré-compilé, par contre, reportez-vous à la section <a href="inunix.htm#installingtheapachepatch">Installation du correctif logiciel Apache</a>.</P>
+
+<p>La compilation et l'installation du correctif logiciel Apache suppose l'<a href="inunix.htm#usingthesetupscript">installation préalable des extensions serveur FrontPage</a>. Lorsque le script d'installation désarchive (commande untar) les extensions serveur FrontPage, il désarchive également le fichier code source du correctif logiciel Apache FrontPage, fp-patch-apache_1.3.x</P>
+
+<p>
+
+<OL>
+	<LI class=LN>Copiez fp-patch-apache_1.3.x dans le répertoire du serveur Apache (généralement /usr/local/apache).<BR><BR></LI>
+
+	<LI class=LN>Si vous avez compilé un serveur Web Apache avec une précédente version du fichier source du correctif logiciel Apache FrontPage, supprimez-la du serveur Apache au moyen de la version GNU de l'utilitaire du correctif logiciel&nbsp;:
+<PRE class=LCT1><CODE>%patch –p0 –R &lt; fichier_correctif_FrontPage_antérieur</CODE></PRE>
+</LI>
+
+	<LI class=LN>À l'aide de la version GNU de l'utilitaire du correctif logiciel, exécutez la commande patch sur le fichier source du correctif logiciel Apache FrontPage&nbsp;2000&nbsp;:
+<PRE class=LCT1><CODE>%patch –p0 &lt;fp-patch-apache_1.3.x
+</CODE></PRE>
+</LI>
+
+	<LI class=LN>Créez le makefile du serveur corrigé. Si votre serveur utilise la structure de répertoire 1.3.0 ou ultérieure&nbsp;:
+<PRE class=LCT1><CODE>% configure --add-module=mod_frontpage.c
+</CODE></PRE>
+
+<P class=LT1>Si votre serveur utilise la structure de répertoire 1.3.0 ou antérieure&nbsp;:
+
+<PRE class=LCT1><CODE>% configure --add-module=mod_frontpage.c -–compat
+</CODE></PRE>
+</LI>
+
+	<LI class=LN>Créez le serveur Apache&nbsp;:
+<PRE class=LCT1><CODE>%make
+</CODE></PRE>
+</LI>
+
+	<LI class=LN>Remplacez l'ancien serveur Apache.<BR><BR></LI>
+
+	<LI class=LN>Exécutez le script change_server.sh selon les instructions présentées à la section <a href="inunix.htm#installingtheapachepatch">Installation du correctif logiciel Apache</a> pour mettre à niveau les sites Web FrontPage étendus et définir les autorisations.
+
+	<LI class=LN>Lancez le nouveau serveur Apache.
+<PRE class=LCT1></PRE>
+</LI>
+</OL>
+
+</P></td>
+<td rowspan="13" nowrap><img SRC="setart.gif" align="center"></td>
+</tr>
+<TR>    <td width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></td>
+   <td width="20" nowrap></td>
+</tr>
+<TR>
+    <td width="150" nowrap><div class="table"><A class="menulink" href="scintro.htm"><font color="#000000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></td>
+    <td width="20" nowrap></td>
+</tr>
+<TR>
+    <td width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></td>
+    <td width="20" nowrap></td>
+</tr>
+<TR>
+    <td height="10" width="150" nowrap></td>
+    <td width="20" nowrap></td>
+</tr>
+<TR>
+    <td width="150" nowrap><A class="menulink" href="inintro.htm"><font color="#000000">&nbsp;&nbsp;Introduction</font></A></td>
+    <td width="20" nowrap></td>
+</tr>
+<TR>
+    <td height="10" width="150" nowrap></td>
+    <td width="20" nowrap></td>
+</tr>
+<TR>
+    <td width="150" nowrap><A class="menulink" href="inwindow.htm"><font color="#000000">&nbsp;&nbsp;Installation des &nbsp;&nbsp;extensions serveur &nbsp;&nbsp;FrontPage sous &nbsp;&nbsp;Windows</font></A></td>
+    <td width="20" nowrap></td>
+</tr>
+<TR>
+    <td height="10" width="150" nowrap></td>
+    <td width="20" nowrap></td>
+</tr>
+<TR>
+    <td width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Installation des &nbsp;&nbsp;extensions serveur &nbsp;&nbsp;FrontPage sous UNIX</font></A></td>
+    <td width="20" nowrap></td>
+</tr>
+<TR>
+    <td height="10" width="150" nowrap></td>
+    <td width="20" nowrap></td>
+    <TD></td>
+</tr>
+<TR>
+    <td width="150" nowrap><A class="menulink" href="incompat.htm"><font color="#000000">&nbsp;&nbsp;Compatibilité entre <BR>&nbsp;&nbsp;les extensions<BR>&nbsp;&nbsp;serveur FrontPage &nbsp;&nbsp;et le client FrontPage</font></A></td>
+    <td width="20" nowrap></td>
+    <TD></td>
+</tr>
+<TR>
+    <td height="10" width="150" nowrap></td>
+    <td width="20" nowrap></td>
+    <TD></td>
+</tr>
+<TR>
+    <td width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="adoview.htm"><font color="#000000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></td>
+    <td width="20" nowrap></td>
+    <TD></td>
+</tr>
+<TR>
+    <td width="150" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></td>
+    <td width="20" nowrap></td>
+    <TD></td>
+</tr>
+<TR>
+    <td width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></td>
+    <td width="20" nowrap></td>
+    <TD></td>
+</tr>
+<TR>
+    <td width="150" nowrap></td>
+    <td width="20" nowrap></td>
+    <TD></td>
+</tr>
+<TR>
+    <td width="150" nowrap></td>
+    <td width="20" nowrap></td>
+    <TD></td>
+</tr>
+<TR>
+    <td width="150" nowrap></td>
+    <td width="20" nowrap></td>
+    <TD></td>
+</tr>
+<TR>
+    <td width="150" nowrap></td>
+    <td width="20" nowrap></td>
+    <TD></td>
+</tr>
+<TR>
+    <td width="150" nowrap></td>
+    <td width="20" nowrap></td>
+    <TD></td>
+</tr>
+<TR>
+    <td width="150" nowrap></td>
+    <td width="20" nowrap></td>
+    <TD></td>
+</tr>
+<TR>
+    <td height="5690" width="150" nowrap></td>
+    <td width="20" nowrap></td>
+    <TD></td>
+</tr>
+
+</table>
+
+<!--FOOTER_BEGIN-->
+<br>
+<table cellspacing="0" cellpadding="0" border=0>
+<TR>
+    <td width="20" valign="top">&nbsp;</td>
+    <td width="230" valign="top"><A HREF="inintro.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></font></a></td>
+    <td width="230" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></td>
+    <TD>&nbsp;</td>
+</tr>
+
+<TR>
+    <td width="188" valign="top">&nbsp;</td>
+    <td colspan="2" width="460" valign="top"><HR></td>
+    <TD>&nbsp;</td>
+</tr>
+<TR>
+    <td width="188" valign="top">&nbsp;</td>
+    <td colspan="2" width="460" valign="top">Dernière mise à jour&nbsp;: novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></td>
+    <TD></td>
+</tr>
+</table>
+
+<!--FOOTER_END-->
+
+</BODY>
+</HTML>

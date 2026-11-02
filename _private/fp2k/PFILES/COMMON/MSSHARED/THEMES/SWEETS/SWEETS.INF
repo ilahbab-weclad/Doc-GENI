@@ -1,0 +1,22 @@
+[info]
+title=Sweets
+codepage=65001
+version=2.00
+format=2.00
+readonly=true
+
+[titles]
+1031 = Süßigkeiten
+1036 = Sucreries
+1040 = Caramelle
+3082 = Dulces
+1043 = Snoep
+1046 = Doces
+1053 = Godis
+1044 = Sukkertøy
+1030 = Slik
+1035 = Karamellit
+1041 = キャンディ
+1042 = 사탕
+1028 = 糖果
+2052 = 糖果

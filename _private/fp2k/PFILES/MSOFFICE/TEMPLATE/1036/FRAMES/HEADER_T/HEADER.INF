@@ -1,0 +1,8 @@
+; Localized	03/02/1999 04:46  (GMT)	7:4.1.211 	header.inp
+
+
+[info]
+title=En-tête
+description=Crée un cadre de navigation en en-tête et un cadre principal inférieur. Les liens hypertexte contenus dans le cadre d'en-tête modifient le contenu du cadre principal.
+noframesURL=
+layout=[R(64,*)F("en_tete","principal")]

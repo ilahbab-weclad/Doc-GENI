@@ -1,0 +1,9 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Description "Belgique - Villes principales"
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 1
+    Ville Char (25) ;

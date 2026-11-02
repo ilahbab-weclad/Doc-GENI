@@ -1,0 +1,78 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+</head>
+
+<body>
+<p><!--WEBBOT 
+   BOT=PurpleText
+   PREVIEW="Contactez-nous - Personnalisez le formulaire ci-dessous pour recueillir les informations dont vous avez besoin. Par défaut, les données du formulaire sont enregistrées dans un fichier texte sur le serveur Web à l'aide du composant FrontPage Enregistreur de résultats. Modifiez les propriétés du formulaire pour changer cette fonctionnalité."
+ -->
+
+</p>
+<hr>
+<p>Dites-nous ce que vous pensez de notre site Web, de nos
+produits, de notre entreprise, ou donnez-nous votre avis sur
+toute autre chose. Nous recevons volontiers tous vos commentaires
+et suggestions.</p>
+<form action="--WEBBOT-SELF--" method="POST">
+<!--WEBBOT 
+   BOT=SaveResults
+   U-File="_private/feedback.txt"
+   S-Format="TEXT/TSV"
+   S-Label-Fields="TRUE"
+   S-Builtin-Fields="Date Time REMOTE_NAME REMOTE_USER HTTP_USER_AGENT"
+   S-Form-Fields
+ -->
+<p><strong>Quel type de commentaire
+    voulez-vous envoyer ?</strong></p>
+<dl>
+<dd><input type=radio name="TypeMessage" value="Complaint">Plainte <input type=radio name="TypeMessage" value="Problem">Problème <input type=radio checked name="TypeMessage" value="Suggestion">Suggestion <input type=radio name="TypeMessage" value="Praise">Éloge</dd>
+</dl>
+<p><strong>Quel est l'objet de votre commentaire&nbsp;?</strong></p>
+<dl>
+<dd><select name="Objet" size=1>
+<option selected>Site Web</option>
+<option>Entreprise</option>
+<option>Produits</option>
+<option>Fournitures</option>
+<option>Employé</option>
+<option>(Autre)</option>
+</select> Autre : <input type=text size=26 maxlength=256 name="AutreObjet"></dd>
+</dl>
+<p><strong>Tapez vos commentaires dans l'espace ci-dessous :</strong></p>
+<dl>
+<dd><textarea name="Commentaires" rows=5 cols=42></textarea></dd>
+</dl>
+<p><strong>Indiquez vos coordonnées :</strong></p>
+<dl>
+<dd>
+<table>
+<tr><td>Nom<td><input type=text size=35 maxlength=256 name="NomUtilisateur"></tr>
+<tr><td>Adresse de messagerie<td><input type=text size=35 maxlength=256 name="EmailUtilisateur"></tr>
+<tr><td>Téléphone<td><input type=text size=35 maxlength=256 name="TelephoneUtilisateur"></tr>
+<tr><td>Télécopie<td><input type=text size=35 maxlength=256 name="TelecopieUtilisateur"></tr>
+</table>
+</dd>
+</dl>
+<dl>
+<dd><input type=checkbox name="DemandeDeContact" value="ContactRequested"> Veuillez
+    me contacter dès que possible concernant ces commentaires.</dd>
+</dl>
+<p><input type=submit value="Envoyer les informations"> <input type=reset value="Effacer le contenu du formulaire"></p>
+</form>
+<hr>
+<h5>Emplacement réservé aux renseignements sur l'auteur
+du document.<br>
+Copyright © 1999 [NomSociété]. Tous droits réservés.<br>
+Révision : <!--WEBBOT 
+   BOT=TimeStamp
+   S-Type="EDITED"
+   S-Format="%d %B %Y"
+ -->.</h5>
+</body>
+
+</html>

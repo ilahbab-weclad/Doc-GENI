@@ -1,0 +1,231 @@
+		-----------------------------------------------------------
+		Pilote ODBC Visual FoxPro(tm) Microsoft(r) Version 6.0
+		-----------------------------------------------------------
+
+		(c) Copyright Microsoft Corporation, 1998
+	  
+Notes de mise à jour
+19 janvier 1998
+
+Bienvenue dans la nouvelle version du pilote ODBC Visual FoxPro ! Veuillez lire les informations importantes qui suivent.
+Configuration requise
+
+------------------------
+Utilisation de ce document
+------------------------
+
+Pour afficher le fichier Lisezmoi à l'aide du Bloc-notes Windows, agrandissez la fenêtre de celui-ci et cliquez sur Retour à la ligne automatique dans le menu Edition. Pour l'imprimer, ouvrez-le dans le Bloc-notes ou un autre traitement de texte, puis utilisez la commande Imprimer du menu Fichier.
+
+--------
+TABLE DES MATIÈRES
+--------
+
+1.   NOTES D'INSTALLATION
+     1.1  Configuration requise
+     1.2  Nouveautés de cette version
+     1.3  Installation du pilote
+     1.4 Ajout d'une source de données
+     1.5 Fichiers d'aide
+     1.6 Conventions d'affectation des noms
+
+2.   Domaines pris en charge  
+     2.1  Prise en charge du langage
+     2.2 Conformité au standard ODBC 2.5
+     2.3 Intégrité référentielle
+     2.4 Prise en charge des thread
+     2.5 Prise en charge de dBase®
+     2.6 Prise en charge des paramètres régionaux
+
+3.   Domaines non pris en charge
+
+4.   Problèmes connus
+
+5.   Résolution des problèmes
+
+6.   Bibliographie
+
+
+1.1  Configuration requise
+========================
+Pour installer le pilote ODBC Visual FoxPro(tm) Microsoft(r), vous devez disposer de la configuration suivante :
+ * Windows NT 3.51 (ou une version ultérieure.  Service Pack 5 recommandé) 
+     ou Windows 95 (ou une version ultérieure).
+ * 2 Mo d'espace libre sur le disque.
+
+Important : Le pilote ODBC Visual FoxPro 1.0 est un pilote 32 bits seulement.  Les plates-formes Windows 3.1 et Windows pour Workgroups ne sont pas prises en charge. 
+
+1.2  Nouveautés de cette version
+=========================
+* L'exécution des requêtes est plus rapide de 20%.
+* VFPODBC.DLL est de taille plus réduite (de 1,20 Mo à ~835 Ko).
+* Les commandes SET (voir le fichier d'aide pour la liste des commandes SET prises en charge) sont désormais prises en charge.
+* La fonction VERSION( ) est prise en charge par les procédures stockées.
+* Les vues locales sont en lecture seulement.
+* Lorsque vous insérez ou modifiez un champ Logique dans une table (une colonne avec un type de données SQL_BIT), vous pouvez désormais utiliser les valeurs 1 (vrai) et 0 (faux) pour stocker une valeur dans ce champ. Dans une comparaison entre valeurs ou une expression, vous devez utiliser .T. (vrai) et .F. (faux).
+* La version 16 bits de Microsoft Query (version 1.0) fonctionne à présent avec le pilote ODBC Visual FoxPro.
+* SQLGetInfo( ) avec SQL_FILE_USAGE renvoie maintenant SQL_FILE_QUALIFIER pour les sources de données de la base de données et des tables indépendantes.
+
+
+1.3  Installation du pilote
+=========================
+Pour installer le pilote ODBC Visual FoxPro, lancez INSTALL.EXE.
+
+Remarque :  L'installation du pilote ODBC Visual FoxPro met à jour, si cela est nécessaire, les composants ODBC de façon à ce qu'ils soient conformes à la norme ODBC 2.5.  Voir le fichier LISEZMOI25.TXT de votre répertoire système Windows pour plus d'informations sur les améliorations et les nouvelles fonctionnalités des composants ODBC 2.5.
+
+
+1.4  Ajout d'une source de données
+=========================
+Après l'installation, vous pouvez définir une source de données :
+1. Dans le Panneau de configuration, double-cliquez sur l'icône ODBC 32 bits.
+2. Cliquez sur Ajouter.
+3. Sélectionnez le pilote Microsoft Visual FoxPro.
+4. Dans la boîte de dialogue Installation ODBC pour Visual FoxPro, tapez un nom de source de données.
+5. Sélectionnez une base de données Visual FoxPro (.DBC) ou un répertoire de table indépendante.
+6. Tapez le nom de la base de données ou le chemin de la table indépendante, ou bien cliquez sur Parcourir.
+7. Cliquez sur OK, puis sur Fermer.
+
+
+1.5  Fichiers d'aide
+==========================
+Le pilote ODBC Visual FoxPro est accompagné de deux fichiers d'aide qui se trouvent dans le répertoire SYSTEM de Windows 95 ou le répertoire SYSTEM32 de Windows NT :
+
+* ODBCINST.HLP : Informations générales sur ODBC qui comprennent :
+*   La boîte de dialogue du pilote ODBC 
+*   Les options qui peuvent être définies dans la boîte de dialogue Pilotes du Panneau de configuration 
+* DRVVFP.HLP : Fichier d'aide du pilote ODBC Visual FoxPro contenant des informations sur les sujets suivants :
+*   Installation et configuration
+*   Utilisation du pilote Visual FoxPro 
+*   Manuel de référence technique
+*   API ODBC
+*   Manuel de référence du langage Visual FoxPro
+*   Messages d'erreur
+
+
+1.6 Conventions d'affectation des noms
+==========================
+Le pilote ODBC Visual FoxPro affecte aux colonnes des noms dérivés d'expressions. Par exemple, si vous exécutez l'instruction suivante :
+
+	SELECT MIN (customer_id) FROM customers
+
+le pilote ODBC Visual FoxPro renvoie la valeur min_customerid comme nom de la colonne pour l'ensemble de résultats.
+Pour pouvoir contrôler l'affectation du nom de champ, utilisez la clause AS, comme l'illustre l'exemple suivant :
+
+SELECT MIN(customer_id) AS minimum_custid FROM customers 
+
+
+==========================
+2.  Domaines pris en charge
+==========================
+La section ci-dessous décrit les domaines faisant l'objet d'une prise en charge particulière par le pilote ODBC Visual FoxPro.
+
+2.1  Prise en charge du langage
+==========================
+Versions des tables FoxBase+ et FoxPro prises en charge
+Le pilote ODBC Visual FoxPro vous permet d'accéder aux tables Microsoft(r) FoxBase+(r), FoxPro 1.x, FoxPro 2.x et Visual FoxPro. Il vous permet en outre d'accéder à des tables se trouvant à l'intérieur d'un conteneur de base de données Visual FoxPro (fichier .DBC).
+
+Remarque   Le pilote ODBC Visual FoxPro permet les transactions uniquement sur les tables contenues dans une base de données Visual FoxPro (fichier .DBC), mais pas sur les tables indépendantes.
+
+
+2.2  Conformité au standard ODBC 2.5
+==========================
+Le pilote ODBC Visual FoxPro est conforme à l'API ODBC de niveau 1 et il met en oeuvre de nombreux API de niveau 2. Tous les API pris en charge sont désormais implémentés. Merci de bien vouloir nous signaler tout problème rencontré avec les API. Le fichier d'aide, DRVVFP.HLP, décrit les fonctions prises en charge et les paramètres d'entrée acceptables. De plus, Visual FoxPro SQL étend la fonctionnalité SQL fournie par le pilote. Voir le Manuel de référence du langage Visual FoxPro pour la syntaxe des commandes étendues.
+
+
+2.3  Prise en charge de l'intégrité référentielle
+==========================
+Le pilote ODBC Visual FoxPro prend en charge les règles, les triggers et les valeurs par défaut de Visual FoxPro, à condition qu'ils contiennent des fonctions prises en charge par le pilote. Voir le fichier d'aide, DRVVFP.HLP, pour des détails sur les éléments Visual FoxPro du langage pris en charge.
+
+
+2.4  Prise en charge des threads
+==========================
+Le pilote ODBC Visual FoxPro utilise des thread protégés. Il peut traiter les requêtes en arrière-plan. Pour plus d'informations, voir la rubrique d'aide « Boîte de dialogue Installation ODBC pour Visual FoxPro ».
+Vues distantes et vues paramétrées
+Lors d'un appel à SQLTables( ), les vues distantes et paramétrées sont exclues de la liste renvoyée. Les vues locales basées sur des vues paramétrées ne sont pas exclues, mais leur utilisation générera des erreurs. Cependant, si vous appelez SQLTables( ) en passant un seul nom de table, les vues obtenues (si elles existent) vous permettront de vérifier s'il existe des conflits de noms.
+
+
+2.5  Prise en charge de dBase®
+==========================
+Versions de tables dBASE(r) IV prises en charge
+Le pilote ODBC Visual FoxPro vous permet d'accéder aux tables dBASE(r) 4 et de versions antérieures.
+Les fichiers dBASE(r) sont pris en charge de la façon suivante :
+* dBASE(r) v2.x et 3.x : les fichiers sont lus sans conversion.
+* dBASE(r) v4.x and 5.x : les fichiers sont lus s'ils ne contiennent pas de champs Mémo et si les tables comprennent moins de 255 colonnes.
+
+Attention   S'il existe des fichiers d'index (.MDX, .NDX) associés à un fichier dBASE(r) v4.x ou 5.x, celui-ci ne sera pas mis à jour correctement par le pilote ODBC Visual FoxPro et les index seront endommagés. L'accès à ces fichier doit se faire en lecture seule.
+
+* tables dBASE(r)  v4.x et 5.x contenant des champs Mémo : ces fichiers doivent être convertis à l'aide de la version complète de Visual FoxPro pour Windows avant d'être utilisables par le pilote ODBC Visual FoxPro. Le pilote ne peut pas lire ni convertir les fichiers.
+
+
+2.6  Prise en charge des paramètres régionaux
+==========================
+* Le pilote reconnaît DBCS.
+* Vous pouvez désormais définir la table de classement pour le tri des index. Vous trouverez la liste des tables de classement prises en charge dans la description de SET COLLATE contenue dans la rubrique d'aide relative au Manuel de référence du langage Visual FoxPro.
+
+La table de classement par défaut est « MACHINE ». Elle peut être modifiée en exécutant une instruction SET COLLATE TO Langue avec l'API C ODBC SQLExecDirect( ), en appelant SQLPrepare( ) et SQLExec( ) (voir le manuel de référence de ODBC SDK p. 42-44), ou en sélectionnant une autre table de classement dans les options du pilote de la boîte de dialogue Installation de la source de données.
+
+Remarque   Le fichier FOXPRO.INT est installé dans le répertoire système. S'il est supprimé, les tables de classement des machines utilisant une page de code pour l'Europe de l'Est ne fonctionneront pas.
+
+
+==========================
+3. Domaines non pris en charge
+==========================
+* L'instruction Refresh n'est pas prise en charge dans les règles et triggers.
+* Le fichier d'aide décrit les commandes et fonctions prises en charge et contient la liste de celles qui ne le sont pas. Toutes les commandes ou fonctions absentes du fichier d'aide ne sont pas prises en charge. 
+* Les vues paramétrées peuvent fonctionner dans un déclencheur seulement si une valeur a été affectée au paramètre avant l'ouverture de la vue. La saisie interactive de la valeur d'un paramètre est interdite dans ODBC.
+* Les vues distantes d'autres sources de données ODBC ne sont pas prises en charges par le pilote ODBC Visual FoxPro ; toutefois, les vues locales (non paramétrées) sont entièrement prises en charge.
+
+
+==========================
+4.  Problèmes connus
+==========================
+* Lors de l'insertion, de la suppression ou de la modification d'une table Visual FoxPro à l'aide du pilote ODBC Visual FoxPro, vous pouvez recevoir un message d'erreur « Échec du trigger ». Vérifiez que le déclencheur ne contient pas de commande non prise en charge.
+* La commande INDEX ON n'est pas prise en charge dans cette version.
+* Lorsqu'un utilisateur accède à une table avec l'option SET EXCLUSIVE OFF alors qu'elle est déjà ouverte de façon exclusive par un autre utilisateur, le pilote ODBC Visual FoxPro génère l'erreur « Valeur d'option modifiée » à la place de « Fichier en cours d'utilisation par un autre utilisateur ».
+* MSQuery renvoie une erreur « Impossible d'ouvrir le fichier » lors de la création d'une table contenant un champ dont le nom commence par un chiffre. Par exemple, le nom de champ « 1995 Ventes » est interdit. Visual FoxPro n'autorise pas la création de noms de champ commençant par un chiffre alors que MSQuery le permet.
+
+
+==========================
+5.  Dépannage
+==========================
+Si vous avez des difficultés à installer le pilote, essayez d'effectuer les opérations suivantes avant de réitérer l'installation :
+
+1. Démarrez la machine dans une configuration stable. Par exemple, sous Windows 95, démarrez en mode protégé.
+2. Fermez toutes les autres applications, y compris les logiciels antivirus, les shells de fournisseurs tiers ou les barres d'outils comme le Gestionnaire Microsoft Office.
+3. Si l'ordinateur dispose d'options de masquage de ROM vidéo ou système, désactivez-les avant la réinstallation.
+4. Vérifiez que le fichier .EXE n'est pas endommagé.
+
+Si vous rencontrez toujours des problèmes :
+* Vérifiez que vous utilisez une configuration stable au cours des tests.
+
+* Utilisez l'onglet Pas à pas du panneau de configuration de l'Administrateur de source de données ODBC pour vous aider à déterminer la cause des problèmes.
+
+* Vérifiez que la dernière version du pilote est installée. Pour afficher la version, suivez la procédure ci-dessous :
+
+1. Dans le panneau de configuration de l'Administrateur de source de données ODBC, double-cliquez sur l'icône ODBC 32 bits.
+2. Cliquez sur l'onglet Pilotes ODBC.
+
+* Vous pouvez générer un journal de traçage ODBC à l'aide du panneau de configuration de l'Administrateur de source de données ODBC :
+
+1. Dans le Panneau de configuration, double-cliquez sur l'icône ODBC 32 bits.
+2. Sélectionnez l'onglet Pas à pas.
+3. Spécifiez une option de déclenchement du traçage.
+4. Spécifiez un nom de fichier journal.
+5. Cliquez sur Démarrer le traçage.
+
+À présent, lors de l'exécution de votre code, tous les appels d'API C ODBC, ainsi que leurs paramètres d'entrée et de sortie sont consignés dans le fichier journal. Le fichier journal ODBC est un fichier texte ASCII que vous pouvez afficher à l'aide de n'importe quel éditeur de texte ASCII standard comme Word, le Bloc-notes ou WordPad. Dans certaines circonstances, vous devrez peut-être inclure le journal de traçage dans un rapport de bogues. Ce journal pouvant être très long, copiez seulement les 4 ou 5 derniers appels de fonction et collez-les dans un document séparé avant d'envoyer le rapport.
+
+
+==========================
+6.  Bibliographie
+==========================
+Microsoft ODBC 2.0 Programmer's Reference and SDK Guide (N° ISBN : 1-55615-658-8 publié par Microsoft Press) contient des informations de référence fondamentales.
+
+Inside ODBC (N° ISBN : 1-55615-815-7 publié par Microsoft Press) décrit les concepts de base du développement des spécifications ODBC et est accompagné d'un CD contenant des exemples de code ODBC.
+
+Database Developer's Guide with Visual C++ (N° ISBN : 0-672-30613-1 publié par Sams Publishing) vous propose de plusieurs exemples de programmes C++ utilisant l'API ODBC.
+
+
+
+==========================
+
+

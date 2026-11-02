@@ -1,0 +1,167 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<meta name="Microsoft Border" content="<%Border%>">
+<%endif%>
+<title><%PageTitle%></title>
+</head>
+
+<body <%if DoTheme EQ False%> stylesrc="<%PageStyleSrc%>" <%endif%> >
+
+<%if DoTheme EQ False%>
+<%if DoTopLogo EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%LogoUrl%>" -->
+<%endif%>
+<%if StyleOption EQ 0%>
+<h1><%PageTitle%></h1>
+<%else%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%BannerImgUrl%>" 
+alt="[Bannière]" border="0" <%BannerImgSize%>> </p>
+<%endif%>
+<%if DoTopLinks EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%NavbarUrl%>" -->
+<%endif%>
+<%if UnderConstructionOption EQ 0%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%UnderconImgUrl%>" 
+alt="[En construction]" border="0" <%UnderconImgSize%>></p>
+<%endif%>
+<h2><%PageTitle%></h2>
+<%endif%>
+
+<%if DoProductImage EQ True%>
+<p><!-- LOCALIZE the alt text in this image --> <img src="<%ProductImgUrl%>" 
+alt="[Image du produit]" align="middle" border="0" <%ProductImgSize%>> 
+<!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText" 
+preview="Remplacez cette image" --> <br>
+<em><!-- LOCALIZE this text -->Insérez ici la légende de l'image.</em></p>
+<%endif%>
+
+<p><!-- LOCALIZE this text -->Ce paragraphe contient une brève description du produit...</p>
+
+<h3><!-- LOCALIZE this heading -->Avantages</h3>
+
+<%if StyleOption EQ 0%>
+<!-- LOCALIZE the text in this bullet list -->
+<ul>
+    <li>Avantage 1</li>
+    <li>Avantage 2</li>
+    <li>Avantage 3</li>
+</ul>
+<%else%>
+<!-- LOCALIZE the text in this definition list, and the alt text in the images -->
+<dl>
+    <dt> </dt>
+    <dd> <img src="<%BulletImgUrl%>" alt="[Puce]" border="0"  
+        <%bulletimgsize%>> Avantage 1</dd>
+    <dt> </dt>
+    <dd> <img src="<%BulletImgUrl%>" alt="[Puce]"  border="0" 
+        <%bulletimgsize%>> Avantage 2</dd>
+    <dt> </dt>
+    <dd> <img src="<%BulletImgUrl%>" alt="[Puce]" border="0" 
+        <%bulletimgsize%>> Avantage 3</dd>
+</dl>
+<%endif%>
+
+<%if DoProductPricing EQ True%>
+<h3><!-- LOCALIZE this heading -->Prix</h3>
+
+<!-- LOCALIZE this table -->
+<table border="1" cellpadding="4">
+<tr>
+	<th><strong>Description</strong></th>
+	<th align="right"><strong>Référence</strong></th>
+	<th align="right"><strong>Prix</strong></th>
+</tr>
+<tr>
+	<td>option 1</td>
+	<td align="right">réf-1</td>
+	<td align="right">100</td>
+</tr>
+<tr>
+	<td>option 2</td>
+	<td align="right">réf-2</td>
+	<td align="right">200</td>
+</tr>
+<tr>
+	<td>option 3</td>
+	<td align="right">réf-3</td>
+	<td align="right">300</td>
+</tr>
+</table>
+<%endif%>
+
+<%if DoProductInfoRequest EQ True%>
+<p> </p>
+<%if StyleOption EQ 0%>
+<hr>
+<%else%>
+<p> <!-- LOCALIZE the alt text in this image --><img src="<%HRuleImgUrl%>" 
+alt="[Ligne séparatrice]" border="0" <%HRuleImgSize%>> </p>
+<%endif%>
+<p> </p>
+
+<form method="POST" webbot-action="--WEBBOT-SELF--">
+    <!--webbot bot="SaveResults" u-file="<%SaveResultsUrl%>"
+    s-format="<%SaveResultsFormat%>" b-label-fields="TRUE"
+    s-builtin-fields="Date Time REMOTE_NAME" -->
+    <!-- LOCALIZE the name attribute of this hidden field -->
+    <input type="HIDDEN" name="ProduitOuService" value="<%PageTitle%>">
+
+    <h3><!-- LOCALIZE this heading -->Formulaire
+    de demande d'informations</h3>
+
+    <p><!-- LOCALIZE this text -->Sélectionnez les domaines concernés, et indiquez-nous
+    comment vous contacter.</p>
+
+    <p><input type="CHECKBOX" name="EnvoiInfoProduit"
+    checked> <!-- LOCALIZE this text -->Demande d'informations sur le produit<br>
+    <input type="CHECKBOX" name="EnvoiInfoSociete"> <!-- LOCALIZE this text -->Demande
+    d'informations sur l'entreprise<br>
+    <input type="CHECKBOX" name="DemandeContactVendeur"> <!-- LOCALIZE this text -->Demande de contact avec le service des
+    ventes<br>
+    </p>
+
+    <!-- LOCALIZE this table -->
+    <table>
+    <tr><td align="right"><em>Nom</em></td><td><input type="TEXT" name="Nom" value size="35"></td></tr>
+    <tr><td align="right"><em>Titre</em></td><td><input type="TEXT" name="Titre" value size="35"></td></tr>
+    <tr><td align="right"><em>Société</em></td><td><input type="TEXT" name="Societe" value size="35"></td></tr>
+    <tr><td align="right"><em>Adresse</em></td><td><textarea name="Adresse" rows="5" cols="35"></textarea></td></tr>
+    <tr><td align="right"><em>Adresse de messagerie</em></td><td><input type="TEXT" name="Email" value size="35"></td></tr>
+    <tr><td align="right"><em>Téléphone</em></td><td><input type="TEXT" name="Telephone" value size="35"></td></tr>
+    </table>
+
+    <p><!-- LOCALIZE these button labels -->
+    <input type="SUBMIT" value="Envoyer"> <input
+    type="RESET" value="Effacer le contenu du formulaire"> </p>
+</form>
+<%endif%>
+
+<%if DoTheme EQ False%>
+<%if DoBottomLinks EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%NavbarUrl%>" -->
+<%endif%>
+<h5>
+<%if DoBottomWebmasterAddress EQ True%>
+<!-- LOCALIZE this line -->Envoyez un courrier électronique à <a href="<%WebmasterUrl%>"><!--webbot
+bot="Substitution" s-variable="<%WebVarWebmaster%>" --></a>pour toute question ou remarque concernant ce site Web.<br>
+<%endif%>
+<%if DoBottomCopyright EQ True%>
+<!-- LOCALIZE this line -->Copyright © <%CurrentYear%> <!--webbot bot="Substitution"
+s-variable="<%WebVarLongName%>" --><br>
+<%endif%>
+<%if DoBottomDateModified EQ True%>
+<!-- LOCALIZE this line -->Dernière modification&nbsp;: 
+<!--webbot bot="TimeStamp" s-type="EDITED"
+s-format="%d %B %Y" -->
+<%endif%>
+</h5>
+<%endif%>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Activation de l'administration à distance sous IIS 3.0</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+	<TR>
+	<TD BGCOLOR="#000000">
+	<IMG SRC="home.gif" WIDTH=103 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+	<TD colspan="2" BGCOLOR="#000000" WIDTH=100%>
+	<IMG SRC="1ptrans.gif" WIDTH=1 HEIGHT=1 ALT="" BORDER=0></TD>
+	<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+	<FONT FACE="Arial, Helvetica" SIZE=1>
+	<A HREF="/" TARGET="_top">
+	<IMG SRC="msft.gif" WIDTH=91 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+	
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+	
+	<!--WEB SITE TITLE AND LOGO STARTS-->
+
+	<TR>
+		<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit des extensions serveur Microsoft FrontPage"></TD>
+	    <TD width="20" nowrap></TD>
+    	<TD colspan="2" nowrap bgcolor="#666699" valign="center" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>&nbsp;Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+	
+	<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+	
+	<!--WEB SITE TITLE AND LOGO ENDS-->
+
+	<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
+	
+
+    	<TD rowspan="21" width="460"><a name="top"></a><p><font color="#666699"><b><font size="+1">Administration à distance</font></b></font>
+
+<HR>
+
+<H3><span class=FR><SUP><A NAME="activatingremoteadministration30"></A></SUP></span>Activation de l'administration à distance sous IIS&nbsp;3.0</H3>
+
+	<p><A NAME="adfprema.doc-1030"></A>Que vous utilisiez l'utilitaire de ligne de commande pour l'administration à distance <span class=L><B>Fpremadm</B></span> ou les formulaires d'administration des extensions serveur HTML pour administrer un serveur IIS&nbsp;3.0 à distance, vous devez activer  les formulaires d'administration HTML selon la méthode décrite dans cette rubrique. </p>
+
+	<p>Vous devez exécuter les formulaires d'administration HTML sur un port sécurisé. L'utilisation d'un port sécurisé n'est possible que si un certificat de sécurité est installé sur le serveur. Si vous ne possédez pas un certificat de sécurité avant d'activer les formulaires d'administration HTML, utilisez l'application Gestionnaire de clés pour faire une demande de certificat de sécurité, soumettez la requête à un responsable de clés, puis utilisez l'application Gestionnaire de clés pour installer le certificat renvoyé par le responsable de clés. La documentation IIS contient plus de détails sur ce processus.</p>
+
+	<p><A NAME="adfprema.doc-1032"></A>Une fois que vous disposez d'un certificat de sécurité, les étapes suivantes activent les formulaires d'administration HTML pour une utilisation à distance avec une sécurité optimale. 
+
+<OL>
+		<LI class=LN>Déterminez quel compte (ou groupe de comptes) de la machine Windows NT aura accès aux formulaires d'administration HTML.
+<P class=LT1>Ce compte doit être membre du groupe des administrateurs de la machine. Si nécessaire, créez un nouveau compte avec le Gestionnaire des utilisateurs Windows NT. Selon la configuration du compte de la machine, fournir un accès au groupe des administrateurs peut être une meilleure solution que donner accès à plusieurs comptes individuels de la machine.
+<LI class=LN>Ouvrez Windows Explorer à l'emplacement des formulaires d'administration HTML sur le disque dur, par défaut C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\40\. Sélectionnez le dossier Admisapi, cliquez sur <span class=L><B>Propriétés</B></span> dans le menu <span class=L><B>Fichier</B></span>, puis sur <span class=L><B>Autorisations</B></span> dans l'onglet <span class=L><B>Sécurité</B></span>.</LI>
+
+		<LI class=LN>Dans la boîte de dialogue <span class=L><B>Autorisations du répertoire</B></span>, mettez à jour la liste <span class=L><B>Nom</B></span> des utilisateurs et groupes autorisés à l'aide des boutons <span class=L><B>Ajouter </B></span>et <span class=L><B>Supprimer</B></span>.
+<P class=LT1>Supprimez tous les utilisateurs et groupes non autorisés. Assurez-vous notamment qu'aucun groupe ajouté à la liste ne contient le compte d'accès anonyme IUSR_<span class=NTRM><I>machinename</I></span> et que tous les comptes à accès large tels que TOUT LE MONDE sont supprimés.
+</P>
+
+		<LI class=LN>Dans la liste <span class=L><B>Nom</B></span>, tapez le compte SYSTÈME de la machine.
+<P class=LT1>Ce compte est obligatoire pour permettre à IIS d'accéder au fichier pendant le processus de validation de sécurité.
+<LI class=LN>Pour chaque utilisateur ou groupe de la liste <span class=L><B>Nom</B></span>, changez <span class=L><B>Type d'accès</B></span> en <span class=L><B>Lecture</B></span>.<LI class=LN>Cliquez sur <span class=L><B>Étendre aux dossiers inclus et Étendre aux fichiers existants</B></span>, et cliquez sur <span class=L><B>OK</B></span> pour accepter les modifications. Cliquez à nouveau sur <span class=L><B>OK</B></span> pour fermer la boîte de dialogue <span class=L><B>Propriétés</B></span> du dossier.</LI>
+	
+
+	<p>Vous allez ensuite créer une racine virtuelle pour les formulaires d'administration HTML. 
+
+<LI class=LN>Lancez l'application IIS Internet Service Manager.</LI>
+
+		<LI class=LN>Double-cliquez sur le service WWW pour éditer ses propriétés.</LI>
+
+		<LI class=LN>Dans l'onglet <span class=L><B>Répertoires</B></span>, cliquez sur <span class=L><B>Ajouter</B></span>.</LI>
+
+		<LI class=LN>Dans le champ <span class=L><B>Répertoire</B></span>, entrez l'emplacement du dossier Admisapi, en général<BR>
+C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\40\Admisapi.<LI class=LN>Dans le champ <span class=L><B>Alias</B></span>, tapez <span class=L><B>/fpadmin</B></span></LI>
+
+		<LI class=LN>Pour Accès, cliquez sur Lecture et sur Exécuter.</LI>
+
+		<LI class=LN>Cliquez sur <span class=L><B>Exiger un canal sécurisé (SSL)</B></span>.<LI class=LN>Cliquez sur <B>OK</B> à deux reprises pour accepter les modifications.
+</OL>
+
+	<p class=4>&nbsp;</p>
+
+	<p>Les formulaires sont maintenant activés pour une administration à distance lorsque vous explorez une URL telle que https://monposte/fpadmin/fpadmin.htm</P>
+
+	<P class=4></P></TD>
+	
+	<!--TOPIC TITLE AND BODY TEXT CELL ENDS-->
+	
+	<!--FAR-RIGHT COLUMN SECTION ART CELL STARTS-->
+	
+    <TD rowspan="15"><img SRC="admart.gif" align="top" alt="Illustration de la section Administration"></TD>
+
+	<!--FAR-RIGHT COLUMN SECTION ART CELL ENDS-->
+
+	</TR>
+	
+	<!--LEFT-NAVIGATION MENU STARTS-->
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="scintro.htm"><font color="#000000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink"><div class="table"><font color="#990000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adoview.htm"><font color="#000000">&nbsp;&nbsp;Outils et techniques &nbsp;&nbsp;d'administration</font></A></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adfpsr.htm"><font color="#000000">&nbsp;&nbsp;Fpsvradm</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="admmc.htm"><font color="#000000">&nbsp;&nbsp;Composant logiciel &nbsp;&nbsp;enfichable MMC</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adhtm.htm"><font color="#000000">&nbsp;&nbsp;Formulaires &nbsp;&nbsp;d'administration &nbsp;&nbsp;HTML</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Administration à &nbsp;&nbsp;distance</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" HREF="adadv.htm"><font color="#000000">&nbsp;&nbsp;Tâches &nbsp;&nbsp;administratives<BR>&nbsp;&nbsp;avancées</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<!--LAST ROW STARTS-->
+
+	<TR>
+    <TD height="910" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+	
+	<!--LAST ROW ENDS-->
+
+</TABLE>
+
+
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_BEGIN-->
+<br>
+<TABLE cellspacing="0" cellpadding="0" border=0>
+	<TR>
+	<TD width="170" valign="top">&nbsp;</TD>
+	<TD width="237" valign="top"><A HREF="adfpre.htm"><img src="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></font></a></TD>
+	<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img src="top.gif" border="0"></a></TD>
+	</TR>
+
+	<TR>
+	<TD width="170" valign="top">&nbsp;</TD>
+	<TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+	
+	<TR>
+	<TD width="170" valign="top">&nbsp;</TD>
+	<TD colspan="2" width="475" valign="top">Dernière mise à jour&nbsp;: novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+	</TR>
+
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

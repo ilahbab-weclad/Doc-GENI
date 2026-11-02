@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Authentification des requêtes HTTP par IIS</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+	
+	<TR>
+		<TD BGCOLOR="#000000"><IMG SRC="home.gif" WIDTH=103 HEIGHT=21
+ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH="100%"><IMG 
+SRC="1ptrans.gif" WIDTH=1 
+HEIGHT=1 ALT="" BORDER=0></TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+<FONT FACE="Arial, Helvetica" SIZE=1><A HREF="http://www.microsoft.com/france" TARGET="_top"><IMG 
+SRC="msft.gif" WIDTH=91 
+HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+	
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+	
+	<!--WEB SITE TITLE AND LOGO START-->
+
+	<TR>
+		<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD colspan="2" nowrap bgcolor="#666699" valign="middle" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+		
+		<!--WEB SITE TITLE AND LOGO END-->
+		
+		<!--TOPIC TITLE AND BODY TEXT CELL START-->
+		
+		<TD rowspan="15" width="460" nowrap><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous Windows&nbsp;NT</font></b></font>
+
+<HR>
+
+			<A NAME="howiisauthenticateshttprequests"></A><P><A HREF="scwin_2.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;3 sur 9&nbsp;</sup></b></font><A HREF="scwin_4.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"><FONT CLASS=TITLE></A>&nbsp;&nbsp;&nbsp;&nbsp;Authentification des requêtes HTTP par IIS</FONT>  <p><A NAME="scwinnt.doc-1048"></A>Quand IIS reçoit une requête HTTP émanant d'un navigateur Web ou du client FrontPage, il effectue les opérations suivantes&nbsp;: 
+
+<OL>
+					<LI class=LN>Il essaie d'abord de traiter la requête via le compte anonyme IUSR_<I>nommachine</I>. Si ce compte ne dispose pas de privilèges d'accès suffisants pour traiter la requête, ou si la navigation anonyme n'est pas activée dans IIS, IIS renvoie l'erreur&nbsp;401 (l'accès est refusé). 
+
+	<LI class=LN>IIS authentifie ensuite l'utilisateur pour permettre à l'utilisateur distant de s'identifier avec l'authentification de base ou avec l'authentification Stimulation/Réponse de Windows&nbsp;NT. Si le navigateur Web ou le client FrontPage utilise la Stimulation/Réponse, l'utilisateur ne sera pas sollicité car le client ou le navigateur fournit le nom d'utilisateur et le mot de passe de l'utilisateur connecté à partir de l'ordinateur client.
+
+	<LI class=LN>IIS ne permet d'accéder à un fichier du serveur Web que si l'ACL NTFS associée au fichier accorde les autorisations correctes au compte dont le serveur Web emprunte l'identité.
+</OL>
+				
+			<P class=4>&nbsp;</P>
+			
+		</TD>
+		
+		<!--TOPIC TITLE AND BODY TEXT END-->
+		
+		<!--FAR-RIGHT COLUMN SECTION ART START-->
+	
+		<TD rowspan="20" nowrap>
+			<img SRC="secart.gif" align="center" alt="Image de la section Sécurité">
+		</TD>
+		
+		<!--FAR-RIGHT COLUMN SECTION ART END-->
+		
+	</TR>
+	
+	<!--LEFT-NAVIGATION MENUS START-->
+
+	<TR>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" href="scintro.htm"><font color="#000000">&nbsp;&nbsp;Introduction</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous <br>&nbsp;&nbsp;Windows&nbsp;NT</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" HREF="scuni.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="adoview.htm"><font color="#000000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+   		<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<!--LAST ROW START-->
+	
+	<TR>
+    	<TD height="130" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+		
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_START-->
+
+<BR>
+
+<TABLE cellspacing="0" cellpadding="0" border=0>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD width="237" valign="top">&nbsp;</TD>
+    	<TD width="237" align="right" valign="top"></TD>
+  	</TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+   	</TR>
+	
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

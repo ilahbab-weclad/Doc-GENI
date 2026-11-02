@@ -1,0 +1,5 @@
+; Localized	03/02/1999 04:46  (GMT)	7:4.1.211 	3cmenuc.inp
+[info]
+title=Texte 1 colonne et encadré sur 2 colonnes
+description=Crée une page composée d'un corps de texte d'une colonne et d'un encadré à droite, de deux colonnes.
+version=

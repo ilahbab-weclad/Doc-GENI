@@ -1,0 +1,30 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<%endif%>
+<meta http-equiv="Expires" content="0">
+<title><!-- LOCALIZE this title --><%DiscussionTitle%>Sommaire de </title>
+</head>
+
+<body <%if DoTheme EQ False%> stylesrc="<%PageStyleSrc%>" <%endif%> >
+
+<!--webbot bot="EvaluateFirst" u-evaluate="<%PostPageUrl%>" -->
+
+<!--webbot bot="Include" tag="BODY" u-include="<%HeaderPageUrl%>" -->
+
+<h3><tt><!-- LOCALIZE this heading -->SOMMAIRE</tt></h3>
+
+<h5><em><!-- LOCALIZE this text -->Remarque : Il peut être nécessaire de recharger cette page
+pour que les additions les plus récentes soient affichées.</em></h5>
+
+<!--webbot bot="Include" tag="BODY" u-include="<%DiscussionDir%>/tocproto.htm" -->
+
+<!--webbot bot="Include" tag="BODY" u-include="<%FooterPageUrl%>" -->
+
+</body>
+</html>

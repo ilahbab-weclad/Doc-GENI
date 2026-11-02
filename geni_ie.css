@@ -1,0 +1,1 @@
+@media screen{#menufixe{position: fixed;background-color:white;border:2px ridge #ddd;width:100px;position:fixed;top:250px;right:0;font-family:arial;font-size:12px;/* pour IE */	_position: absolute;	top: expression(body.scrollTop + 250 + "px")}}h1{color:#008080;border-bottom: 1px solid #008080;}h2{color:#004080;}

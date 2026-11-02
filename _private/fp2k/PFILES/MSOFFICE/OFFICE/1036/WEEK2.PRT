@@ -1,0 +1,277 @@
+VIEW "Hebdomadaire - 5 jours","Pleine page",WORKWEEKLY,,550,1000
+
+;=======================================================================
+; Header - Username & Date
+;=======================================================================
+
+OBJECT	,RECTANGLE,0,0,550,4
+	OPTIONS		BLACK
+
+OBJECT  ,RECTANGLE,0,3,550,85
+	OPTIONS		GRAY
+
+OBJECT  ,RECTANGLE,0,0,550,85
+
+OBJECT  ,TEXT,10,3,550,55
+	VALUE		"&USERNAME "
+	STYLES		styUserName
+
+OBJECT  ,TEXT,10,50,550,85
+	VALUE		"&PRINTDATE"
+	STYLES		styDate
+
+;=======================================================================
+; Timeframe and Day rects
+;=======================================================================
+
+OBJECT	,RECTANGLE,0,90,550,94
+	OPTIONS		BLACK
+
+OBJECT  ,RECTANGLE,0,90,550,980
+
+OBJECT  ,RECTANGLE,0,880,50,980
+
+OBJECT  ,TEXT,0,880,50,980
+	STYLES		stySmallHeading
+	OPTIONS		HCENTER, VCENTER, NONE
+	VALUE		"Autre:"
+
+OBJECT	,RECTANGLE,0,90,50,135
+
+OBJECT  ,TIMEFRAME,0,135,50,880
+	STYLES		styTime
+
+;=======================================================================
+; Day 1
+;=======================================================================
+
+OBJECT  ,RECTANGLE,50,90,150,135
+
+OBJECT	,EVENTS,0,0,0,0
+	STYLES		styApptText, styHeading
+	OPTIONS		0,1
+	OVOPTIONS   LOCATION | SINGLELINE | NODATE | STARTONLY
+
+OBJECT  ,TEXT,50,90,150,120
+	VALUE		"&PRINTDATE "
+	STYLES		stySmallDate
+	DATEFMT		"ddd"
+	OPTIONS		HCENTER, VCENTER, NONE
+
+OBJECT  ,TEXT,50,110,150,140
+	VALUE		"&PRINTDATE "
+	STYLES		stySmallDate
+	DATEFMT		"D"
+	OPTIONS		HCENTER, VCENTER, NONE
+
+OBJECT  ,SCHEDULE,50,135,150,880
+	STYLES		styApptText, styApptTime, styHeading
+	OPTIONS		3, 30, LOCATION, OVERFLOW, 0
+	OVOPTIONS   LOCATION | SINGLELINE | NODATE | STARTONLY
+
+OBJECT	,APPTS,0,0,0,0
+	STYLES		styApptText, styApptTime, styHeading
+	RANGE		BEFORE,STARTTIME,OR,AFTER,ENDTIME
+	OPTIONS		LOCATION, NONE, 1, 0, 0
+	OVOPTIONS   LOCATION | SINGLELINE | NODATE | STARTONLY
+
+OBJECT  ,RECTANGLE,50,880,150,980
+
+OBJECT	,OVERFLOW,51,880,150,980
+	OPTIONS		MINIMAL, CONSUME, 0
+	STYLES		styApptText
+
+;=======================================================================
+; Day 2
+;=======================================================================
+
+OBJECT  ,RECTANGLE,150,90,250,135
+
+OBJECT	,EVENTS,0,0,0,0
+	STYLES		styApptText, styHeading
+	OPTIONS		0,1
+	DELTAYMD	1,DAY
+	OVOPTIONS   LOCATION | SINGLELINE | NODATE | STARTONLY
+
+OBJECT  ,TEXT,150,90,250,120
+	VALUE		"&PRINTDATE "
+	STYLES		stySmallDate
+	OPTIONS		HCENTER, VCENTER, NONE
+	DATEFMT		"ddd"
+	DELTAYMD	1,DAY
+
+OBJECT  ,TEXT,150,110,250,140
+	VALUE		"&PRINTDATE "
+	STYLES		stySmallDate
+	OPTIONS		HCENTER, VCENTER, NONE
+	DATEFMT		"D"
+	DELTAYMD	1,DAY
+
+OBJECT  ,SCHEDULE,150,135,250,880
+	STYLES		styApptText, styApptTime, styHeading
+	OPTIONS		3, 30, LOCATION, OVERFLOW, 0
+	DELTAYMD	1,DAY
+	OVOPTIONS   LOCATION | SINGLELINE | NODATE | STARTONLY
+
+OBJECT	,APPTS,0,0,0,0
+	STYLES		styApptText, styApptTime, styHeading
+	RANGE		BEFORE,STARTTIME,OR,AFTER,ENDTIME
+	OPTIONS		LOCATION, NONE, 1, 0, 0
+	DELTAYMD	1,DAY
+	OVOPTIONS   LOCATION | SINGLELINE | NODATE | STARTONLY
+
+OBJECT  ,RECTANGLE,150,880,250,980
+
+OBJECT	,OVERFLOW,151,880,250,980
+	OPTIONS		MINIMAL, CONSUME, 0
+	STYLES		styApptText
+
+;=======================================================================
+; Day 3
+;=======================================================================
+
+OBJECT  ,RECTANGLE,250,90,350,135
+
+OBJECT	,EVENTS,0,0,0,0
+	STYLES		styApptText, styHeading
+	OPTIONS		0,1
+	DELTAYMD	2,DAY
+	OVOPTIONS   LOCATION | SINGLELINE | NODATE | STARTONLY
+
+OBJECT  ,TEXT,250,90,350,120
+	VALUE		"&PRINTDATE "
+	STYLES		stySmallDate
+	DATEFMT		"ddd"
+	OPTIONS		HCENTER, VCENTER, NONE
+	DELTAYMD	2,DAY
+
+OBJECT  ,TEXT,250,110,350,140
+	VALUE		"&PRINTDATE "
+	STYLES		stySmallDate
+	DATEFMT		"D"
+	OPTIONS		HCENTER, VCENTER, NONE
+	DELTAYMD	2,DAY
+
+OBJECT  ,SCHEDULE,250,135,350,880
+	STYLES		styApptText, styApptTime, styHeading
+	OPTIONS		3, 30, LOCATION, OVERFLOW, 0
+	DELTAYMD	2,DAY
+	OVOPTIONS   LOCATION | SINGLELINE | NODATE | STARTONLY
+
+OBJECT	,APPTS,0,0,0,0
+	STYLES		styApptText, styApptTime, styHeading
+	RANGE		BEFORE,STARTTIME,OR,AFTER,ENDTIME
+	OPTIONS		LOCATION, NONE, 1, 0, 0
+	DELTAYMD	2,DAY
+	OVOPTIONS   LOCATION | SINGLELINE | NODATE | STARTONLY
+
+OBJECT  ,RECTANGLE,250,880,350,980
+
+OBJECT	,OVERFLOW,251,880,350,980
+	OPTIONS		MINIMAL, CONSUME, 0
+	STYLES		styApptText
+
+;=======================================================================
+; Day 4
+;=======================================================================
+
+OBJECT  ,RECTANGLE,350,90,450,135
+
+OBJECT	,EVENTS,0,0,0,0
+	STYLES		styApptText, styHeading
+	OPTIONS		0,1
+	DELTAYMD	3,DAY
+	OVOPTIONS   LOCATION | SINGLELINE | NODATE | STARTONLY
+
+OBJECT  ,TEXT,350,90,450,120
+	VALUE		"&PRINTDATE "
+	STYLES		stySmallDate
+	DATEFMT		"ddd"
+	OPTIONS		HCENTER, VCENTER, NONE
+	DELTAYMD	3,DAY
+
+OBJECT  ,TEXT,350,110,450,140
+	VALUE		"&PRINTDATE "
+	STYLES		stySmallDate
+	DATEFMT		"D"
+	OPTIONS		HCENTER, VCENTER, NONE
+	DELTAYMD	3,DAY
+
+OBJECT  ,SCHEDULE,350,135,450,880
+	STYLES		styApptText, styApptTime, styHeading
+	OPTIONS		3, 30, LOCATION, OVERFLOW, 0
+	DELTAYMD	3,DAY
+	OVOPTIONS   LOCATION | SINGLELINE | NODATE | STARTONLY
+
+OBJECT	,APPTS,0,0,0,0
+	STYLES		styApptText, styApptTime, styHeading
+	RANGE		BEFORE,STARTTIME,OR,AFTER,ENDTIME
+	OPTIONS		LOCATION, NONE, 1, 0, 0
+	DELTAYMD	3,DAY
+	OVOPTIONS   LOCATION | SINGLELINE | NODATE | STARTONLY
+
+OBJECT  ,RECTANGLE,350,880,450,980
+
+OBJECT	,OVERFLOW,351,880,450,980
+	OPTIONS		MINIMAL, CONSUME, 0
+	STYLES		styApptText
+
+;=======================================================================
+; Day 5
+;=======================================================================
+
+OBJECT  ,RECTANGLE,450,90,550,135
+
+OBJECT	,EVENTS,0,0,0,0
+	STYLES		styApptText, styHeading
+	OPTIONS		0,1
+	DELTAYMD	4,DAY
+	OVOPTIONS   LOCATION | SINGLELINE | NODATE | STARTONLY
+
+OBJECT  ,TEXT,450,90,550,120
+	VALUE		"&PRINTDATE "
+	STYLES		stySmallDate
+	DATEFMT		"ddd"
+	OPTIONS		HCENTER, VCENTER, NONE
+	DELTAYMD	4,DAY
+
+OBJECT  ,TEXT,450,110,550,140
+	VALUE		"&PRINTDATE "
+	STYLES		stySmallDate
+	DATEFMT		"D"
+	OPTIONS		HCENTER, VCENTER, NONE
+	DELTAYMD	4,DAY
+
+OBJECT  ,SCHEDULE,450,135,550,880
+	STYLES		styApptText, styApptTime, styHeading
+	OPTIONS		3, 30, LOCATION, OVERFLOW, 0
+	DELTAYMD	4,DAY
+	OVOPTIONS   LOCATION | SINGLELINE | NODATE | STARTONLY
+
+OBJECT	,APPTS,0,0,0,0
+	STYLES		styApptText, styApptTime, styHeading
+	RANGE		BEFORE,STARTTIME,OR,AFTER,ENDTIME
+	OPTIONS		LOCATION, NONE, 1, 0, 0
+	DELTAYMD	4,DAY
+	OVOPTIONS   LOCATION | SINGLELINE | NODATE | STARTONLY
+
+OBJECT  ,RECTANGLE,450,880,550,980
+
+OBJECT	,OVERFLOW,451,880,550,980
+	OPTIONS		MINIMAL, CONSUME, 0
+	STYLES		styApptText
+
+;=======================================================================
+; Footer - Text and Page num.
+;=======================================================================
+
+OBJECT ,TEXT,0,980,450,1000
+	VALUE		"Imprimé le &CURDATE à &CURTIME &TIMEZONE"
+	STYLES		stySmallFooter
+	OPTIONS		ELLIPSIS, NONE, NONE
+
+OBJECT  ,TEXT,450,980,550,1000
+	VALUE		"Page &PAGENUM "
+	STYLES		stySmallFooter
+	OPTIONS		RIGHT, NONE, NONE
+

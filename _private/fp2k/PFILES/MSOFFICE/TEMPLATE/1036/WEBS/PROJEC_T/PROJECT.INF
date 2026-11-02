@@ -1,0 +1,37 @@
+; Localized	03/02/1999 04:46  (GMT)	7:4.1.211 	project.inp
+[info]
+title=Site Web d'un projet
+description=Crée un site Web de projet contenant une liste de membres, des comptes rendus, des calendriers, des archives et des groupes de discussion.
+structure=project.map
+border=tlb
+theme=sumipntg 001
+[FileList]
+archive.htm=
+discuss.htm=
+footer.htm=_borders/bottom.htm
+header.htm=_borders/top.htm
+images\purpsm.gif=images/purpsm.gif
+images\smfeed.gif=images/smfeed.gif
+images\smpress.gif=images/smpress.gif
+images\undercon.gif=images/undercon.gif
+index.htm=
+knobaftr.htm=kbaftr.htm
+knobahdr.htm=kbahdr.htm
+knobcfrm.htm=kbcfrm.htm
+knobfoot.htm=kbfoot.htm
+knobhead.htm=kbhead.htm
+knobpost.htm=kbpost.htm
+knobsrch.htm=kbsrch.htm
+knobtoc.htm=kbtoc.htm
+members.htm=
+reqdaftr.htm=
+reqdahdr.htm=
+reqdcfrm.htm=
+reqdfoot.htm=
+reqdhead.htm=
+reqdpost.htm=
+reqdsrch.htm=
+reqdtoc.htm=
+schedule.htm=
+search.htm=
+status.htm=

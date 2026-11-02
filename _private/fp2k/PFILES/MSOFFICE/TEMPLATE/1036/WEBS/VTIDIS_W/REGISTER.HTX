@@ -1,0 +1,85 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<%endif%>
+<title><!-- LOCALIZE this title -->Formulaire d'inscription</title>
+</head>
+
+<body>
+
+<h1><!-- LOCALIZE this heading -->Formulaire d'inscription</h1>
+
+<p><!-- LOCALIZE this text -->Remplissez ce formulaire pour vous inscrire comme membre du groupe de discussion <em><%DiscussionTitle%></em>.</p>
+
+<hr>
+
+<%if WebIsDiskBased EQ True%>
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText" 
+preview="Vous avez choisi d'inclure votre groupe de discussion dans un site Web
+protégé, mais le site Web en cours a été créé sans serveur Web.
+Les utilisateurs ne peuvent s'inscrire et participer au groupe de
+discussion que si celui-ci est publié sur un serveur Web sur lequel les
+extensions serveur FrontPage sont installées.
+Enregistrez cette page dans le site Web racine contenant ce site Web.
+Après la publication de ce site Web, modifiez les Autorisations du
+site Web depuis le menu Outils de FrontPage. Choisissez des
+autorisations uniques pour ce site Web puis définissez le contrôle
+d'accès des utilisateurs finaux de façon à ce que seuls les utilisateurs
+enregistrés puissent entrer. Ouvrez ensuite le site Web racine depuis le
+serveur, et enregistrez-y ce document. Les utilisateurs pourront alors
+s'inscrire et utiliser le site Web de discussion protégé." --></p>
+<%else%>
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText"
+preview="Vous avez choisi d'inclure votre groupe de discussion dans un site Web
+protégé. Vous devez avant tout modifier les Autorisations du site Web
+depuis le menu Outils de FrontPage. Choisissez des autorisations
+uniques pour ce site Web puis définissez le contrôle d'accès des
+utilisateurs finaux de façon à ce que seuls les utilisateurs enregistrés
+puissent entrer. Ouvrez ensuite le site Web racine depuis le serveur,
+et enregistrez-y ce document. Les utilisateurs pourront alors s'inscrire
+et utiliser le site Web de discussion protégé." --></p>
+<%endif%>
+
+<form action="--WEBBOT-SELF--" method="POST">
+    <!--webbot bot="Registration" 
+    b-label-fields="TRUE" s-service="<%RegistrationWebUrl%>"
+    s-username-fields="Username"
+    s-password-fields="Password VerifyPassword"
+    i-password-min-length="6"
+    b-check-password-against-user="TRUE" -->
+
+    <p><strong><!-- LOCALIZE this text (but not the field name) -->Nom
+    d'utilisateur&nbsp;:</strong> <br clear="all">
+    <input type="text" size="24" maxlength="24" name="NomUtilisateur">
+    <br clear="all">
+
+    <strong><!-- LOCALIZE this text (but not the field name) -->Mot de passe&nbsp;:</strong> <br clear="all">
+    <input type="password" size="24" maxlength="24" name="MotDePasse"> 
+    <br clear="all">
+
+    <strong><!-- LOCALIZE this text (but not the field name) -->Vérification du mot de passe&nbsp;:</strong> <br
+    clear="all">
+    <input type="password" size="24" maxlength="24" name="VerifierMotDePasse"> 
+    <br clear="all">
+
+    <br clear="all">
+
+    <!-- LOCALIZE these button labels -->
+    <input type="submit" value="Inscrivez-moi"> 
+    <input type="reset" value="Effacer le contenu du formulaire"> 
+    </p>
+</form>
+
+<hr>
+
+<h5><!-- LOCALIZE this line -->Dernière modification&nbsp;: <!--webbot bot="TimeStamp"
+s-type="REGENERATED" s-format="%d %B %Y" -->
+</h5>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>TEST IFRAMES IE - NS</title>
+<link rel="stylesheet" type="text/css" href="../geni_ie.css">
+<link rel="stylesheet" type="text/css" href="../geni_impression.css">
+</head>
+
+<body>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var page = "http://iris.rinaldi-structal.com" ;
+var pw = "98%";
+var ph = "400";
+
+
+function netscape(pageurl,ph,pw)
+  {
+  document.write('<LAYER NAME="fenetre" HEIGHT="');
+  document.write(ph);
+  document.write('" WIDTH="');
+  document.write(pw);
+  document.write('" SRC="');
+  document.write(pageurl);
+  document.write('"></LAYER>');
+  }
+function explorer(pageurl,ph,pw)
+ {
+  document.write('<IFRAME SRC="');
+  document.write(pageurl);
+  document.write('" HEIGHT="');
+  document.write(ph);
+  document.write('" WIDTH="');
+  document.write(pw);
+  document.write('"></IFRAME>');
+ }
+if ("Netscape" == navigator.appName) 
+{
+  netscape(page,ph,pw);
+}else{
+  explorer(page,ph,pw);
+} 
+-->
+</SCRIPT>
+</body>
+
+</html>

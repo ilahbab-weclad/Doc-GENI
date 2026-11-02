@@ -1,0 +1,12 @@
+vti_encoding:SR|utf8-nl
+vti_timelastmodified:TR|15 Jan 2004 19:57:24 -0000
+vti_extenderversion:SR|4.0.2.8912
+vti_nexttolasttimemodified:TR|15 Jan 2004 19:57:23 -0000
+vti_author:SR|KUNTZ
+vti_nosourcecontrol:SR|True
+vti_modifiedby:SR|kuntz
+vti_timecreated:TR|15 Jan 2004 13:00:46 -0000
+vti_filesize:IR|0
+vti_backlinkinfo:VX|vrac/test.htm vrac/test_pour_habib.htm
+vti_syncwith_localhost\\d\:\\rinaldi\\doc_geni/d\:/rinaldi/doc_geni:TR|15 Jan 2004 19:57:24 -0000
+vti_cacheddtm:TX|28 May 2009 13:27:08 -0000

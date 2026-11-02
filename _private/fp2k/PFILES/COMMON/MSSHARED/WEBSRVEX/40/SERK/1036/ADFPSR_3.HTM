@@ -1,0 +1,366 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>
+Arguments de ligne de commande Fpsrvadm</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+<!--MICROSOFT TOOLBAR STARTS HERE-->
+
+	<TR>
+		<TD BGCOLOR="#000000">
+		<IMG SRC="home.gif" WIDTH=103 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0 hspace="0">
+		</TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH=100%>
+		<IMG SRC="1ptrans.gif" WIDTH=1 HEIGHT=1 ALT="" BORDER=0>
+		</TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+		<FONT FACE="Arial, Helvetica" SIZE=1>
+		<A HREF="/" TARGET="_top">
+		<IMG SRC="msft.gif" WIDTH=91 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0>
+		</A>
+		</FONT>
+		</TD>
+	</TR>
+
+	<TR>
+		<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+	    <TD width="20" nowrap></TD>
+	    <TD colspan="2" nowrap bgcolor="#666699" valign="center" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>&nbsp;Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+
+		<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+	
+		<!--WEB SITE TITLE AND LOGO ENDS-->
+
+		<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
+	
+
+    <TD rowspan="21" width="490"><a name="top"></a><p><font color="#666699"><b><font size="+1">Fpsrvadm</font></b></font>
+
+<HR>
+
+<H3><A NAME="fpsrvadmcommandlinearguments"></A>Arguments de ligne de commande Fpsrvadm</H3>
+
+<p><A NAME="adfpsrva.doc-1113"></A>Les arguments de ligne de commande <span class=L><B>Fpsrvadm</B></span> sont regroupés ci-après.</P>
+
+<p class=4>&nbsp;</p>
+
+<TABLE cols=4 width=332>
+
+<TR VALIGN="top">
+<TH width=56%><BR>Argument</TH>
+<TH width=2%>Forme<BR>abrégée</TH>
+<TH width=20%><BR>Définition</TH>
+<TH width=22%><BR>Exemple</TH>
+</TR>
+
+<TR VALIGN="top">
+<TD class=TT width=56%>-port</TD>
+<TD class=TT width=2%>-p</TD>
+<TD class=TT width=20%>Numéro de port</TD>
+<TD class=TT width=22%>Entier, tel que 80, ou nom de serveur virtuel suivi d'un entier, comme sample.microsoft.com:80
+<P class=TT>Pour les serveurs Web IIS version 4.0 ou ultérieure, vous pouvez utiliser <BR>
+<B>-<span class=L>m</span></B> <span class=NTRM><I>NuméroInstance</I></span> au lieu de<BR> <B>-<span class=L>m</span></B> <span class=NTRM><I>NomHôte</I></span> <B>-<span class=L>p</span></B> <span class=NTRM><I>nnnn</I></span></P>
+</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=TT width=56%>-web</TD>
+<TD class=TT width=2%>-w</TD>
+<TD class=TT width=20%>Nom de site Web FrontPage étendu</TD>
+<TD class=TT width=22%>URL d'un répertoire, par rapport à la racine de la zone de contenu, comme /monrépertoire</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=TT width=56%>-type</TD>
+<TD class=TT width=2%>-t</TD>
+<TD class=TT width=20%>Type de serveur Web</TD>
+<TD class=TT width=22%>Sous UNIX&nbsp;:<BR>
+apache, apache-fp (Apache avec correctif logiciel FrontPage), ncsa, netscape-enterprise, netscape-fasttrack, stronghold
+<P class=TT>Sous Windows&nbsp;:<BR>
+frontpage, msiis (Microsoft Internet Information Services), mspws (Microsoft Personal Web Server), netscape-fasttrack, netscape-enterprise, website</P>
+</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=TT width=56%>-servconfig</TD>
+<TD class=TT width=2%>-s</TD>
+<TD class=TT width=20%>Fichier de configuration de serveur Web</TD>
+<TD class=TT width=22%>Chemin d'accès complet, comme /usr/local/apache/conf/httpd.conf</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=TT width=56%>-multihost</TD>
+<TD class=TT width=2%>-m</TD>
+<TD class=TT width=20%>Nom de serveur virtuel ou adresse IP
+<P class=TT>Sur les serveurs Web IIS version 4.0 ou ultérieure, cet argument sert à indiquer un numéro d'instance.</P>
+</TD>
+<TD class=TT width=22%>Adresse IP ou nom d'hôte WWW complet, comme dans 172.20.65.43, ou sample.microsoft.com.
+<P class=TT>Sous IIS version 4.0 ou ultérieure, numéro d'instance tel que  /LM/W3SVC/10.</P>
+
+<P class=TT>La chaîne vide "" signifie que le serveur n'est pas multi-hôte.</P>
+</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=TT width=56%>-username</TD>
+<TD class=TT width=2%>-u</TD>
+<TD class=TT width=20%>Nom d'utilisateur</TD>
+<TD class=TT width=22%>Sous IIS, cette valeur doit être un nom de compte utilisateur ou un nom de groupe Windows NT et peut être qualifié avec un nom de domaine, par exemple domain\username. 
+<P class=TT>Sous UNIX et d'autres serveurs non-IIS, nom d'utilisateur nouveau ou existant dans la liste des accès du serveur Web. Il est recommandé de ne pas utiliser un nom d'utilisateur UNIX pour cette valeur car elle serait alors facile à deviner.</P>
+</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=TT width=56%>-password</TD>
+<TD class=TT width=2%>-pw</TD>
+<TD class=TT width=20%>Mot de passe</TD>
+<TD class=TT width=22%>Chaîne de mot de passe, comme 124Xyz. Cette valeur n'est pas nécessaire sur les serveurs IIS.</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=TT width=56%>-ipaddress</TD>
+<TD class=TT width=2%>-i</TD>
+<TD class=TT width=20%>Adresse IP</TD>
+<TD class=TT width=22%>Adresse IP, telle que 172.22.12.12</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=TT width=56%>-access</TD>
+<TD class=TT width=2%>-a</TD>
+<TD class=TT width=20%>Niveau d'accès accordé</TD>
+<TD class=TT width=22%>L'une des valeurs suivantes&nbsp;:
+<P class=TT>administrators, authors, users, remove.</P>
+
+<P class=TT>La valeur <span class=L><B>remove</B></span> supprime tous les accès du compte.</P>
+</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=TT width=56%>-destination</TD>
+<TD class=TT width=2%>-d</TD>
+<TD class=TT width=20%>URL d'un fichier ou dossier dans un site Web FrontPage étendu
+<P class=TT></P>
+</TD>
+<TD class=TT width=22%>Pour les commandes <span class=L><B>Putfile</B></span> et <span class=L><B>Recalcfile</B></span>,  URL par rapport au répertoire de premier niveau du site, tel que <BR>
+/monrépertoire/monfichier.htm.
+<P class=TT>Pour les commandes <span class=L><B>Setdirexec</B></span> et <span class=L><B>Setdirnoexec</B></span>, URL de dossier par rapport au répertoire de premier niveau du site, comme /monrépertoire/nouveaudossier.</P>
+
+<P class=TT>Pour la commande <span class=L><B>Rename</B></span>, URL par rapport au site racine, comme /nouveausous-site.</P>
+</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=TT width=56%>-filename</TD>
+<TD class=TT width=2%>-f</TD>
+<TD class=TT width=20%>Nom de fichier</TD>
+<TD class=TT width=22%>Chemin d'accès complet et nom de fichier, comme C:\Mesfichiers\Nomfichier.htm</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=TT width=56%>-xUser</TD>
+<TD class=TT width=2%>-xu</TD>
+<TD class=TT width=20%>Nom de compte utilisateur UNIX (il doit s'agir d'un compte existant)</TD>
+<TD class=TT width=22%>Nom de compte utilisateur UNIX.</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=TT width=56%>-xGroup</TD>
+<TD class=TT width=2%>-xg</TD>
+<TD class=TT width=20%>Nom de compte de groupe UNIX (il doit s'agir d'un compte existant)</TD>
+<TD class=TT width=22%>Nom de compte de groupe UNIX, tel que "www."</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=TT width=56%>-noChownContent Yes</TD>
+<TD class=TT width=2%>-n yes</TD>
+<TD class=TT width=20%>Indique que seul le contenu des répertoires _vti* doit changer de propriétaire, non pas le contenu des utilisateurs.</TD>
+<TD class=TT width=22%>Aucun.</TD>
+</TR>
+</TABLE>
+
+<P class=6></P>
+
+
+</TD>
+    <!--FAR-RIGHT COLUMN SECTION ART STARTS-->
+
+<TD rowspan="15"><img SRC="admart.gif" align="top" alt="Illustration de la section Administration"></TD>
+
+<!--FAR-RIGHT COLUMN SECTION ART ENDS-->
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+		</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="scintro.htm"><font color="#000000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink"><div class="table"><font color="#990000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+</TR>
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+		</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adoview.htm"><font color="#000000">&nbsp;&nbsp;Outils et techniques &nbsp;&nbsp;d'administration</font></A></TD>
+    <TD width="20" nowrap></TD>
+</TR>
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+		</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Fpsvradm</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" HREF="admmc.htm"><font color="#000000">&nbsp;&nbsp;Composant logiciel &nbsp;&nbsp;enfichable MMC</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" HREF="adhtm.htm"><font color="#000000">&nbsp;&nbsp;Formulaires &nbsp;&nbsp;d'administration &nbsp;&nbsp;HTML</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" HREF="adfpre.htm"><font color="#000000">&nbsp;&nbsp;Administration à &nbsp;&nbsp;distance</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" HREF="adadv.htm"><font color="#000000">&nbsp;&nbsp;Tâches &nbsp;&nbsp;administratives<BR>&nbsp;&nbsp;avancées</font></A></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<!--LAST ROW STARTS-->
+
+	<TR>
+    <TD height="1540" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+</TR>
+
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_BEGIN-->
+<br>
+<TABLE cellspacing="0" cellpadding="0" border=0>
+	<TR>
+	    <TD width="170" valign="top">&nbsp;</TD>
+	    <TD width="237" valign="top"><A HREF="adfpsr.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></font></a></TD>
+	    <TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+	</TR>
+
+	<TR>
+	    <TD width="170" valign="top">&nbsp;</TD>
+	    <TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+	
+	<TR>
+	    <TD width="170" valign="top">&nbsp;</TD>
+	    <TD colspan="2" width="475" valign="top">Dernière mise à jour&nbsp;: novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+	</TR>
+	
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

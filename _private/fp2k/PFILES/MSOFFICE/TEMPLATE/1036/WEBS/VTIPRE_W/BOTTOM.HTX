@@ -1,0 +1,39 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<meta name="Microsoft Theme" content="<%Theme%>">
+<meta name="Microsoft Border" content="none">
+<title><!-- LOCALIZE this text -->
+Bordure inférieure</title>
+</head>
+
+<body>
+
+<p>&nbsp;</p>
+
+<%if DoBottomLinks EQ True%>
+<p><!--webbot bot="Navigation" s-type="children" s-rendering="text"
+b-include-home="T" b-include-up="T" --></p>
+<%endif%>
+
+<h5>
+<%if DoBottomWebmasterAddress EQ True%>
+<!-- LOCALIZE this line -->Envoyez un courrier électronique à <a
+href="<%WebmasterUrl%>"><!--webbot
+bot="Substitution" s-variable="<%WebVarWebmaster%>" --></a>pour toute question ou remarque concernant ce site Web.<br>
+<%endif%>
+<%if DoBottomCopyright EQ True%>
+<!-- LOCALIZE this line -->Copyright © <%CurrentYear%> <!--webbot bot="Substitution"
+s-variable="<%WebVarLongName%>" --><br>
+<%endif%>
+<%if DoBottomDateModified EQ True%>
+<!-- LOCALIZE this line -->Dernière modification&nbsp;: <!--webbot bot="TimeStamp" s-type="EDITED"
+s-format="%d %B %Y" -->
+<%endif%>
+</h5>
+
+</body>
+</html>

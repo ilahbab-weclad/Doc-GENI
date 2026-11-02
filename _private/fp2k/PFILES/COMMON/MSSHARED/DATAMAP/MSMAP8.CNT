@@ -1,0 +1,34 @@
+:Base MSMAP8.HLP
+:Title Aide de Microsoft Map
+1 Cartographie et MapInfo
+2 À propos de la création de cartes sur ordinateur=map_overview@msmap8.hlp>Ref
+2 Acquisition de cartes supplémentaires=purchasing_info@msmap8.hlp>HowTo
+2 Bibliothèques de cartes et de données=map_and_data_library @msmap8.hlp>Ref
+1 Création d'une carte
+2 Configuration de vos cartes pour les utiliser avec Microsoft Map=setup_maps@msmap8.hlp>HowTo
+2 Instructions concernant la définition des données pour la création d'une carte=how_to_select_data@msmap8.hlp>Ref
+2 Création d'une carte=how_to_create_a_map@msmap8.hlp>HowTo
+2 Ouverture d'une carte MapInfo=how_to_open_mapinfo_table @msmap8.hlp>HowTo
+1 Utilisation des formats de carte
+2 Modification des données et des formats affichés sur une carte=control_panel_tasks@msmap8.hlp>Ref
+2 Exemples de formats de carte=thematic_map@msmap8.hlp>HowTo
+1 Zoom, panoramique et déplacement
+2 Modification de l'affichage ou de l'emplacement d'une carte=how_to_move_around@msmap8.hlp>Ref
+1 Ajout, modification et rafraîchissement des données d'une carte
+2 Ajout de texte=how_to_add_text@msmap8.hlp>HowTo
+2 Ajout d'un repère de carte personnalisé=how_to_add_symbols@msmap8.hlp>HowTo
+2 Ajout de données supplémentaires=how_to_add_data@msmap8.hlp>HowTo
+2 Ajout d'étiquettes dans une carte=how_to_add_labels@msmap8.hlp>HowTo
+2 Modification des couleurs par défaut des fonctionnalités de cartographie=how_to_change_default_colors@msmap8.hlp>HowTo
+2 Modification d'une légende=customize_legend@msmap8.hlp>Ref
+2 Modification du nom, de la taille, des propriétés gras ou italique et de la c...=how_to_change_font@msmap8.hlp>HowTo
+2 Modification du style de symbole dans un repère de carte personnalisé=how_to_change_symbol_style@msmap8.hlp>HowTo
+2 Modification des options par défaut pour rafraîchir les données=default_refresh@msmap8.hlp>HowTo
+2 Rafraîchissement de données=refresh_data@msmap8.hlp>HowTo
+1 Suppression de texte, de caractéristiques et repères de carte personnalisés
+2 Suppression des caractéristiques d'une carte=how_to_hide_geographic@msmap8.hlp>HowTo
+2 Suppression du codage couleur, des graphiques en secteurs et autres options d...=how_to_delete_thematic@msmap8.hlp>HowTo
+2 Suppression ou restauration des légendes et des titres=how_to_hide_legend@msmap8.hlp>HowTo
+2 Suppression d'un repère de carte=how_to_delete_pinmap@msmap8.hlp>HowTo
+1 Résolution des problèmes
+2 Résolution des problèmes liés à la création de cartes=trouble_main@msmap8.hlp>Ref

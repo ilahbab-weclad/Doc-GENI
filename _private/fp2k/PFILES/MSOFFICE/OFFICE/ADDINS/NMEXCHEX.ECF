@@ -1,0 +1,39 @@
+; Localized	03/24/1999 04:01  (GMT)	7:4.1.211 	NMEXCHEX.ECF
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={C7D2BDC2-F7B3-11d0-9E1E-00A0C90D2899}
+Path=nmexchex.dll
+Entry Point=1
+Client Version=4.0
+Extension Version=1.0
+Misc Flags=ExchangePath
+
+[Exchange Client Compatibility]
+Exchange Registry=1
+Exchange Context Map=01110111111000
+Exchange Interface Map=1000000
+Exchange Extension Key="NetMeeting Extensions"
+
+[Folder]
+Events=OnExtCommand
+Commands=SNetMeeting
+Outlook Commands=ToolsNetMeetingPlaceCall
+Extension Outlook Commands=50020
+
+[Item]
+Events=OnExtCommand
+Commands=SNetMeeting
+Outlook Commands=ToolsNetMeetingPlaceCall
+Extension Outlook Commands=50020
+
+[Command]
+SNetMeeting=50020;*;Tools Suppress
+
+[Strings]
+DisplayName = Extensions Netmeeting
+Description = Extensions NetMeeting
+
+; STR 109 - NetMeeting=Place a NetMeeting Call...
+
+

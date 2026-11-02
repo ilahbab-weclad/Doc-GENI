@@ -1,0 +1,11 @@
+vti_encoding:SR|utf8-nl
+vti_author:SR|KUNTZ
+vti_modifiedby:SR|kuntz
+vti_timecreated:TR|11 Mar 2003 09:54:31 -0000
+vti_timelastmodified:TR|11 Mar 2003 16:51:04 -0000
+vti_filesize:IR|14261
+vti_extenderversion:SR|4.0.2.8912
+vti_backlinkinfo:VX|
+vti_nexttolasttimemodified:TR|11 Mar 2003 09:54:31 -0000
+vti_syncwith_localhost\\d\:\\rinaldi\\doc_geni/d\:/rinaldi/doc_geni:TR|11 Mar 2003 16:51:04 -0000
+vti_cacheddtm:TX|11 Mar 2003 16:51:04 -0000

@@ -1,0 +1,40 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<title><!-- LOCALIZE this title-->Jeu de cadres de <%DiscussionTitle%></title>
+<%if FramesOption EQ 1%>
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<%endif%>
+<meta http-equiv="Expires" content="0">
+<%else%>
+<meta name="Microsoft Theme" content="none">
+<%endif%>
+</head>
+
+<%DiscussionFrameset%>
+<%if FramesOption EQ 1%>
+<noframes>
+<body <%if DoTheme EQ False%> stylesrc="<%PageStyleSrc%>" <%endif%> >
+
+<!--webbot bot="EvaluateFirst" u-evaluate="<%PostPageUrl%>" -->
+
+<!--webbot bot="Include" tag="BODY" u-include="<%HeaderPageUrl%>" -->
+
+<h3><tt><!-- LOCALIZE this heading -->SOMMAIRE</tt></h3>
+
+<h5><em><!-- LOCALIZE this text -->Remarque : il est nécessaire de recharger cette page pour afficher les ajouts les plus récents.</em></h5>
+
+<!--webbot bot="Include" tag="BODY" u-include="<%DiscussionDir%>/tocproto.htm" -->
+
+<!--webbot bot="Include" tag="BODY" u-include="<%FooterPageUrl%>" -->
+
+</body>
+</noframes>
+<%endif%>
+</FRAMESET>
+
+</html>

@@ -1,0 +1,53 @@
+[02/22/23 08:26:50 Paris, Madrid]::Client Status [ConnId=0, PID=8212]
+	>> ERROR: Abnormal termination, Error Code: C0000005 ACCESS_VIOLATION
+
+======================= STACK DUMP =======================
+
+Fault address:  5D114650 01:00013650
+Module: C:\ORANT\BIN\ifrcm60.dll
+
+System Information:
+Operating System: Windows NT Version 6.1 Build 7601 Service Pack 1
+Command line: "C:\ORANT\BIN\ifrun60.EXE" "\\Rs-credo-or12c\gep_log\AIDE\Doc_GENI\_frm\RS_JPK.fmx"
+FORM/BLOCK/FIELD: RS_JPK:<NULL>.<NULL>
+Last Trigger: ON-LOGON - (Successfully Completed)
+Msg: <NULL>
+Last Builtin: OPEN_FORM - (Successfully Completed)
+
+Registers:
+EAX:00000000
+EBX:0044F2E8
+ECX:FFFFFFFF
+EDX:00444998
+ESI:071D700C
+EDI:071D700C
+CS:EIP:0023:5D114650
+SS:ESP:002B:0018EF18  EBP:0018EF7C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+------------------- Call Stack Trace ---------------------
+Frameptr   RetAddr  Param#1  Param#2  Param#3  Param#4  Function Name       
+0x0018ef7c 5d111552 00444998 071d700c 00000000 00000012 0x5d114650          
+0x0018efc0 5df20460 00444998 07000ef4 00000012 071d700c 0x5d111552          
+0x0018f008 5df20183 0044faf8 004b9a30 07000ef4 0018f06c 0x5df20460          
+0x0018f074 5df5b2ee 004b9a30 004b9a40 0018f124 0044faf8 0x5df20183          
+0x0018f118 5df5a478 00277b08 00000000 00000001 070143fc 0x5df5b2ee          
+0x0018f14c 5df59ebe 070143fc 06ff7744 07001854 00000001 0x5df5a478          
+0x0018f184 5df54896 0044faf8 06ff7744 00000001 00000001 0x5df59ebe          
+0x0018f1c4 5df0b73d 06ff7784 06ff7744 00000000 00000000 0x5df54896          
+0x0018f204 5df1c926 06ff7744 00000000 00000001 00000001 0x5df0b73d          
+0x0018f23c 5df1ace8 06ff83e8 07014aec 00000000 0044faf8 0x5df1c926          
+0x0018f264 5df1e7be 07001854 00000000 0700152c 0044faf8 0x5df1ace8          
+0x0018f2a4 5df1df4f 0700152c 07007ea4 07007fa4 0044faf8 0x5df1e7be          
+0x0018f2d4 5df1d8fd 06ff83e8 07007fa4 07007fa4 0044faf8 0x5df1df4f          
+0x0018f2fc 5df1cb3a 06ff83e8 07007fa4 00000000 0044faf8 0x5df1d8fd          
+0x0018f34c 5defa297 00000000 00455578 0018f384 00000000 0x5df1cb3a          
+0x0018f3b4 5def9cc6 00457860 004469fc 00000000 00000001 0x5defa297          
+0x0018f4d0 5def2e15 00000000 00446bbc 00000036 00446e3c 0x5def9cc6          
+0x0018fd30 5def19e9 00000014 00000000 00000002 02b10be0 0x5def2e15          
+0x0018fd54 5def18be 02b02a50 00000000 00000000 00000002 0x5def19e9          
+0x0018fd74 100088f2 02b02a50 00000000 00000000 00000002 0x5def18be          
+0x0018fdc4 1000a26f 02b018ec 00403010 00000000 00000002 0x100088f2          
+------------------- End of Stack Trace -------------------
+
+

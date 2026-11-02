@@ -1,0 +1,151 @@
+-------------------------------------------------------
+Fichier LisezMoi de Extensions serveur MICROSOFT FrontPage 2000
+                     Juin 1999
+ (c) Microsoft Corporation, 1999. Tous droits réservés.
+-------------------------------------------------------
+
+Ce document fournit des informations supplémentaires ou de dernière minute concernant les Extensions serveur FrontPage 2000. Après la date indiquée en haut du document, vous trouverez d'autres informations et ressources dans la section intitulée « Ressources pour obtenir des informations complémentaires » de ce document. Vous trouverez des informations supplémentaires, notamment concernant des problèmes liés au réseau ou à l'administration sur le site Web du Kit de ressources Office à l'adresse suivante : http://www.microsoft.com/office/ork/ (informations en anglais)
+
+----------------------------
+Comment utiliser ce document
+----------------------------
+Pour afficher le fichier LisezMoi à l'écran dans le Bloc-Notes de Windows, 
+agrandissez la fenêtre du Bloc-Notes. Dans le menu Edition, cliquez sur Retour à la ligne
+automatique. Pour imprimer le fichier LisezMoi, ouvrez-le dans le Bloc-Notes ou dans un 
+autre traitement de texte et utilisez la commande Imprimer dans le menu Fichier.
+
+_______________________________________________________    
+SOMMAIRE
+
+INSTALLATION DES EXTENSIONS SERVEUR MICROSOFT FRONTPAGE 2000
+* Désactiver la protection anti-virus
+* Exécuter l'installation en mode silencieux
+* Pas d'installation en mode autonome des Extensions serveur FrontPage 
+  disponible pour Windows Terminal Server
+
+TRAVAILLER AVEC LES EXTENSIONS SERVEUR MICROSOFT FRONTPAGE 2000
+* Configurer les autorisations pour l'accès de visite
+* Télécharger des fichiers dans les dossiers exécutables
+* Installer MDAC 2.1 pour prendre en charge l'intégration de la base
+  de données FrontPage
+* Configurer un compte invité pour établir une connexion
+  vers SQL Server après l'installation avec IIS3 et NT 4.0
+
+AIDE DES EXTENSIONS SERVEUR MICROSOFT FRONTPAGE 2000
+* Installation de l'aide de Microsoft Management Console pour les
+  Extensions serveur autonomes FrontPage
+
+RESSOURCES OBTENIR DES INFORMATIONS COMPLÉMENTAIRES
+* Kit de ressources des extensions serveur
+* Mise à jour du Kit de ressources des extensions serveur
+* Base de connaissances Microsoft
+
+_________________________________________________________
+INSTALLATION DES EXTENSIONS SERVEUR MICROSOFT FRONTPAGE 2000
+
+Désactiver la protection anti-virus
+---------------------------------------------------------
+Certains programmes de protection anti-virus peuvent entrer en
+conflit avec le programme d'installation des Extensions serveur 
+Microsoft FrontPage 2000. Si vous disposez d'un programme de 
+protection anti-virus sur votre ordinateur, désactivez-le avant
+de lancer l'installation. Vous pouvez réactiver le programme de 
+protection anti-virus lorsque l'installation est terminée.
+
+
+Remarque -- Si votre programme de détection anti-virus démarre
+automatiquement lorsque vous lancez Windows, vous pourrez le 
+désactiver en redémarrant Windows et en maintenant la touche MAJ
+enfoncée. Pour obtenir des informations complémentaires, consultez
+la documentation de votre programme de protection anti-virus.
+
+Lancer l'installation en mode silencieux
+---------------------------------------------------------
+Vous pouvez installer les Extensions serveur FrontPage en tapant dans la ligne de commande :
+
+servext.exe
+
+L'ajout de l'argument /q ne permet pas au programme d'installation d'être exécuté en mode silencieux (aucune interaction avec l'utilisateur). Pour lancer l'installation des Extensions serveur FrontPage en mode silencieux, tapez dans la ligne de commande :
+
+setup /i fpse.msi /q
+
+Pas d'installation en mode autonome des Extensions serveur FrontPage disponible pour Windows Terminal Server
+---------------------------------------------------------
+Vous ne pouvez pas installer les Extensions serveur FrontPage sur un ordinateur 
+Windows Terminal Server à partir d'un programme d'installation autonome. Au lieu de cela, vous devez installer FrontPage 2000, ce qui inclut les Extensions serveur FrontPage.
+
+Si vous ne voulez pas installer FrontPage sur votre ordinateur serveur Web, vous pouvez télécharger une version mise à jour des Extensions serveur FrontPage prenant en charge l'installation sur Windows Terminal Server lorsque cette mise à jour est disponible. 
+Vous pouvez télécharger la mise à jour sur le site Web à l'adresse suivante : 
+http://officeupdate.microsoft.com/frontpage (informations en anglais)
+
+_________________________________________________________
+TRAVAILLER AVEC LES EXTENSIONS SERVEUR MICROSOFT FRONTPAGE 2000
+
+Configurer des autorisations pour l'accès de visite
+---------------------------------------------------------
+Sur un serveur Internet Information Services Web avec une partition NTFS, 
+le groupe Tous les utilisateurs a un accès complet par défaut. Cependant, lorsque vous installez les Extensions serveur FrontPage, FrontPage détecte que le groupe Tous les utilisateurs a un accès complet au contenu du dossier et ajoute le groupe Tous les utilisateurs, avec ses autorisations au site Web FrontPage étendu. Au même moment, FrontPage réduit les autorisations du groupe Tous les utilisateurs à l'accès de visite. Même si le groupe Tous les utilisateurs est réduit à un accès de visite, il n'est cependant pas recommandé de configurer les autorisations initiales de cette manière.
+
+>>>Pour réinitialiser les autorisations pour permettre à tout utilisateur de parcourir votre site et de configurer les autorisations sur votre site Web étendu FrontPage :
+
+1. Dans FrontPage, dans le menu Outils, cliquez sur Sécurité puis sur Autorisations ; dans l'onglet Groupes, sélectionnez le groupe Tous les utilisateurs puis cliquez sur Supprimer.
+
+2. Cliquez sur Appliquer puis sur OK.
+
+3. Dans le menu Outils, cliquez sur Sécurité puis sur Autorisations ; dans l'onglet Utilisateurs, cliquez sur l'option « Tous les utilisateurs ont un accès de visite ».
+
+Remarque -- Vous pouvez également ajouter d'autres utilisateurs ou groupes avec des autorisations auteur ou administrateur à votre site Web.
+
+Télécharger des fichiers dans les dossiers exécutables
+---------------------------------------------------------
+Lorsque la mise à niveau à FrontPage 2000 est effectuée, les auteurs FrontPage ne sont plus en mesure de télécharger des fichiers dans les dossiers exécutables. Pour des raisons de sécurité, le paramètre par défaut sur les sites Web FrontPage 20000 ne permet pas aux auteurs de télécharger des fichiers exécutables dans les dossiers exécutables dans un site Web FrontPage étendu. Ce paramètre protège les serveurs de manière à ce que les auteurs ne téléchargent pas par inadvertance un programme contenant un bogue ou un virus.
+
+Cette restriction ne s'applique pas aux serveurs Web sous Windows 95 ou Windows 98. Sur IIS 3.0 et Peer Web Services, cette restriction limite la capacité des utilisateurs finaux à créer un dossier exécutable ou dont il est possible de modifier le script, et les pages ASP ne fonctionnent pas.
+
+Si vous avez un serveur Web IIS 4.0 ou 5.0, utilisez le composant logiciel enfichable Internet Service Manager MMC pour permettre aux auteurs FrontPage de télécharger des fichiers exécutables. Pour tous les autres serveurs Web sur Windows NT, utilisez l'administrateur des Extensions serveur pour créer ce paramètre.
+
+Installer MDAC 2.1 pour prendre en charge l'intégration de la base de données FrontPage 
+---------------------------------------------------------
+L'installation du client FrontPage 2000 sur le serveur Web permet d'installer tous les pilotes de base de données requis pour prendre en charge l'intégration de base de données FrontPage. Cependant, si vous choisissez de ne pas installer le client FrontPage sur le serveur Web, vous pouvez installer les pilotes nécessaires séparément.
+
+Les composants Microsoft Data Access nécessaires (MDAC 2.1) sont prévus pour être disponibles au moment où Office 2000 l'est également. Pour obtenir plus d'informations sur la disponibilité de  MDAC 2.1 et à quel endroit le télécharger, reportez-vous à l'adresse suivante :
+http://www.microsoft.com/data/21info.htm (informations en anglais)
+
+Configurer un compte invité pour établir une connexion vers un serveur SQL après une installation avec IIS3 et NT 4.0
+---------------------------------------------------------
+Lorsque vous utilisez Microsoft SQL Server avec une sécurité intégrée ou mixte sur un ordinateur équipé de Microsoft Internet Information Server, il peut être nécessaire d'accéder à SQL 
+Server à partir d'un compte invité. Vous pouvez configurer un compte invité pour travailler sur les problèmes de connexion d'un ordinateur IIS à SQL Server sur un ordinateur séparé via une connexion sécurisée. Pour obtenir plus d'informations, reportez-vous à la Base de connaissances Microsoft à l'adresse suivante :
+http://www.microsoft.com/france/support/ et consultez les articles Q176380 et Q176377.
+
+_________________________________________________________
+AIDE DES EXTENSIONS SERVEUR MICROSOFT FRONTPAGE 2000
+
+Exécuter l'aide Microsoft Management Console pour les Extensions serveur FrontPage autonomes
+---------------------------------------------------------
+L'aide en ligne des Extensions serveur FrontPage repose sur des fichiers fournis par Internet Explorer 5. Si vous installez les Extensions serveur FrontPage comme partie d'une installation de Office 2000, Office propose les fichiers nécessaires pour lancer l'aide, mais si vous installez les Extensions serveur à partir d'un programme autonome, ces fichiers ne sont pas disponibles.
+
+Pour lancer l'aide en ligne des Extensions serveur FrontPage, vous devez installer Internet Explorer 5 ou Office 2000. D'une autre manière, pour obtenir des informations concernant l'administration des sites Web FrontPage étendus--y compris en utilisant le composant logiciel enfichable MMC pour les Extensions serveur Frontpage--consultez le Kit de ressources des Extensions serveur FrontPage à l'adresse suivante :
+
+http://officeupdate.microsoft.com/frontpage/wpp/serk/ (informations en anglais)
+
+_________________________________________________________
+RESSOURCES POUR OBTENIR DES INFORMATIONS COMPLÉMENTAIRES
+
+Kit de ressources des extensions serveur
+---------------------------------------------------------
+Les Extensions serveur FrontPage 2000 comprennent une documentation complète : le Kit de ressources des extensions serveur. 
+Ce document HTML est installé sur le serveur (par défaut) dans \Program Files\Common Files\Microsoft Shared\Web Server Extensions\40\Serk\1033. Pour afficher le Kit de ressources des extensions serveur, ouvrez \Program Files\Common Files\Microsoft Shared\Web Server 
+Extensions\40\Serk\1033\Default.htm dans votre navigateur Web.
+
+Le Kit de ressources des extensions serveur contient des informations détaillées sur l'installation et l'administration des Extensions serveur FrontPage ainsi qu'une présentation des Extensions serveur, une explication sur la sécurité des Extensions serveur sous UNIX et Windows, des informations concernant le dépannage et de nombreuses annexes.
+
+Mise à jour du Kit de ressources des extensions serveur
+---------------------------------------------------------
+Pour obtenir des informations récentes concernant l'installation, la configuration et l'administration des Extensions serveur FrontPage, consultez la mise à jour du Kit de ressources des extensions serveur, dans la Mise à jour Office à l'adresse suivante : 
+http://officeupdate.microsoft.com/frontpage/wpp/serk/ (informations en anglais)
+
+Base de connaissances Microsoft
+---------------------------------------------------------
+Pour obtenir des informations techniques complémentaires sur FrontPage, consultez le support en ligne. Utilisez le support en ligne pour accéder facilement aux ressources du support technique Microsoft comprenant des articles techniques extraits de la Base de connaissances étendue Microsoft, les forums aux questions et les dépanneurs pour trouver des réponses rapides et efficaces. Vous pouvez également personnaliser le site pour contrôler votre recherche en utilisant des mots-clés ou le moteur de recherche en langage naturel qui vous permet de rédiger vos questions dans un langage courant. Pour commencer, reportez-vous à l'adresse suivante : 
+http://www.microsoft.com/france/support/
+

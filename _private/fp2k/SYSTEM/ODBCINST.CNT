@@ -1,0 +1,10 @@
+:Base odbcinst.hlp
+:Title Aide ODBC
+:Index Aide ODBC=odbcinst.hlp
+1 DSN utilisateur, onglet=User_DSN_Tab>ref
+1 DSN système, onglet=System_DSN_Tab>ref
+1 DSN fichier, onglet=File_DSN_Tab>ref
+1 Pilotes ODBC, onglet=ODBC_Drivers_Tab>ref
+1 Pas à pas, onglet=Tracing_Tab>ref
+1 Connexion multiple, onglet=Connection_Pooling_Tab>ref
+1 À propos, onglet=About_Tab>ref

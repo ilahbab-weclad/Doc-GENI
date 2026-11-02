@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Présentation du contrôle de source des extensions serveur</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+<!--MICROSOFT TOOLBAR STARTS HERE-->
+	<TR>
+		<TD BGCOLOR="#000000">
+		<IMG SRC="home.gif" WIDTH=103 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH=100%>
+		<IMG SRC="1ptrans.gif" WIDTH=1 HEIGHT=1 ALT="" BORDER=0></TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+		<FONT FACE="Arial, Helvetica" SIZE=1>
+		<A HREF="/" TARGET="_top">
+		<IMG SRC="msft.gif" WIDTH=91 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+	
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+	
+	<!--WEB SITE TITLE AND LOGO STARTS-->
+
+	<TR>
+		<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+	    <TD width="20" nowrap></TD>
+    	<TD colspan="2" nowrap bgcolor="#666699" valign="center" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+	
+		<!--WEB SITE TITLE AND LOGO ENDS-->
+
+		<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
+	
+
+    	<TD rowspan="21" width="460"><a name="top"></a><p><font color="#666699"><b><font size="+1">Tâches administratives avancées</font></b></font>
+
+<HR>
+
+		<H3><span class=FR><SUP><A NAME="overviewserverextensionssourcecontrol"></A></SUP></span>Présentation du contrôle de source des extensions serveur </H3>
+
+		<p><A NAME="advss.doc-1005"></A>Les extensions serveur Microsoft&#174; FrontPage&#174; offrent un contrôle de source intégré et le contrôle de source Microsoft&#174; Visual SourceSafe&#153; (VSS). Elles fonctionnent avec une version&nbsp;5.0 ou ultérieure de Visual SourceSafe. Lorsque l'une ou l'autre méthode de contrôle de source est activée, les auteurs peuvent utiliser des commandes de FrontPage pour contrôler les pages et autres fichiers à l'intérieur et à l'extérieur d'un site Web FrontPage étendu. Lorsque le contrôle Visual SourceSafe est activé, les auteurs bénéficient de fonctionnalités avancées comme le suivi et la consignation des modifications de chaque fichier, la consultation de l'historique d'un fichier et le retour à des versions antérieures d'un fichier.</P>
+
+		<p>Quel que soit le contrôle de source activé, les extensions serveur  FrontPage effectuent des extractions et des archivages en arrière-plan une fois certaines opérations effectuées dans FrontPage. À titre d'exemple, quand un thème est appliqué à un site dont le contrôle de source est activé, chaque page inutilisée est extraite en arrière-plan, le nouveau thème est appliqué et la page est archivée. En procédant ainsi, les extensions serveur FrontPage protègent la cohérence d'un site et permettent d'éviter qu'il ne contienne des erreurs telles que des liens hypertexte rompus.</P>
+
+		<p><A NAME="advss.doc-1007"></A>Le tableau suivant illustre comment les extensions serveur FrontPage implémentent le contrôle de source pour des opérations courantes, sur page ou sur site&nbsp;: <p class=4>&nbsp;</p>
+	
+	    <table cellspacing="0" cellpadding="4" border="1" rules="rows" frame="void">
+			<tr>
+			    <th>Lorsqu'un auteur…</th>
+			    <th>Les extensions serveur…</th>
+			    <th>Sauf si</th>
+			</tr>
+
+			<tr>
+			    <td>Édite et enregistre une page qui n'a pas été extraite</td>
+			    <td>Extraient la page, la mettent à jour, et la réincorporent dans le site et dans le projet VSS (si le contrôle VSS est activé).</td>
+			    <td></td>
+			</tr>
+						
+			<tr>
+			    <td>Déplace un fichier</td>
+			    <td>Déplacent le fichier dans le site et dans le projet VSS (si le contrôle VSS est activé). Elles extraient ensuite chaque page du site contenant un lien hypertexte au fichier déplacé, mettent à jour tous les liens hypertexte à ce fichier et réarchivent chaque page.</td>
+			    <td>Une page contenant un lien hypertexte au fichier déplacé est extraite. Dans ce cas FrontPage ne permet pas à l'auteur de déplacer le fichier.</td>
+			</tr>
+
+			<tr>
+			    <td>Renomme un fichier</td>
+			    <td>Renomment le fichier dans le site et dans le projet VSS  (si le contrôle VSS est activé). Elles invitent ensuite l'auteur à extraire chaque page du site contenant un lien hypertexte au fichier déplacé, à mettre à jour tous les liens hypertexte à ce fichier et à réarchiver chaque page. </td>
+			    <td>Une page contenant un lien hypertexte au fichier renommé est déjà extraite. Dans ce cas, FrontPage ne permet pas à l'auteur de renommer le fichier.</td>
+			</tr>
+			
+			<tr>
+			    <td>Supprime un fichier</td>
+			    <td>Suppriment le fichier dans le site et dans le projet VSS (si le contrôle VSS est activé).</td>
+			    <td>Le fichier est extrait. Dans ce cas, FrontPage ne permet pas à un auteur de supprimer le fichier.</td>
+			</tr>
+
+			<tr>
+			    <td>Importe un fichier</td>
+			    <td>Archivent le fichier dans le site et dans le projet VSS (si le fichier est nouveau, le contrôle VSS est activé). Si le fichier existe déjà dans le site, les extensions serveur l'extraient, le mettent à jour et le réarchivent dans le site et dans le projet de contrôle VSS.  </td>
+			    <td></td>
+			</tr>
+		
+			<tr>
+			    <td>Crée une page</td>
+			    <td>Archivent la page dans le site et dans le projet VSS (si le contrôle VSS est activé).</td>
+			    <td></td>
+			</tr>
+
+			<tr>
+			    <td>Édite et enregistre une page ou un graphisme inclus dans d'autres pages</td>
+			    <td>Tentent d'extraire toutes les pages du site comprenant la page ou le graphisme, mettent à jour toutes les pages et réarchivent chaque page dans le site et dans le projet VSS (si le contrôle VSS est activé). </td>
+			    <td>Une page contenant la page ou le graphique est déjà extraite. Dans ce cas, FrontPage ne procède pas à la mise à jour de la page. Pour mettre à jour toutes les pages, faites en sorte que tous les auteurs archivent toutes les pages, puis utilisez la commande <B><span class=L>Recalculer les</span> liens hypertexte</B>.</td>
+			</tr>
+
+			<tr>
+			    <td>Applique un thème à un site</td>
+			    <td>Tentent d'extraire toute page du site Web qui utilise le thème par défaut du site, mettent à jour toutes les pages et les réarchivent dans le projet VSS (si le contrôle VSS est activé).</td>
+			    <td>Une page qui utilise le thème par défaut est déjà extraite. Dans ce cas, FrontPage n'applique pas le thème à la page. Pour mettre à jour toutes les pages, faites en sorte que tous les auteurs les réarchivent, puis réappliquez le thème au site.</td>
+			</tr>
+
+			<tr>
+			    <td>Édite et enregistre une bordure partagée</td>
+			    <td>Tentent d'extraire chaque page du site contenant la bordure partagée, mettent à jour toutes les pages et les réarchivent dans le site et dans le projet VSS (si le contrôle VSS est activé).</td>
+			    <td>Une page utilisant une bordure partagée est déjà extraite. Dans ce cas, FrontPage ne procède pas à la mise à jour de la bordure partagée. Pour mettre à jour toutes les pages, faites en sorte que tous les auteurs les réarchivent, puis supprimez et réappliquez les bordures partagées au site avec la commande <B><span class=L>Bordures</span> partagées</B>.</td>
+			</tr>
+		</table>
+
+<P class=6>&nbsp;</P></TD>
+
+	<!--TOPIC TITLE AND BODY TEXT CELL ENDS-->
+	
+	<!--FAR-RIGHT COLUMN SECTION ART CELL STARTS-->
+
+    <TD rowspan="15"><img SRC="admart.gif" align="top" alt="Illustration de la section Administration"></TD>
+
+	<!--FAR-RIGHT COLUMN SECTION ART CELL ENDS-->
+	
+	</TR>
+	
+	<!--LEFT-NAVIGATION MENU STARTS-->
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="scintro.htm"><font color="#000000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink"><div class="table"><font color="#990000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adoview.htm"><font color="#000000">&nbsp;&nbsp;Outils et techniques &nbsp;&nbsp;d'administration</font></A></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adfpsr.htm"><font color="#000000">&nbsp;&nbsp;Fpsvradm</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="admmc.htm"><font color="#000000">&nbsp;&nbsp;Composant logiciel &nbsp;&nbsp;enfichable MMC</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adhtm.htm"><font color="#000000">&nbsp;&nbsp;Formulaires &nbsp;&nbsp;d'administration &nbsp;&nbsp;HTML</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adfpre.htm"><font color="#000000">&nbsp;&nbsp;Administration à &nbsp;&nbsp;distance</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Tâches &nbsp;&nbsp;administratives<BR>&nbsp;&nbsp;avancées</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<!--LAST ROW STARTS-->
+
+	<TR>
+    <TD height="1400" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_BEGIN-->
+
+
+<TABLE cellspacing="0" cellpadding="0" border=0>
+
+	<TR>
+    <TD width="170" valign="top">&nbsp;</TD>
+    <TD width="237" valign="top"><A HREF="adadv.htm"><img src="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></font></a></TD>
+    <TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img src="top.gif" border="0"></a></TD>
+    </TR>
+
+	<TR>
+    <TD width="170" valign="top">&nbsp;</TD>
+    <TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+
+	<TR>
+    <TD width="170" valign="top">&nbsp;</TD>
+    <TD colspan="2" width="475" valign="top">Dernière mise à jour&nbsp;:novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+  	</TR>
+
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

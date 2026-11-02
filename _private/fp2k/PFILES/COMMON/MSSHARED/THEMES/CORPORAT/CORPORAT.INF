@@ -1,0 +1,22 @@
+[info]
+title=Corporate
+codepage=65001
+version=2.00
+format=2.00
+readonly=true
+
+[titles]
+1031 = Professionell
+1036 = Sobre
+1040 = Squadrato
+3082 = Corporativo
+1043 = Kantoor
+1046 = Empresarial
+1053 = Företag
+1044 = Firma
+1030 = Kontor
+1035 = Yritys
+1041 = チャコール グレー
+1042 = 회색 벽
+1028 = 團體
+2052 = 社团

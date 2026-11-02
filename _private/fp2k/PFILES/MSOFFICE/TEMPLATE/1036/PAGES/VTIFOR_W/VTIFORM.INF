@@ -1,0 +1,15 @@
+; Localized	03/03/1999 11:12  (GMT)	7:4.1.211 	vtiform.inp
+
+[info]
+title=Assistant Création de formulaire
+exename.mac=Assistant Création de formulaire
+description=Crée une page de formulaire en spécifiant les divers types d'informations que vous avez besoin de recueillir.
+exename=vtiform.exe
+[settings]
+AddressOrder=12zcy
+Addr1Width=35
+Addr2Width=35
+CityWidth=35
+StateWidth=35
+ZipWidth=12
+CountryWidth=25

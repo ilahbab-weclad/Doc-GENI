@@ -1,0 +1,55 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<meta name="Microsoft Theme" content="<%Theme%>">
+<meta name="Microsoft Border" content="<%Border%>">
+<title><%ProductsPageTitle%></title>
+</head>
+
+<body>
+
+<%if NumProducts GT 0%>
+
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText"
+preview="Insérez ici une présentation générale de vos produits. Ajoutez des produits à la liste ci-dessous dans l'ordre qui vous semble le plus approprié, et créez-y des liens hypertexte vers leurs pages individuelles." --></p>
+
+<!-- LOCALIZE the text in this definition list -->
+<dl>
+<%if NumProducts GT 0%>
+    <dt><strong><a href="<%Prod1Url%>">Nom du produit 1</a></strong> </dt>
+    <dd> <p> Description du produit 1...</p>
+        <p> </p>
+    </dd>
+<%endif%>
+<%if NumProducts GT 1%>
+    <dt><strong><a href="<%Prod2Url%>">Nom du produit 2</a></strong> </dt>
+    <dd> <p> Description du produit 2...</p>
+        <p> </p>
+    </dd>
+<%endif%>
+<%if NumProducts GT 2%> 
+    <dt><strong><a href="<%Prod3Url%>">Nom du produit 3</a></strong> </dt>
+    <dd> <p> Description du produit 3...</p>
+        <p> </p>
+    </dd>
+<%endif%>
+<%if NumProducts GT 3%>
+    <dt><strong><a href="<%Prod4Url%>">Nom du produit 4</a></strong> </dt>
+    <dd> <p> Description du produit 4...</p>
+        <p> </p>
+    </dd>
+<%endif%>
+<%if NumProducts GT 4%>
+    <dt><strong><a href="<%Prod5Url%>">Nom du produit 5</a></strong> </dt>
+    <dd> <p> Description du produit 5...</p>
+        <p> </p>
+    </dd>
+<%endif%>
+</dl>
+<%endif%>
+
+</body>
+</html>

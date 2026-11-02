@@ -1,0 +1,31 @@
+; Localized	03/02/1999 04:46  (GMT)	7:4.1.211 	custsupp.inp
+[info]
+title=Site Web d'assistance à la clientèle
+description=Crée un site Web pour améliorer votre support client, conçu sur le modèle d'une société développant des logiciels.
+structure=custsupp.map
+theme=expeditn 001
+border=tlb
+[FileList]
+buglist.htm=
+bugrep.htm=
+cusuaftr.htm=
+cusuahdr.htm=
+cusucfrm.htm=
+cusufoot.htm=
+cusuhead.htm=
+cusupost.htm=
+cususrch.htm=
+cusutoc.htm=
+discuss.htm=
+download.htm=
+faq.htm=
+feedback.htm=
+footer.htm=_borders/bottom.htm
+header.htm=_borders/top.htm
+images\scrnshot.gif=images/scrnshot.gif
+images\undercon.gif=images/undercon.gif
+index.htm=
+search.htm=
+suggest.htm=
+tn001.htm=
+whatsnew.htm=

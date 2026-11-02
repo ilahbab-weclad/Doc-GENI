@@ -1,0 +1,31 @@
+:Base nwind9.hlp>Ref
+:Title Microsoft Access 2000
+:Index Northwind Traders =nwind9.hlp
+1 Présentation des Comptoirs=OverviewOfNorthwind@nwind9.hlp>Right
+1 Tables
+2 Tables des Comptoirs=TablesInNorthwind@nwind9.hlp>Right
+1 Requêtes
+2 Requêtes des Comptoirs=QueriesInNorthwind>Right
+2 Requêtes Union et Analyse croisée=UnionAndCrosstabQueries>Right
+2 Requêtes qui utilisent des critères ou des propriétés pour limiter la quantité d'enreg...=QueriesThatUseCriteria>Right
+2 Requêtes des Comptoirs=QueriesInNorthwind>Right
+1 Formulaires
+2 Formulaires des Comptoirs=FormsInNorthwind>Right
+2 Formulaire Liste téléphonique des clients=CustomerPhoneListForm>Right
+2 Formulaires Employés et Employés (saut de page)=EmployeesForm>Right
+2 Formulaire Commandes et Sous-formulaire commandes=OrdersForm@nwind9.hlp>Right
+2 Formulaires Fournisseurs, Produits et liste des produits=SuppliersForm@nwind9.hlp>Right
+2 Formulaires Dialogue étiquettes clients, Dialogue états ventes et Menu général=SalesReportsDialogForm@nwind9.hlp>Right
+1 États
+2 États des Comptoirs=ReportsInNorthwind@nwind9.hlp>Right
+2 État Catalogue=CatalogReport@nwind9.hlp>Right
+2 État Ventes par représentant par pays=EmployeeSalesByCountryReport@nwind9.hlp>Right
+2 État produits par catégorie=ProductsByCategory>Right
+2 États Ventes par catégorie et Sous-état ventes par catégorie=SalesByCategoryReport@nwind9.hlp>Right
+1 Pages d'accès aux données
+2 Pages d’accès aux données des Comptoirs=acconDataAccessPagesInNorthwind>Right
+2 Page d’accès aux données Analyse des ventes=acrefAnalyzeSalesDataAccessPage>Right
+2 Page d’accès aux données Révision des commandes=acrefReviewOrdersDataAccessPage>Right
+2 Page d’accès aux données Révision des produits=acrefReviewProductsDataAccessPage>Right
+2 Page d’accès aux données Ventes=acrefSalesProjectionsDataAccessPage>Right
+2 Page d’accès aux données Affichage des produits=acrefViewProductsDataAccessPage>Right

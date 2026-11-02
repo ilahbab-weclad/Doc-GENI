@@ -1,0 +1,9 @@
+WEB
+1
+http://investor.msn.com/external/excel/quotes.asp?symbol=$indu,comp,sp,x,oex,$tran,rut,sox,iix,$util
+
+Selection=EntirePage
+Formatting=All
+PreFormattedTextToColumns=True
+ConsecutiveDelimitersAsOne=True
+SingleBlockTextImport=False

@@ -1,0 +1,57 @@
+; Localized	03/24/1999 04:01  (GMT)	7:4.1.211 	MSFSMENU.ECF
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={EA1F5312-EDFD-11ce-8D13-00AA0051BF96}
+Path="msfs32.dll"
+Entry Point=1
+Client Version=4.0
+Extension Version=1.0
+Service Provider=MSFS
+Misc Flags=RemoteAlso;DelayIdleInstall;WarnIfNoDLL;DllFromDarwin
+
+[Exchange Client Compatibility]
+Exchange Registry=0
+Exchange Extension Key="MSFS Menu Extensions"
+
+; Exchange Context Map is *VIEWER, ADDRBOOK, *MESSAGE
+Exchange Context Map=01111111111
+
+; Exchange Interface Map is IExchExtCommands.
+Exchange Interface Map=1
+
+[Folder]
+Events=OnExtCommand
+Command Bars=50001
+Commands=SMSMailHelpTopics;SMSMailTools;SChangePassword;SDownloadAddressLists;SScheduleRemoteMailDelivery;SSetDialingLocation;SViewSessionLog
+Outlook Commands=HelpMSMail;ToolsMSMailTools;MSMailChangePassword;MSMailDownloadAL;MSMailRemoteDelivery;MSMailSetDialogLocation;MSMailViewSessionLog
+Extension Outlook Commands=50000;50001;50011;50012;50013;50015;50014
+
+[Item]
+Message Class=IPM.Note;IPM.Post;IPM.Resend;REPORT
+Events=OnExtCommand
+Commands=SMSMailHelpTopics
+Outlook Commands=HelpMSMail
+Extension Outlook Commands=50000
+
+[Command]
+SMSMailTools=50001;#6;Tools Before ToolsServices Submenu Suppress
+SMSMailHelpTopics=50000;#7;Help After HelpHelp Suppress Enabled
+SChangePassword=50011;#2;50001 Suppress
+SDownloadAddressLists=50012;#3;50001 Suppress
+SScheduleRemoteMailDelivery=50013;#4;50001 Suppress
+SViewSessionLog=50014;#5;50001 Suppress
+SSetDialingLocation=50015;#30;50001 Suppress
+
+[Strings]
+DisplayName = Extensions de menu MSFS
+Description = Extensions de menu MSMail 3.x
+
+; STR 7 - MSMailHelpTopics=Microsoft Mail H&elp Topics
+; STR 6 - MSMailTools=Microsoft &Mail Tools
+; STR 2 - ChangePassword=&Change Mailbox Password...
+; STR 3 - DownloadAddressLists=&Download Address Lists
+; STR 4 - ScheduleRemoteMailDelivery=&Schedule Remote Mail Delivery...
+; STR 30 - SetDialingLocation=Set Dialing &Location...
+; STR 5 - ViewSessionLog=&View Session Log
+

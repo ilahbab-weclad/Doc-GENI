@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Configuration d'autorisations mixtes sur le contenu</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+	<TR>
+		<TD BGCOLOR="#000000"><IMG SRC="home.gif" WIDTH=103 HEIGHT=21
+ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH="100%"><IMG 
+SRC="1ptrans.gif" WIDTH=1 
+HEIGHT=1 ALT="" BORDER=0></TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+<FONT FACE="Arial, Helvetica" SIZE=1><A HREF="http://www.microsoft.com/france" TARGET="_top"><IMG 
+SRC="msft.gif" WIDTH=91 
+HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+	
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+	
+	<!--WEB SITE TITLE AND LOGO START-->
+
+	<TR>
+		<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD colspan="2" nowrap bgcolor="#666699" valign="middle" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+		
+		<!--WEB SITE TITLE AND LOGO END-->
+		
+		<!--TOPIC TITLE AND BODY TEXT START-->
+		
+		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous Windows&nbsp;NT</font></b></font>
+
+<HR>
+
+			<A NAME="settingmixedpermissionsoncontent"></A><P><A HREF="scwin_5.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;6 sur 9&nbsp;</sup></b></font><A HREF="scwin_7.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;Configuration d'autorisations mixtes sur le contenu</FONT>  <p><A NAME="scwinnt.doc-1063"></A>Dans FrontPage, les autorisations sur le contenu d'un site Web FrontPage étendu s'appliquent à la totalité du site. Tous les auteurs du site ont accès à l'ensemble des pages du site, et les visiteurs peuvent parcourir toutes les pages. Il est souvent nécessaire de diviser le contenu sur un serveur de sorte que des groupes d'utilisateurs différents disposent des autorisations pour administrer, créer ou visiter différentes zones du contenu.</p>
+
+			<p>Cette rubrique décrit deux mécanismes de configuration d'autorisations variées sur le contenu. Une des méthodes consiste à diviser le contenu en autant de sous-sites Web FrontPage qu'il y a de groupes d'auteurs, d'administrateurs ou de visiteurs. L'autre vous permet de configurer des autorisations plus précises sur le contenu d'un site Web FrontPage étendu, mais sans passer par les outils standard de configuration d'autorisations de FrontPage. </p>
+
+			<H4>Utilisation des sous-sites Web pour configurer des autorisations mixtes</H4>
+
+			<p><A NAME="scwinnt.doc-1065"></A>Un sous-site Web FrontPage étendu est un site Web FrontPage étendu complet constituant un sous-répertoire du site Web racine ou d'un autre sous-site Web. Il est recommandé d'utiliser les sous-sites Web pour autoriser divers groupes d'administrateurs, d'auteurs et de visiteurs à accéder à différentes zones de contenu d'un serveur virtuel. Avec les sous-sites Web, la sécurité est automatiquement plus fine, puisque chaque sous-site Web gère ses propres paramètres de sécurité. Dans les précédentes versions de FrontPage, les sous-sites Web devaient impérativement être créés sous le site Web racine. Dans FrontPage&nbsp;2000, ils peuvent l'être à tout niveau de votre structure de contenu, même sous un autre sous-site Web.</p>
+
+
+			<H4>Gestion manuelle des autorisations</H4>
+
+			<p><A NAME="scwinnt.doc-1066"></A>Vous pouvez ne pas utiliser la gestion de la sécurité standard de FrontPage et configurer manuellement les autorisations sur le contenu d'un site Web FrontPage étendu. Cela vous permet de configurer des autorisations distinctes pour chaque dossier ou fichier, et donc de mieux maîtriser les autorisations sur le contenu d'un site Web, mais vous devez alors gérer vous-même les ACL. Cette technique complexe doit être appliquée avec soin pour éviter d'affaiblir la sécurité sur le contenu du serveur.</p>
+
+			<p><A NAME="scwinnt.doc-1067"></A>Pour configurer manuellement les autorisations sur un site Web FrontPage étendu, ouvrez la console MMC et utilisez la commande <B>Propriétés</B> sur le site Web. Dans l'onglet <B>Publication</B>, désélectionnez l'option <B>Gérer les autorisations manuellement</B>.</p>
+
+			<p>Quand vous gérez manuellement les autorisations sur un site Web FrontPage étendu, vous devez modifier les ACL dans le dossier de niveau supérieur du site Web. Vous devez au moins accorder aux administrateurs les autorisations de lecture, d'écriture et de modification des autorisations sur le dossier de niveau supérieur d'un site ou sous-site Web FrontPage étendu.</p>
+
+			<p>Pour vous faciliter la tâche, l'Assistant Configuration d'extensions serveur crée trois groupes d'ordinateurs locaux vides quand vous créez un site Web FrontPage étendu. Ces groupes s'appellent «&nbsp;<I>nomsiteweb</I> Admins&nbsp;», «&nbsp;<I>nomsiteweb</I> Authors&nbsp;» et «&nbsp;<I>nomsiteweb</I> Browsers&nbsp;». Il est pratique de les utiliser dans les ACL et de les gérer avec le gestionnaire d'utilisateurs Windows&nbsp;NT. </p>
+		</TD>
+		
+		<!--TOPIC TITLE AND BODY TEXT END-->
+		
+		<!--FAR-RIGHT COLUMN SECTION ART START-->
+	
+		<TD rowspan="20" nowrap><!--Third-column art-->
+			<img SRC="secart.gif" align="center" alt="Image de la section Sécurité">
+		</TD>
+		
+		<!--FAR-RIGHT COLUMN SECTION ART END-->
+		
+	</TR>
+	
+	<!--LEFT-NAVIGATION MENU START-->
+
+	<TR>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" href="scintro.htm"><font color="#000000">&nbsp;&nbsp;Introduction</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous <br>&nbsp;&nbsp;Windows&nbsp;NT</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" HREF="scuni.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="adoview.htm"><font color="#000000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+	<!--LAST ROW START-->
+	
+	<TR>
+    	<TD height="650" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+		
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_BEGIN-->
+<BR>
+
+<TABLE cellspacing="0" cellpadding="0" border=0>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD width="237" valign="top"><A HREF="scwin_5.htm"><img SRC="previous.gif" vspace="1" hspace="0" border="0"><b><font color="#000000" style="text-decoration: none" size="2"><sup>&nbsp;6 sur 9&nbsp;</sup></b></font><A HREF="scwin_7.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    	<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+   	</TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+   </TR>
+   
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,138 @@
+<html>
+
+<head>
+<title></title>
+<meta NAME="GENERATOR" Content="Microsoft Developer Studio">
+<meta NAME="VERSION" CONTENT="9.0.0.2518">
+<style>
+<!--
+
+{ font-family: Tahoma, Arial, Helvetica; font-size: 10pt }
+
+//-->
+</style>
+<script LANGUAGE="javascript" src="global.js">
+<!--
+{
+
+	function writeBcast_CharSetInfo() {
+		document.write("<meta http-equiv=Content-Type content='text/html; charset= '+ BCAST_CHARSET +'\'>");
+		}
+    
+    writeBcast_CharSetInfo();
+     
+
+}
+//-->
+</script>
+
+<script language="JavaScript" for="window" event="onload">
+
+document.all.FEATURE_TITLE.innerText = FEATURE_TITLE;
+document.all.EVENT_TITLE.innerText = EVENT_TITLE;
+document.all.EVENT_PRESENTER.innerText = EVENT_PRESENTER;
+document.all.EVENT_PRESENTER_LABEL.innerText = EVENT_PRESENTER_LABEL;
+document.title = FEATURE_TITLE;
+NSPLAY1.FileName = TEST_ASX;
+
+//var argstr = location.search.substring(1);
+
+//if (argstr == "audio") {
+
+document.all.HELP_TEXT.innerHTML = AUDIO_HELP;
+document.all.TEST_PAGE_LABEL.innerText = AUDIO_TEST_PAGE_LABEL;
+
+//}
+
+if (VIDEO_FLAG == "1") {
+
+document.all.HELP_TEXT2.innerHTML = VIDEO_HELP;
+document.all.TEST_PAGE_LABEL2.innerText = VIDEO_TEST_PAGE_LABEL;
+}
+
+
+</script>
+<script LANGUAGE="JavaScript">
+
+function writeCodeBaseNSMediaPlayer() {
+	document.write("<object ID='NSPLAY1' NAME='NSPLAY1' BORDER='0' WIDTH=",VIDEO_WIDTH, " HEIGHT=",VIDEO_HEIGHT, "  codebase=",NS_CORE, "  CLASSID='clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95'> <param name='AutoSize' value='0'><param name='ControlType' value='nsNone'> <param name='AutoRewind' value='1'> <param name='AutoStart' value='1'><param name='TransparentAtStart' value='1'><param name='InvokeURLs' value='1'> <param name='DefaultFrame' value='SlideDisplay'> </object> ");
+    }
+
+function makeRelative(abpath) {
+
+    
+    for(i=abpath.length; i>0; i--)
+      {
+        if( (abpath.charAt(i) == '\\') || (abpath.charAt(i) == '/') )
+          {
+            break;
+          }
+       }
+
+	 relpath = abpath.substr( i+1 );
+     return relpath;
+}  // End of function
+
+
+
+</script>
+<script language="VBScript">
+<!--
+'OLD_PLAY_STATE= NSPlay1.PlayState
+	
+	Sub NSplay1_PlayStateChange (OLD_PLAY_STATE, NEW_PLAY_STATE)
+		Display_State
+	End Sub
+
+	Sub Display_State()
+		PLAY_STATE = NSPLAY1.PlayState
+
+		Select Case PLAY_STATE
+			Case "0" 'Stopped
+				window.status = NSPLAYER_WINDOW_STATUS_STOPPED
+			Case "1" 'Paused
+				window.status = NSPLAYER_WINDOW_STATUS_PAUSED
+			Case "2" 'Playing
+				window.status = NSPLAYER_WINDOW_STATUS_PLAYING
+			Case "3" 'Waiting
+				window.status = NSPLAYER_WINDOW_STATUS_WAITING
+		End Select
+	End Sub
+-->
+</script>
+
+</head>
+
+<body background="nsnbg.gif">
+
+<div align="right" id="logo" STYLE="position: absolute; font-weight: bold; top:10;width:100%"><img src="logo.GIF" alt="Logo.GIF" WIDTH="161" HEIGHT="34">
+<div align="center" id="FEATURE_TITLE" STYLE="font-weight: normal; font-size: 11px;letter-spacing: 2px;background-color: white;border-color:black; text-align: center; border-style: solid;border-width: 1px; position:relative; left:5px; top:0 ; width:165"></div>
+</div>
+
+
+<div align="right" id="nsplayer" STYLE="font-weight: bold; position:absolute; top:100;width:100%">
+<script LANGUAGE="JavaScript">
+ 	writeCodeBaseNSMediaPlayer();
+ 	    NSPLAY1.ShowControls = "0";
+		NSPLAY1.ShowTracker = "0";
+		NSPLAY1.EnableTracker = "0";
+		NSPLAY1.ShowStatusBar = "0";
+		NSPLAY1.ShowPositionControls = "0";
+</script>
+ 	
+ 	
+</div>
+
+<div align="right" id="EVENT_TITLE" STYLE="font-weight: bold; position:absolute; top:280;width:100%"></div>
+<div align="right" id="EVENT_PRESENTER" STYLE="position:absolute; top:390;width:100%"></div>
+
+<div align="right" id="EVENT_PRESENTER_LABEL" STYLE="font-weight: bold; position:absolute; top:360;width:100%"></div>
+<div align="left" id="TEST_PAGE_LABEL" STYLE="font-weight: bold; font-size: 14pt; position:absolute; top:30"></div>
+
+<div align="left" id="HELP_TEXT" STYLE="position:absolute; top:70; width: 500"></div>
+<div align="left" id="TEST_PAGE_LABEL2" STYLE="font-weight: bold; font-size: 14pt; position:absolute; top:260"></div>
+
+<div align="left" id="HELP_TEXT2" STYLE="position:absolute; top:300; width: 500"></div>
+
+</body>
+</html>

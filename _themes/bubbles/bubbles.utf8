@@ -1,0 +1,23 @@
+[info]
+title=Bubbles
+codepage=65001
+version=2.00
+format=2.00
+readonly=true
+refcount=1
+
+[titles]
+1031 = Sprechblasen
+1036 = BD
+1040 = Fumetti
+3082 = Globos de tiras cómicas
+1043 = Bolletjes
+1046 = Bolhas
+1053 = Bubblor
+1044 = Bobler
+1030 = Talebobler
+1035 = Kuplat
+1041 = 吹出し
+1042 = 거품
+1028 = 泡泡
+2052 = 气泡

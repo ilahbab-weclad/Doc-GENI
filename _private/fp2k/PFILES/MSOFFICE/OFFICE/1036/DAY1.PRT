@@ -1,0 +1,86 @@
+VIEW "Quotidien - dynamique","Pleine page",,,1000,1000
+
+;=======================================================================
+; Header - Username, Date & Calendar
+;=======================================================================
+
+OBJECT	,RECTANGLE,0,0,1000,4
+	OPTIONS		BLACK
+
+OBJECT  ,RECTANGLE,0,4,1000,185
+	OPTIONS		GRAY
+
+OBJECT  ,RECTANGLE,0,0,1000,185
+
+OBJECT  ,TEXT,10,10,700,62
+	VALUE		"&USERNAME"
+	STYLES		styUserName
+
+OBJECT  ,TEXT,10,60,700,100
+	VALUE		"&PRINTDATE"
+	STYLES		styDate
+
+OBJECT  ,CALENDAR,700,5,990,185
+	STYLES		styCalendar
+	OPTIONS		2
+
+;=======================================================================
+; Timeframe and Schedule Box
+;=======================================================================
+
+OBJECT	,RECTANGLE,0,190,695,194
+	OPTIONS		BLACK
+
+OBJECT  ,RECTANGLE,0,194,695,978
+
+OBJECT  ,TIMEFRAME,0,194,80,978
+	STYLES		styTime
+
+OBJECT  ,SCHEDULE,80,194,695,978
+	STYLES		styApptText, styApptTime, styHeading
+	OPTIONS		4, 30, LOCATION, NONE, 4
+	OVERFLOW	"Appts"
+
+;=======================================================================
+; Other Appts, Events and To-Do Overflow
+;=======================================================================
+
+OBJECT	,RECTANGLE,705,190,1000,194
+	OPTIONS		BLACK
+
+OBJECT  ,RECTANGLE,705,190,1000,978
+
+OBJECT	,APPTS,0,0,0,0
+	STYLES		styApptText, styApptTime, styHeading
+	RANGE		BEFORE,STARTTIME,OR,AFTER,ENDTIME
+	OPTIONS		LOCATION, NONE, 1, 4, 0
+	OVERFLOW	"Appts"
+
+OBJECT	,EVENTS,0,0,0,0
+	STYLES		styApptText, styHeading
+	OPTIONS		4, 1
+	OVERFLOW	"Appts"
+
+OBJECT  ,TASKS,0,0,0,0
+	STYLES		styApptText, styTaskDue, styTaskCompleted, styProjectText, styHeading
+	OPTIONS		NONE, 1, 4
+	OVERFLOW	"Appts"
+
+OBJECT	,OVERFLOW,705,190,1000,978
+	STYLES		styApptText
+	OPTIONS		MINIMAL, CONSUME, 5
+	OVERFLOW	"Appts"
+
+;=======================================================================
+; Footer - Text and Page num.
+;=======================================================================
+
+OBJECT  ,TEXT,0,980,900,1000
+	VALUE		"Imprimé le &CURDATE à &CURTIME &TIMEZONE"
+	STYLES		stySmallFooter 
+	OPTIONS		ELLIPSIS, NONE, NONE
+
+OBJECT  ,TEXT,900,980,1000,1000
+	VALUE		"Page &PAGENUM "
+	STYLES		stySmallFooter
+	OPTIONS		RIGHT, NONE, NONE

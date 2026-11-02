@@ -1,0 +1,14 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Description "Canada - Indicatifs régionaux"
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 1
+    IRC Char (5) Index 1 ;
+READONLY
+begin_metadata
+"\FIELDS\COL1\ISSEARCHED" = "TRUE"
+"\IsReadonly" = "FALSE"
+end_metadata

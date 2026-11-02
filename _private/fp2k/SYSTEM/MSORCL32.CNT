@@ -1,0 +1,30 @@
+:Base MSORCL32.hlp
+:Title Pilote Microsoft ODBC pour Oracle
+1 Présentation générale=IDH_Overview>main
+1 Configuration du pilote Microsoft ODBC pour Oracle
+2 Configuration du système=System_Requirements>main
+1 Utilisation du pilote Microsoft ODBC pour Oracle
+2 Ajout et modification des sources de données à l'aide du programme d'installation=Adding_and_Modifying_Data_Sources_Using_Setup>main
+2 Configuration du pilote ODBC pour Oracle=Configuring_the_Oracle_ODBC_Driver>main
+2 Connexion à une source de données=Connecting_to_a_Data_Source>main
+2 Attributs des chaînes de connexion=Connection_String_Attributes>main
+1 Guide de référence technique
+2 Niveaux de conformance à ODBC=ODBC_Conformance_Levels>main
+2 Niveaux de conformance à SQL=SQL_Conformance_Levels
+2 Mappage des types de données=Mapping_Data_Types>main
+2 Rubriques avancées / Informations complémentaires
+3 Utilisation de Microsoft Transaction Server=Using_Microsoft_Transaction_Server
+3 Utilisation de Microsoft Internet Information Server=Using_Microsoft_Internet_Information_Server>main
+3 Utilisation de l'authentification du système d'exploitation=Using_Operating_System_Authentication>main
+3 Restriction de l'utilisation des curseurs orientés jeux de clés=Limitations_of_Using_Keyset-Driven_Cursors>main
+3 Renvoi des paramètres de tableaux à partir des procédures stockées=Returning_Array_Parameters_from_Stored_Procedures>main
+3 Fonctions API
+4 Remarques relatives aux fonctions API=Notes_on_API_Functions>main
+4 Remarques relatives à la sécurité des threads dans les fonctions API=Thread-Safety_Notes_on_API_Functions>main
+4 Fonctions API de niveau de base=Core_Level_Functions>main
+4 Fonctions API de niveau 1=Level_1_Functions>main
+4 Fonctions API de niveau 2=Level_2_Functions>main
+3 Table des options de connexion=Connect_Options_Table>main
+3 Table des options d'instruction=Statement_Options_Table>main
+3 Table des combinaisons de types de curseurs et de concurrences=Cursor_Type_and_Concurrency_Combinations_Table>main
+2 Messages d'erreur=Error_Messages>main

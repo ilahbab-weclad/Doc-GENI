@@ -1,0 +1,525 @@
+---------------------------------------------------------
+Fichier LisezMoi de MICROSOFT FrontPage 2000
+               Juin 1999
+(c) Microsoft Corporation, 1999. Tous droits réservés.
+---------------------------------------------------------
+
+Ce document contient les informations de dernière minute
+et autres concernant Microsoft FrontPage 2000 et étant actuelles
+à la date indiquée. Après cette date, vous pourrez
+trouver des informations et des ressources plus adaptées
+en consultant le site Web consacré aux mises à jour de
+Microsoft Office, accessible dans le menu ? (Aide) en cliquant sur
+Microsoft Office sur le Web. Vous pouvez également trouver des 
+
+
+informations supplémentaires, y compris sur des questions de
+réseau et d'administration, en consultant le site Web
+consacré au Kit de ressources Office, disponible à l'adresse suivante :
+http://www.microsoft.com/office/ork/ (informations en anglais)
+
+Pour obtenir des informations techniques plus détaillées sur FrontPage,
+consultez le support en ligne qui permet d'effectuer
+des recherches dans la vaste collection d'informations techniques
+des Services de Support technique. Pour commencer,
+consultez le site accessible à l'adresse suivante :
+http://www.microsoft.com/france/support/
+
+_______________________________________________________    
+CONTENU
+
+INSTALLATION DE MICROSOFT FRONTPAGE 2000
+* Désactivation de la protection contre les virus
+* Certaines fonctions adoptent automatiquement une configuration
+  différente lors d'une installation personnalisée
+* Installation de FrontPage 2000 sur un réseau
+* Demande de la clé du CD lors de la configuration de FrontPage 2000
+  à partir d'une installation administrative
+* Affichage d'un message inattendu pendant l'installation
+* Installation de FrontPage 2000 sans suppression de la version bêta 2 
+d'Office 2000
+* Le raccourci permettant d'accéder à FrontPage 2000 à partir du menu Programmes
+  varie d'un système d'exploitation à l'autre
+* L'utilisation de signes de ponctuation dans les noms de dossier pendant
+  l'installation est susceptible de causer des problèmes
+* Configuration de Clip Gallery
+
+UTILISATION DE MICROSOFT FRONTPAGE 2000
+* Installation de FrontPage 2000 sur un ordinateur doté de FrontPage 98
+* Démarrage de FrontPage 2000 pour les nouveaux utilisateurs
+* Création de pages Web FrontPage 2000 dialoguant avec les
+  bases de données
+* Les sites Web situés sur un disque doivent être publiés sur un 
+  serveur prenant en charge ASP pour pouvoir parcourir la base de données
+* Obtention des outils de vérification de Microsoft Office 2000
+* Modification d'images ayant été supprimées d'une précédente
+  version de Clip Gallery 
+* Mauvais affichage des couleurs sur moniteur couleur 256
+* Téléchargement de la fonction de prise en charge de l'euro
+
+AIDE MICROSOFT FRONTPAGE 2000
+* Certaines rubriques d'aide de Visual Basic Editor contiennent
+  des exemples en JavaScript
+* Changement de nom d'un site Web
+
+PROBLÈMES LIÉS AUX FONCTIONNALITÉS DES LANGUES ASIATIQUES
+* Éventuels problèmes d'affichage liés à l'utilisation de plusieurs polices asiatiques
+
+PROBLÈMES LIÉS AUX FONCTIONNALITÉS DES LANGUES SE LISANT DE DROITE À GAUCHE
+* Éventuels problèmes d'impression
+
+MICROSOFT VISUAL BASIC POUR APPLICATIONS
+* Langue par défaut de VBA et Microsoft Script Editor
+* Nouvelles propriétés (VBA)
+* Utilisation de la touche F3 pour trouver l'occurrence de texte suivante dans la fenêtre Code
+* Documentation de référence HTML
+* « Rubrique introuvable » (Microsoft Script Editor)
+
+_________________________________________________________
+INSTALLATION DE MICROSOFT FRONTPAGE 2000
+
+Désactivation de la protection contre les virus
+---------------------------------------------------------
+Certains programmes de détection des virus peuvent
+interférer avec le programme d'installation de la version autonome
+de Microsoft Office 2000 ou Microsoft FrontPage 2000.
+Si votre ordinateur est équipé d'un programme de détection des virus,
+désactivez-le avant de procéder à l'installation.
+Vous pourrez le réactiver une fois l'installation terminée. 
+
+Remarque : Si votre programme de détection des virus démarre
+automatiquement lorsque vous lancez Windows, vous pouvez le
+désactiver en redémarrant Windows tout en maintenant la touche
+MAJ enfoncée. Pour plus de détails, consultez la documentation
+relative à votre programme de détection des virus.
+
+Certaines fonctions adoptent automatiquement une configuration
+différente lors d'une installation personnalisée
+---------------------------------------------------------
+Lorsque vous effectuez une installation personnalisée, 
+si vous affectez la valeur « Non disponible » à FrontPage,
+puis attribuez des valeurs différentes de « Non disponible »
+à certaines fonctions de FrontPage, l'aide remplacera également
+« Non disponible » par le nouveau paramètre que vous avez choisi.
+
+Si vous voulez économiser l'espace disque, essayez plutôt
+d'affecter la valeur « Installé lors de la première utilisation » à
+FrontPage ou à l'aide.
+
+Installation de FrontPage 2000 sur un réseau
+---------------------------------------------------------
+>>> Pour créer un point d'installation administratif pour
+FrontPage 2000, procédez comme suit :
+
+1. Créez un partage sur un serveur réseau pour le
+   point d'installation administratif. Le partage réseau
+   doit disposer d'au minimum 550 mégaoctets (Mo)
+   d'espace disque disponible. 
+2. Sur un ordinateur exécutant Microsoft Windows 95/98 ou 
+   Microsoft Windows NT et disposant des droits nécessaires pour
+   accéder en écriture au partage, connectez-vous au partage serveur. 
+3. Dans le menu Démarrer, cliquez sur Exécuter, puis sur Parcourir. 
+4. Placez le CD-ROM n°1 d'Office dans le lecteur de CD-ROM,
+   sélectionnez setup.exe, puis cliquez sur Ouvrir. 
+5. Sur la ligne de commande, à la suite de setup.exe, tapez : 
+     /a data1.msi, puis cliquez sur OK. Exemple : 
+     e:\setup.exe /a data1.msi 
+6. Lorsque le système vous le demande, entrez le nom de l'organisation
+   que vous voulez définir pour tous les utilisateurs installant
+   Office à partir de cet emplacement. 
+7. Lorsque le système vous demande l'emplacement d'installation, indiquez
+   le serveur et le partage que vous avez créé. 
+
+Pour plus d'informations sur les questions de réseau et
+d'administration, consultez le site Web consacré au Kit de ressources
+Office à l'adresse suivante : 
+http://www.microsoft.com/office/ork/ (informations en anglais)
+
+Demande de la clé du CD lors de la configuration de FrontPage 2000
+à partir d'une installation administrative
+---------------------------------------------------------
+Lorsque vous configurez FrontPage 2000 sur votre ordinateur
+à partir d'une installation administrative située sur un serveur, il
+est possible que le système vous demande une clé de CD, si
+l'administrateur système qui a créé l'installation administrative n'a
+pas entré cette clé. 
+
+Pour résoudre ce problème, demandez à l'administrateur système de
+créer une nouvelle installation administrative et d'indiquer la clé du CD 
+dans la première boîte de dialogue. Ainsi, le système ne vous demandera
+plus la clé du CD lorsque vous exécuterez le programme d'installation
+à partir de cette nouvelle installation administrative. 
+
+Affichage d'un message inattendu pendant l'installation
+---------------------------------------------------------
+Si vous obtenez un message inattendu pendant l'installation d'Office
+et si le même message s'affiche lorsque vous essayez de relancer le
+programme d'installation, vous pouvez créer un fichier journal qui
+sera utile aux Services de Support technique Microsoft pour
+résoudre le problème. Après avoir créé ce fichier, appelez
+les Services de Support technique Microsoft.
+
+>>> Pour créer le fichier journal :
+1. Cliquez sur le bouton Démarrer de la barre des tâches, puis sur
+   Exécuter.
+2. Dans la zone Ouvrir, tapez :
+     <chemin>\Setup.exe /L*v c:\Verboselog.txt 
+   <chemin> correspondant à l'emplacement de
+   Setup.exe. Par exemple, si vous procédez à l'installation à partir
+   d'un lecteur de CD-ROM, le texte que vous taperez pourrait
+   ressembler à : 
+     d:\Setup.exe /L*v c:\Verboselog.txt
+3. Cliquez sur OK.
+
+Le programme d'installation redémarrera et un fichier journal nommé
+Verboselog.txt sera créé à la racine de votre lecteur C:.
+
+Installation de FrontPage 2000 sans suppression de la version bêta 2 
+d'Office 2000
+---------------------------------------------------------
+Au démarrage de FrontPage, il est possible que vous receviez le message
+suivant : 
+   
+Des informations de registre sont introuvables et cette application ne peut être exécutée. Relancez l'installation pour corriger ce problème.
+
+Il est également possible que le programme s'interrompe au bout de quelques
+secondes. 
+
+Vous pouvez rencontrer l'un de ces deux problèmes si vous avez installé
+FrontPage 2000 sans avoir supprimé la version bêta 2 (2221b) de
+Microsoft Office 2000.
+
+>>> Pour résoudre ce problème, procédez comme suit pour supprimer la
+version bêta 2 d'Office 2000:
+
+1. Cliquez sur le bouton Démarrer de la barre d'outils, pointez sur
+   Paramètres, puis cliquez sur Panneau de configuration.
+2. Double-cliquez sur l'icône Ajout/Suppression de programmes.
+3. Dans la liste des programmes installés, cliquez sur Microsoft 
+   Office 2000 Premium Edition. (Il s'agit de la version bêta 2 
+   d'Office 2000.)
+4. Cliquez sur Ajouter/Supprimer.
+5. Cliquez sur Supprimer Office.
+6. Cliquez sur Oui à l'invite pour confirmer que vous voulez procéder à
+   la suppression.
+
+Le raccourci permettant d'accéder à FrontPage 2000 à partir du menu Programmes varie
+d'un système d'exploitation à l'autre                               
+---------------------------------------------------------
+Le raccourci permettant d'accéder à FrontPage 2000 à partir du menu Programmes peut
+présenter les problèmes suivants : 
+
+1. Il ne rectifie pas automatiquement le programme. 
+   Ce problème se pose si votre système d'exploitation ne    
+   prend pas en charge les raccourcis du programme d'installation de Windows.
+   Seules les versions de Microsoft Windows répertoriées ci-après
+   supportent ces raccourcis : 
+
+   * Windows 98
+   * Windows 95 doté de Internet Explorer 4.01, Service Pack 1
+     et Active Desktop
+   * Microsoft Windows NT version 4 doté de Internet
+     Explorer 4.01, Service Pack 1 et Active Desktop
+
+   Remarque : Si vous installez Internet Explorer 5 sur un ordinateur
+   doté de Windows 95 ou Windows NT version 4 ainsi que de
+   Internet Explorer 4.01, Service Pack 1 et de
+   Active Desktop, il prendra en charge les raccourcis du
+   programme d'installation de Windows.
+
+2. Il n'installe pas le programme lors de la première utilisation. 
+   Ce problème se pose parce que l'option d'installation lors de la première
+   utilisation disponible dans la boîte de dialogue Sélection des composants 
+   lors de l'installation ne concerne pas FrontPage 2000.
+   Ce n'est pas une option parce que votre système d'exploitation ne prend pas
+   en charge les raccourcis du programme d'installation de Windows. Les systèmes
+   d'exploitation répertoriés sous le numéro 1 supportent les raccourcis du
+   programmes d'installation de Windows. 
+
+3. Il n'affiche pas de chemin sous l'onglet Raccourci de la
+   boîte de dialogue Propriétés pour ce raccourci. Ceci signifie
+   qu'il s'agit d'un raccourci du programme d'installation de Windows.
+   Or, les raccourcis de ce type ne référencent pas directement
+   le chemin du raccourci cible. Ils contiennent 
+   une jeton que le programme d'installation de Windows résout pour accéder
+   au chemin du raccourci cible. Les systèmes d'exploitation
+   répertoriés sous le numéro 1 prennent en charge les raccourcis
+   du programme d'installation de Windows.
+
+L'utilisation de signes de ponctuation dans les noms de dossier
+pendant l'installation est susceptible de causer des problèmes
+---------------------------------------------------------
+N'utilisez pas de virgule (,), de guillemet simple (') ou de
+point d'exclamation (!) pour nommer le dossier dans lequel
+vous installez FrontPage 2000. Il est recommandé de se servir
+du nom de dossier indiqué par défaut ou d'utiliser uniquement
+des lettres et des chiffes pour créer un nouveau nom.
+
+Configuration de Clip Gallery 
+--------------------------------------------------------- 
+Il est possible que vos n'arriviez pas à exécuter Clip Gallery si vous
+avez sélectionné Exécuter à partir du réseau ou Exécuter à partir du CD lors d'une
+installation personnalisée. Pour obtenir de meilleurs résultats, conservez
+l'option Exécuter à partir du disque dur.
+
+_________________________________________________________
+UTILISATION DE MICROSOFT FRONTPAGE 2000
+
+Installation de FrontPage 2000 sur un ordinateur doté de FrontPage 98
+---------------------------------------------------------
+Si vous procédez à une mise à niveau à partir de FrontPage 98 et voulez
+conserver FrontPage 98 en installant FrontPage 2000,
+le raccourci du menu Démarrer permettant d'accéder à FrontPage 98
+sera remplacé par un raccourci permettant d'accéder à FrontPage 2000.
+Malgré tout, FrontPage 98 restera installé. Vous pouvez créer un raccourci vers
+FrontPage 98 pointant vers fpexplor.exe. 
+
+Si vous procédez à une mise à niveau à partir de FrontPage 98, les 4 derniers
+sites Web que vous avez fermés avant d'installer FrontPage 2000 seront
+immédiatement accessibles par l'intermédiaire de la commande Sites Web récents
+du menu Fichier de FrontPage 2000.
+
+Démarrage de FrontPage 2000 pour les nouveaux utilisateurs
+---------------------------------------------------------
+Si vous utilisez FrontPage pour la première fois et voulez savoir
+comment démarrer, consultez les informations disponibles à l'adresse
+suivante :
+http://www.microsoft.com/workshop/languages/fp/2000/
+tutorial2000/default.asp (informations en anglais)
+
+Création de pages Web FrontPage 2000 dialoguant
+avec les bases de données
+---------------------------------------------------------
+Si vous voulez utiliser FrontPage 2000 pour créer des pages Web
+dialoguant avec les bases de données, installez la version la plus
+récente du serveur Web personnel Microsoft avant d'installer 
+FrontPage 2000. Vous pouvez vous procurer ce serveur à l'adresse suivante :
+http://www.microsoft.com/ntserver/nts/downloads/
+recommended/NT4OptPk/default.asp (informations en anglais), ou bien dans le répertoire
+\add-ons\pws du CD-ROM de Windows 98 avant d'installer
+FrontPage 2000. 
+
+Si vous avez déjà installé une version précédente 
+(inetsw95.exe version 4.70.1181 ou antérieure) du serveur Web
+personnel Microsoft et ne voulez pas mettre cette version à niveau
+mais que vous n'avez pas encore installé ASP, procédez à cette installation
+avant celle de FrontPage 2000. Vous pouvez vous procurer
+ASP.EXE à l'adresse suivante :
+http://www.microsoft.com/office/intranet/modules/asp411s3 
+.asp (informations en anglais)
+
+Les sites Web situés sur un disque doivent être publiés sur un
+serveur prenant en charge ASP pour pouvoir parcourir la base de données
+---------------------------------------------------------
+Si vous créez un site Web sur un disque, vous devez le publier sur un
+serveur Web prenant en charge ASP pour pouvoir obtenir un aperçu du
+résultat des actions de la base de données dans un navigateur
+ou pour insérer ces résultats dans le site Web. Par exemple,
+vous pouvez créer une table dans une page Web située sur le disque
+pour afficher les informations actives à partir d'une base de données
+mais cette table n'affichera pas ces informations tant que le site Web
+ne sera pas publié sur un serveur prenant en charge ASP. 
+
+Obtention des outils de vérification de Microsoft Office 2000
+---------------------------------------------------------
+Les outils de vérification de Microsoft Office 2000 se présentent
+sous la forme de modules logiciels complémentaires pour
+Office 2000 contenant tous les outils de langue conçus par
+Microsoft pour plus de 30 langues. Vous pouvez vous procurer
+ces modules auprès d'un revendeur agréé. Les références et les numéros
+d'unités de stockage répertoriés dans l'aide ne sont pas corrects.
+Pour en savoir plus sur l'obtention des outils de vérification de Office 2000,
+voir les informations disponibles à l'adresse suivante :
+http://www.microsoft.com/france/office/. 
+
+Modification d'images ayant été supprimées d'une précédente version
+de Clip Gallery 
+---------------------------------------------------------
+Si, lorsque vous insérez des images, vous double-cliquez sur une
+image ayant été supprimée d'une précédente version de Clip Gallery
+et que vous appuyez sur ÉCHAP ou cliquez sur Annuler pour quitter
+Clip Gallery, l'image est remplacée. Pour conserver l'image active, 
+cliquez sur Annuler après avoir quitté Clip Gallery.
+
+Mauvais affichage des couleurs sur moniteur couleur 256
+---------------------------------------------------------
+Après avoir affiché des fenêtres contextuelles dans les rubriques d'aide,
+il est possible que les couleurs de certains éléments ne s'affichent plus
+correctement sur les moniteurs couleur 256. Par exemple, il est possible que
+les éléments suivants apparaissent différemment à l'écran après affichage
+de fenêtres contextuelles :
+
+* Bitmaps
+* Images insérées dans des fichiers
+* Assistant Office
+* Liens hypertexte
+
+Pour résoudre ce problème d'affichage, modifiez la palette de couleurs
+de votre moniteur.
+
+>>> Pour modifier la palette de couleurs :
+1. Cliquez sur Démarrer dans la barre des tâches Windows, pointez sur Paramètres, 
+   puis cliquez sur Panneau de configuration.
+2. Double-cliquez sur l'icône Affichage.
+3. Sous l'onglet Configuration, sélectionnez une option autre que 256 couleurs.
+    Microsoft conseille, dans la mesure du possible, de choisir une option supérieure
+   à 256 couleurs.
+
+Téléchargement de la fonction de prise en charge de l'euro
+--------------------------------------------------------
+Pour télécharger la fonction de prise en charge de l'euro, 
+tapez les adresses suivantes :
+
+* Windows 95  
+  http://www.microsoft.com/windows95/downloads/contents/
+  wurecommended/s_wufeatured/w95europatch/ (informations ne anglais)
+* Windows NT 4.0  
+  http://www.microsoft.com/windows/downloads/contents/
+  wuarchive/nteuropatch/default.asp?site=ntw (informations en anglais)
+
+REMARQUE : Étant donné que Windows 98 contient une fonction intégrée
+de prise en charge de l'euro, aucun téléchargement n'est nécessaire.
+
+_________________________________________________________
+AIDE MICROSOFT FRONTPAGE 2000
+
+Certaines rubriques d'aide de Visual Basic Editor contiennent
+des exemples en JavaScript
+--------------------------------------------------------- 
+Certaines rubriques de Visual Basic Editor décrivant
+les modèles de page et de sites Web contiennent des exemples
+et des références en JavaScript, et non en Visual Basic comme 
+on s'y attendrait. Ces rubriques contiennent une 
+bannière bleue indiquant « Dynamic HTML » en haut du
+cadre de l'aide. Ne coupez pas et ne collez pas ces exemples de
+code lorsque vous travaillez avec Visual Basic Editor 
+car ce code ne fonctionnera pas avec Visual Basic pour 
+Applications (VBA). Cependant, les concepts décrits
+dans la documentation JavaScript sont tous
+applicables à l'utilisation des modèles objets dans VBA. 
+
+Changement de nom d'un site Web
+--------------------------------------------------------
+La rubrique « Renommer un site Web » contient le texte suivant 
+« Lorsque vous renommez un site Web de type disque, le chemin d'accès au site Web sur votre ordinateur local ou réseau s'en trouve modifié. » Elle est
+incomplète. Vous pouvez renommer un sous-site Web situé sur le
+disque mais vous ne pouvez pas renommer un site Web racine. 
+
+_________________________________________________________
+PROBLÈMES LIÉS AUX FONCTIONNALITÉS DES LANGUES ASIATIQUES
+
+Éventuels problèmes d'affichage liés à l'utilisation de plusieurs polices asiatiques
+---------------------------------------------------------
+
+Si vous installez plusieurs polices asiatiques sur des versions
+non asiatiques du système d'exploitation Microsoft Windows NT
+version 4.0, il est possible que vous rencontriez des problèmes
+d'affichage (texte très grand, texte inexistant, très grandes zones vides, etc.)
+dans FrontPage 2000 ou Windows NT. Il s'agit d'un problème connu de
+Windows NT version 4.0 Service Pack 4 qui sera résolu dans une version
+à venir du Service Pack pour Windows NT version 4.0.
+
+_________________________________________________________
+PROBLÈMES LIÉS AUX FONCTIONNALITÉS DES LANGUES SE LISANT DE DROITE À GAUCHE
+
+Éventuels problèmes d'impression
+---------------------------------------------------------
+
+Certaines imprimantes requièrent des pilotes d'impression mis à jour. 
+Contactez le fabricant de votre imprimante si vous avez des problèmes
+d'impression.
+
+Lorsque vous utilisez la fonction WordArt, les textes écrits en arabe contenant
+des signes diacritiques semblent décousus lorsqu'ils sont publiés sur le Web.
+Il est recommandé de ne pas utiliser de signes diacritiques avec les objets WordArt 
+lorsque vous effectuez des publications sur le Web.
+
+_________________________________________________________
+MICROSOFT VISUAL BASIC FOR APPLICATIONS
+
+Langue par défaut de VBA et Microsoft Script Editor
+---------------------------------------------------------
+VBA et Microsoft Script Editor utilisent l'anglais par défaut si la
+page de code système active ne prend pas en charge la
+langue de l'interface utilisateur.
+
+Nouvelles propriétés (VBA)
+---------------------------------------------------------
+Voici la liste des nouvelles propriétés qui s'appliquent
+aux modules de classe dans les projets autonomes :
+
+* Propriété Instancing
+  
+  Définit une valeur spécifiant si vous pouvez créer
+  des instances d'une classe publique en dehors d'un projet et, 
+le cas échéant, comment elles se comporteront.
+Indisponible lors de l'exécution.
+
+  Paramètres
+
+  La propriété Instancing dispose des paramètres suivants :
+
+  Paramètre    Description
+
+  1          Private (valeur par défaut). Les autres
+             applications ne peuvent pas accéder aux informations
+             de type bibliothèque sur la classe et ne peuvent pas
+             créer d'instances de ces informations. Les objets privés
+             ne peuvent être utilisés que dans votre composant. La valeur
+             par défaut de la propriété Instancing varie selon le type de
+             projet. Private est la valeur par défaut uniquement
+             pour les modules de classe des projets autonomes.
+
+  2          PublicNotCreatable. Les autres applications peuvent
+             utiliser des objets de cette classe uniquement si votre
+             composant crée les objets d'abord. Les autres
+             applications ne peuvent pas utiliser la fonction
+             CreateObject ni l'opérateur New pour créer des objets
+             à partir de la classe.
+
+* Propriété Name
+
+  Renvoie le nom utilisé dans le code pour identifier une classe. 
+  En lecture uniquement lors de l'exécution.
+
+  Syntaxe
+
+  objet.Name
+
+  L'espace réservé objet représente une expression objet
+  procédant à une évaluation vers une classe.
+
+  Remarques
+
+  La propriété Name d'un objet doit commencer par une lettre
+  et être composée de 40 caractères au maximum. Elle peut inclure 
+  des chiffres et des traits de soulignement (_) mais elle ne peut pas
+  contenir de signes de ponctuation ou d'espaces. Bien que la valeur
+  de la propriété Name puisse être un mot clé, un nom de propriété ou
+  le nom d'un autre objet, cela peut créer des conflits dans votre code.
+
+Utilisation de la touche F3 pour trouver l'occurrence de texte suivante
+dans la fenêtre Code
+---------------------------------------------------------
+Appuyez sur la touche F3 pour trouver l'occurrence suivante d'un
+texte précédemment recherché dans la fenêtre Code, et non sur 
+MAJ+F4 comme indiqué dans la documentation.
+
+Documentation de référence HTML
+---------------------------------------------------------
+La documentation HTML, DHTML et CSS la plus récente est
+disponible en ligne sur le site Web Microsoft suivant :
+http://www.microsoft.com/france
+
+« Rubrique introuvable » (Microsoft Script Editor)
+---------------------------------------------------------
+Vous n'avez pas besoin de MSDN Library ni du CD-ROM 
+de MSDN Library pour afficher les rubriques d'aide de
+Microsoft Script Editor. Si le message « Rubrique
+introuvable » apparaît à l'écran, essayez l'une des méthodes
+suivantes :
+
+- Réinstallez Microsoft Script Editor à partir du programme
+  d'installation de Microsoft Office.
+- Insérez le CD-ROM de Microsoft Office dans le lecteur de CD-ROM.
+

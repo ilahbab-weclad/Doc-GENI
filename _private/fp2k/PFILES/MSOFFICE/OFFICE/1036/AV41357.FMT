@@ -1,0 +1,53 @@
+;
+; Paper Format Description File
+;
+; AVERY 41-357 
+;
+FORMAT "Avery 41-357 (moyenne)", 1000, 750, LANDSCAPE 
+	MARGINS 1, 0, 500, 0, 500, 0, 500, 0, 500, MIRROR
+	FONTSIZE 1
+	HINTS 2
+	PAGESIZE 450, 750
+
+STYLES
+	styUserName,,			"Arial",SWISS,12,12,12,BOLD
+	styDate,,				"Arial",SWISS,10,10,10
+	styLargeDate,,			"Arial",SWISS,12,12,12
+	styCalendar,,			"Arial",SWISS,8,8,8
+	styTime,,				"Arial",SWISS,6,6,6
+	styApptTime,, 			"Arial",SWISS,6,8,10
+	styApptText,,			"Arial",SWISS,6,8,10
+	styHeading,,			"Arial",SWISS,8,10,12,BOLD
+	styProjectText,,		"Arial",SWISS,6,8,10,BOLD
+	styTaskDue,,			"Arial",SWISS,6,8,10,ITALIC
+	styTaskCompleted,,		"Arial",SWISS,6,8,10,STRIKEOUT
+	styListHeading,,		"Arial",SWISS,6,8,10,BOLD
+
+	stySmallUserName,,		"Arial",SWISS,10,10,10,BOLD
+	stySmallDate,,			"Arial",SWISS,6,6,6
+	stySmallFooter,,		"Arial",SWISS,6,6,6
+	stySmallCalendar,, 		"Arial",SWISS,5,5,5
+	stySmallTime,, 			"Arial",SWISS,4,4,4
+	stySmallApptTime,,		"Arial",SWISS,4,6,8
+	stySmallApptText,, 		"Arial",SWISS,4,6,8
+	stySmallHeading,,		"Arial",SWISS,6,8,10,BOLD
+	stySmallProjectText,,	"Arial",SWISS,5,7,9,BOLD
+	stySmallTaskDue,,	 	"Arial",SWISS,5,7,9,ITALIC
+	stySmallTaskCompleted,,	"Arial",SWISS,5,7,9,STRIKEOUT
+	stySmallListHeading,,	"Arial",SWISS,5,7,9,BOLD
+
+PAGE 0, 0
+	PAGEINFO 1, 1, 0
+	INVERT 0, 0
+
+PAGE 550, 0
+	PAGEINFO 2, 3, 0
+	INVERT 0, 0
+
+PAGE 550, 0
+	PAGEINFO 0, 2, 1
+	INVERT 0, 0 
+
+PAGE 0, 0
+	PAGEINFO 0, 4, 1
+	INVERT 0, 0

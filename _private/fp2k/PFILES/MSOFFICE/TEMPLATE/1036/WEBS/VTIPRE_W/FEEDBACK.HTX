@@ -1,0 +1,118 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<meta name="Microsoft Border" content="<%Border%>">
+<%endif%>
+<title><%FeedbackPageTitle%></title>
+</head>
+
+<body <%if DoTheme EQ False%> stylesrc="<%PageStyleSrc%>" <%endif%> >
+
+<%if DoTheme EQ False%>
+<%if DoTopLogo EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%LogoUrl%>" -->
+<%endif%>
+<%if StyleOption EQ 0%>
+<h1><%FeedbackPageTitle%></h1>
+<%else%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%BannerImgUrl%>" 
+alt="[Bannière]" border="0" <%BannerImgSize%>> </p>
+<%endif%>
+<%if DoTopLinks EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%NavbarUrl%>" -->
+<%endif%>
+<%if UnderConstructionOption EQ 0%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%UnderconImgUrl%>" alt="[En construction]"
+border="0" <%UnderconImgSize%>></p>
+<%endif%>
+<%endif%>
+
+<p><!-- LOCALIZE this paragraph --> Indiquez-nous ce que vous pensez de notre site Web, de notre
+entreprise ou de nos produits ou services. Si vous nous
+communiquez vos coordonnées, nous serons en mesure de vous
+contacter en cas de besoin.</p>
+
+<form method="POST" action="--WEBBOT-SELF--">
+    <!--webbot bot="SaveResults" u-file="<%SaveResultsUrl%>"
+    s-format="<%SaveResultsFormat%>" b-label-fields="TRUE"
+    s-builtin-fields="Date,Time,REMOTE_NAME" -->
+<%if DoDatabaseFile EQ True%>
+<p><!-- LOCALIZE this comment bot --> <!--webbot
+    bot="PurpleText"
+    preview="les résultats de ce formulaire sont stockés dans le fichier '<%SaveResultsUrl%>' de votre site Web. Vous pouvez récupérer ce fichier depuis n'importe quel navigateur Web et l'enregistrer sur votre disque local. Les informations qu'il contient peuvent ainsi être importées par des tableurs et des programmes de base de données, en spécifiant le format 'texte délimité par des tabulations'." --></p>
+<%else%>
+<p><!-- LOCALIZE this comment bot --> <!--webbot
+    bot="PurpleText"
+    preview="les résultats de ce formulaire sont stockés dans le fichier '<%SaveResultsUrl%>' de votre site Web. Vous pouvez éditer ce fichier en utilisant FrontPage, ou l'afficher et l'imprimer depuis n'importe quel navigateur Web." --></p>
+<%endif%>
+    <h3><!-- LOCALIZE this text -->Commentaires</h3>
+    <blockquote>
+        <p><textarea name="Commentaires" rows="10" cols="45"></textarea> </p>
+    </blockquote>
+    <h3><!-- LOCALIZE this text -->Catégorie</h3>
+    <blockquote>
+        <p><select name="Categorie">
+            <option selected><!-- LOCALIZE this option -->Site Web</option>
+            <option><!-- LOCALIZE this option -->Société</option>
+<%if DoProductsPage EQ True%>
+<%if NumProducts GT 0%>
+            <option><!-- LOCALIZE this option -->Produits</option>
+<%endif%>
+<%if NumServices GT 0%>
+            <option><!-- LOCALIZE this option -->Services</option>
+<%endif%>
+<%endif%>
+        </select> </p>
+    </blockquote>
+    <h3><!-- LOCALIZE this text -->Coordonnées</h3>
+<table>
+<%if DoFeedbackName EQ True%><tr><td align="right"><em><!-- LOCALIZE -->Nom</em></td><td><input type="TEXT" name="Nom" value size="35"></td></tr><%endif%>
+<%if DoFeedbackTitle EQ True%><tr><td align="right"><em><!-- LOCALIZE -->Titre</em></td><td><input type="TEXT" name="Titre" value size="35"></td></tr><%endif%>
+<%if DoFeedbackCompany EQ True%><tr><td align="right"><em><!-- LOCALIZE -->Société</em></td><td><input type="TEXT" name="Societe" value size="35"></td></tr><%endif%>
+<%if DoFeedbackAddress EQ True%><tr><td align="right"><em><!-- LOCALIZE -->Adresse</em></td><td><input type="TEXT" name="Adresse" value size="35"></td></tr><%endif%>
+<%if DoFeedbackTelephone EQ True%><tr><td align="right"><em><!-- LOCALIZE -->Téléphone</em></td><td><input type="TEXT" name="Telephone" value size="35"></td></tr><%endif%>
+<%if DoFeedbackFAX EQ True%><tr><td align="right"><em><!-- LOCALIZE -->Télécopie</em></td><td><input type="TEXT" name="Telecopie" value size="35"></td></tr><%endif%>
+<%if DoFeedbackEmail EQ True%><tr><td align="right"><em><!-- LOCALIZE -->Adresse de messagerie</em></td><td><input type="TEXT" name="Email" value size="35"></td></tr><%endif%>
+</table>
+    <p><!-- LOCALIZE these button labels --><input type="SUBMIT" value="Envoyer"> <input
+    type="RESET" value="Effacer le contenu du formulaire"> </p>
+</form>
+
+<%if DoTheme EQ False%>
+<%if DoBottomLinks EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%NavbarUrl%>" -->
+<%endif%>
+<h5>
+<%if DoBottomWebmasterAddress EQ True%>
+<!-- LOCALIZE this line -->
+Envoyez un courrier électronique à <a href="<%WebmasterUrl%>"><!--webbot
+bot="Substitution" s-variable="<%WebVarWebmaster%>" --></a>pour toute question ou commentaire concernant ce site
+Web.<br>
+<%endif%>
+<%if DoBottomCopyright EQ True%>
+<!-- LOCALIZE this line -->
+Copyright © <%CurrentYear%> <!--webbot bot="Substitution"
+s-variable="<%WebVarLongName%>" --><br>
+<%endif%>
+<%if DoBottomDateModified EQ True%>
+<!-- LOCALIZE this line -->
+Dernière modification&nbsp;: <!--webbot bot="TimeStamp" s-type="EDITED"
+s-format="%d %B %Y" -->
+<%endif%>
+</h5>
+<%endif%>
+
+</body>
+</html>
+
+
+
+
+
+
+

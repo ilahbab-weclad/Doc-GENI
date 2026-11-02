@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Paramétrage des extensions serveur sur SUID/SGID</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+
+	<TR>
+		<TD BGCOLOR="#000000"><IMG SRC="home.gif" WIDTH=103 HEIGHT=21
+ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH="100%"><IMG 
+SRC="1ptrans.gif" WIDTH=1 
+HEIGHT=1 ALT="" BORDER=0></TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+<FONT FACE="Arial, Helvetica" SIZE=1><A HREF="http://www.microsoft.com/france" TARGET="_top"><IMG 
+SRC="msft.gif" WIDTH=91 
+HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+
+	<!--WEB SITE TITLE AND LOGO START-->
+
+	<TR>
+		<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD colspan="2" nowrap bgcolor="#666699" valign="middle" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+	
+		<!--WEB SITE TITLE AND LOGO ENDS-->
+
+		<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
+	
+		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous UNIX</font></b></font>
+
+<HR>
+
+			<A NAME="settingserverextensionssuid"></A><P><A HREF="scuni_5.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;6 sur 10&nbsp;</sup></b></font><A HREF="scuni_7.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;Paramétrage des extensions serveur sur SUID/SGID</FONT>  <p><A NAME="scunix.doc-1056"></A>Avec l'utilitaire <B>Fpsrvadm</B>, vous pouvez remplacer les autorisations d'exécution des fichiers exécutables des extensions serveur par SUID/SGID (Set User ID/Set Group ID). Cela force l'exécution des extensions serveur avec les autorisations de système de fichiers du propriétaire de shtml.exe, author.exe et admin.exe. Lorsque les autorisations appropriées sont appliquées à la zone de contenu de chaque client, les extensions serveur FrontPage (et les autres scripts CGI) d'un client ne peuvent pas écrire dans les zones de contenu d'autres clients.</p>
+
+			<p>Pour les extensions serveur FrontPage sur les serveurs UNIX, il est recommandé de paramétrer les extensions serveur sur SUID/SGID pour le propriétaire de chaque site Web FrontPage étendu. Les installations des extensions serveur FrontPage antérieures à la version&nbsp;3.0 doivent être mises à niveau pour pouvoir être paramétrées sur SUID/SGID et pour définir de façon unique la propriété du contenu du site Web. Les nouvelles installations effectuées avec l'utilitaire <B>Fpsrvadm</B> ou avec le script d'installation fp_install.sh vous demanderont de configurer les extensions serveur pour le fonctionnement de SUID/SGID.</p>
+
+			<p>Les extensions serveur FrontPage ne requièrent jamais d'accès racine. Toutefois, l'utilitaire <B>Fpsrvadm</B> et le script d'installation fp_install.sh devraient être exécutés en tant que «&nbsp;racine&nbsp;» car ils affectent les privilèges d'exécution SUID aux extensions. fp_install.sh étant un script de shell, vous pouvez l'examiner avant de l'exécuter sur le serveur Web.</p>
+
+			<p>Sachez que les extensions serveur FrontPage restent sûres même si vous ne les forcez pas à exécuter SUID, car elles empêcheront tout de même les utilisateurs d'effectuer des opérations d'écriture sur les sites Web FrontPage étendus qu'ils ne sont pas autorisés à créer ou à administrer. SUID présente néanmoins les deux avantages suivants&nbsp;:
+
+<UL>
+					<LI class=LB1>Il empêche les utilisateurs disposant d'un accès Telnet au serveur Web de modifier le contenu d'un site Web qui ne leur appartient pas.</LI>
+
+					<LI class=LB1>Il fournit une sécurité supplémentaire au niveau du système d'exploitation, qui s'ajoute aux fonctions de sécurité standard de FrontPage.</LI>
+				</UL>
+				
+				<P class=4>&nbsp;</P>
+				
+		</TD>
+	
+		<!--TOPIC TITLE AND BODY TEXT CELL ENDS HERE-->
+
+		<!--FAR-RIGHT COLUMN SECTION ART START-->
+	
+		<TD rowspan="20" nowrap>
+			<img SRC="secart.gif" align="center">
+		</TD>
+		
+		<!--FAR-RIGHT COLUMN SECTION ART END-->
+		
+	</TR>
+
+	<!--LEFT-NAVIGATION MENUS START-->
+
+	<TR>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" href="scintro.htm"><font color="#000000">&nbsp;&nbsp;Introduction</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" href="scwin.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous <br>&nbsp;&nbsp;Windows NT</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="adoview.htm"><font color="#000000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+	<!--LAST ROW START-->
+	
+	<TR>
+    	<TD height="380" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+		
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_BEGIN-->
+
+<BR>
+
+<TABLE cellspacing="0" cellpadding="0" border=0>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD width="237" valign="top"><A HREF="scuni_5.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;6 sur 10&nbsp;</sup></b></font><A HREF="scuni_7.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A></TD>
+    	<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+    
+	</TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+   </TR>
+   
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,32 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<%endif%>
+<title><!-- LOCALIZE this title -->Barre de navigation de <%DiscussionTitle%></title>
+</head>
+
+<body <%if DoTheme EQ False%> stylesrc="<%PageStyleSrc%>" <%endif%> >
+
+<table width="100%">
+    <tr>
+        <td width="60%"><font size="5"><strong><%DiscussionTitle%></strong></font></td>
+        <td align="RIGHT">
+[ 
+<%if HomeOption EQ 1%>
+<a href="<%HomePageUrl%>" target="_top"><!-- LOCALIZE this text -->Page d'accueil</a> | 
+<%endif%>
+
+<%if DoSearch EQ True%><a href="<%SearchPageUrl%>" target="article"><!-- LOCALIZE this text -->Recherche</a> | <%endif%>
+<a href="<%PostPageUrl%>" target="article"><!-- LOCALIZE this text -->Nouveau</a> 
+] 
+</td>
+    </tr>
+</table>
+
+</body>
+</html>

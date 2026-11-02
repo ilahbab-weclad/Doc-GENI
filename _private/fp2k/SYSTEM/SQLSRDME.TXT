@@ -1,0 +1,305 @@
+****************************************************************
+                      MICROSOFT SQL SERVER
+              PILOTE ODBC DE MICROSOFT(r) SQL SERVER
+         FICHIER LISEZ-MOI D'INSTALLATION, VERSION 3.7
+****************************************************************
+
+
+
+Ce fichier explique comment utiliser la version 3.7 du pilote ODBC de Microsoft SQL Server
+avec la version 6.5 ou une version antérieure de Microsoft SQL Server.
+
+La version 3.7 du pilote ODBC de Microsoft SQL Server étant livrée avec SQL Server 7.0, les
+utilisateurs doivent se reporter à la documentation de SQL Server 7.0 pour ce pilote plutôt
+qu'à la documentation se trouvant dans le présent fichier Lisez-moi.
+
+Les rubriques traitées sont les suivantes :
+
+1. Présentation générale
+2. Installation d'Instcat.sql sur le serveur
+3. Obtention des bibliothèques réseau client de SQL Server
+4. Sources de la documentation relative à l'utilisation d'ODBC 
+   avec SQL Server
+5. Utilisation du pilote dans un environnement de développement
+6. Problèmes de compatibilité
+
+************************
+1. Présentation générale
+
+Le pilote ODBC de Microsoft SQL Server version 3.7 est un pilote
+Win32ODBC, version 3.51. Il peut être utilisé avec des applications
+écrites dans les API d'ODBC 2.X ou d'ODBC 3.X. Il utilise Microsoft 
+SQL Server, version 4.21a ou ultérieure et s'exécute sous Windows 98, Windows 95 
+ou Windows NT (version 4.0 ou ultérieure).
+
+Un utilitaire de configuration client Win32 de SQL Server 7.0 est également installé
+avec la version 3.7 du pilote ODBC de SQL Server. Cet utilitaire peut être utilisé 
+avec Microsoft SQL Server version 4.21a ou ultérieure et les bibliothèques réseau client 
+qui sont livrées avec ces versions de SQL Server.
+
+********************************************
+2. Installation d'Instcat.sql sur le serveur
+
+Le pilote ODBC de SQL Server utilise un ensemble de procédures 
+système stockées, connues sous le nom de procédures stockées 
+dans le catalogue, pour obtenir des informations du catalogue 
+système de SQL Server. Chaque version du pilote ODBC 
+de SQL Server est conçue pour fonctionner avec une version 
+spécifique des procédures stockées dans le catalogue. 
+
+Le fichier Instcat.sql fourni avec la version 3.7 du pilote ODBC 
+de SQL Server comprend des mises à jour mineures apportées 
+aux procédures stockées dans le catalogue qui mettent à niveau 
+les procédures pour les versions utilisées par ce pilote. Le fichier Inscat.sql livré 
+avec le pilote ODBC de SQL Server version 3.7 est le même que celui livré avec SQL Server 7.0.
+Il n'est pas nécessaire pour les sites de SQL Server 7.0 d'exécuter le fichier Instcat.sql.
+
+L'administrateur système de SQL Server doit utiliser le script 
+Instcat.sql pour mettre à niveau les procédures stockées 
+dans le catalogue afin d'assurer le bon fonctionnement du pilote. La mise à niveau des
+procédures stockées dans le catalogue 
+n'affecte pas le fonctionnement des anciens clients SQL Server. 
+Cette procédure doit être effectuée pour toutes les versions 
+de Microsoft SQL Server, de 4.21a à 6.5. La mise à jour est nécessaire si vous possédez
+SQL Server 7.0.
+
+Pour mettre à niveau les procédures stockées dans le SQL Server 4.21a, 
+6.0 ou 6.5, l'administrateur système exécute un script Instcat.sql qui utilise l'utilitaire
+isql (consultez les instructions ci-dessous). 
+Avant d'apporter des modifications à la base de données principale,l'administrateur système 
+doit la sauvegarder. Pour exécuter isql, votre ordinateur 
+doit être installé comme station de travail client pour SQL Server.
+
+À l'invite, utilisez l'utilitaire isql pour exécuter 
+le script Instcat.sql. Par exemple :
+
+C:> ISQL /Usa /Psa_password /Sserver_name 
+	/ilocation\Instcat.Sql
+
+où
+sa_password 
+	correspond au mot de passe de l'administrateur système.
+server_name 
+	correspond au nom du serveur sur lequel SQL Server réside.
+location 
+	correspond au chemin d'accès complet de l'emplacement 
+	d'Instcat.Sql.
+
+Le script Instcat.sql génère de nombreux messages. La plupart 
+d'entre eux indiquent le nombre de lignes concernées par 
+les instructions Transact-SQL émises par le script. La plupart 
+de ces messages peuvent être ignorés, mais il est conseillé 
+d'analyser la sortie au cas où certains d'entre eux indiquent 
+une erreur d'exécution. Lorsqu'Instcat.sql est exécuté 
+sur une version 6.0 de SQL Server, le message qui signale 
+que l'objet sp_MS_upd_sysobj_category n'existe pas peut être ignoré. 
+Le dernier message doit indiquer que l'exécution d'Instcat.sql
+a réussi. Le script Instcat.sql échoue s'il n'y a pas suffisamment 
+d'espace disponible dans la base de données principale pour stocker 
+les procédures dans le catalogue ou pour consigner les modifications 
+apportées aux procédures existantes.
+
+**********************************************************
+3. Obtention des bibliothèques réseau client de SQL Server
+
+Le pilote ODBC de Microsoft SQL Server utilise les bibliothèques 
+réseau client de Microsoft SQL Server pour communiquer avec le serveur. 
+La version 3.7 du pilote ODBC de SQL Server utilise également 
+l'utilitaire de configuration client SQL Server pour gérer 
+la bibliothèque réseau associée à une source de données ODBC.
+
+La version 3.7 du pilote ODBC de SQL Server installe uniquement une 
+bibliothèque réseau : le fichier Dbnmpntw.dll de la bibliothèque réseau Win32.
+
+Vous pouvez utiliser la version 3.7 du pilote ODBC de SQL Server avec 
+d'anciennes bibliothèques réseau Win32. Si une bibliothèque réseau
+différente de celle du canal de communication nommé est nécessaire 
+à la connexion à SQL Server, vous pouvez utiliser la bibliothèque 
+réseau qui est livrée avec votre version de SQL Server. 
+Vous pouvez obtenir les bibliothèques réseau SQL Server en installant 
+les utilitaires client SQL Server WIN32 pour votre version 
+de SQL Server.
+
+La version de l'utilitaire de réseau client SQL Server,
+installée avec la version 3.7 du pilote ODBC de SQL Server, peut être 
+utilisée avec les bibliothèques réseau client à partir de SQL Server 
+version 4.21a ou ultérieure.
+
+**************************************************************
+4. Sources de la documentation relative à l'utilisation d'ODBC 
+   avec SQL Server
+
+La version 3.7 du pilote ODBC de Microsoft SQL Server est la même que 
+celle de SQL Server 7.0. Les utilisateurs de SQL Server 7.0 peuvent se 
+reporter à la documentation de SQL Server 7.0 pour les informations 
+spécifiques au pilote.
+
+Lorsque le pilote OBDC de SQL Server version 3.7 est utilisé avec SQL Server
+(version 4.21a, 6.0 ou 6.5), le pilote fonctionne de la même manière que les 
+anciens pilotes. Vous pouvez utiliser les informations spécifiques du pilote,
+livrées avec cette version de SQL Server. Parmi celles-ci :
+
+* le fichier drvssrvr.hlp livré avec la version antérieure de
+SQL Server.
+
+* La section " Programmation d'ODBC pour Microsoft SQL Server " des
+manuels SQL Server 6.5.
+
+* Le livre blanc intitulé " Utilisation d'OBDC avec Microsoft SQL Server "
+disponible sur MSDN.
+	
+La version 3.7 du pilote ODBC de Microsoft SQL Server est également conforme
+aux autres informations spécifiques au pilote de la note 
+technique " Utilisation d'ODBC avec Microsoft SQL Server " 
+que vous pouvez consulter sur MSDN.
+
+Le fichier Sqlsodbc.hlp qui est livré avec la version 3.7 
+du pilote ODBC de SQL Server contient uniquement une aide contextuelle 
+pour l'Assistant Source de données ODBC de SQL Server. Le fichier Drvssrvr.hlp
+qui était livré avec les versions précédentes 
+du pilote ODBC de SQL Server contenait des informations 
+spécifiques au pilote pour les anciennes versions du pilote. 
+Les informations contenues dans les anciennes versions de Drvssrvr.hlp 
+sont dupliquées dans le manuel de SQL Server 6.5 
+" Programming ODBC for Microsoft SQL Server ".
+
+***************************************************************
+5. Utilisation du pilote dans un environnement de développement
+
+	Le pilote ODBC de SQL Server utilise des paramètres spécifiques pour
+plusieurs appels de fonction ODBC. Les paramètres et les structures de programmation
+ C et C++ spécifiques au pilote sont contenus dans le fichier Odbcss.h.
+
+La version 3.7 du pilote ODBC de SQL Server utilise le fichier Odbcss.h
+fourni dans les sources suivantes :
+
+* SQL Server 7.0
+
+* SQL Server 6.5 Service Pack 2 (SP2) ou version ultérieure
+
+	
+* MDAC SDK
+Le MDAC SDK fait partie de Microsoft Developer Network édition professionnelle. 
+Il peut être téléchargé à partir du site Web de Microsoft à l'adresse suivante :
+www.microsoft.com/data. Vous pouvez également trouver le SDK chez Microsoft Press
+dans le manuel " Microsoft ODBC3.0 Software Development Kit and Programming Reference "
+
+*******************************************************
+6. Problèmes de compatibilité
+
+La version 3.7 du pilote ODBC étant livrée avec SQL Server 7.0, les utilisateurs
+de ce serveur doivent se reporter à la documentation ODBC de SQL Server 7.0. Les
+problèmes de compatibilité expliqués dans la présente section sont valables uniquement
+lorsque le pilote est exécuté avec les versions antérieures de SQL Server (4.21a, 6.0 et 6.5).
+
+La version 3.7 du pilote ODBC de SQL Server affiche un nouvel 
+Assistant lors de l'ajout ou de la configuration de sources de données 
+dans l'utilitaire Administrateur ODBC ou lorsqu'une application 
+appelle SQLConfigDataSource et demande au pilote d'inviter 
+l'utilisateur à entrer des informations. Cliquez sur le bouton Aide 
+de l'Assistant pour accéder à la documentation correspondante.
+
+Dans la version 2.65 du pilote ODBC de SQL Server qui était livrée 
+avec SQL Server 6.5, SQL_COPT_SS_PERF_QUERY_INTERVAL fonctionnait 
+en secondes et non en millisecondes, comme l'indique l'article 
+Q157753 de la Base de connaissances. Dans la version 3.7 du pilote 
+ODBC de SQL Server, SQL_COPT_SS_PERF_QUERY_INTERVAL a été modifiée 
+pour pouvoir fonctionner en millisecondes.
+
+Les modifications suivantes concernent uniquement les applications 
+écrites à l'aide de l'API d'ODBC 3.X. Elles ne concernent pas celles 
+qui sont écrites à l'aide de l'API d'ODBC 2.X. Ces modifications 
+ne doivent pas avoir de répercussions sur le traitement des jeux 
+de résultats dans la plupart des applications ODBC.
+
+Dans les versions précédentes du pilote ODBC de SQL Server, 
+des instructions contiguës PRINT ou RAISERROR d'une procédure 
+batch ou stockée, renvoient leurs messages ensemble, dans un jeu 
+de résultats. Dans la version 3.7 du pilote ODBC de SQL Server, 
+les messages correspondant à chaque instruction SQL sont renvoyés 
+sous forme de jeux de résultats distincts. Vous devez appeler 
+SQLMoreResults entre chaque message pour vous placer sur le message 
+de l'instruction SQL suivante. Les messages provenant d'une seule 
+instruction SQL, telle qu'une instruction DBCC, sont tous renvoyés 
+dans un seul jeu de résultats et il n'est pas nécessaire d'appeler 
+SQLMoreResults entre chaque message.
+
+Dans les versions précédentes du pilote ODBC de SQL Server, une erreur
+d'exécution ou une RAISERROR ayant une sévérité de 11 ou plus sur la
+première instruction d'une procédure batch ou stockée impliquait 
+toujours que SQLExecute, SQLExecDirect ou SQLParamData renvoie 
+SQL_ERROR. Dans la version 3.7 du pilote ODBC de SQL Server, 
+SQLExecute, SQLExecDirect ou SQLParamData renvoie SQL_ERROR uniquement 
+si aucune autre instruction n'est exécutée après la première. 
+Si d'autres instructions sont exécutées après la première, 
+même une simple instruction RETURN sans valeur renvoyée, 
+SQLExecute ou SQLExecDirect renvoie SQL_SUCCESS_WITH_INFO. 
+Après le traitement des messages SQL_SUCCESS_WITH_INFO utilisant 
+SQLGetDiagRec, appelez SQLMoreResults pour vous placer dans le jeu 
+de résultats suivant.
+
+Lorsque les versions précédentes du pilote rencontraient une erreur 
+dans la première instruction d'une procédure batch ou stockée, 
+le handle d'instruction était disponible en vue d'une utilisation 
+avec une autre instruction SQL après le renvoi de SQL_ERROR 
+par SQLExecute ou SQLExecDirect. Lorsque le pilote 3.7 renvoie 
+SQL_SUCCESS_WITH_INFO, l'instruction ne peut pas traiter une autre 
+instruction SQL tant que SQLMoreResults ne renvoie pas SQL_NO_DATA 
+ou que tous les jeux de résultats suivant RAISERROR ne sont fermés. 
+Si aucun jeu de résultats ne suit le message d'erreur, SQLCloseCursor 
+ne peut pas être appelé ; SQLFreeStmt(SQL_CLOSE) ou SQLMoreResults 
+doit être appelé pour libérer le handle d'instruction afin de traiter 
+une autre instruction SQL :
+
+CREATE PROCEDURE TestPrc @Parm1 as
+IF (@Parm1 IS NULL)
+BEGIN
+	RAISERROR ('Parm1 ne peut pas être NULL', 11, 1)
+	RETURN
+END
+SELECT * FROM sysusers WHERE suid = @Parm1
+GO
+
+Exécutez la procédure suivante :
+
+SQLExecDirect(hstmt, "{ call TestPrc (NULL) }", SQL_NTS);
+
+Lors de l'utilisation d'une ancienne version du pilote ODBC 
+de SQL Server, ou si l'application utilise l'API d'ODBC 2.X, 
+SQLExecDirect renvoie SQL_ERROR. Après le renvoi de SQL_NO_DATA 
+par SQLGetDiagRec ou de SQL_NO_DATA_FOUND par SQLError, le handle 
+d'instruction peut exécuter une autre instruction SQL.
+
+Lors de l'utilisation de la version 3.7 du pilote ODBC de SQL Server 
+à partir d'une application écrite dans l'API d'ODBC 3.X, SQLExecDirect 
+renvoie SQL_SUCCESS_WITH_INFO. Après le renvoi de SQL_NO_DATA par 
+SQLGetDiagRec, le handle d'instruction ne peut pas être utilisé pour 
+traiter une autre instruction SQL tant que SQLMoreResults ne renvoie 
+pas SQL_NO_DATA ou que SQLFreeStmt(SQL_CLOSE) n'est pas appelé.
+
+Dans les versions précédentes du pilote ODBC de SQL Server, SQLExecute,
+SQLExecDirect ou SQLParamData renvoie SQL_SUCCESS si une application 
+exécute une instruction de recherche UPDATE ou DELETE qui ne concerne 
+aucune ligne. Dans ce cas, la version 3.7 du pilote renvoie 
+SQL_SUCCESS aux applications écrites avec l'API d'ODBC 2.X, 
+mais elle renvoie SQL_NO_DATA aux applications écrites 
+avec l'API d'ODBC 3.X. Si c'est l'application ODBC 2.X qui reçoit 
+SQL_SUCCESS ou l'application ODBC 3.X qui reçoit SQL_NO_DATA, 
+puis appelle SQLRowCount, SQLRowCount renvoie une valeur zéro.
+
+ODBC 3.X définit plus clairement qu'ODBC 2.X la façon dont 
+les résultats sont renvoyés. Les versions précédentes du pilote ODBC 
+de SQL Server renvoyaient les valeurs de paramètres de sortie 
+et des codes de retour lorsque la fonction ODBC 2.X SQLFetch 
+ou SQLExtendedFetch, lorsqu'elle était exécutée sur le dernier 
+ensemble de résultats renvoyé par une procédure stockée, renvoyait 
+SQL_NO_DATA. La version 3.7 du pilote conserve ce comportement 
+lorsqu'il est appelé par des applications ODBC 2.X. 
+En revanche, lorsqu'il est appelé par des applications ODBC 3.X, 
+le pilote ne renvoie ni paramètres de sortie, ni codes de sortie 
+avant que SQLMoreResults ne renvoie SQL_NO_DATA.
+****************************************************************
+
+
+
+ 

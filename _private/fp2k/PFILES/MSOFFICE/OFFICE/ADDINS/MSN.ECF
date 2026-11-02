@@ -1,0 +1,37 @@
+; Localized	03/24/1999 04:01  (GMT)	7:4.1.211 	MSN.ECF
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={9B243160-3745-11cf-8582-00AA00C02AAA}
+Path="MOSCFG32.dll"
+Entry Point=1
+Client Version=4.0
+Extension Version=1.0
+Service Provider=MSN
+Misc Flags=RemoteAlso;WarnIfNoDLL
+
+[Exchange Client Compatibility]
+Exchange Registry=1
+Exchange Extension Key="MSN Menu Extensions"
+Exchange Context Map=01110110011010
+Exchange Interface Map=1000000
+
+[Folder]
+Events=InstallCommands
+Commands=MSNHelpTopics
+
+[Item]
+Events=InstallCommands
+Commands=MSNHelpTopics
+
+[Command]
+MSNHelpTopics=50000;MSNHelpTopics;Help After HelpHelp Enabled
+
+[Resources]
+MSNHelpTopics=2001
+
+[Strings]
+DisplayName = The Microsoft Network
+Description = The Microsoft Network
+;MSNHelpTopics=The Microsoft Network He&lp Topics
+

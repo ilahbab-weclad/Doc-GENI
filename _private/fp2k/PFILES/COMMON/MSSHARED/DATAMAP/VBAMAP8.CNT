@@ -1,0 +1,80 @@
+:Base VBAMAP8.HLP>langrdf
+:Title Visual Basic pour Microsoft Map
+:Index Références Microsoft Map=vbamap8.hlp
+:Link vbamap8.hlp
+:Link vbaxl8.hlp
+1 Références Visual Basic pour Microsoft Map
+2 Méthodes
+3 Add, méthode (collection d'objets PinMaps)=DMmthAddPinMapsObj@vbamap8.hlp>langref
+3 Close, méthode=DMmthClose@vbamap8.hlp>langref
+3 Create, méthode=DMmthCreate@vbamap8.hlp>langref
+3 Delete, méthode=DMmthDelete@vbamap8.hlp>langref
+3 IsOpen, méthode=DMmthIsOpen@vbamap8.hlp>langref
+3 Open, méthode=DMmthOpen@vbamap8.hlp>langref
+3 Refresh, méthode=DMmthRefresh@vbamap8.hlp>langref
+3 Remove, méthode=DMmthRemove@vbamap8.hlp>langref
+3 ZoomTo, méthode=DMmthZoomTo@vbamap8.hlp>langref
+2 Objets
+3 CMSMap, objet=dmobjCMSMap@vbamap8.hlp>langref
+3 Dataset, objet=dmobjDataset@vbamap8.hlp>langref
+3 Datasets, collection d'objets=dmobjDatasets@vbamap8.hlp>langref
+3 Feature, objet=dmobjFeature@vbamap8.hlp>langref
+3 Features, collection d'objets=dmobjFeatures@vbamap8.hlp>langref
+3 Legend, objet=dmobjLegend@vbamap8.hlp>langref
+3 LegendFont, objet=dmobjLegendFont@vbamap8.hlp>langref
+3 LegendTitle, objet=dmobjLegendTitle@vbamap8.hlp>langref
+3 PinMap, objet=DMobjPinMap@vbamap8.hlp>langref
+3 PinMaps, collection d'objets=dmobjPinMaps@vbamap8.hlp>langref
+3 SelectedField, objet=DMobjSelectedField@vbamap8.hlp>langref
+3 SelectedFields, collection d'objets=dmobjSelectedFields@vbamap8.hlp>langref
+3 Template, objet=DMobjTemplate@vbamap8.hlp>langref
+3 Templates, collection d'objets=dmobjTemplates@vbamap8.hlp>langref
+3 Theme, objet=dmobjTheme@vbamap8.hlp>langref
+3 Themes, collection d'objets=dmobjThemes@vbamap8.hlp>langref
+3 Title, objet=DMobjTitle@vbamap8.hlp>langref
+3 TitleFont, objet=DMobjTitleFont@vbamap8.hlp>langref
+2 Propriétés
+3 ActivePinMap, propriété=DMproActivePinMap@vbamap8.hlp>langref
+3 ActiveTemplate, propriété=DMproActiveTemplate@vbamap8.hlp>langref
+3 Application, propriété=DMproApplication@vbamap8.hlp>langref
+3 AutoCorrect, propriété=DMproAutoCorrect@vbamap8.hlp>langref
+3 AutoCreate, propriété=DMproAutoCreate@vbamap8.hlp>langref
+3 Bold, propriété=DMproBold@vbamap8.hlp>langref
+3 Caption, propriété=DMproCaption@vbamap8.hlp>langref
+3 Color, propriété=DMproColor@vbamap8.hlp>langref
+3 Compact, propriété=DMproCompact@vbamap8.hlp>langref
+3 CompactTitle, propriété=DMproCompactTitle@vbamap8.hlp>langref
+3 Count, propriété=DMproCount@vbamap8.hlp>langref
+3 CurrentDataset, propriété=DMproCurrentDataset@vbamap8.hlp>langref
+3 Dataset, propriété=DMproDataset@vbamap8.hlp>langref
+3 Datasets, propriété=DMproDatasets@vbamap8.hlp>langref
+3 DisplayUnit, propriété=DMproDisplayUnit@vbamap8.hlp>langref
+3 Features, propriété=DMproFeatures@vbamap8.hlp>langref
+3 Font, propriété=DMproFont@vbamap8.hlp>langref
+3 Italic, propriété=DMproItalic@vbamap8.hlp>langref
+3 Item,propriété=DMproItem@vbamap8.hlp>langref
+3 LatitudeCenter Property=DMproLatitudeCenter@vbamap8.hlp>langref
+3 Legend, propriété=DMproLegend@vbamap8.hlp>langref
+3 LongitudeCenter, propriété=DMproLongitudeCenter@vbamap8.hlp>langref
+3 MaxSearchTime, propriété=DMproMaxSearchTime@vbamap8.hlp>langref
+3 Name, propriété=DMproName@vbamap8.hlp>langref
+3 Parent, propriété=DMproParent@vbamap8.hlp>langref
+3 PinMaps, propriété=DMproPinMaps@vbamap8.hlp>langref
+3 PreferCompactLegends, propriété=DMproPreferCompactLegends@vbamap8.hlp>langref
+3 ScreenUpdating, propriété=DMproScreenUpdating@vbamap8.hlp>langref
+3 SelectedFields, propriété=DMproSelectedFields@vbamap8.hlp>langref
+3 Size, propriété=DMproSize@vbamap8.hlp>langref
+3 Strikethrough, propriété=DMproStrikethrough@vbamap8.hlp>langref
+3 SubTitle, propriété=DMproSubTitle@vbamap8.hlp>langref
+3 Templates, propriété=DMproTemplates@vbamap8.hlp>langref
+3 Themes, propriété=DMproThemes@vbamap8.hlp>langref
+3 ThoroughMatch, propriété=DMproThoroughMatch@vbamap8.hlp>langref
+3 Title, propriété=DMproTitle@vbamap8.hlp>langref
+3 Type, propriété=DMprotype@vbamap8.hlp>langref
+3 Underline, propriété=DMproUnderline@vbamap8.hlp>langref
+3 UseCurrencyFormat, propriété=DMproUseCurrencyFormat@vbamap8.hlp>langref
+3 Version, propriété=DMproVersion@vbamap8.hlp>langref
+3 Visible, propriété=DMproVisible@vbamap8.hlp>langref
+3 XPos, propriété=DMproXPos@vbamap8.hlp>langref
+3 YPos, propriété=DMproYPos@vbamap8.hlp>langref
+3 ZoomPct, propriété=DMproZoomPct@vbamap8.hlp>langref

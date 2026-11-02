@@ -1,0 +1,22 @@
+[info]
+title=Chalkboard
+codepage=65001
+version=2.00
+format=2.00
+readonly=true
+
+[titles]
+1031 = Wandtafel
+1036 = Tableau noir
+1040 = Lavagna
+3082 = Pizarra
+1043 = Schoolbord
+1046 = Quadro-negro
+1053 = Svart tavla
+1044 = Tavle
+1030 = Tavle
+1035 = Liitutaulu
+1041 = 黒板
+1042 = 칠판
+1028 = 黑板
+2052 = 黑板

@@ -1,0 +1,31 @@
+:Base Nwindcs9.hlp>Ref
+:Title Microsoft Access 2000
+:Index Les Comptoirs=Nwindcs9.hlp
+1 Présentation des Comptoirs=OverviewOfNorthwindADP>Right
+1 Tables
+2 Tables des Comptoirs=TablesInNorthwindADP>Right
+1 Affichages et procédures stockées
+2 Affichages et procédures stockées dans Les Comptoirs=QueriesInNorthwindADP>Right
+2 Affichages Union=UnionAndCrosstabQueriesADP>Right
+2 Affichages et procédures stockées qui utilisent des critères pour limiter la quantité...=QueriesThatUseCriteriaADP>Right
+2 Affichages qui calculent des totaux=QueriesThatCalculateTotalsADP>Right
+1 Formulaires
+2 Formulaires des Comptoirs=FormsInNorthwindADP>Right
+2 Formulaire Liste téléphonique des clients=CustomerPhoneListFormADP>Right
+2 Formulaires Employés et Employés (saut de page)=EmployeesFormADP>Right
+2 Formulaires Commandes et Sous-formulaire commandes=OrdersFormADP>Right
+2 Formulaires Fournisseurs, Produits et Liste des produits=SuppliersFormADP>Right
+2 Formulaires Dialogue étiquettes clients, Dialogue états ventes et Menu général=SalesReportsDialogFormADP>Right
+1 États
+2 États des Comptoirs=ReportsInNorthwindADP>Right
+2 États Catalogue et Sous-état catalogue=CatalogReportADP>Right
+2 État Ventes par représentant par pays=EmployeeSalesByCountryReportADP>Right
+2 État Produits par catégorie=ProductsByCategoryADP>Right
+2 États Ventes par catégorie et Sous-état ventes par catégorie=SalesByCategoryReportADP>Right
+1 Pages d'accès aux données
+2 Ajout de pages d'accès aux données exemple=acconImportDataAccessPagesFromNorthwindmdb>Right
+2 Pages d'accès aux données des Comptoirs=acconDataAccessPagesInNorthwind>Right
+2 Page d'accès aux données Analyse des ventes=acrefAnalyzeSalesDataAccessPage>Right
+2 Page d'accès aux données Révision des produits=acrefReviewProductsDataAccessPage>Right
+2 Page d'accès aux données Ventes=acrefSalesProjectionsDataAccessPage>Right
+2 Page d'accès aux données Affichage des produits=acrefViewProductsDataAccessPage>Right

@@ -1,0 +1,780 @@
+Fichier Lisezmoi Microsoft PowerPoint 2000
+
+Juin 1999
+
+(c) 1999 Microsoft Corporation. Tous droits réservés.
+
+Ce document fournit des informations inédites ou de  
+dernière minute sur Microsoft PowerPoint 2000, correspondant
+à la date mentionnée ci-dessus. Au-delà de cette date,
+vous pouvez trouver des informations et des ressources 
+plus récentes sur le site Web Espace Office, accessible  
+en cliquant dans le menu ? (Aide) sur Office sur le Web.
+Vous pouvez également trouver d'autres informations,
+y compris sur les questions relatives au réseau ou à 
+l'administration, sur le site Web du Kit de Ressources 
+Techniques Office à l'adresse suivante (France et Canada) :
+http://www.microsoft.com/office/ork/
+
+Pour obtenir plus d'informations techniques sur PowerPoint, 
+visitez le site Web des Services de Support Technique 
+Microsoft à l'adresse suivante : 
+France : http://microsoft.com/france/support/ 
+Canada : http://www.microsoft.com/canada/french/support/ 
+
+
+--------------------------
+Utilisation de ce document
+--------------------------
+
+Pour visualiser le fichier lisezmoi à l'écran dans le 
+Bloc-notes Windows, agrandissez la fenêtre du Bloc-notes. 
+Dans le menu Edition, cliquez sur Retour à la ligne automatique.
+Pour imprimer le fichier lisezmoi, ouvrez-le dans le
+Bloc-notes ou dans un autre logiciel de traitement de texte,
+puis utilisez la commande Imprimer du menu Fichier.
+_________________________________________________________
+SOMMAIRE
+
+INSTALLATION DE MICROSOFT POWERPOINT 2000
+   Configuration minimale requise pour Microsoft PowerPoint 2000
+   Désactivation de la protection antivirus avant d'exécuter 
+   le programme d'installation
+   Certaines fonctionnalités changent automatiquement de paramètre
+   au cours d'une installation personnalisée.
+   Installation de Microsoft PowerPoint 2000 en réseau
+   Téléchargement de la prise en charge de l'euro
+   Un message demandant le code CD Key s'affiche lorsqu'Office 
+   est installé à partir d'une installation administrative.
+   Installation de PowerPoint 2000 sans supprimer la version bêta 2
+   d'Office 2000
+   Message inattendu au cours de l'installation
+   Le raccourci PowerPoint 2000 du menu Programmes varie
+   selon votre système d'exploitation.
+   L'utilisation de signes de ponctuation dans les noms de 
+   dossier lors de l'installation peut causer des problèmes.
+   Paramètres d'installation pour Clip Gallery
+FONCTIONNEMENT DE MICROSOFT POWERPOINT 2000
+   Obtention des outils de vérification Microsoft Office 2000
+   Édition des clips supprimés d'une version antérieure de 
+   Clip Gallery
+   Info-bulle incorrecte pour la boîte de dialogue Sécurité
+   Impossible d'insérer des images provenant d'un scanneur ou d'un 
+   appareil-photo numérique sous Windows NT
+   Certains liens hypertexte dans des fichiers HTML publiés dans 
+   un répertoire racine ne fonctionnent pas dans Internet Explorer 
+   Version 3.02.
+   Passage dans PowerPoint pour effacer la zone de message après avoir
+   inséré des clips audio et des clips animés provenant de Clip Gallery
+   Enregistrement d'une présentation contenant trop d'objets par 
+   diapositive au format PowerPoint 4.0
+   Il se peut que les couleurs ne s'affichent pas correctement 
+   sur les moniteurs 256 couleurs.
+AIDE DE MICROSOFT POWERPOINT 2000
+   Composants WebBot non disponibles dans Office 2000 Developer
+   PowerPoint 2000 ne prend pas en charge l'ouverture des présentations
+   Lotus Freelance 4.0 pour MS-DOS.
+   Procédure à suivre pour lancer Microsoft NetMeeting
+PROBLÈMES MULTILINGUES
+   PROBLÈMES RELATIFS AUX FONCTIONNALITÉS DES LANGUES ASIATIQUES
+      Problèmes d'affichage possibles lors de l'utilisation de 
+      plusieurs polices asiatiques
+   PROBLÈMES RELATIFS AUX FONCTIONNALITÉS DES LANGUES DE DROITE À GAUCHE
+      Pilotes d'imprimante mis à jour requis pour le texte de droite 
+      à gauche
+      Installation d'un programme complémentaire pour mettre les 
+      modèles de conception en forme pour une utilisation de droite 
+      à gauche
+      Définition de l'orientation par défaut des paragraphes de droite 
+      à gauche après la mise à niveau
+MICROSOFT VISUAL BASIC ÉDITION APPLICATIONS
+   Activation du volet Diapositive avant d'appeler des méthodes ou des
+   propriétés associées
+   Propriété Name des formes de table
+   Compléments à déchargement automatique
+   Méthode Paste (objet TextRange)
+   Propriété Context (objet CommandBar)
+   Langue par défaut pour Visual Basic Editor et Microsoft
+   Script Editor
+   Nouvelles propriétés (VBA)
+   Utilisation de la touche F3 pour rechercher l'occurrence 
+   de texte suivante dans la fenêtre de code
+   Système SENS (System Event Notification System)
+   Documentation de référence HTML
+   Version Internet Explorer et édition du code HTML
+   Rubrique « Rubrique introuvable » (Microsoft Script Editor)
+_____________________________________________________________
+INSTALLATION DE MICROSOFT POWERPOINT 2000
+
+Configuration minimale requise pour Microsoft PowerPoint 2000
+-------------------------------------------------------------
+
+Pour utiliser Microsoft PowerPoint 2000, vous avez besoin
+des éléments suivants :
+
+* PC équipé d'un processeur Pentium 75 MHz ou supérieur
+* Système d'exploitation Microsoft Windows 95 ou ultérieur, 
+  ou Microsoft Windows NT Workstation version 4.0 Service 
+  Pack 3 ou ultérieur
+* Pour Windows 95 ou Windows 98 :
+  - 16 Mo de mémoire vive (RAM) pour le système d'exploitation, 
+    plus 4 Mo de mémoire vive pour Microsoft PowerPoint
+* Pour Windows NT Workstation version 4.0 Service Pack 3
+  ou ultérieur :
+  - 32 Mo de mémoire vive (RAM) pour le système d'exploitation, 
+    plus 4 Mo de mémoire vive pour Microsoft PowerPoint
+* Espace disponible sur le disque dur (Le nombre indique une
+  installation standard. L'utilisation de votre disque dur 
+  dépendra de votre configuration. Selon les choix effectués 
+  lors d'une installation personnalisée, plus ou moins d'espace 
+  disque disponible sera nécessaire) : 
+  - Installation standard : 156 Mo
+* Lecteur de CD-ROM
+* Moniteur VGA ou de résolution supérieure ; Super VGA recommandé
+* Souris Microsoft, Microsoft IntelliMouse ou dispositif de pointage
+  compatible
+
+Éléments ou services supplémentaires requis pour utiliser 
+certaines fonctionnalités :
+
+* Modem 9 600 bauds ; 14 400 bauds ou supérieur recommandé
+* Ordinateur multimédia requis pour accéder au son et à 
+  d'autres effets multimédias
+* Client Microsoft Exchange ou Microsoft Outlook requis
+  pour exécuter la messagerie électronique Office
+* 8 Mo de mémoire supplémentaire requis pour exécuter la 
+  messagerie électronique Office
+* Certaines fonctionnalités Internet peuvent nécessiter 
+  un accès à Internet et un abonnement supplémentaire auprès 
+  d'un fournisseur de services.
+
+Désactivation de la protection antivirus avant d'exécuter 
+le programme d'installation
+---------------------------------------------------------
+Certains programmes de protection antivirus, tels
+que VSafe.com et Norton AntiVirus AutoProtect, peuvent 
+interférer avec le programme d'installation Microsoft 
+Office 2000. Si vous utilisez un programme antivirus sur 
+votre ordinateur, désactivez-le avant d'exécuter l'installation. 
+(N'oubliez pas de réactiver ce programme lorsque l'installation 
+sera terminée.)
+
+Certaines fonctionnalités changent automatiquement de paramètre
+au cours d'une installation personnalisée.
+---------------------------------------------------------------
+Au cours d'une installation personnalisée, si vous définissez 
+PowerPoint sur « Non disponible », puis que vous définissez 
+quelques fonctionnalités de PowerPoint sur autre chose que 
+« Non disponible », certaines fonctionnalités supplémentaires 
+passeront également du paramètre « Non disponible » au nouveau 
+paramètre que vous choisissez. Les fonctionnalités affectées sont 
+les suivantes :
+
+* Aide
+* Didacticiel
+* Modèles de conception
+* Assistant Genigraphics
+* Assistant Présentation à emporter
+
+Si vous essayez d'économiser de l'espace sur votre disque, 
+définissez plutôt PowerPoint ou la fonctionnalité individuelle 
+sur « Installé lors de la première utilisation ».
+
+Installation de Microsoft PowerPoint 2000 en réseau
+---------------------------------------------------
+Pour créer un emplacement d'installation administrative pour 
+PowerPoint 2000, procédez comme suit :
+
+1. Créez un partage sur un serveur réseau pour l'emplacement 
+   d'installation administrative. 
+   L'espace disque disponible sur le partage réseau doit être 
+   au moins égal à 550 mégaoctets (Mo).
+2. Connectez-vous au partage du serveur avec un
+   ordinateur qui exécute Microsoft Windows 95, 98 ou
+   Microsoft Windows NT et qui a les droits en écriture
+   sur le partage.
+3. Dans le menu Démarrer, cliquez sur Exécuter, puis sur
+   Parcourir.
+4. Sur le CD-ROM 1 d'Office situé sur le lecteur de 
+   CD-ROM, sélectionnez Setup.exe, puis cliquez sur Ouvrir.
+5. Sur la ligne de commande, à la suite de Setup.exe, tapez 
+
+   /a data1.msi et cliquez sur OK.
+
+   Par exemple :
+
+   e:\setup.exe /a data1.msi
+
+6. Lorsque vous y êtes invité, entrez le nom de l'organisation
+   que vous voulez définir pour tous les utilisateurs qui
+   installeront Office à partir de cet emplacement. 
+7. Lorsque le système vous invite à indiquer un emplacement 
+   d'installation, entrez le nom du serveur et le partage que 
+   vous avez créé.
+
+Pour plus d'informations sur les problèmes de réseau et 
+d'administration, visitez le site Web du Kit de Ressources
+Techniques à l'adresse suivante (France et Canada) :
+http://www.microsoft.com/office/ork/
+
+Téléchargement de la prise en charge de l'euro
+----------------------------------------------
+Pour télécharger la prise en charge de l'euro, rendez-vous
+sur les sites correspondant aux adresses suivantes :
+
+* Windows 95
+http://www.microsoft.com/france/euro/correctifs
+/info.asp?mar=/france/euro/correctifs/win95fr.html
+
+* Windows NT 4.0
+http://www.microsoft.com/france/euro/correctifs
+/info.asp?mar=/france/euro/correctifs/nt4.html
+
+REMARQUE : Windows 98 comprend une prise en charge 
+intégrée de l'euro, aucun téléchargement n'est par 
+conséquent nécessaire.
+
+Un message demandant le code CD Key s'affiche lorsqu'Office 
+est installé à partir d'une installation administrative.
+-----------------------------------------------------------
+Lorsque vous installez PowerPoint 2000 sur votre ordinateur à 
+partir d'une installation administrative sur un serveur, 
+un code CD Key peut vous être demandé. Cela peut arriver si
+l'administrateur système qui a créé l'installation 
+administrative n'a pas entré de code CD Key.
+ 
+Pour résoudre ce problème, demandez à l'administrateur
+système de créer une nouvelle installation administrative 
+et d'entrer le code CD Key dans la première boîte de 
+dialogue. Vous ne serez ainsi plus invité à fournir le 
+code CD Key lorsque vous installerez PowerPoint 2000 à partir 
+de cette nouvelle installation administrative.
+
+Installation de PowerPoint 2000 sans supprimer la version bêta 2 
+d'Office 2000
+----------------------------------------------------------------
+Lorsque vous démarrez PowerPoint, il se peut que le message 
+suivant s'affiche :
+
+Informations requises manquantes dans le registre. 
+Impossible d'exécuter cette application. Réexécutez 
+le programme d'installation pour résoudre ce problème.
+
+Il peut également arriver que le programme se ferme après 
+quelques secondes.
+ 
+Vous pouvez rencontrer l'un ou l'autre des problèmes 
+mentionnés ci-dessus si vous avez installé PowerPoint 2000
+sans avoir supprimé la version bêta 2 (2221b) d'Office 2000.
+
+Pour résoudre ce problème, procédez comme suit pour supprimer
+la version bêta 2 d'Office 2000 :
+
+1. Cliquez sur le bouton Démarrer dans la barre des tâches,
+   pointez sur Paramètres et cliquez sur Panneau de 
+   configuration.
+2. Double-cliquez sur l'icône Ajout/Suppression de programmes.
+3. Dans la liste des programmes installés, cliquez sur Microsoft 
+   Office 2000 Premium (qui correspond à la version 
+   bêta 2 d'Office 2000).
+4. Cliquez sur Ajouter/Supprimer.
+5. Cliquez sur Supprimer Office.
+6. Cliquez sur Oui lorsqu'un message vous invite à confirmer 
+   la suppression.
+
+Message inattendu au cours de l'installation
+--------------------------------------------
+Si un message inattendu s'affiche lors de l'installation 
+de PowerPoint et qu'il apparaît de nouveau lorsque vous essayez 
+de réinstaller PowerPoint, vous pouvez créer un fichier journal 
+qui aidera les Services de Support Technique de Microsoft à 
+résoudre le problème. Après avoir créé le fichier, contactez 
+les Services de Support Technique de Microsoft.
+
+Pour créer le fichier journal :
+ 
+1. Cliquez sur le bouton Démarrer dans la barre des tâches,
+   puis sur Exécuter.
+2. Dans la zone Ouvrir, tapez : 
+ 
+   <chemin>\Setup.exe /L*v c:\Verboselog.txt
+ 
+   où <chemin> correspond à l'emplacement de Setup.exe. Par  
+   exemple, si vous procédez à une installation à partir d'un 
+   lecteur de CD-ROM, le texte que vous devez taper doit être 
+   semblable à ce qui suit :
+ 
+   d:\Setup.exe /L*v c:\Verboselog.txt
+ 
+3. Cliquez sur OK.
+ 
+   Le programme d'installation redémarrera et un fichier journal 
+   intitulé Verboselog.txt sera créé à la racine de votre 
+   lecteur C:.
+
+Le raccourci PowerPoint 2000 du menu Programmes varie 
+selon votre système d'exploitation.
+-----------------------------------------------------
+Le raccourci PowerPoint 2000 dans le menu Programmes peut
+présenter les problèmes suivants :
+
+1. Il ne répare pas automatiquement les programmes.
+ 
+   Ce problème survient, car votre système d'exploitation
+   ne prend pas en charge les raccourcis de Windows Installer.
+   Voici les versions de Microsoft Windows qui prennent en
+   charge ces raccourcis : 
+
+   * Windows 98
+   * Windows 95 avec Internet Explorer 4.01, Service Pack 1, 
+     et Active Desktop installés
+   * Microsoft Windows NT version 4 avec Internet Explorer 
+     4.01, Service Pack 1 et Active Desktop installés 
+
+   Remarque : Si vous installez Internet Explorer 5 sur un 
+   ordinateur exécutant Windows 95 ou Windows NT version 4 
+   sur lequel Internet Explorer 4.01, Service Pack 1 et 
+   Active Desktop sont installés, les raccourcis Windows 
+   Installer seront pris en charge. 
+
+2. Il n'installe pas les programmes lors de la première
+   utilisation. 
+
+   Ce problème survient lorsque l'option Installé lors de la 
+   première utilisation n'est pas disponible pour les programmes 
+   Office dans la boîte de dialogue Sélection des composants au 
+   moment de l'installation. Cette option n'est pas disponible, 
+   car votre système d'exploitation ne prend pas en charge 
+   les raccourcis Windows Installer. Ces derniers sont pris en 
+   charge par les systèmes d'exploitation indiqués à l'étape 1. 
+
+3. Il n'affiche aucun chemin d'accès sous l'onglet Raccourci 
+   de la boîte de dialogue Propriétés du raccourci. 
+
+   Ce problème survient lorsque le raccourci est un raccourci 
+   Windows Installer. Les raccourcis Windows Installer ne font 
+   pas directement référence au chemin d'accès de la cible du 
+   raccourci. Ils contiennent un indicateur que Windows Installer 
+   traduit par le chemin d'accès de la cible du raccourci. Les 
+   raccourcis Windows Installer sont pris en charge par les 
+   systèmes d'exploitation indiqués à l'étape 1.
+
+L'utilisation de signes de ponctuation dans les noms de 
+dossier lors de l'installation peut causer des problèmes.
+---------------------------------------------------------
+N'utilisez pas de virgule (,), de guillemet simple (') ou de 
+point d'exclamation (!) dans le nom du dossier dans lequel vous 
+installez Microsoft Office 2000, Microsoft Word 2000, 
+Microsoft Excel 2000, Microsoft Outlook 2000 et 
+Microsoft PowerPoint 2000. Il vous est conseillé d'utiliser 
+le dossier par défaut ou d'employer uniquement des lettres 
+et des nombres.
+
+Paramètres d'installation pour Clip Gallery
+-------------------------------------------
+Vous pouvez rencontrer des problèmes lors de l'exécution de 
+Clip Gallery si vous définissez ce programme sur Exécuter 
+à partir du réseau ou sur Exécuter à partir du CD au cours 
+d'une installation personnalisée. Pour obtenir de meilleurs 
+résultats, conservez le paramètre de Clip Gallery défini 
+sur Exécuter à partir du disque dur.
+___________________________________________________________
+FONCTIONNEMENT DE MICROSOFT POWERPOINT 2000
+
+Obtention des outils de vérification Microsoft Office 2000
+----------------------------------------------------------
+Les outils de vérification Microsoft Office 2000 sont regroupés 
+dans une macro complémentaire pour Office 2000 qui contient tous 
+les outils linguistiques conçus par Microsoft pour plus de 
+30 langues. Vous pouvez vous les procurer auprès d'un revendeur 
+agréé. Les numéros de référence répertoriés dans l'aide sont 
+incorrects. Pour savoir comment obtenir les outils de vérification 
+Office 2000, visitez le site Web à l'adresse suivante : 
+France : http://www.microsoft.com/france/office/ 
+Canada : http://www.microsoft.com/canada/french/office 
+
+Édition des clips supprimés d'une version antérieure de Clip Gallery
+--------------------------------------------------------------------
+Si dans une présentation, vous double-cliquez sur un clip qui a 
+été supprimé d'une version antérieure de Clip Gallery, puis que vous 
+appuyez sur ÉCHAP ou que vous cliquez sur Annuler pour quitter Clip 
+Gallery, le clip est remplacé. Pour conserver le clip actif, cliquez 
+sur Annuler après avoir quitté Clip Gallery.
+
+Info-bulle incorrecte pour la boîte de dialogue Sécurité
+--------------------------------------------------------
+L'info-bulle pour le texte situé au bas de la boîte de dialogue 
+Sécurité (menu Outils, commande Macro) indique à tort que le texte 
+« indique si un antivirus est installé sur cet ordinateur ». Le texte 
+indique si l'antivirus installé est reconnu et utilisé par 
+Microsoft Office lorsqu'il ouvre des fichiers. Par conséquent, si 
+vous avez installé sur votre ordinateur un antivirus qui n'est pas 
+reconnu ou utilisé par Microsoft Office, vous verrez s'afficher 
+le texte « Aucun antivirus installé » dans cette boîte de dialogue.
+
+Impossible d'insérer des images provenant d'un scanneur ou d'un 
+appareil-photo numérique sous Windows NT
+---------------------------------------------------------------
+Si vous exécutez Windows NT 4.0 Service Pack 4 avec le modèle
+Haute sécurité, vous ne pouvez pas insérer d'images provenant d'un 
+scanneur ou d'un appareil-photo numérique (menu Insertion, sous-menu
+Image, commande Depuis un scanneur ou un appareil-photo numérique) 
+si vous êtes connecté en tant qu'utilisateur. Ouvrez une session en
+tant qu'administrateur ou changez de modèle de sécurité pour utiliser
+cette fonctionnalité. Pour plus d'informations sur les modèles de 
+sécurité de Windows NT, consultez la documentation de Windows NT.
+
+Certains liens hypertexte dans des fichiers HTML publiés dans un 
+répertoire racine ne fonctionnent pas dans Internet Explorer 
+version 3.02.
+----------------------------------------------------------------
+Les liens hypertexte relatifs (liens hypertexte dont les chemins 
+d'accès sont relatifs au document auquel ils appartiennent) 
+n'afficheront pas les pages Web dans Internet Explorer 3.02, si 
+ces pages Web ont été publiées dans un répertoire racine. Pour 
+éviter ce problème, utilisez une version plus récente d'Internet 
+Explorer, publiez les pages Web dans autre répertoire que le 
+répertoire racine ou supprimez «./ » au début de chaque lien 
+hypertexte dans les documents que vous voulez publier.
+
+Passage dans PowerPoint pour effacer la zone de message après avoir
+inséré des clips audio et des clips animés provenant de Clip Gallery
+--------------------------------------------------------------------
+Lorsque vous insérez un clip audio ou un clip animé provenant de
+Clip Gallery dans un format autre que .WAV, .AVI ou .GIF animé, une 
+zone de message s'affiche derrière Clip Gallery et vous demande si 
+vous voulez que le clip soit automatiquement lu pendant le diaporama. 
+Si vous essayez d'insérer un autre clip audio ou animé avant de cliquer 
+sur Oui ou sur Non dans la zone de message, il se peut que vous obteniez 
+un message vous indiquant que PowerPoint est occupé ou qu'une erreur 
+non spécifiée s'est produite dans Clip Gallery. Pour éviter ces 
+problèmes, cliquez sur Microsoft PowerPoint dans la barre des tâches 
+après avoir inséré le clip, cliquez sur Oui ou sur Non dans la zone 
+de message, puis revenez dans Clip Gallery pour insérer le clip suivant.
+
+Enregistrement d'une présentation contenant trop d'objets par diapositive
+au format PowerPoint 4.0
+-------------------------------------------------------------------------
+Si vous enregistrez une présentation au format PowerPoint 4.0, il 
+se peut que vous ne puissiez pas l'ouvrir dans PowerPoint ou dans 
+la visionneuse PowerPoint, si certaines diapositives contiennent trop 
+d'objets. Pour éviter ce problème, enregistrez la présentation dans 
+un autre format ou réduisez le nombre d'objets dans les diapositives. 
+Pour ce faire, sélectionnez tous les objets, coupez-les (commande Couper,
+menu Edition), puis collez-les sous forme d'image unique (Commande 
+Collage spécial, menu Edition, option Image).
+
+Il se peut que les couleurs ne s'affichent pas correctement 
+sur les moniteurs 256 couleurs.
+-----------------------------------------------------------
+Après avoir affiché les fenêtres contextuelles dans les 
+rubriques d'aide, il se peut que les couleurs associées à 
+certains éléments ne s'affichent pas correctement sur les 
+moniteurs 256 couleurs. Par exemple, les éléments suivants 
+peuvent apparaître différemment à l'écran une fois que vous 
+avez visualisé des fenêtres contextuelles :
+
+* Images bitmap
+* Images incorporées dans les fichiers
+* Compagnon Office 
+* Liens hypertexte
+
+Pour résoudre le problème d'affichage, changez la palette 
+de couleurs de votre moniteur.
+
+Pour changer la palette de couleurs :
+
+1. Cliquez sur Démarrer dans la barre des tâches Windows,
+   pointez sur Paramètres, puis cliquez sur Panneau de
+   configuration.
+2. Double-cliquez sur l'icône Affichage.
+3. Sous l'onglet Paramètres, sélectionnez une option 
+   autre que 256 couleurs. Microsoft vous recommande de 
+   sélectionner une option proposant plus de 256 couleurs, 
+   si cette option est disponible.
+
+____________________________________________________________
+AIDE DE MICROSOFT POWERPOINT 2000
+
+Composants WebBot non disponibles dans Office 2000 
+Developer
+--------------------------------------------------
+Certaines rubriques de l'aide indiquent à tort que les composants
+WebBot Microsoft Office et les livres blancs associés sont 
+disponibles dans Office 2000 Developer. 
+Les composants WebBot ne sont pas disponibles dans cette version  
+d'Office 2000 Developer.
+
+PowerPoint 2000 ne prend pas en charge l'ouverture des présentations
+Lotus Freelance 4.0 pour MS-DOS.
+--------------------------------------------------------------------
+Dans la rubrique d'aide « Conversion d'une présentation
+Lotus Freelance au format PowerPoint 2000 », les deux mentions de 
+Lotus Freelance 4.0 pour MS-DOS doivent être supprimées. 
+PowerPoint 2000 prend en charge l'ouverture et la conversion des 
+présentations Freelance Graphics 1.0-2.1 pour Windows comme cela 
+a été indiqué.
+
+Procédure à suivre pour démarrer Microsoft NetMeeting
+-----------------------------------------------------
+Les rubriques d'aide suivantes contiennent des informations
+incorrectes sur le mode de démarrage de Microsoft NetMeeting :
+
+   * Démarrage d'une conférence en ligne impromptue
+   * À propos des conférences en ligne
+   * Démarrage de NetMeeting
+
+>>> Pour démarrer NetMeeting :
+* Dans le menu Démarrer de Windows, pointez sur Programmes, 
+  sur Accessoires et sur Communications, puis cliquez sur 
+  NetMeeting.
+
+_____________________________________________________________
+PROBLÈMES MULTILINGUES
+   
+PROBLÈMES RELATIFS AUX FONCTIONNALITÉS DES LANGUES ASIATIQUES
+
+Problèmes d'affichage possibles lors de l'utilisation de
+plusieurs polices asiatiques
+-------------------------------------------------------------
+Si vous installez plusieurs polices asiatiques sur 
+des versions non asiatiques du système d'exploitation 
+Microsoft Windows NT version 4.0, vous pouvez rencontrer
+des problèmes d'affichage, tels que du texte très large,
+du texte vide ou de grandes zones vides dans Outlook ou
+dans Windows NT. C'est un problème connu dans Windows NT
+version 4.0 Service Pack 4 qui sera résolu dans une 
+version ultérieure du Service Pack pour Windows NT
+version 4.0.
+
+PROBLÈMES RELATIFS AUX FONCTIONNALITÉS DES LANGUES DE DROITE À GAUCHE
+
+Pilotes d'imprimante mis à jour requis pour le texte de
+droite à gauche
+---------------------------------------------------------------------
+Certaines imprimantes requièrent des pilotes d'imprimante  
+mis à jour pour imprimer du texte de droite à gauche. 
+Veuillez contacter le fabricant de votre imprimante si vous 
+rencontrez des problèmes pour imprimer ce type de texte.
+
+Installation d'un programme complémentaire pour mettre les modèles
+de conception en forme pour une utilisation de droite à gauche
+------------------------------------------------------------------
+PowerPoint fournit seulement des modèles de conception avec
+une mise en forme de gauche à droite. Le programme complémentaire
+Presentation Direction, fourni avec les versions Arabe et Hébreu
+d'Office, vous permettent d'inverser la mise en forme de droite à
+gauche. Pour charger le programme complémentaire, pointez vers
+Barres d'outils dans le menu Affichage, puis cliquez sur Personnaliser.
+Sous l'onglet Commandes, cliquez sur Outils dans la liste Catégories.
+Dans la liste Commandes, cliquez sur Suppléments COM et faites-les
+glisser vers une barre d'outils quelconque. Fermez la boîte de 
+dialogue Personnaliser et cliquez sur le nouveau bouton de la barre 
+d'outils pour les suppléments COM. Activez la case à cocher située 
+en regard de Presentation Direction, puis cliquez sur OK. Le programme 
+complémentaire est maintenant chargé. Pour exécuter le complément, 
+cliquez sur Presentation Direction dans le menu Outils.
+
+Définition de l'orientation par défaut des paragraphes 
+de droite à gauche après la mise à niveau
+------------------------------------------------------
+Lorsque vous effectuez une mise à niveau de PowerPoint 97
+vers la version de langue de droite à gauche d'Office 2000, 
+les paragraphes seront orientés de gauche à droite dans les 
+nouvelles présentations. Pour corriger cela, cliquez sur 
+Langue dans le menu Outils, sélectionnez une langue de droite 
+à gauche dans la liste, puis cliquez sur Par défaut. Cliquez 
+sur Oui lorsque vous y êtes invité. Ceci ne modifie pas 
+l'orientation des paragraphes dans la présentation active, 
+mais toutes les présentations à venir auront par défaut une 
+orientation des paragraphes de droite à gauche.
+_________________________________________________________
+MICROSOFT VISUAL BASIC ÉDITION APPLICATIONS
+
+Activation du volet Diapositive avant d'appeler des
+méthodes ou des propriétés associées
+---------------------------------------------------
+Dans la mesure où le volet Diapositive en mode Normal
+est synchronisé avec le volet Plan pendant le temps
+d'inactivité, il est possible qu'une macro navigue vers
+une diapositive et tente d'appeler une méthode ou une 
+propriété associée avant que le volet Diapositive n'ait 
+été mis à jour. Après avoir navigué vers une nouvelle
+diapositive, vous devez explicitement activer un volet 
+Diapositive en mode Normal avant d'appeler toute méthode 
+ou propriété associée.
+
+Propriété Name des formes de table
+----------------------------------
+Dans la mesure où l'ajout de lignes et de colonnes aux
+tableaux PowerPoint modifie la propriété Name de la forme
+du tableau, n'utilisez pas cette propriété comme 
+identificateur ou index unique pour les tableaux. 
+Conservez une variable qui fait référence au tableau
+souhaité ou attribuez à la forme du tableau une balise 
+unique pour l'identifier.
+
+Compléments à déchargement automatique
+--------------------------------------
+PowerPoint s'arrête si les compléments natifs (pas les 
+suppléments COM) se déchargent automatiquement dans leurs
+gestionnaires Auto_Close().
+
+Méthode Paste (objet TextRange)
+-------------------------------
+Pour les objets TextRange, la méthode Paste ne renvoie pas 
+d'objet TextRange représentant le texte collé contrairement
+à ce qui est indiqué dans la documentation.
+
+Propriété Context (objet CommandBar)
+------------------------------------
+Cette propriété renvoie une chaîne vide et n'est par ailleurs 
+pas prise en charge.
+
+Langue par défaut pour Visual Basic Editor et Microsoft 
+Script Editor
+-------------------------------------------------------
+Visual Basic Editor et Microsoft Script Editor sont par 
+défaut en anglais si la page de code système active ne 
+prend pas en charge la langue de l'interface utilisateur.
+
+Nouvelles propriétés (VBA)
+--------------------------
+Les nouvelles propriétés qui s'appliquent aux modules de
+classe dans des projets autonomes sont les suivantes :
+
+* Propriété Instancing 
+
+  Définit une valeur spécifiant si vous pouvez créer des
+  instances d'une classe publique hors d'un projet, et
+  si c'est le cas, comment vous devez agir. Non 
+  disponible lors de l'exécution.
+
+  Valeurs
+
+  La propriété Instancing a les valeurs suivantes :
+
+  Valeur     Description
+
+  1          Private (par défaut). D'autres applications
+             n'ont pas accès aux données de la 
+             bibliothèque de caractères concernant la
+             classe et ne peuvent pas créer d'instances à
+             partir de cette dernière. Les objets Private 
+             ne doivent être utilisés qu'à l'intérieur de 
+             votre composant. La propriété Instancing par 
+             défaut varie selon le type de projet. Private
+             est l'objet par défaut uniquement pour les 
+             modules de classe dans les projets autonomes.
+
+  2          PublicNotCreatable. D'autres applications peuvent
+             utiliser les objets de cette classe seulement si 
+             votre composant crée les objets en premier. 
+             D'autres applications ne peuvent pas utiliser la
+             fonction CreateObject ou New operator pour créer
+             des objets à partir de la classe.
+
+
+* Propriété Name
+
+  Renvoie le nom utilisé dans le code pour identifier une classe. 
+  En lecture seule lors de l'exécution.
+
+  Syntaxe
+
+  object.Name
+
+  L'emplacement de l'objet représente l'expression d'un objet 
+  qui a la valeur d'une classe.
+
+  Remarques
+
+  La propriété Name d'un objet doit commencer par une 
+  lettre et comporter 40 caractères au maximum. 
+  Elle peut inclure des nombres et des caractères de 
+  soulignement (_), mais pas de signes de ponctuation 
+  ou d'espaces. Bien que la valeur de la propriété Name 
+  puisse être un mot clé, un nom de propriété ou le nom 
+  d'un autre objet, cela peut créer des conflits dans 
+  votre code.
+
+
+Utilisation de la touche F3 pour rechercher l'occurrence 
+de texte suivante dans la fenêtre de code
+--------------------------------------------------------
+Appuyez sur F3 pour trouver l'occurrence suivante 
+du texte précédemment recherché dans la fenêtre de 
+code, et non sur MAJ+F4 comme indiqué dans la  
+documentation.
+
+Système SENS (System Event Notification System)
+-----------------------------------------------
+Pour les programmeurs rédigeant pour le système SENS 
+(System Event Notification System) et les interfaces 
+IEventSubscription et IEventSystem, vous pouvez consulter 
+soit la documentation de ces interfaces sur le site MSDN 
+online à l'adresse suivante :
+
+France : http://www.microsoft.com/france/msdn/ 
+Canada : http://msdn.microsoft.com/
+
+soit une version de la plate-forme SDK ultérieure à celle 
+qui a été livrée avec MSDN au mois d'avril.
+
+
+Documentation de référence HTML 
+-------------------------------
+La documentation la plus récente sur HTML, DHTML et CSS 
+est disponible en ligne sur le site MSDN online à l'adresse 
+suivante :
+France : http://www.microsoft.com/france/msdn/ 
+Canada : http://msdn.microsoft.com/ 
+
+
+Versions Internet Explorer et édition du code HTML
+--------------------------------------------------
+La sélection fonctionne différemment dans Microsoft Script
+Editor pour les éléments sur site selon la version 
+d'Internet Explorer que vous avez installée. Un élément
+sur site correspond à tout élément qui dispose d'une hauteur 
+ou d'une largeur, tel qu'un BOUTON. 
+
+Avec Internet Explorer 4.01, la sélection des éléments sur
+site fonctionne comme suit :
+
+* Le premier clic sur un élément vous permet de modifier 
+  le texte au sein de cet élément.
+* Le second clic sur un élément sélectionne cet élément.
+* Double-cliquer sur un élément revient à sélectionner le
+  texte au sein de cet élément.
+
+Avec Internet Explorer 5.0, la sélection des éléments 
+sur site fonctionne comme suit :
+
+* Le premier clic sur un élément sélectionne cet élément.
+* Le second clic sur un élément vous permet de modifier 
+  le texte au sein de cet élément.
+* Double-cliquer sur l'élément affiche le code source de 
+  cet élément.
+
+  Remarque : La sélection des tableaux dans Internet 
+  Explorer 5.0 est la même que celle employée dans 
+  Internet Explorer 4.01.
+
+  De plus, Internet Explorer 5.0 préserve mieux les 
+  espaces blancs qu'Internet Explorer 4.01 lorsque 
+  vous passez d'un affichage à un autre dans l'éditeur.
+
+
+Rubrique « Rubrique introuvable » (Microsoft Script Editor)
+-----------------------------------------------------------
+Vous n'avez pas besoin de la bibliothèque MSDN ou du 
+CD-ROM de la bibliothèque MSDN pour afficher les rubriques 
+d'aide de Microsoft Script Editor. Si vous rencontrez la 
+rubrique « Rubrique introuvable », essayez l'une des 
+actions suivantes : 
+
+* Réinstallez Microsoft Script Editor à partir du 
+  programme d'installation de Microsoft Office.
+* Insérez le CD-ROM Microsoft Office dans le lecteur de
+  CD-ROM.

@@ -1,0 +1,7 @@
+:Base fpnetwrk.hlp>FPNet
+:Title Aide de l'accès réseau FrontPage
+:Index FrontPage Networking =FPNETWRK.HLP
+1 Installation de l'accès réseau pour Windows 95 ou 98=IDH_dialup
+1 Installation du protocole TCP/IP Windows 95 ou 98=IDH_tcpip
+1 Installation de TCP/IP pour Windows NT=IDH_winnt
+1 Résolution des conflits de serveur Web sur le port 80=IDH_webserver

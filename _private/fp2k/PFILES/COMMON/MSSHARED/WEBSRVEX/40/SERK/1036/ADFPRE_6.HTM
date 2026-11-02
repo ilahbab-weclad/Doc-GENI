@@ -1,0 +1,315 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>
+Activation de l'administration à distance sous IIS 4.0 et 5.0</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+	<TR>
+	<TD BGCOLOR="#000000">
+	<IMG SRC="home.gif" WIDTH=103 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+	<TD colspan="2" BGCOLOR="#000000" WIDTH=100%>
+	<IMG SRC="1ptrans.gif" WIDTH=1 HEIGHT=1 ALT="" BORDER=0></TD>
+	<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+	<FONT FACE="Arial, Helvetica" SIZE=1>
+	<A HREF="/" TARGET="_top">
+	<IMG SRC="msft.gif" WIDTH=91 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+	
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+	
+	<!--WEB SITE TITLE AND LOGO STARTS-->
+
+	<TR>
+	<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+    <TD width="20" nowrap></TD>
+    <TD colspan="2" nowrap bgcolor="#666699" valign="center" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>&nbsp;Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    <TD width="20" nowrap></TD>
+	
+	<!--WEB SITE TITLE AND LOGO ENDS-->
+
+	<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
+	
+
+    <TD rowspan="21" width="460"><a name="top"></a><p><font color="#666699"><b><font size="+1">Administration à distance</font></b></font>
+
+<HR>
+
+<H3><span class=FR><SUP><A NAME="activatingremoteadministrationiis4050"></A></SUP></span>Activation de l'administration à distance sous IIS&nbsp;4.0 et 5.0</H3>
+
+	<p><A NAME="adfprema.doc-1035"></A>Que vous utilisiez l'utilitaire de ligne de commande d'administration à distance <B>Fpremadm</B> ou les formulaires d'administration HTML pour administrer à distance un serveur IIS&nbsp;4.0 ou ultérieur, vous devez activer les formulaires d'administration selon la méthode décrite dans cette rubrique. </P>
+
+	<p><A NAME="adfprema.doc-1036"></A>Vous devez exécuter les formulaires d'administration HTML sur un port sécurisé. L'utilisation d'un port sécurisé n'est possible que si un certificat de sécurité est installé. Si vous ne possédez pas un certificat de sécurité avant d'activer les formulaires d'administration, utilisez l'application Gestionnaire de clés, pour faire une demande de certificat de sécurité, soumettez la requête à un responsable de clés, puis utilisez le Gestionnaire de clés pour installer le certificat renvoyé par le responsable de clés. La documentation IIS contient plus de détails sur ce processus.</P>
+
+	<p>Une fois que vous disposez d'un certificat de sécurité, vous pouvez activer les formulaires d'administration HTML sous forme de site Web IIS distinct ou sous forme de répertoire virtuel sur un site Web existant. L'avantage d'utiliser un site Web distinct est qu'une adresse IP séparée rend la découverte des formulaires beaucoup plus difficile. En outre, un site séparé permet l'activation d'autres paramètres de sécurité comme des numéros de port non standard distincts. L'inconvénient d'utiliser un site Web distinct est qu'une adresse IP supplémentaire est nécessaire pour la machine. </P>
+
+	<P class=LPROCH><A NAME="adfprema.doc-1038"></A><B>Pour activer les formulaires d'administration HTML pour une utilisation à distance</B>
+
+<OL>
+		<LI class=LN>Déterminez quel compte (ou groupe de comptes) de machine Windows&nbsp;NT aura accès aux formulaires d'administration HTML.
+<P class=LT1>Ce compte doit faire partie du groupe des administrateurs de la machine. Si nécessaire, créez un compte avec le Gestionnaire des utilisateurs Windows NT. Selon la configuration du compte de la machine, fournir un accès au groupe des administrateurs peut être une meilleure solution que donner un accès à plusieurs comptes individuels de la machine.
+<LI class=LN>Ouvrez Windows Explorer à l'emplacement des formulaires d'administration HTML sur le disque dur, par défaut C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\40\. Sélectionnez le dossier Admisapi, cliquez sur <B>Propriétés</B> dans le menu <B>Fichier</B>, puis cliquez sur <B>Permissions</B> dans l'onglet <B>Sécurité</B>.</LI>
+
+		<LI class=LN>Dans la boîte de dialogue <B>Permissions - Répertoire</B>, mettez à jour la liste <B>Nom</B> des utilisateurs et groupes autorisés avec les  boutons <B>Ajouter</B> et <B>Supprimer</B>.
+<P class=LT1>Supprimez tous les utilisateurs et groupes non autorisés. Assurez-vous notamment qu'aucun groupe ajouté à la liste ne contient le compte d'accès anonyme  IUSR_<I>machinename</I> et que tous les compte à accès large tels que TOUT LE MONDE sont supprimés.
+<LI class=LN>Dans la liste <B>Nom</B>, tapez le compte SYSTÈME de la machine.
+<P class=LT1>Ce compte est obligatoire pour permettre à IIS d'accéder au fichier pendant le processus de validation de sécurité.
+<LI class=LN>Pour chaque utilisateur ou groupe de la liste <B>Nom</B>, changez <B>Type d'accès</B> en <B>Lecture</B>.</LI>
+
+		<LI class=LN>Cliquez sur  <B>Remplacer les permissions des sous-répertoires</B> et <B>Remplacer les permissions sur les fichiers existants</B>, puis sur <B>OK</B> pour accepter les modifications. Cliquez à nouveau sur <B>OK</B> pour fermer la boîte de dialogue <B>Propriétés</B> du dossier.</LI>
+
+		<LI class=LN>Démarrez l'application IIS Internet Service Manager, puis ouvrez IIS et les dossiers de la machine.</LI>
+
+		<LI class=LN>Cliquez avec le bouton droit de la souris sur le nom de la machine, puis sur <B>Créer un nouveau site</B>.</LI>
+
+		<LI class=LN>Dans le champ <B>Description</B> de l'assistant Nouveau site Web, tapez le nom du site, par exemple, <B>Formulaires d'administration des extensions serveur FrontPage</B>, puis cliquez sur <B>Suivant</B>.</LI>
+
+		<LI class=LN>Sélectionnez l'adresse IP à utiliser pour ce site. L'adresse  IP doit avoir été configurée avant l'exécution de l'assistant. N'utilisez pas le champ <B>Port TCP</B> car les formulaires d'administration HTML ne seront accessibles que par l'intermédiaire d'un port sécurisé. Cliquez sur <B>Suivant</B> pour continuer.</LI>
+
+		<LI class=LN>Tapez le chemin d'accès aux fichiers des formulaires d'administration HTML, généralement C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\40\Admisapi, et assurez-vous que la case à cocher <B>Autoriser l'accès anonyme au site</B> est désactivée. Cliquez sur <B>Suivant</B>.</LI>
+
+		<LI class=LN>Cliquez sur <B>Autoriser l'accès en lecture</B> et <B>Autoriser l'accès en exécution</B> (qui inclut l'accès aux scripts), puis cliquez sur <B>Terminer</B>.</LI>
+
+		<LI class=LN>Cliquez avec le bouton droit de la souris sur l'icône du nouveau site Web créée dans le volet de gauche.  Celle-ci porte  le nom que vous avez tapé à l'étape&nbsp;9. Cliquez sur <B>Propriétés</B>.</LI>
+
+		<LI class=LN>Dans l'onglet <B>Site Web</B>, tapez un numéro de port non standard dans le champ <B>Port SSL</B>, par exemple 8234.</LI>
+
+		<LI class=LN>Dans l'onglet <B>Sécurité de l'annuaire</B>, cliquez sur le bouton <B>Communications sécurisées</B>. Activez la case à cocher <B>Requérir un canal sécurisé</B>, puis cliquez sur <B>OK</B>.</LI>
+
+		<LI class=LN>Ajoutez les restrictions d'accès TCP/IP de votre choix.</LI>
+
+		<LI class=LN>Cliquez sur <B>OK</B> pour accepter les modifications.
+</OL>
+
+	<p class=4>&nbsp;</p>
+
+	<p>Les formulaires sont désormais utilisables pour une administration à distance avec un URL tel que https://machinename:8234/fpadmin.htm, ou <I>machinename</I> désigne l'adresse IP que vous avez tapée à l'étape&nbsp;5, et 8234 le numéro de port que vous avez entré.</P>
+
+	<p><A NAME="adfprema.doc-1040"></A><B>Pour créer un répertoire virtuel hébergeant les formulaires d'administration HTML sur un site Web existant&nbsp;:</B>
+
+<OL>
+		<LI class=LN>Déterminez quel compte (ou groupe de comptes) de machine Windows NT aura accès aux formulaires d 'administration HTML.
+<P class=LT1>Ce compte doit faire partie du groupe des administrateurs de la machine. Si nécessaire, créez un compte avec le Gestionnaire des utilisateurs de Windows NT. Selon la configuration du compte de la machine, fournir un accès au groupe des administrateurs peut s'avérer une meilleure solution que donner accès à plusieurs comptes de machine individuels.
+<LI class=LN>Ouvrez Windows Explorer à l'emplacement des formulaires d'administration HTML sur le disque dur, par défaut C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\40\. Sélectionnez le dossier Admisapi, cliquez sur <B>Propriétés</B> dans le menu <B>Fichier</B>, puis cliquez sur  <B>Permissions</B> dans l'onglet <B>Sécurité</B>.</LI>
+
+		<LI class=LN>Dans la boîte de dialogue <B>Permissions - Répertoire</B>, mettez à jour la liste <B>Nom</B> des utilisateurs et groupes autorisés avec les boutons <B>Ajouter</B> et <B>Supprimer</B>.
+<P class=LT1>Supprimez tous les utilisateurs et groupes non autorisés. En particulier, assurez-vous qu'aucun groupe ajouté à la liste ne contient le compte d'accès anonyme IUSR_<I>machinename</I> et que tous les comptes à accès large tels que TOUT LE MONDE sont supprimés.
+<LI class=LN>Dans la liste <B>Nom</B>, tapez le compte SYSTÈME de la machine.
+<P class=LT1>Ce compte est obligatoire pour permettre à IIS d'accéder au fichier pendant le processus de validation de sécurité.
+<LI class=LN>Pour chaque utilisateur ou groupe de la liste <B>Nom</B>, changez <B>Type d'accès</B> en <B>Lecture</B>.<LI class=LN>Cliquez sur <B>Remplacer les permissions des sous-répertoires</B> et <B>Remplacer les permissions sur les fichiers existants</B>, puis cliquez sur <B>OK</B> pour accepter les modifications. Cliquez à nouveau sur <B>OK</B> pour fermer la boîte de dialogue <B>Propriétés</B> du dossier.</LI>
+
+		<LI class=LN>Démarrez l'application IIS Internet Service Manager et ouvrez le dossier IIS et le dossier de la machine.</LI>
+
+		<LI class=LN>Cliquez avec le bouton droit de la souris sur l'icône du site Web qui sera utilisé pour héberger les formulaires d'administration HTML, tel que Site Web par défaut. Cliquez sur <B>Créer un nouveau répertoire virtuel</B> dans le menu contextuel.</LI>
+
+		<LI class=LN>Dans le champ <B>Alias</B> de l'Assistant Nouveau répertoire virtuel, tapez le nom d'alias des formulaires d'administration HTML, comme  <B>fpadmin</B>, puis cliquez sur <B>Suivant</B>.</LI>
+
+		<LI class=LN>Entrez le chemin d'accès aux fichiers des formulaires d'administration HTML, généralement C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\40\Admisapi, puis cliquez sur <B>Suivant</B>.</LI>
+
+		<LI class=LN>Sélectionnez les cases à cocher <B>Autoriser l'accès en lecture</B> et <B>Autoriser l'accès en exécution</B> (qui inclut l'accès aux scripts), puis cliquez sur <B>Terminer</B>.</LI>
+
+		<LI class=LN>Cliquez avec  le bouton droit de la souris sur l'icône du nouveau répertoire virtuel Fpadmin, puis cliquez sur <B>Propriétés</B> dans le menu contextuel.</LI>
+
+		<LI class=LN>Dans l'onglet <B>Sécurité du répertoire</B>, cliquez sur le bouton <B>Modifier</B> de la zone <B>Méthode d'authentification par mot de passe</B>.</LI>
+
+		<LI class=LN>Assurez-vous que la case à cocher <B>Autoriser les connexions anonymes</B> est désactivée et que l'une des deux cases à cocher <B>Authentification de base</B> ou <B>Stimulation/réponse de Windows</B> est activée, puis cliquez sur <B>OK</B>.</LI>
+
+		<LI class=LN>Sous <B>Communications sécurisées</B>, cliquez sur <B>Modifier</B>.</LI>
+
+		<LI class=LN>Cliquez sur <B>Exiger un canal sécurisé</B>, puis cliquez sur <B>OK</B>.</LI>
+
+		<LI class=LN>Ajoutez les restrictions d'accès TCP/IP de votre choix.</LI>
+
+		<LI class=LN>Cliquez sur <B>OK</B> pour accepter les modifications.</LI>
+	</OL>
+
+	<p class=4>&nbsp;</p>
+
+	<p><A NAME="adfprema.doc-1041"></A>Les formulaires sont désormais activés pour l'administration à distance avec un URL tel que https://machinename/fpadmin/fpadmin.htm.</P></TD>
+
+	<!--TOPIC TITLE AND BODY TEXT CELL ENDS-->
+	
+	<!--FAR-RIGHT COLUMN SECTION ART CELL STARTS-->
+
+    <TD rowspan="15"><img SRC="admart.gif" align="top" alt="Illustration de la section Administration"></TD>
+
+	<!--FAR-RIGHT COLUMN SECTION ART CELL ENDS-->
+
+	</TR>
+	
+	<!--LEFT-NAVIGATION MENU STARTS-->
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="scintro.htm"><font color="#000000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink"><div class="table"><font color="#990000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adoview.htm"><font color="#000000">&nbsp;&nbsp;Outils et techniques &nbsp;&nbsp;d'administration</font></A></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adfpsr.htm"><font color="#000000">&nbsp;&nbsp;Fpsvradm</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="admmc.htm"><font color="#000000">&nbsp;&nbsp;Composant logiciel &nbsp;&nbsp;enfichable MMC</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adhtm.htm"><font color="#000000">&nbsp;&nbsp;Formulaires &nbsp;&nbsp;d'administration &nbsp;&nbsp;HTML</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Administration à &nbsp;&nbsp;distance</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" HREF="adadv.htm"><font color="#000000">&nbsp;&nbsp;Tâches &nbsp;&nbsp;administratives<BR>&nbsp;&nbsp;avancées</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<!--LAST ROW STARTS-->
+
+	<TR>
+    <TD height="2490" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_BEGIN-->
+<br>
+<TABLE cellspacing="0" cellpadding="0" border=0>
+	<TR>
+	<TD width="170" valign="top">&nbsp;</TD>
+	<TD width="237" valign="top"><A HREF="adfpre.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></font></a></TD>
+	<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+	</TR>
+
+	<TR>
+	<TD width="170" valign="top">&nbsp;</TD>
+	<TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+
+	<TR>
+	<TD width="170" valign="top">&nbsp;</TD>
+	<TD colspan="2" width="475" valign="top">Dernière mise à jour&nbsp;: novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+	</TR>
+	
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,30 @@
+; Localized	03/24/1999 04:01  (GMT)	7:4.1.211 	OLMENU.ECF
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={1FD73E20-2097-11d0-B150-00A0C90542E6}
+Path=olmenu.dll
+Entry Point=1
+Client Version=4.0
+Extension Version=1.0
+
+[Exchange Client Compatibility]
+Exchange Registry=0
+Exchange Context Map=0100000000000
+Exchange Interface Map=1000000
+
+[Folder]
+Commands=SuppComposeTeamStatus
+Events=OnExtCommand
+Outlook Commands=ToolsNewTeamStatus
+Extension Outlook Commands=50000
+
+[Command]
+SuppComposeTeamStatus=50000;#1;Tasks Suppress
+
+[Strings]
+DisplayName = "Formulaire TeamStatus"
+Description = "Permet de travailler sur un état d'envoi du projet"
+
+; STR 1 - MenuItem=New TeamStatus &Report
+

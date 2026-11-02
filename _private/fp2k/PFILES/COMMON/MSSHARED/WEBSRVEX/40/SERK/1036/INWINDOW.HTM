@@ -1,0 +1,434 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+<!--START_TOPIC HEAD-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Installation des extensions serveur FrontPage sous Windows</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--END_TOPIC HEAD-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<!--START_MICROSOFT TOOLBAR-->
+
+	<TR>
+		<TD BGCOLOR="#000000"><IMG SRC="home.gif" WIDTH=103 HEIGHT=21
+		ALT="Microsoft" BORDER=0 hspace="0"></TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH="100%"><IMG 
+		SRC="1ptrans.gif" WIDTH=1 
+		HEIGHT=1 ALT="" BORDER=0></TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+		<FONT FACE="Arial, Helvetica" SIZE=1><A HREF="/" TARGET="_top"><IMG 
+		SRC="msft.gif" WIDTH=91 
+		HEIGHT=21 ALT="Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+	
+	<!--END_MICROSOFT TOOLBAR-->
+	
+	<!--START_WEB SITE TITLE AND LOGO-->
+
+	<TR>
+		<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" 	width="150"></TD>
+	    <TD width="20" nowrap></TD>
+	    <TD colspan="2" nowrap bgcolor="#666699" valign="center" height="20" style="padding: 3pt; 	border: #666666 solid 1px;"><font color="#FFFFCC"><b>&nbsp;Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+		
+		<!--END_WEB SITE TITLE AND LOGO-->
+		
+		<!--START_BODY TEXT-->
+
+    	<TD rowspan="23" width="460" nowrap><a name="top"></a><P><font color="#666699"><b><font size="+1">Installation des extensions serveur FrontPage sous Windows</font></b></font>
+		
+		<!--START_Header rule-->
+		
+		<HR>
+
+		<!--END_Header rule-->
+		
+		<H3><A NAME="whereyoucangetfpsewin"></A>Où trouver aux extensions serveur FrontPage</H3>
+
+			<p>Les extensions serveur FrontPage de tous les serveurs sont disponibles pour téléchargement sur le site <a href="http://www.microsoft.com/france/frontpage">http://www.microsoft.com/france/frontpage</a>, et sont incluses dans les produits Microsoft suivants&nbsp;:
+
+				<UL>
+					<LI class=LB1><A NAME="inwindow.doc-1006"></A>Microsoft Office&nbsp;2000 Premium.
+				
+					<LI class=LB1>Microsoft FrontPage 2000.
+				
+					<LI class=LB1>Windows&nbsp;2000.
+				
+					<LI class=LB1>Elles sont également incluses dans les extensions serveur Office de Microsoft Office 2000 Standard, Professionnel et Premium.
+				</UL>
+
+				<P class=4>&nbsp;</p>
+
+		<H3><A NAME="fpsesupportedwebservers"></A>Serveurs Web prenant en charge les extensions serveur FrontPage</H3>
+
+			<p><A NAME="inwindow.doc-1010"></A>Sous Windows NT Server et Windows NT Workstation, les serveurs Web suivants prennent en charge les extensions serveur FrontPage&nbsp;:
+
+				<UL>
+					<LI class=LB1>Internet Information Services (IIS) version 3.0 et ultérieure, IIS&nbsp;5.0 comprise.
+					
+					<BR>
+					
+					<!--START_LIST NOTE STRUCTURE-->
+				
+						<P class=LT1><img SRC="noterule.gif" width=440 height=15 border="0"> IIS 4.0 nécessite les extensions serveur FrontPage 98 ou ultérieur&nbsp;; IIS 5.0 nécessite les extensions serveur FrontPage 2000.<HR width=440>
+
+					<!--END_LIST NOTE STRUCTURE-->
+				
+				
+					<LI class=LB1>Netscape FastTrack 2.0, 3.0.1
+				
+					<LI class=LB1>Netscape Enterprise 3.0, 3.5.1
+
+					<LI class=LB1>O'Reilly WebSite 2.0
+				
+					<LI class=LB1>FrontPage Personal Web Server
+				
+				</UL>
+
+			<P class=4>&nbsp;</p>
+
+			<p>Sous Windows 95/98, les serveurs Web suivants prennent en charge les extensions serveur FrontPage&nbsp;:
+
+				<UL>
+					<LI class=LB1>Serveur Web personnel Microsoft version&nbsp;2.0 et ultérieure
+				
+					<LI class=LB1>Serveur Web personnel FrontPage				
+					<LI class=LB1>Netscape FastTrack&nbsp;2.0
+				
+					<LI class=LB1>O'Reilly WebSite 2.0
+				</UL>
+
+				<P class=4>&nbsp;</p>
+
+		<H3><A NAME="whatgetsinstalledwin"></A>Composants installés</H3>
+
+			<p><A NAME="inwindow.doc-1021"></A>Le programme d'installation des extensions serveur FrontPage met en place les composants suivants&nbsp;:
+
+				<UL>
+					<LI class=LB1>Les fichiers exécutables des extensions serveur FrontPage, les DLL et autres fichiers associés sont installés dans les répertoires C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\40\Bin et C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\40\Servsupp.
+				
+					<LI class=LB1>Le composant ISAPI ou CGI qui met en oeuvre les fonctions des extensions serveur sur les sites Web des utilisateurs est installé dans les répertoires C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\40\Isapi et C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\40\_vti_bin. 
+				
+					<LI class=LB1>Le logiciel enfichable FrontPage de la console de gestion Microsoft, Fpmmc.dll, est placé dans le répertoire C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\40\_vti_bin.
+				
+					<LI class=LB1>Les utilitaires d'administration par ligne de commande, Fpsrvadm.exe et Fpremadm.exe, sont installés dans le répertoire C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\40\bin.
+
+					<LI class=LB1>Le <I>Kit de ressources des extensions serveur FrontPage</I> est un document HTML qui constitue une source d'informations très complète sur les extensions serveur. Il  est installé dans le répertoire C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\40\Serk\<i>nnnn</i>\default.htm. Le dossier \<i>nnnn</i> correspond au nom numérique de la langue d'installation des extensions serveur FrontPage. Pour une installation en langue anglaise des États-Unis, par exemple, le chemin est C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\40\Serk\1033\default.htm.
+
+					<LI class=LB1>Les formulaires d'administration HTML sont placés dans les répertoires C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\40\Admisapi et  C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\40\Admcgi.
+				</UL>
+
+				<P class=4>&nbsp;</p>
+
+		<H3><A NAME="fpsesetupwin"></A>Installation des extensions serveur FrontPage</H3>
+
+		<p><A NAME="inwindow.doc-1028"></A>La procédure d'installation des extensions serveur FrontPage sur un serveur Web est réalisée en deux temps. Les extensions serveur FrontPage et les programmes et fichiers connexes sont tout d'abord copiés sur votre ordinateur. Les extensions serveur sont ensuite installées dans la zone de contenu de chaque serveur Web et de chaque serveur virtuel mis en place sur l'ordinateur. Cette seconde étape est réalisée automatiquement si vous procédez à une installation sur un ordinateur doté d'un seul serveur Web. Si votre ordinateur possède plusieurs serveurs Web, par contre, vous devez installer les extensions serveur sur chaque serveur à l'aide de l'un des outils d'administration des extensions serveur FrontPage (voir les instructions fournies à l'étape 4 ci-dessous).</P>
+
+		<p>Vous devez posséder un compte administrateur sur l'hôte pour exécuter le programme d'installation des extensions serveur FrontPage et copier les extensions serveur sur l'hôte. Il en est de même pour l'installation des extensions serveur FrontPage sur chacun des serveurs Web et des serveurs virtuels.</P>
+
+		<p>Sur le CD-ROM Microsoft FrontPage 2000, Servext.exe est le programme d'installation des extensions serveur FrontPage. Les programmes d'installation auto-extractibles correspondant à chaque langue et à chaque type de processeur pris en charge sont disponibles sur le site <a href="http://www.microsoft.com/frontpage">http://www.microsoft.com/france/frontpage</a>. Ces programmes portent le nom fp00ext_<I>processeur</I>_<I>lang</I>, où <I>processeur</I> désigne le type de processeur et <I>lang</I> désigne le code de trois lettres correspondant à la langue des extensions serveur. Ainsi, le chemin du programme d'installation des extensions serveur FrontPage en allemand pour un processeur Intel série x86 est \ServExt\fp98ext_x86_deu.exe sur le CD-ROM FrontPage.</P>
+
+		<p><A NAME="inwindow.doc-1031"></A>Les codes de trois lettres correspondant à chaque langue sont présentés ci-dessous&nbsp;:</P>
+
+		<p class=4>&nbsp;</p>
+
+		<TABLE cols=4 width=328>
+		
+		<TR VALIGN="top">
+			<TD class=T width=34%><B>Chinois (RPC)</B></TD>
+			<TD class=T width=17%>CHS</TD>
+			<TD class=T width=29%><B>Japonais</B></TD>
+			<TD class=T width=20%>JPN</TD>
+		</TR>
+		
+		<TR VALIGN="top">
+			<TD class=T width=34%><B>Chinois (Taiwan)</B></TD>
+			<TD class=T width=17%>CHT</TD>
+			<TD class=T width=29%><B>Coréen</B></TD>
+			<TD class=T width=20%>KOR</TD>
+		</TR>
+		
+		<TR VALIGN="top">
+			<TD class=T width=34%><B>Tchèque</B></TD>
+			<TD class=T width=17%>CSY</TD>
+			<TD class=T width=29%><B>Norvégien</B></TD>
+			<TD class=T width=20%>NOR</TD>
+		</TR>
+
+		<TR VALIGN="top">
+			<TD class=T width=34%><B>Danois</B></TD>
+			<TD class=T width=17%>DAN</TD>
+			<TD class=T width=29%><B>Polonais</B></TD>
+			<TD class=T width=20%>PLK</TD>
+		</TR>
+		
+		<TR VALIGN="top">
+			<TD class=T width=34%><B>Néerlandais (Standard)</B></TD>
+			<TD class=T width=17%>NLD</TD>
+			<TD class=T width=29%><B>Portugais<BR>
+			(Brésil)</B></TD>
+			<TD class=T width=20%>PTB</TD>
+		</TR>
+		
+		<TR VALIGN="top">
+			<TD class=T width=34%><B>Anglais<BR>
+			(États-Unis)</B></TD>
+			<TD class=T width=17%>ENU</TD>
+			<TD class=T width=29%><B>Portugais<BR>
+			(Standard)</B></TD>
+			<TD class=T width=20%>PTG</TD>
+		</TR>
+		
+		<TR VALIGN="top">
+			<TD class=T width=34%><B>Finlandais</B></TD>
+			<TD class=T width=17%>FIN</TD>
+			<TD class=T width=29%><B>Russe</B></TD>
+			<TD class=T width=20%>RUS</TD>
+		</TR>
+
+		<TR VALIGN="top">
+			<TD class=T width=34%><B>Français (Standard)</B></TD>
+			<TD class=T width=17%>FRA</TD>
+			<TD class=T width=29%><B>Espagnol<BR>
+			(Amérique du Sud)</B></TD>
+			<TD class=T width=20%>ESN</TD>
+		</TR>
+		
+		<TR VALIGN="top">
+			<TD class=T width=34%><B>Allemand (Standard)</B></TD>
+			<TD class=T width=17%>DEU</TD>
+			<TD class=T width=29%><B>Espagnol (Espagne)</B></TD>
+			<TD class=T width=20%>ESP</TD>
+		</TR>
+
+		<TR VALIGN="top">
+			<TD class=T width=34%><B>Hongrois</B></TD>
+			<TD class=T width=17%>HUN</TD>
+			<TD class=T width=29%><B>Suédois</B></TD>
+			<TD class=T width=20%>SVE</TD>
+		</TR>
+		
+		<TR VALIGN="top">
+			<TD class=T width=34%><B>Italien (Standard)</B></TD>
+			<TD class=T width=17%>ITA</TD>
+			<TD class=T width=29%>&nbsp;</TD>
+			<TD class=T width=20%>&nbsp;</TD>
+		</TR>
+	</TABLE>
+
+	<p class=6>&nbsp;</p>
+
+	<p><b>Pour installer les extensions serveur FrontPage sous Windows&nbsp;:</b></P>
+	
+	<OL>
+		<LI class=LN>Exécutez le programme d'installation des extensions serveur à partir du CD-ROM FrontPage ou du site <a href="http://www.microsoft.com/frontpage">http://www.microsoft.com/france/frontpage</a>.<BR><BR></LI>
+
+		<LI class=LN>Pour installer les extensions serveur dans le répertoire par défaut, cliquez sur <B>Installer maintenant</B>. Pour indiquer un autre répertoire de destination, cliquez sur  <B>Personnaliser</B>, puis sélectionnez le répertoire.
+
+			<P class=LT1>Les extensions serveur FrontPage sont installées sur l'ordinateur.</P>
+
+		<LI class=LN>Dans le cas d'une installation ou d'une mise à niveau sur un ordinateur doté d'un seul serveur Web, les extensions serveur FrontPage sont automatiquement installées dans la zone de contenu de ce serveur. Pour le serveur IIS, le compte administrateur initial est le compte administrateur système. Pour tout autre serveur, le programme sollicite un nom de compte administrateur et un mot de passe. 
+
+			<P class=LT1>Dans le cas d'une installation ou d'une mise à niveau sur un ordinateur doté de plusieurs serveurs Web ou serveurs virtuels, vous êtes invité à installer les extensions serveur à l'aide de l'un des outils d'administration des extensions serveur FrontPage énumérés ci-dessous&nbsp;:
+
+				<UL>
+					<LI class=LB1><A HREF="admmc.htm">Logiciel enfichable FrontPage de la console de gestion Microsoft</A></LI>
+
+						<P class=LT1>Recourez au logiciel enfichable de la console de gestion Microsoft des extensions serveur FrontPage pour gérer les extensions serveur sur un serveur Web sous Windows NT.
+				
+					<LI class=LB1><A HREF="adfpsr.htm">Fpsrvadm</A></LI>
+
+						<P class=LT1>Utilisez  Fpsrvadm à partir de la ligne de commande ou dans les fichiers batch.
+				
+					<LI class=LB1><A HREF="adhtm.htm">Formulaires d'administration HTML</A></LI>
+
+						<P class=LT1>Utilisez les formulaires d'administration HTML lorsque vous gérez à distance les extensions serveur FrontPage par l'intermédiaire d'un navigateur Web sur tout ordinateur connecté à Internet.
+
+					<LI class=LB1><a name="inwindow.doc-1036"></A><A HREF="adfpre.htm">Fpremadm</A></LI>
+
+						<P class=LT1>Recourez à  Fpremadm pour gérer à distance les extensions serveur FrontPage à partir de la ligne de commande ou d'un fichier batch d'un ordinateur tournant sous Windows.
+
+				</UL>
+
+			</OL>
+
+			<P class=4>&nbsp;</P>
+			
+			<!--START_NOTE STRUCTURE-->
+
+			<P class=LT1><img SRC="noterule.gif" width=475 height=15 border="0"> Avec FrontPage 2000, un seul jeu de DDL d'extensions serveur FrontPage est installé sur les serveurs IIS. Les versions précédentes de FrontPage copiaient les versions stub de ces programmes dans chaque site et sous-site Web FrontPage étendu. Dans le cas d'une mise à niveau des sites Web FrontPage étendus, le programme d'installation des extensions serveur conserve toutes les autorisations (administrateur, auteur ou navigation uniquement). Les droits d'accès aux fichiers sont seulement modifiés pour préserver ces autorisations. Aux fins de sécurité, les droits d'accès de tout groupe contenant le compte anonyme IUSR_<i>nommachine</i> sont ramenés à la navigation uniquement. <HR width=475>
+
+			<!--END_NOTE STRUCTURE-->
+
+			<P class=6>&nbsp;</P>
+
+		</TD>
+		
+		<TD rowspan="13" nowrap><img SRC="setart.gif" align="center"></TD>
+	</TR>
+
+	<TR>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font 	color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+	   <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR>
+	    <TD width="150" nowrap><div class="table"><A class="menulink" href="scintro.htm"><font 	color="#000000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+	    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR>
+	    <TD width="150" nowrap><div class="table"><A class="menulink"><font 	color="#990000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" 	border="0"></A></div></TD>
+	    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR>
+	    <TD height="10" width="150" nowrap></TD>
+	    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+	    <TD width="150" nowrap><A class="menulink" href="inintro.htm"><font 	color="#000000">&nbsp;&nbsp;Introduction</font></A></TD>
+	    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR>
+	    <TD height="10" width="150" nowrap></TD>
+	    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+	    <TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Installation des &nbsp;&nbsp;extensions serveur &nbsp;&nbsp;FrontPage sous &nbsp;&nbsp;Windows</font></A></TD>
+	    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR>
+	    <TD height="10" width="150" nowrap></TD>
+	    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR>
+	    <TD width="150" nowrap><A class="menulink" href="inunix.htm"><font 	color="#000000">&nbsp;&nbsp;Installation des &nbsp;&nbsp;extensions serveur &nbsp;&nbsp;FrontPage sous UNIX</font></A></TD>
+	    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR>
+	    <TD height="10" width="150" nowrap></TD>
+	    <TD width="20" nowrap></TD>
+	    <TD></TD>
+	</TR>
+	
+	<TR>
+	    <TD width="150" nowrap><A class="menulink" href="incompat.htm"><font 	color="#000000">&nbsp;&nbsp;Compatibilité entre <BR>&nbsp;&nbsp;les extensions &nbsp;&nbsp;serveur FrontPage <BR>&nbsp;&nbsp;et le client FrontPage</font></A></TD>
+	    <TD width="20" nowrap></TD>
+	    <TD></TD>
+	</TR>
+	
+	<TR>
+	    <TD height="10" width="150" nowrap></TD>
+	    <TD width="20" nowrap></TD>
+	    <TD></TD>
+	</TR>
+	
+	<TR>
+	    <TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A 	class="menulink" HREF="adoview.htm"><font 	color="#000000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" 	alt="" border="0"></A></div></TD>
+	    <TD width="20" nowrap></TD>
+	    <TD></TD>
+	</TR>
+	
+	<TR>
+	    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font 	color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img 	SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+	    <TD width="20" nowrap></TD>
+	    <TD></TD>
+	</TR>
+	
+	<TR>
+	    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font 	color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt=""	border="0"></A></div></TD>
+	    <TD width="20" nowrap></TD>
+	    <TD></TD>
+	</TR>
+	
+	<TR>
+    <TD width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+</TR>
+<TR>
+    <TD width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+</TR>
+<TR>
+    <TD width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+</TR>
+<TR>
+    <TD width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+</TR>
+<TR>
+    <TD width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+</TR>
+<TR>
+    <TD width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+</TR>
+
+<!--LAST ROW STARTS-->
+<TR>
+    <TD height="2660" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+</TR>
+
+<!--LAST ROW ENDS-->
+
+</table>
+
+<!--FOOTER_BEGIN-->
+<br>
+<TABLE cellspacing="0" cellpadding="0" border=0>
+	<TR>
+	<TD width="170" valign="top">&nbsp;</TD>
+	<TD width="237" valign="top"><A HREF="inintro.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></font></a></TD>
+	<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+	</TR>
+
+	<TR>
+	<TD width="175" valign="top">&nbsp;</TD>
+	<TD colspan="2" width="475" valign="top"><hr></TD>
+	</TR>
+	
+	<TR>
+	<TD width="175" valign="top">&nbsp;</TD>
+	<TD colspan="2" width="475" valign="top">Dernière mise à jour&nbsp;: novembre 1998<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+    </TR>
+
+</TABLE>
+
+<!--FOOTER_END-->
+
+</BODY>
+</HTML>

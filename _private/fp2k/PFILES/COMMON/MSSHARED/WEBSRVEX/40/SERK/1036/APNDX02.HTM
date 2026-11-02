@@ -1,0 +1,579 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+<!--START_TOPIC HEAD-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Code source pour fpexe.c</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--END_TOPIC HEAD-->
+
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+
+	<TR>
+		<TD BGCOLOR="#000000">
+		<IMG SRC="home.gif" WIDTH=103 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0 hspace="0">
+		</TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH=100%>
+		<IMG SRC="1ptrans.gif" WIDTH=1 HEIGHT=1 ALT="" BORDER=0>
+		</TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+		<FONT FACE="Arial, Helvetica" SIZE=1>
+		<A HREF="/" TARGET="_top">
+		<IMG SRC="msft.gif" WIDTH=91 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0>
+		</A>
+		</FONT>
+		</TD>
+	</TR>
+	
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+	
+</TABLE>
+
+
+<!--START_WEBSITE TITLE AND LOGO -->
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+	<TR>
+	    <TD colspan="3" bgcolor="#666699" valign="right" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>&nbsp;Kit de ressources des extensions serveur Microsoft FrontPage 2000</b></font></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+</TABLE>
+
+<!--END_WEBSITE TITLE AND LOGO-->
+
+
+<!--START_MAIN BODY TEXT TABLE-->
+
+<TABLE cellspacing="0" cellpadding="0" width="650">
+
+	<TR>
+		<TD width=20 nowrap></TD>
+   		<TD><a name="top"></a><P><font color="#666699"><b><font size="+1">Annexes</font></b></font>
+
+		<HR>
+
+			<H3><A NAME="sourcecodeforfpexec"></A>Code source pour fpexe.c</H3>
+
+				<p><A NAME="apndx02.doc-1005"></A>Lors de l'utilisation des extensions serveur FrontPage 2000 pour UNIX avec le serveur Web Apache, nous vous recommandons de configurer le serveur Web Apache à l'aide d'un correctif logiciel. Le correctif logiciel apporte les deux modifications suivantes&nbsp;:
+
+					<UL>
+						<LI class=LB1><A NAME="apndx02.doc-1006"></A><a href="apndx00.htm">mod_frontpage.c</a>,  du module FrontPage Apache, qui permet d'intercepter les demandes distantes des programmes clients FrontPage, de valider la sécurité et de rediriger les demandes vers le programme stub racine fpexe.c. 
+					
+						<LI class=LB1><A NAME="apndx02.doc-1007"></A>Le programme fpexe.c, qui accepte les demandes d'opérations d'auteur du module FrontPage Apache, effectue des validations supplémentaires de sécurité, remplace l'identificateur utilisateur par le détenteur du site Web faisant l'objet d'opérations d'auteur et enfin appelle l'exécutable CGI des extensions serveur FrontPage approprié.
+					</UL>
+
+					<p class=4>&nbsp;</p>
+
+				<p>Le code source pour fpexe.c est présenté ici pour révision. </P>
+			</TD>
+		</TR>
+</TABLE>
+
+<!--END_MAIN BODY TEXT TABLE-->
+
+<!--START_NEW TABLE FOR CODE STRUCTURE ONLY-->
+
+<TABLE cellspacing="0" cellpadding="0" width="650">
+
+	<TR>
+		<TD width=20 nowrap></TD>
+   		<TD>
+
+<PRE class=CT><CODE>* ====================================================================
+ *
+ * FrontPage SUID Stub Executable
+ *
+ * Copyright (c) 1995-1998 Microsoft Corporation -- All Rights Reserved.
+ *
+ * NO WARRANTIES. Microsoft expressly disclaims any warranty for this code and
+ * information. This code and information and any related documentation is
+ * provided "as is" without warranty of any kind, either express or implied,
+ * including, without limitation, the implied warranties or merchantability,
+ * fitness for a particular purpose, or noninfringement. The entire risk
+ * arising out of use or performance of this code and information remains with
+ * you.
+ *
+ * NO LIABILITY FOR DAMAGES. In no event shall Microsoft or its suppliers be
+ * liable for any damages whatsoever (including, without limitation, damages
+ * for loss of business profits, business interruption, loss of business
+ * information, or any other pecuniary loss) arising out of the use of or
+ * inability to use this Microsoft product, even if Microsoft has been advised
+ * of the possibility of such damages. Because some states/jurisdictions do not
+ * allow the exclusion or limitation of liability for consequential or
+ * incidental damages, the above limitation may not apply to you.
+ *
+ * Version 4.0.4.3
+ */
+
+
+/*
+ * User configurable items.  We will not run the server extensions with any
+ * UID/GID less than LOWEST_VALID_UID/LOWEST_VALID_GID.
+ */
+
+#if defined(RS6000)
+#define _ALL_SOURCE
+#endif
+
+#if defined(RS6000) | defined(UWARE7)
+int initgroups (char *, int);
+#endif
+
+#if defined(LINUX)
+#define LOWEST_VALID_UID 15
+#else
+#define LOWEST_VALID_UID 11
+#endif
+
+#if defined(HPUX) || defined(IRIX) || defined(SUNOS4)
+#define LOWEST_VALID_GID 20
+#else
+#if defined(SCO)
+#define LOWEST_VALID_GID 24
+#else
+#define LOWEST_VALID_GID 21   /* Solaris, AIX, Alpha, Bsdi, etc. */
+#endif
+#endif
+
+#if defined(UWARE7)
+#define Vstat stat32
+#define Vlstat lstat32
+int lstat32 (const char *, struct stat *);
+int stat32 (const char *, struct stat *);
+#else
+#define Vstat stat
+#define Vlstat lstat
+#endif 
+
+#define CLEAN_PATH "PATH=/usr/bin:/bin"
+
+static struct SaveEnvVars
+{
+    const char* szVar;
+    int         iLen;
+} gSafeEnvVars[] =
+{
+    { "AUTH_TYPE=", 0 },
+    { "CONTENT_LENGTH=", 0 },
+    { "CONTENT_TYPE=", 0 },
+    { "DATE_GMT=", 0 },
+    { "DATE_LOCAL=", 0 },
+    { "DOCUMENT_NAME=", 0 },
+    { "DOCUMENT_PATH_INFO=", 0 },
+    { "DOCUMENT_ROOT=", 0 },
+    { "DOCUMENT_URI=", 0 },
+    { "FILEPATH_INFO=", 0 },
+    { "GATEWAY_INTERFACE=", 0 },
+    { "HTTP_", 0 },
+    { "LAST_MODIFIED=", 0 },
+    { "PATH_INFO=", 0 },
+    { "PATH_TRANSLATED=", 0 },
+    { "QUERY_STRING=", 0 },
+    { "QUERY_STRING_UNESCAPED=", 0 },
+    { "REDIRECT_QUERY_STRING=", 0 },
+    { "REDIRECT_STATUS=", 0 },
+    { "REDIRECT_URL=", 0 },
+    { "REMOTE_ADDR=", 0 },
+    { "REMOTE_HOST=", 0 },
+    { "REMOTE_IDENT=", 0 },
+    { "REMOTE_PORT=", 0 },
+    { "REMOTE_USER=", 0 },
+    { "REQUEST_METHOD=", 0 },
+    { "SCRIPT_FILENAME=", 0 },
+    { "SCRIPT_NAME=", 0 },
+    { "SCRIPT_URI=", 0 },
+    { "SCRIPT_URL=", 0 },
+    { "SERVER_ADMIN=", 0 },
+    { "SERVER_NAME=", 0 },
+    { "SERVER_PORT=", 0 },
+    { "SERVER_PROTOCOL=", 0 },
+    { "SERVER_SOFTWARE=", 0 },
+    { "TZ=", 0 },
+    { "USER_NAME=", 0 },
+    { 0, 0 }
+};
+
+/*
+ * End of user configurable items
+ */
+
+
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;string.h&gt;
+#include &lt;sys/stat.h&gt;
+#include &lt;fcntl.h&gt;
+#include &lt;ctype.h&gt;
+#include &lt;time.h&gt;
+#include &lt;pwd.h&gt;
+#include &lt;grp.h&gt;
+#if !defined(bsdi) &amp;&amp; !defined(hpux) &amp;&amp; !defined(sun) &amp;&amp; !defined(linux) &amp;&amp; !defined(SCO5) &amp;&amp; !defined(UWARE7)
+#include &lt;sys/mode.h&gt;
+#endif
+
+#if defined(sun) || defined(bsdi) || defined(sgi) || defined(SCO5) || defined(UWARE7)
+extern const char ** environ;
+#endif
+extern int errno;
+
+
+#ifndef TRUE
+#define TRUE 1
+#endif
+
+#ifndef FALSE
+#define FALSE 0
+#endif
+
+#ifndef MAXPATHLEN
+#define MAXPATHLEN 1024
+#endif
+#if (MAXPATHLEN &lt; 1024)
+#undef MAXPATHLEN
+#define MAXPATHLEN 1024
+#endif
+
+#define KEYLEN 128                  /* Should be a multiple of sizeof(int) */
+
+
+#define FPKEYDIR "/usr/local/frontpage/version4.0/apache-fp"
+#define KEYFILE  "/usr/local/frontpage/version4.0/apache-fp/suidkey.%d"
+#define FPDIR    "/usr/local/frontpage/version4.0/exes"
+
+/* Legal modules */
+#define SHTML    "/_vti_bin/shtml.exe"
+#define FPCOUNT  "/_vti_bin/fpcount.exe"
+#define AUTHOR   "/_vti_bin/_vti_aut/author.exe" 
+#define ADMIN    "/_vti_bin/_vti_adm/admin.exe" 
+
+
+/*
+ * Something is not quite right - give up
+ */
+void die(const char *msg)
+{
+    char timebuf[26];
+    time_t t = time(0);
+    strcpy(timebuf, ctime(&amp;t));
+    timebuf[24] = '\0';
+    fprintf(stderr, "[%s] %s\n", timebuf, msg);
+    printf("Content-Type: text/html\n\n&lt;HTML&gt;*-*-* :-| :^| :-/ :-( 8-( *-*-*\n&lt;ul&gt;\n&lt;li&gt;status=1\n&lt;li&gt;osstatus=0\n&lt;li&gt;msg=FrontPage security violation.\n&lt;li&gt;osmsg=\n&lt;/ul&gt;\n");
+    exit(0);
+}
+
+/*
+ * Remove any variable that is not known to be a standard CGI or OS
+ * environment variable.  Also, sanitizes the PATH.
+ */
+static void CleanEnvironment() 
+{
+    const char** pp;
+    const char** ppi;
+    struct SaveEnvVars* pOkEnv;
+
+    for (ppi = pp = environ;  *pp;  pp++)
+    {
+        /*
+         * Inefficient linear lookup; could be improved with binary search.
+         */
+        for (pOkEnv = gSafeEnvVars;  pOkEnv-&gt;szVar;  pOkEnv++)
+        {
+            int iLen = pOkEnv-&gt;iLen;
+            if (!iLen)
+                pOkEnv-&gt;iLen = iLen = strlen(pOkEnv-&gt;szVar);
+
+            if (strncmp(pOkEnv-&gt;szVar, *pp, iLen) == 0)
+                break;
+        }
+
+        if (!strncmp(*pp, "PATH=", 5))
+            *ppi++ = CLEAN_PATH;
+        else if (pOkEnv-&gt;szVar)
+            *ppi++ = *pp;
+    }
+
+    *ppi = 0;
+}
+
+int main(int argc, char **argv)
+{
+    struct passwd* pw = 0;
+    const char* szFpUserName;
+    const char* szFpExe = getenv("FPEXE");
+    const char* szFpUid = getenv("FPUID");
+    const char* szFpGid = getenv("FPGID");
+    const char* szFpFd  = getenv("FPFD");
+    char* pEnd;
+    char* pDir;
+    uid_t iFpUid;
+    uid_t iFpGid;
+    uid_t iBinUid;
+    int iFpFd;
+    int iKeyFd;
+    int iCount;
+    char szKeyFile[MAXPATHLEN];
+    char szWork[MAXPATHLEN];
+    char inpKey[KEYLEN];
+    char refKey[KEYLEN];
+    struct stat fs;
+    
+    /*
+     * Assure that this program was actually SUID'd to root
+     */
+    if (geteuid())
+        /*
+         * User recovery:  Make sure fpexe is setuid to root
+         */
+        die("FrontPage SUID Error: not running as root");
+
+    /*
+     * Assure that the user the web server runs as is a valid user
+     */
+    if (!getpwuid(getuid()))
+        /*
+         * User recovery:  Make sure that the web server user is in /etc/passwd
+         */
+        die("FrontPage SUID Error: invalid uid");
+
+    /*
+     * Assure that we have the proper arguments (passed in the environment)
+     */
+    if (!szFpExe || !szFpUid || !szFpGid || !szFpFd)
+        /*
+         * User recovery:  Make sure fpexe is run from patched Apache server
+         */
+        die("FrontPage SUID Error: invalid environment arguments");
+
+    /*
+     * Validate the arguments
+     */
+    if (strcmp(szFpExe, SHTML) != 0   &amp;&amp;
+        strcmp(szFpExe, FPCOUNT) != 0 &amp;&amp;
+        strcmp(szFpExe, AUTHOR) != 0  &amp;&amp;
+        strcmp(szFpExe, ADMIN) != 0)
+        /*
+         * User recovery:  Make sure fpexe is only invoked to run FrontPage
+         * server extension programs.
+         */
+        die("FrontPage SUID Error: target program violation");
+
+    if (strlen(szFpExe) + strlen(FPDIR) + 1 &gt; MAXPATHLEN)
+        die("FrontPage SUID Error: path too long");
+    strcpy(szWork, FPDIR);
+    strcat(szWork, szFpExe);
+
+    iFpUid = strtol(szFpUid, &amp;pEnd, 10);
+    if (!pEnd || *pEnd)
+        iFpUid = 0;
+    if (iFpUid &lt; LOWEST_VALID_UID || !(pw = getpwuid(iFpUid)))
+        /*
+         * User recovery:  Make sure FrontPage user ids are above minimum
+         */
+        die("FrontPage SUID Error: invalid target uid");
+    szFpUserName = strdup(pw-&gt;pw_name);
+
+    iFpGid = strtol(szFpGid, &amp;pEnd, 10);
+    if (!pEnd || *pEnd)
+        iFpGid = 0;
+    if (iFpGid &lt; LOWEST_VALID_GID || !getgrgid(iFpGid))
+        /*
+         * User recovery:  Make sure FrontPage group ids are above minimum
+         */
+        die("FrontPage SUID Error: invalid target gid");
+
+    iFpFd = strtol(szFpFd, &amp;pEnd, 10);
+    if (!pEnd || *pEnd)
+        iFpFd = -1;
+    if (iFpFd &lt; 0)
+        /*
+         * User recovery:  Make sure fpexe is run from patched Apache server
+         */
+        die("FrontPage SUID Error: invalid key file descriptor");
+
+    /*
+     * Read the key from our server.  And, while we're still root and have
+     * access, read the key from the master key file.  Verify the key matches.
+     */
+    if (Vlstat(FPKEYDIR, &amp;fs) == -1 ||
+        (fs.st_mode &amp; (S_IRGRP | S_IWGRP | S_IROTH | S_IWOTH)) || fs.st_uid ||
+        !(S_ISDIR(fs.st_mode)))
+        /*
+         * User recovery is: set directory to be owned by by root with
+         * permissions rwx--x--x.
+         */
+        die("FrontPage SUID Error: key file directory is insecure");
+
+#if defined(sun) &amp;&amp; !defined(__SVR4)
+    sprintf(szKeyFile, KEYFILE, (int)getpgrp(0));
+#else
+    sprintf(szKeyFile, KEYFILE, (int)getpgrp());
+#endif
+    if (Vstat(szKeyFile, &amp;fs) == -1 ||
+        (fs.st_mode &amp; (S_IRWXG | S_IRWXO)) || fs.st_uid)
+        /*
+         * User recovery is:  Make sure the key file is properly protected
+         * (owned by root, permissions r**------), restart patched Apache
+         * server.
+         */
+        die("FrontPage SUID Error: key file security violation");
+    
+    iKeyFd = open(szKeyFile, O_RDONLY);
+    if (iKeyFd &lt; 0)
+        /*
+         * User recovery is:  Make sure fpexe is run from patched Apache
+         * server, restart the patched Apache server.
+         */
+        die("FrontPage SUID Error: could not open key file" );
+    iCount = read(iKeyFd, refKey, sizeof(refKey));
+    close(iKeyFd);
+    if (iCount != sizeof(refKey))
+        /*
+         * User recovery is:  Make sure fpexe is run from patched Apache
+         * server, restart the patched Apache server.
+         */
+        die("FrontPage SUID Error: could not read valid key from key file");
+
+    iCount = read(iFpFd, inpKey, sizeof(inpKey));
+    close(iFpFd);
+    if (iCount != sizeof(inpKey))
+        /*
+         * User recovery is:  Make sure fpexe is run from patched Apache server
+         */
+        die("FrontPage SUID Error: could not read valid input key");
+
+    if (memcmp(inpKey, refKey, sizeof(refKey)) != 0)
+        /*
+         * User recovery is:  Make sure fpexe is run from patched Apache server
+         */
+        die("FrontPage SUID Error: key security violation");
+
+    /*
+     * Change user and group IDs to be the indicated user
+     */
+    if (setgid(iFpGid) == -1 || initgroups(szFpUserName, iFpGid) == -1)
+        /*
+         * User recovery:  Make sure user is properly registered in 
+         * /etc/passwd and /etc/group.
+         */
+        die("FrontPage SUID Error: setgid() failed");
+    
+    if (setuid(iFpUid) == -1)
+        /*
+         * User recovery:  Make sure user is properly registered in
+         * /etc/passwd.
+         */
+        die("FrontPage SUID Error: setuid() failed");
+
+    /*
+     * Validate the target directory.
+     */
+    iBinUid = 0;
+    if (pw = getpwnam("bin"))
+        iBinUid = pw-&gt;pw_uid;
+
+    pDir = strrchr(szWork, '/');
+    *pDir = 0;
+    if (Vlstat(szWork, &amp;fs) == -1 || (fs.st_mode &amp; (S_IWGRP | S_IWOTH)) ||
+                                    (fs.st_uid != iBinUid &amp;&amp; fs.st_uid != 0) ||
+                                    !(S_ISDIR(fs.st_mode)))
+        /*
+         * User recovery is: make sure FrontPage exe programs are available,
+         * set directory to be owned by bin or root and have permissions
+         * rwx*-x*-x.
+         */
+        die("FrontPage SUID Error: target directory not found or insecure");
+
+    *pDir = '/';
+
+    /*
+     * Validate the target program
+     */
+    if (Vstat(szWork, &amp;fs) == -1 || ((fs.st_mode &amp; (S_IWGRP | S_IWOTH)) ||
+                                    (fs.st_mode &amp; (S_ISUID | S_ISGID)) ||
+                                    (fs.st_uid != iBinUid &amp;&amp; fs.st_uid != 0)))
+        /*
+         * User recovery is: make sure FrontPage exe programs are available,
+         * set programs to be owned by bin or root and have permissions
+         * rwx*-x*-x.
+         */
+        die("FrontPage SUID Error: target program not found or insecure");
+
+    *pDir = '/';
+
+    /*
+     * Make sure the environment contains no unsafe values.
+     */
+    CleanEnvironment();
+
+    /*
+     * Run the specified program.
+     */
+    argv[0] = szWork;
+    umask(022);
+    execv(argv[0], argv);
+
+    /*
+     * We should never get here.  Exit with error.
+     */
+    return (1);
+}
+</CODE></PRE>
+
+		</TD>
+	</TR>
+</TABLE>
+
+<!--END_NEW TABLE FOR CODE STRUCTURE ONLY-->
+
+
+<!--FOOTER_BEGIN-->
+
+
+<TABLE cellspacing="0" cellpadding="0" border=0 width=100%>
+
+<BR>
+
+	<TR>
+	    <TD width="20" valign="top"></TD>
+	    <TD width="325" valign="top"><A HREF="apndxtoc.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></A></font></TD>
+	    <TD width="325" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+	    <TD>&nbsp;</TD>
+	</TR>
+	
+	<TR>
+	    <TD width="20" valign="top"></TD>
+	    <TD colspan="2" width="650" valign="top"><HR></TD>
+	    <TD>&nbsp;</TD>
+	</TR>
+	
+	<TR>
+	    <TD width="20" valign="top"></TD>
+	    <TD colspan="2" width="650" valign="top">Dernière mise à jour&nbsp;:&nbsp;novembre 1998
+		<BR>
+		<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+	    <TD></TD>
+	</TR>
+	
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,77 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<meta name="Microsoft Border" content="<%Border%>">
+<%endif%>
+<title><%PageTitle%></title>
+</head>
+
+<body <%if DoTheme EQ False%> stylesrc="<%PageStyleSrc%>" <%endif%> >
+
+<%if DoTheme EQ False%>
+<%if DoTopLogo EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%LogoUrl%>" -->
+<%endif%>
+<%if DoTopLinks EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%NavbarUrl%>" -->
+<%endif%>
+<%if UnderConstructionOption EQ 0%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%UnderconImgUrl%>" 
+alt="[En construction]" border="0" <%UnderconImgSize%>></p>
+<%endif%>
+<%endif%>
+
+<p> <strong><em><!-- LOCALIZE this text -->ÉMISSION IMMÉDIATE</em></strong></p>
+
+<hr>
+
+<h1><!-- LOCALIZE this heading -->Titre de l'annonce</h1>
+
+<h3><em><!-- LOCALIZE this subheading -->Sous-titre de l'annonce</em></h3>
+
+<p><!-- LOCALIZE this text --><strong>Date du jour</strong> -- Ceci est le corps de l'annonce...</p>
+
+<hr>
+
+<p><!-- LOCALIZE the text in this paragraph --> <em>Pour davantage d'informations, contactez&nbsp;:</em><br>
+<br>
+<!--webbot bot="Substitution" s-variable="<%WebVarLongName%>" -->
+<br>
+<!--webbot bot="Substitution" s-variable="<%WebVarAddress%>" -->
+<br>
+Tél&nbsp;: <!--webbot bot="Substitution" s-variable="<%WebVarPhone%>" -->
+<br>
+Télécopie&nbsp;: <!--webbot bot="Substitution" s-variable="<%WebVarFAX%>" -->
+<br>
+Internet&nbsp;: <a href="mailto:<%CompanyEmail%>"><!--webbot
+bot="Substitution" s-variable="<%WebVarEmail%>" --></a>
+<br>
+</p>
+
+<%if DoTheme EQ False%>
+<%if DoBottomLinks EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%NavbarUrl%>" -->
+<%endif%>
+<h5>
+<%if DoBottomWebmasterAddress EQ True%>
+<!-- LOCALIZE this line -->Envoyez un courrier électronique à <a href="<%WebmasterUrl%>"><!--webbot
+bot="Substitution" s-variable="<%WebVarWebmaster%>" --></a>pour toute question ou remarque concernant ce site Web.<br>
+<%endif%>
+<%if DoBottomCopyright EQ True%>
+<!-- LOCALIZE this line -->Copyright © <%CurrentYear%> <!--webbot bot="Substitution"
+s-variable="<%WebVarLongName%>" --><br>
+<%endif%>
+<%if DoBottomDateModified EQ True%>
+<!-- LOCALIZE this line -->Dernière modification&nbsp;: <!--webbot bot="TimeStamp" s-type="EDITED"
+s-format="%d %B %Y" -->
+<%endif%>
+</h5>
+<%endif%>
+
+</body>
+</html>

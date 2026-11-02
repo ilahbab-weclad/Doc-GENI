@@ -1,0 +1,25 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<meta name="Microsoft Theme" content="<%Theme%>">
+<meta name="Microsoft Border" content="none">
+<title><!-- LOCALIZE this text -->Bordure gauche</title>
+</head>
+
+<body>
+
+<%if UnderConstructionOption EQ 0%>
+<p><!-- LOCALIZE the alt text in this image --><img src="../<%UnderconImgUrl%>" 
+alt="[En construction]" border="0" <%UnderconImgSize%>></p>
+<%endif%>
+
+<p>
+<!--webbot bot="Navigation" s-type="children" s-orientation="vertical" -->
+</p>
+
+</body>
+</html>
+

@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Restriction des listes de comptes Windows NT</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+	
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+	
+	<TR>
+		<TD BGCOLOR="#000000"><IMG SRC="home.gif" WIDTH=103 HEIGHT=21
+ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH="100%"><IMG 
+SRC="1ptrans.gif" WIDTH=1 
+HEIGHT=1 ALT="" BORDER=0></TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+<FONT FACE="Arial, Helvetica" SIZE=1><A HREF="http://www.microsoft.com/france" TARGET="_top"><IMG 
+SRC="msft.gif" WIDTH=91 
+HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+	
+	<!--WEB SITE TITLE AND LOGO START-->
+
+	<TR>
+		<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD colspan="2" nowrap bgcolor="#666699" valign="middle" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+		
+		<!--WEB SITE TITLE AND LOGO END-->
+		
+		<!--TOPIC TITLE AND BODY TEXT START-->
+		
+		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous Windows&nbsp;NT</font></b></font>
+
+<HR>
+
+			<A NAME="restrictingwindowsntaccountlists"></A><P><A HREF="scwin_6.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;7 sur 9&nbsp;</sup></b></font><A HREF="scwin_8.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;Restriction des listes de comptes Windows&nbsp;NT</FONT>
+
+			<p><A NAME="scwinnt.doc-1070"></A>Dans FrontPage&nbsp;98 et les versions suivantes, vous pouvez configurer une seule liste d'utilisateurs et de groupes pour chaque site Web FrontPage étendu. Par la suite, quand les administrateurs utilisent le client FrontPage pour accorder des autorisations aux administrateurs, auteurs et visiteurs, ils ne voient plus la liste complète des comptes Windows&nbsp;NT du serveur. Vous protégez ainsi la confidentialité de votre communauté d'utilisateurs.</p>
+
+			<p><font color="#666699"><b>Pour configurer des listes de comptes Windows&nbsp;NT restreintes</b></font>
+
+<OL>
+					<LI class=LN>Configurez une clé de registre pour indiquer que vous souhaitez restreindre les listes de comptes Windows&nbsp;NT .
+
+	<LI class=LN>Avec le gestionnaire d'utilisateurs Windows&nbsp;NT, créez un groupe qui contiendra la liste de comptes que vous voulez utiliser. Affectez un nom à ce groupe en respectant les conventions décrites ci-après. Vous pouvez configurer un groupe pour un site Web racine FrontPage étendu ou pour un sous-site Web imbriqué.
+
+	<LI class=LN>Ajoutez les utilisateurs et les groupes au groupe que vous avez créé.</LI>
+				</OL>
+				
+				<P class=4>&nbsp;</P>
+
+			<H4>Configuration de la clé de registre</H4>
+
+			<p><A NAME="scwinnt.doc-1072"></A>Vous pouvez configurer une clé de registre globale pour restreindre les listes de comptes Windows&nbsp;NT pour tous les serveurs virtuels du serveur IIS, ou pour le serveur de votre choix.
+
+<UL>
+					<LI class=LB1>Pour activer globalement les restrictions des listes de comptes de l'ordinateur Windows&nbsp;NT, affectez à la clé de registre HKEY_LOCAL_MACHINE\Software\Microsoft\Shared Tools\Web Server Extensions\All Ports\RestrictIISUsersAndGroups la valeur <B>1</B>.
+
+	<LI class=LB1>Pour activer les restrictions des listes de comptes de l'ordinateur Windows&nbsp;NT pour un serveur virtuel spécifique, affectez à la clé de registre HKEY_LOCAL_MACHINE\Software\Microsoft\Shared Tools\Web Server Extensions\Ports\Port <I>nom</I> <I>port</I>\RestrictIISUsersAndGroups la valeur <B>1</B>.
+</UL>
+				
+				<P class=4>&nbsp;</P>
+
+			<p>Vous pouvez affecter à RestrictIISUsersAndGroups la valeur <B>0</B> pour désactiver globalement les restrictions, puis modifier le paramètre sur certains serveurs virtuels.</p>
+
+			<H4>Nom du groupe restreint</H4>
+
+			<p><A NAME="scwinnt.doc-1076"></A>Si les restrictions d'utilisateurs et de groupes sont activées pour un site Web FrontPage étendu donné, les extensions serveur recherchent un groupe Windows&nbsp;NT dont le nom respecte les conventions suivantes&nbsp;: </p>
+
+			<p>FP_[ServeurVirtuel][_Répertoires][_Sous-siteWeb]</p>
+
+			<p>Sur un ordinateur IIS&nbsp;2.0/3.0 multi-hôtes, [ServeurVirtuel] est l'adresse&nbsp;IP et la combinaison des numéros de port du service, et [_Répertoires][_Sous-siteWeb] est l'URL du sous-site Web. Voici un exemple pour le site Web racine FP_172.17.123.255:80. Pour un sous-site Web, l'exemple est le suivant FP_172.17.123.255:80_répertoire1_MonSous-siteWeb1_répertoire2_MonSous-siteWeb2. Il s'agit du sous-site Web imbriqué à l'URL suivante http://172.17.123.255:80/répertoire1/MonSous-siteWeb1/répertoire/MonSous-siteWeb2. Sur un ordinateur mono-hôte, [ServeurVirtuel] correspond au numéro du port. Par exemple, FP_80 désigne le serveur virtuel sur le port 80 lorsque ce dernier n'est pas lié à une adresse IP dans le gestionnaire de services Internet.</p>
+
+			<p>Sur IIS version&nbsp;4.0 ou ultérieure, [ServeurVirtuel] peut prendre la forme <B>/LM/W3SVC/</B><I>N</I>, où <I>N</I> est un numéro d'instance.  Pour un site racine il s'agit de FP_/LM/W3SVC/1. Pour un sous-site Web le serveur virtuel est le suivant FP_/LM/W3SVC/1_MySubWeb. Vous pouvez également utiliser un nom d'hôte. Un exemple pour le site racine est le suivant FP_www.microsoft.com:80, et pour un sous-site Web FP_www.microsoft.com:80_MonSous-siteWeb. Sur un ordinateur mono-hôte, [ServeurVirtuel] peut être configuré en tant que numéro de port, comme dans FP_80. Les autres options de IIS 4.0 fonctionneront également dans ce cas.</p>
+
+			<p>Si des restrictions sont activées sur un sous-site Web mais qu'aucun groupe local n'est défini, les extensions serveur FrontPage recherchent le groupe du site Web parent et l'utilisent, s'il existe. Cette opération est répétée de façon récursive si le sous-site Web est imbriqué dans un autre. Si aucun groupe portant un nom correctement formé n'est trouvé, aucune restriction n'est appliquée aux autorisations.</p>
+		</TD>
+		
+		<!--TOPIC TITLE AND BODY TEXT CELL END-->
+		
+		<!--FAR-RIGHT COLUMN SECTION ART START-->
+	
+		<TD rowspan="20" nowrap><!--Third-column art-->
+			<img SRC="secart.gif" align="center" alt="Image de la section Sécurité">
+		</TD>
+	
+		<!--FAR-RIGHT COLUMN SECTION ART END-->
+	</TR>
+	
+	<!--LEFT-NAVIGATION MENUS START-->
+
+	<TR>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" href="scintro.htm"><font color="#000000">&nbsp;&nbsp;Introduction</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous <BR>&nbsp;&nbsp;Windows&nbsp;NT</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" HREF="scuni.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="adoview.htm"><font color="#000000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+	<!--LAST ROW START-->
+
+	<TR>
+    	<TD height="900" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+		
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+
+<!--FOOTER_BEGIN-->
+<BR>
+
+<TABLE cellspacing="0" cellpadding="0" border=0>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD width="237" valign="top"><A HREF="scwin_6.htm"><img SRC="previous.gif" vspace="1" hspace="0" border="0"><b><font color="#000000" style="text-decoration: none" size="2"><sup>&nbsp;7 sur 9&nbsp;</sup></b></font><A HREF="scwin_8.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    	<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+  	</TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+   	</TR>
+	
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

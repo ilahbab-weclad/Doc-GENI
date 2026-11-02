@@ -1,0 +1,1048 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+<!--START_TOPIC HEAD-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Fichiers et autorisations sur le service d'informations Internet (IIS)</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--END_TOPIC HEAD-->
+
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+<!--MICROSOFT TOOLBAR STARTS HERE-->
+
+	<TR>
+		<TD BGCOLOR="#000000">
+		<IMG SRC="home.gif" WIDTH=103 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0 hspace="0">
+		</TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH=100%>
+		<IMG SRC="1ptrans.gif" WIDTH=1 HEIGHT=1 ALT="" BORDER=0>
+		</TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+		<FONT FACE="Arial, Helvetica" SIZE=1>
+		<A HREF="/" TARGET="_top">
+		<IMG SRC="msft.gif" WIDTH=91 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0>
+		</A>
+		</FONT>
+		</TD>
+	</TR>
+	
+</TABLE>
+
+<!--MICROSOFT TOOLBAR ENDS HERE-->
+
+
+<!--START_WEBSITE TITLE AND LOGO-->
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<TR>
+	    <TD colspan="3" bgcolor="#666699" valign="right" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>&nbsp;Kit de ressources des extensions serveur Microsoft FrontPage 2000</b></font></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+
+</TABLE>
+
+<!--START_WEBSITE TITLE AND LOGO-->
+
+
+<!--MAIN BODY STARTS HERE-->
+
+<TABLE cellspacing="0" cellpadding="0" width="650">
+
+<TR>
+	<TD width=20 nowrap></TD>
+   	<TD><a name="top"></a><P><font color="#666699"><b><font size="+1">Annexes</font></b></font>
+
+	<!--START_HEADER RULE-->
+
+	<HR>
+	
+	<!--END_HEADER RULE-->
+	
+	
+		<H3><A NAME="filesandpermissionsforiis"></A>Fichiers et autorisations sur le service d'informations Internet (IIS)</H3>
+
+			<p><A NAME="apndx04.doc-1005"></A>Cette annexe répertorie en détail les paramètres d'autorisations de fichiers minimaux nécessaires à l'exécution normale de FrontPage. Toute référence aux fichiers shtml.dll, author.dll ou admin.dll s'applique également à leur contrepartie CGI shtml.exe, author.exe et admin.exe sur les serveurs IIS 1.x. FrontPage modifie uniquement les ACL mais n'affecte jamais les autorisations des comptes qui ne figurent pas dans la liste ci-dessous.</P>
+
+			<p><B>Autorisations de fichiers attribuées par la commande de vérification des extensions serveur</B></P>
+
+			<p>La commande <B>Vérifier les extensions serveur </B>du composant logiciel enfichable de la console de gestion Microsoft FrontPage corrige les problèmes relatifs aux autorisations NTFS. La liste des fichiers ci-dessous décrit les autorisations minimales requises pour FrontPage, telles qu'elles sont définies par cette commande. 
+
+			<p><B>Répertoire Windows NT</B></P>
+
+			<p></P>
+
+			<p>\WINNT\system32\infoadmn.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)(RX) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\WINNT\system32\mfc42.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)(RX) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\WINNT\system32\msvcirt.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)(RX) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\WINNT\system32\msvcrt.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)(RX) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\WINNT\system32\netapi32.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)(RX) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\WINNT\system32\netrap.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)(RX) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\WINNT\system32\rpcltc1.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)(RX) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\WINNT\system32\wsock32.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)(RX) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+</TABLE><BR>
+
+<P CLASS=4>&nbsp;</P>
+
+<p><B>Répertoire d'installation Microsoft FrontPage</B></P>
+
+<p>Par défaut, le répertoire d'installation de FrontPage est C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions.</P>
+
+<p></P>
+
+<p>\Program Files\Common Files\Microsoft Shared\Web Server Extensions \40\servsupp\</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)(RX) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\Program Files\Common Files\Microsoft Shared\Web Server Extensions\40\servsupp\fp30msft.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\Program Files\Common Files\Microsoft Shared\Web Server Extensions \40\servsupp\servers.cnf</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Accès spécial (R) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Accès spécial (R) </TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\Program Files\Common Files\Microsoft Shared\Web Server Extensions<B> </B>\40\bin\</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Liste (RX)(non spécifié) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Liste (RX)(non spécifié) </TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\Program Files\Common Files\Microsoft Shared\Web Server Extensions<B> </B>\40\bin\fp4*utl.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\Program Files\Common Files\Microsoft Shared\Web Server Extensions \40\servsupp\fp4*txt.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\Program Files\Common Files\Microsoft Shared\Web Server Extensions<B> </B>\40\servsupp\fp4*wel.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\Program Files\Common Files\Microsoft Shared\Web Server Extensions \40\bin\fp4*vss.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\Program Files\Common Files\Microsoft Shared\Web Server Extensions \40\bin\1033\fpext*.msg</P>
+
+<p>(Ces fichiers n'existent que pour la prise en charge multilangues, et ne sont généralement pas présents dans l'installation anglaise des extensions serveur FrontPage.)</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\Program Files\Common Files\Microsoft Shared\Web Server Extensions \40\isapi\</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\Program Files\Common Files\Microsoft Shared\Web Server Extensions \40\isapi\shtml.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\Program Files\Common Files\Microsoft Shared\Web Server Extensions \40\isapi\_vti_adm\</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\Program Files\Common Files\Microsoft Shared\Web Server Extensions \40\isapi\_vti_adm\admin.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\Program Files\Common Files\Microsoft Shared\Web Server Extensions \40\isapi\_vti_aut\</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\Program Files\Common Files\Microsoft Shared\Web Server Extensions \40\isapi\_vti_aut\author.dll</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Lecture (RX)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Lecture (RX)</TD>
+</TR>
+</TABLE><BR>
+
+<P CLASS=4>&nbsp;</P>
+
+<p><B>Zone de contenu d'un site Web</B></P>
+
+<p>Cette liste concerne une zone de contenu d'un site Web de \inetpub\wwwroot.</P>
+
+<p>\inetpub</P>
+
+<p>Tous les répertoires inclus dans la racine de contenu accordent des autorisations de LISTE à ces comptes.</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Liste (RX)(non spécifié)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Liste (RX)(non spécifié)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Liste (RX)(non spécifié)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Liste (RX)(non spécifié)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_pvt</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Accès spécial (RWXD)(RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Accès spécial (RWXD)(RWD)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_pvt\botinfs.cnf</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Accès spécial (R)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Accès spécial (R)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_pvt\bots.cnf</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Accès spécial (R)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Accès spécial (R)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_pvt\services.cnf</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Accès spécial (R)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Accès spécial (R)</TD>
+</TR>
+</TABLE><BR>
+
+<P class=4>&nbsp;</P>
+
+<p><B>\VSS\win32\ssapi.dll</B></P>
+
+<p>Les paramètres de sécurité de ce fichier sont modifiés uniquement si la version&nbsp;5.0 ou une version ultérieure de Visual SourceSafe est installée.</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>(RX)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>(RX)</TD>
+</TR>
+</TABLE>
+
+<P class=4>&nbsp;</P>
+
+<p>\VSS\win32\ssxx.dll</P>
+
+<p>Les paramètres de sécurité de ce fichier sont modifiés uniquement si la version&nbsp;5.0 ou une version ultérieure de Visual SourceSafe est installée. La valeur <I>xx</I> correspond au code pays et ssus.dll est la valeur par défaut si aucun autre code pays n'est saisi.</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>(RX)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>(RX)</TD>
+</TR>
+</TABLE>
+
+<P class=6>&nbsp;</P>
+
+<p>La liste suivante comprend les autorisations de fichiers supplémentaires qui sont attribuées lors de l'installation de FrontPage. Cette liste suppose que les groupes Windows NT standard «&nbsp;Administrateurs&nbsp;» et «&nbsp;SYSTEME&nbsp;» possèdent déjà le contrôle complet du lecteur et que le compte IUSR_&lt;nom de l'hôte&gt; ait les droits en lecture sur le contenu du site Web avant l'installation de FrontPage.</P>
+
+<p>FrontPage considère que les droits d'accès en lecture d'un compte sur le contenu du site Web doivent être maintenus après son installation. Ces comptes deviennent alors des utilisateurs finals du contenu du site Web. Le compte IUSR_&lt;nom de l'hôte&gt; n'a accès aux fichiers de la liste suivante que s'il y avait accès au moment de l'installation. Vous pouvez remplacer «&nbsp;tous les comptes utilisateurs avec accès en lecture au contenu du site Web&nbsp;» par IUSR_&lt;nom de l'hôte&gt;. Sans tenir compte des niveaux d'accès attribués à ces comptes avant l'installation, FrontPage déterminera les nouveaux niveaux d'accès conformément aux descriptions ci-dessous lors de l'installation des extensions serveur.</P>
+
+<p>FrontPage affecte aux groupes «&nbsp;Administrateurs&nbsp;» et «&nbsp;SYSTEME&nbsp;» le contrôle complet partout.</P>
+
+<p>Le compte d'installation possède explicitement les droits d'accès d'administrateurs à la zone de contenu, même s'il s'agit déjà d'un compte d'administrateurs. Vous devez être administrateur de Windows NT pour pouvoir exécuter correctement les outils d'administration des extensions serveur FrontPage tels que Fpsrvadm.</P>
+
+<P CLASS=4>&nbsp;</P>
+
+<p><B>Zone de contenu du site Web</B></P>
+
+<p>\inetpub\wwwroot\</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Accès spécial (RWXD) (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Accès spécial (RWXD) (RWD)</TD>
+</TR>
+</TABLE><BR>
+
+<P class=4>&nbsp;</P>
+
+<p>Ensemble du contenu de navigation</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Accès spécial (RX)(R) </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Accès spécial (RWPXD) (RWPD)</TD>
+</TR>
+</TABLE><BR>
+
+<P class=4>&nbsp;</P>
+
+<p>\inetpub\wwwroot\_vti_log\</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Accès spécial (RWXD) (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Accès spécial (RWPXD) (RWPD)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_pvt\</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Accès spécial (RWXD) (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Accès spécial (RWPXD) (RWPD)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_pvt\access.cnf</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_pvt\doctodep.btr</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_pvt\deptodoc.btr</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_pvt\linkinfo.cnf</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_pvt\service.cnf</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_pvt\services.org</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_pvt\structure.cnf</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Accès spécial (R)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Accès spécial (R)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_pvt\svcacl.cnf</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_pvt\uniqperm.cnf</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Accès spécial (RWD)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_txt\</P>
+
+<TABLE cols=3>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T colspan=2 width=55%>Accès spécial (RWXD) (RWD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T colspan=2 width=47%>Compte d'installation</TD>
+<TD class=T width=53%>Accès spécial (RWPXD) (RWPD)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T colspan=2 width=47%>INTERACTIF</TD>
+<TD class=T width=53%>Accès spécial (RWXD) (Non spécifié)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T colspan=2 width=47%>RÉSEAU</TD>
+<TD class=T width=53%>Accès spécial (RWXD) (Non spécifié)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_bin\</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Lecture (RX)(RX)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>INTERACTIF</TD>
+<TD class=T width=55%>Liste (RX) (non spécifié)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>RÉSEAU</TD>
+<TD class=T width=55%>Liste (RX) (non spécifié)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_vti_cnf\</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Accès spécial (RX) (R)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Accès spécial (RWPXD) (RWPD)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p>\inetpub\wwwroot\_private\</P>
+
+<TABLE cols=2>
+
+<TR VALIGN="top">
+<TD class=T width=45%>IUSR_&lt;host_name&gt;</TD>
+<TD class=T width=55%>Accès spécial (RX) (R)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD class=T width=45%>Compte d'installation</TD>
+<TD class=T width=55%>Accès spécial (RWPXD) (RWPD)</TD>
+</TR>
+</TABLE><BR>
+
+<p></P>
+
+<p></P>
+</TD>
+</TR>
+</TABLE>
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_BEGIN-->
+
+<br>
+<TABLE cellspacing="0" cellpadding="0" border=0 width="650">
+<TR>
+    <TD width="20" valign="top">&nbsp;</TD>
+    <TD width="325" valign="top"><A HREF="apndxtoc.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></A></font></TD>
+    <TD width="325" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+    <TD>&nbsp;</TD>
+</TR>
+<TR>
+    <TD width="20" valign="top">&nbsp;</TD>
+    <TD colspan="2" width="650" valign="top"><HR></TD>
+    <TD>&nbsp;</TD>
+</TR>
+<TR>
+    <TD width="20" valign="top">&nbsp;</TD>
+    <TD colspan="2" width="650" valign="top">Dernière mise à jour&nbsp;: novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+    <TD></TD>
+</TR>
+</table>
+
+<!--FOOTER_END-->
+
+
+</BODY>
+</HTML>

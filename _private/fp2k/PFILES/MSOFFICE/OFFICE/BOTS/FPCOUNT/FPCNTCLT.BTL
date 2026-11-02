@@ -1,0 +1,23 @@
+<!--
+  Copyright © 1997-99 Microsoft Corp.  All Rights Reserved.
+
+  File: fpcntclt.btl
+  WebBot Hit Counter Component Template Language
+-->
+
+<!--WEBBOT BOT=HitCounter
+PREVIEW="&lt;strong&gt;Hit Counter&lt;/strong&gt;"
+DESCR="Inserts a hit counter into your page"
+HELP="Set Image to a number from 0 to 4 to pick the counter image style.  If
+you want a custom image, set Custom to the filename of the image you want.  The
+Custom attribute must be empty for the WebBot Component to use the Image
+attribute.  To reset the counter, set ResetValue to the value you want the
+counter to be reset to, and set Reset to True.  For a fixed number of digits,
+set Digits to a number between 1 and 10.  If Digits is set to 0, the number of
+digits to display will be the same as the number of digits in the number."
+I-ResetValue="0" MIN-ResetValue=0 MAX-ResetValue=9999999
+B-Reset=FALSE
+I-Digits="0" MIN-Digits=0 MAX-Digits=10
+I-Image="0" MIN-Image=0 MAX-Image=4
+U-Custom=""
+-->

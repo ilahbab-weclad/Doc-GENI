@@ -1,0 +1,55 @@
+<XML>
+<HTMLHelpCollection>
+<masterchm value ="csofed"/>
+<masterlangid value=1036/>
+<samplelocation value =""/>
+<refcount value=0/>
+<version value=1/>
+<Folders>
+<Folder>
+	<TitleString value="Microsoft Script Editor"/>
+	<FolderOrder value=0/>
+	<Folder>
+		<TitleString value="=csofed"/>
+		<FolderOrder value=1/>
+		<LangId value=1036/>
+	</Folder>
+	<Folder>
+		<TitleString value="=csofedui"/>
+		<FolderOrder value=2/>
+		<LangId value=1036/>
+	</Folder>
+	<Folder>
+		<TitleString value="=csoftask"/>
+		<FolderOrder value=3/>
+		<LangId value=1036/>
+	</Folder>
+	<Folder>
+		<TitleString value="=csofui"/>
+		<FolderOrder value=4/>
+		<LangId value=1036/>
+	</Folder>
+	<Folder>
+		<TitleString value="=ASP"/>
+		<FolderOrder value=5/>
+		<LangId value=1033/>
+	</Folder>
+	<Folder>
+		<TitleString value="=htmlref"/>
+		<FolderOrder value=6/>
+		<LangId value=1033/>
+	</Folder>
+	<Folder>
+		<TitleString value="=jscript5"/>
+		<FolderOrder value=7/>
+		<LangId value=1036/>
+	</Folder>
+	<Folder>
+		<TitleString value="=vbscrip5"/>
+		<FolderOrder value=8/>
+		<LangId value=1036/>
+	</Folder>
+</Folder>
+</Folders>
+</HTMLHelpCollection>
+</XML>

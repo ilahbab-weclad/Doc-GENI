@@ -1,0 +1,342 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Configuration des comptes d'utilisateur pour une utilisation dans les projets Visual SourceSafe</TITLE>
+
+
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+	<TR>
+	<TD BGCOLOR="#000000">
+	<IMG SRC="home.gif" WIDTH=103 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+	<TD colspan="2" BGCOLOR="#000000" WIDTH=100%>
+	<IMG SRC="1ptrans.gif" WIDTH=1 HEIGHT=1 ALT="" BORDER=0></TD>
+	<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+	<FONT FACE="Arial, Helvetica" SIZE=1>
+	<A HREF="/" TARGET="_top">
+	<IMG SRC="msft.gif" WIDTH=91 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+	
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+	
+	<!--WEB SITE TITLE AND LOGO STARTS-->
+
+	<TR>
+	<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+    <TD width="20" nowrap></TD>
+    <TD colspan="2" nowrap bgcolor="#666699" valign="center" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+	
+	<TR>
+    <TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    <TD width="20" nowrap></TD>
+	
+	<!--WEB SITE TITLE AND LOGO ENDS-->
+
+	<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
+	
+
+    <TD rowspan="21" width="460"><a name="top"></a><p><font color="#666699"><b><font size="+1">Tâches administratives avancées</font></b></font>
+
+<HR>
+
+<H3><span class=FR><SUP><A NAME="configuringuseraccountsinvss"></A></SUP></span>Configuration de comptes d'utilisateur pour une utilisation dans les projets Visual SourceSafe </H3>
+
+	<p><A NAME="advss.doc-1011"></A>Microsoft Visual SourceSafe contient un utilitaire appelé Administrateur Visual SourceSafe permettant de créer et de configurer des comptes pour les utiliser au sein de projets VSS. Pour Visual SourceSafe version&nbsp;5.0 ou ultérieure, l'Administrateur Visual SourceSafe est disponible dans le menu Démarrer.</P>
+
+	<p>Pour activer l'intégration de Visual SourceSafe avec FrontPage, ajoutez les comptes d'utilisateur suivants avec l'Administrateur Visual SourceSafe&nbsp;:</P>
+
+	<p class=4>&nbsp;</p>
+
+<TABLE cols=2 width=450 cellspacing=0 cellpadding=6 rules="rows" frame="void">
+
+	<TR VALIGN="top">
+	<TH width=52% align="left">Utilisateurs/Groupes</TH>
+	<TH width=48% align="left">Autorisations VSS</TH>
+	</TR>
+
+	<TR VALIGN="top">
+	<TD class=TT width=52% align="left">Tous les groupes et utilisateurs de type administrateur dans  FrontPage</TD>
+	<TD class=TT width=48% align="left">lecture-écriture</TD>
+	</TR>
+
+	<TR VALIGN="top">
+	<TD class=TT width=52% align="left">Tous les groupes et utilisateurs de type auteur dans  FrontPage</TD>
+	<TD class=TT width=48% align="left">lecture-écriture</TD>
+	</TR>
+
+	<TR VALIGN="top">
+	<TD class=TT width=52% align="left">Sous Internet Information Services ou Peer Web Server, le compte visiteur Internet </TD>
+	<TD class=TT width=48% align="left">lecture</TD>
+	</TR>
+
+	<TR VALIGN="top">
+	<TD class=TT width=52% align="left">Sur tous les serveurs Web excepté Internet Information Services ou Peer Web Server, le compte sous lequel le serveur Web fonctionne </TD>
+	<TD class=TT width=48% align="left">lecture</TD>
+	</TR>
+	
+</TABLE>
+
+	<P class=6>&nbsp;</P>
+
+	<H3><B>Pour ajouter un compte d'utilisateur ou de groupe dans l'Administrateur Visual SourceSafe&nbsp;: </B>
+</H3>
+
+		<OL>
+			<LI class=LN>Exécutez l'Administrateur Visual SourceSafe.<LI class=LN>Dans le menu <span class=L><B>Utilisateurs</B></span>, choisissez <span class=L><B>Ajouter un utilisateur</B></span>.<LI class=LN>Dans la boîte de dialogue <B><span class=L>Ajouter un utilisateur</span></B>, tapez le nom de l'utilisateur ou du groupe dans le champ  <span class=L><B>Nom d'utilisateur</B></span> et laissez le champ  <span class=L><B>Mot de passe</B></span> vide.<LI class=LN>Cliquez sur <span class=L><B>OK</B></span>. </OL>
+
+	<P class=4>&nbsp;</P>
+	
+<!--new text starts here-->
+
+
+
+<H3><span class=FR></span>Comptes Visual SourceSafe</H3>
+
+<P>Configuration des comptes dans Visual SourceSafe Administrator. 
+
+	<OL>
+		<LI class=LN>Dans Visual SourceSafe Administrator, ajoutez les utilisateurs FrontPage (sans mots de passe).  
+		<LI class=LN>Dans le menu <B>Outils</B>, cliquez sur <B>Options</B>, cliquez sur l'onglet <B>Général</B>et assurez-vous que la case  <B>Utiliser le nom du réseau pour une connexion automatique de l'utilisateur</B> est cochée.
+	</OL>
+
+	<P class=4>&nbsp;</P>
+
+<H3><A NAME="advss.doc-1023"></A><span class=FR></span>Compte anonyme</H3>
+
+<P>Si vous utilisez un compte anonyme, vous devez le configurer sur le serveur Web. 
+	<OL>
+		<LI class=LN>Assurez-vous que le compte anonyme possède le même mot de passe dans IIS Service Manager et Gest. des utilisateurs pour les domaines. Vous devrez entrer à nouveau le mot de passe aux deux emplacements. 
+			  <P>Pour définir ou modifier le mot de passe du compte anonyme dans le IIS Service Manager, procédez comme suit :
+				<UL>
+					<LI class=LB1>Dans le Gestionnaire des services Internet, ouvrez le dossier <B>Internet Information Server</B>, cliquez avec le bouton droit de la souris sur le serveur Web, puis cliquez sur <B>Propriétés</B> dans le menu contextuel. 
+					<LI class=LB1>Dans <B>Propriétés principales</B>, cliquez sur <B>Service WWW </B>, puis sur <B>Modifier</B>.
+					<LI class=LB1>Cliquez sur l'onglet <B>Sécurité de répertoire</B>, puis sur <B>Connexions anonymes et contrôle d'authentification</B>, cliquez sur <B>Modifier</B>.
+					<LI class=LB1>Sous <B>Autoriser les connexions anonymes</B>, cliquez sur <B>Modifier</B>.
+					<LI class=LB1>Modifiez le mot de passe pour le compte anonyme si nécessaire, puis fermez toutes les boîtes de dialogue restantes.						<P>Notez le nom du compte anonyme, car vous devrez l'identifiez dans le Gest. des utilisateurs pour les domaines.			<LI class=LB1>Ouvrez le <B>Panneau de configuration</B>, puis cliquez deux fois sur <B>Services</B>.
+					<LI class=LB1>Cliquez sur <B>Service de publication World Wide Web</B>, cliquez sur <B>Arrêter</B>, puis sur  <B>Oui</B> pour confirmer et sur <B>Démarrage</B>. 
+				</UL>
+				
+			<P>Pour définir ou modifier le mot de passe du compte anonyme dans le Gest. des utilisateurs pour les domaines, procédez comme suit :
+				<UL>
+					<LI class=LB1>Dans Gest. des utilisateurs pour les domaines, sous  <B>NomUtilisateur</B>, cliquez sur le compte anonyme (si vous n'êtes pas certain de quel compte il s'agit, reportez-vous à la procédure précédente).
+					<LI class=LB1>Dans le menu <B>Utilisateur</B>, cliquez sur <B>Propriétés</B>. 
+					<LI class=LB1>Modifiez le mot de passe pour le compte anonyme si nécessaire, puis cliquez sur  <B>OK</B>.
+				
+				
+				<P class=4>&nbsp;</P>
+
+				<P class=LT1><img SRC="noterule.gif" width=390 height=15 border="0"> Les mots de passe n'excèdent pas 14 caractères, sans tenir compte de la longueur actuelle de votre mot de passe. <HR width=390>
+			    </UL>
+		
+		<LI class=LN>Assurez-vous que le compte anonyme possède les droits pour Ouvrir une session localement :
+				<UL>
+					<LI class=LB1>Dans le Gest. des utilisateurs pour les domaines, sous<B> NomUtilisateur</B>, cliquez sur le compte anonyme.
+					<LI class=LB1>Dans le menu  <B>Stratégies</B>, cliquez sur <B>Droits de l'utilisateur</B>. 
+					<LI class=LB1>Dans la liste de <B>Droite</B>, cliquez sur <B>Ouvrir une session localement</B>. Assurez-vous que le compte anonyme est répertorié dans la boîte <B>Accorder à</B> de manière individuelle ou en tant que membre d'un des groupes, puis cliquez sur <B>OK</B>.
+				</UL>
+				
+		<LI class=LN>Assurez-vous que le compte anonyme peut ouvrir une session localement sur le serveur Web :
+				<UL>
+					<LI class=LB1>Dans le Gest. des utilisateurs pour les domaines, sous <B>NomUtilisateur</B>, cliquez sur le compte anonyme.
+					<LI class=LB1>Dans le menu <B>Utilisateur</B>, cliquez sur <B>Propriétés</B>.
+					<LI class=LB1>Désactivez les boîtes <B>L'utilisateur doit changer de mot de passe à la prochaine ouverture de session</B> et <B>Compte désactivé</B>, puis cliquez sur OK.
+				</UL> 
+				
+		<LI class=LN>Dans le l'Administrateur Visual SourceSafe, ajoutez le compte anonyme comme utilisateur sans mot de passe.
+		<LI class=LN>Configurez les autorisations pour le compte  anonyme dans la structure de répertoires Visual SourceSafe (reportez-vous à la section précédente Configuration des autorisations dans le répertoire Visual SourceSafe).   
+	</OL>
+	
+	<P class=4>&nbsp;</P>
+ 	
+	
+<!--new text ends here-->
+	
+	
+	
+	
+	</TD><!--TOPIC TITLE AND BODY TEXT CELL ENDS-->
+	
+	
+	
+	<!--FAR-RIGHT COLUMN SECTION ART STARTS-->
+	
+    <TD rowspan="15"><img SRC="admart.gif" align="top" alt="Illustration de la section Administration"></TD>
+
+	<!--FAR-RIGHT COLUMN SECTION ART ENDS-->
+	
+	</TR>
+	
+	<!--LEFT-NAVIGATION MENU STARTS-->
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="scintro.htm"><font color="#000000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink"><div class="table"><font color="#990000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adoview.htm"><font color="#000000">&nbsp;&nbsp;Outils et techniques &nbsp;&nbsp;d'administration</font></A></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adfpsr.htm"><font color="#000000">&nbsp;&nbsp;Fpsvradm</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="admmc.htm"><font color="#000000">&nbsp;&nbsp;Composant logiciel &nbsp;&nbsp;enfichable MMC</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adhtm.htm"><font color="#000000">&nbsp;&nbsp;Formulaire &nbsp;&nbsp;d'administration &nbsp;&nbsp;HTML</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adfpre.htm"><font color="#000000">&nbsp;&nbsp;Administration à &nbsp;&nbsp;distance</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Tâches &nbsp;&nbsp;administratives <BR>&nbsp;&nbsp;avancées</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<!--LAST ROW STARTS-->
+
+	<TR>
+    <TD height="1660" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_BEGIN-->
+
+<BR>
+
+<TABLE cellspacing="0" cellpadding="0" border=0>
+
+	<TR>
+    <TD width="170" valign="top">&nbsp;</TD>
+    <TD width="237" valign="top"><A HREF="adadv.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></font></a></TD>
+    <TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+    </TR>
+
+	<TR>
+    <TD width="170" valign="top">&nbsp;</TD>
+    <TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+
+	<TR>
+    <TD width="170" valign="top">&nbsp;</TD>
+    <TD colspan="2" width="475" valign="top">Dernière mise à jour&nbsp;: novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+  	</TR>
+
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

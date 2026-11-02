@@ -1,0 +1,22 @@
+[info]
+title=Pie Charts
+codepage=65001
+version=2.00
+format=2.00
+readonly=true
+
+[titles]
+1031 = Kreisdiagramme
+1036 = Camemberts
+1040 = Porzioni
+3082 = Gráficos circulares
+1043 = Cirkeldiagram
+1046 = Gráficos de pizza
+1053 = Cirkeldiagram
+1044 = Sektordiagram
+1030 = Cirkeldiagrammer
+1035 = Ympyräkaaviot
+1041 = 円グラフ
+1042 = 원형
+1028 = 圓形圖
+2052 = 饼图

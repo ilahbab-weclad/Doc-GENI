@@ -1,0 +1,80 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+</head>
+
+<body>
+<p><!--WEBBOT 
+   BOT=PurpleText
+   Preview="Pour des raisons de sécurité, certains serveurs Web ne permettent pas l'inscription automatique. Quand vous enregistrez cette page sur un site Web, FrontPage vérifie que c'est possible. S'il y a un problème, le fichier apparaît dans le résumé des erreurs de composant, en mode Rapport. L'inscription automatique n'est pas possible avec les serveurs Web Microsoft qui utilisent des comptes Windows NT pour créer des autorisations Web." 
+ --></p>
+<p><!--WEBBOT 
+   BOT=PurpleText
+   PREVIEW="Formulaire d'inscription des utilisateurs - Pour fonctionner correctement, cette page doit être enregistrée dans un site Web racine sur un serveur Web. Lorsque les utilisateurs ont rempli et envoyé le formulaire de cette page, ils sont alors inscrits comme utilisateurs d'un sous-site Web FrontPage sur le même serveur Web. Le site Web cible doit exister avant d'enregistrer cette page. Tout d'abord, modifiez les propriétés du formulaire pour spécifier le nom du site Web cible. Puis utilisez les fonctions Rechercher/Remplacer pour remplacer toutes les occurrences du texte [Nom de votre sous-site Web] sur cette page par le titre du site Web cible, tel que &quot;site Web Nouvelles idées&quot; ou &quot;site Web Discussion des employés&quot;. Enregistrez cette page dans le site Web racine. Ensuite, modifiez les autorisations du sous-site Web cible, à l'aide de la commande Sécurité/Autorisations du menu Outils. Créez des autorisations uniques pour le sous-site Web cible et modifiez les contrôles d'accès afin que seuls les utilisateurs inscrits puissent avoir accès." 
+ --></p>
+<hr>
+<p>Vous pouvez vous inscrire automatiquement en tant
+qu'utilisateur de [Nom de votre sous-site Web] en remplissant et envoyant ce
+formulaire. Seuls les utilisateurs inscrits ont accès à
+[Nom de votre sous-site Web]. Choisissez votre nom d'utilisateur (tel que votre nom
+de famille) qui ne doit pas contenir d'espaces. Créez également un mot de passe personnel. Ils constituent
+désormais vos clés d'accès à [Nom de votre sous-site Web]. Ces informations
+sont placées dans une base de données d'inscription qui n'est
+accessible que par l'administrateur du site Web et non par les
+utilisateurs normaux.</p>
+<p>L'un des principaux intérêts de la protection d'un site Web
+comme [Nom de votre sous-site Web] est que les utilisateurs autorisés n'ont plus
+besoin de saisir leur nom dans les formulaires, par exemple lors
+de l'envoi d'un article à un groupe de discussion, car le
+serveur Web connaît déjà leur identité. En outre, les autres
+utilisateurs sont assurés que vous leur avez personnellement
+envoyé des articles et qu'aucune personne n'a pas pu usurper
+votre identité lors de l'envoi.</p>
+<p>Lorsque votre inscription est effectuée, le navigateur Web
+vous demande de taper votre nom d'utilisateur et votre mot de
+passe la première fois que vous accédez à [Nom de votre sous-site Web]. Le
+navigateur garde ces informations en mémoire aussi longtemps
+qu'il fonctionne ; ainsi vous pouvez accéder à n'importe quel
+document de [Nom de votre sous-site Web] sans répondre de nouveau aux questions.</p>
+<hr>
+<form action="--WEBBOT-SELF--" method="POST">
+<!--WEBBOT 
+   BOT=Registration
+   S-Service="Name of your sub web"
+   S-Username-Fields="Username"
+   S-Password-Fields="Password PasswordVerify"
+   I-Password-Min-Length="6"
+   B-Check-Password-Against-User="TRUE"
+   U-File="_private/regdb.txt"
+   S-Format="TEXT/TSV"
+   S-Label-Fields="TRUE"
+   S-Builtin-Fields="Date Time REMOTE_NAME HTTP_USER_AGENT"
+   S-Form-Fields="Username EmailAddress" 
+ -->
+<h2>Envoi du formulaire</h2>
+<p>Créez un nom d'utilisateur :<br>
+    <input type=text size=25 maxlength=256 name="NomUtilisateur"> -- <em>Vous pouvez utiliser à la fois
+    des majuscules et des minuscules</em><br>
+    Créez un mot de passe :<br>
+    <input type=password size=25 maxlength=256 name="MotDePasse"> -- <em>Gardez-le secret !</em><br>
+    Confirmez le mot de passe :<strong><br>
+    </strong><input type=password size=25 maxlength=256 name="VerifierMotDePasse"> -- <em>Pour vérification</em><br>
+    Tapez votre adresse de messagerie :<strong><br>
+    </strong><input type=text size=25 maxlength=256 name="AdresseEmail"> -- <em>Si vous en avez une</em></p>
+<h2><input type=submit value="Inscrivez-moi"> <input type=reset value="Effacer le contenu du formulaire"></h2>
+</form>
+<hr>
+<h5>Emplacement réservé aux renseignements sur l'auteur
+du document.<br>
+Copyright © 1999 [NomSociété]. Tous droits réservés.<br>
+Révision : <!--WEBBOT 
+   BOT=TimeStamp
+   S-Type="EDITED"
+   S-Format="%d %B %Y"
+ -->.</h5>
+</body>
+
+</html>

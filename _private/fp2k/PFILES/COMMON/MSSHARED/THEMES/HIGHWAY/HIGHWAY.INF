@@ -1,0 +1,22 @@
+[info]
+title=Highway
+codepage=65001
+version=2.00
+format=2.00
+readonly=true
+
+[titles]
+1031 = Highway
+1036 = Asphalte
+1040 = Autostrada
+3082 = Autopista
+1043 = Snelweg
+1046 = Rodovia
+1053 = Vägmotiv
+1044 = Motorvei
+1030 = Motorvej
+1035 = Valtatie
+1041 = ハイウェイ
+1042 = 도로
+1028 = 公路
+2052 = 公路

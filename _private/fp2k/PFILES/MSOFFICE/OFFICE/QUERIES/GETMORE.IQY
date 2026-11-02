@@ -1,0 +1,9 @@
+WEB
+1
+http://officeupdate.microsoft.com/office/redirect/fromOffice9/WebQuerySamp.asp?plcid=0x040c
+
+Selection=EntirePage
+Formatting=All
+PreFormattedTextToColumns=True
+ConsecutiveDelimitersAsOne=True
+SingleBlockTextImport=False

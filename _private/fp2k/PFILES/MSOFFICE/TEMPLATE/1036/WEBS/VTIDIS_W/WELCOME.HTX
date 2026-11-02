@@ -1,0 +1,48 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<%endif%>
+<title><!-- LOCALIZE this title --><%DiscussionTitle%>Page d'entrée de </title>
+</head>
+
+<body <%if DoTheme EQ False%> stylesrc="<%PageStyleSrc%>" <%endif%> >
+
+<h3><tt><!-- LOCALIZE this heading -->BIENVENUE</tt></h3>
+
+<p><!-- LOCALIZE this paragraph --> Ceci est un forum de discussion en
+ligne nommé <strong><em><%DiscussionTitle%></em></strong>.</p>
+
+<p><!-- LOCALIZE this paragraph --> Le cadre de sommaire contient les titres de tous les articles
+postés vers cette discussion. La sélection d'un titre entraîne
+le chargement de l'article correspondant vers ce cadre.</p>
+
+<p><!-- LOCALIZE this text --> Vous pouvez également :</p>
+
+<ul>
+    <li><a href="<%PostPageUrl%>" target="<%PostPageTarget%>">
+        <!-- LOCALIZE this text -->Composer un nouvel article 
+        <%if DoThreads EQ True%><!-- LOCALIZE this text -->(en créant un nouveau thème de discussion)<%endif%>
+        </a> </li>
+<%if DoSearch EQ True%>
+    <li><a href="<%SearchPageUrl%>" target="<%SearchPageTarget%>">
+        <!-- LOCALIZE this text -->Lancer une recherche d'articles par mots ou expressions.
+        </a> </li>
+<%endif%>
+</ul>
+
+<%if DoThreads EQ True%>
+<p><!-- LOCALIZE this paragraph -->Chaque article dispose de liens hypertexte vous permettant de répondre
+(poursuivre le thème) ou de suivre les articles de la liste.</p>
+<%endif%>
+
+<h5><em><!-- LOCALIZE this paragraph -->Remarque : Il peut être nécessaire de recharger cette page
+afin d'afficher les entrées les plus récentes.</em></h5>
+
+</body>
+
+</html>

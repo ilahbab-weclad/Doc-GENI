@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD W3 HTML//EN">
+<HTML XMLNS:o = urn:schemas-microsoft-com:office:office XMLNS:x = 
+urn:schemas-microsoft-com:office:excel XMLNS:a = 
+urn:schemas-microsoft-com:office:access XMLNS:dt = 
+uuid:C2F41010-65B3-11d1-A29F-00AA00C14882><HEAD><TITLE>Analyse des ventes</TITLE>
+<META name="Version" content="2428" >
+<META name="Language Code" content="1036" >
+<META content=Access.Application name=ProgId>
+<META name=VBSForEventHandlers VALUE = TRUE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<STYLE id=MSODAPDEFAULTS type=text/css rel = stylesheet>.mstheme-label {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+TEXTAREA {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+.msoboundhtml {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+HR {
+	COLOR: black
+}
+SELECT {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+INPUT {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+BODY {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 10pt
+}
+MARQUEE {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+LEGEND {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+.msoHyperlinkDisplayText {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+BUTTON {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+.MsoShowDesignGrid {
+	BEHAVIOR: url(#DEFAULT#MsoShowDesignGrid)
+}
+</STYLE>
+
+<OBJECT classid=CLSID:0002E530-0000-0000-C000-000000000046 id=MSODSC><PARAM NAME="XMLData" VALUE="&lt;xml xmlns:a=&quot;urn:schemas-microsoft-com:office:access&quot;&gt;&#13;&#10; &lt;a:DataSourceControl&gt;&#13;&#10;  &lt;a:OWCVersion&gt;9.0.0.2418&lt;/a:OWCVersion&gt;&#13;&#10;  &lt;a:ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=C:\Program Files\Microsoft Office\Office\Samples\Northwind.mdb;Mode=Share Deny None;Persist Security Info=False;Jet OLEDB:System database=&amp;quot;&amp;quot;;Jet OLEDB:Database Password=&amp;quot;&amp;quot;&lt;/a:ConnectionString&gt;&#13;&#10;  &lt;a:MaxRecords&gt;10000&lt;/a:MaxRecords&gt;&#13;&#10;  &lt;a:DefaultRecordsetName&gt;Orders&lt;/a:DefaultRecordsetName&gt;&#13;&#10;  &lt;a:GridX&gt;24&lt;/a:GridX&gt;&#13;&#10;  &lt;a:GridY&gt;24&lt;/a:GridY&gt;&#13;&#10;  &lt;a:ElementExtension&gt;&#13;&#10;   &lt;a:ElementID&gt;PivotTable0&lt;/a:ElementID&gt;&#13;&#10;   &lt;a:ConsumesRecordset/&gt;&#13;&#10;  &lt;/a:ElementExtension&gt;&#13;&#10;  &lt;a:Datamodel version=&quot;0816&quot;&gt;&#13;&#10;   &lt;a:SchemaRowsource id=&quot;Employees&quot; type=&quot;dscTable&quot;&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;EmployeeID&quot; datatype=&quot;3&quot; size=&quot;0&quot; iskey=&quot;1&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;LastName&quot; datatype=&quot;130&quot; size=&quot;20&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;FirstName&quot; datatype=&quot;130&quot; size=&quot;10&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Title&quot; datatype=&quot;130&quot; size=&quot;30&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;TitleOfCourtesy&quot; datatype=&quot;130&quot; size=&quot;25&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;BirthDate&quot; datatype=&quot;7&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;HireDate&quot; datatype=&quot;7&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Address&quot; datatype=&quot;130&quot; size=&quot;60&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;City&quot; datatype=&quot;130&quot; size=&quot;15&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Region&quot; datatype=&quot;130&quot; size=&quot;15&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;PostalCode&quot; datatype=&quot;130&quot; size=&quot;10&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Country&quot; datatype=&quot;130&quot; size=&quot;15&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;HomePhone&quot; datatype=&quot;130&quot; size=&quot;24&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Extension&quot; datatype=&quot;130&quot; size=&quot;4&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Photo&quot; datatype=&quot;205&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Notes&quot; datatype=&quot;203&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ReportsTo&quot; datatype=&quot;3&quot; size=&quot;0&quot;/&gt;&#13;&#10;   &lt;/a:SchemaRowsource&gt;&#13;&#10;   &lt;a:SchemaRowsource id=&quot;Orders&quot; type=&quot;dscTable&quot;&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;OrderID&quot; datatype=&quot;3&quot; size=&quot;0&quot; iskey=&quot;1&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;CustomerID&quot; datatype=&quot;130&quot; size=&quot;5&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;EmployeeID&quot; datatype=&quot;3&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;OrderDate&quot; datatype=&quot;7&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;RequiredDate&quot; datatype=&quot;7&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShippedDate&quot; datatype=&quot;7&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShipVia&quot; datatype=&quot;3&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Freight&quot; datatype=&quot;6&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShipName&quot; datatype=&quot;130&quot; size=&quot;40&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShipAddress&quot; datatype=&quot;130&quot; size=&quot;60&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShipCity&quot; datatype=&quot;130&quot; size=&quot;15&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShipRegion&quot; datatype=&quot;130&quot; size=&quot;15&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShipPostalCode&quot; datatype=&quot;130&quot; size=&quot;10&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShipCountry&quot; datatype=&quot;130&quot; size=&quot;15&quot;/&gt;&#13;&#10;   &lt;/a:SchemaRowsource&gt;&#13;&#10;   &lt;a:SchemaRowsource id=&quot;Order Subtotals&quot; type=&quot;dscView&quot;&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;OrderID&quot; datatype=&quot;3&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Subtotal&quot; datatype=&quot;6&quot; size=&quot;0&quot;/&gt;&#13;&#10;   &lt;/a:SchemaRowsource&gt;&#13;&#10;   &lt;a:RecordsetDef id=&quot;Orders&quot; uniquetable=&quot;Orders&quot;&gt;&#13;&#10;    &lt;a:PageField id=&quot;OrderID&quot;/&gt;&#13;&#10;    &lt;a:PageField id=&quot;ShipName&quot;/&gt;&#13;&#10;    &lt;a:PageField id=&quot;ShipCountry&quot;/&gt;&#13;&#10;    &lt;a:PageField id=&quot;EmployeeID1&quot; source=&quot;EmployeeID&quot;/&gt;&#13;&#10;    &lt;a:PageRowsource id=&quot;Employees&quot; lookupsource=&quot;Orders&quot;&#13;&#10;     relationship=&quot;EmployeesOrders&quot;&gt;&#13;&#10;     &lt;a:PageField id=&quot;EmployeeID&quot;/&gt;&#13;&#10;     &lt;a:PageField id=&quot;LastName&quot;/&gt;&#13;&#10;     &lt;a:RelatedField primary=&quot;EmployeeID&quot; foreign=&quot;EmployeeID1&quot;/&gt;&#13;&#10;    &lt;/a:PageRowsource&gt;&#13;&#10;    &lt;a:PageRowsource id=&quot;Order Subtotals&quot; lookupsource=&quot;Orders&quot;&#13;&#10;     relationship=&quot;Relationship1&quot;&gt;&#13;&#10;     &lt;a:PageField id=&quot;OrderID1&quot; source=&quot;OrderID&quot;/&gt;&#13;&#10;     &lt;a:PageField id=&quot;Subtotal&quot;/&gt;&#13;&#10;     &lt;a:RelatedField primary=&quot;OrderID1&quot; foreign=&quot;OrderID&quot;/&gt;&#13;&#10;    &lt;/a:PageRowsource&gt;&#13;&#10;   &lt;/a:RecordsetDef&gt;&#13;&#10;  &lt;/a:Datamodel&gt;&#13;&#10; &lt;/a:DataSourceControl&gt;&#13;&#10;&lt;/xml&gt;'&quot;"></OBJECT>
+<META content="MSHTML 5.00.1011.2000" name=GENERATOR><LINK 
+href="./Analyze Sales_files/filelist.xml" rel=File-List type=text/xml></HEAD>
+<BODY bottomMargin=48 leftMargin=24 link=#800080 rightMargin=24 
+style="CURSOR: auto" topMargin=24 
+vLink=#800080>
+<CENTER>
+<H1 align=left id=HeadingText style="FONT-WEIGHT: normal"><FONT color=#000080 
+size=2 style=""><STRONG><FONT size=3 style="">Analyse des ventes </FONT></STRONG>Dans le tableau 
+croisé dynamique, cliquez sur le signe (+) sous ShipName pour afficher la liste 
+des commandes pour chaque client. Cliquez sur le signe (+) à gauche du nom de 
+l'employé pour afficher la liste des commandes qu'il a traitées. Pour plus 
+d'informations sur la manière de modifier la présentation des données et les 
+autres moyens d'analyse, cliquez sur le bouton d'Aide dans la barre d'outils du 
+tableau croisé dynamique.</FONT></H1></CENTER>
+<DIV class=MicrosoftAccessBanner id=SectionUnboundBanner 
+style="BACKGROUND-COLOR: buttonface; BORDER-BOTTOM: buttonhighlight 2px outset; BORDER-LEFT: buttonhighlight 2px outset; BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; DISPLAY: none; FONT-FAMILY: Tahoma; FONT-SIZE: 8pt; FONT-WEIGHT: normal; HEIGHT: 0.2in; WIDTH: 746px">Section&nbsp;: 
+Indépendante</DIV>
+<DIV class=MSOShowDesignGrid id=SectionUnbound 
+style="BACKGROUND-COLOR: transparent; HEIGHT: 311px; POSITION: relative; WIDTH: 746px; Z-INDEX: 1">
+<OBJECT classid=CLSID:0002E520-0000-0000-C000-000000000046 height=500 
+id=PivotTable0 
+style="HEIGHT: 311px; LEFT: 4px; POSITION: absolute; TOP: 0px; WIDTH: 742px" 
+tabIndex=1 width=500><PARAM NAME="XMLData" VALUE="&lt;xml xmlns:x=&quot;urn:schemas-microsoft-com:office:excel&quot;&gt;&#13;&#10; &lt;x:PivotTable&gt;&#13;&#10;  &lt;x:OWCVersion&gt;9.0.0.2401&lt;/x:OWCVersion&gt;&#13;&#10;  &lt;x:NoAutoFit/&gt;&#13;&#10;  &lt;x:Height&gt;311&lt;/x:Height&gt;&#13;&#10;  &lt;x:Width&gt;742&lt;/x:Width&gt;&#13;&#10;  &lt;x:MemberExpand&gt;Never&lt;/x:MemberExpand&gt;&#13;&#10;  &lt;x:CacheDetails/&gt;&#13;&#10;  &lt;x:DataMember&gt;Orders&lt;/x:DataMember&gt;&#13;&#10;  &lt;x:Name&gt;Orders&lt;/x:Name&gt;&#13;&#10;  &lt;x:PivotField&gt;&#13;&#10;   &lt;x:Name&gt;OrderID&lt;/x:Name&gt;&#13;&#10;   &lt;x:DataType&gt;Integer&lt;/x:DataType&gt;&#13;&#10;  &lt;/x:PivotField&gt;&#13;&#10;  &lt;x:PivotField&gt;&#13;&#10;   &lt;x:Name&gt;ShipName&lt;/x:Name&gt;&#13;&#10;   &lt;x:Orientation&gt;Row&lt;/x:Orientation&gt;&#13;&#10;   &lt;x:SubtotalFormat Style='font-weight:700'/&gt;&#13;&#10;  &lt;/x:PivotField&gt;&#13;&#10;  &lt;x:PivotField&gt;&#13;&#10;   &lt;x:Name&gt;ShipCountry&lt;/x:Name&gt;&#13;&#10;   &lt;x:Orientation&gt;Page&lt;/x:Orientation&gt;&#13;&#10;  &lt;/x:PivotField&gt;&#13;&#10;  &lt;x:PivotField&gt;&#13;&#10;   &lt;x:Name&gt;EmployeeID&lt;/x:Name&gt;&#13;&#10;   &lt;x:SourceName&gt;EmployeeID1&lt;/x:SourceName&gt;&#13;&#10;   &lt;x:DataType&gt;Integer&lt;/x:DataType&gt;&#13;&#10;   &lt;x:FilterCaption&gt;EmployeeID1&lt;/x:FilterCaption&gt;&#13;&#10;  &lt;/x:PivotField&gt;&#13;&#10;  &lt;x:PivotField&gt;&#13;&#10;   &lt;x:Name&gt;EmployeeID1&lt;/x:Name&gt;&#13;&#10;   &lt;x:SourceName&gt;EmployeeID&lt;/x:SourceName&gt;&#13;&#10;   &lt;x:DataType&gt;Integer&lt;/x:DataType&gt;&#13;&#10;   &lt;x:PLCaption&gt;EmployeeID&lt;/x:PLCaption&gt;&#13;&#10;   &lt;x:FilterCaption&gt;EmployeeID&lt;/x:FilterCaption&gt;&#13;&#10;  &lt;/x:PivotField&gt;&#13;&#10;  &lt;x:PivotField&gt;&#13;&#10;   &lt;x:Name&gt;LastName&lt;/x:Name&gt;&#13;&#10;   &lt;x:Orientation&gt;Column&lt;/x:Orientation&gt;&#13;&#10;   &lt;x:SubtotalFormat Style='font-weight:700'/&gt;&#13;&#10;  &lt;/x:PivotField&gt;&#13;&#10;  &lt;x:PivotField&gt;&#13;&#10;   &lt;x:Name&gt;OrderID1&lt;/x:Name&gt;&#13;&#10;   &lt;x:DataType&gt;Integer&lt;/x:DataType&gt;&#13;&#10;   &lt;x:PLCaption&gt;OrderID&lt;/x:PLCaption&gt;&#13;&#10;   &lt;x:FilterCaption&gt;OrderID&lt;/x:FilterCaption&gt;&#13;&#10;   &lt;x:PLDataOrientation/&gt;&#13;&#10;   &lt;x:DetailFormat Style='font-style:italic'/&gt;&#13;&#10;  &lt;/x:PivotField&gt;&#13;&#10;  &lt;x:PivotField&gt;&#13;&#10;   &lt;x:Name&gt;Subtotal&lt;/x:Name&gt;&#13;&#10;   &lt;x:DataType&gt;Number&lt;/x:DataType&gt;&#13;&#10;   &lt;x:PLDataOrientation/&gt;&#13;&#10;   &lt;x:PLPosition&gt;2&lt;/x:PLPosition&gt;&#13;&#10;   &lt;x:NumberFormat&gt;[$$-409]#,##0.00_);[red]([$$-409]#,##0.00)&lt;/x:NumberFormat&gt;&#13;&#10;   &lt;x:DetailFormat Style='font-weight:400;font-style:italic'/&gt;&#13;&#10;  &lt;/x:PivotField&gt;&#13;&#10;  &lt;x:PivotField&gt;&#13;&#10;   &lt;x:Name&gt;Data&lt;/x:Name&gt;&#13;&#10;   &lt;x:Orientation&gt;Column&lt;/x:Orientation&gt;&#13;&#10;   &lt;x:Position&gt;-1&lt;/x:Position&gt;&#13;&#10;   &lt;x:DataField/&gt;&#13;&#10;  &lt;/x:PivotField&gt;&#13;&#10;  &lt;x:PivotField&gt;&#13;&#10;   &lt;x:Name&gt;Count of OrderID&lt;/x:Name&gt;&#13;&#10;   &lt;x:Orientation&gt;Data&lt;/x:Orientation&gt;&#13;&#10;   &lt;x:ParentField&gt;OrderID1&lt;/x:ParentField&gt;&#13;&#10;   &lt;x:Function&gt;Count&lt;/x:Function&gt;&#13;&#10;  &lt;/x:PivotField&gt;&#13;&#10;  &lt;x:PivotField&gt;&#13;&#10;   &lt;x:Name&gt;Sum of Subtotal&lt;/x:Name&gt;&#13;&#10;   &lt;x:Orientation&gt;Data&lt;/x:Orientation&gt;&#13;&#10;   &lt;x:Position&gt;2&lt;/x:Position&gt;&#13;&#10;   &lt;x:ParentField&gt;Subtotal&lt;/x:ParentField&gt;&#13;&#10;   &lt;x:NumberFormat&gt;[$$-409]#,##0.00_);[red]([$$-409]#,##0.00)&lt;/x:NumberFormat&gt;&#13;&#10;  &lt;/x:PivotField&gt;&#13;&#10;  &lt;x:PivotView&gt;&#13;&#10;   &lt;x:TotalFormat Style='font-weight:700;font-style:normal'/&gt;&#13;&#10;   &lt;x:CellsExpandedSeqNum&gt;0&lt;/x:CellsExpandedSeqNum&gt;&#13;&#10;   &lt;x:Label&gt;&#13;&#10;    &lt;x:Caption&gt;Orders&lt;/x:Caption&gt;&#13;&#10;   &lt;/x:Label&gt;&#13;&#10;  &lt;/x:PivotView&gt;&#13;&#10;  &lt;x:PTFormat Style='font-weight:700;font-style:normal'&gt;&#13;&#10;   &lt;x:PTRule&gt;&#13;&#10;    &lt;x:RuleType&gt;DataOnly&lt;/x:RuleType&gt;&#13;&#10;    &lt;x:Rule&gt;ShipName[All]&lt;/x:Rule&gt;&#13;&#10;   &lt;/x:PTRule&gt;&#13;&#10;   &lt;x:PTRule&gt;&#13;&#10;    &lt;x:RuleType&gt;DataOnly&lt;/x:RuleType&gt;&#13;&#10;    &lt;x:Rule&gt;LastName[All]&lt;/x:Rule&gt;&#13;&#10;   &lt;/x:PTRule&gt;&#13;&#10;   &lt;x:PTRule&gt;&#13;&#10;    &lt;x:RuleType&gt;DataOnly&lt;/x:RuleType&gt;&#13;&#10;    &lt;x:Rule&gt;ShipCountry[All]&lt;/x:Rule&gt;&#13;&#10;   &lt;/x:PTRule&gt;&#13;&#10;  &lt;/x:PTFormat&gt;&#13;&#10;  &lt;x:PTFormat Style='font-weight:700'&gt;&#13;&#10;   &lt;x:PTRule&gt;&#13;&#10;    &lt;x:RuleType&gt;DataOnly&lt;/x:RuleType&gt;&#13;&#10;    &lt;x:Rule&gt;'Column Grand Total'&lt;/x:Rule&gt;&#13;&#10;   &lt;/x:PTRule&gt;&#13;&#10;  &lt;/x:PTFormat&gt;&#13;&#10;  &lt;x:PTFormat Style='font-weight:700'&gt;&#13;&#10;   &lt;x:PTRule&gt;&#13;&#10;    &lt;x:RuleType&gt;DataOnly&lt;/x:RuleType&gt;&#13;&#10;    &lt;x:Rule&gt;'Row Grand Total'&lt;/x:Rule&gt;&#13;&#10;   &lt;/x:PTRule&gt;&#13;&#10;  &lt;/x:PTFormat&gt;&#13;&#10; &lt;/x:PivotTable&gt;&#13;&#10;&lt;/xml&gt;"></OBJECT>&nbsp;</DIV>
+<P>&nbsp;</P></BODY></HTML>

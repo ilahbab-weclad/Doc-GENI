@@ -1,0 +1,22 @@
+[info]
+title=Passport
+codepage=65001
+version=2.00
+format=2.00
+readonly=true
+
+[titles]
+1031 = Ausweis
+1036 = Passeport
+1040 = Formulario
+3082 = Pasaporte
+1043 = Paspoort
+1046 = Passaporte
+1053 = Pass
+1044 = Pass
+1030 = Pas
+1035 = Passi
+1041 = パスポート
+1042 = 패스포트
+1028 = 護照
+2052 = 护照

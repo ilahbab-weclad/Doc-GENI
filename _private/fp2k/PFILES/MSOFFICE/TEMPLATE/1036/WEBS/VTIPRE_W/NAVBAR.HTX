@@ -1,0 +1,67 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<%endif%>
+<title><!-- LOCALIZE this page title -->Barre de navigation</title>
+</head>
+
+<body <%if DoTheme EQ False%> stylesrc="../<%PageStyleSrc%>" <%endif%> >
+
+<p>
+<%if StyleOption EQ 0%>
+
+[ 
+ 
+<a href="../<%HomePageUrl%>"><%HomeLinkText%></a> 
+
+<%if DoWhatsNewPage EQ True%>
+ | <a href="../<%NewsPageUrl%>"><%NewsLinkText%></a> 
+<%endif%>
+
+<%if DoProductsPage EQ True%>
+<%if ProdServMode EQ 1%>
+ | <a href="../<%ProductsPageUrl%>"><%ProductsLinkText%></a> 
+<%endif%>
+<%if ProdServMode EQ 2%>
+ | <a href="../<%ServicesPageUrl%>"><%ServicesLinkText%></a> 
+<%endif%>
+<%if ProdServMode EQ 3%>
+ | <a href="../<%ProdServPageUrl%>"><%ProdServLinkText%></a> 
+<%endif%>
+<%endif%>
+
+<%if DoTOCPage EQ True%>
+ | <a href="../<%TOCPageUrl%>"><%TOCLinkText%></a> 
+<%endif%>
+
+<%if DoFeedbackPage EQ True%>
+ | <a href="../<%FeedbackPageUrl%>"><%FeedbackLinkText%></a> 
+<%endif%>
+
+<%if DoSearchPage EQ True%>
+ | <a href="../<%SearchPageUrl%>"><%SearchLinkText%></a> 
+<%endif%>
+ 
+]
+
+<%else%>
+
+<!-- LOCALIZE just the 'alt=' text in these links; leave NO spaces between tags -->
+
+<a href="../<%HomePageUrl%>"><img src="../<%HomeButtonUrl%>" alt="[Page d'accueil]" border="0" <%HomeButtonSize%>></a><%if DoWhatsNewPage EQ True%><a href="../<%NewsPageUrl%>"><img src="../<%NewsButtonUrl%>" alt="[Nouveautés]" border="0" <%NewsButtonSize%>></a><%endif%><%if DoProductsPage EQ True%><%if ProdServMode EQ 1%><a href="../<%ProductsPageUrl%>"><img src="../<%ProductsButtonUrl%>" alt="[Produits]" border="0" <%ProductsButtonSize%>></a><%endif%><%if ProdServMode EQ 2%><a href="../<%ServicesPageUrl%>"><img src="../<%ServicesButtonUrl%>" alt="[Services]" border="0" <%ServicesButtonSize%>></a><%endif%><%if ProdServMode EQ 3%><a href="../<%ProdServPageUrl%>"><img src="../<%ProdServButtonUrl%>" alt="[Produits &amp; services]" border="0" <%ProdServButtonSize%>></a><%endif%><%endif%><%if DoTOCPage EQ True%><a href="../<%TOCPageUrl%>"><img src="../<%TOCButtonUrl%>" alt="[Sommaire]" border="0" <%TOCButtonSize%>></a><%endif%><%if DoFeedbackPage EQ True%><a href="../<%FeedbackPageUrl%>"><img src="../<%FeedbackButtonUrl%>" alt="[Commentaires]" border="0" <%FeedbackButtonSize%>></a><%endif%><%if DoSearchPage EQ True%><a href="../<%SearchPageUrl%>"><img src="../<%SearchButtonUrl%>" alt="[Recherche]" border="0" <%SearchButtonSize%>></a><%endif%>
+
+<%endif%>
+</p>
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,72 @@
+.mstheme
+{
+	nav-banner-image: url(bubnr.gif);
+	separator-image: url(burule.gif);
+	list-image-1: url(bubull1.gif);
+	list-image-2: url(bubull2.gif);
+	list-image-3: url(bubull3.gif);
+	navbutton-horiz-pushed: url(buphbp.gif);
+	navbutton-horiz-normal: url(buphb.gif);
+	navbutton-vert-pushed: url(bupvbp.gif);
+	navbutton-vert-normal: url(bupvb.gif);
+	navbutton-home-normal: url(buhome.gif);
+	navbutton-up-normal: url(buup.gif);
+	navbutton-prev-normal: url(buprev.gif);
+	navbutton-next-normal: url(bunext.gif);
+}
+.mstheme-bannertxt
+{
+	font-family: "Trebuchet MS", Arial, Helvetica;
+	font-size: 6;
+	color: rgb(0,0,0);
+}
+.mstheme-horiz-navtxt
+{
+	font-family: Arial, Arial, Helvetica;
+	font-size: 2;
+	font-weight: bold;
+	color: rgb(255,51,0);
+}
+.mstheme-vert-navtxt
+{
+	font-family: Arial, Arial, Helvetica;
+	font-size: 2;
+	font-weight: bold;
+	color: rgb(255,51,0);
+}
+.mstheme-navtxthome
+{
+	font-family: Arial, Arial, Helvetica;
+	font-size: 1;
+	color: rgb(0,0,0);
+}
+.mstheme-navtxtup
+{
+	font-family: Arial, Arial, Helvetica;
+	font-size: 1;
+	color: rgb(0,0,0);
+}
+.mstheme-navtxtprev
+{
+	font-family: Arial, Arial, Helvetica;
+	font-size: 1;
+	color: rgb(0,0,0);
+}
+.mstheme-navtxtnext
+{
+	font-family: Arial, Arial, Helvetica;
+	font-size: 1;
+	color: rgb(0,0,0);
+}
+UL
+{
+	list-style-image:url(bubull1.gif);
+}
+UL UL
+{
+	list-style-image:url(bubull2.gif);
+}
+UL UL UL
+{
+	list-style-image:url(bubull3.gif);
+}

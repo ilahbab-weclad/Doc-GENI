@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<meta NAME="VERSION" CONTENT="9.0.0.2518">
+<title></title>
+<style type="text/css">
+<!--
+@import url(style.css);
+-->
+</style>
+<script language="javascript" src="global.js">
+<!--
+{
+
+	function writeBcast_CharSetInfo() {
+		document.write("<meta http-equiv=Content-Type content='text/html; charset= '+ BCAST_CHARSET +'\'>");
+		}
+    
+    writeBcast_CharSetInfo();
+     
+
+}
+//-->
+</script>
+
+<script language="javascript" for="window" event="onload">
+document.title = FEATURE_TITLE + " " + CLIENT_HELP_PAGE_LABEL;
+document.all.FEATURE_TITLE.innerText = FEATURE_TITLE;
+document.all.CLIENT_HELP_TEXT.innerHTML = CLIENT_HELP_TEXT;
+document.all.CLIENT_HELP_PAGE_LABEL.innerText = CLIENT_HELP_PAGE_LABEL;
+</script>
+</head>
+
+<body background="nsnbg.gif">
+<div align="left" id="logo" STYLE="FONT-WEIGHT: bold; POSITION: absolute; TOP: 10px"><img src="logo.GIF" alt="Logo.GIF" WIDTH="161" HEIGHT="34">
+<div align="center" id="FEATURE_TITLE" STYLE="BACKGROUND-COLOR: white; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; font-size: 11px; FONT-WEIGHT: normal; LEFT: 5px; LETTER-SPACING: 2px; POSITION: relative; TEXT-ALIGN: center; TOP: 0px; WIDTH: 165px"></div>
+</div>
+
+<div align="left" id="CLIENT_HELP_PAGE_LABEL" STYLE="FONT-SIZE: 14pt; FONT-WEIGHT: bold; POSITION: absolute; TOP: 80px"></div>
+<div align="left" id="CLIENT_HELP_TEXT" STYLE="FONT-WEIGHT: normal; POSITION: absolute; TOP: 120px; WIDTH: 500px"></div>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+; Localized	03/02/1999 04:46  (GMT)	7:4.1.211 	vtipres.inp
+
+[info]
+title=Assistant Site Web d'entreprise
+exename.mac=Assistant Site Web d'entreprise
+description=Crée un site Web pour votre entreprise.
+theme=strtedge 000
+exename=vtipres.exe

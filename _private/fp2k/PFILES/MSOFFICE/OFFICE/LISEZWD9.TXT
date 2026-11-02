@@ -1,0 +1,949 @@
+
+-----------------------------------------------------
+        Fichier lisezmoi Microsoft Word 2000
+                    Juin 1999
+(c) 1999 Microsoft Corporation. Tous droits réservés.
+-----------------------------------------------------
+
+Ce document fournit des informations inédites ou de 
+dernière minute sur Microsoft Word 2000, correspondant 
+à la date mentionnée ci-dessus. Au-delà de cette date,
+vous pouvez trouver des informations et des ressources 
+plus récentes sur le site Web Espace Office, accessible  
+en cliquant dans le menu ? (Aide) sur Office sur le Web.
+Vous pouvez également trouver d'autres informations,
+y compris sur les questions relatives au réseau ou à 
+l'administration, sur le site Web du Kit de Ressources 
+Techniques Office à l'adresse suivante (France et Canada) :
+http://www.microsoft.com/office/ork/
+
+
+--------------------------
+UTILISATION DE CE DOCUMENT
+--------------------------
+Pour visualiser le fichier lisezmoi à l'écran dans le 
+Bloc-notes Windows, agrandissez la fenêtre du Bloc-notes. 
+Dans le menu Edition, cliquez sur Retour à la ligne automatique.
+Pour imprimer le fichier lisezmoi, ouvrez-le dans le
+Bloc-notes ou dans un autre logiciel de traitement de texte,
+puis utilisez la commande Imprimer du menu Fichier.
+
+
+--------
+SOMMAIRE
+--------
+
+   * PROBLÈMES RELATIFS À L'INSTALLATION, À LA CONFIGURATION 
+     SYSTÈME REQUISE ET AU SYSTÈME D'EXPLOITATION
+
+   * PROBLÈMES D'ORDRE GÉNÉRAL
+
+   * AIDE DE MICROSOFT WORD 2000
+
+   * PROBLÈMES RELATIFS AUX FONCTIONNALITÉS DES LANGUES ASIATIQUES
+
+   * PROBLÈMES RELATIFS AUX FONCTIONNALITÉS DES LANGUES DE DROITE À GAUCHE
+
+   * PROBLÈMES RELATIFS À MICROSOFT VISUAL BASIC ÉDITION APPLICATIONS
+
+
+-------------------------------------------------------
+PROBLÈMES RELATIFS À L'INSTALLATION, À LA CONFIGURATION 
+SYSTÈME REQUISE ET AU SYSTÈM D'EXPLOITATION
+-------------------------------------------------------
+
+Cette section traite des sujets suivants :
+
+   * Désactivation de la protection antivirus avant
+     d'exécuter le programme d'installation
+
+   * Configuration minimale requise pour Microsoft 
+     Word 2000
+
+   * Système d'exploitation requis et mise à jour des
+     services
+
+   * L'utilisation de signes de ponctuation dans les noms
+     de dossier lors de l'installation peut causer des
+     problèmes.
+
+   * Installation d'Office 2000 ou de Word 2000 sans 
+     supprimer la version bêta 2 d'Office 2000
+
+   * Installation de Microsoft Office 2000 ou Microsoft 
+     Word 2000 en réseau
+
+   * Un message demandant le code CD Key s'affiche lorsqu'Office 
+  est installé à partir d'une installation administrative.
+
+   * Paramètres d'installation pour Microsoft Clip Gallery
+
+   * Message en cours d'installation
+
+
+Désactivation de la protection antivirus avant
+d'exécuter le programme d'installation
+----------------------------------------------
+Certains programmes de protection antivirus, tels
+que VSafe.com et Norton AntiVirus AutoProtect, peuvent 
+interférer avec le programme d'installation Microsoft 
+Word 2000. Si vous utilisez un programme antivirus sur 
+votre ordinateur, désactivez-le avant d'exécuter l'installation. 
+(N'oubliez pas de réactiver ce programme lorsque l'installation 
+sera terminée.)
+
+
+Configuration minimale requise pour Microsoft Word 2000
+-------------------------------------------------------
+Microsoft Word 2000 est compris dans les éditions
+suivantes de Microsoft Office :
+
+   * Microsoft Office 2000 Standard
+   * Microsoft Office 2000 Édition PME
+   * Microsoft Office 2000 Professional
+   * Microsoft Office 2000 Premium
+   * Microsoft Office 2000 Developer
+
+Pour utiliser Microsoft Word 2000, votre ordinateur
+doit présenter au minimum la configuration suivante :
+
+   * Processeur : Pentium 75 MHz ou supérieur, ou 
+     processeur compatible
+
+   * Système d'exploitation : Microsoft Windows 95
+     ou version ultérieure, Microsoft Windows NT  
+     Workstation version 4.0 avec Service Pack 3
+     ou version ultérieure
+
+   * Mémoire pour Windows 95 ou Windows 98 : 16 Mo de
+     mémoire vive (RAM) pour le système d'exploitation plus
+     4 Mo de RAM pour Microsoft Word
+
+   * Mémoire pour Windows NT Workstation version 4.0 
+     Service Pack 3 ou version ultérieure : 32 Mo de
+     mémoire vive (RAM) pour le système d'exploitation plus
+     4 Mo de RAM pour Microsoft Word
+
+   * Espace disque disponible : 157 Mo pour Microsoft 
+     Word 2000. Ce chiffre considère une installation
+     par défaut ; l'utilisation du disque dur varie
+     selon la configuration et les options installées.
+     Les choix effectués lors d'une installation
+     personnalisée peuvent exiger plus ou moins d'espace
+     disque.
+
+   * Unités de disque : lecteur de CD-ROM
+
+   * Moniteur : VGA ou résolution supérieure ; 
+     moniteur Super VGA recommandé
+
+   * Souris : Microsoft Mouse, Microsoft 
+     Intellimouse ou dispositif de pointage
+     compatible
+
+
+Pour utiliser toutes les fonctionnalités disponibles
+dans Word 2000, les éléments et services suivants
+sont recommandés :
+
+   * Modem : 9600 bauds ; modem 14400 (ou
+     supérieur) recommandé
+
+   * Multimédia : ordinateur multimédia requis pour
+     le son et les autres effets multimédias
+
+   * Messagerie électronique : client Microsoft Exchange ou 
+     Microsoft Outlook recommandé pour la messagerie 
+     électronique Office
+
+   * Mémoire supplémentaire : 8 Mo pour exécuter la
+     messagerie électronique Office
+
+   * Internet : certaines fonctionnalités Internet
+     peuvent nécessiter un accès à Internet et un abonnement 
+     supplémentaire auprès d'un fournisseur de services 
+     Internet (ISP) ; des taxes locales peuvent 
+     être appliquées.
+
+
+Système d'exploitation requis et mise à jour des
+services
+------------------------------------------------
+Microsoft Word 2000 fonctionne sur les systèmes
+d'exploitation suivants :
+
+   * Microsoft Windows 95 (Service Pack 1 ou
+     supérieur recommandé, mais pas obligatoire)
+
+   * Microsoft Windows 98
+
+   * Microsoft Windows NT 4.0 avec Service Pack 3 
+     (Service Pack 4 ou supérieur recommandé, mais
+     pas obligatoire)
+
+
+Vous pouvez télécharger les service packs à partir
+des adresses suivantes :
+
+Windows 95 Service Pack 1
+-------------------------
+France : http://www.microsoft.com/france/windows/
+Canada : http://www.microsoft.com/windows/ie_intl/fr/download/windows.htm
+
+Windows NT 4.0 Service Pack 4 
+-----------------------------
+http://support.microsoft.com/support/ntserver/Content/ServicePacks/FREULA.asp
+
+Vous pouvez télécharger la prise en charge de
+l'euro à partir des adresses suivantes :
+
+Windows 95
+----------
+http://www.microsoft.com/france/euro/correctifs/
+info.asp?mar=/france/euro/correctifs/win95fr.html
+
+REMARQUE : Dans Windows 98, la prise en charge de
+l'euro est intégrée, aucun téléchargement n'est
+donc nécessaire.
+
+
+Windows NT 4.0
+-------------------
+http://www.microsoft.com/france/euro/correctifs/
+info.asp?mar=/france/euro/correctifs/nt4.html
+
+
+L'utilisation de signes de ponctuation dans les noms de
+dossier lors de l'installation peut causer des problèmes.
+---------------------------------------------------------
+N'utilisez pas de virgule (,), de guillemet simple (') ou
+de point d'exclamation (!) dans le nom du dossier dans 
+lequel vous installez Microsoft Office 2000, Microsoft 
+Word 2000, Microsoft Excel 2000, Microsoft Outlook 2000 
+ou Microsoft PowerPoint 2000. Il vous est conseillé 
+d'utiliser le dossier par défaut ou d'employer uniquement 
+des lettres et des nombres.
+
+
+Installation de Microsoft Office 2000 ou de Microsoft
+Word 2000 sans supprimer la version bêta 2 d'Office 2000
+--------------------------------------------------------
+Lors du démarrage de Word 2000, il se peut que le
+message suivant s'affiche :
+
+   Informations requises manquantes dans le registre
+   Impossible d'exécuter cette application. Réexécutez
+   le programme d'installation pour résoudre ce
+   problème.
+
+   Il peut également arriver que le programme se ferme 
+   après quelques secondes.
+
+Vous pouvez rencontrer l'un ou l'autre des problèmes 
+mentionnés ci-dessus si vous avez installé Office 2000 
+ou Word 2000 sans avoir supprimé la version bêta 2
+(2221b) de Microsoft Office 2000.
+
+>>> Pour résoudre ce problème, supprimez la version
+bêta 2 d'Office 2000 en procédant comme suit :
+
+1. Cliquez sur le bouton Démarrer dans la barre des tâches,
+   pointez sur Paramètres et cliquez sur Panneau de 
+   configuration.
+
+2. Double-cliquez sur l'icône Ajout/Suppression de
+   programmes.
+
+3. Dans la liste des programmes installés, cliquez sur
+   Microsoft Office 2000 Premium (qui correspond à
+   la version bêta 2 d'Office 2000).
+
+4. Cliquez sur Ajouter/Supprimer.
+
+5. Cliquez sur Supprimer Office.
+
+6. Cliquez sur Oui lorsque un message vous invite à confirmer
+   la suppression.
+
+
+Installation de Microsoft Office 2000 ou
+Microsoft Word 2000 en réseau
+----------------------------------------
+>>>Pour créer un emplacement d'une installation
+administrative d'Office 2000 ou de Word 2000 :
+
+1. Créez un partage sur un serveur réseau pour
+   l'emplacement de l'installation administrative.
+
+   L'espace disque disponible sur le partage réseau 
+   doit être au moins égal à 550 mégaoctets (MB).
+
+2. Connectez-vous au partage du serveur avec un
+   ordinateur qui exécute Microsoft Windows 95, 98 ou
+   Microsoft Windows NT et qui a les droits en écriture
+   sur le partage.
+
+3. Dans le menu Démarrer, cliquez sur Exécuter,puis sur 
+   Parcourir.
+
+4. Sur le CD-ROM 1 d'Office situé sur le lecteur de 
+   CD-ROM, sélectionnez Setup.exe, puis cliquez sur Ouvrir.
+
+5. Sur la ligne de commande, à la suite de setup.exe, tapez 
+   /a data1.msi et cliquez sur OK.
+   Exemple :
+   e:\setup.exe /a data1.msi
+
+6. Lorsque vous y êtes invité, entrez le nom de l'organisation 
+   que vous voulez définir pour tous les utilisateurs
+   qui installeront Office à partir de cet emplacement. 
+
+7. Lorsque le système vous invite à indiquer un emplacement
+   d'installation, entrez le nom du serveur et le partage
+   que vous avez créé.
+
+Pour plus d'informations sur les problèmes de réseau et 
+d'administration, visitez le site Web du Kit de Ressources
+Techniques à l'adresse suivante (France et Canada) :
+http://www.microsoft.com/office/ork/
+
+
+Un message demandant le code CD Key s'affiche lorsqu'Office 
+est installé à partir d'une installation administrative.
+-----------------------------------------------------------
+Lorsque vous installez Word 2000 sur votre ordinateur
+à partir d'une installation administrative sur un serveur, 
+un code CD Key peut vous être demandé. Cela peut arriver si
+l'administrateur système qui a créé l'installation
+administrative n'a pas entré de code CD Key.
+
+Pour résoudre ce problème, demandez à l'administrateur
+système de créer une nouvelle installation administrative 
+et d'entrer le code CD Key dans la première boîte de 
+dialogue. Vous ne serez ainsi plus invité à fournir le 
+code CD Key lorsque vous installerez Office 2000 à partir 
+de cette nouvelle installation administrative.
+
+
+Paramètres d'installation pour Microsoft Clip Gallery 
+-----------------------------------------------------
+Il se peut que vous rencontriez des problèmes lorsque 
+vous exécutez Clip Gallery si vous avez configuré le 
+programme avec l'option Exécuter à partir du réseau 
+ou l'option Exécuter à partir du CD au cours d'une 
+installation personnalisée. Les meilleurs résultats 
+sont obtenus en laissant Clip Gallery s'exécuter avec 
+l'option Exécuter à partir du disque dur.
+
+
+Message en cours d'installation
+----------------------------------
+Si un message s'affiche lors de l'installation
+d'Office et qu'il apparaît de nouveau lorsque vous 
+essayez de réinstaller Office, vous pouvez créer un 
+fichier journal qui aidera les Services de Support 
+Technique de Microsoft à résoudre le problème. Après 
+avoir créé le fichier, contactez les Services de Support
+Technique de Microsoft.
+
+>>>Pour créer le fichier journal :
+
+1. Cliquez sur le bouton Démarrer dans la barre des
+   tâches, puis sur Exécuter.
+
+2. Dans la zone Ouvrir, tapez :
+   <chemin>\Setup.exe /L*v c:\Verboselog.txt
+
+   où <chemin> correspond à l'emplacement de Setup.exe. 
+   Par exemple, si vous procédez à une installation à partir 
+   d'un lecteur de CD-ROM, le texte que vous devez taper doit
+   être semblable à ce qui suit :
+   d:\Setup.exe /L*v c:\Verboselog.txt
+
+Le programme d'installation redémarrera et un fichier 
+journal intitulé Verboselog.txt sera créé à la racine 
+de votre lecteur C:.
+
+-------------------------
+PROBLÈMES D'ORDRE GÉNÉRAL
+-------------------------
+
+Cette section traite des sujets suivants :
+
+   * Obtention des outils de vérification Microsoft Office 2000
+
+   * Il se peut que les couleurs ne s'affichent pas correctement
+     sur les moniteurs 256 couleurs.
+
+   * Certains liens hypertexte des fichiers HTML publiés
+     dans un répertoire racine ne fonctionnent pas dans
+     Internet Explorer version 3.02.
+
+   * Info-bulle incorrecte pour la boîte de dialogue
+     Sécurité
+
+   * Édition des clips supprimés d'une version antérieure
+     de Clip Gallery
+
+
+Obtention des outils de vérification Microsoft Office 2000
+----------------------------------------------------------
+Les outils de vérification Microsoft Office 2000 sont regroupés 
+dans une macro complémentaire pour Office 2000 qui contient tous 
+les outils linguistiques conçus par Microsoft pour plus de 
+30 langues. Vous pouvez vous les procurer auprès d'un revendeur 
+agréé. Les numéros de référence répertoriés dans l'aide sont 
+incorrects. Pour savoir comment obtenir les outils de vérification 
+Office 2000, visitez le site Web à l'adresse suivante : 
+France : http://www.microsoft.com/france/office/ 
+Canada : http://www.microsoft.com/canada/french/office
+
+
+Il se peut que les couleurs ne s'affichent pas correctement 
+sur les moniteurs 256 couleurs.
+-----------------------------------------------------------
+Après avoir affiché les fenêtres contextuelles dans les 
+rubriques d'aide, il se peut que les couleurs associées à 
+certains éléments ne s'affichent pas correctement sur les 
+moniteurs 256 couleurs. Par exemple, les éléments suivants 
+peuvent apparaître différemment à l'écran une fois que vous 
+avez visualisé des fenêtres contextuelles :
+   * Images bitmaps
+   * Images incorporées dans des fichiers
+   * Compagnon Office
+   * Liens hypertexte
+
+Pour résoudre le problème d'affichage, changez la
+palette de couleurs de votre moniteur.
+
+>>>Pour changer la palette de couleurs :
+
+1. Cliquez sur Démarrer dans la barre des tâches
+   Windows, pointez sur Paramètres, puis cliquez sur
+   Panneau de configuration.
+
+2. Double-cliquez sur l'icône Affichage.
+
+3. Sous l'onglet Paramètres, sélectionnez une option 
+   autre que 256 couleurs. Microsoft vous recommande de 
+   sélectionner une option proposant plus de 256 couleurs, 
+   si cette option est disponible.
+
+
+Certains liens hypertexte des fichiers HTML publiés 
+dans un répertoire racine ne fonctionnent pas dans
+Internet Explorer version 3.02.
+---------------------------------------------------
+Les liens hypertexte relatifs (liens hypertexte dont 
+les chemins d'accès sont relatifs au document auquel ils 
+appartiennent) n'afficheront pas les pages Web qui ont 
+été publiées dans un répertoire racine dans Internet 
+Explorer 3.02. Pour éviter ce problème, utilisez une version
+plus récente d'Internet Explorer, publiez les pages Web 
+dans un autre répertoire que le répertoire racine ou 
+supprimez les caractères "./" au début de chaque lien 
+hypertexte dans les documents que vous voulez publier.
+
+
+Info-bulle incorrecte pour la boîte de dialogue
+Sécurité
+-----------------------------------------------
+L'info-bulle pour le texte situé au bas de la boîte de 
+dialogue Sécurité (menu Outils, commande Macro) indique 
+à tort que le " texte indique si un antivirus est installé 
+sur cet ordinateur ". En réalité, il indique si un 
+antivirus reconnu par Microsoft Office et utilisé à 
+l'ouverture des fichiers est installé. Par conséquent, 
+si vous avez sur votre ordinateur un antivirus qui n'est 
+pas reconnu ou utilisé par Microsoft Office, vous verrez 
+s'afficher le texte " Aucun antivirus installé " dans cette 
+boîte de dialogue.
+
+
+Édition des clips supprimés d'une version antérieure
+de Clip Gallery
+----------------------------------------------------
+Si vous double-cliquez dans un document Word 2000 sur 
+un clip qui a été supprimé d'une version antérieure de 
+Clip Gallery et que vous appuyez sur Échap ou cliquez 
+sur Annuler pour quitter Clip Gallery, le clip est 
+remplacé. Pour conserver le clip actif, cliquez sur 
+Annuler après avoir quitté Clip Gallery.
+
+
+---------------------------
+AIDE DE MICROSOFT WORD 2000
+---------------------------
+
+Procédure correcte pour démarrer Microsoft NetMeeting
+-----------------------------------------------------
+Les rubriques d'aide suivantes contiennent des informations 
+incorrectes sur le mode de démarrage de Microsoft NetMeeting :
+   * " Démarrage d'une conférence en ligne impromptue "
+   * " À propos des conférences en ligne "
+   * " Démarrage de NetMeeting "
+
+>>> Pour démarrer NetMeeting :
+* Dans le menu Démarrer de Microsoft Windows, pointez sur 
+  Programmes, sur Accessoires et sur Communications, puis 
+  cliquez sur NetMeeting.
+
+
+-------------------------------------------------------------
+PROBLÈMES RELATIFS AUX FONCTIONNALITÉS DES LANGUES ASIATIQUES
+-------------------------------------------------------------
+
+Cette section traite des sujets suivants :
+
+   * Problèmes d'affichage possibles lors de l'utilisation de
+     plusieurs polices asiatiques
+
+   * Ouverture de documents créés dans les versions japonaises 
+     de Word 95 ou Word 6.0
+
+   * Certains convertisseurs ne sont pas compatibles DBCS.
+
+
+Problèmes d'affichage possibles lors de l'utilisation de
+plusieurs polices asiatiques
+--------------------------------------------------------
+Si vous installez plusieurs polices asiatiques sur des 
+versions non asiatiques du système d'exploitation 
+Microsoft Windows NT version 4.0, vous pouvez rencontrer 
+des problèmes d'affichage, tels que du texte très large,
+du texte vide ou de grandes zones vides dans Microsoft 
+Word 2000 ou dans Windows NT. C'est un problème connu dans 
+Windows NT version 4.0 Service Pack 4 qui sera résolu dans 
+une version ultérieure du Service Pack pour Windows NT
+version 4.0.
+
+
+Ouverture de documents créés dans les versions japonaises 
+de Word 95 ou Word 6.0
+---------------------------------------------------------
+Lorsqu'un utilisateur de Word 2000 ouvre un document créé 
+dans une version japonaise de Word 95 ou Word 6.0, l'onglet 
+Compatibilité de la boîte de dialogue Options affiche quelques
+informations incorrectes. La zone Options recommandées pour 
+spécifie Paramètres personnalisés au lieu de Microsoft Word 
+(versions asiatiques) 6.0/95.
+
+En revanche, les cases à cocher appropriées sont activées 
+dans la zone Options de l'onglet Compatibilité et les 
+documents s'affichent correctement dans Word 2000.
+
+
+Certains convertisseurs ne sont pas compatibles DBCS.
+-----------------------------------------------------
+Certains des convertisseurs compris dans Office 2000
+ne prennent pas en charge l'importation ni l'exportation 
+des caractères codés sur deux octets (DBCS) qui sont 
+courants dans les documents en japonais, en chinois 
+traditionnel, en chinois simplifié et en coréen. Par 
+exemple, si vous ouvrez un document créé dans WordPerfect, 
+Word 2000 risque de ne pas afficher correctement le texte. 
+Si vous devez échanger des documents avec des utilisateurs 
+de WordPerfect, enregistrez vos documents Word 2000 au 
+format RTF.
+
+
+---------------------------------------------------------------------
+PROBLÈMES RELATIFS AUX FONCTIONNALITÉS DES LANGUES DE DROITE À GAUCHE
+---------------------------------------------------------------------
+
+Cette section traite des sujets suivants :
+
+   * Ouverture des documents créés dans des versions de Word 97 
+     pour les langues de droite à gauche
+
+   * Impression des langues de droite à gauche
+
+   * Problème de publication des objets WordArt sur le Web
+
+   * Dictionnaires de traduction non disponibles en cas de 
+     mise à niveau de Word 95 vers Word 2000
+
+   * Utilisation de la même disposition de clavier pour 
+     collaborer à un document
+
+   * Désactivation des options de format automatique
+
+   * La fonctionnalité Cliquer-taper n'est pas prise 
+     en charge.
+
+   * Utilisation de tableaux au lieu de tabulations
+     pour aligner le texte
+
+   * Les tableaux présentant différents sens d'affichage 
+     ne sont pas pris en charge.
+
+ 
+Ouverture des documents créés dans des versions de Word 97 
+pour les langues de droite à gauche
+----------------------------------------------------------
+Lorsque vous ouvrez des documents créés dans des versions 
+de Word 97 destinées aux langues de droite à gauche, telles 
+que l'hébreu et l'arabe, il est recommandé d'enregistrer 
+ces documents au format Document Word avant de modifier 
+leur contenu ou leur mise en forme. Dans la zone Type de 
+fichier de la boîte de dialogue Enregistrer sous, cliquez 
+sur Document Word.
+
+
+Impression des langues de droite à gauche
+-----------------------------------------
+Certaines imprimantes requièrent des pilotes d'imprimante  
+mis à jour. Veuillez contacter le fabricant de votre 
+imprimante si vous rencontrez des problèmes d'impression.
+
+
+Problème de publication des objets WordArt sur le Web
+-----------------------------------------------------
+Lorsque vous utilisez la fonctionnalité WordArt,
+le texte en arabe comprenant des signes diacritiques
+apparaît grisé une fois publié sur le Web. Il est 
+recommandé de ne pas utiliser de signes diacritiques 
+avec des objets WordArt publiés sur le Web.
+
+
+Dictionnaires de traduction non disponibles en cas de 
+mise à niveau de Word 95 vers Word 2000
+-----------------------------------------------------
+Si vous effectuez une mise à niveau vers Word 2000 à 
+partir d'une version de Word 97 en langue de droite à 
+gauche, les dictionnaires de traduction sont disponibles. 
+En revanche, ils ne le sont pas dans le cas d'une mise 
+à niveau à partir de Word 95.
+
+
+Utilisation de la même disposition de clavier pour 
+collaborer à un document
+--------------------------------------------------
+Au cours d'une réunion en ligne, les participants 
+peuvent tour à tour contrôler un document à 
+réviser et modifier son contenu. Tous doivent 
+utiliser la même disposition de clavier pour 
+collaborer à la révision d'un document. Ainsi, 
+Word 2000 peut baliser le texte avec les codes de 
+langue appropriés et afficher correctement le texte.
+
+Pour plus d'informations sur la manière de modifier
+la disposition du clavier sur votre ordinateur,
+tapez " changer la disposition de clavier " dans 
+le Compagnon Office ou sous l'onglet Aide intuitive 
+de Word 2000, puis cliquez sur Rechercher.
+
+
+Désactivation des options de format automatique
+-----------------------------------------------
+Vous pouvez utiliser les fonctionnalités de format 
+automatique dans Word 2000 pour appliquer automatiquement 
+une mise en forme à un document. Toutefois, il est 
+recommandé aux utilisateurs qui saisissent du texte de 
+droite à gauche de désactiver certaines fonctionnalités de 
+format automatique pour préserver la syntaxe de la langue.
+
+Par exemple, si vous saisissez un texte en hébreu,
+en arabe, en farsi ou en urdu, vous pouvez refuser que 
+Word 2000 remplace automatiquement les fractions par les 
+caractères correspondants ou les caractères spéciaux par 
+des symboles.
+
+>>>Pour désactiver les fonctionnalités de format 
+   automatique :
+
+1. Dans le menu Outils, cliquez sur Correction
+   automatique.
+
+2. Dans la boîte de dialogue Correction automatique,
+   désactivez les cases à cocher appropriées sous
+   les onglets Mise en forme automatique et Lors de
+   la frappe.
+
+
+La fonctionnalité Cliquer-taper n'est pas prise en charge.
+----------------------------------------------------------
+La fonctionnalité Cliquer-taper ne fonctionne pas
+correctement dans les paragraphes mis en forme de droite 
+à gauche.
+
+
+Utilisation de tableaux au lieu de tabulations pour 
+aligner le texte
+---------------------------------------------------
+Il est recommandé d'utiliser des tableaux à la place 
+des tabulations dans les cas suivants :
+
+* Pour aligner le texte des paragraphes qui se lisent 
+  de droite à gauche
+
+* Pour aligner le texte qui se lit de droite à gauche 
+  dans des paragraphes qui se lisent de gauche à droite
+
+
+-------------------------------------------
+MICROSOFT VISUAL BASIC ÉDITION APPLICATIONS
+-------------------------------------------
+
+Cette section traite des sujets suivants :
+
+   * Le niveau de sécurité par défaut est Élevé.
+
+   * Projets verrouillés dans les modèles basés sur
+     des modèles signés
+
+   * Arguments de boîte de dialogue intégrés
+
+   * Méthode Add (collection CommandBars)
+
+   * Méthode GetSpellingSuggestions
+
+   * Méthode Help
+
+   * Propriété Context (objet CommandBar)
+
+   * Exemple de code de la propriété FeatureInstall
+
+   * Langue par défaut de Visual Basic Editor et 
+     Microsoft Script Editor
+
+   * Nouvelles propriétés (VBA)
+
+   * Utilisation de la touche F3 pour rechercher l'occurrence 
+     de texte suivante dans la fenêtre de code
+
+   * Système SENS (System Event Notification System)
+
+   * Documentation de référence HTML
+
+   * Versions Internet Explorer et édition du code HTML
+
+   * Rubrique " Rubrique introuvable " (Microsoft Script
+     Editor)
+
+
+Le niveau de sécurité par défaut est Élevé.
+-------------------------------------------
+Dans Word, le niveau de sécurité par défaut est Élevé. 
+Autrement dit, les macros des modèles installés sur 
+votre ordinateur fonctionnent, mais les macros de 
+documents sont automatiquement désactivées, sauf si 
+leur projet a été signé numériquement.
+
+
+Projets verrouillés dans des modèles basés sur des 
+modèles signés
+--------------------------------------------------
+Si vous créez un modèle sur la base d'un modèle signé 
+numériquement à un moment où Visual Basic Editor (VBE) 
+n'est pas ouvert, le nouveau modèle est créé avec un 
+projet verrouillé. Ouvrez VBE avant de créer le modèle. 
+Le fait de signer le nouveau modèle numériquement 
+déverrouille également son projet.
+
+
+Arguments de boîte de dialogue intégrés
+---------------------------------------
+Les valeurs wdDialogFileMacCustomPageSetupGX et 
+wdDialogFileMacPageSetupGX de la constante 
+WdWordDialog ne sont pas prises en charge.
+
+
+Méthode Add (collection CommandBars)
+------------------------------------
+L'argument Temporary est ignoré dans Microsoft Word. 
+Vous devez supprimer manuellement tout élément temporaire 
+ajouté à la collection CommandBars avant de quitter 
+l'application.
+
+
+Méthode GetSpellingSuggestions
+------------------------------
+L'argument SuggestionMode ne prend pas en charge 
+les valeurs wdWildcard et wdAnagram.
+
+
+Méthode Help
+------------
+Les constantes WdHelpType suivantes s'appliquent à la 
+fonctionnalité d'aide de Microsoft Word 95 et ne sont 
+plus prises en charge :
+   * wdHelpContents
+   * wdHelpIndex
+   * wdHelpSearch
+   * wdHelpUsingHelp
+
+Utiliser ces valeurs pour l'argument HelpType revient 
+à utiliser wdHelp.
+
+
+Propriété Context (objet CommandBar)
+------------------------------------
+Cette propriété est en lecture seule et renvoie le nom 
+complet (et le chemin d'accès du disque) du modèle 
+associé au document contenant l'objet CommandBar.
+
+
+Exemple de code de la propriété FeatureInstall
+----------------------------------------------
+L'exemple de code fourni pour la propriété 
+FeatureInstall ne fonctionne pas, à moins de
+définir au préalable une référence à la
+bibliothèque d'objets Microsoft Excel 9.0
+(menu Outils, commande Références).
+
+Vous devez également définir une référence à la 
+bibliothèque d'objets Microsoft Excel 9.0 (menu Outils, 
+commande Références) pour que l'exemple fonctionne
+correctement.
+
+
+Langue par défaut de Visual Basic Editor et Microsoft 
+Script Editor
+-----------------------------------------------------
+Visual Basic Editor et Microsoft Script Editor sont par 
+défaut en anglais si la page de code système active ne 
+prend pas en charge la langue de l'interface utilisateur.
+
+
+Nouvelles propriétés (VBA)
+--------------------------
+Les nouvelles propriétés qui s'appliquent aux modules de
+classe dans des projets autonomes sont les suivantes :
+
+* Propriété Instancing
+
+  Définit une valeur spécifiant si vous pouvez créer des 
+  instances d'une classe publique hors d'un projet, et 
+  si c'est le cas, indique le comportement de ces instances. 
+  Cette propriété n'est pas disponible au moment de
+  l'exécution.
+
+  Valeurs
+
+  La propriété Instancing a les valeurs suivantes :
+
+  Valeur   Description
+
+  1        Private (par défaut). D'autres applications
+           n'ont pas accès aux données de la 
+           bibliothèque de caractères concernant la
+           classe et ne peuvent pas créer d'instances à
+           partir de cette dernière. Les objets Private 
+           ne doivent être utilisés qu'à l'intérieur de 
+           votre composant. La propriété Instancing par 
+           défaut varie selon le type de projet. Private
+           est l'objet par défaut uniquement pour les 
+           modules de classe dans les projets autonomes.
+
+  2        PublicNotCreatable. D'autres applications peuvent
+           utiliser les objets de cette classe seulement si 
+           votre composant crée les objets en premier. 
+           D'autres applications ne peuvent pas utiliser la
+           fonction CreateObject ou New operator pour créer
+           des objets à partir de la classe.
+
+* Propriété Name
+
+  Renvoie le nom utilisé dans le code pour identifier une classe. 
+  En lecture seule lors de l'exécution.
+
+  Syntaxe
+
+  objet.Name
+
+  L'emplacement de l'objet représente l'expression d'un objet 
+  qui a la valeur d'une classe.
+
+  Remarques
+
+  La propriété Name d'un objet doit commencer par une 
+  lettre et comporter 40 caractères au maximum. 
+  Elle peut inclure des nombres et des caractères de 
+  soulignement (_), mais pas de signes de ponctuation 
+  ou d'espaces. Bien que la valeur de la propriété Name 
+  puisse être un mot clé, un nom de propriété ou le nom 
+  d'un autre objet, cela peut créer des conflits dans 
+  votre code.
+
+
+Utilisation de la touche F3 pour rechercher l'occurrence 
+de texte suivante dans la fenêtre de code
+--------------------------------------------------------
+Appuyez sur F3 pour trouver l'occurrence suivante 
+du texte précédemment recherché dans la fenêtre de 
+code, et non sur MAJ+F4 comme indiqué dans la  
+documentation.
+
+
+Système SENS (System Event Notification System)
+-----------------------------------------------
+Pour les programmeurs rédigeant pour le système SENS 
+(System Event Notification System) et les interfaces 
+IEventSubscription et IEventSystem, vous pouvez consulter 
+soit la documentation de ces interfaces sur le site MSDN 
+online à l'adresse suivante :
+
+France : http://www.microsoft.com/france/msdn/ 
+Canada : http://msdn.microsoft.com/
+
+soit une version de la plate-forme SDK ultérieure à celle 
+qui a été livrée avec MSDN au mois d'avril.
+
+
+Documentation de référence HTML
+-------------------------------
+La documentation la plus récente sur HTML, DHTML et CSS 
+est disponible en ligne sur le site MSDN online à l'adresse 
+suivante :
+France : http://www.microsoft.com/france/msdn/ 
+Canada : http://msdn.microsoft.com/ 
+
+
+Versions Internet Explorer et édition du code HTML
+--------------------------------------------------
+La sélection fonctionne différemment dans Microsoft Script
+Editor pour les éléments sur site selon la version 
+d'Internet Explorer que vous avez installée. Un élément
+sur site correspond à tout élément qui dispose d'une hauteur 
+ou d'une largeur, tel qu'un BOUTON. 
+
+Avec Internet Explorer 4.01, la sélection des éléments sur 
+site fonctionne comme suit :
+
+- Le premier clic sur un élément vous permet de modifier 
+  le texte au sein de cet élément.
+- Le second clic sur un élément sélectionne cet élément.
+- Double-cliquer sur un élément revient à sélectionner le 
+  texte au sein de cet élément.
+
+Avec Internet Explorer 5.0, la sélection des éléments 
+sur site fonctionne comme suit :
+
+- Le premier clic sur un élément sélectionne cet élément.
+- Le second clic sur un élément vous permet de modifier 
+  le texte au sein de cet élément.
+- Double-cliquer sur l'élément affiche le code source de 
+  cet élément.
+
+Remarque : La sélection des tableaux dans Internet 
+Explorer 5.0 est la même que celle employée dans 
+Internet Explorer 4.01.
+
+De plus, Internet Explorer 5.0 préserve mieux les 
+espaces blancs qu'Internet Explorer 4.01 lorsque 
+vous passez d'un affichage à un autre dans l'éditeur.
+
+
+Rubrique " Rubrique introuvable " (Microsoft Script Editor)
+-----------------------------------------------------------
+Vous n'avez pas besoin de la bibliothèque MSDN ou du 
+CD-ROM de la bibliothèque MSDN pour afficher les rubriques 
+d'aide de Microsoft Script Editor. Si vous rencontrez la 
+rubrique " Rubrique introuvable ", essayez l'une des 
+actions suivantes :
+
+- Réinstallez Microsoft Script Editor à partir du
+  programme d'installation de Microsoft Office.
+- Insérez le CD-ROM Microsoft Office dans le lecteur
+  de CD-ROM.

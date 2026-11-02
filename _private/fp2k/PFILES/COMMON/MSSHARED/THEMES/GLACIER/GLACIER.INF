@@ -1,0 +1,22 @@
+[info]
+title=Glacier
+codepage=65001
+version=2.00
+format=2.00
+readonly=true
+
+[titles]
+1031 = Gletscher
+1036 = Hivernal
+1040 = Cupola
+3082 = Glaciar
+1043 = Gletsjer
+1046 = Geleira
+1053 = Glaciär
+1044 = Isbre
+1030 = Gletscher
+1035 = Jäätikkö
+1041 = 氷河
+1042 = 빙하
+1028 = 冰河
+2052 = 冰川

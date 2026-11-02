@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD W3 HTML//EN">
+<HTML XMLNS:o = urn:schemas-microsoft-com:office:office XMLNS:x = 
+urn:schemas-microsoft-com:office:excel XMLNS:a = 
+urn:schemas-microsoft-com:office:access XMLNS:dt = 
+uuid:C2F41010-65B3-11d1-A29F-00AA00C14882 xmlns:dt = 
+uuid:C2F41010-65B3-11d1-A29F-00AA00C14882 xmlns:a = 
+urn:schemas-microsoft-com:office:access xmlns:x = 
+urn:schemas-microsoft-com:office:excel xmlns:o = 
+urn:schemas-microsoft-com:office:office><HEAD><TITLE>Liste des commandes</TITLE>
+<META name="Version" content="2428" >
+<META name="Language Code" content="1036" >
+<META content=Access.Application name=ProgId>
+<META name=VBSForEventHandlers VALUE = TRUE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<STYLE id=MSODAPDEFAULTS type=text/css rel = stylesheet>.mstheme-label {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+TEXTAREA {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+.msoboundhtml {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+HR {
+	COLOR: black
+}
+SELECT {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+INPUT {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+BODY {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 10pt
+}
+MARQUEE {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+LEGEND {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+.msoHyperlinkDisplayText {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+BODY {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 10pt
+}
+.MsoShowDesignGrid {
+	BEHAVIOR: url(#DEFAULT#MsoShowDesignGrid)
+}
+</STYLE>
+
+<OBJECT classid=CLSID:0002E530-0000-0000-C000-000000000046 id=MSODSC><PARAM NAME="XMLData" VALUE="&lt;xml xmlns:a=&quot;urn:schemas-microsoft-com:office:access&quot;&gt;&#13;&#10; &lt;a:DataSourceControl&gt;&#13;&#10;  &lt;a:OWCVersion&gt;9.0.0.2418&lt;/a:OWCVersion&gt;&#13;&#10;  &lt;a:ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=C:\Program Files\Microsoft Office\Office\Samples\Northwind.mdb;Mode=Share Deny None;Extended Properties=&amp;quot;&amp;quot;;Locale Identifier=1033;Persist Security Info=False;Jet OLEDB:System database=&amp;quot;&amp;quot;;Jet OLEDB:Registry Path=&amp;quot;&amp;quot;;Jet OLEDB:Database Password=&amp;quot;&amp;quot;;Jet OLEDB:Engine Type=5;Jet OLEDB:Database Locking Mode=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global Bulk Transactions=1;Jet OLEDB:New Database Password=&amp;quot;&amp;quot;;Jet OLEDB:Create System Database=False;Jet OLEDB:Encrypt Database=False;Jet OLEDB:Don't Copy Locale on Compact=False;Jet OLEDB:Compact Without Replica Repair=False;Jet OLEDB:SFP=False&lt;/a:ConnectionString&gt;&#13;&#10;  &lt;a:MaxRecords&gt;10000&lt;/a:MaxRecords&gt;&#13;&#10;  &lt;a:GridX&gt;12&lt;/a:GridX&gt;&#13;&#10;  &lt;a:GridY&gt;12&lt;/a:GridY&gt;&#13;&#10;  &lt;a:DefaultControlType&gt;1&lt;/a:DefaultControlType&gt;&#13;&#10;  &lt;a:ElementExtension&gt;&#13;&#10;   &lt;a:ElementID&gt;OrdersNavigation&lt;/a:ElementID&gt;&#13;&#10;   &lt;a:ConsumesRecordset/&gt;&#13;&#10;  &lt;/a:ElementExtension&gt;&#13;&#10;  &lt;a:ElementExtension&gt;&#13;&#10;   &lt;a:ElementID&gt;OrderDate&lt;/a:ElementID&gt;&#13;&#10;   &lt;a:ControlSource&gt;OrderDateFormatted&lt;/a:ControlSource&gt;&#13;&#10;  &lt;/a:ElementExtension&gt;&#13;&#10;  &lt;a:ElementExtension&gt;&#13;&#10;   &lt;a:ElementID&gt;OrderID&lt;/a:ElementID&gt;&#13;&#10;   &lt;a:ControlSource&gt;OrderID&lt;/a:ControlSource&gt;&#13;&#10;  &lt;/a:ElementExtension&gt;&#13;&#10;  &lt;a:ElementExtension&gt;&#13;&#10;   &lt;a:ElementID&gt;OrderDetailsExtendedNavigation&lt;/a:ElementID&gt;&#13;&#10;   &lt;a:ConsumesRecordset/&gt;&#13;&#10;  &lt;/a:ElementExtension&gt;&#13;&#10;  &lt;a:ElementExtension&gt;&#13;&#10;   &lt;a:ElementID&gt;ProductID&lt;/a:ElementID&gt;&#13;&#10;   &lt;a:ControlSource&gt;ProductID&lt;/a:ControlSource&gt;&#13;&#10;  &lt;/a:ElementExtension&gt;&#13;&#10;  &lt;a:ElementExtension&gt;&#13;&#10;   &lt;a:ElementID&gt;ProductName&lt;/a:ElementID&gt;&#13;&#10;   &lt;a:ControlSource&gt;ProductName&lt;/a:ControlSource&gt;&#13;&#10;  &lt;/a:ElementExtension&gt;&#13;&#10;  &lt;a:ElementExtension&gt;&#13;&#10;   &lt;a:ElementID&gt;UnitPrice&lt;/a:ElementID&gt;&#13;&#10;   &lt;a:ControlSource&gt;UnitPrice&lt;/a:ControlSource&gt;&#13;&#10;  &lt;/a:ElementExtension&gt;&#13;&#10;  &lt;a:ElementExtension&gt;&#13;&#10;   &lt;a:ElementID&gt;Quantity&lt;/a:ElementID&gt;&#13;&#10;   &lt;a:ControlSource&gt;Quantity&lt;/a:ControlSource&gt;&#13;&#10;  &lt;/a:ElementExtension&gt;&#13;&#10;  &lt;a:ElementExtension&gt;&#13;&#10;   &lt;a:ElementID&gt;Discount&lt;/a:ElementID&gt;&#13;&#10;   &lt;a:ControlSource&gt;DiscountFormatted&lt;/a:ControlSource&gt;&#13;&#10;  &lt;/a:ElementExtension&gt;&#13;&#10;  &lt;a:ElementExtension&gt;&#13;&#10;   &lt;a:ElementID&gt;ExtendedPrice&lt;/a:ElementID&gt;&#13;&#10;   &lt;a:ControlSource&gt;ExtendedPrice&lt;/a:ControlSource&gt;&#13;&#10;  &lt;/a:ElementExtension&gt;&#13;&#10;  &lt;a:ElementExtension&gt;&#13;&#10;   &lt;a:ElementID&gt;CustomersNavigation&lt;/a:ElementID&gt;&#13;&#10;   &lt;a:ConsumesRecordset/&gt;&#13;&#10;  &lt;/a:ElementExtension&gt;&#13;&#10;  &lt;a:ElementExtension&gt;&#13;&#10;   &lt;a:ElementID&gt;CompanyName&lt;/a:ElementID&gt;&#13;&#10;   &lt;a:ControlSource&gt;CompanyName&lt;/a:ControlSource&gt;&#13;&#10;  &lt;/a:ElementExtension&gt;&#13;&#10;  &lt;a:ElementExtension&gt;&#13;&#10;   &lt;a:ElementID&gt;CompanyName1&lt;/a:ElementID&gt;&#13;&#10;   &lt;a:ListRowSource&gt;Customers&lt;/a:ListRowSource&gt;&#13;&#10;   &lt;a:ListBoundField&gt;CompanyName&lt;/a:ListBoundField&gt;&#13;&#10;   &lt;a:ListDisplayField&gt;CompanyName&lt;/a:ListDisplayField&gt;&#13;&#10;   &lt;a:ChildLabel&gt;CompanyName1_Label&lt;/a:ChildLabel&gt;&#13;&#10;  &lt;/a:ElementExtension&gt;&#13;&#10;  &lt;a:GroupLevel&gt;&#13;&#10;   &lt;a:RecordSource&gt;Customers&lt;/a:RecordSource&gt;&#13;&#10;   &lt;a:DefaultSort&gt;&lt;/a:DefaultSort&gt;&#13;&#10;   &lt;a:HeaderElementId&gt;HeaderCustomers&lt;/a:HeaderElementId&gt;&#13;&#10;   &lt;a:FooterElementId&gt;&lt;/a:FooterElementId&gt;&#13;&#10;   &lt;a:CaptionElementId&gt;&lt;/a:CaptionElementId&gt;&#13;&#10;   &lt;a:RecordNavigationElementId&gt;&lt;/a:RecordNavigationElementId&gt;&#13;&#10;   &lt;a:DataPageSize&gt;-1&lt;/a:DataPageSize&gt;&#13;&#10;   &lt;a:ExpandedByDefault/&gt;&#13;&#10;   &lt;a:GroupFilterControl&gt;CompanyName1&lt;/a:GroupFilterControl&gt;&#13;&#10;   &lt;a:GroupFilterField&gt;CompanyName&lt;/a:GroupFilterField&gt;&#13;&#10;  &lt;/a:GroupLevel&gt;&#13;&#10;  &lt;a:GroupLevel&gt;&#13;&#10;   &lt;a:RecordSource&gt;Orders&lt;/a:RecordSource&gt;&#13;&#10;   &lt;a:DefaultSort&gt;&lt;/a:DefaultSort&gt;&#13;&#10;   &lt;a:HeaderElementId&gt;HeaderOrders&lt;/a:HeaderElementId&gt;&#13;&#10;   &lt;a:FooterElementId&gt;&lt;/a:FooterElementId&gt;&#13;&#10;   &lt;a:CaptionElementId&gt;&lt;/a:CaptionElementId&gt;&#13;&#10;   &lt;a:RecordNavigationElementId&gt;NavigationSectionOrders&lt;/a:RecordNavigationElementId&gt;&#13;&#10;   &lt;a:DataPageSize&gt;5&lt;/a:DataPageSize&gt;&#13;&#10;  &lt;/a:GroupLevel&gt;&#13;&#10;  &lt;a:GroupLevel&gt;&#13;&#10;   &lt;a:RecordSource&gt;Order Details Extended&lt;/a:RecordSource&gt;&#13;&#10;   &lt;a:DefaultSort&gt;ProductID&lt;/a:DefaultSort&gt;&#13;&#10;   &lt;a:HeaderElementId&gt;HeaderOrderDetailsExtended&lt;/a:HeaderElementId&gt;&#13;&#10;   &lt;a:FooterElementId&gt;&lt;/a:FooterElementId&gt;&#13;&#10;   &lt;a:CaptionElementId&gt;CaptionOrderDetailsExtended&lt;/a:CaptionElementId&gt;&#13;&#10;   &lt;a:RecordNavigationElementId&gt;NavigationSectionOrderDetailsExtended&lt;/a:RecordNavigationElementId&gt;&#13;&#10;   &lt;a:DataPageSize&gt;5&lt;/a:DataPageSize&gt;&#13;&#10;  &lt;/a:GroupLevel&gt;&#13;&#10;  &lt;a:Datamodel version=&quot;0816&quot;&gt;&#13;&#10;   &lt;a:SchemaRowsource id=&quot;Customers&quot; type=&quot;dscTable&quot;&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;CustomerID&quot; datatype=&quot;130&quot; size=&quot;5&quot; iskey=&quot;1&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;CompanyName&quot; datatype=&quot;130&quot; size=&quot;40&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ContactName&quot; datatype=&quot;130&quot; size=&quot;30&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ContactTitle&quot; datatype=&quot;130&quot; size=&quot;30&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Address&quot; datatype=&quot;130&quot; size=&quot;60&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;City&quot; datatype=&quot;130&quot; size=&quot;15&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Region&quot; datatype=&quot;130&quot; size=&quot;15&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;PostalCode&quot; datatype=&quot;130&quot; size=&quot;10&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Country&quot; datatype=&quot;130&quot; size=&quot;15&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Phone&quot; datatype=&quot;130&quot; size=&quot;24&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Fax&quot; datatype=&quot;130&quot; size=&quot;24&quot;/&gt;&#13;&#10;   &lt;/a:SchemaRowsource&gt;&#13;&#10;   &lt;a:SchemaRowsource id=&quot;Orders&quot; type=&quot;dscTable&quot;&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;OrderID&quot; datatype=&quot;3&quot; size=&quot;0&quot; iskey=&quot;1&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;CustomerID&quot; datatype=&quot;130&quot; size=&quot;5&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;EmployeeID&quot; datatype=&quot;3&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;OrderDate&quot; datatype=&quot;7&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;RequiredDate&quot; datatype=&quot;7&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShippedDate&quot; datatype=&quot;7&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShipVia&quot; datatype=&quot;3&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Freight&quot; datatype=&quot;6&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShipName&quot; datatype=&quot;130&quot; size=&quot;40&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShipAddress&quot; datatype=&quot;130&quot; size=&quot;60&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShipCity&quot; datatype=&quot;130&quot; size=&quot;15&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShipRegion&quot; datatype=&quot;130&quot; size=&quot;15&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShipPostalCode&quot; datatype=&quot;130&quot; size=&quot;10&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ShipCountry&quot; datatype=&quot;130&quot; size=&quot;15&quot;/&gt;&#13;&#10;   &lt;/a:SchemaRowsource&gt;&#13;&#10;   &lt;a:SchemaRowsource id=&quot;Order Details Extended&quot; type=&quot;dscView&quot;&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;OrderID&quot; datatype=&quot;3&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ProductID&quot; datatype=&quot;3&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ProductName&quot; datatype=&quot;130&quot; size=&quot;40&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;UnitPrice&quot; datatype=&quot;6&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Quantity&quot; datatype=&quot;2&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;Discount&quot; datatype=&quot;4&quot; size=&quot;0&quot;/&gt;&#13;&#10;    &lt;a:SchemaField id=&quot;ExtendedPrice&quot; datatype=&quot;6&quot; size=&quot;0&quot;/&gt;&#13;&#10;   &lt;/a:SchemaRowsource&gt;&#13;&#10;   &lt;a:RecordsetDef id=&quot;Order Details Extended&quot;&gt;&#13;&#10;    &lt;a:PageField id=&quot;OrderID1&quot; source=&quot;OrderID&quot;/&gt;&#13;&#10;    &lt;a:PageField id=&quot;ProductID&quot;/&gt;&#13;&#10;    &lt;a:PageField id=&quot;ProductName&quot;/&gt;&#13;&#10;    &lt;a:PageField id=&quot;UnitPrice&quot;/&gt;&#13;&#10;    &lt;a:PageField id=&quot;Quantity&quot;/&gt;&#13;&#10;    &lt;a:PageField id=&quot;Discount&quot;/&gt;&#13;&#10;    &lt;a:PageField id=&quot;ExtendedPrice&quot;/&gt;&#13;&#10;    &lt;a:PageField id=&quot;DiscountFormatted&quot; source=&quot;Format(Discount,&amp;quot;#0%&amp;quot;)&quot;&#13;&#10;     type=&quot;dscCalculated&quot;/&gt;&#13;&#10;   &lt;/a:RecordsetDef&gt;&#13;&#10;   &lt;a:RecordsetDef id=&quot;Orders&quot; uniquetable=&quot;Orders&quot;&gt;&#13;&#10;    &lt;a:PageField id=&quot;OrderID&quot;/&gt;&#13;&#10;    &lt;a:PageField id=&quot;OrderDate&quot;/&gt;&#13;&#10;    &lt;a:PageField id=&quot;CustomerID1&quot; source=&quot;CustomerID&quot;/&gt;&#13;&#10;    &lt;a:Sublist relationship=&quot;Relationship1&quot; sublist=&quot;Order Details Extended&quot;&gt;&#13;&#10;     &lt;a:RelatedField primary=&quot;OrderID&quot; foreign=&quot;OrderID1&quot;/&gt;&#13;&#10;    &lt;/a:Sublist&gt;&#13;&#10;    &lt;a:PageField id=&quot;OrderDateFormatted&quot;&#13;&#10;     source=&quot;Format(OrderDate,&amp;quot;dd-mmm-yyyy&amp;quot;)&quot; type=&quot;dscCalculated&quot;/&gt;&#13;&#10;   &lt;/a:RecordsetDef&gt;&#13;&#10;   &lt;a:RecordsetDef id=&quot;Customers&quot; uniquetable=&quot;Customers&quot;&gt;&#13;&#10;    &lt;a:PageField id=&quot;CustomerID&quot;/&gt;&#13;&#10;    &lt;a:PageField id=&quot;CompanyName&quot;/&gt;&#13;&#10;    &lt;a:Sublist relationship=&quot;CustomersOrders&quot; sublist=&quot;Orders&quot;&gt;&#13;&#10;     &lt;a:RelatedField primary=&quot;CustomerID&quot; foreign=&quot;CustomerID1&quot;/&gt;&#13;&#10;    &lt;/a:Sublist&gt;&#13;&#10;   &lt;/a:RecordsetDef&gt;&#13;&#10;  &lt;/a:Datamodel&gt;&#13;&#10; &lt;/a:DataSourceControl&gt;&#13;&#10;&lt;/xml&gt;'&quot;"></OBJECT>
+<META content="MSHTML 5.00.1011.2000" name=GENERATOR><LINK 
+href="./Review%20Orders_files/filelist.xml" rel=File-List type=text/xml></HEAD>
+<BODY bottomMargin=48 leftMargin=24 link=#800080 rightMargin=24 
+style="CURSOR: auto" topMargin=24 
+vLink=#800080>
+<CENTER>
+<H1 id=HeadingText style="FONT-WEIGHT: normal"><FONT color=#000080 
+size=5>Afficher les commandes par société</FONT></H1>
+<P align=left id=HeadingText style="FONT-WEIGHT: normal"><FONT 
+color=#000080>Sélectionnez une société dans la liste pour afficher les commandes 
+de ses clients. Cliquez ensuite sur la <BR>flèche à gauche d'une commande pour 
+voir son détail.</FONT>&nbsp;</P></CENTER>
+<DIV class=MicrosoftAccessBanner id=HeaderCustomersBanner 
+style="BACKGROUND-COLOR: buttonface; BORDER-BOTTOM: buttonhighlight 2px outset; BORDER-LEFT: buttonhighlight 2px outset; BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; DISPLAY: none; FONT-FAMILY: Tahoma; FONT-SIZE: 8pt; FONT-WEIGHT: normal; HEIGHT: 0.2in; WIDTH: 9465px">En-tête&nbsp;: 
+Customers</DIV>
+<DIV class=MSOShowDesignGrid id=HeaderCustomers 
+style="BACKGROUND-COLOR: transparent; HEIGHT: 41px; POSITION: relative; VISIBILITY: hidden; WIDTH: 9465px">
+<SPAN class=MSOBoundHTML dataFormatAs=HTML id=CompanyName 
+style="HEIGHT: 25px; LEFT: 536px; OVERFLOW: hidden; POSITION: absolute; TOP: 8px; VISIBILITY: hidden; WIDTH: 71px; Z-INDEX: 101" 
+tabIndex=1>Société</SPAN> 
+<SPAN class=MSTheme-Label id=CompanyName1_Label 
+style="COLOR: #000080; FONT-SIZE: 10pt; FONT-WEIGHT: 700; HEIGHT: 16px; LEFT: 45px; OVERFLOW: visible; POSITION: absolute; TEXT-ALIGN: left; TOP: 10px; WIDTH: 172px; Z-INDEX: 102" 
+title="Sélectionnez une société">Sélectionnez une société</SPAN><SELECT id=CompanyName1 
+style="BACKGROUND-COLOR: transparent; COLOR: #000080; FONT-SIZE: 10pt; FONT-WEIGHT: 700; HEIGHT: 22px; LEFT: 224px; POSITION: absolute; TOP: 8px; WIDTH: 281px; Z-INDEX: 103" 
+tabIndex=1 title="Sélectionnez une société"><OPTION selected></OPTION></SELECT> 
+<SPAN class=MicrosoftAccessRectangle id=Box9 
+style="BACKGROUND-COLOR: #008080; BORDER-BOTTOM: #008080 1pt solid; BORDER-LEFT: #008080 1pt solid; BORDER-RIGHT: #008080 1pt solid; BORDER-TOP: #008080 1pt solid; COLOR: #ffff99; HEIGHT: 38px; LEFT: 0px; POSITION: absolute; TOP: 0px; WIDTH: 631px; Z-INDEX: 99" 
+tabIndex=2></SPAN></DIV>
+<DIV class=MicrosoftAccessBanner id=HeaderOrdersBanner 
+style="BACKGROUND-COLOR: buttonface; BORDER-BOTTOM: buttonhighlight 2px outset; BORDER-LEFT: buttonhighlight 2px outset; BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; DISPLAY: none; FONT-FAMILY: Tahoma; FONT-SIZE: 8pt; FONT-WEIGHT: normal; HEIGHT: 0.2in; WIDTH: 9465px">En-tête&nbsp;: 
+Orders</DIV>
+<DIV class=MSOShowDesignGrid id=HeaderOrders 
+style="BACKGROUND-COLOR: transparent; HEIGHT: 28px; POSITION: relative; VISIBILITY: hidden; WIDTH: 9465px">
+<SPAN class=MSOBoundHTML dataFormatAs=HTML id=OrderDate 
+style="HEIGHT: 0.208in; LEFT: 3.26in; OVERFLOW: hidden; POSITION: absolute; TOP: 0.042in; WIDTH: 1.302in" 
+tabIndex=1>Date commande</SPAN> 
+<SPAN class=MSOBoundHTML dataFormatAs=HTML id=OrderID 
+style="HEIGHT: 20px; LEFT: 140px; OVERFLOW: hidden; POSITION: absolute; TOP: 4px; WIDTH: 38px" 
+tabIndex=1>N° commande</SPAN> 
+<OBJECT classid=CLSID:0002E532-0000-0000-C000-000000000046 id=OrdersExpand 
+style="HEIGHT: 20px; LEFT: 11px; POSITION: absolute; TOP: 4px; WIDTH: 20px"><PARAM NAME="_State" VALUE=""><PARAM NAME="Bitmap" VALUE="1"></OBJECT>
+<SPAN class=MSTheme-Label id=Label6 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 16px; LEFT: 39px; OVERFLOW: hidden; POSITION: absolute; TOP: 4px; WIDTH: 94px" 
+tabIndex=2 title="N° commande">N° commande</SPAN> 
+<SPAN class=MSTheme-Label id=Label7 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 16px; LEFT: 202px; OVERFLOW: hidden; POSITION: absolute; TOP: 4px; WIDTH: 106px" 
+tabIndex=2 title="Date commande">Date commande</SPAN></DIV>
+<DIV class=MicrosoftAccessBanner id=CaptionOrderDetailsExtendedBanner 
+style="BACKGROUND-COLOR: buttonface; BORDER-BOTTOM: buttonhighlight 2px outset; BORDER-LEFT: buttonhighlight 2px outset; BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; DISPLAY: none; FONT-FAMILY: Tahoma; FONT-SIZE: 8pt; FONT-WEIGHT: normal; HEIGHT: 0.2in; WIDTH: 9465px">Légende&nbsp;: 
+Order Details Extended</DIV>
+<DIV class=MSOShowDesignGrid id=CaptionOrderDetailsExtended 
+style="BACKGROUND-COLOR: transparent; HEIGHT: 34px; POSITION: relative; VISIBILITY: hidden; WIDTH: 9465px">
+<SPAN class=MSTheme-Label id=Label0 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 16px; LEFT: 40px; OVERFLOW: hidden; POSITION: absolute; TOP: 8px; WIDTH: 67px; Z-INDEX: 100" 
+tabIndex=1 title="Réf produit">Réf produit</SPAN> 
+<SPAN class=MSTheme-Label id=Label1 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 16px; LEFT: 112px; OVERFLOW: hidden; POSITION: absolute; TOP: 8px; WIDTH: 1.75in; Z-INDEX: 101" 
+tabIndex=1 title="Nom du produit">Nom du produit</SPAN> 
+<SPAN class=MSTheme-Label id=Label2 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 16px; LEFT: 296px; OVERFLOW: hidden; POSITION: absolute; TEXT-ALIGN: center; TOP: 8px; WIDTH: 60px; Z-INDEX: 102" 
+tabIndex=1 title="Prix unitaire">Prix unitaire</SPAN> 
+<SPAN class=MSTheme-Label id=Label4 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 16px; LEFT: 5.5in; OVERFLOW: hidden; POSITION: absolute; TEXT-ALIGN: center; TOP: 0.083in; WIDTH: 96px; Z-INDEX: 103" 
+tabIndex=1 title="Prix total">Prix total</SPAN> 
+<SPAN class=MSTheme-Label id=Label5 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 16px; LEFT: 448px; OVERFLOW: hidden; POSITION: absolute; TEXT-ALIGN: center; TOP: 8px; WIDTH: 69px; Z-INDEX: 104" 
+tabIndex=1 title="Remise (%)">Remise (%)</SPAN> 
+<SPAN class=MSTheme-Label id=Label3 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 16px; LEFT: 3.833in; OVERFLOW: hidden; POSITION: absolute; TEXT-ALIGN: center; TOP: 0.083in; WIDTH: 71px; Z-INDEX: 105" 
+tabIndex=1 title=Quantité>Quantité</SPAN> 
+<SPAN class=MicrosoftAccessRectangle id=Box8 
+style="BACKGROUND-COLOR: #008080; BORDER-BOTTOM: #008080 1px solid; BORDER-LEFT: #008080 1px solid; BORDER-RIGHT: #008080 1px solid; BORDER-TOP: #008080 1px solid; HEIGHT: 24px; LEFT: 32px; POSITION: absolute; TOP: 4px; WIDTH: 598px; Z-INDEX: 99" 
+tabIndex=2></SPAN></DIV>
+<DIV class=MicrosoftAccessBanner id=HeaderOrderDetailsExtendedBanner 
+style="BACKGROUND-COLOR: buttonface; BORDER-BOTTOM: buttonhighlight 2px outset; BORDER-LEFT: buttonhighlight 2px outset; BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; DISPLAY: none; FONT-FAMILY: Tahoma; FONT-SIZE: 8pt; FONT-WEIGHT: normal; HEIGHT: 0.2in; WIDTH: 9465px">En-tête&nbsp;: 
+Order Details Extended</DIV>
+<DIV class=MSOShowDesignGrid id=HeaderOrderDetailsExtended 
+style="BACKGROUND-COLOR: transparent; HEIGHT: 20px; POSITION: relative; VISIBILITY: hidden; WIDTH: 9465px; Z-INDEX: 1">
+<SPAN class=MSOBoundHTML dataFormatAs=HTML id=ProductID 
+style="HEIGHT: 20px; LEFT: 42px; OVERFLOW: hidden; POSITION: absolute; TOP: 0px; WIDTH: 33px" 
+tabIndex=1>Réf produit</SPAN> 
+<SPAN class=MSOBoundHTML dataFormatAs=HTML id=ProductName 
+style="HEIGHT: 20px; LEFT: 112px; OVERFLOW: hidden; POSITION: absolute; TOP: 0px; WIDTH: 185px" 
+tabIndex=1>Nom du produit</SPAN> 
+<SPAN class=MSOBoundHTML dataFormatAs=HTML id=UnitPrice 
+style="HEIGHT: 20px; LEFT: 304px; OVERFLOW: hidden; POSITION: absolute; TOP: 0px; WIDTH: 41px" 
+tabIndex=1>Prix unitaire</SPAN> 
+<SPAN class=MSOBoundHTML dataFormatAs=HTML id=Quantity 
+style="HEIGHT: 20px; LEFT: 375px; OVERFLOW: hidden; POSITION: absolute; TOP: 0px; WIDTH: 36px" 
+tabIndex=1>Quantité</SPAN> 
+<SPAN class=MSOBoundHTML dataFormatAs=HTML id=Discount 
+style="HEIGHT: 20px; LEFT: 475px; OVERFLOW: hidden; POSITION: absolute; TOP: 0px; WIDTH: 33px" 
+tabIndex=1>Remise (%)</SPAN> 
+<SPAN class=MSOBoundHTML dataFormatAs=HTML id=ExtendedPrice 
+style="HEIGHT: 20px; LEFT: 541px; OVERFLOW: hidden; POSITION: absolute; TOP: 0px; WIDTH: 60px" 
+tabIndex=1>Prix total</SPAN></DIV>
+<DIV class=MicrosoftAccessBanner id=NavigationSectionOrderDetailsExtendedBanner 
+style="BACKGROUND-COLOR: buttonface; BORDER-BOTTOM: buttonhighlight 2px outset; BORDER-LEFT: buttonhighlight 2px outset; BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; DISPLAY: none; FONT-FAMILY: Tahoma; FONT-SIZE: 8pt; FONT-WEIGHT: normal; HEIGHT: 0.2in; WIDTH: 9465px">Section 
+indépendante&nbsp;: Order Details Extended</DIV>
+<DIV class=MSOShowDesignGrid id=NavigationSectionOrderDetailsExtended 
+style="BACKGROUND-COLOR: transparent; HEIGHT: 28px; POSITION: relative; VISIBILITY: hidden; WIDTH: 9465px">
+<OBJECT classid=CLSID:0002E531-0000-0000-C000-000000000046 
+id=OrderDetailsExtendedNavigation 
+style="LEFT: 0.365in; POSITION: absolute; TOP: 0.021in; WIDTH: 384px"><PARAM NAME="_State" VALUE=""><PARAM NAME="RecordSource" VALUE="Order Details Extended"><PARAM NAME="RecordsetLabel" VALUE="Détails commandes complets |0 sur |2;Détails commandes complets |0-|1 sur |2"><PARAM NAME="ShowFirstButton" VALUE="-1"><PARAM NAME="ShowPrevButton" VALUE="-1"><PARAM NAME="ShowNextButton" VALUE="-1"><PARAM NAME="ShowLastButton" VALUE="-1"><PARAM NAME="ShowNewButton" VALUE="0"><PARAM NAME="ShowDelButton" VALUE="0"><PARAM NAME="ShowSaveButton" VALUE="0"><PARAM NAME="ShowUndoButton" VALUE="0"><PARAM NAME="ShowSortAscendingButton" VALUE="0"><PARAM NAME="ShowSortDecendingButton" VALUE="0"><PARAM NAME="ShowApplyFilterButton" VALUE="0"><PARAM NAME="ShowToggleFilterButton" VALUE="0"><PARAM NAME="ShowHelpButton" VALUE="-1"><PARAM NAME="ShowLabel" VALUE="-1"><PARAM NAME="FontName" VALUE=""></OBJECT></DIV>
+<DIV class=MicrosoftAccessBanner id=NavigationSectionOrdersBanner 
+style="BACKGROUND-COLOR: buttonface; BORDER-BOTTOM: buttonhighlight 2px outset; BORDER-LEFT: buttonhighlight 2px outset; BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; DISPLAY: none; FONT-FAMILY: Tahoma; FONT-SIZE: 8pt; FONT-WEIGHT: normal; HEIGHT: 0.2in; WIDTH: 9465px">Section 
+indépendante&nbsp;: Orders</DIV>
+<DIV class=MSOShowDesignGrid id=NavigationSectionOrders 
+style="BACKGROUND-COLOR: transparent; HEIGHT: 25px; POSITION: relative; VISIBILITY: hidden; WIDTH: 9465px">
+<OBJECT classid=CLSID:0002E531-0000-0000-C000-000000000046 id=OrdersNavigation 
+style="HEIGHT: 24px; LEFT: 11px; POSITION: absolute; TOP: 0px; WIDTH: 308px"><PARAM NAME="_State" VALUE=""><PARAM NAME="RecordSource" VALUE="Orders"><PARAM NAME="RecordsetLabel" VALUE="Commandes |0 sur |2;Commandes |0-|1 sur |2"><PARAM NAME="ShowFirstButton" VALUE="-1"><PARAM NAME="ShowPrevButton" VALUE="-1"><PARAM NAME="ShowNextButton" VALUE="-1"><PARAM NAME="ShowLastButton" VALUE="-1"><PARAM NAME="ShowNewButton" VALUE="0"><PARAM NAME="ShowDelButton" VALUE="0"><PARAM NAME="ShowSaveButton" VALUE="0"><PARAM NAME="ShowUndoButton" VALUE="0"><PARAM NAME="ShowSortAscendingButton" VALUE="0"><PARAM NAME="ShowSortDecendingButton" VALUE="0"><PARAM NAME="ShowApplyFilterButton" VALUE="0"><PARAM NAME="ShowToggleFilterButton" VALUE="0"><PARAM NAME="ShowHelpButton" VALUE="-1"><PARAM NAME="ShowLabel" VALUE="-1"><PARAM NAME="FontName" VALUE=""></OBJECT></DIV>
+<P>&nbsp;</P></BODY></HTML>

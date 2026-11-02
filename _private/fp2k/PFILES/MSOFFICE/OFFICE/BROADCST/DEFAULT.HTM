@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta NAME="GENERATOR" Content="Microsoft Developer Studio">
+<meta NAME="VERSION" CONTENT="9.0.0.2518">
+
+<title></title>
+<script LANGUAGE="javascript" src="global.js">
+<!--
+{
+
+	function writeBcast_CharSetInfo() {
+		document.write("<meta http-equiv=Content-Type content='text/html; charset= '+ BCAST_CHARSET +'\'>");
+		}
+    
+    writeBcast_CharSetInfo();
+     
+
+}
+//-->
+</script>
+
+<style type="text/css">
+<!--
+@import url(style.css);
+//-->
+</style>
+
+<script>
+<!--
+  var appVer = navigator.appVersion;
+  var msie = appVer.indexOf( "MSIE " );
+  var msieWin31 = (appVer.indexOf( "Windows 3.1" ) >= 0),isMac = (appVer.indexOf("Macintosh") >= 0) ;
+
+  var ver = 0;
+  if ( msie >= 0 )
+    ver = parseFloat( appVer.substring( msie+5, appVer.indexOf ( ";", msie ) ) );
+  else
+    ver = parseInt( appVer );
+
+  path = "./previous_files/error.htm";
+
+  if( (ver < 4) || (msie <= 0) || ( ((ver > 4) && (msie > 0)) && navigator.platform != "Win32") )
+  {
+    
+		document.write("<div align='left' id='logo' STYLE='FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica; FONT-WEIGHT: bold; LEFT: 30px; COLOR:orange;POSITION: absolute; TOP: 10px'><img src='logo.GIF' alt='Logo.GIF' WIDTH='161' HEIGHT='34'></div>");
+
+		document.write("<table border='0' background= 'nsnbg.gif' cellPadding='1' cellSpacing='1' height='200' style='FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica; FONT-SIZE: 14pt; FONT-WEIGHT: bold' width='100%'> ");
+		document.write("<tr style='FONT-SIZE:8pt;FONT-WEIGHT:Normal;letter-spacing: 2px;> ");
+		document.write("<td vAlign='bottom'></td> ");
+		document.write("<td id='featuretitle' style='FONT-FAMILY: Tahoma,Arial;HEIGHT: 30px; WIDTH: 400px' vAlign='BOTTOM'>");
+		document.write("<font face=Tahoma,Arial,Verdana,Helvetic  size=2 color=black>	");
+		document.write(FEATURE_TITLE);
+		document.write("<div align='left' id='BLUE_LINE' STYLE='LEFT: 170px; POSITION: absolute; TOP: 40px'><img src='blueline.gif' alt='blueline.gif' height='2'  width='200'></div>");	
+		document.write("</td> ");
+		document.write("</tr> ");
+
+		document.write("<tr style='HEIGHT: 100px;'>");
+		document.write("<td id='browsertext' align='LEFT' vAlign='TOP'  width='100%'> ");
+		document.write("<font face=Tahoma,Arial,Verdana,Helvetica size=4 color=orange>	");
+		document.write(BROWSER_TEXT);
+		document.write("</td>");
+
+		document.write("</tr>");
+
+		document.write("</table>");
+
+
+  }
+  else {
+   if ((parent.location.hash == "preview") || (parent.location.hash == "#preview")) {
+	window.location.replace( 'prelobby.htm' );
+		}
+    else	 {
+		window.location.replace( 'lobby.htm' );
+		}
+    }
+//-->
+</script>
+</head>
+
+<body background="nsnbg.gif" text="orange" link="white" vlink="white" alink="white" style="FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica; FONT-SIZE: 14pt; FONT-WEIGHT: bold">
+
+
+</body>
+</html>

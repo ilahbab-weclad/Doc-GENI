@@ -1,0 +1,1915 @@
+---------------------------------------------------------
+           Fichier lisezmoi de Microsoft Access 2000
+                       Juin 1999
+
+    Microsoft Corporation, 1999. Tous droits réservés.
+---------------------------------------------------------
+
+Ce document fournit des informations inédites ou de 
+dernière minute sur Access 2000, correspondant à la date 
+mentionnée ci-dessus. Au-delà de cette date,
+vous pouvez trouver des informations et des ressources 
+plus récentes sur le site Web Espace Office, accessible 
+en cliquant dans le menu ? (Aide) sur Office sur le Web.
+Vous pouvez également trouver d'autres informations,
+y compris sur les questions relatives au réseau ou à 
+l'administration, sur le site Web du Kit de Ressources 
+Techniques Office à l'adresse suivante (France et Canada) :
+
+http://www.microsoft.com/office/ork/
+
+Pour obtenir plus d'informations techniques sur Office, 
+visitez le site Web des Services de Support Technique 
+Microsoft à l'adresse suivante : 
+
+France : http://microsoft.com/france/support/ 
+Canada : http://www.microsoft.com/canada/french/support/.
+
+_________________________________________________________
+
+--------
+SOMMAIRE
+--------
+
+INSTALLATION
+   Désactivation de la protection antivirus
+   Problèmes d'installation dans un dossier dont le nom 
+      contient des signes de ponctuation
+   Signes de ponctuation dans les noms d'objets
+   Configuration minimale requise pour Access 2000
+   Modification automatique de la configuration de certaines 
+      fonctionnalités lors d'une installation personnalisée
+   Installation d'Access 2000 en réseau
+   Un message demandant le code CD Key s'affiche lorsqu'Access 
+      est installé à partir d'une installation administrative.
+   Message « Fichier en cours d'utilisation » lors de l'exécution 
+      d'Access 2000 à partir d'un réseau
+   Installation d'Access 2000 sur une application d'exécution 
+      Access 97 
+   Message inattendu au cours de l'installation
+   Installation d'Access 2000 sans supprimer la version bêta 2 
+      d'Office 2000 
+   Le raccourci Access 2000 du menu Programmes varie selon 
+      votre système d'exploitation.
+FONCTIONNEMENT D'ACCESS 2000
+   Affichage des dates avec quatre chiffres 
+   Le symbole de l'euro ne s'imprime pas correctement. 
+   Nombre maximal de niveaux de formulaires ou d'états imbriqués 
+   Message « Mémoire insuffisante » sous Windows NT Server 4.0 ou 
+      Windows NT Workstation 4.0
+   Insertion de contrôles ou d'info-bulles dans un rectangle
+   Utilisation du contrôle Image dans une page d'accès aux données 
+   Les commandes d'impression ne sont pas disponibles lorsqu'une 
+      page d'accès aux données est sélectionnée dans une fenêtre 
+      de base de données. 
+   Message « Fonction non définie » à l'ouverture d'une page 
+      d'accès aux données
+   Comment empêcher l'accès non autorisé de scripts dans les 
+      pages d'accès aux données 
+   Palette de couleurs dans les pages d'accès aux données lorsque 
+      l'affichage est configuré pour l'utilisation de 256 couleurs
+   Problèmes lors de l'utilisation des boutons de la barre des 
+      tâches pour se déplacer entre plusieurs pages d'accès aux 
+      données
+   Problèmes d'affichage lors du parcours du formulaire Employés 
+     des Comptoirs
+   Utilisation de la base de données exemple Les Comptoirs située 
+     sur un partage en lecture seule
+   Obtention des outils de vérification Microsoft Office 2000 
+   Il se peut que les couleurs ne s'affichent pas correctement 
+     sur les moniteurs 256 couleurs.
+MICROSOFT JET
+   Syntaxe SQL compatible avec la norme ANSI-92
+   COUNTER et IDENTITY 
+CONVERSION ET COMPATIBILITÉ
+   Bibliothèque de compatibilité 
+   Activation de la correction automatique de nom dans une 
+      base de données Access convertie
+PROJETS MICROSOFT ACCESS
+   Comportement inattendu lorsque la sortie d'une instruction 
+      SQL contient deux champs du même nom
+   Impossible de faire référence à des contrôles situés dans des 
+      formulaires ou des états dans les fonctions d'agrégation 
+   Redémarrage de l'ordinateur après l'installation de MSDE 
+      (Microsoft Data Engine)
+   La clause ORDER BY ne peut pas être utilisée dans ce type 
+      de requête  lorsque la vue comporte une clause TOP.
+   Les connexions entrantes via des canaux nommés ne sont pas 
+      prises en charge sous Windows 95 ou Windows 98.
+   Règles MSDE (Microsoft Data Engine) relatives à la 
+      dénomination des identificateurs 
+PROBLÈMES RELATIFS À MICROSOFT OFFICE WEB COMPONENTS
+   Modification d'une formule dans une cellule qui contient un 
+      lien hypertexte
+   Fonction de feuille de calcul ASC non prise en charge par le 
+      composant Spreadsheet
+AIDE DE MICROSOFT ACCESS 2000
+MICROSOFT VISUAL BASIC ÉDITION APPLICATIONS
+   Informations supplémentaires sur les composants d'accès 
+      aux données
+   Échec des fonctions dû à vbDatabaseCompare
+   Code indiqué dans la rubrique « Objet DataAccessPage, 
+      exemple de collection DataAccessPages »
+   Propriété Context (objet CommandBar)
+   Modèle d'objet Chart Workspace (Office Web Components)
+   Événement SelectionChange (Office Web Components)
+   Méthode GetValue (Office Web Components)
+   Propriété HTMLData (Office Web Components)
+   Propriété KeyChar (Office Web Components)
+   Propriété RecordsetLabel (Office Web Components)
+   Propriété Value (Office Web Components)
+   Langue par défaut dans Visual Basic Editor et Microsoft  
+      Script Editor
+   Nouvelles propriétés (VBA)
+   Utilisation de la touche F3 pour rechercher l'occurrence 
+      de texte suivante dans la fenêtre de code
+   Système SENS (System Event Notification System)
+   Documentation de référence HTML
+   Versions Internet Explorer et édition du code HTML
+   Rubrique « Rubrique introuvable » (Microsoft Script Editor)
+   « Impossible de définir la propriété » lors de la modification 
+      de la propriété SourceContrôle (ControlSource) dans une page 
+      d'accès aux données
+PROBLÈMES MULTILINGUES
+   GÉNÉRALITÉS
+      La page de code de l'ordinateur client doit correspondre à 
+         celle du serveur.
+      Création de clés de registre pour appliquer provisoirement 
+         une page de code lors d'une conversion
+      Les messages d'erreur ne s'affichent pas dans la langue 
+         souhaitée lorsque le Language Pack est utilisé.
+      Les macros d'affectation de raccourcis du groupe de macros 
+         AutoKeys ne fonctionnent plus.
+      Message « La base de données 'msdb' ne peut pas être ouverte. »
+      Impossible de se connecter en tant qu'administrateur lors de 
+         la modification d'une chaîne de connexion de page
+      Versions dans une langue autre que l'anglais américain ou que 
+         les langues d'Asie orientale : le projet SQL Les Comptoirs  
+         n'apparaît pas dans l'interface utilisateur.
+      Le lien hypertexte vers un objet de base de données ne 
+         fonctionne pas lorsque le nom du type de l'objet est dans la 
+         langue locale.
+   LANGUES DE DROITE À GAUCHE
+      Impression des langues de droite à gauche
+      Limitations relatives au Générateur d'expression pour les langues 
+         de droite à gauche
+      Calendrier de base de données Hijri dans les applications 
+         exemples
+      Restrictions relatives au masque d'entrée pour les langues 
+         de droite à gauche
+      Prise en charge du calendrier Hijri dans les pages d'accès 
+         aux données et les pages Web 
+      Affichage des données rédigées en arabe dans l'Assistant 
+         Affichage de conflits de réplication Microsoft et les 
+         Assistants d'importation/exportation
+   LANGUES ASIATIQUES
+      Problèmes d'affichage possibles lors de l'utilisation 
+         de plusieurs polices asiatiques 
+_________________________________________________________
+
+INSTALLATION
+
+Désactivation de la protection antivirus
+----------------------------------------
+Certains programmes antivirus peuvent interférer avec le 
+programme d'installation de la version autonome de  
+Microsoft Office 2000 ou de Microsoft Access 2000. Si 
+vous utilisez un programme antivirus sur votre ordinateur, 
+désactivez-le avant de procéder à l'installation. Vous pourrez 
+le réactiver une fois l'installation effectuée. 
+
+Remarque -- Si votre programme antivirus démarre 
+automatiquement en même temps que Windows, vous pouvez le 
+désactiver en redémarrant Windows tout en maintenant la touche 
+MAJ enfoncée.
+
+Problèmes d'installation dans un dossier dont le nom contient 
+des signes de ponctuation
+-------------------------------------------------------------
+N'utilisez pas de virgule (,), de guillemet simple (') ou de 
+point d'exclamation (!) dans le nom du dossier où vous installez 
+Access 2000. Il vous est conseillé d'utiliser le dossier par 
+défaut ou d'employer uniquement des lettres ou des nombres dans 
+les noms de dossiers.
+
+Signes de ponctuation dans les noms d'objets
+--------------------------------------------
+Il est déconseillé d'utiliser l'apostrophe (') dans les noms de 
+tables ou de champs de votre base de données. Les objets dont 
+les noms comportent des apostrophes peuvent créer des conflits 
+lors de l'utilisation de certains assistants et empêcher leur bon 
+fonctionnement.
+
+Configuration minimale requise pour Access 2000
+-----------------------------------------------
+Microsoft Access 2000 est inclus dans les éditions suivantes :
+
+* Microsoft Office 2000 Professional
+* Microsoft Office 2000 Premium
+* Microsoft Office 2000 Developer
+
+Pour utiliser Access 2000, vous avez besoin des éléments suivants :
+* PC équipé d'un processeur Pentium 75 MHz ou supérieur
+* Système d'exploitation Microsoft Windows 95 ou ultérieur, 
+  ou Microsoft Windows NT Workstation version 4.0 Service Pack 3 
+  ou ultérieur
+* Pour Windows 95 ou Windows 98 :
+    16 Mo de mémoire vive (RAM) pour le système d'exploitation, 
+    plus 8 Mo de mémoire vive pour Access
+* Pour Windows NT Workstation version 4.0 Service Pack 3 
+  ou ultérieur :
+    32 Mo de mémoire vive (RAM) pour le système d'exploitation, 
+    plus 8 Mo de mémoire vive pour Access
+* Espace disque disponible requis pour Access 2000 (Le chiffre 
+  indiqué concerne une installation standard. L'utilisation de 
+  votre disque dur dépendra de votre configuration. Selon les 
+  choix effectués lors d'une installation personnalisée, plus 
+  ou moins d'espace disque disponible sera nécessaire.) : 
+    Installation standard : 161 Mo
+* Espace disque disponible requis pour Office 2000 (Les chiffres 
+  indiqués concernent une installation standard. L'utilisation de 
+  votre disque dur dépendra de votre configuration. Selon les 
+  choix effectués lors d'une installation personnalisée, plus ou 
+  moins d'espace disque disponible sera nécessaire.) :
+    252 Mo pour le CD-ROM 1 (Word, Excel, Outlook, PowerPoint, 
+      Access)
+* Lecteur de CD-ROM
+* Moniteur VGA ou de résolution supérieure ; Super VGA recommandé
+* Souris Microsoft, Microsoft IntelliMouse ou dispositif de 
+  pointage compatible 
+
+Éléments ou services supplémentaires requis pour utiliser 
+certaines fonctionnalités :
+* Modem 9 600 bauds ; 14 400 bauds ou supérieur recommandé
+* Ordinateur multimédia requis pour accéder au son et aux autres 
+  effets multimédias
+* Client Microsoft Exchange ou Microsoft Outlook requis pour 
+  exécuter la messagerie électronique Office
+* 8 Mo de mémoire supplémentaire requis pour exécuter la 
+  messagerie électronique Office
+* Certaines fonctionnalités Internet peuvent nécessiter un 
+  accès à Internet et un abonnement supplémentaire auprès 
+  d'un fournisseur de services.
+
+Modification automatique de la configuration de certaines 
+fonctionnalités lors d'une installation personnalisée
+---------------------------------------------------------
+Lors d'une installation personnalisée, si vous définissez 
+Access comme étant « Non disponible » puis que vous configurez 
+certaines fonctionnalités Access comme étant disponibles, 
+d'autres fonctionnalités qui étaient non disponibles se verront 
+également affecter le nouveau paramètre que vous avez sélectionné. 
+Les fonctionnalités concernées sont les suivantes :
+
+Aide
+Assistants standard
+Autres Assistants
+Snapshot Viewer
+Réplication de base de données
+
+Si vous souhaitez économiser l'espace disque de votre ordinateur, 
+configurez Access ou la fonctionnalité individuelle en 
+sélectionnant l'option « Installé lors de la première utilisation ». 
+
+Installation d'Access 2000 en réseau
+------------------------------------
+>>> Pour créer un emplacement d'installation administrative 
+pour Access 2000 :
+
+1. Créez un partage sur un serveur réseau pour l'emplacement 
+   d'installation administrative. L'espace disque disponible 
+   sur le partage réseau doit être au moins égal à 
+   550 mégaoctets (Mo). 
+2. Sur un ordinateur exécutant Microsoft Windows 95/98,
+   Windows NT Workstation ou Windows NT Server et disposant 
+   d'une permission en écriture sur le partage, connectez-vous 
+   au partage sur le serveur. 
+3. Dans le menu Démarrer, cliquez sur Exécuter, puis sur Parcourir. 
+4. Sur le CD-ROM 1 d'Office situé sur le lecteur de CD-ROM, 
+   sélectionnez install.exe, puis cliquez sur Ouvrir. 
+5. Sur la ligne de commande qui s'affiche, à la suite de install.exe, 
+   tapez 
+     /A DATA1.MSI 
+   et cliquez sur OK. 
+   Par exemple : 
+     E:\INSTALL.EXE /A DATA1.MSI 
+6. Lorsque vous y êtes invité, entrez le nom de l'organisation 
+   que vous souhaitez définir pour tous les utilisateurs qui 
+   installeront Office à partir de cet emplacement. 
+7. Lorsque le système vous invite à indiquer un emplacement 
+   d'installation, entrez le nom du serveur et le partage que vous 
+   avez créé. 
+
+Pour plus d'informations sur les problèmes de réseau et 
+d'administration, visitez le site Web du Kit de Ressources 
+Techniques à l'adresse suivante (France et Canada) : 
+
+http://www.microsoft.com/office/ork
+
+Un message demandant le code CD Key s'affiche lorsqu'Access 
+est installé à partir d'une installation administrative. 
+-----------------------------------------------------------
+Lorsque vous installez Access 2000 sur votre ordinateur 
+à partir d'une installation administrative sur un serveur, 
+un code CD Key peut vous être demandé. Cela peut arriver si
+l'administrateur système qui a créé l'installation 
+administrative n'a pas entré le code CD Key.
+
+Pour résoudre ce problème, demandez à l'administrateur 
+système de créer une nouvelle installation administrative 
+et d'entrer le code CD Key dans la première boîte de 
+dialogue. Vous ne serez ainsi plus invité à fournir le 
+code CD Key lorsque vous installerez Access 2000 à partir 
+de cette nouvelle installation administrative.
+ 
+Message « Fichier en cours d'utilisation » lors de 
+l'exécution d'Access 2000 à partir d'un réseau
+---------------------------------------------------
+Si vous exécutez Access 2000 à partir d'un réseau, il se 
+peut que le message suivant s'affiche à l'ouverture d'une 
+base de données Access :
+   Impossible d'utiliser 'Admin'; fichier en cours 
+   d'utilisation.
+Ce message s'affiche lorsqu'un utilisateur disposant de 
+permissions en écriture sur le partage réseau ouvre une base 
+de données Access ; les utilisateurs qui disposent uniquement 
+de permissions en lecture sur ce partage reçoivent ce 
+message lorsqu'ils essaient à leur tour d'ouvrir une base 
+de données Access. 
+
+Une fois que vous avez exécuté l'installation administrative 
+d'Office 2000 ou d'Access 2000, vous pouvez empêcher 
+l'affichage de ce message en affectant des permissions en 
+lecture sur ce partage à tous les utilisateurs qui exécuteront 
+Access 2000 à partir du serveur réseau. Si vous êtes 
+administrateur, il peut être utile de créer un partage séparé 
+sur le même dossier et d'attribuer à tous les administrateurs 
+des permissions de contrôle total afin qu'ils puissent gérer 
+les fichiers dans ce dossier. Cependant, tous les utilisateurs 
+doivent installer Office 2000 ou Access 2000 à partir du 
+partage avec des permissions en lecture. 
+
+Installation d'Access 2000 sur une application 
+d'exécution Access 97 
+----------------------------------------------
+Si vous procédez à une mise à jour d'Access 97 ou d'Office 97 
+sur un ordinateur sur lequel vous avez installé une application 
+d'exécution Access 97, l'emplacement d'installation par défaut 
+d'Office 2000 ou d'Access 2000 est le suivant : 
+
+   C:\Program Files\Office2K
+
+L'installation d'Office 2000 ou d'Access 2000 sur cet autre 
+emplacement par défaut vous permet de conserver la version 
+Access 97 de Msaccess.exe au cas où celle-ci serait requise 
+par l'application d'exécution.
+
+Message inattendu au cours de l'installation
+--------------------------------------------
+Si un message inattendu s'affiche lors de l'installation 
+d'Office et qu'il apparaît de nouveau lorsque vous essayez 
+de réinstaller Office, vous pouvez créer un fichier journal 
+qui aidera les Services de Support Technique de Microsoft à 
+résoudre le problème. Après avoir créé le fichier, contactez 
+les Services de Support Technique de Microsoft.
+
+>>> Pour créer le fichier journal :
+ 
+1. Cliquez sur le bouton Démarrer dans la barre des tâches, 
+   puis sur Exécuter.
+2. Dans la zone Ouvrir, tapez : 
+ 
+      <chemin>\Install.exe /L*v c:\Verboselog.txt
+ 
+   où <chemin> correspond à l'emplacement de Install.exe. Par 
+   exemple, si vous procédez à une installation à partir d'un 
+   lecteur de CD-ROM, le texte que vous devez taper doit être 
+   semblable à ce qui suit :
+ 
+      d:\Install.exe /L*v c:\Verboselog.txt
+ 
+3. Cliquez sur OK.
+ 
+Le programme d'installation redémarrera et un fichier journal 
+intitulé Verboselog.txt sera créé à la racine de votre 
+lecteur C:.
+
+Installation d'Access 2000 sans supprimer la version 
+bêta 2 d'Office 2000 
+----------------------------------------------------
+Lors du démarrage d'Access, il se peut que le message suivant 
+s'affiche : 
+
+   Informations requises manquantes dans le registre. 
+   Impossible d'exécuter cette application. Réexécutez le 
+   programme d'installation pour résoudre ce problème. 
+
+Il peut également arriver que le programme se ferme après 
+quelques secondes. 
+
+Vous pouvez rencontrer l'un ou l'autre des problèmes 
+mentionnés ci-dessus si vous avez installé Access 2000
+sans avoir supprimé la version bêta 2 (2221b) 
+d'Office 2000.
+
+>>> Pour résoudre ce problème, supprimez la version bêta 2 
+d'Office 2000 en suivant la procédure suivante :
+
+1. Cliquez sur le bouton Démarrer dans la barre des tâches, 
+   pointez sur Paramètres, puis cliquez sur Panneau de 
+   configuration.
+2. Double-cliquez sur l'icône Ajout/Suppression de programmes.
+3. Dans la liste des programmes installés, cliquez sur 
+   Microsoft Office 2000 Premium (qui correspond à la version 
+   bêta 2 d'Office 2000.)
+4. Cliquez sur Ajouter/Supprimer.
+5. Cliquez sur Supprimer Office.
+6. Cliquez sur Oui lorsqu'un message vous invite à confirmer 
+   la suppression.
+
+Le raccourci Access 2000 du menu Programmes varie selon 
+votre système d'exploitation.
+-------------------------------------------------------
+Le raccourci Access 2000 du menu Programmes peut présenter 
+les problèmes suivants : 
+
+1. Il ne répare pas automatiquement le programme.
+ 
+   Ce problème survient, car votre système d'exploitation
+   ne prend pas en charge les raccourcis de Windows Installer.
+   Voici les versions de Microsoft Windows qui prennent en
+   charge ces raccourcis : 
+      * Windows 98
+      * Windows 95 avec Internet Explorer 4.01, Service 
+        Pack 1 et Active Desktop installés
+      * Microsoft Windows NT version 4 avec 
+        Internet Explorer 4.01, Service Pack 1 et  
+        Active Desktop installés 
+   Remarque : Si vous installez Internet Explorer 5 sur un 
+   ordinateur exécutant Windows 95 ou Windows NT version 4 
+   sur lequel Internet Explorer 4.01, Service Pack 1 et 
+   Active Desktop sont installés, les raccourcis Windows 
+   Installer seront pris en charge. 
+
+2. Il n'installe pas le programme lors de la première utilisation. 
+
+   Ce problème survient lorsque l'option « Installé lors de la 
+   première utilisation » n'est pas disponible pour Access 
+   dans la boîte de dialogue Sélection des composants au moment 
+   de l'installation. Cette option n'est pas disponible car votre 
+   système d'exploitation ne prend pas en charge les raccourcis 
+   Windows Installer. Ces derniers sont pris en charge par les 
+   systèmes d'exploitation indiqués à l'étape 1. 
+
+3. Il n'affiche aucun chemin d'accès sous l'onglet Raccourci de 
+   la boîte de dialogue Propriétés du raccourci. 
+
+   Ce problème survient lorsque le raccourci est un raccourci 
+   Windows Installer. Les raccourcis Windows Installer ne font 
+   pas directement référence au chemin d'accès de la cible du 
+   raccourci. Ils contiennent un indicateur que Windows Installer 
+   traduit par le chemin d'accès de la cible du raccourci. Les 
+   raccourcis Windows Installer sont pris en charge par les 
+   systèmes d'exploitation indiqués à l'étape 1.
+
+_________________________________________________________
+
+FONCTIONNEMENT D'ACCESS 2000
+
+Affichage des dates avec quatre chiffres
+----------------------------------------
+Dans Access 2000, vous pouvez spécifier que les champs et les 
+contrôles de date affichent les années à quatre chiffres. Vous 
+avez ainsi la garantie que le siècle correspondant à une 
+date particulière est correct. 
+ 
+Sous l'onglet Général de la boîte de dialogue Options (menu 
+Outils), sous Utiliser le format à quatre chiffres pour les 
+années, vous pouvez effectuer l'une des actions suivantes :
+*  Activez la case à cocher Dans cette base de données 
+   pour afficher les années avec quatre chiffres dans la 
+   base de données (dans la base de données ou le projet 
+   Access en cours).
+*  Activez la case à cocher Dans toutes les bases de données 
+   pour afficher les années avec quatre chiffres dans 
+   l'application (dans toutes les bases de données et projets 
+   Access).
+L'activation de l'une de ces cases à cocher modifie uniquement 
+l'affichage des dates, et non les données à proprement parler. 
+Ces options remplacent les paramètres des propriétés de mise 
+en forme des champs et des contrôles individuels.
+
+Le symbole de l'euro ne s'imprime pas correctement.
+---------------------------------------------------
+Le symbole de l'euro peut s'afficher correctement en mode 
+Aperçu avant impression mais ne pas s'imprimer correctement.
+Par exemple, il est possible qu'il n'apparaisse pas dans le 
+document imprimé ou qu'il s'affiche sous la forme d'un autre 
+caractère. 
+
+Ce problème peut survenir si vous utilisez une police 
+d'impression qui ne prend pas l'euro en charge. Pour y 
+remédier, essayez d'abord d'utiliser une police True Type 
+prenant l'euro en charge, telle que Arial, Courier New ou 
+Times New Roman. Si le problème persiste, modifiez le 
+paramétrage du format des données en sélectionnant RAW 
+au lieu de EMF. 
+
+>>> Pour sélectionner le format de données RAW :
+
+1. Cliquez sur le bouton Démarrer, pointez sur Paramètres,  
+   puis cliquez sur Imprimantes.
+
+2. Dans la boîte de dialogue Imprimantes, cliquez avec le 
+   bouton droit sur votre imprimante, puis cliquez sur 
+   Propriétés.
+
+3. Dans la boîte de dialogue Propriétés de <Imprimante>, 
+   cliquez sur l'onglet Détails, puis sur Paramètres 
+   du spouleur.
+
+4. Dans la zone Format de données, sélectionnez RAW au 
+   lieu de EMF.
+
+Pour plus d'informations, contactez le fabricant de votre 
+imprimante.
+
+Nombre maximal de niveaux de formulaires ou d'états imbriqués
+-------------------------------------------------------------
+Le nombre maximal de formulaires ou d'états imbriqués est 
+de sept.
+
+Message « Mémoire insuffisante » sous Windows NT Server 4.0 
+ou Windows NT Workstation 4.0
+-----------------------------------------------------------
+Il se peut que le message « Mémoire insuffisante » s'affiche 
+lorsque vous tentez d'enregistrer ou de fermer une base de 
+données ou un projet Access volumineux sous Windows NT 
+Workstation 4.0 ou Windows NT Server 4.0. Pour empêcher 
+l'affichage de ce message, installez Windows NT 4.0 
+Service Pack 4. 
+
+Insertion de contrôles ou d'info-bulles dans un rectangle
+---------------------------------------------------------
+Dans un formulaire ou une page d'accès aux données, les 
+contrôles insérés ou les info-bulles utilisées dans un 
+rectangle risquent de ne pas s'afficher correctement. 
+Pour y remédier, ouvrez le formulaire ou la page d'accès 
+aux données en mode Création, cliquez sur le rectangle, 
+puis sur Arrière-plan dans le menu Format.
+
+Utilisation du contrôle Image dans une page d'accès aux 
+données
+-------------------------------------------------------
+Dans Access 2000, vous ne pouvez pas lier un contrôle 
+Image dans une page d'accès aux données à un champ 
+Objet OLE figurant dans une table sous-jacente. 
+Cependant, vous pouvez utiliser un contrôle Image 
+dans une page d'accès aux données pour afficher une 
+image différente pour chaque enregistrement. Dans la 
+table, créez un champ Texte contenant les URL des 
+images. Ensuite, dans la page d'accès aux données basée 
+sur la table, ajoutez un contrôle Image indépendante et 
+affectez à sa propriété SourceContrôle (ControlSource) 
+la valeur de ce champ.
+
+Les commandes d'impression ne sont pas disponibles 
+lorsqu'une page d'accès aux données est sélectionnée 
+dans une fenêtre de base de données.
+----------------------------------------------------
+Lorsqu'une page d'accès aux données est sélectionnée 
+dans la fenêtre Base de données, les commandes 
+Mise en page, Aperçu avant impression et Imprimer 
+ne sont pas disponibles. Il se peut également que 
+le message suivant s'affiche lorsque vous tentez 
+d'utiliser l'action Imprimer dans une macro ou la 
+méthode Imprimer (PrintOut) de l'objet DoCmd dans une 
+procédure Visual Basic Édition Applications (VBA) : 
+   Erreur d'exécution '2046' : La commande ou l'action 
+   'Imprimer' n'est pas disponible pour l'instant.
+Pour utiliser ces commandes ou employer l'action ou la 
+méthode Imprimer, assurez-vous en premier lieu que la 
+page d'accès aux données est ouverte.
+
+Message « Fonction non définie » à l'ouverture d'une 
+page d'accès aux données
+-----------------------------------------------------
+Dans une page d'accès aux données, si vous utilisez 
+une fonction qui n'es pas disponible en dehors d'Access, 
+le message suivant s'affiche lorsque vous ouvrez la page 
+dans Microsoft Internet Explorer 5 :
+   Fonction non définie '<NomFonction>' dans l'expression.
+Par exemple, ce message s'affiche si votre page d'accès 
+aux données est basée sur une requête dans laquelle une 
+expression contient une fonction Nz, EuroConvert, Eval 
+ou une fonction définie par l'utilisateur. Ce message 
+s'affiche également si vous utilisez une fonction qui 
+n'est pas disponible en dehors d'Access dans un contrôle 
+ou une page d'accès aux données. Il n'apparaît pas 
+lorsque vous ouvrez une page d'accès aux données dans 
+Access.
+
+Comment empêcher l'accès non autorisé de scripts dans les 
+pages d'accès aux données 
+---------------------------------------------------------
+Vous pouvez vous protéger des scripts qui s'exécutent dans 
+une page d'accès aux données et tentent d'accéder aux bases 
+de données sur d'autres serveurs que celui à partir duquel 
+la page a été téléchargée. Pour plus d'informations, 
+consultez « Création de pages d'accès aux données sécurisées » 
+(DAP Security.doc) et « Déploiement de pages d'accès aux 
+données sur Internet » (DAP Internet Deployment.doc) dans 
+le dossier Annexes du CD-ROM accompagnant le 
+Guide du programmeur Microsoft Office 2000/Visual Basic. 
+Vous pouvez également vous procurer ces documents sur le 
+forum Office Developer situé sur le site Web de Microsoft. 
+Vous pouvez obtenir des informations supplémentaires en 
+consultant le chapitre 18, « Sécurisation des bases de 
+données Access », du Guide du programmeur 
+Microsoft Office 2000/Visual Basic. 
+
+Palette de couleurs dans les pages d'accès aux données 
+lorsque l'affichage est configuré pour l'utilisation 
+de 256 couleurs
+------------------------------------------------------
+Il se peut que les pages d'accès aux données ne s'affichent 
+pas correctement sur les ordinateurs sur lesquels la palette 
+de couleurs de l'affichage vidéo est configurée à 256 couleurs 
+ou moins. Pour être certain que les pages d'accès aux données 
+s'affichent correctement sur les affichages en 16 couleurs ou 
+256 couleurs, utilisez uniquement les couleurs incluses dans 
+la palette 16 couleurs de Windows.
+
+      		R	G	B
+   Noir		00	00	00
+   Blanc		FF	FF	FF
+   Gris foncé	80	80	80
+   Gris clair	C0	C0	C0
+   Rouge foncé	      80	00	00
+   Rouge		FF	00	00
+   Moutarde	      80	80	80
+   Jaune	      FF	FF	00
+   Vert foncé	00	80	00
+   Vert clair	00	FF	00
+   Bleu-vert		00	80	80
+   Bleu clair	00	FF	FF
+   Bleu foncé	00	00	80
+   Bleu		00	00	FF
+   Violet	      80	00	80
+   Lavande	      FF	00	FF
+
+Problèmes lors de l'utilisation des boutons de la barre des 
+tâches pour se déplacer entre plusieurs pages d'accès aux 
+données
+---------------------------------------------------------
+Si vous avez installé Active Desktop et que vous avez désactivé 
+dans Internet Explorer la case à cocher permettant de lancer 
+les fenêtres du navigateur dans un processus séparé, il se peut 
+que vous rencontriez des problèmes si vous ouvrez plusieurs pages 
+d'accès aux données et que vous passez de l'une à l'autre en 
+cliquant sur leurs boutons respectifs dans la barre des tâches. 
+Par exemple, si vous ouvrez une page d'accès aux données puis 
+que vous en ouvrez une autre dans une fenêtre séparée, il peut 
+parfois arriver que vous ne puissiez pas revenir à la première 
+page sans avoir fermé au préalable la seconde. Pour remédier à 
+ce problème, démarrez Internet Explorer, cliquez sur 
+Options Internet dans le menu Outils, puis, sous l'onglet 
+Avancées, activez la case à cocher permettant de lancer les 
+fenêtres du navigateur dans un nouveau processus. 
+
+Problèmes d'affichage lors du parcours du formulaire Employés 
+des Comptoirs
+-------------------------------------------------------------
+Dans la base de données exemple Les Comptoirs, il se peut que 
+l'affichage soit instable lorsque vous parcourez les 
+enregistrements du formulaire Employés. 
+
+>>> Pour remédier à ce problème : 
+
+1. Dans le Panneau de configuration Windows, double-cliquez sur 
+   l'icône Affichage, puis cliquez sur l'onglet Paramètres.
+
+2. Dans la zone Couleurs, cliquez sur une option proposant plus 
+   de 256 couleurs.
+
+   REMARQUE : Si votre système ne prend pas en charge plus de 
+   256 couleurs, vous ne pourrez pas sélectionner un paramètre 
+   plus élevé.
+
+Utilisation de la base de données exemple Les Comptoirs située 
+sur un partage en lecture seule
+--------------------------------------------------------------
+Si vous ouvrez une copie de la base de données exemple 
+Les Comptoirs située sur un partage réseau en lecture seule, 
+il se peut que le message suivant s'affiche :
+   5 erreurs se sont produites lors de la correction des 
+   connexions de votre page d'accès aux données. Il se peut que 
+   certaines pages ne fonctionnent pas comme prévu.
+Lorsque vous ouvrez la base de données exemple Les Comptoirs 
+pour la première fois, les connexions aux pages d'accès aux 
+données qu'elle contient sont corrigées. Ce processus vérifie 
+l'attribut du fichier Les Comptoirs. Si ce dernier est en 
+lecture seule, le processus ne peut pas corriger les connexions, 
+et l'exécution est interrompue sans qu'une erreur se produise. 
+Cependant, le processus de correction ne vérifie pas les 
+permissions du partage réseau sur lequel la base Les Comptoirs 
+est située. Si le partage est en lecture seule, les connexions 
+ne peuvent pas être corrigées.  
+
+Ce problème peut survenir dans toute base de données contenant 
+du code similaire qui corrige les connexions aux pages d'accès 
+aux donnée. Si vous déployez Les Comptoirs ou toute base de 
+données associée à un processus de correction semblable sur un 
+partage en lecture seule, vous pouvez contourner ce problème en 
+définissant le fichier de base de données comme étant en lecture 
+seule. Vous pouvez également empêcher l'exécution du processus 
+de correction en appuyant sur la touche MAJ en ouvrant la base 
+de données exemple Les Comptoirs. Cependant, en procédant ainsi, 
+il se peut que les pages d'accès aux données ne fonctionnent pas 
+comme prévu. 
+
+Obtention des outils de vérification Microsoft Office 2000
+----------------------------------------------------------
+Les outils de vérification Microsoft Office 2000 sont regroupés 
+dans une macro complémentaire pour Office 2000 qui contient tous 
+les outils linguistiques conçus par Microsoft pour plus de 
+30 langues. Vous pouvez vous les procurer auprès d'un revendeur 
+agréé. Les numéros de référence répertoriés dans l'aide sont 
+incorrects. Pour savoir comment obtenir les outils de vérification 
+Office 2000, visitez le site Web à l'adresse suivante : 
+France : http://www.microsoft.com/france/office/ 
+Canada : http://www.microsoft.com/canada/french/office
+
+Il se peut que les couleurs ne s'affichent pas correctement 
+sur les moniteurs 256 couleurs.
+----------------------------------------------------------
+Après avoir affiché les fenêtres contextuelles dans les 
+rubriques d'aide, il se peut que les couleurs associées à 
+certains éléments ne s'affichent pas correctement sur les 
+moniteurs 256 couleurs. Par exemple, les éléments suivants 
+peuvent apparaître différemment à l'écran une fois que vous 
+avez visualisé des fenêtres contextuelles :
+
+* Images bitmap
+* Images incorporées dans les fichiers
+* Compagnon Office 
+* Liens hypertexte
+
+Pour résoudre le problème d'affichage, changez la palette 
+de couleurs de votre moniteur.
+
+>>>Pour changer la palette de couleurs :
+
+1. Cliquez sur Démarrer dans la barre des tâches Windows,
+   pointez sur Paramètres, puis cliquez sur Panneau de
+   configuration.
+
+2. Double-cliquez sur l'icône Affichage.
+
+3. Sous l'onglet Paramètres, sélectionnez une option 
+   autre que 256 couleurs. Microsoft vous recommande de 
+   sélectionner une option proposant plus de 256 couleurs, 
+   si cette option est disponible.
+_________________________________________________________
+
+MICROSOFT JET
+
+Syntaxe SQL compatible avec la norme ANSI-92
+--------------------------------------------
+Le moteur de base de données Microsoft Jet 4.0 prend en 
+charge deux formes de syntaxe SQL. La première prend en 
+charge les commandes Jet SQL utilisées dans les versions 
+précédentes d'Access. La nouvelle forme prend en charge 
+les nouvelles commandes et la nouvelle syntaxe Jet SQL, 
+qui assurent une meilleure compatibilité avec la norme 
+ANSI SQL-92. Le mode prenant en charge les commandes SQL 
+utilisées dans les versions précédentes d'Access est le seul 
+qui soit disponible dans l'ensemble de l'interface utilisateur 
+Access 2000. La syntaxe SQL la plus récente est actuellement 
+uniquement disponible dans les procédures Visual Basic Édition 
+Applications (VBA) qui utilisent les objets ADO 
+(ActiveX Data Objects) et le fournisseur Microsoft OLE DB 
+pour Jet version 4.x. Lorsque vous utilisez le fournisseur 
+Microsoft OLE DB pour Jet version 4.x via ADO, vous pouvez 
+exécuter des requêtes temporaires (c'est-à-dire des requêtes 
+qui ne sont pas stockées et sont utilisées dans le cadre de 
+la source d'un jeu d'enregistrements à l'aide de 
+Connection.Execute ou de Command.Execute) ou créer des requêtes 
+stockées (en utilisant la nouvelle syntaxe CREATE VIEW, 
+CREATE PROCEDURE). 
+
+Bien que vous puissiez utiliser ADO et le fournisseur OLE DB 
+pour Jet 4.x afin d'accéder à toutes les requêtes stockées 
+créées via le fournisseur OLE DB pour Jet 4.x, elles ne sont 
+pas visibles dans l'interface utilisateur Access. Par exemple, 
+vous ne pouvez pas affecter à la propriété RecordSource 
+d'un formulaire la valeur d'une requête créée avec la 
+bibliothèque d'objets ADOX (Microsoft ActiveX Data Objects 
+Extensions for DDL and Security) version 2.1, ni importer une 
+requête créée avec ADOX dans une autre base de données. 
+Cependant, vous pouvez toujours utiliser du code ADO pour 
+exécuter des requêtes stockées créées à l'aide d'ADOX.
+
+Si vous essayez d'enregistrer une nouvelle requête et que vous 
+recevez un message indiquant que le nom entré existe déjà pour 
+un autre objet, essayez d'utiliser un nom différent. Il se peut 
+qu'une requête ANSI-92 du même nom existe déjà, sans pour autant 
+apparaître dans la liste Objets de la fenêtre Base de données. 
+
+Pour plus d'informations sur la compatibilité entre ANSI SQL-92 
+et le fournisseur Microsoft OLE DB pour Jet version 4.x, tapez 
+COMPARAISON ENTRE LE MOTEUR DE BASE DE DONNÉES SQL MICROSOFT JET 
+ET ANSI SQL dans le Compagnon Office ou sous l'onglet 
+Aide intuitive de la fenêtre Aide, puis cliquez sur Rechercher.
+
+COUNTER et IDENTITY 
+-------------------
+COUNTER et IDENTITY sont des mots réservés Microsoft Jet SQL, 
+mais ne sont pas des types de données Jet SQL. Pour plus 
+d'informations sur les types de données Microsoft Jet, consultez 
+Microsoft Jet Database Engine Programmer's Guide publié par 
+Microsoft Press (disponible en anglais uniquement).
+_______________________________________________________
+
+CONVERSION ET COMPATIBILITÉ
+
+Bibliothèque de compatibilité
+-----------------------------
+Access 2000 n'est pas livré avec la bibliothèque de compatibilité 
+DAO 2.5/3.x. Si vous tentez de convertir une base de données 
+Access dont le code contient des versions plus anciennes d'objets, 
+de méthodes et de propriétés DAO qui dépendent de la bibliothèque 
+de compatibilité DAO 2.5/3.x, il se peut que vous receviez un 
+message signalant la présence d'erreurs de compilation lors de la 
+conversion de la base de données. Si la bibliothèque de 
+compatibilité DAO 2.5/3.x livrée avec une version antérieure 
+d'Access est toujours sur votre ordinateur, vous pouvez créer 
+une référence vers cette bibliothèque, puis l'utiliser. 
+Cependant, avant de convertir une base de données Access sur 
+un ordinateur ne disposant pas de la bibliothèque de compatibilité 
+DAO 2.5/3.x, vous devez mettre à jour le code pour qu'il ne dépende 
+pas de cette bibliothèque. 
+
+Activation de la correction automatique de nom dans une 
+base de données Access convertie
+-------------------------------------------------------
+Par défaut, la correction automatique de nom n'est pas activée 
+dans une base de données Access convertie. Pour l'activer, 
+cliquez dans le menu Outils sur Options, sur l'onglet Général, 
+puis, sous Correction automatique de nom, activez les cases à 
+cocher appropriées. Ouvrez ensuite chaque table, requête, 
+formulaire et état en mode Création, enregistrez l'objet, puis 
+fermez-le.
+
+Pour plus d'informations, tapez CORRECTION AUTOMATIQUE DE NOM 
+dans le Compagnon Office ou sous l'onglet Aide intuitive de la 
+fenêtre Aide, puis cliquez sur Rechercher, ou consultez le site 
+Web Espace Microsoft Office à l'adresse suivante :
+
+France : http://officeupdate.microsoft.com/france/  
+Canada : http://officeupdate/microsoft.com/canada/french/ 
+_________________________________________________________
+
+PROJETS MICROSOFT ACCESS
+
+Comportement inattendu lorsque la sortie d'une instruction 
+SQL contient deux champs du même nom
+----------------------------------------------------------
+Dans un projet Access (*.adp), des résultats inattendus 
+peuvent survenir lorsque vous utilisez une instruction 
+SQL dont la sortie contient deux champs ou davantage 
+portant le même nom. Par exemple, vous pouvez obtenir 
+ce type de résultats lorsque vous travaillez dans une 
+vue basée sur deux tables qui contient deux champs du 
+même nom mais situés dans des tables différentes. Pour 
+empêcher tout comportement inattendu, indiquez un alias 
+pour l'un des champs pour garantir que chaque champ de 
+la sortie porte un nom unique. 
+
+Impossible de faire référence à des contrôles situés dans 
+des formulaires ou des états dans les fonctions d'agrégation
+------------------------------------------------------------
+Dans un projet Access, vos fonctions d'agrégation ne peuvent 
+pas utiliser de références aux contrôles situés dans des 
+objets tels que des formulaires ou des états. Par exemple, 
+vous ne pouvez pas utiliser l'expression suivante :
+   =DLookUp("CategoryName";"Categories";"CategoryID =   
+      Reports!Report1!CategoryID")
+
+
+Redémarrage de l'ordinateur après l'installation de MSDE 
+(Microsoft Data Engine)
+--------------------------------------------------------
+Pour garantir le bon fonctionnement de MSDE (Microsoft Data 
+Engine), vous devez redémarrer votre ordinateur après avoir 
+installé MSDE. Si vous ne le faites pas, MSDE risque de ne 
+pas s'exécuter correctement. Par exemple, si vous essayez de 
+créer une nouvelle à partir d'un projet Access, il est possible 
+que vous receviez un message indiquant que l'un des fichiers 
+bibliothèque requis pour exécuter cette application est 
+introuvable (erreur 1157). Pour plus d'informations sur MSDE, 
+tapez TRAVAILLER AVEC UN PROJET MICROSOFT ACCESS dans le 
+Compagnon Office ou sous l'onglet Aide intuitive de la fenêtre 
+Aide, puis cliquez sur Rechercher.
+
+La clause ORDER BY ne peut pas être utilisée dans ce type 
+de requête lorsque la vue comporte une clause TOP.
+---------------------------------------------------------
+Lorsque vous enregistrez une vue comportant une clause TOP 
+et une clause ORDER BY, un message indiquant que la clause 
+ORDER BY ne peut pas être utilisée dans ce type de requête 
+peut s'afficher. Cependant, lorsque vous réexécutez la requête, 
+elle renvoie les résultats corrects et le message ne s'affiche 
+pas.
+
+Les connexions entrantes via des canaux nommés ne sont pas 
+prises en charge sous Windows 95 ou Windows 98.
+---------------------------------------------------------
+Vous ne pouvez pas vous connecter à une base de données de 
+bureau MSDE (Microsoft Data Engine) ou SQL Server 7.0 distante 
+située sur un ordinateur Windows 95 ou Windows 98 si vous 
+utilisez un protocole de canaux nommés. 
+Ces plates-formes ne prennent pas en charge les connexions 
+entrantes via des canaux nommés. Pour vous connecter à la 
+base de données, exécutez l'utilitaire de réseau client 
+Cliconfg.exe, qui se trouve dans le dossier Windows\System de 
+l'ordinateur client. Ajoutez un alias de serveur qui spécifie 
+le serveur distant auquel vous devez vous connecter, puis 
+sélectionnez TCP/IP comme bibliothèque réseau par défaut. 
+
+Règles MSDE (Microsoft Data Engine) relatives à la 
+dénomination des identificateurs
+--------------------------------------------------
+Vous pouvez rencontrer des problèmes inattendus si vous 
+utilisez une base de données MSDE (Microsoft Database Engine) 
+dont le nom ne respecte pas les règles suivantes relatives 
+aux identificateurs :
+
+1. Le premier caractère doit être l'un des suivants :
+ 
+   
+   Une lettre telle que définie dans la norme Unicode 2.0.  
+   La définition Unicode des lettres inclut les caractères 
+   latins a-z et A-Z, en plus des lettres d'autres langues. 
+
+   Le symbole _ (trait de soulignement), @ (à commercial) 
+   ou # (signe dièse). Certains symboles au début d'un 
+   identificateur ont une signification particulière dans 
+   MSDE. Un identificateur commençant par @ indique une 
+   variable ou un paramètre régional. Un identificateur 
+   commençant par # spécifie une table ou une procédure 
+   temporaire. Un identificateur commençant par deux signes 
+   dièse (##) indique un objet temporaire global. 
+
+   Certaines fonctions Transact-SQL portent un nom commençant 
+   par deux signes @ (@@). Pour éviter toute confusion avec 
+   ces fonctions, il vous est conseillé de ne pas utiliser de 
+   noms commençant par @@. 
+
+2. Les caractères suivants peuvent être : 
+
+   Les lettres telles que définies dans la norme Unicode 2.0. 
+
+   Les nombres décimaux des scripts latins de base ou autres 
+   scripts nationaux. 
+
+   Les signes @, $, # ou _. 
+
+   L'identificateur doit être un mot réservé Transact-SQL. 
+
+   MSDE réserve les versions majuscules et minuscules des 
+   mots réservés. 
+
+3. Les espaces incorporés ou les caractères spéciaux ne sont 
+   pas autorisés. 
+_________________________________________________________
+
+PROBLÈMES RELATIFS À MICROSOFT OFFICE WEB COMPONENTS
+
+Modification d'une formule dans une cellule qui contient un 
+lien hypertexte
+-----------------------------------------------------------
+La rubrique d'aide « Modification d'une formule dans une
+feuille de calcul »  stipule à tort que si la cellule 
+que vous voulez modifier contient un lien hypertexte,
+vous devez cliquer sur une cellule adjacente, utiliser une 
+touche de direction pour sélectionner la cellule à modifier 
+et cliquer une fois sur cette cellule. Si vous cliquez une 
+fois sur la cellule, vous accéderez à la page vers laquelle 
+le lien hypertexte pointe. En fait, une fois que vous avez
+utilisé une touche de direction pour sélectionner la cellule, 
+appuyez sur F2 pour commencer l'édition.
+
+Fonction de feuille de calcul ASC non prise en charge par  
+le composant Spreadsheet
+---------------------------------------------------------
+La rubrique d'aide « Fonctions de feuille de calcul 
+Microsoft Excel non disponibles dans les feuilles Web » 
+ne répertorie pas la fonction de feuille de calcul ASC, mais
+cette fonction n'est pas disponible dans les feuilles 
+publiées sur le Web. Si vous publiez une feuille de 
+calcul contenant la fonction ASC, la fonction est 
+remplacée par la valeur qui en résulte.
+_________________________________________________________
+
+AIDE DE MICROSOFT ACCESS 2000
+
+Cette section répertorie les mises à jour apportées à l'aide 
+d'Access.
+
+Rubrique : « Propriétés des contrôles des pages d'accès 
+aux données »
+-------------------------------------------------------
+Cette rubrique contient des liens vers des informations 
+supplémentaires relatives aux propriétés des pages d'accès 
+aux données. Certains de ces liens ne fonctionnent pas si 
+vous n'avez pas démarré Microsoft Script Editor au moins 
+une fois sur votre ordinateur. Pour démarrer Microsoft Script 
+Editor, cliquez sur Source HTML dans le menu Affichage. Si 
+cette fonctionnalité n'a pas encore été installée, un message 
+vous invite le faire.
+
+Rubrique : « Propriété ProjectName »
+------------------------------------
+Remplacez le troisième paragraphe par le texte suivant :
+« Vous pouvez définir la propriété ProjectName en démarrant 
+Microsoft Visual Basic Editor (VBE), en cliquant sur 
+Propriétés de <NomProjet> dans le menu Outils, sur l'onglet 
+Général, puis en tapant un nouveau nom dans la zone Nom du 
+projet. Vous pouvez également utiliser la méthode SetOption 
+en Visual Basic. Par exemple : »
+
+Rubrique : « Qu'est-ce qu'un sous-formulaire et comment 
+fonctionne-t-il ? » 
+-------------------------------------------------------
+Remplacez la deuxième phrase du dernier paragraphe par le 
+texte suivant :
+« Vous pouvez également imbriquer jusqu'à sept niveaux de 
+sous-formulaires. »
+
+Rubrique : « Spécifications de formulaire et d'état »
+-----------------------------------------------------
+Le nombre maximal de niveaux de formulaires ou d'états 
+imbriqués est de 7.
+
+Rubrique : « Activer ou désactiver les messages de 
+confirmation » 
+--------------------------------------------------
+Remplacez la dernière phrase par le texte suivant :
+« Note    Les options disponibles pour les modifications 
+d'enregistrements et les requêtes action ne s'appliquent 
+pas aux pages d'accès aux données. »
+
+Rubrique : « Sécuriser une base de données à l'aide de 
+l'Assistant Sécurité au niveau utilisateur » 
+------------------------------------------------------ 
+Remplacez le deuxième paragraphe situé sous « Remarques » 
+par le texte suivant :
+« Si la base de données Access en cours protège du code 
+Visual Basic Édition Applications (VBA) par un mot de passe, 
+l'Assistant ne s'exécutera pas. Supprimez d'abord le mot de 
+passe, puis exécutez l'Assistant. »
+
+Rubrique : « Supprimer les espaces réservés au début d'une 
+page d'accès aux données »
+----------------------------------------------------------
+Remplacez l'étape 2 par le texte suivant :
+« Cliquez ici et tapez le titre. »
+
+Rubrique : « Afficher un titre ou du texte d'information 
+dans une page d'accès aux données »
+--------------------------------------------------------
+Remplacez l'étape 2 par le texte suivant :
+« Pour ajouter un titre ou tout autre texte, cliquez sur le 
+texte de l'espace réservé libellé Cliquez ici et tapez le 
+titre. »
+
+Rubrique : « Propriété FilterType »
+-----------------------------------
+Les constantes JrFltrTypeTable et JrFltrTypeRelationship 
+doivent être remplacées par JRFilterTypeTable et 
+JRFilterTypeRelationship respectivement.
+
+Rubrique : « Mots réservés SQL »
+--------------------------------
+Lorsque vous cliquez sur COUNTER ou IDENTITY, vous accédez 
+à la rubrique « Types de données SQL ». COUNTER et IDENTITY 
+sont des mots réservés Microsoft Jet SQL, et non des types 
+de données Jet SQL. 
+
+Rubrique : « Types de données SQL »
+-----------------------------------
+Sous DATETIME dans le tableau des types de données, remplacez 
+« (Voir DOUBLE) » par « (Voir FLOAT) ».
+
+Rubrique : « Afficher, actualiser ou modifier le nom de 
+fichier et le chemin d'accès des tables liées dans une base 
+de données Microsoft Access »
+-----------------------------------------------------------
+Sous « Visualiser ou actualiser les attachements » et 
+« Modifier le chemin d'un jeu de tables liées », remplacez 
+l'étape 2 de la procédure par le texte suivant :
+« Dans le menu Outils, pointez sur Utilitaires de base de 
+données, puis cliquez sur Gestionnaire de tables liées. »
+
+Rubrique : « La compilation de mon code ne s'effectue pas. »
+------------------------------------------------------------
+Remplacez la première phrase du deuxième paragraphe par le 
+texte suivant :
+« Dans la base de données Access convertie, ouvrez un module 
+en mode Création et cliquez sur Compiler <NomProjet> dans 
+le menu Débogage ; par défaut, <NomProjet> est le nom de la 
+base de données Access. »
+
+Rubrique : « Considérations sur le tri des enregistrements 
+dans une table, une requête, un formulaire ou un état » 
+----------------------------------------------------------
+Remplacez la dernière phrase par le texte suivant :
+« Vous ne pouvez pas trier un champ dont le type de données 
+est Objet OLE. »
+
+Rubrique : « Syntaxe des sous-adresses de liens hypertexte »
+------------------------------------------------------------
+Dans la section Microsoft Access, remplacez le dernier 
+paragraphe par le texte suivant :
+« Sur les systèmes dans une langue autre que l'anglais, 
+Access reconnaît uniquement la chaîne en langue anglaise 
+pour le type d'objet. Il ne la reconnaît pas si elle est 
+exprimée dans la langue locale. Les liens hypertexte créés 
+en cliquant sur Objet dans cette base de données dans la 
+boîte de dialogue Insérer un lien hypertexte ou Modifier le 
+lien hypertexte ont une chaîne en anglais pour un type 
+d'objet. »
+
+Rubrique : « Propriété OrderBy (TriPar) »
+-----------------------------------------
+Ignorez la deuxième phrase, à savoir la note qui indique que 
+cette propriété est ignorée dans un projet Microsoft Access.
+
+Rubrique : « Exemples d'expressions utilisées dans des pages 
+d'accès aux données »
+------------------------------------------------------------
+Lorsque vous cliquez sur « Fonctions que vous pouvez utiliser 
+dans des contrôles de pages d'accès aux données et dans les 
+requêtes sous-jacentes à celles-ci », la rubrique « Référence 
+des fonctions » s'affiche. Les fonctions ci-dessous, répertoriées 
+dans cette rubrique, ne sont pas disponibles en dehors d'Access. 
+Si vous les utilisez dans une expression d'un contrôle sur une 
+page d'accès aux données ou dans une expression de la requête 
+sous-jacente d'une page d'accès aux données, la page risque de 
+ne pas fonctionner correctement si vous l'ouvrez dans 
+Microsoft Internet Explorer :
+
+RéperCour (CurDir)
+DDEAccès (DDEInitiate)
+DDEInfo (DDERequest)
+DDEEnvoi (DDESend)
+EuroConvert
+Eval
+GUIDFromString
+HyperlinkPart
+Nz
+StringFromGUID
+
+Les fonctions ci-dessous sont destinées à être utilisées dans 
+une procédure Visual Basic Édition Applications (VBA) ou dans 
+une feuille de calcul Microsoft Excel. Vous ne pouvez pas les 
+utiliser dans une expression d'un contrôle sur une page d'accès 
+aux données ou dans une expression de la requête sous-jacente 
+d'une page d'accès aux données :
+
+CreateObject
+CDec
+EOF
+FileAttr
+FreeFile
+DoEvents
+GetAllSettings
+GetObject
+InputBox
+IRR
+IsArray
+IsMissing
+LBound
+Loc
+LOF
+MIRR
+MsgBox
+NPV
+Spc
+Seek
+Tab
+UBound
+
+Rubrique : « Fonctionnalités installées avec 
+Microsoft Access 2000 »
+--------------------------------------------
+Sous « Installé (par défaut) », ajoutez « Contrôle 
+Calendrier » dans la colonne « Fonctionnalité » ; 
+dans la colonne « Emplacement dans le programme 
+d'installation » correspondante, ajoutez le texte 
+« Microsoft Access pour Windows ».
+
+Sous « Installé lors de la première utilisation 
+(par défaut) », ajoutez « Fichier de projet SQL Les Comptoirs » 
+dans la colonne « Fonctionnalité » ; dans la colonne 
+« Emplacement dans le programme d'installation » 
+correspondante, ajoutez le texte « Microsoft Access pour 
+Windows ; Exemples de bases de données ».
+
+Sous « Non installé (installation personnalisée uniquement) » :
+
+* Ignorez « Contrôle Calendrier » dans la colonne 
+  « Fonctionnalité » et le texte correspondant « Microsoft 
+  Access pour Windows » dans la colonne « Emplacement dans 
+  le programme d'installation ». 
+
+* Ignorez « Fichier projet SQL Comptoir » dans la colonne 
+  « Fonctionnalité » et le texte correspondant « Microsoft 
+  Access pour Windows ; Exemples de bases de données » dans la 
+  colonne « Emplacement dans le programme d'installation ». 
+
+* Ignorez le dernier paragraphe contenant la remarque sur le 
+  contrôle Calendrier et le fichier de projet SQL Les Comptoirs.
+
+Rubrique : « Définir des options à partir de Visual Basic »
+-----------------------------------------------------------
+Sous « Onglet Affichage » :
+
+* Dans la colonne « Texte de l'option » , remplacez « Utiliser la 
+  barre des tâches pour chaque document » par « Windows dans la 
+  barre des tâches » ; dans la colonne « Argument chaîne » 
+  correspondante, remplacez « Utiliser la barre des tâches pour 
+  chaque document » par « ShowWindowsInTaskbar ».
+
+Sous « Onglet Général », dans la colonne « Texte de l'option » :
+
+* Remplacez « Compacter la base de données en cours » par 
+  « Compacter lors de la fermeture ».
+
+* Ajoutez le texte « Utiliser le format à quatre chiffres pour 
+  les années dans cette base de données » ; dans la colonne 
+  « Argument chaîne » correspondante, ajoutez le texte 
+  « Format à quatre chiffres pour les années ».
+
+* Ajoutez le texte « Utiliser le format à quatre chiffres pour 
+  les années dans toutes les bases de données » ; dans la colonne 
+  « Argument chaîne » correspondante, ajoutez le texte « Format à 
+  quatre chiffres pour les années dans toutes les bases de données ».
+
+Sous « Onglet Avancé (MDB seulement) » :
+
+* Dans la colonne « Texte de l'option » ; remplacez « Ouvrir avec 
+  enregistrements verrouillés » par « Ouvrir les bases de données 
+  avec enregistrements verrouillés ».
+
+* Dans la colonne « Argument chaîne », remplacez  « Ouvrir avec 
+  enregistrements verrouillés » par « Utiliser avec lignes 
+  verrouillées ».
+
+Rubrique : « Utiliser les symboles de l'euro »
+----------------------------------------------
+Dans le tableau situé sous « Saisie du symbole monétaire de 
+l'euro » :
+
+* Remplacez le texte dans la colonne « Sur » correspondant à 
+  « ALT+0128 (pavé numérique) » par le texte suivant : « Claviers 
+  arabe, hébreux, turc et américain 101 ».
+
+* Remplacez le texte dans la colonne « Sur » correspondant à 
+  « ALTGR+E » par le texte suivant :
+  « Claviers belge, néerlandais (Belgique) 120, croate, tchèque, 
+  tchèque 101, tchèque pour les programmeurs, danois, 
+  néerlandais KBD143, estonien, féroïen, français, allemand (IBM), 
+  allemand (standard), islandais, italien, italien 142, letton, 
+  lituanien, lituanien (moderne), macédonien (cyrillique), 
+  norvégien, portugais KBD163, serbe (cyrillique), serbe (latin), 
+  slovaque, slovaque (QWERTY), slovène, espagnol, suédois, 
+  français (Suisse), allemand (Suisse), turc F 440 et turc Q 179 ».
+
+* Dans la colonne « Appuyez », ajoutez « ALTGR+4 » et dans la 
+  colonne « Sur » correspondante, ajoutez le texte suivant :
+  « Claviers irlandais, letton (QWERTY) et anglais (G.B.) ».
+
+* Dans la colonne « Appuyez », ajoutez « ALTGR+U » et dans la 
+  colonne « Sur » correspondante, ajoutez le texte suivant :
+  « Claviers hongrois, hongrois 101, polonais et polonais pour 
+  les programmeurs ».
+
+Dans le tableau situé sous « Affichage du symbole monétaire de 
+l'euro », sous « Système d'exploitation » : 
+
+* Ignorez « Microsoft Windows 95, Windows 98 » et le texte 
+  correspondant dans la colonne « Polices ».
+
+* Ignorez « Microsoft Windows NT ou Windows 2000 » et le texte 
+  correspondant dans la colonne « Polices ».
+
+* Ajoutez « Microsoft Windows 95 avec la mise à jour pour 
+  l'euro » et dans la colonne « Polices » correspondante, 
+  ajoutez le texte suivant :
+  « Arial Black, Arial, Comic Sans (normal et gras), 
+  Courier New, Impact, MS Sans Serif, Tahoma (normal et gras), 
+  Times New Roman, Verdana ».
+
+* Ajoutez « Microsoft Windows 98 » et dans la colonne « Polices » 
+  correspondante, ajoutez le texte suivant :
+  « Arial, Courier New, Tahoma (normal et gras), Times New Roman ».
+
+* Ajoutez « Microsoft Windows NT 4.0 avec Service Pack 3 et la 
+  mise à jour pour l'euro » et dans la colonne « Polices » 
+  correspondante, ajoutez le texte suivant :
+  « Arial, Courier New, Times New Roman ».
+
+* Ajoutez « Microsoft Windows NT 4.0 avec Service Pack 4 » et 
+  dans la colonne « Polices » correspondante, ajoutez le texte 
+  suivant :
+  « Arial, Courier New, Lucida Console, Lucida Sans Unicode, 
+  Times New Roman ».
+
+Procédure à suivre pour démarrer Microsoft NetMeeting
+-----------------------------------------------------
+Les rubriques d'aide suivantes contiennent des informations 
+incorrectes sur le mode de démarrage de Microsoft NetMeeting :
+   * Démarrage d'une conférence en ligne impromptue
+   * À propos des conférences en ligne
+   * Démarrage de NetMeeting
+
+>>> Pour démarrer NetMeeting :
+* Dans le menu Démarrer de Windows, pointez sur Programmes, 
+  sur Accessoires, sur Communications, puis cliquez sur NetMeeting.
+_________________________________________________________
+
+MICROSOFT VISUAL BASIC ÉDITION APPLICATIONS
+
+Informations supplémentaires sur les composants d'accès 
+aux données
+-------------------------------------------------------
+Pour plus d'informations sur les objets DAO (Microsoft Data 
+Access Objects) version 3.6, consultez Daoread.txt. Ce fichier 
+se trouve par défaut à l'emplacement suivant :
+
+   C:\Program Files\Fichiers communs\Microsoft Shared\DAO
+
+Pour plus d'informations sur les objets JRO (Microsoft Jet and 
+Replication Objects), ADO (Microsoft ActiveX Data Objects) et 
+ADOX (Microsoft ActiveX Data Objects Extensions for DDL and 
+Security), consultez JROReadme.txt, ADOReadme.txt et 
+ADOXReadme.txt. Ces fichiers se trouvent par défaut à 
+l'emplacement suivant :
+
+   C:\Program Files\Fichiers communs\System\Ado
+
+Échec des fonctions dû à vbDatabaseCompare
+------------------------------------------
+Il se peut que les fonctions InStrRev, Split, Filter et 
+Replace échouent en raison d'erreurs générées par 
+l'utilisation de vbDatabaseCompare. Pour ne pas être 
+confronté à ce problème, spécifiez de façon explicite 
+un argument de comparaison, tel que vbBinaryCompare ou 
+vbTextCompare.
+
+Code indiqué dans la rubrique « Objet DataAccessPage, 
+exemple de collection DataAccessPages » 
+-----------------------------------------------------
+Dans le second exemple, la ligne 
+
+   Dim Dap As DataAccessPage 
+
+doit être remplacée par 
+
+   Dim Dap As AccessObject
+
+Propriété Context (objet CommandBar)
+------------------------------------
+Cette propriété renvoie une chaîne vide et n'est pas 
+prise en charge.
+
+Modèle d'objet Chart Workspace (Office Web Components)
+------------------------------------------------------
+Le diagramme du modèle d'objet Chart Workspace est 
+incorrect. Les objets WCPlotArea, WCScaling et
+WCSeriesCollection et tous leurs objets associés 
+doivent apparaître sous l'objet WCChartsk, et non 
+sous l'objet ChartSpace, comme indiqué dans la 
+documentation. De plus, l'objet WCCharts doit 
+également contenir un objet WCTitle.
+
+Événement SelectionChange (Office Web Components)
+-------------------------------------------------
+Dans le gestionnaire d'événements SelectionChange 
+du composant Spreadsheet, aucune propriété de 
+l'objet SpreadsheetEventInfo n'est valide pour 
+cet événement, à l'exception de la propriété Range.
+
+Méthode GetValue (Office Web Components)
+----------------------------------------
+L'argument Dimension peut également être 
+chErrorBarPlusValues ou chErrorBarMinusValues 
+pour renvoyer les valeurs des objets personnalisés 
+WCErrorBars.
+
+
+Propriété HTMLData (Office Web Components)
+------------------------------------------
+Cette propriété est en lecture-écriture pour les objets
+Spreadsheet et en lecture seule pour les objets Range.
+
+
+Propriété KeyChar (Office Web Components)
+-----------------------------------------
+La propriété KeyChar renvoie une chaîne vide pour les 
+événements KeyDown et KeyUp.
+
+Propriété RecordsetLabel (Office Web Components)
+------------------------------------------------
+La propriété RecordsetLabel de l'objet
+RecordNavigationControl est analysée pour obtenir 
+des informations spécifiques à utiliser lors de 
+l'affichage de l'étiquette. Par exemple, les balises 
+|0, |1 et |2 sont remplacées par des numéros 
+d'enregistrement lors de l'affichage. Si la propriété 
+RecordsetLabel est égale à la chaîne "Catégories |0 sur 
+|2;Catégories |0-|1 sur |2", l'étiquette d'une page 
+groupée pourrait être "Catégories 1-5 sur 8", et celle 
+d'une page non groupée pourrait être "Catégories 1 sur 8".
+
+Propriété Value (Office Web Components)
+---------------------------------------
+La section Remarques de la propriété Value indique 
+que si la colonne spécifiée contient plus d'une cellule,
+cette propriété renvoie un tableau contenant les valeurs
+de toutes les cellules. Ceci est incorrect : la 
+propriété renvoie uniquement la valeur de la cellule 
+active de la colonne.
+
+Langue par défaut de Visual Basic Editor et Microsoft 
+Script Editor
+-----------------------------------------------------
+Visual Basic Editor et Microsoft Script Editor sont par 
+défaut en anglais si la page de code système active ne 
+prend pas en charge la langue de l'interface utilisateur.
+
+Nouvelles propriétés (VBA)
+--------------------------
+Les nouvelles propriétés qui s'appliquent aux modules de
+classe dans des projets autonomes sont les suivantes :
+
+* Propriété Instancing 
+
+  Définit une valeur spécifiant si vous pouvez créer des
+  instances d'une classe publique hors d'un projet, et
+  si c'est le cas, comment vous devez agir. Non 
+  disponible lors de l'exécution.
+
+  Valeurs
+
+  La propriété Instancing a les valeurs suivantes :
+
+  Valeur    Description
+  ------    -----------
+
+  1          Private (par défaut). D'autres applications
+             n'ont pas accès aux données de la 
+             bibliothèque de caractères concernant la
+             classe et ne peuvent pas créer d'instances à
+             partir de cette dernière. Les objets Private 
+             ne doivent être utilisés qu'à l'intérieur de 
+             votre composant. La propriété Instancing par 
+             défaut varie selon le type de projet. Private
+             est l'objet par défaut uniquement pour les 
+             modules de classe dans les projets autonomes.
+
+  2          PublicNotCreatable. Les autres applications peuvent 
+             utiliser les objets de cette classe uniquement si 
+             votre composant crée les objets en premier. Elles 
+             ne peuvent pas utiliser la fonction CreateObject 
+             ou l'opérateur New pour créer des objets à partir 
+             de la classe.
+
+* Propriété Name
+
+  Renvoie le nom utilisé dans le code pour identifier une classe. 
+  En lecture seule lors de l'exécution.
+
+  Syntaxe
+
+  objet.Name
+
+  L'emplacement de l'objet représente l'expression d'un objet 
+  qui a la valeur d'une classe.
+
+  Remarques
+
+  La propriété Name d'un objet doit commencer par une 
+  lettre et comporter 40 caractères au maximum. 
+  Elle peut inclure des nombres et des caractères de 
+  soulignement (_), mais pas de signes de ponctuation 
+  ou d'espaces. Bien que la valeur de la propriété Name 
+  puisse être un mot clé, un nom de propriété ou le nom 
+  d'un autre objet, cela peut créer des conflits dans 
+  votre code.
+
+Utilisation de la touche F3 pour rechercher l'occurrence 
+de texte suivante dans la fenêtre de code
+--------------------------------------------------------
+Appuyez sur F3 pour trouver l'occurrence suivante 
+du texte précédemment recherché dans la fenêtre de 
+code, et non sur MAJ+F4 comme indiqué dans la  
+documentation.
+
+Système SENS (System Event Notification System)
+-----------------------------------------------
+Pour les programmeurs rédigeant pour le système SENS 
+(System Event Notification System) et les interfaces 
+IEventSubscription et IEventSystem, vous pouvez consulter 
+soit la documentation de ces interfaces sur le site MSDN 
+online à l'adresse suivante :
+
+France : http://www.microsoft.com/france/msdn/ 
+Canada : http://msdn.microsoft.com/
+
+soit une version de la plate-forme SDK ultérieure à celle 
+qui a été livrée avec MSDN au mois d'avril.
+
+Documentation de référence HTML 
+-------------------------------
+La documentation la plus récente sur HTML, DHTML et CSS 
+est disponible en ligne sur le site MSDN online à l'adresse 
+suivante :
+
+France : http://www.microsoft.com/france/msdn/ 
+Canada : http://msdn.microsoft.com/
+
+Versions Internet Explorer et édition du code HTML
+--------------------------------------------------
+La sélection fonctionne différemment dans Microsoft Script
+Editor pour les éléments sur site selon la version 
+d'Internet Explorer que vous avez installée. Un élément
+sur site correspond à tout élément qui dispose d'une hauteur 
+ou d'une largeur, tel qu'un BOUTON. 
+
+Avec Internet Explorer 4.01, la sélection des éléments sur
+site fonctionne comme suit :
+
+* Le premier clic sur un élément vous permet de modifier 
+  le texte au sein de cet élément.
+* Le second clic sur un élément sélectionne cet élément.
+* Double-cliquer sur un élément revient à sélectionner le
+  texte au sein de cet élément.
+
+Avec Internet Explorer 5.0, la sélection des éléments 
+sur site fonctionne comme suit :
+
+* Le premier clic sur un élément sélectionne cet élément.
+* Le second clic sur un élément vous permet de modifier 
+  le texte au sein de cet élément.
+* Double-cliquer sur l'élément affiche le code source de 
+  cet élément.
+
+  Remarque : La sélection des tableaux dans Internet 
+  Explorer 5.0 est la même que celle employée dans 
+  Internet Explorer 4.01.
+
+  De plus, Internet Explorer 5.0 préserve mieux les 
+  espaces blancs qu'Internet Explorer 4.01 lorsque 
+  vous passez d'un affichage à un autre dans l'éditeur.
+
+Rubrique « Rubrique introuvable » (Microsoft Script Editor)
+-----------------------------------------------------------
+Vous n'avez pas besoin de la bibliothèque MSDN ou du 
+CD-ROM de la bibliothèque MSDN pour afficher les rubriques 
+d'aide de Microsoft Script Editor. Si vous rencontrez la 
+rubrique « Rubrique introuvable », essayez l'une des 
+actions suivantes : 
+
+* Réinstallez Microsoft Script Editor à partir du 
+  programme d'installation de Microsoft Office.
+* Insérez le CD-ROM Microsoft Office dans le lecteur 
+  de CD-ROM.
+
+« Impossible de définir la propriété » lors de la modification 
+de la propriété SourceContrôle (ControlSource) dans une page 
+d'accès aux données
+--------------------------------------------------------------
+Si votre page d'accès aux données comporte du code qui essaie 
+de changer la propriété SourceContrôle (ControlSource) d'un 
+contrôle, il se peut que le message suivant s'affiche :
+   Erreur d'exécution '26072' : Impossible de définir la 
+   propriété dans ce mode.
+Vous pouvez changer la propriété SourceContrôle (ControlSource) 
+avec du code fixe uniquement au moment du chargement de la page. 
+_________________________________________________________
+
+PROBLÈMES MULTILINGUES
+
+GÉNÉRALITÉS
+-----------
+
+La page de code de l'ordinateur client doit correspondre à 
+celle du serveur.
+----------------------------------------------------------
+Dans le cas d'applications internationales de SQL Server, des 
+problèmes inattendus peuvent survenir si la page de code 
+système des ordinateurs clients ne correspond pas au jeu de 
+caractères de Microsoft SQL Server sur le serveur. Sur le 
+client, la page de code système est le jeu de caractères 
+utilisé par la langue spécifiée pour le système 
+d'exploitation ; si vous exécutez Windows NT Workstation 4.0 
+ou Windows NT Server 4.0, ce jeu de caractères est défini 
+dans les paramètres régionaux. Sur le serveur, le jeu de 
+caractères est spécifié au moment de l'installation de 
+SQL Server. 
+
+Dans un projet Access (*.adp), les jeux de résultats contenant 
+des champs de texte ANSI ne s'affichent pas correctement si 
+la page de code système de l'ordinateur client ne correspond pas 
+au jeu de caractères du serveur SQL Server auquel le client est 
+connecté. Ce problème ne survient pas dans le cas de données 
+stockées au format Unicode sur le serveur. 
+ 
+Création de clés de registre pour appliquer provisoirement 
+une page de code lors d'une conversion
+----------------------------------------------------------
+Access utilise normalement la page de code du système 
+d'exploitation pour convertir les bases de données créées 
+dans des versions antérieures au format Access 2000. Si 
+vous convertissez une base de données Access dans laquelle 
+la page de code est différente de celle utilisée par le 
+système d'exploitation de votre ordinateur, créez une entrée 
+ForceCP dans le registre Windows.
+
+L'entrée de registre ForceCP applique temporairement la page 
+de code qui correspond à la langue que vous utilisez. La 
+page de code est le jeu de caractères utilisé par la langue 
+spécifiée dans les paramètres régionaux du système 
+d'exploitation. Il se peut que vous deviez créer une entrée 
+de registre ForceCP si vous ne disposez pas de la version 
+linguistique nécessaire du système d'exploitation ou si la 
+base de données est dans une langue dont l'ordre de tri n'était 
+pas pris en charge dans la version précédente d'Access. Par 
+exemple, les versions précédentes d'Access ne prenaient en 
+charge aucun ordre de tri pour le vietnamien, le farsi ou les 
+langues baltes (l'estonien, le letton ou le lituanien) ; 
+par conséquent, l'ordre de tri pour les bases de données créées 
+dans ces langues était Général. L'entrée de registre ForceCP 
+permet de convertir correctement les données de vos tables 
+créées dans une langue non occidentale. ATTENTION : l'entrée 
+de registre ForceCP affecte uniquement les tables et les 
+requêtes. Les caractères non occidentaux dans les formulaires, 
+les états, les macros et les modules risquent de ne pas être 
+correctement convertis si la page de code de la base de 
+données Access ne correspond pas à celle spécifiée par le 
+système d'exploitation. 
+
+Vous devez ajouter l'une des sous-clés complètes ci-dessous :
+
+	HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\4.0
+         \Engines\Jet3.x\ForceCP
+	HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\4.0
+         \Engines\Jet2.x\ForceCP
+
+Si vous convertissez une base de données créée dans  
+Access 95 ou ultérieur, créez la nouvelle valeur de chaîne dans 
+la sous-clé Jet3.x avec le nom ; si vous convertissez une base 
+de données créée dans Access 2.0 ou antérieur, créez la nouvelle 
+valeur de chaîne dans la sous-clé Jet2.x. Dans les deux cas, le 
+nom de l'entrée est ForceCP ; la valeur correspond au numéro de 
+la page de code que vous souhaitez utiliser. Par exemple, le 
+numéro de la page de code pour les langues baltes (Windows Baltic 
+Rim) est 1257.
+
+Pour que l'entrée de registre entre en vigueur, quittez 
+Access et redémarrez-le. Une fois que vous avez converti la base 
+de données Access, supprimez l'entrée de registre pour 
+qu'Access reprenne son fonctionnement normal.
+
+Pour plus d'informations sur la personnalisation des paramètres 
+du registre Windows pour Microsoft Jet, tapez PERSONNALISER LES 
+PARAMÈTRES DU REGISTRE WINDOWS dans le Compagnon Office ou sous 
+l'onglet Aide intuitive de la fenêtre Aide, puis cliquez sur 
+Rechercher.
+ 
+Les messages d'erreur ne s'affichent pas dans la langue 
+souhaitée lorsque le Language Pack est utilisé.
+-------------------------------------------------------
+Si vous utilisez le Language Pack Office 2000, il se peut 
+que les messages d'erreur ne s'affichent pas dans la langue 
+souhaitée. Pour remédier à ce problème, faites une copie de 
+sauvegarde de la version française des fichiers Msjint40.dll 
+et Mswstr10.dll situés dans le dossier \Windows\System. 
+Copiez ensuite les versions localisées des fichiers dans votre 
+dossier \Windows\System.
+
+Les versions localisées de ces fichiers sont disponibles sur le 
+CD-ROM du Language Pack dans le dossier suivant :	
+
+	\Extras\Jet\<langue>
+
+où <langue> est une abréviation de trois lettres correspondant 
+à la langue que vous utilisez.
+
+Les macros d'affectation de raccourcis du groupe de macros 
+AutoKeys ne fonctionnent plus.
+----------------------------------------------------------
+Si vous convertissez une base de données Access créée dans une 
+version allemande, espagnole, brésilienne ou portugaise 
+d'Access, il se peut que les macros d'affectation de raccourcis 
+du groupe de macros AutoKeys ne fonctionnent plus. Dans 
+Access 2000, vérifiez que le nom du groupe de macros AutoKeys 
+est bien AutoKeys (en anglais) pour activer les macros 
+d'affectation de raccourcis. Ces dernières fonctionneront alors 
+correctement quelle que soit la langue de votre version 
+d'Access 2000. 
+
+Message « La base de données 'msdb' ne peut pas être ouverte. »
+---------------------------------------------------------------
+Il se peut que ce message s'affiche lors de l'utilisation 
+d'utilitaires de base de données ou de fonctionnalités de 
+sécurité ou de réplication dans un projet Access connecté à 
+une base de données MSDE (Microsoft Data Engine). Ce message 
+peut s'afficher si vous avez sélectionné un jeu de caractères 
+autre que le jeu de caractères 1252/ISO par défaut dans la boîte 
+de dialogue Jeu de caractères/Ordre de tri/Classement Unicode 
+lors de l'installation de MSDE et que vous avez également 
+accepté les autres paramètres par défaut. L'identificateur 
+régional par défaut est Unicode général, et les cases à cocher 
+Respecter la casse, Ne pas respecter la largeur et 
+Ne pas respecter les caractères Kana sont activées 
+par défaut. 
+
+>>> Pour remédier au problème de la base de données msdb :
+
+1. Cliquez sur le bouton Démarrer, pointez sur Programmes, sur 
+   MSDE, puis cliquez sur Gestionnaire de services SQL Server.
+
+2. Arrêtez le service MSDE. 
+
+3. Cliquez sur le bouton Démarrer, pointez sur Programmes, puis 
+   cliquez sur Commandes MS-DOS.
+
+4. Passez au répertoire \Binn de MSDE ; par défaut, il s'agit 
+   de C:\MSSQL7\Binn.
+
+5. Tapez la chaîne suivante en respectant la casse :
+
+      sqlservr -c -T1806
+
+6. Répétez les étapes 3 et 4.
+
+7. Dans la deuxième fenêtre d'invite MS-DOS, tapez la chaîne 
+   suivante en respectant la casse :
+
+      osql -Usa -P
+      use msdb
+      checkpoint
+      go
+      shutdown
+      go
+
+   Notez que la commande checkpoint génère un message vous 
+   avertissant que l'ordre de tri de la base de données est 
+   différent de celui défini pour le serveur.
+
+8. Fermez les fenêtres d'invite MS-DOS, puis redémarrez le 
+   service MSDE.
+
+Impossible de se connecter en tant qu'administrateur lors de 
+la modification d'une chaîne de connexion de page
+------------------------------------------------------------
+Dans les versions d'Access dans une langue autre que l'anglais, 
+si vous essayez d'établir une connexion entre une base de 
+données et une page d'accès aux données, et que vous vous 
+connectez à la base de données sous le nom d'utilisateur 
+« Administrateur », le message « Compte ou mot de passe non 
+valide » s'affiche. Pour modifier la chaîne de connexion d'une 
+page d'accès aux données, utilisez le mot « Admin » pour vous 
+connecter.
+
+Versions dans une langue autre que l'anglais américain ou que 
+les langues d'Asie orientale : le projet SQL Les Comptoirs  
+n'apparaît pas dans l'interface utilisateur.
+-------------------------------------------------------------
+Dans les versions dans une langue autre que l'anglais américain 
+ou que les langues d'Asie orientale d'Access, le fichier de 
+projet SQL Les Comptoirs n'apparaît pas dans l'interface 
+utilisateur. Vous devez exécuter le programme d'installation 
+Office 2000 ou Access 2000, puis sélectionner l'option 
+« Exécuter à partir du disque dur » au lieu de l'option 
+« Installé lors de la première utilisation » comme paramètre 
+d'installation du fichier de projet SQL Les Comptoirs.
+
+Le lien hypertexte vers un objet de base de données ne 
+fonctionne pas lorsque le nom du type de l'objet est dans 
+la langue locale.
+---------------------------------------------------------
+Si vous cliquez sur un lien hypertexte dont la sous-adresse 
+spécifie un objet de base de données, il se peut qu'un message 
+indiquant qu'Access ne peut pas accéder au lien hypertexte 
+s'affiche. Ce problème survient si la chaîne du type d'objet 
+est dans la langue locale au lieu d'être en anglais. Par 
+exemple, le message suivant peut s'afficher si la sous-adresse 
+est « #ChaîneÉtatLocalisée<NomÉtat> » au lieu de la chaîne en 
+anglais « #Report <NomÉtat> ». Lorsque vous créez un lien 
+hypertexte qui pointe vers un objet de base de données, vous 
+pouvez empêcher ce message en cliquant sur Objet dans cette 
+base de données dans la boîte de dialogue Insérer un lien 
+hypertexte ou Modifier le lien hypertexte. Lorsque vous 
+sélectionnez un objet dans la liste des objets de la base 
+de données, Access crée automatiquement un lien hypertexte 
+dont la chaîne du type d'objet est en anglais.
+
+LANGUES DE DROITE À GAUCHE
+--------------------------
+
+Impression des langues de droite à gauche
+-----------------------------------------
+Certaines imprimantes requièrent des pilotes d'imprimante 
+mis à jour. Veuillez contacter le fabricant de votre 
+imprimante si vous rencontrez des problèmes d'impression.
+
+Limitations relatives au Générateur d'expression pour les 
+langues de droite à gauche
+----------------------------------------------------------
+Vous pouvez entrer et modifier des expressions directement 
+dans la fenêtre Propriétés des contrôles ou bien utiliser 
+le Générateur d'expression. Si vos expressions contiennent 
+du texte dans une langue de droite à gauche ainsi que dans 
+une langue latine, utilisez la fenêtre Propriétés. Si vous 
+utilisez le Générateur d'expression, les expressions en texte 
+mixte seront correctement transférées dans la fenêtre 
+Propriétés, mais il se peut que le texte mixte ne s'affiche 
+pas correctement.
+
+Calendrier de base de données Hijri dans les applications 
+exemples
+---------------------------------------------------------
+Les applications exemples telles que la base de données 
+Les Comptoirs sont conçues pour être utilisées avec un 
+calendrier de base de données grégorien. Étant donné que 
+l'application exemple contient des constantes de date 
+hard-codées qui ne sont pas des dates Hijri valides, il 
+est déconseillé d'exécuter l'application exemple en 
+définissant le calendrier Hijri comme calendrier de base 
+de données (Outils/Démarrage/Utiliser le calendrier Hijri).
+
+Restrictions relatives au masque d'entrée pour les langues 
+de droite à gauche
+----------------------------------------------------------
+Les masques d'entrée que vous créez pour la saisie de données 
+fonctionneront correctement uniquement si du texte et des 
+nombres latins sont entrés. Tout texte de droite à gauche 
+saisi dans un champ avec un masque d'entrée produira des 
+résultats incorrects.
+
+Prise en charge du calendrier Hijri dans les pages d'accès 
+aux données et les pages Web 
+----------------------------------------------------------
+Tous les contrôles liés aux données sur les pages d'accès 
+aux données et les pages Web peuvent afficher les valeurs 
+de date au format de calendrier grégorien. L'affichage 
+des dates au format de calendrier Hijri est également 
+possible si certains contrôles sont utilisés. 
+
+* Les contrôles Web Office (WebCalc, PivotList et WebChart) 
+  prennent en charge l'affichage des dates au format de 
+  calendrier Hijri. Le calendrier utilisé pour l'affichage 
+  des dates est déterminé par le paramètre Type de calendrier 
+  situé sous l'onglet Date de la boîte de dialogue Propriétés 
+  de Paramètres régionaux (accessible via le Panneau de 
+  configuration).
+
+* La plupart des autres contrôles utilisés pour la liaison 
+  des données, tels que les contrôles intrinsèques textbox 
+  (zone de texte) et label (étiquette) d'Internet Explorer 5, 
+  affichent les valeurs de date uniquement au format de 
+  calendrier grégorien.
+
+Affichage des données rédigées en arabe dans l'Assistant 
+Affichage de conflits de réplication Microsoft et les 
+Assistants d'importation/exportation
+--------------------------------------------------------
+Pour afficher correctement des informations exemples et 
+certaines autres données exprimées en arabe lors de l'exécution 
+de l'Assistant Affichage de conflits de réplication Microsoft 
+des Assistants d'importation/exportation, le paramètre régional 
+situé sous l'onglet Paramètres régionaux de la boîte de dialogue 
+Paramètres régionaux (accessible via le Panneau de configuration 
+Windows) doit être défini sur Arabe (Arabie Saoudite). 
+
+
+LANGUES ASIATIQUES
+------------------
+
+Problèmes d'affichage possibles lors de l'utilisation de
+plusieurs polices asiatiques
+---------------------------------------------------------
+Si vous installez plusieurs polices asiatiques sur 
+des versions non asiatiques du système d'exploitation 
+Microsoft Windows NT version 4.0, vous pouvez rencontrer
+des problèmes d'affichage, tels que du texte très large,
+du texte vide ou de grandes zones vides dans Access 2000 
+ou dans Windows NT. C'est un problème connu dans Windows NT 
+version 4.0 Service Pack 4 qui sera résolu dans une version 
+ultérieure du Service Pack pour Windows NT version 4.0.
+

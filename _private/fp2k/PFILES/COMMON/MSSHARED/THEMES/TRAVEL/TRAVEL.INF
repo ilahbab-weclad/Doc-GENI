@@ -1,0 +1,22 @@
+[info]
+title=Travel
+codepage=65001
+version=2.00
+format=2.00
+readonly=true
+
+[titles]
+1031 = Reise
+1036 = Voyages
+1040 = Viaggiare
+3082 = Viajemos
+1043 = Reizen
+1046 = Viagem
+1053 = Resor
+1044 = Reise
+1030 = Rejse
+1035 = Matkat
+1041 = トラベル
+1042 = 여행
+1028 = 旅行
+2052 = 旅游

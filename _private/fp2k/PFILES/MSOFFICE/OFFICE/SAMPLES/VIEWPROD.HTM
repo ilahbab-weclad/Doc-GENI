@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD W3 HTML//EN">
+<HTML xmlns:dt = uuid:C2F41010-65B3-11d1-A29F-00AA00C14882 xmlns:a = 
+urn:schemas-microsoft-com:office:access xmlns:x = 
+urn:schemas-microsoft-com:office:excel xmlns:o = 
+urn:schemas-microsoft-com:office:office><HEAD><TITLE>Descriptif des produits</TITLE>
+<META name="Version" content="2428" >
+<META name="Language Code" content="1036" >
+<META content=Access.Application name=ProgId>
+<META name=VBSForEventHandlers VALUE = TRUE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<STYLE id=MSODAPDEFAULTS type=text/css rel = stylesheet>.mstheme-label {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+TEXTAREA {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+.msoboundhtml {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+HR {
+	COLOR: black
+}
+SELECT {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+INPUT {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+BODY {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 10pt
+}
+MARQUEE {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+LEGEND {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+.msoHyperlinkDisplayText {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+BUTTON {
+	FONT-FAMILY: Tahoma; FONT-SIZE: 8pt
+}
+.MsoShowDesignGrid {
+	BEHAVIOR: url(#DEFAULT#MsoShowDesignGrid)
+}
+</STYLE>
+
+<OBJECT classid=CLSID:0002E530-0000-0000-C000-000000000046 id=MSODSC><PARAM NAME="XMLData" VALUE="<xml xmlns:a=&quot;urn:schemas-microsoft-com:office:access&quot;>&#13;&#10; <a:DataSourceControl>&#13;&#10;  <a:OWCVersion>9.0.0.2401</a:OWCVersion>&#13;&#10;  <a:ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=C:\Program Files\Microsoft Office\Office\Samples\Comptoir.mdb;Mode=Share Deny None;Persist Security Info=False;Jet OLEDB:System database=&amp;quot;&amp;quot;;Jet OLEDB:Database Password=&amp;quot;&amp;quot;</a:ConnectionString>&#13;&#10;  <a:MaxRecords>10000</a:MaxRecords>&#13;&#10;  <a:GridX>24</a:GridX>&#13;&#10;  <a:GridY>24</a:GridY>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>ProductsNavigation</a:ElementID>&#13;&#10;   <a:ConsumesRecordset/>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>ProductId</a:ElementID>&#13;&#10;   <a:ControlSource>Réf produit</a:ControlSource>&#13;&#10;   <a:ChildLabel>ProductID_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>SupplierID</a:ElementID>&#13;&#10;   <a:ControlSource>N° fournisseur</a:ControlSource>&#13;&#10;   <a:ListRowSource>Fournisseurs</a:ListRowSource>&#13;&#10;   <a:ListBoundField>N° fournisseur1</a:ListBoundField>&#13;&#10;   <a:ListDisplayField>Société</a:ListDisplayField>&#13;&#10;   <a:ChildLabel>SupplierID_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>CategoryID</a:ElementID>&#13;&#10;   <a:ControlSource>Code catégorie</a:ControlSource>&#13;&#10;   <a:ListRowSource>Catégories</a:ListRowSource>&#13;&#10;   <a:ListBoundField>Code catégorie1</a:ListBoundField>&#13;&#10;   <a:ListDisplayField>Nom de catégorie</a:ListDisplayField>&#13;&#10;   <a:ChildLabel>CategoryID_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>QuantityPerUnit</a:ElementID>&#13;&#10;   <a:ControlSource>Quantité par unité</a:ControlSource>&#13;&#10;   <a:ChildLabel>QuantityPerUnit_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>UnitPrice</a:ElementID>&#13;&#10;   <a:ControlSource>Prix unitaire</a:ControlSource>&#13;&#10;   <a:ChildLabel>UnitPrice_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Discontinued</a:ElementID>&#13;&#10;   <a:ControlSource>Indisponible</a:ControlSource>&#13;&#10;   <a:ChildLabel>Discontinued_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>UnitsInStock</a:ElementID>&#13;&#10;   <a:ControlSource>Unités en stock</a:ControlSource>&#13;&#10;   <a:ChildLabel>UnitsInStock_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>UnitsOnOrder</a:ElementID>&#13;&#10;   <a:ControlSource>Unités commandées</a:ControlSource>&#13;&#10;   <a:ChildLabel>UnitsOnOrder_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>ReorderLevel</a:ElementID>&#13;&#10;   <a:ControlSource>Niveau de réapprovisionnement</a:ControlSource>&#13;&#10;   <a:ChildLabel>ReorderLevel_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>ProductName</a:ElementID>&#13;&#10;   <a:ControlSource>Nom du produit</a:ControlSource>&#13;&#10;   <a:ChildLabel>ProductName_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:GroupLevel>&#13;&#10;   <a:RecordSource>Produits</a:RecordSource>&#13;&#10;   <a:DefaultSort></a:DefaultSort>&#13;&#10;   <a:HeaderElementId>HeaderProducts</a:HeaderElementId>&#13;&#10;   <a:FooterElementId></a:FooterElementId>&#13;&#10;   <a:CaptionElementId></a:CaptionElementId>&#13;&#10;   <a:RecordNavigationElementId>NavigationSectionProducts</a:RecordNavigationElementId>&#13;&#10;   <a:DataPageSize>1</a:DataPageSize>&#13;&#10;  </a:GroupLevel>&#13;&#10;  <a:Datamodel version=&quot;0816&quot;>&#13;&#10;   <a:SchemaRowsource id=&quot;Catégories&quot; type=&quot;dscTable&quot;>&#13;&#10;    <a:SchemaField id=&quot;Code catégorie&quot; datatype=&quot;3&quot; size=&quot;0&quot; iskey=&quot;1&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Nom de catégorie&quot; datatype=&quot;130&quot; size=&quot;25&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Description&quot; datatype=&quot;203&quot; size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Illustration&quot; datatype=&quot;205&quot; size=&quot;0&quot;/>&#13;&#10;   </a:SchemaRowsource>&#13;&#10;   <a:SchemaRowsource id=&quot;Fournisseurs&quot; type=&quot;dscTable&quot;>&#13;&#10;    <a:SchemaField id=&quot;N° fournisseur&quot; datatype=&quot;3&quot; size=&quot;0&quot; iskey=&quot;1&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Société&quot; datatype=&quot;130&quot; size=&quot;40&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Contact&quot; datatype=&quot;130&quot; size=&quot;30&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Fonction&quot; datatype=&quot;130&quot; size=&quot;40&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Adresse&quot; datatype=&quot;130&quot; size=&quot;60&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Ville&quot; datatype=&quot;130&quot; size=&quot;15&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Région&quot; datatype=&quot;130&quot; size=&quot;15&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Code postal&quot; datatype=&quot;130&quot; size=&quot;10&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Pays&quot; datatype=&quot;130&quot; size=&quot;15&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Téléphone&quot; datatype=&quot;130&quot; size=&quot;24&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Fax&quot; datatype=&quot;130&quot; size=&quot;24&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Page d'accueil&quot; datatype=&quot;203&quot; size=&quot;0&quot;/>&#13;&#10;   </a:SchemaRowsource>&#13;&#10;   <a:SchemaRowsource id=&quot;Produits&quot; type=&quot;dscTable&quot;>&#13;&#10;    <a:SchemaField id=&quot;Réf produit&quot; datatype=&quot;3&quot; size=&quot;0&quot; iskey=&quot;1&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Nom du produit&quot; datatype=&quot;130&quot; size=&quot;40&quot;/>&#13;&#10;    <a:SchemaField id=&quot;N° fournisseur&quot; datatype=&quot;3&quot; size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Code catégorie&quot; datatype=&quot;3&quot; size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Quantité par unité&quot; datatype=&quot;130&quot; size=&quot;30&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Prix unitaire&quot; datatype=&quot;6&quot; size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Unités en stock&quot; datatype=&quot;2&quot; size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Unités commandées&quot; datatype=&quot;2&quot; size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Niveau de réapprovisionnement&quot; datatype=&quot;2&quot; size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField id=&quot;Indisponible&quot; datatype=&quot;11&quot; size=&quot;2&quot;/>&#13;&#10;   </a:SchemaRowsource>&#13;&#10;   <a:RecordsetDef id=&quot;Produits&quot; uniquetable=&quot;Produits&quot;>&#13;&#10;    <a:PageField id=&quot;Réf produit&quot;/>&#13;&#10;    <a:PageField id=&quot;N° fournisseur&quot;/>&#13;&#10;    <a:PageField id=&quot;Code catégorie&quot;/>&#13;&#10;    <a:PageField id=&quot;Quantité par unité&quot;/>&#13;&#10;    <a:PageField id=&quot;Prix unitaire&quot;/>&#13;&#10;    <a:PageField id=&quot;Indisponible&quot;/>&#13;&#10;    <a:PageField id=&quot;Unités en stock&quot;/>&#13;&#10;    <a:PageField id=&quot;Unités commandées&quot;/>&#13;&#10;    <a:PageField id=&quot;Niveau de réapprovisionnement&quot;/>&#13;&#10;    <a:PageField id=&quot;Nom du produit&quot;/>&#13;&#10;   </a:RecordsetDef>&#13;&#10;   <a:RecordsetDef id=&quot;Fournisseurs&quot; uniquetable=&quot;Fournisseurs&quot;>&#13;&#10;    <a:PageField id=&quot;N° fournisseur1&quot; source=&quot;N° fournisseur&quot;/>&#13;&#10;    <a:PageField id=&quot;Société&quot;/>&#13;&#10;   </a:RecordsetDef>&#13;&#10;   <a:RecordsetDef id=&quot;Catégories&quot; uniquetable=&quot;Catégories&quot;>&#13;&#10;    <a:PageField id=&quot;Code catégorie1&quot; source=&quot;Code catégorie&quot;/>&#13;&#10;    <a:PageField id=&quot;Nom de catégorie&quot;/>&#13;&#10;   </a:RecordsetDef>&#13;&#10;  </a:Datamodel>&#13;&#10; </a:DataSourceControl>&#13;&#10;</xml>'&quot;"></OBJECT>
+<META content='"MSHTML 5.00.1011.300"' name=GENERATOR><LINK 
+href="./Descriptif%20des%20produits_fichiers/filelist.xml" rel=File-List 
+type=text/xml></HEAD>
+<BODY bottomMargin=48 leftMargin=24 link=#800080 rightMargin=24 
+style="CURSOR: auto" topMargin=24 vLink=#800080>
+<CENTER>
+<H1 id=HeadingText style="FONT-WEIGHT: normal"><FONT 
+color=#000080>Produits</FONT></H1></CENTER>
+<P class=MSOTITLE id=BeforeBodyText><FONT color=#000080>Entrez ou affichez les 
+informations sur les produits. Pour plus d'informations, cliquez sur le bouton 
+d'Aide dans la barre d'outils des pages d'accès aux données.</FONT> &nbsp;</P>
+<DIV class=MicrosoftAccessBanner id=HeaderProductsBanner 
+style="BACKGROUND-COLOR: buttonface; BORDER-BOTTOM: buttonhighlight 2px outset; BORDER-LEFT: buttonhighlight 2px outset; BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; DISPLAY: none; FONT-FAMILY: Tahoma; FONT-SIZE: 8pt; FONT-WEIGHT: normal; HEIGHT: 0.2in; WIDTH: 625px">En-tête&nbsp;: 
+Produits</DIV>
+<DIV class=MSOShowDesignGrid id=HeaderProducts 
+style="BACKGROUND-COLOR: transparent; HEIGHT: 245px; POSITION: relative; VISIBILITY: hidden; WIDTH: 625px">
+<SPAN class=MSTheme-Label id=ProductID_Label 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 0.167in; LEFT: 0.208in; OVERFLOW: visible; POSITION: absolute; TEXT-ALIGN: right; TOP: 0.083in; WIDTH: 1.25in; Z-INDEX: 104" 
+title="Réf produit">Réf produit</SPAN><TEXTAREA id=ProductID readOnly style="BACKGROUND-COLOR: transparent; BORDER-BOTTOM-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; HEIGHT: 0.187in; LEFT: 1.51in; OVERFLOW: hidden; POSITION: absolute; TEXT-ALIGN: left; TOP: 0.083in; WIDTH: 1in; Z-INDEX: 105" tabIndex=1 title="Réf produit"></TEXTAREA> 
+
+<SPAN class=MSTheme-Label id=SupplierID_Label 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 0.167in; LEFT: 0.208in; OVERFLOW: visible; POSITION: absolute; TEXT-ALIGN: right; TOP: 0.583in; WIDTH: 1.25in; Z-INDEX: 106" 
+title="N° fournisseur">Fournisseur</SPAN><SELECT id=SupplierID 
+style="HEIGHT: 19px; LEFT: 144px; POSITION: absolute; TOP: 56px; WIDTH: 266px; Z-INDEX: 107" 
+tabIndex=3 title="N° fournisseur"><OPTION selected></OPTION></SELECT> 
+<SPAN class=MSTheme-Label id=CategoryID_Label 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 0.167in; LEFT: 0.208in; OVERFLOW: visible; POSITION: absolute; TEXT-ALIGN: right; TOP: 0.854in; WIDTH: 1.25in; Z-INDEX: 108" 
+title="Code catégorie">Catégorie</SPAN><SELECT id=CategoryID 
+style="HEIGHT: 19px; LEFT: 144px; POSITION: absolute; TOP: 82px; WIDTH: 188px; Z-INDEX: 109" 
+tabIndex=4 title="Code catégorie"><OPTION selected></OPTION></SELECT> 
+<SPAN class=MSTheme-Label id=QuantityPerUnit_Label 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 16px; LEFT: 0.208in; OVERFLOW: visible; POSITION: absolute; TEXT-ALIGN: right; TOP: 108px; WIDTH: 1.25in; Z-INDEX: 110" 
+title="Quantité par unité">Quantité par unité</SPAN><TEXTAREA id=QuantityPerUnit style="HEIGHT: 18px; LEFT: 144px; OVERFLOW: hidden; POSITION: absolute; TOP: 108px; WIDTH: 266px; Z-INDEX: 111" tabIndex=5 title="Quantité par unité"></TEXTAREA> 
+
+<SPAN class=MSTheme-Label id=UnitPrice_Label 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 0.167in; LEFT: 0.208in; OVERFLOW: visible; POSITION: absolute; TEXT-ALIGN: right; TOP: 1.385in; WIDTH: 1.25in; Z-INDEX: 112" 
+title="Prix unitaire">Prix unitaire&nbsp; </SPAN><TEXTAREA id=UnitPrice style="HEIGHT: 0.187in; LEFT: 1.5in; OVERFLOW: hidden; POSITION: absolute; TOP: 1.385in; WIDTH: 1in; Z-INDEX: 113" tabIndex=6 title="Prix unitaire"></TEXTAREA><INPUT 
+id=Discontinued 
+style="HEIGHT: 0.166in; LEFT: 4.104in; POSITION: absolute; TEXT-ALIGN: right; TOP: 1.75in; WIDTH: 0.18in; Z-INDEX: 114" 
+tabIndex=10 title=Indisponible type=checkbox> 
+<SPAN class=MSTheme-Label id=Discontinued_Label 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 0.166in; LEFT: 2.552in; OVERFLOW: visible; POSITION: absolute; TEXT-ALIGN: right; TOP: 1.75in; WIDTH: 1.55in; Z-INDEX: 115" 
+title=Indisponible>Indisponible</SPAN> 
+<SPAN class=MSTheme-Label id=UnitsInStock_Label 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 0.167in; LEFT: 0.208in; OVERFLOW: visible; POSITION: absolute; TEXT-ALIGN: right; TOP: 1.75in; WIDTH: 1.25in; Z-INDEX: 116" 
+title="Unités en stock">Unités en stock</SPAN><TEXTAREA id=UnitsInStock style="HEIGHT: 0.187in; LEFT: 1.5in; OVERFLOW: hidden; POSITION: absolute; TOP: 1.75in; WIDTH: 1in; Z-INDEX: 117" tabIndex=7 title="Unités en stock"></TEXTAREA> 
+
+<SPAN class=MSTheme-Label id=UnitsOnOrder_Label 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 0.167in; LEFT: 0.208in; OVERFLOW: visible; POSITION: absolute; TEXT-ALIGN: right; TOP: 2in; WIDTH: 1.25in; Z-INDEX: 118" 
+title="Unités commandées">Unités commandées</SPAN><TEXTAREA id=UnitsOnOrder style="HEIGHT: 0.187in; LEFT: 1.5in; OVERFLOW: hidden; POSITION: absolute; TOP: 2in; WIDTH: 1in; Z-INDEX: 119" tabIndex=8 title="Unités commandées"></TEXTAREA> 
+
+<SPAN class=MSTheme-Label id=ReorderLevel_Label 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 26px; LEFT: 21px; OVERFLOW: visible; POSITION: absolute; TEXT-ALIGN: right; TOP: 216px; WIDTH: 183px; Z-INDEX: 120" 
+title="Niveau de réapprovisionnement">Niveau de réapprovisionnement</SPAN><TEXTAREA id=ReorderLevel style="HEIGHT: 0.187in; LEFT: 2.177in; OVERFLOW: hidden; POSITION: absolute; TOP: 2.25in; WIDTH: 1in; Z-INDEX: 121" tabIndex=9 title="Niveau de réapprovisionnement"></TEXTAREA> 
+
+<SPAN class=MicrosoftAccessRectangle id=Box2 
+style="BACKGROUND-COLOR: #008080; BORDER-BOTTOM: #008080 1px solid; BORDER-LEFT: #000080 1px solid; BORDER-RIGHT: #008080 1px solid; BORDER-TOP: #008080 1px solid; HEIGHT: 244px; LEFT: 0px; OVERFLOW: hidden; POSITION: absolute; TOP: 0px; WIDTH: 496px; Z-INDEX: 101"></SPAN>
+<SPAN class=MSTheme-Label id=ProductName_Label 
+style="COLOR: #000080; FONT-WEIGHT: 700; HEIGHT: 0.167in; LEFT: 0.208in; OVERFLOW: visible; POSITION: absolute; TEXT-ALIGN: right; TOP: 0.333in; WIDTH: 1.25in; Z-INDEX: 102" 
+title="Nom du produit">Nom du produit</SPAN><TEXTAREA id=ProductName style="HEIGHT: 18px; LEFT: 144px; OVERFLOW: hidden; POSITION: absolute; TOP: 32px; WIDTH: 266px; Z-INDEX: 103" tabIndex=2 title="Nom du produit"></TEXTAREA> 
+
+<HR id=Line0 
+style="BACKGROUND-COLOR: #000080; BORDER-BOTTOM-COLOR: #000080; BORDER-BOTTOM-WIDTH: 0pt; BORDER-LEFT-COLOR: #000080; BORDER-LEFT-WIDTH: 0pt; BORDER-RIGHT-COLOR: #000080; BORDER-RIGHT-WIDTH: 0pt; BORDER-TOP-COLOR: #000080; BORDER-TOP-WIDTH: 0pt; COLOR: #000080; HEIGHT: 1px; LEFT: 23px; POSITION: absolute; TOP: 160px; WIDTH: 391px; Z-INDEX: 122" 
+Line0>
+</DIV>
+<DIV class=MicrosoftAccessBanner id=NavigationSectionProductsBanner 
+style="BACKGROUND-COLOR: buttonface; BORDER-BOTTOM: buttonhighlight 2px outset; BORDER-LEFT: buttonhighlight 2px outset; BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; DISPLAY: none; FONT-FAMILY: Tahoma; FONT-SIZE: 8pt; FONT-WEIGHT: normal; HEIGHT: 0.2in; WIDTH: 625px">Section 
+de déplacement&nbsp;: Produits</DIV>
+<DIV class=MSOShowDesignGrid id=NavigationSectionProducts 
+style="BACKGROUND-COLOR: transparent; HEIGHT: 38px; POSITION: relative; VISIBILITY: hidden; WIDTH: 625px; Z-INDEX: 1">
+<OBJECT classid=CLSID:0002E531-0000-0000-C000-000000000046 id=ProductsNavigation 
+style="HEIGHT: 24px; LEFT: 12px; POSITION: absolute; TOP: 11px; WIDTH: 432px"><PARAM NAME="RecordSource" VALUE="Produits"><PARAM NAME="RecordsetLabel" VALUE="Produits |0 sur |2;Produits |0-|1 sur |2"><PARAM NAME="ShowFirstButton" VALUE="-1"><PARAM NAME="ShowPrevButton" VALUE="-1"><PARAM NAME="ShowNextButton" VALUE="-1"><PARAM NAME="ShowLastButton" VALUE="-1"><PARAM NAME="ShowNewButton" VALUE="-1"><PARAM NAME="ShowDelButton" VALUE="-1"><PARAM NAME="ShowSaveButton" VALUE="-1"><PARAM NAME="ShowUndoButton" VALUE="-1"><PARAM NAME="ShowSortAscendingButton" VALUE="-1"><PARAM NAME="ShowSortDecendingButton" VALUE="-1"><PARAM NAME="ShowApplyFilterButton" VALUE="-1"><PARAM NAME="ShowToggleFilterButton" VALUE="-1"><PARAM NAME="ShowHelpButton" VALUE="-1"><PARAM NAME="ShowLabel" VALUE="-1"><PARAM NAME="FontName" VALUE="Tahoma"></OBJECT></DIV>
+<P>&nbsp;</P></BODY></HTML>

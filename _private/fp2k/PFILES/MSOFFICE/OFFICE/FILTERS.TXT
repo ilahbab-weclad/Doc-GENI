@@ -1,0 +1,70 @@
+INFORMATIONS SUR LES FILTRES POUR LE COURRIER INDÉSIRABLE
+
+Les filtres pour le courrier commercial ou le courrier avec contenu pour adultes fonctionnent en recherchant des mots-clés. 
+Dans ce fichier figurent les mots-clés recherchés par les filtres et les champs dans lesquels les filtres effectuent la recherche.
+
+Filtre pour le courrier indésirable:
+
+De est vide
+Objet contient "advertisement"
+Corps contient "money back "
+Corps contient "cards accepted"
+Corps contient "removal instructions"
+Corps contient "extra income"
+Objet contient "!" ET Objet contient "$"
+Objet contient "!" ET Objet contient "free"
+Corps contient ",000" ET Corps contient "!!" ET Corps contient "$"
+Corps contient "Dear friend"
+Corps contient "for free?"
+Corps contient "for free!"
+Corps contient "Guarantee" ET (Corps contient "satisfaction" OR Corps contient "absolute")
+Corps contient "more info " ET Corps contient "visit " ET Corps contient "$"
+Corps contient "SPECIAL PROMOTION"
+Corps contient "one-time mail"
+Objet contient "$$"
+Corps contient "$$$"
+Corps contient "order today"
+Corps contient "order now!"
+Corps contient "money-back guarantee"
+Corps contient "100% satisfied"
+À contient "friend@"
+À contient "public@"
+À contient "success@"
+De contient "sales@"
+De contient "success."
+De contient "success@"
+De contient "mail@"
+De contient "@public"
+De contient "@savvy"
+De contient "profits@"
+De contient "hello@"
+Corps contient " mlm"
+Corps contient "@mlm"
+Corps contient "///////////////"
+Corps contient "check or money order"
+
+
+Filtre pour le contenu pour adultes:
+
+Objet contient " xxx"
+Objet contient "over 18"
+Objet contient "over 21"
+Objet contient "adult s"
+Objet contient "adults only"
+Objet contient "be 18"
+Objet contient "18+"
+Corps contient "over 18"
+Corps contient "over 21"
+Corps contient "must be 18"
+Corps contient "adults only"
+Corps contient "adult web"
+Corps contient "must be 21"
+Corps contient "adult en"
+Corps contient "18+"
+Objet contient "erotic"
+Objet contient "adult en"
+Objet contient " sex"
+Corps contient " xxx "
+Corps contient " xxx!"
+Objet contient "free" ET Objet contient "adult"
+Objet contient "free" ET Objet contient "sex"

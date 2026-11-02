@@ -1,0 +1,22 @@
+[info]
+title=Leaves
+codepage=65001
+version=2.00
+format=2.00
+readonly=true
+
+[titles]
+1031 = Blätter
+1036 = Feuillage
+1040 = Foglie
+3082 = Hojas
+1043 = Bladeren
+1046 = Folhas
+1053 = Löv
+1044 = Løv
+1030 = Blade
+1035 = Lehvät
+1041 = 木の葉
+1042 = 단풍잎
+1028 = 樹葉
+2052 = 树叶

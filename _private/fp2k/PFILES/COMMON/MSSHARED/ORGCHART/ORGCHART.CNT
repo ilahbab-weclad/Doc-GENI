@@ -1,0 +1,95 @@
+:Base Orgchart.hlp
+:Title Microsoft Organisation Chart
+:Index Microsoft Organization Chart Help=ORGCHART.HLP
+1 Microsoft Organigramme hiérarchique
+2 Création et mise à jour des organigrammes
+3 Fonctionnalités de base des organigrammes
+4 Création d'un nouveau diagramme=creating_new_chart
+4 Ouverture et fermeture d'un diagramme=opening_closing_charts
+4 Enregistrement d'un diagramme=saving_chart
+4 Autres fonctionnalités des organigrammes
+5 Informations sur un diagramme=getting_info_chart
+5 Economie d'espace=summary_space_saving
+5 Déplacement d'un diagramme tout entier=moving_entire_chart
+3 Utilisation des boîtes et des traits
+4 Sélection des boîtes et des traits=selecting_boxes_lines
+4 Création et suppression des boîtes=creating_deleting_boxes
+4 Mise en forme des boîtes et des traits
+5 Modification du contour des boîtes=changing_box_borders
+5 Création d'ombres portées sur les boîtes=creating_box_shadows
+5 Modification de la couleur des boîtes=changing_box_colors
+5 Modification de l'épaisseur du trait=changing_line_thickness
+5 Modification du style du trait=changing_line_styles
+5 Modification de la couleur du trait=changing_line_colors
+4 Copie du format d'une boîte=copying_label_setup
+4 Déplacement de boîtes
+5 Déplacement de boîtes par Couper-coller=moving_by_cutting_pasting
+5 Déplacement de boîtes entre diagrammes=moving_between_charts
+4 Réorganisation des boîtes=rearranging_boxes
+3 Autres opérations sur les boîtes et les traits
+4 Création de boîtes et de traits personnalisés=creating_custom_boxes
+3 Utilisation de texte
+4 Introduction et modification de texte
+5 Frappe de texte dans une boîte=entering_text_boxes
+5 Modification du texte d'une boîte=editing_text_boxes
+5 Création de texte sur l'arrière-plan de l'organigramme
+6 Frappe de texte dans l'arrière-plan=entering_bg_text
+6 Redimensionnement du texte de l'arrière-plan=resizing_bg_text
+6 Dessin de boîtes autour du texte de l'arrière-plan=drawing_boxes_bg
+5 Création du titre du diagramme=creating_chart_titles
+4 Mise en forme de texte
+5 Modification des caractéristiques du texte (polices, taille, etc.)
+6 Modification des polices de caractères du texte=changing_text_fonts
+6 Modification de la taille du texte=changing_text_size
+6 Modification de la couleur du texte=changing_text_color
+6 Modification du style du texte (gras, italique, etc.)=changing_text_styles
+5 Alignement du texte=aligning_text
+3 Utilisation d'image
+4 Insertion d'images à l'arrière-plan du diagramme=placing_pictures_chart_bg
+4 Redimensionnement des images=resizing_pictures
+2 Icônes et commandes de menus
+3 Menu Fichier=file_menu
+3 Menu Edition=edit_menu
+3 Menu Affichage=view_menu
+3 Menu Styles=styles_menu
+3 Menu Texte=text_menu
+3 Menu Boîtes=boxes_menu
+3 Menu Traits=lines_menu
+3 Menu Diagramme=chart_menu
+3 Menu Fenêtre=window_menu
+3 Menu Aide=help_menu
+3 La barre des icônes=icon_bar
+2 Souris et clavier
+3 Utilisation du clavier
+4 Touches d'activation des menus=menu_keys
+4 Touches des boîtes de dialogue=dialog_box_keys
+4 Touches de sélection=selection_keys
+4 Touches de création des boîtes=box_creation_keys
+4 Touches de modification=editing_keys
+4 Touches de déplacement=movement_keys
+3 Utilisation de la souris
+4 Sélection des boîtes et des traits=selecting_boxes_lines
+4 Sélection et modification du texte=selecting_editing_text
+4 Sélection des outils=selecting_tools
+2 Personnalisation d'un organigramme hiérarchique
+3 Modification des options=changing_preset_options
+3 Gain de temps
+4 Utilisation des touches de raccourci=use_keyboard_shorts
+4 Utilisation de l'outil Réduction/agrandissement=use_reduce_enlarge
+4 Diminution du temps de mise en forme=minimize_form_time
+2 Importation et exportation
+3 Ouverture de fichiers Org Plus pour DOS et de fichiers Org Plus pour Windows=opening_dos_files
+3 Ouverture de fichiers Org Plus pour Macintosh=opening_mac_files
+3 Enregistrement sous forme de fichiers Org Plus=saving_dos_files
+3 Copie d'un diagramme dans d'autres applications=copying_chart
+2 Liaison et incorporation d'objets
+3 Microsoft Organigramme hiérarchique et OLE
+3 Liaison ou incorporation : Que choisir ?=object_link_vs_embed
+3 Incorporation d'un diagramme=embedding_chart
+3 Modification d'un diagramme incorporé=editing_embedded_chart
+3 Liaison d'un diagramme=linking_chart
+3 Utilisation de la commande Collage spécial=using_paste_special
+3 Modification d'un diagramme lié=editing_linked_chart
+3 Maintenance des liens=maintaining_links
+3 Problèmes courants=common_problems
+2 Création d'organigrammes aux fonctionnalités optimales=org_chart_ad

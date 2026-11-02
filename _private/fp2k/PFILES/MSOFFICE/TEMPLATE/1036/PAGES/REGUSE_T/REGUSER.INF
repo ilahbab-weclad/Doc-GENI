@@ -1,0 +1,6 @@
+; Localized	03/02/1999 04:46  (GMT)	7:4.1.211 	reguser.inp
+
+
+[info]
+title=Inscription des utilisateurs
+description=Crée une page où les utilisateurs peuvent s'inscrire sur un site Web particulier, contribuant ainsi à sa protection. Utilisable uniquement sur le site Web racine ('/').

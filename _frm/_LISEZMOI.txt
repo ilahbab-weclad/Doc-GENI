@@ -1,0 +1,27 @@
+Pré-requis :
+1) Travailler au CREDO
+2) Double cliquer sur _fmx_ouvrir_avec.reg  pour associer les extensions .fmx avec le programme adéquat.
+
+---------------------------------------------------------
+Ces outils ne fonctionnent que depuis le credo.
+---------------------------------------------------------
+
+RS_JPK.fmx				  Interface appelant les programmes ci-dessous	
+RS_JPK.mmx				  menu de l'interface appelant les programmes ci-dessous	
+
+jpk_cdu_ch_0.fmx          Suivi du statut des commandes usines
+recherche_dt.fmx          Recherche d'un numéro de DT ou de SG (liste des articles créés uniquement)
+recherche_dt_sg.fmx       Recherche d'un article / numéro de SG (intégration de saisie graphique)
+jpk_poids_alu.fmx         Poids du stock alu / tol à l'instant T - choix du magasin possible
+jpk_artstr.fmx            Recherche d'un code article avec une référence fournisseur
+MEB.fmx                   Calcul des coefficients à saisir dans les fiches de nomenclature
+jpk_cde_four_prix_0.fmx   Lignes de commande fournisseur sans prix (attention les commande 90... et 92... sont exclues)
+cde_agence.fmx            Permet de retrouver à partir d'un numéro de commande agence : les commandes achat, usine, lancement de fab et livraisons usine. (pré-requis : le numéro de commande agence doit être dans le commentaire de la commande achats)
+article_utilise_dans.fmx  Permet de trouver dans quel module est utilisé un article.
+
+---------------------------------------------------------
+Pour plus d'info ou pour signaler tout disfonctionnement,
+contactez Jean-Pierre KUNTZ - jp.kuntz@rinaldi-structal.com
+
+
+Si les écrans ne fonctionnent pas, ajouter au path : \\Rs_credo_or\Doc_GENI\_frm\

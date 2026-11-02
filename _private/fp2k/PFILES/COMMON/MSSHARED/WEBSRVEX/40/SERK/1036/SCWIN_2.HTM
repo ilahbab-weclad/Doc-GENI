@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Méthodes d'authentification IIS</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+
+	<TR>
+		<TD BGCOLOR="#000000"><IMG SRC="home.gif" WIDTH=103 HEIGHT=21
+ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH="100%"><IMG 
+SRC="1ptrans.gif" WIDTH=1 
+HEIGHT=1 ALT="" BORDER=0></TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+<FONT FACE="Arial, Helvetica" SIZE=1><A HREF="http://www.microsoft.com/france" TARGET="_top"><IMG 
+SRC="msft.gif" WIDTH=91 
+HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+	
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+	
+	<!--WEB SITE TITLE AND LOGO START HERE-->
+
+	<TR>
+		<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+    	<TD width="20" nowrap></TD>
+		<TD colspan="2" nowrap bgcolor="#666699" valign="middle" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+		
+		<!--WEB SITE TITLE AND LOGO END HERE-->
+		
+		<!--TOPIC TITLE AND BODY TEXT CELL START HERE-->
+		
+		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous Windows&nbsp;NT</font></b></font>
+
+<HR>
+
+			<A NAME="iisauthenticationmethods"></A><P><A HREF="scwin_1.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;2 sur 9&nbsp;</sup></b></font><A HREF="scwin_3.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;Méthodes d'authentification IIS</FONT>  <p><A NAME="scwinnt.doc-1028"></A>Tous les utilisateurs doivent être authentifiés avant de pouvoir accéder aux ressources d'IIS. IIS prend en charge l'authentification anonyme, l'authentification de base, l'authentification Stimulation/Réponse de Windows&nbsp;NT et l'authentification DAA (Digest Access Authentication).</p>
+
+			<H4>Authentification anonyme</H4>
+
+			<p><A NAME="scwinnt.doc-1029"></A>L'authentification anonyme accorde l'accès aux utilisateurs qui n'ont pas de compte propre sur l'ordinateur hôte, par l'intermédiaire d'un compte «&nbsp;anonyme&nbsp;» spécial. Chaque service Internet, comme le World Wide Web ou FTP, utilise un compte Windows&nbsp;NT (un nom d'utilisateur et un mot de passe) pour traiter les requêtes anonymes. Internet Information Services crée le compte anonyme IUSR_<I>nommachine</I> pour les services Web pendant sa configuration. Par défaut, toutes les requêtes clientes Web utilisent ce compte, qui permet aussi aux clients d'accéder au contenu du site Web. Vous pouvez activer simultanément l'ouverture de session anonyme et l'accès par authentification.</p>
+
+			<p>Quand IIS reçoit une requête anonyme, il emprunte l'identité du compte d'ouverture de session anonyme. La requête aboutit si le compte anonyme est autorisé à accéder à la ressource demandée (les autorisations du compte sont déterminées par l'ACL de la ressource). Si le compte anonyme ne possède pas l'autorisation appropriée, la requête n'aboutit pas. Le service&nbsp;WWW demande alors à l'utilisateur de fournir un nom d'utilisateur et un mot de passe Windows&nbsp;NT valides.</p>
+
+			<H4>Authentification de base</H4>
+
+			<p><A NAME="scwinnt.doc-1031"></A>L'authentification de base est prise en charge par la plupart des serveurs Web d'Internet. Quand un serveur utilise cette méthode, le navigateur Web (ou le client FrontPage) demande à l'utilisateur un nom d'utilisateur et un mot de passe, informations qui sont transmises en clair via HTTP et permettent à IIS d'authentifier l'utilisateur Windows&nbsp;NT correspondant.</p>
+
+			<p>Avec l'authentification de base, l'utilisateur est toujours connecté avec des droits de connexion en local, ce qui est similaire à une ouverture de session interactive sur la console de l'ordinateur. (Pour utiliser l'authentification de base, accordez à chaque compte d'utilisateur le droit d'accès Se connecter en local sur le serveur&nbsp;IIS.) L'utilisation de la connexion en local par l'authentification de base peut être à l'origine de deux problèmes dont les administrateurs doivent être conscients&nbsp;: 
+
+				<UL>
+					<LI class=LB1>L'authentification de base n'aboutira pas si le compte d'utilisateur ne dispose pas de droits de connexion en local. Même si la configuration de FrontPage, d'IIS et de Windows&nbsp;NT semble correcte, l'utilisateur ne pourra pas être authentifié si les droits de connexion en local ne lui ont pas été accordés dans le gestionnaire d'utilisateurs de Windows&nbsp;NT.
+
+					<LI class=LB1>Avec la connexion en local, si un utilisateur est autorisé à accéder physiquement à l'ordinateur hôte qui exécute IIS, il pourra lancer une session interactive sur la console.  
+				</UL>
+				
+			<P class=4>&nbsp;</P>
+
+			<p>L'authentification de base présente également un risque de sécurité car les noms d'utilisateur et les mots de passe sont  transmis sur le réseau dans un format facile à décoder.</p>
+
+			<p>Si votre site Web doit prendre en charge les opérations d'auteur par le client FrontPage version&nbsp;1.1 (qui ne gère pas l'authentification Stimulation/Réponse de Windows&nbsp;NT) ou si vous voulez être sûr que votre site Web est accessible à partir de tous les types de navigateurs, vous devez laisser l'authentification de base activée. De plus, cette authentification fonctionne à travers un pare-feu via un serveur proxy. Si les utilisateurs se connectent à votre serveur Web sur Internet via un serveur proxy, vous devez utiliser l'authentification de base au lieu de l'authentification Stimulation/Réponse de Windows&nbsp;NT.</p>
+
+			<p><A NAME="scwinnt.doc-1037"></A>L'authentification de base est plus rapide que la Stimulation/Réponse de Windows&nbsp;NT. Combinée au protocole Secure Sockets Layer (SSL), elle garantit une authentification sûre et rapide.</p>
+
+
+			<H4>Authentification Stimulation/Réponse de Windows&nbsp;NT</H4>
+
+			<p><A NAME="scwinnt.doc-1038"></A>L'authentification Stimulation/Réponse de Windows&nbsp;NT (également appelée NTLM) est plus sûre que l'authentification de base. Quand un utilisateur est authentifié avec la Stimulation/Réponse de Windows&nbsp;NT, il est connecté au serveur Web en tant qu'ouverture de session réseau. Le navigateur Web ou le client FrontPage essaie d'abord d'utiliser les informations d'identification fournies par l'utilisateur pour se connecter à l'ordinateur client. Si ces informations sont rejetées, la Stimulation/Réponse de Windows&nbsp;NT affichera une boîte de dialogue invitant l'utilisateur à indiquer un nom et un mot de passe. Si un utilisateur s'est connecté sur un ordinateur local en tant qu'utilisateur de domaine, il sera inutile de l'authentifier à nouveau lorsqu'il accédera à un ordinateur distant de ce domaine.</p>
+
+			<p>Le nom d'utilisateur et le mot de passe sont codés efficacement par un processus d'interaction impliquant plusieurs transactions entre le client et le serveur Web. Cette interaction vous met à l'abri des espions réseau qui essaient de s'introduire sur des systèmes en surveillant le trafic réseau entre un client et un serveur.</p>
+
+			<p>L'authentification Stimulation/Réponse de Windows&nbsp;NT a néanmoins ses limites&nbsp;:  
+
+				<UL>
+					<LI class=LB1><A NAME="scwinnt.doc-1041"></A>Elle ne peut pas franchir un pare-feu via un serveur proxy. Dans ce type de situation, vous devez utiliser l'authentification de base.
+
+					<LI class=LB1>Certains navigateurs Web  (comme, Netscape Navigator) ne la prennent pas en charge Windows&nbsp;NT.
+
+					<LI class=LB1>Elle ne prend pas en charge la délégation à des serveurs secondaires. Les informations d'identification de l'utilisateur ne peuvent pas être transmises à un autre ordinateur. Par exemple, quand une requête parvient à IIS, les informations d'identification du compte d'utilisateur ne peuvent pas être transmises à Microsoft&nbsp;SQL Server sur un ordinateur secondaire.</LI>
+				</UL>
+				
+			<P class=4>&nbsp;</P>	
+
+			<p>L'authentification Stimulation/Réponse de Windows&nbsp;NT ne pouvant pas franchir un pare-feu, elle est surtout utile sur les intranets, où la communication intervient derrière le pare-feu d'une organisation. </p>
+
+			<p>Vous pouvez activer l'authentification de base et l'authentification Stimulation/Réponse de Windows&nbsp;NT en même temps. Si le navigateur Web prend en charge la Stimulation/Réponse, il utilise cette méthode. Sinon, il utilise l'authentification de base. À l'heure actuelle, la Stimulation/Réponse n'est prise en charge que par Microsoft Internet Explorer version&nbsp;2.0 ou ultérieure.  .
+
+
+			<H4>Authentification DAA (Digest Access Authentication)</H4>
+
+			<p><A NAME="scwinnt.doc-1046"></A>Comme l'authentification de base, l'authentification DAA (Digest Access Authentication) est basée sur une méthode de stimulation-réponse simple. Son modèle utilise une valeur unique (une chaîne de données unique générée chaque fois qu'une erreur&nbsp;401 survient). Une réponse valide contient un total de contrôle composé du nom d'utilisateur, du mot de passe, de la valeur unique, de la méthode&nbsp;HTTP et de l'URL demandée. De cette façon, le mot de passe n'est jamais transmis sous forme de texte facile à décoder, ce qui constitue la plus grande faiblesse de l'authentification de base.</p>
+
+			<p>L'authentification DAA suppose qu'Internet Explorer&nbsp; 5.0 soit installé sur l'ordinateur client.</p>
+		</TD>
+		
+		<!--TOPIC TITLE AND BODY TEXT CELL ENDS HERE-->
+		
+		<!--FAR-RIGHT COLUMN SECTION ART CELL STARTS HERE-->
+	
+		<TD rowspan="20" nowrap>
+			<img SRC="secart.gif" align="center" alt="Image de la section Sécurité">
+		</TD>
+		
+		<!--FAR-RIGHT COLUMN SECTION ART CELL STARTS HERE-->
+		
+	</TR>
+	
+	<!--LEFT-NAVIGATION MENUS START HERE-->
+
+	<TR>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" href="scintro.htm"><font color="#000000">&nbsp;&nbsp;Introduction</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous <br>&nbsp;&nbsp;Windows&nbsp;NT</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" HREF="scuni.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="adoview.htm"><font color="#000000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+	<!--LAST ROW START-->
+	
+	<TR>
+    	<TD height="1810" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+		
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+
+<!--FOOTER_BEGIN-->
+<BR>
+
+<TABLE cellspacing="0" cellpadding="0" border=0>
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD width="237" valign="top"><A HREF="scwin_1.htm"><img SRC="previous.gif" vspace="1" hspace="0" border="0"><b><font color="#000000" style="text-decoration: none" size="2"><sup>&nbsp;2 sur 9&nbsp;</sup></b></font><A HREF="scwin_3.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    	<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a>
+</TD>
+    </TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+   	</TR>
+	
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

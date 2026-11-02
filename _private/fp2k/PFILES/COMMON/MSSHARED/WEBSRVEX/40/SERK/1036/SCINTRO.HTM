@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Généralités sur la sécurité</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+
+	<TR>
+		<TD BGCOLOR="#000000"><IMG SRC="home.gif" WIDTH=103 HEIGHT=21
+ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH="100%"><IMG 
+SRC="1ptrans.gif" WIDTH=1 
+HEIGHT=1 ALT="" BORDER=0></TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+<FONT FACE="Arial, Helvetica" SIZE=1><A HREF="http://www.microsoft.com/france" TARGET="_top"><IMG SRC="msft.gif" WIDTH=91 
+HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+	
+	<!--WEB SITE TITLE AND LOGO START HERE-->
+
+	<TR>
+		<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD colspan="2" nowrap bgcolor="#666699" valign="middle" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+	
+		<!--WEB SITE TITLE AND LOGO END HERE-->
+	
+		<!--TOPIC TITLE AND BODY TEXT CELL STARTS HERE-->
+	
+		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Introduction</font></b></font>
+
+			<HR>
+
+			<A NAME="introductionsecurity"></A>
+
+			<p><A NAME="scintro.doc-1005"></A>Quels que soient les logiciels que vous utilisez, deux problèmes de sécurité majeurs se posent lorsque vous hébergez des sites Web à partir de votre ordinateur.</P>
+
+				<UL>
+					<LI class=LB1><A NAME="scintro.doc-1006"></A>Protéger votre ordinateur contre tout accès non autorisé
+	<P class=LT1>Héberger des sites Web, même sur un intranet, ouvre votre ordinateur hôte à une communauté d'utilisateurs plus large. L'<I>authentification</I> est le processus qui se fonde sur les noms d'utilisateur et les mots de passe, ou sur les adresses IP, pour autoriser les utilisateurs à accéder à un service Web (restreindre l'accès par adresse IP est moins sûr, car il est toujours possible de «&nbsp;voler&nbsp;» une adresse IP et d'accéder à l'ordinateur hôte).
+
+	<LI class=LB1><A NAME="scintro.doc-1007"></A>Protéger votre ordinateur des programmes dangereux
+	<P class=LT1>Le contenu d'un site Web (une page HTML qui en «&nbsp;contient&nbsp;» ou en «&nbsp;remplace&nbsp;» une autre, par exemple) peut provoquer l'exécution de programmes sur votre ordinateur hôte. Marquer des répertoires pour autoriser l'exécution d'un script sur l'ordinateur hôte peut permettre à un programme d'effectuer toutes les opérations autorisées dans les limites du schéma de protection des ressources de l'ordinateur hôte.
+
+	<P class=LT1>Les pages HTML peuvent incorporer des contrôles, des scripts, des applets et d'autres programmes susceptibles de provoquer l'exécution de programmes sur un ordinateur hôte. Les programmes de traitement de formulaires peuvent introduire un risque supplémentaire, car les utilisateurs ont la possibilité de lancer des commandes à partir des champs de ces formulaires, provoquant ainsi l'exécution de programmes lors du parcours de la page qui contient les résultats du formulaire (cette remarque ne concerne pas les programmes de traitement de formulaires de Microsoft&#174; FrontPage&#174;). 
+</UL>
+				
+			<P class=4>&nbsp;</P>
+
+			<p>FrontPage gère ces problèmes de sécurité en utilisant les mécanismes de sécurité standard de l'ordinateur hôte. L'exploitation des extensions serveur FrontPage n'impose aucune modification de la méthode de sécurité de l'ordinateur hôte&nbsp;:</P>
+
+				<UL>
+					<LI class=LB1><A NAME="scintro.doc-1009"></A>Sur les serveurs Web fonctionnant sous Microsoft&#174; Windows&nbsp;NT&#174; avec Microsoft Internet Information Services (IIS), chaque requête HTTP adressée à IIS à partir d'un serveur Web ou du client FrontPage s'exécute sous un compte utilisateur du système d'exploitation Windows&nbsp;NT qui héberge IIS. FrontPage implémente la sécurité Web sur IIS en modifiant la liste de contrôle d'accès de tous les fichiers et dossiers de chaque site Web FrontPage étendu. 
+
+	<P class=LT1><a href="scwin.htm">Sécurité des extensions serveur FrontPage sous Microsoft Windows&nbsp;NT.</a>
+
+	<LI class=LB1><A NAME="scintro.doc-1010"></A>Un serveur Web UNIX gère une liste de comptes composée de noms d'utilisateur et de mots de passe, et une liste de groupes d'utilisateurs&nbsp;; tous possèdent leurs propres niveaux d'autorisation pour utiliser les services du serveur Web. Les comptes et les groupes gérés par le serveur Web sont distincts de la liste des utilisateurs et des groupes pouvant accéder au système de fichiers de l'ordinateur hôte. Créer des fichiers d'accès couvrant tout le contenu du serveur Web permet à des groupes d'utilisateurs aux niveaux d'autorisation différents d'accéder à des zones différentes du serveur. FrontPage utilise ce mécanisme pour ajouter à la liste des comptes du serveur Web des administrateurs, des auteurs et des visiteurs disposant des autorisations appropriées, et pour protéger le contenu et les programmes des sites Web FrontPage étendus.
+
+<P class=LT1><a href="scuni.htm">Sécurité des extensions serveur FrontPage sous UNIX</a>
+
+</UL>
+				
+			<P class=4>&nbsp;</P>
+			
+		</TD>
+			
+		<!--TOPIC TITLE AND BODY TEXT CELL ENDS HERE-->
+
+		<!--FAR-RIGHT COLUMN SECTION ART CELL STARTS HERE-->
+			
+		<TD rowspan="20" nowrap>
+			<img SRC="secart.gif" align="center" alt="Image de la section Sécurité">
+		</TD>
+			
+		<!--FAR-RIGHT COLUMN SECTION ART CELL ENDS HERE-->
+		
+	</TR>
+	
+	<!--LEFT-NAVIGATION MENUS START HERE-->
+
+	<TR>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Introduction</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" HREF="scwin.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous <br>&nbsp;&nbsp;Windows&nbsp;NT</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" HREF="scuni.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="adoview.htm"><font color="#000000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+	<!--LAST ROW START-->
+	
+	<TR>
+    	<TD height="675" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+		
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+
+<!--FOOTER_BEGIN-->
+<br>
+<TABLE cellspacing="0" cellpadding="0" border=0>
+<TR>
+    <TD width="170" valign="top">&nbsp;</TD>
+    <TD width="237" valign="top"></TD>
+    <TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+    </TR>
+
+<TR>
+    <TD width="170" valign="top">&nbsp;</TD>
+    <TD colspan="2" width="475" valign="top"><HR></TD>
+</TR>
+
+<TR>
+    <TD width="170" valign="top">&nbsp;</TD>
+    <TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+    
+</TR>
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

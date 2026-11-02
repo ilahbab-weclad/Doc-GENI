@@ -1,0 +1,7 @@
+; Localized	03/02/1999 04:46  (GMT)	7:4.1.211 	toc.inp
+
+[info]
+title=Sommaire
+description=Crée un cadre de sommaire à gauche. Les liens hypertexte présents dans le cadre sommaire modifient le contenu du cadre affiché à droite.
+noframesURL=
+layout=[C(150,*)F("sommaire","principal")]

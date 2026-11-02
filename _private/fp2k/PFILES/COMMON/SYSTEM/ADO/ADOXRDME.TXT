@@ -1,0 +1,117 @@
+------------------------------------------------------------------------------------
+Fichier Lisezmoi pour ADOX (Microsoft ActiveX(R) Data Objects Extensions for DDL and Security)
+------------------------------------------------------------------------------------
+
+(c) 1998 Microsoft Corporation. Tous droits réservés.
+
+Ce document fournit des informations de dernière minute ou d'autres 
+indications en complément de la documentation relative à ADOX (Microsoft ADO Extensions for DDL and Security).
+
+------------------
+TABLE DES MATIÈRES
+------------------
+
+1. DESCRIPTION DU PRODUIT
+   
+2. FONCTIONNALITÉS
+   
+3. NOTES TECHNIQUES
+
+4. ERREURS CONNUES, LIMITES ET SOLUTIONS
+
+-------------------------
+1. DESCRIPTION DU PRODUIT
+-------------------------
+
+ADOX (Microsoft(r) ActiveX(r) Data Objects Extensions for Data Definition Language and Security) constitue un complément aux objets et au modèle de programmation ADO. ADOX comporte des objets conçus pour la création et la modification de schémas et pour une meilleure sécurité. Correspondant à une approche de manipulation de schémas qui est orientée objets, ce complément vous permet d'écrire du code qui fonctionnera avec de multiples sources de données même si leur syntaxe native de ces données comporte des différences.
+
+------------------
+2. FONCTIONNALITÉS
+------------------
+
+ADOX est une bibliothèque associée aux principaux objets ADO. Elle offre des objets complémentaires pour la création, la modification ou la suppression d'objets de schémas tels que des tables ou des procédures. Elle comporte aussi des objets de sécurité servant à la gestion d'utilisateurs et de groupes et à la concession ou l'annulation d'autorisations sur des objets.
+
+-------------------
+3. NOTES TECHNIQUES
+-------------------
+
+3.1 Propriétés de tables requises/facultatives, index et colonnes
+
+Il est possible que certaines propriétés d'objets de table, d'index et de colonne ne soient pas prises en charge par votre fournisseur de données. Une erreur se produira si vous avez défini une valeur de propriété qui n'est pas prise en charge par le fournisseur. Pour les nouvelles tables, index ou colonnes, l'erreur surviendra lorsque l'objet sera ajouté à la collection. Pour les objets déjà existants, l'erreur surviendra lors de la définition de la propriété.
+
+À la création d'objets de table, d'index et de colonne, l'existence d'une valeur par défaut appropriée pour une propriété facultative ne garantit pas que cette propriété est effectivement prise en charge par votre fournisseur. Pour plus d'informations sur les propriétés prises en charge par votre fournisseur, consultez la documentation afférente.
+
+3.2 Utilisation d'ADOX avec les fournisseurs Microsoft OLE DB
+
+Il peut arriver que des fournisseurs de données OLE DB ne prennent pas en charge certaines fonctionnalités d'ADOX. ADOX est entièrement pris en charge par le fournisseur Microsoft OLE DB pour le moteur Microsoft Jet Database. Pour le fournisseur OLE DB de Microsoft SQL Server, le fournisseur OLE DB Microsoft pour ODBC ou le fournisseur OLE DB pour Oracle, veuillez vous reporter ci-dessous. ADOX n'est pas pris en charge par aucun autre fournisseur Microsoft OLE DB.
+
+Fournisseur  OLE DB de Microsoft SQL Server
+
+Tous les objets, collections, propriétés et méthodes ADOX sont pris en charge sauf ceux indiqués ci-dessous :
+
+Catalogue : méthode Create.
+Tables : Propriétés pour les tables existants qui sont en lecture seule (les propriétés des nouvelles tables peuvent être accessibles en lecture/écriture).
+Vues : Non pris en charge.
+Procédures : méthodes Append, Delete et propriété Command.
+Clés: méthodes Append et Delete.
+Utilisateurs : Non pris en charge.
+Groupes : Non pris en charge.
+
+Fournisseur Microsoft OLE DB pour ODBC
+
+Tous les objets, collections, propriétés et méthodes ADOX sont pris en charge sauf ceux indiqués ci-dessous :
+
+Catalogue : méthode Create.
+Tables : méthodes Append et Delete. Les propriétés des tables existantes sont en lecture seule (les propriétés des nouvelles tables son taccessibles en lecture/écriture).
+Vues : méthodes Append et Delete, propriété Command.
+Procédures: méthodes Append et Delete, propriété Command.
+Index : méthodes Append et Delete.
+Clés : méthodes Append et Delete.
+Utilisateurs : Non pris en charge.
+Groupes : Non pris en charge.
+
+Fournisseur Microsoft OLE DB pour Oracle
+
+Tous les objets, collections, propriétés et méthodes ADOX sont pris en charge sauf ceux indiqués ci-dessous :
+
+Catalogue : méthode Create.
+Tables : méthodes Append et Delete. Les propriétés des tables existantes sont en lecture seule (les propriétés des nouvelles tables son taccessibles en lecture/écriture).
+Vues : méthodes Append et Delete, propriété Command.
+Procédures: méthodes Append et Delete, propriété Command.
+Index : méthodes Append et Delete.
+Clés : méthodes Append et Delete.
+Utilisateurs : Non pris en charge.
+Groupes : Non pris en charge.
+
+
+----------------------------------------
+4. ERREURS CONNUES, LIMITES ET SOLUTIONS
+----------------------------------------
+
+Voici la liste des erreurs identifiées concernant ADOX.
+
+4.1 Les propriétés DateCreated/DateModified nécessitent l'appel de Refresh
+
+Les propriétés DateCreated et DateModified sont égales à NULL pour les objets récemment ajoutés. Après l'ajout d'une nouvelle Vue ou Procédure, vous devez appeler la méthode Refresh de la collection Vues ou Procédures de manière à obtenir les valeurs des propriétés DateCreated et DateModified.
+
+4.2 Pas de propriété ParentCatalog pour les objets Index
+
+L'aide d'ADOX indique que la propriété ParentCatalog est une propriété des objets Index, ce qui est une erreur. ParentCatalog est en fait une propriété des objets Colonne et Table uniquement.
+
+4.3 adAccessRevoke a la priorité sur le paramètre Rights de la méthode SetPermissions
+
+À l'appel de la méthode SetPermissions pour un Groupe ou un Utilisateur, la valeur adAccessRevoke du paramètre Actions est prioritaire sur toute autre valeur du paramètre Rights. Ne choisissez pas la valeur adAccessRevoke pour Actions si vous voulez que les droits spécifiés dans le paramètre Rights soient appliqués.
+
+4.4 Paramètre RelatedColumn de la méthode Append (rassemblement des clés)
+
+La documentation relative à la méthode Append devrait comprendre un quatrième paramètre facultatif appelé RelatedColumn. La syntaxe est :
+
+Keys.Append Key [, KeyType] [, Column] [, RelatedTable] [, RelatedColumn]
+
+Le paramètre RelatedColumn est facultatif. RelatedColumn est une valeur chaîne donnant le nom de la colonne liée à une clé externe. Le paramètre RelatedTable peut être identique à la valeur de la propriété Name d'une colonne.
+
+4.5 Valeur adIndexNullsAllow Enum de la propriété IndexNulls 
+
+La documentation de la propriété IndexNulls de l'objet Index devrait inclure une constante Enum supplémentaire dans le tableau des valeurs possibles :
+
+adIndexNullsAllow     L'index n'autorise pas les entrées dotées de colonnes clés égales à Null. Si une valeur Null est entrée dans une colonne clé, l'entrée est insérée dans l'index. 

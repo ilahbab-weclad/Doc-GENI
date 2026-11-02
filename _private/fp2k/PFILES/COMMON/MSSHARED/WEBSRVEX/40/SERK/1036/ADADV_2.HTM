@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>
+Configuration des options de messagerie sous UNIX</TITLE>
+
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+<!--MICROSOFT TOOLBAR STARTS HERE-->
+	<TR>
+	<TD BGCOLOR="#000000">
+	<IMG SRC="home.gif" WIDTH=103 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+	<TD colspan="2" BGCOLOR="#000000" WIDTH=100%>
+	<IMG SRC="1ptrans.gif" WIDTH=1 HEIGHT=1 ALT="" BORDER=0></TD>
+	<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+	<FONT FACE="Arial, Helvetica" SIZE=1>
+	<A HREF="/" TARGET="_top">
+	<IMG SRC="msft.gif" WIDTH=91 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+	
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+	
+	<!--WEB SITE TITLE AND LOGO STARTS-->
+
+	<TR>
+	<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+    <TD width="20" nowrap></TD>
+    <TD colspan="2" nowrap bgcolor="#666699" valign="center" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000 </b></font></TD>
+	</TR>
+	
+	<TR>
+    <TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    <TD width="20" nowrap></TD>
+	
+	<!--WEB SITE TITLE AND LOGO ENDS-->
+
+	<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
+	
+
+    <TD rowspan="21" width="460"><a name="top"></a><p><font color="#666699"><b><font size="+1">Tâches administratives avancées</font></b></font>
+
+<HR>
+
+<H3><span class=FR><SUP><A NAME="settingupemailoptionsunix"></A></SUP></span>Configuration des options de messagerie sous UNIX</H3>
+
+	<p><A NAME="adadvc01.doc-1001"></A>Le programme client  Microsoft&#174; FrontPage&#174; permet de configurer un formulaire dont le contenu peut ensuite être envoyé sous forme de message électronique. Pour qu'un message puisse être envoyé à partir d'un serveur Web, un administrateur doit configurer les extensions serveur de façon à délivrer le courrier électronique à un transport de messagerie.</P>
+
+	<p><A NAME="adadvc01.doc-1002"></A>Vous devez définir les paramètres de messagerie dans le fichier de configuration des extensions serveur FrontPage, par défaut /usr/local/frontpage/version4.0/frontpg.cnf. </P>
+
+	<p><A NAME="adadvc01.doc-1003"></A>FrontPage fournit cinq variables de configuration pour définir votre transport de messagerie&nbsp;: <span class=L><B>SMTPHost</B></span>,<B> <span class=L>SendMailCommand</span></B>, <span class=L><B>MailSender</B></span>,<B> <span class=L>MailCharSet</span></B> et <span class=L><B>MailEncoding</B></span>. Vous devez définir <B><span class=L>SMTPHost</span> </B>ou <span class=L><B>SendmailCommand</B></span>,<B> </B>mais pas les deux. </P>
+
+	<p>Le tableau suivant illustre comment configurer ces paramètres&nbsp;:</P>
+
+	<p class=4>&nbsp;</p>
+
+<TABLE cols=3 width=464 cellspacing="0" cellpadding="4" rules="rows" frame="void">
+
+	<TR VALIGN="top">
+	<TH width=25%>Variable</TH>
+	<TH width=40%>Définition</TH>
+	<TH width=35%>Exemple</TH>
+	</TR>
+
+	<TR VALIGN="top">
+	<TD class=TT width=25%>SMTPHost</TD>
+	<TD class=TT width=40%>Nom ou adresse IP d'un hôte utilisant un serveur ou un démon SMTP, tel que sendmail sous UNIX. Lorsqu'un visiteur de site soumet un formulaire dont les résultats doivent être envoyés par courrier électronique, les extensions serveur établissent une connexion au serveur SMTP pour délivrer le message. Par défaut, FrontPage considère que le serveur utilise le port 25 (standard pour SMTP), mais vous pouvez en définir un autre en ajoutant <B>:xx</B> à la suite du nom, où <I>xx</I> désigne le port à utiliser.</TD>
+	<TD class=TT width=35%>mail.example.microsoft.com,
+<P class=TT>test:10000,</P>
+
+<P class=TT>127.0.0.1</P>
+
+<P class=TT></P></TD>
+	</TR>
+
+	<TR VALIGN="top">
+	<TD class=TT width=25%>SendMailCommand</TD>
+	<TD class=TT width=40%>Nom d'un programme sur la machine serveur vers laquelle le message doit être acheminé. En général, il s'agit de sendmail sous UNIX, mais n'importe quel autre programme peut être utilisé. Si <span class=L><B>SendMailCommand</B></span> et <span class=L><B>SMTPHost</B></span> sont tous deux configurés, <span class=L><B>SendmailCommand</B></span> est prioritaire.
+<P class=TT>Lorsque les extensions serveur FrontPage reçoivent un formulaire traité sous forme de message électronique, elles lancent la commande, en remplaçant toutes les occurrences de <B>%r</B> par le destinataire du message. Le symbole de pourcentage (%) suivi d'un autre caractère est remplacé par ce caractère.</P>
+
+<P class=TT>Le message électronique est transmis à la commande sous forme d'entrée standard.</P></TD>
+	<TD class=TT width=35%>/usr/lib/sendmail %r</TD>
+	</TR>
+
+	<TR VALIGN="top">
+	<TD class=TT width=25%>MailSender</TD>
+	<TD class=TT width=40%>Nom à utiliser comme compte «&nbsp;expéditeur&nbsp;» pour l'envoi de courrier électronique. Plus spécifiquement, il est utilisé comme argument de la commande SEND FROM: sous SMTP. Sous SMTP, le nom par défaut est utilisateur@hôte, où <I>utilisateur</I> désigne l'utilisateur actuel du compte, et  <I>hôte</I> le nom de l'hôte en cours.</TD>
+	<TD class=TT width=35%>example@microsoft.com</TD>
+	</TR>
+
+	<TR VALIGN="top">
+	<TD class=TT width=25%>MailCharSet</TD>
+	<TD class=TT width=40%>Pour annuler l'attribut de jeu de caractères de l'en-tête de type contenu, indiquez le jeu de caractères ici. </TD>
+	<TD class=TT width=35%>&nbsp;</TD>
+	</TR>
+
+	<TR VALIGN="top">
+	<TD class=TT width=25%>MailEncoding</TD>
+	<TD class=TT width=40%>Permet d'annuler l'attribut de codage du transfert de contenu pour l'en-tête du type contenu. Vous pouvez changer de schéma de codage si vous savez qu'un destinataire de courrier électronique utilise un schéma de codage différent et ne peut pas interpréter vos messages.</TD>
+	<TD class=TT width=35%>&nbsp;</TD>
+	</TR>
+</TABLE><BR>
+
+<p class=6>&nbsp;</p></TD>
+
+	<!--TOPIC TITLE AND BODY TEXT CELL ENDS-->
+	
+	<!--FAR-RIGHT COLUMN SECTION ART CELL STARTS-->
+
+    <TD rowspan="15"><img SRC="admart.gif" align="top" alt="Illustration de la section Administration"></TD>
+
+	<!--FAR-RIGHT COLUMN SECTION ART CELL ENDS-->
+
+	</TR>
+	
+	<!--LEFT-NAVIGATION MENU STARTS-->
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="scintro.htm"><font color="#000000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink"><div class="table"><font color="#990000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="r_ydot.gif" alt="" border="0"></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adoview.htm"><font color="#000000">&nbsp;&nbsp;Outils et techniques &nbsp;&nbsp;d'administration</font></A></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+	
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adfpsr.htm"><font color="#000000">&nbsp;&nbsp;Fpsvradm</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="admmc.htm"><font color="#000000">&nbsp;&nbsp;Composant logiciel &nbsp;&nbsp;enfichable MMC</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adhtm.htm"><font color="#000000">&nbsp;&nbsp;Formulaire &nbsp;&nbsp;d'administration &nbsp;&nbsp;HTML</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adfpre.htm"><font color="#000000">&nbsp;&nbsp;Administration à &nbsp;&nbsp;distance</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Tâches &nbsp;&nbsp;administratives<BR>&nbsp;&nbsp;avancées</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    <TD height="10" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<!--LAST ROW STARTS-->
+
+	<TR>
+    <TD height="1170" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_BEGIN-->
+
+<BR>
+
+<TABLE cellspacing="0" cellpadding="0" border=0>
+
+	<TR>
+    <TD width="170" valign="top">&nbsp;</TD>
+    <TD width="237" valign="top"><A HREF="adadv.htm"><img src="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></font></a></TD>
+    <TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img src="top.gif" border="0"></a></TD>
+    </TR>
+
+	<TR>
+    <TD width="170" valign="top">&nbsp;</TD>
+    <TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+
+	<TR>
+    <TD width="170" valign="top">&nbsp;</TD>
+    <TD colspan="2" width="475" valign="top">Dernière mise à jour&nbsp;: novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+  	</TR>
+
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

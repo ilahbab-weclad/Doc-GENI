@@ -1,0 +1,28 @@
+; Localized	03/24/1999 04:01  (GMT)	7:4.1.211 	DLGSETP.ECF
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={92CCB510-34C5-11cf-8580-00AA00C01797}
+Path="dlgsetp.dll"
+Entry Point=1
+Client Version=4.0
+Extension Version=1.0
+Service Provider=MSEMS
+Misc Flags=WarnIfNoDLL;DllFromDarwin
+
+[Exchange Client Compatibility]
+
+; Exchange Context Map is PROPERTYSHEETS
+Exchange Context Map=000000000001
+
+; Exchange Interface Map is IExchExtPropertySheets.
+Exchange Interface Map=0000010
+
+[Property Sheet]
+Events="AddPropSheetPages"
+Property Sheet Dialogs=ToolsOptions
+
+[Strings]
+DisplayName = Accès délégué
+Description = Boîte de dialogue d'installation d'Accès délégué
+

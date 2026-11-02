@@ -1,0 +1,1147 @@
+---------------------------------------------------------
+            Fichier LisezMoi de MICROSOFT Excel 2000
+                       Juin 1999
+(c) Microsoft Corporation, 1999. Tous droits réservés.
+---------------------------------------------------------
+
+Ce document contient des informations inédites ou de dernière
+minute relatives à Microsoft Excel 2000. Ces informations sont
+à jour à la date inscrite ci-dessus. Passée cette date, les 
+dernières ressources et informations disponibles peuvent être
+trouvées sur le site Web Microsoft Office Update, accessible à
+partir du menu Aide en cliquant sur Microsoft Office sur le Web. 
+Pour plus d'informations, entre autre sur les problèmes de
+réseau et d'administration système, consultez le site  Web
+Office Resource Kit à l'adresse suivante :
+http://www.microsoft.com/office/ork/
+
+Si vous désirez plus d'informations techniques sur Excel, consultez
+le support en ligne et effectuez une recherche à partir du support
+technique.
+Pour débuter, consultez le site Web suivant :
+http://support.microsoft.com/france/support/
+Pour le Canada : 
+http://www.microsoft.com/canada/french/support/
+_______________________________________________________
+SOMMAIRE
+
+1. INSTALLATION DE MICROSOFT EXCEL 2000
+   1.1  Configuration minimale requise pour Microsoft Excel 2000
+   1.2  Désactivation de la protection antivirus avant l'exécution
+        de la procédure d'installation
+   1.3  Problèmes engendrés par l'utilisation de signes de
+        ponctuation dans les noms de dossiers
+   1.4  Changement automatique des paramètres de certains
+        composants lors d'une installation personnalisée
+   1.5  Paramètres d'installation de Clip Gallery 
+   1.6  Installation de Microsoft Excel sur un réseau
+   1.7  Entrée de la CD Key lors de l'installation d'Excel à
+        partir d'une installation administrative
+   1.8  Messages inattendus lors de l'installation
+   1.9  Installation d'Excel 2000 sans supprimer la version
+        bêta 2 d'Office 2000
+   1.10 Différences dans le raccourci pour Excel 2000 dans le
+        menu Programmes selon le système d'exploitation
+
+2. UTILISATION D'EXCEL 2000
+   2.1  Liens HTML publiés vers un répertoire racine ne fonctionnant
+        pas dans Internet Explorer version 3.02
+   2.2  Formules en langue naturelle désactivées par défaut
+   2.3  Recalcul à l'ouverture des fichiers enregistrés dans un
+        format de fichier antérieur
+   2.4  Modification de clips supprimés à partir d'une version
+        antérieure de Clip Gallery 
+   2.5  Mise en forme des étiquettes de données dans un rapport
+        de tableau croisé dynamique
+   2.6  Publication de rapports de tableau croisé dynamique
+   2.7  Sélectionner plusieurs objets
+   2.8  Perte de la mise en forme monétaire lors de l'enregistrement
+        vers un format de fichier antérieur
+   2.9  Perte du symbole euro lors de l'enregistrement vers un
+        autre format de fichier
+   2.10 Perte des paramètres de la macro complémentaire 
+        Enregistrement automatique entre deux sessions
+   2.11 Défauts dans l'affichage des couleurs sur un moniteur
+        256 couleurs
+   2.12 Problème d'installation du Gestionnaire de rapports
+
+3. AIDE DE MICROSOFT EXCEL 2000
+   3.1  Récupération des outils de vérification linguistique
+   3.2  Vérification de l'orthographe pour d'autres langues
+   3.3  Composant WebBot non présent dans Office 2000 version
+        développeur
+   3.4  Aide des fonctions de feuilles ARRONDI.SUP et ARRONDI.INF
+        incorrecte 
+   3.5  Spécification dans l'aide du plus petit nombre entier
+        pouvant être entré
+   3.6  Longueur du texte de remplacement pour les objets dessins
+   3.7  Aperçu des pages Web et pages publiées
+   3.8  Info-bulle de la boîte de dialogue Sécurité incorrecte
+   3.9  Versions de fichier Quattro Pro prises en charge
+   3.10 Internet Explorer 4.01 Service Pack 1 (SP1) requis pour
+        publier les données d'Excel avec l'interactivité
+   3.11 Procédures d'exécution de Microsoft NetMeeting
+   3.12 Récupération de la version complète du fichier d'aide
+        localisé des fonctions de macro
+   3.13 Référence incorrecte au bouton Séparateur de milliers
+       dans l'Aide d'Excel
+
+4. PROBLÈMES ENGENDRÉS PAR LES VERSIONS MULTILINGUES
+   4.1  Publication dans un environnement multilingue
+   4.2  Problèmes d'affichage lors de l'utilisation de plusieurs
+        polices asiatiques
+   4.3  Dégradation des performances avec le Asian Multilanguage Pack
+   4.4  Calendrier Hijri non pris en charge par les fonctions JOUR,
+        MOIS et ANNEE
+   4.5  Calendriers lunaires hébreux et Hijri non pris en charge par
+        Microsoft Query 2000 
+   4.6  Microsoft Query 2000 et les noms de table et de champs
+        UNICODE 
+   4.7  Microsoft Query version anglaise (U.S.) et les
+        caractères DBCS
+   4.8  Utilisation des signes diacritiques avec WordArt et
+        Publication sur le Web
+   4.9  Initialisation du vérificateur orthographique après
+        l'utilisation d'une langue asiatique ou orientale 
+   4.10 Caractères de langues orientales non utilisables comme
+        touches de raccourci Macro 
+   4.11 Impression de langues orientales 
+   4.12 Erreur lors du démarrage d'Excel 2000 après la mise à jour
+        d'Excel 95 en version orientale
+
+5. MICROSOFT VISUAL BASIC POUR APPLICATIONS
+   5.1  Différence entre la fonction ROUND de VBA et la fonction
+        de feuille ARRONDI 
+   5.2  Méthode Add (collection PivotCaches)
+   5.3  Méthode OpenText 
+   5.4  Méthode Quit
+   5.5  Propriétés Cells et Formula 
+   5.6  Propriété Context (Objet CommandBar)
+   5.7  Propriété DragToData
+   5.8  Code d'exemple pour la propriété FeatureInstall 
+   5.9  Propriété Hidden (objet TreeviewControl)
+   5.10 Propriété Index (Objet PivotFormula)
+   5.11 Propriétés ReplacementList et PrintQuality 
+   5.12 Nouvelles propriétés (VBA)
+   5.13 Utilisation de la touche F3 pour chercher la prochaine
+        occurrence d'un texte dans la fenêtre de code 
+
+6. SCRIPT, HTML ET AUTRES LANGAGES DE PROGRAMMATION
+   6.1  Faire confiance à tous les modèles et compléments
+        installés, y compris ceux du dossier XLStart
+   6.2  Langue par défaut pour Visual Basic Editor et
+        Microsoft Script Editor 
+   6.3  System Event Notification System
+   6.4  Documentation de référence pour HTML
+   6.5  Versions d'Internet Explorer et édition de code HTML
+   6.6  Rubrique "Mot clé introuvable" (Microsoft Script Editor)
+
+_______________________________________________________
+1. INSTALLATION DE MICROSOFT EXCEL 2000
+
+1.1 Configuration minimale requise pour Microsoft Excel 2000
+------------------------------------------------------------
+L'utilisation de Microsoft Excel 2000 requiert les éléments suivants :
+* Ordinateur personnel équipé d'un processeur Pentium 75 MHz ou
+  supérieur
+* Système d'exploitation Microsoft Windows(r) 95 ou supérieure ou
+  système d'exploitation Windows NT(r) Workstation 4.0 avec Service
+  Pack 3 ou supérieur
+* Avec Windows 95 ou Windows 98 :
+- 16 Mo de mémoire vive pour le système d'exploitation, plus 4 Mo
+  supplémentaire pour Microsoft Excel
+* Avec Windows NT Workstation version 4.0 ou version ultérieure :
+- 32 Mo de mémoire vive pour le système d'exploitation, plus 4 Mo
+  supplémentaire pour Microsoft Excel 
+* Espace disponible sur le disque dur (les chiffres indiqués sont
+  valables pour une installation par défaut. L'espace utilisé sur
+  votre disque dépendra de la configuration choisie. Les choix
+  effectués lors d'une installation personnalisée peuvent faire
+  varier l'espace disque utilisé)
+- Installation par défaut : 156 Mo
+* Lecteur CD-ROM
+* Moniteur VGA ou de résolution supérieure. Super VGA recommandé
+* Souris Microsoft, Microsoft IntelliMouse ou un dispositif de
+  pointage compatible
+Éléments ou services supplémentaires requis pour l'utilisation de
+certaines caractéristiques
+* Modem 9600 bauds ; modem 14 400 bauds ou supérieur recommandé
+* Ordinateur multimédia requis pour pouvoir utiliser les sons et
+  autres effets multimédias
+* Client Microsoft Exchange ou Microsoft Outlook requis pour
+  l'exécution de Office E-mail 
+* 8 Mo de mémoire vive supplémentaire pour l'exécution de
+  Office E-mail 
+* Un accès à Internet et le paiement de frais supplémentaires
+  peuvent être requis pour utiliser certaines fonctionnalités
+  Internet
+
+1.2 Désactivation de la protection Antivirus avant l'exécution
+    de la procédure d'installation
+--------------------------------------------------------------
+Certains programmes de protection antivirus, tels que VSafe.com et
+Norton Anti-Virus Autoprotect, peuvent interférer avec le programme d'installation de Microsoft Excel 2000. Si vous utilisez un programme
+de protection antivirus sur votre ordinateur, désactivez-le avant
+d'exécuter la procédure d'installation. (Vous pouvez le réactiver
+une fois la procédure d'installation terminée.) 
+
+1.3 Problèmes engendrés par l'utilisation de signes de ponctuation
+    dans les noms de dossiers 
+--------------------------------------------------------------
+N'utilisez pas de virgule (,), de guillemet simple (') ou de point
+d'exclamation dans le nom du dossier d'installation de Microsoft
+Excel 2000. Il est recommandé d'utiliser le répertoire par défaut
+ou de n'utiliser que des lettres et des chiffres dans les noms de
+dossiers. 
+
+1.4 Changement automatique des paramètres de certains
+    composants lors d'une installation personnalisée
+--------------------------------------------------------------
+Si, pendant une installation personnalisée, vous définissez
+l'état d'Excel comme Non disponible, puis vous définissez l'état
+de certains composants d'Excel autrement qu'à Non disponible,
+certains composants passeront automatiquement au même état que
+celui que vous venez de sélectionner. Ces composants sont :
+* l'Aide
+* Les macros complémentaires
+* Microsoft Map
+Si votre but est d'économiser de l'espace disque, choisissez
+l'option Installé à la première utilisation pour Excel ou ses
+composants individuels (seul Microsoft Map ne peut être
+installé à la première installation)
+
+1.5 Paramètres d'installation de Clip Gallery 
+--------------------------------------------------------- 
+L'exécution de Clip Gallery peut être défectueuse si, lors d'une
+installation personnalisée, vous lui choisissez l'option Exécuter
+à partir du réseau ou Exécuter à partir du CD. Pour de meilleurs
+résultats, l'option d'installation de Clip Gallery doit être
+définie à Exécuter à partir du disque dur.
+
+1.6 Installation de Microsoft Excel sur un réseau
+-------------------------------------------------------------
+>>>Pour créer un point d'installation administrative pour Excel 2000,
+suivez ces étapes :
+
+1. Créez un partage sur un serveur réseau destiné au point
+   d'installation administrative.
+   Le partage réseau doit disposé d'un minimum de 550 Mégaoctets (Mo)
+   d'espace disque disponible.
+2. Sur un ordinateur disposant de Microsoft Windows 95 ou 98 ou de
+   Microsoft Windows NT, et ayant accès en écriture au partage,
+   connectez-vous sur le partage du serveur. 
+3. Cliquez sur Exécuter dans le menu Démarrer, puis cliquez sur
+   Parcourir. 
+4. Insérez le disque Excel 1 dans le lecteur de CD-ROM, puis sur ce
+   lecteur, sélectionnez Setup.exe avant de cliquer sur Ouvrir
+5. Sur la ligne de commande, après Setup.exe, tapez
+
+   /A DATA1.MSI
+
+   puis cliquez sur OK. Par exemple : 
+   
+   E:\SETUP.EXE /A DATA1.MSI 
+
+6. Dans le programme d'installation, entrez le nom d'organisation
+   qui sera utilisé par tous les utilisateurs installant Excel
+   à partir de cet endroit. 
+7. Lorsque le programme d'installation vous le demande, entrez le
+   nom du serveur et du partage que vous avez créé. 
+
+Pour plus d'informations sur les problèmes de réseau et
+d'administration, consultez le site Web Office Resource Kit sur :
+
+http://www.microsoft.com/office/ork/
+
+1.7 Entrée de la CD Key lors de l'installation d'Excel à
+    partir d'une installation administrative
+------------------------------------------------------------
+Lorsque vous installez Excel 2000 sur votre ordinateur à partir
+d'une installation administrative sur un serveur, on peut vous
+demander d'entrer une CD Key. C'est ce qui se passe si
+l'administrateur système qui a créé l'installation administrative
+n'a pas entré la CD Key.
+
+Pour résoudre ce problème, vous devez demander à l'administrateur
+système de créer une nouvelle installation administrative et
+d'entrer la CD Key dans la première boîte de dialogue. Une fois fait,
+vous pouvez relancer l'installation à partir de cette nouvelle
+installation administrative sans avoir à entrer la CD Key.
+
+1.8 Messages inattendus lors de l'installation
+------------------------------------------------------------
+Si vous obtenez le même message inattendu à chaque fois que vous
+exécutez le programme d'installation d'Excel, il est possible de
+créer un fichier journal qui pourrait être utile pour le support
+technique Microsoft dans la résolution de votre problème. Une
+fois que ce fichier est créé, vous devrez appeler le support
+technique Microsoft.
+
+>>>Pour créer le fichier journal :
+
+1. Cliquez sur le bouton Démarrer de la barre des tâches, puis
+   cliquez sur Exécuter. 
+2. Dans la boîte de dialogue Exécuter, tapez :
+
+   <CHEMIN>\SETUP.EXE /L*V C:\VERBOSELOG.TXT
+
+   où <CHEMIN> est l'emplacement de SETUP.EXE. 
+   Si vous installez par exemple à partir du lecteur de CD-ROM,
+   alors le texte que vous devez taper devrait ressembler à : 
+ 
+   D:\SETUP.EXE /L*V C:\VERBOSELOG.TXT
+ 
+3. Cliquez sur OK.
+ 
+Le programme d'installation va redémarrer et créer un fichier
+appelé Verboselog.txt à la racine de votre lecteur C:. 
+
+1.9 Installation d'Excel 2000 sans supprimer la version
+    bêta 2 d'Office 2000
+-----------------------------------------------------------
+Un message d'erreur indiquant un problème dans la base de registre
+et vous demandant de relancer le programme d'installation peut 
+apparaître, ou bien, après quelques secondes, le programme peut
+s'arrêter.
+
+L'une ou l'autre de ces erreurs peut apparaître si vous avez
+installé Excel 2000 sans supprimer la version bêta 2 (2221b) de
+Microsoft Office 2000. 
+
+>>>Pour résoudre ce problème, vous devez supprimer la version
+bêta 2 d'Office 2000 : 
+
+1. Cliquez sur le bouton Démarrer de la barre des tâches, placez le
+   curseur sur Paramètres et cliquez sur Panneau de configuration.
+2. Double-cliquez sur l'icône Ajout/Suppression de programmes.
+3. Dans la liste des programmes installés, cliquez sur Microsoft
+   Office 2000 Premium (il s'agit de la version bêta 2 d'Office 2000). 
+4. Cliquez sur Ajouter/Supprimer.
+5. Cliquez sur Supprimer Office.
+6. Cliquez sur Oui lorsqu'on vous demande de confirmer la
+   suppression. 
+
+1.10 Différences dans le raccourci pour Excel 2000 dans le
+     menu Programmes selon le système d'exploitation
+-----------------------------------------------------------
+Les problèmes suivants peuvent apparaître pour le raccourci
+pour Excel 2000 dans le menu Programmes : 
+1. Il ne permet pas de réparer automatiquement le programme.
+   Cela se passe lorsque votre système d'exploitation ne prend
+   pas en charge les raccourcis Windows Installer. Ces raccourcis
+   ne sont pris en charge que par les versions suivantes de
+   Microsoft Windows : 
+   * Windows 98
+   * Windows 95 avec Internet Explorer 4.01, Service Pack 1, et
+     Active Desktop installé
+   * Microsoft Windows NT version 4 avec Internet Explorer 4.01,
+     Service Pack 1, et Active Desktop installé
+   Remarque : si vous installez Internet Explorer 5 sur un
+     ordinateur avec Windows 95 ou Windows NT version 4, et qui
+     dispose d'Internet Explorer 4.01, du Service Pack 1 et d'Active
+     Desktop installé, la prise en charge des raccourcis Windows
+     Installer sera assurée. 
+2. Le programme ne peut pas être installé à la première utilisation.
+   Ce problème arrive parce que l'option Installé à la première
+   utilisation n'est pas disponible. Seuls les systèmes
+   d'exploitation prenant en charge les raccourcis Windows 
+   Installer permettent l'utilisation de l'option Installé à la 
+   première utilisation. La liste de ces systèmes d'exploitation est
+   donnée dans le paragraphe 1. 
+3. Aucun chemin n'est affiché dans l'onglet Raccourci de la boîte
+   de dialogue Propriété du raccourci. Cela veut dire que ce raccourci
+   est un raccourci Windows Installer. Les raccourcis Windows
+   Installer ne référencent pas directement le chemin d'accès vers
+   la cible du raccourci. Ils contiennent à la place un jeton, que
+   Windows Installer analyse pour obtenir le chemin d'accès à la
+   cible. Les systèmes d'exploitation listés dans le paragraphe 1
+   prennent en charge les raccourcis Windows Installer. 
+
+______________________________________________________
+2. UTILISATION D'EXCEL 2000
+
+2.1 Liens HTML publiés vers un répertoire racine ne
+    fonctionnant pas dans Internet Explorer version 3.02
+----------------------------------------------------------
+Les liens hypertextes relatifs (liens dont les chemins d'accès
+sont exprimés relativement au document dans lequel ils sont
+contenus) ne permettront pas d'afficher dans Internet Explorer 3.02
+les pages Web publiées dans un répertoire racine. Pour éviter ce
+problème, utilisez une version plus récente d'Internet Explorer,
+publier les pages Web ailleurs que dans le répertoire racine ou
+supprimer les signes "./" au début de chaque lien du document à
+publier.
+
+2.2 Formules en langue naturelle désactivées par défaut
+----------------------------------------------------------
+À la différence d'Excel 97, les formules en langue naturelle
+sont désactivées par défaut dans Excel 2000. Si, par exemple,
+vous avez un entête de colonne contenant "Totaux" et que vous
+tapez "=somme(totaux)" dans une autre cellule, vous obtiendrez
+une erreur #NAME!. 
+
+>>>Si vous voulez utiliser les formules en lange naturelle dans
+un classeur particulier, vous devez : 
+
+1. Cliquer sur Options dans le menu Outils 
+2. Cliquer sur l'onglet Calcul
+3. Dans les Options de classeur, cliquer sur case à cocher Accepter
+   les étiquettes dans les formules
+4. Entrer à nouveau les formules en langues naturelles pour
+   recalculer les résultats comme souhaité
+
+Si vous voulez utiliser les formules en langue naturelle par défaut
+pour chaque nouveau classeur, créez un modèle de classeur pour
+lequel vous aurez activé l'option Accepter les étiquettes dans les
+formules. Enregistrez ce modèle sous le nom Book.xlt dans le dossier
+XLStart ou tout autre dossier de démarrage. Pour plus d'informations,
+consultez la rubrique d'Aide "Création d'un modèle de feuille pour
+les nouvelles feuilles de calcul".
+
+2.3 Recalcul à l'ouverture des fichiers enregistrés dans
+    un format de fichier antérieur
+----------------------------------------------------------
+Excel 2000 recalcule dès l'ouverture les formules d'un fichier
+qui aurait été enregistré dans une version antérieure d'Excel.
+Pour empêcher le recalcul automatique, enregistrez le fichier
+au format de fichier le plus récent (Classeur Microsoft Excel).
+
+2.4 Modification de clips supprimés à partir d'une version
+    antérieure de Clip Gallery 
+----------------------------------------------------------
+Si, sur une  feuille de calcul, vous double-cliquez sur un
+clip supprimé à partir d'une version précédente de Clip Gallery
+et qu'ensuite vous appuyez sur ÉCHAP ou vous cliquez sur Annuler
+pour quitter Clip Gallery, le clip sur la feuille de calcul sera
+remplacé par le premier clip de la première catégorie. Cliquez sur
+Annuler après avoir quitté Clip Gallery pour conserver le clip en
+cours dans la feuille de calcul. 
+
+2.5 Mise en forme des étiquettes de données dans un rapport
+    de tableau croisé dynamique
+-----------------------------------------------------------
+Si vous mettez en forme tout un groupe d'étiquettes de données
+dans un rapport de tableau croisé dynamique, et ensuite publiez
+ce rapport et son graphique avec interactivité sur une page Web,
+vous perdrez la mise en forme des étiquettes de données qui
+seront revenues à l'état Général. Mettez en forme les étiquettes
+de données une par une pour conserver cette mise en forme dans
+la page Web. 
+
+2.6 Publication de rapports de tableau croisé dynamique
+----------------------------------------------------------
+La publication d'un rapport de tableau croisé dynamique avec
+interactivité utilisant une requête ou une commande SQL référençant 
+deux fois le même champ provoque une erreur à l'ouverture de la page
+sous Internet Explorer. Ce problème peut être contourné en modifiant
+l'entête de colonne pour l'un des champs en double dans Microsoft
+Query.
+
+>>>Suivez ces étapes pour résoudre le problème :
+
+1.  Ouvrez le classeur Excel contenant le rapport de tableau croisé
+    dynamique utilisé pour la publication de la page Web.
+2.  Sélectionnez l'une des cellules du rapport de tableau croisé
+    dynamique, puis cliquez sur Rapport de tableau croisé dynamique
+    dans le menu Données. L'Assistant Tableau et graphique croisés
+    dynamiques d'ouvre directement à l'étape 3.
+3.  Cliquez sur Précédent.
+4.  Cliquez sur Lire les données. Cliquez sur OK si le message
+    d'erreur "Impossible de modifier cette requête avec l'Assistant
+    Requête" s'affiche. La requête à la base du rapport de tableau
+    croisé dynamique s'ouvrira dans Microsoft Query. 
+5.  Cliquez l'entête de colonne d'une des colonnes en double dans le
+    volet Données. 
+6.  Cliquez sur Modifier une colonne dans le menu Enregistrements.
+    Tapez un nom unique pour la colonne dans la boîte de dialogue
+    Entête de colonne, puis cliquez sur OK. 
+7.  Dans le menu Fichier, cliquez sur Renvoyer les données vers
+    Microsoft Excel.
+8.  De retour dans l'Assistant Tableau et graphique croisés
+    dynamiques, cliquez sur Terminer.
+9.  Un ou plusieurs champs de votre rapport de tableau croisé
+    dynamique auront disparu à cause du changement de nom de l'une
+    des colonnes. Faites glisser le champ que vous avez renommé de 
+    la barre d'outil Tableau croisé dynamique vers votre rapport de
+    tableau croisé dynamique. 
+10. Relancez la publication du rapport de tableau croisé dynamique.
+
+2.7 Sélectionner plusieurs objets
+----------------------------------------------------------
+Excel 2000 permet de sélectionner facilement plusieurs objets
+en même temps. 
+
+>>>Voici la méthode permettant cette sélection multiple :
+
+1. Cliquez sur le bouton Sélectionner plusieurs objets. 
+2. Dans la liste Objets de la boîte de dialogue Sélectionner
+   plusieurs objets, cliquez sur les objets à sélectionner. 
+
+>>>Comment accéder au bouton Sélectionner plusieurs objets : 
+
+1. Cliquez avec le bouton droit sur la boîte d'outil Standard,
+   et cliquez sur Personnaliser dans le menu contextuel. 
+2. Cliquez sur l'onglet Commandes. 
+3. Dans la liste Catégories, cliquez sur Dessin. 
+4. Déplacez le bouton Sélectionner plusieurs objets de la liste
+   Commandes vers la barre d'outils désirée. 
+
+2.8 Perte de la mise en forme monétaire lors de
+    l'enregistrement vers un format de fichier antérieur
+----------------------------------------------------------
+Lors de l'enregistrement d'un classeur vers un format de fichier
+antérieur, tel que le classeur Excel 5.0/95, vous risquez de perdre
+la mise en forme monétaire. Vous devez sauvegarder dans le format de
+fichier en cours si vous voulez conserver la mise en forme monétaire
+(classeur Microsoft Excel). 
+
+2.9 Perte du symbole euro lors de l'enregistrement vers un 
+    autre format de fichier
+----------------------------------------------------------
+Le symbole euro n'est pas conservé si vous enregistrez un
+classeur avec l'un des formats de fichier suivant : tous
+les formats de fichiers dBase, tous les formats de fichier
+Lotus 1-2-3, le format de fichier Quattro Pro/DOS, les feuilles
+de calcul Microsoft Excel 2.1, les feuilles de calcul Microsoft
+Excel 4.0, les classeurs Microsoft Excel 4.0 et les classeurs
+Microsoft Excel 5.0/95. Le symbole euro sera convertit en point
+d'interrogation pour les formats de fichier suivants : CSV (MS-DOS),
+Texte (MS-DOS) et DIF (Data Interchange Format). Le symbole euro
+sera convertit en s pour les formats de fichier suivants : CSV
+(Macintosh) et Texte (Macintosh). 
+
+2.10 Perte des paramètres de la macro complémentaire
+     Enregistrement automatique entre deux sessions
+-----------------------------------------------------------
+Toute modification apportée aux paramètres de la boîte de
+dialogue Enregistrement automatique n'est conservée que pour
+la session d'Excel en cours. Les paramètres retourneront à leurs
+valeurs par défaut lorsque vous aurez quitté et redémarré Excel.
+Consultez régulièrement le site Web Microsoft Office Update
+(http://officeupdate.microsoft.com/franche, pour le Canada :
+http://officeupdate.microsoft.com/canada/french) pour télécharger
+une éventuelle mise à jour de la macro Enregistrement automatique
+qui réglerait ce problème. 
+
+2.11 Défauts dans l'affichage des couleurs sur un moniteur
+     256 couleurs
+----------------------------------------------------------
+Après l'affichage de fenêtres dans certaines rubriques d'aide,
+l'affichage des couleurs de certains éléments peut devenir
+déficiente sur un moniteur 256 couleurs. Les éléments suivants,
+par exemple, risque de s'afficher différemment après l'affichage
+de fenêtres indépendantes : 
+* Bitmaps
+* Images incorporées dans un fichier
+* Compagnon Office
+* Liens hypertextes
+
+Vous devez modifier la palette de votre moniteur pour corriger
+ce problème. 
+
+>>>Comment modifier la palette de couleur :
+
+1. Cliquez sur Démarrer dans la barre des tâches, placez le curseur
+   sur Paramètres et cliquez sur Panneau de configuration. 
+
+2. Double-cliquez sur l'icône Affichage.
+
+3. Dans l'onglet Paramètres, sélectionnez une option différente
+   de 256 couleurs. Il est recommandé par Microsoft de ne pas
+   choisir l'option d'affichage en 256 couleurs si cela est
+   possible. 
+
+2.12 Problème d'installation du Gestionnaire de rapports
+ -----------------------------------------------------------------------
+
+Besoin de recharger (désélectionner et resélectionner) la macro complémentaire
+ Gestionnaire de rapports dans la boîte de dialogue Macros complémentaires.
+ 
+Lorsque vous exécutez le Gestionnaire de rapports pour la première fois après
+l'installation de Microsoft Excel et créez un rapport utilisant un affichage personnalisé,
+le Gestionnaire de rapports renvoie un message d'erreur du langage macro XL4.
+ 
+Pour y remédier, choisissez Macros complémentaires dans le menu Outils. 
+Dans la liste des macros complémentaires disponibles, désélectionnez
+Gestionnaire de rapports. Cliquez sur OK pour fermer la boîte de dialogue.
+Rouvrez la boîte de dialogue (menu Outils, Macros complémentaires) et sélectionnez
+Gestionnaire de rapports dans la liste. Cliquez sur OK pour fermer la boîte de dialogue.
+
+_____________________________________________________
+3. AIDE DE MICROSOFT EXCEL 2000
+
+3.1 Récupération des outils de vérification linguistique
+----------------------------------------------------------
+Les outils de vérification linguistique Microsoft Office 2000
+s'ajoutent à Office 2000 pour apporter tous les outils linguistiques
+nécessaires à plus de 30 langues. Vous pouvez vous les procurer
+auprès d'un revendeur agréé. 
+
+Le numéro SKU affiché dans l'aide est incorrect. Consultez le
+site http://www.microsoft.com/france/office/ pour plus d'informations
+sur comment récupérer les outils de vérification linguisitique
+Office 2000. 
+
+3.2 Vérification de l'orthographe pour d'autres langues
+----------------------------------------------------------
+La rubrique d'Aide de Microsoft Excel "Vérification de
+l'orthographe dans une autre langue" contient une erreur.
+Elle indique que, pour vérifier l'orthographe, vous devez
+avoir installé la langue désirée à l'aide du Microsoft
+Office 2000 Multi-language Pack. Le vérificateur orthographique
+peut être installé à partir du Multi-language Pack ou des outils
+de vérification linguistique Microsoft Office 2000. Le paragraphe
+précédent contient des informations pour obtenir les outils de
+vérification linguistique Microsoft Office 2000. 
+
+3.3 Composant WebBot non présent dans Office 2000 version
+    développeur
+----------------------------------------------------------
+Certaines rubriques d'Aide affirment avec erreur que les
+composants Office WebBot et autres produits associés sont livrés
+avec la version développeur de Microsoft Office 2000. Les
+composants WebBot ne sont pas livrés avec cette version de
+Microsoft Office 2000 développeur.
+
+3.4 Aide des fonctions ARRONDI.SUP et ARRONDI.INF incorrecte
+------------------------------------------------------------
+La rubrique d'aide d'Excel pour les fonctions ARRONDI.INF et
+ARRONDI.SUP affirme incorrectement que le deuxième argument
+"num_digit" indiquant le nombre de chiffres après la virgule
+à utiliser est facultatif, et que s'il est omis, le nombre en
+paramètre sera arrondi à l'entier le plus proche vers le haut
+(ARRONDI.SUP) ou vers le bas (ARRONDI.INF). Cet argument est
+obligatoire, et un message d'erreur s'affichera si vous oubliez
+de le spécifier. 
+
+3.5 Spécification dans l'aide du plus petit nombre pouvant
+    être entré
+-----------------------------------------------------------
+La rubrique d'aide "Microsoft Excel Specification" contient
+une erreur. Elle précise que le plus grand nombre pouvant être
+entré dans une cellule est 1E-307, et que le plus petit nombre
+entier que vous pouvez entrer dans une cellule est -1E-307. Le
+plus grand nombre entier pouvant être entré dans une cellule est
+2.2250738585073E-308. Le plus petit nombre entier pouvant être
+entré dans une cellule est -2.2250738585073E-308.
+
+La même rubrique d'aide indique que le plus grand nombre positif
+permis est 9.99999999999999E+308, et que le plus petit nombre
+négatif permis est 9.99999999999999E+308. Il s'agit des plus grand
+nombres pouvant être entré dans une cellule. Cependant, quand ce
+nombre est le résultat d'un calcul, il est au maximum de
+1.79769313486231E+308 et au minimum de -1.79769313486231E+308. 
+
+3.6 Spécification dans l'aide du plus petit nombre entier
+    pouvant être entré
+----------------------------------------------------------
+La rubrique d'aide d'Excel "Spécification d'une autre description
+de texte pour l'objet d'une page Web" contient une erreur. Il est
+indiqué que la longueur du texte entré dans la zone Texte de 
+remplacement dans l'onglet Web de la boîte de dialogue Format
+<de l'objet sélectionné> peut être de longueur illimitée. La
+longueur de ce texte est en fait limitée à 256 caractères. 
+
+3.7 Aperçu des pages et pages publiées
+----------------------------------------------------------
+Les rubriques d'aide Excel "Préparation de données Excel avant leur
+publication ou leur enregistrement en tant que page Web" et 
+"Utilisation de données Microsoft Excel sur le Web" contiennent
+des erreurs. Elle affirme que vous pouvez obtenir un aperçu d'une
+page Web en cliquant sur Aperçu de la page Web dans le menu Fichier.
+Il est possible d'avoir un aperçu d'une page Web de cette façon,
+mais le résultat effectivement publié pourra être différent selon
+la manière dont vous effectuez la publication. Si vous utilisez
+par exemple Aperçu de la page Web pour visualiser une feuille de
+calcul contenant des données, le résultat dans votre explorateur
+sera une représentation statique de la feuille de calcul. Mais si 
+vous cliquez sur Enregistrer en tant que page Web dans le menu 
+Fichier, que vous cliquez sur la case à cocher Ajouter 
+l'interactivité, puis que vous cliquez sur le bouton Publier, 
+le classeur sera enregistré en tant que feuille de calcul 
+interactive et s'affichera en tant que telle dans votre page Web 
+(et non pas sous forme statique). 
+
+3.8 Info-bulle de la boîte de dialogue Sécurité incorrecte
+----------------------------------------------------------
+L'info-bulle du texte se trouvant en bas de la boîte de dialogue
+Sécurité (Menu Outils, sous-menu Macro, commande Macro) contient
+une erreur, et indique que le texte "Affiche si un anti-virus est
+installé sur cet ordinateur". Le texte indique en fait si un
+antivirus que Microsoft Office reconnaît et utilise à l'ouverture
+de ses fichiers est installé. Par conséquent, si vous avez installé
+un anti-virus que Microsoft Office ne reconnaît pas ou n'utilise pas,
+vous verrez s'afficher le message "Aucun anti-virus installé".
+
+3.9 Versions de fichier Quattro Pro prises en charge
+----------------------------------------------------------
+La rubrique d'aide Microsoft Excel sur la prise en charge de
+Quattro indique avec erreur que les versions 1.0 à 8.0 de Quattro
+Pro sont prises en charge. Excel prend en charge les fichiers
+Quattro Pro/DOS (*.wq1), dont le convertisseur est automatiquement
+installé par Excel, et les version 1.0 à 5.0 pour Windows (*.wb1).
+Pour les versions ultérieures, vous pouvez les installer pendant une
+installation personnalisée, ou une fois que l'installation est
+terminée. 
+
+>>>Exécutez les étapes suivantes pour installer le convertisseur
+pour les fichiers Quattro Pro versions 1.0 à 5.0 : 
+
+1. Fermez Excel.
+2. Cliquez sur Démarrer dans la barre des tâches, placez le curseur
+   sur Paramètres puis cliquez sur Panneau de configuration. 
+2. Double-cliquez sur l'icône Ajout/Suppression de programmes. 
+3. Cliquez sur le nom de la version de Microsoft Office 2000 ou
+   Microsoft Excel 2000 que vous possédez, puis cliquez sur
+   Ajouter/Suprimer. 
+4. Cliquez sur Ajouter/Supprimer des composants et chercher le
+   Convertisseur Quattro Pro 5.0 sous la hiérarchie Microsoft Excel
+   pour Windows. 
+5. Cliquez sur Exécuter à partir du disque dur pour installer le
+   convertisseur sur votre disque dur. 
+6. Cliquez sur Mettre à jour.
+
+3.10 Internet Explorer 4.01 Service Pack 1 (SP1) requis pour
+     publier les données d'Excel avec l'interactivité. 
+----------------------------------------------------------
+La rubrique d'aide d'Excel "Utilisation de données Microsoft
+Excel sur le Web" affirme incorrectement que les utilisateurs de
+Microsoft Office 2000 équipés d'Internet Explorer 4.01 ou version
+ultérieure peuvent visualiser et modifier les données publiées avec
+l'interactivité à partir d'Excel. Ils auront en fait besoin
+d'Internet Explorer 4.01 Service Pack 1 (SP1) ou version ultérieure.
+Cette version d'Internet Explorer est livrée avec Windows 98 ou
+peut être téléchargée à partir du site Web de Microsoft : 
+
+ http://www.microsoft.com/windows/ie_intl/fr/download/windows.htm
+
+3.11 Procédures d'exécution de NetMeeting
+-----------------------------------------------------------
+Les rubriques d'aides suivantes contiennent des informations 
+erronées sur la procédure d'exécution de NetMeeting : 
+
+   * Participation à une réunion en ligne
+   * À propos des réunions en ligne
+   * Démarrer NetMeeting
+
+>>>Pour exécuter NetMeeting :
+* Cliquez sur le menu Démarrer dans la barre des tâches, puis placez
+  le curseur successivement sur Programmes, Accessoires et 
+  Communications, puis cliquez sur NetMeeting. 
+
+3.12 Récupération de la version complète du fichier d'aide
+    localisé des fonctions de macro
+----------------------------------------------------------
+La version complète du fichier d'aide des fonctions de macro
+n'a pas été mise à jour pour la version localisée d'Excel 2000.
+Si vous souhaitez obtenir la version 97 localisée de ce fichier
+d'aide, vous pouvez la télécharger à partir du site suivant :
+htpp://www.microsoft.com/france/support/produits/office/excel/adds/
+
+Remarque : Cette version du fichier d'aide des fonctions de macro
+pour Microsoft Excel 4.0 (xlmacro8.hlp) livré avec Excel 97 n'est
+pas compatible avec le système d'aide d'Excel 2000. Si vous 
+choisissez de télécharger la version Excel 97 de Xlmacro8.htlp et 
+d'utilisez cette version, vous devrez l'exécuter en ouvrant
+l'explorateur Windows, rechercher cette version d'Xlmacro8.hlp et
+double-cliquer dessus. Cette méthode permet d'exécuter le système
+d'aide indépendamment d'Excel 2000.
+
+3.13 Référence incorrecte au bouton Séparateur de milliers
+    dans l'Aide d'Excel
+-------------------------------------------------------------------------
+ 
+Dans la rubrique d'aide Affichage ou masquage du séparateur de milliers 
+d'un nombre,le séparateur de milliers apparaît être une virgule.
+La rubrique devrait faire référence à la case à cocher (000) de
+la barre d'outils Mise en forme.
+
+_____________________________________________________
+4. PROBLÈMES ENGENDRÉS PAR LES VERSIONS MULTILINGUES
+
+4.1 Publication dans un environnement multilingue
+----------------------------------------------------------
+Si vous désirez publier une page Web qui pourra être utilisée
+dans un environnement multilingue et que la langue que vous utilisez
+est différente de celle de la page que vous voulez modifier, il
+est préférable de publier vers une nouvelle page que vers la page
+existante. Si vous ne faîtes pas cela, les objets que vous aurez
+ajoutés à cette page utiliseront la langue déjà utilisée par cette
+page, et non celle que vous utilisez. 
+
+4.2 Problèmes d'affichage lors de l'utilisation de plusieurs
+    polices asiatiques
+------------------------------------------------------------
+Des problèmes d'affichage peuvent apparaître si vous installez
+plusieurs polices asiatiques sur une version non-asiatique du
+système d'exploitation Windows NT 4.0. Ces problèmes peuvent être
+un texte de très grande taille, des textes vides ou de grandes
+zones blanches dans Excel ou Windows NT. Ce problème a été identifié
+pour Windows NT version 4.0 Service Pack 4 et sera résolu dans la
+prochaine version du Service Pack pour Windows NT version 4.0. 
+
+4.3 Dégradation des performances avec le Asian Multi-language
+    Pack
+------------------------------------------------------------
+Les versions asiatiques d'Excel 2000 ou occidentales d'Excel 2000
+disposant du Asian Multi-language Pack peuvent souffrir de
+notables dégradations de performances lors de l'utilisation d'un
+pilote d'impression occidental. Installez un pilote d'impression
+localisé (langue asiatique) pour résoudre ce problème. 
+
+4.4 Calendrier Hijri non pris en charge par les fonctions
+    JOUR, MOIS et ANNEE
+-----------------------------------------------------------
+Les valeurs renvoyées par les fonctions JOUR, MOIS et ANNEE
+correspondront toujours au calendrier grégorien, quelque soit
+le format d'affichage utilisé pour la date passée en paramètre.
+Par exemple, si la date passée en paramètre correspond au
+calendrier Hijri, les valeurs renvoyées par les fonctions
+ANNEE, MOIS et JOUR correspondront aux dates du calendrier
+grégorien équivalentes. 
+
+4.5 Calendriers lunaires hébreux et Hijri non pris en
+    charge par Microsoft Query
+----------------------------------------------------------
+Vous ne devez pas entrer de dates au format du calendrier
+lunaire hébreu ou Hijri comme critère de requêtes créées
+sous Microsoft Query. Vous devez entrer des valeurs correspondant
+sans ambiguïté à un calendrier grégorien si le calendrier que
+vous utilisez est hébreux ou Hijri. Pour éviter toute ambiguïté,
+vous devez entrer les noms de mois en toute lettre et les années
+avec 4 chiffres.
+Pour connaître le type de calendrier que vous utilisez, ouvrez-le
+Panneau de configuration, double-cliquez sur Paramètres régionaux
+et regardez la valeur affichée à coté de "Type de calendrier". 
+
+4.6 Microsoft Query 2000 et les noms de table et de champs
+    UNICODE
+----------------------------------------------------------
+Microsoft Query 2000 ne prend pas en charge les bases de données
+contenant des noms de table ou de champs UNICODE. Si vous lancez
+une requête sur une base de données contenant de tels noms de champs
+ou de table, vous obtiendrez un message d'erreur vous annonçant un
+nombre de paramètres insuffisants. N'utilisez pas les noms de table
+et de champs dans les bases de données que vous voulez utiliser avec
+Query 2000. 
+
+4.7 Microsoft Query version anglaise (U.S.) et les
+    caractères DBCS
+----------------------------------------------------------
+La police utilisée par la version anglaise (U.S.) de Query 2000
+ne prend pas en charge les caractères DBCS. Si vous utilisez une 
+telle version de Query 2000 pour interroger des bases de données
+contenant des caractères DBCS, les caractères DBCS apparaîtront
+sous forme de caractères aléatoires. 
+
+4.8 Utilisation des signes diacritiques avec WordArt et
+    Publication sur le Web
+----------------------------------------------------------
+Les signes arabes créés sous WordArt avec des signes diacritiques
+apparaîtront déconnectés lors de leur publication sur le Web. Il
+est préférable de ne pas utiliser de signe diacritique sous WordArt
+pour une publication sur le Web. 
+
+4.9 Initialisation du vérificateur orthographique après 
+    l'utilisation d'une langue asiatique ou orientale
+----------------------------------------------------------
+Si vous sélectionnez un dictionnaire de vérification orthographique
+pour une langue orientale ou asiatique, comme le coréen, puis que
+vous essayez ensuite de lancer la vérification sous votre langue
+par défaut, vous risquez d'obtenir un message avertissant que le
+vérificateur orthographique ne peut pas être initialisé.
+Vous devez dans ce cas restaurer le vérificateur orthographique par
+défaut. Suivez les étapes suivantes : 
+
+1. Fermez Excel.
+2. Cliquez sur Démarrer dans la barre des tâches, placez le curseur
+   sur Paramètres puis cliquez sur Panneau de configuration. 
+3. Double-cliquez sur l'icône Ajout/Suppression de programmes.
+3. Cliquez sur le nom du Multi-language Pack Microsoft Office 2000
+   ou de l'outil de vérification linguistique Office contenant 
+   la langue orientale ou asiatique que vous avez utilisée, puis
+   cliquez sur Ajouter/Supprimer. 
+4. Cliquez sur Ajouter/Supprimer des composants et chercher l'outil
+   de vérifications dans la hiérarchie Outils Office correspondant
+   à la langue que vous utilisiez. 
+5. Cliquez sur Non disponible pour ces outils, puis cliquez ensuite
+   sur Mettre à jour. 
+
+Votre vérificateur orthographique sera à nouveau disponible lors de
+votre prochaine exécution d'Excel. Vous devrez réinstaller les outils
+orthographique de l'autre langue si vous voulez à nouveau les
+utiliser.
+
+4.10 Caractères de langues orientales non utilisables comme
+     touches de raccourci macro
+-----------------------------------------------------------
+La touche de raccourci d'une macro ne sera pas reconnue si
+vous lui assignez un caractère oriental, et la macro ne 
+s'exécutera pas. Vous devez assigner un caractère latin comme
+touche de raccourci pour une macro. 
+
+4.11 Impressions de langues orientales.
+----------------------------------------------------------
+Certaines imprimantes peuvent nécessiter des pilotes d'impression
+mis à jour. Contactez le fabriquant de votre imprimante si vous
+rencontrez des problèmes lors de l'impression. 
+
+4.12 Erreur lors du démarrage d'Excel 2000 après la mise à
+     jour d'Excel 95 en langue orientale
+----------------------------------------------------------
+Lors de la mise à jour vers Excel 2000 d'une version orientale
+d'Excel 95, le message d'erreur suivant s'affichera à chaque
+exécution d'Excel, vous obtiendrez une erreur d'exécution n°1004
+de Visual Basic pour Application.
+
+Excel redémarrera sans problème après avoir cliqué sur OK. L'erreur
+est causée par le fichier Personal.xla, situé dans le dossier 
+XLStart. Ce fichier n'est pas utilisé par Excel 2000 et contient des
+références obsolètes à certains composants orientaux d'Excel 95. 
+
+Ce fichier n'est pas supprimé pendant la mise à jour vers Excel 2000
+car la version installée par la version orientale d'Excel 95 aura
+pu être modifié ou amélioré par l'utilisation. Supprimez ce fichier
+du dossier XLStart si vous n'en avez plus besoin. Sinon, ouvrez-le
+fichier et supprimez toute référence à des composants obsolètes
+d'Excel 95 version orientale. 
+_______________________________________________________
+5. MICROSOFT VISUAL BASIC POUR APPLICATIONS
+
+5.1 Différence entre la fonction ROUND de VBA et la fonction
+    de feuille ARRONDI
+------------------------------------------------------------
+La fonction ROUND de VBA n'est pas conforme aux normes IEEE, et
+peut donc renvoyer des résultats différents de la fonction de
+feuille ARRONDI. Par exemple, une cellule contenant la formule 
+
+   =ARRONDI(2.5,0)
+
+renverra la valeur 3, alors que la commande VBA
+
+   MsgBox Round(2.5,0)
+
+renverra 2.
+
+5.2 Méthode Add (Collection PivotCaches)
+----------------------------------------------------------
+La rubrique d'aide de Microsoft Visual Basic pour Application
+indique avec erreur que l'argument SourceType de la méthode Add
+est optionnel. L'argument SourceType est obligatoire. De plus, le
+code d'exemple créant un cache de tableau croisé dynamique à partir
+d'un fournisseur OLAP ne fournit pas assez d'informations pour le
+cube sous-jacent. Les valeurs des propriétés CommandText et 
+CommandType doivent être fournies.
+
+5.3 Méthode OpenText
+----------------------------------------------------------
+La rubrique d'aide de Microsoft Visual Basic pour Application 
+indique avec erreur que la valeur par défaut de l'argument DataType
+de la fonction OpenText est xlDelimited. Si aucune valeur n'est
+spécifiée pour l'argument DataType, Excel déterminera sa valeur à
+partir du fichier texte spécifié. 
+
+5.4 Méthode Quit
+----------------------------------------------------------
+Microsoft Excel risque de se figer si vous appelez une procédure
+appelant la méthode Quit à partir de Visual Basic Editor, et que
+vous cliquez sur Annuler lorsqu'on vous demande d'enregistrer vos
+modification.
+Il est préférable de lancer la macro en cliquant sur Macro dans le
+menu Outils puis de cliquer dans le sous-menu Macros. 
+
+5.5 Propriétés Cells et Formula
+----------------------------------------------------------
+L'utilisation de la propriété Cells sans qualificateur d'objet
+renvoie un objet Range (plage de cellule) représentant toutes les
+cellules de la feuille de calcul active. Si vous modifiez la
+propriété Formula pour cette plage (par exemple, 
+Cells.Formula = "=100*200"), Excel donnera l'impression de se figer.
+Si vous essayez de lire la propriété Formula, vous obtiendrez une
+erreur de mémoire insuffisante. 
+
+5.6 Propriété Context (Objet CommandBar)
+----------------------------------------------------------
+Cette propriété renvoie une chaîne vide et n'est pas prise en
+charge dans les autres cas. 
+
+5.7 Propriété DragToData
+----------------------------------------------------------
+Pour les sources de données OLAP, cette propriété a comme valeur
+FALSE pour les champs de hiérarchie. 
+
+5.8 Code d'exemple pour la propriété FeatureInstall
+----------------------------------------------------------
+Le code d'exemple de la propriété FeatureInstall est incorrect.
+La ligne suivante doit être supprimée : 
+
+   .ActivateMicrosoftApp
+
+De plus, vous devez cliquer sur Référence, dans le menu Outils,
+et sélectionner Microsoft Word 9.0 Object Library pour que
+l'exemple puisse s'exécuter correctement. 
+
+5.9 Propriété Hidden (Objet TreeviewControl)
+----------------------------------------------------------
+La propriété Hidden de l'objet TreeViewControl sert à cacher
+des éléments de façon individuelle dans un rapport de tableau croisé
+dynamique OLAP. Elle ne sert pas uniquement à l'enregistrement de
+macros, comme l'indique la rubrique d'aide de Microsoft Visual Basic
+pour Application consacrée à cette propriété. De plus, contrairement
+à ce qui est écrit, si vous voulez savoir quels éléments du contrôle
+sont visibles, vous devez consulter la propriété de chaque objet
+PivotItem un par un, et non la propriété Drilled de l'objet
+TreeViewControl.
+
+5.10 Propriété Index (Objet PivotFormula)
+----------------------------------------------------------
+Cette propriété permet de lire ou de modifier le numéro d'index
+d'un objet PivotFormula à l'intérieur de la collection PivotFormula.
+Cette propriété fonctionne en mode lecture/écriture. 
+
+5.11 Propriétés ReplacementList et PrintQuality
+----------------------------------------------------------
+Contrairement à ce qui est indiqué dans l'aide de Microsoft Visual
+Basic pour Application, ReplacementList et PrintQuality sont des
+propriétés, et non des méthodes. 
+
+5.12 Nouvelles propriétés (VBA)
+----------------------------------------------------------
+Voici une liste de nouvelles propriétés s'appliquant à des modules
+de classes dans des projets indépendants : 
+
+* Propriété Instancing
+
+  Définit une valeur spécifiant s'il est possible de créer des
+  instances d'une classe publique à l'extérieur d'un projet, et
+  si oui, comment ces instances se comporteront. Non disponible
+  à l'exécution. 
+
+  Valeurs
+
+  La propriété Instancing peut prendre les valeurs suivantes :  
+
+  Valeur     Description
+
+  1          Private (défaut). Les autres applications n'ont pas
+             accès aux informations de bibliothèque de la classe, et
+             ne peuvent pas en créer d'instance. Les objets privés
+             (Private) ne peuvent être utilisés qu'à l'intérieur de
+             votre composant. La valeur Private est la valeur par
+             défaut uniquement pour les modules de classe de projets
+             indépendants. 
+
+  2          PublicNotCreatable. Les autres applications ne peuvent
+             utiliser les objets de cette classe que s'ils ont été
+             créés par votre composant. Les autres applications ne
+             peuvent utiliser ni la fonction CreateObject ni
+             l'opération New pour créer des objets à partir de cette
+             classe. 
+
+* Propriété Name
+
+  Renvoie le nom utilisé dans le code pour identifier une classe.
+  En lecture uniquement à l'exécution. 
+
+  Syntaxe
+
+  objet.Name
+
+  Le mot objet représente une expression objet renvoyant vers une
+  classe
+
+  Remarques
+
+  Un nom d'objet doit débuter par une lettre et ne peut contenir
+  que 40 caractères au maximum. Il peut contenir des numéros et
+  des caractères souligné (_) mais pas de signe de ponctuation ni
+  d'espace. Bien que le contenu de la propriété Name puisse être un
+  mot clé, un nom de propriété ou le nom d'un autre objet, cela
+  risque de créer des conflits dans votre code. 
+
+5.13 Utilisation de la touche F3 pour chercher la prochaine
+     occurrence d'un texte dans la fenêtre de code
+-----------------------------------------------------------
+Appuyez sur F3 pour rechercher la prochaine occurrence d'un texte
+dans la fenêtre de code. La combinaison de touche MAJ+F4 ne
+fonctionne, au contraire de ce que spécifie la documentation. 
+
+_______________________________________________________
+6. SCRIPT, HTML ET AUTRES LANGAGES DE PROGRAMMATION
+
+6.1 Faire confiance à tous les modèles et compléments
+    installés, y compris ceux du dossier XLStart
+----------------------------------------------------------
+Dans la boîte de dialogue Sécurité (Menu Outils, Macro, Sécurité),
+la case à cocher Faire confiance à tous les modèles et compléments
+installés permet d'inclure les fichiers contenus dans le dossier
+XLStart. Si cette option n'est pas sélectionnée, vous obtiendrez
+un message d'avertissement à chaque fois que vous ouvrirez un
+fichier du dossier XLStart contenant des macros. 
+
+6.2 Langue par défaut pour Visual Basic Editor et
+    Microsoft Scriptor Editor.
+----------------------------------------------------------
+Si la page de code système ne prend pas en charge la langue
+de l'interface utilisateur, la langue par défaut de Visual
+Basic Editor et Microsoft Script Editor sera l'anglais. 
+
+6.3 System Event Notification System
+----------------------------------------------------------
+Les programmeurs écrivant vers le System Event Notification
+System (SENS) et les interfaces IEventSubscription et IEventSystem
+peuvent consulter la documentation de ces interfaces sur le site 
+MSDN Online (http://www.microsoft.com/france/msdn/) ou une version
+du Platform SDK plus récente que celle livrée avec le MSDN d'avril. 
+
+6.4 Documentation de référence pour HTML
+----------------------------------------------------------
+Les dernières documentations pour HTML, DHTML et CSS sont 
+disponibles en ligne à l'adresse suivante :
+  http://www.microsoft.com/france/msdn
+
+6.5 Versions d'Internet Explorer et édition de code HTML
+----------------------------------------------------------
+La sélection pour les éléments placés fonctionne différemment
+dans Microsoft Script Editor selon la version de Internet Explorer
+installée. Un élément placé est tout élément possédant une hauteur
+et une largeur, tel que les boutons.
+
+La sélection des éléments placés pour Internet Explorer 4.01 
+fonctionne comme indiqué ci-dessous :
+
+* Le premier clic sur un élément permet de modifier le texte à
+  l'intérieur de l'élément. 
+* Le deuxième clic sélectionne l'élément en lui-même.
+* Double-cliquer sur un élément sélectionne le bloc de texte à
+  l'intérieur de cet élément.
+
+La sélection des éléments placés pour Internet Explorer 5.0 
+fonctionne comme indiqué ci-dessous : 
+
+* Le premier clic sur un élément permet de le sélectionner. 
+* Le deuxième clic sur cet élément permet de modifier le texte à
+  l'intérieur de cet élément. 
+* Double-cliquer sur un élément affiche le code source de cet
+  élément. 
+
+Note : la sélection des tables dans Internet Explorer 5.0 fonctionne
+de la même manière que pour Internet Explorer 4.01. 
+
+De plus, la conservation des espaces blancs lors du basculement entre
+les différentes vues dans l'éditeur est plus efficace sous Internet
+Explorer 5.0 que sous Internet Explorer 4.01. 
+
+6.6 Rubrique "Mot clé introuvable" (Microsoft Script Editor)
+------------------------------------------------------------
+Il n'est pas nécessaire de disposer de la bibliothèque MSDN ou
+du CD de bibliothèque MSDN pour consulter les rubriques d'aides
+de Microsoft Script Editor. Si jamais vous tombez tout de même
+sur la rubrique "Mot clé introuvable", essayez l'une des
+opérations suivantes :
+
+* Réinstallez Microsoft Script Editor à partir du programme
+  d'installation de Microsoft Office.
+*  Insérez le CD Microsoft Office dans le lecteur de CD-ROM. 
+
+

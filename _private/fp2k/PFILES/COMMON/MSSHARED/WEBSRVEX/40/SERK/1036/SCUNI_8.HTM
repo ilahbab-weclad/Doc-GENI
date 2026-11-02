@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Stratégie de sécurité du correctif Apache</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+
+	<TR>
+		<TD BGCOLOR="#000000"><IMG SRC="home.gif" WIDTH=103 HEIGHT=21
+ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH="100%"><IMG 
+SRC="1ptrans.gif" WIDTH=1 
+HEIGHT=1 ALT="" BORDER=0></TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+<FONT FACE="Arial, Helvetica" SIZE=1><A HREF="http://www.microsoft.com/france" TARGET="_top"><IMG 
+SRC="msft.gif" WIDTH=91 
+HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+
+	<!--WEB SITE TITLE AND LOGO START-->
+
+	<TR>
+		<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD colspan="2" nowrap bgcolor="#666699" valign="middle" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+	
+		<!--WEB SITE TITLE AND LOGO ENDS-->
+
+		<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
+	
+		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous UNIX</font></b></font>
+
+<HR>
+
+			<A NAME="apachepatchsecuritystrategy"></A><P><A HREF="scuni_7.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;8 sur 10&nbsp;</sup></b></font><A HREF="scuni_9.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=title>&nbsp;&nbsp;&nbsp;&nbsp;Stratégie de sécurité du correctif Apache</FONT>  <p>La correctif FrontPage pour Apache se compose de deux parties&nbsp;:</P>
+
+				<UL>
+					<LI class=LB1><A NAME="scunix.doc-1069"></A>Le module Apache de FrontPage, qui intercepte les requêtes du client FrontPage destinées aux fichiers exécutables des extensions serveur FrontPage, contrôle la sécurité et redirige la requête vers le programme stub fpexe configuré avec la racine SUID. Chaque requête étant interceptée sur le serveur, aucun alias de script n'est requis.
+
+	<LI class=LB1>Le programme fpexe, qui accepte les requêtes d'opérations d'auteur émanant du module Apache de FrontPage, valide d'autres options de sécurité, affecte à l'identificateur d'utilisateur du processus du serveur Web le propriétaire du site Web FrontPage étendu en cours de création puis appelle la copie centrale des fichiers exécutables des extensions serveur FrontPage.
+</UL>
+				
+			<P class=4>&nbsp;</P>
+
+			<p>Pour le programme 
+ fpexe, SUID devant avoir la valeur «&nbsp;racine&nbsp;» afin que les identificateurs d'utilisateur du processus du serveur Web puissent être remplacées par le propriétaire du site Web, de nombreux contrôles de sécurité sont effectués pour empêcher que ce stub soit exploité. Ces contrôles valident ce qui suit&nbsp;: 
+
+<UL>
+					<LI class=LB1>Le propriétaire et les autorisations appropriées sont définis pour le programme stub fpexe et son répertoire.
+
+	<LI class=LB1>Le propriétaire et les autorisations appropriées sont définis pour les fichiers exécutables des extensions serveur et leurs répertoires.
+
+	<LI class=LB1>La zone de contenu du site Web en cours de création a un identificateur d'utilisateur valide.
+
+	<LI class=LB1>La zone de contenu du site Web en cours de création a un identificateur de groupe valide.
+
+	<LI class=LB1>Seuls les fichiers exécutables CGI des extensions serveur FrontPage sont exécutés.
+
+	<LI class=LB1>Les variables d'environnement (y compris le chemin) ne contiennent pas d'erreurs et ne sont transmises que si elles figurent sur une liste présélectionnée et approuvée.
+
+	<LI class=LB1>Les fichiers exécutables des extensions serveur FrontPage ne sont appelées que par le serveur Web.
+
+	<LI class=LB1>Une valeur de clé de 128&nbsp;octets générée dynamiquement lors de l'initialisation du processus du serveur Web est transmise au programme fpexe et validée, ce qui garantit que seul le serveur Web peut exécuter fpexe.
+</UL>
+				
+			<P class=4>&nbsp;</P>
+
+			<p>Cette valeur est stockée à des fins de validation dans un fichier suidkey.*. Les opérations de lecture et d'écriture dans ce fichier ne sont autorisées qu'au niveau «&nbsp;:racine&nbsp;» et le fichier est stocké dans un répertoire qui ne peut être lu qu'au niveau «&nbsp;racine&nbsp;». Seules les autorisations au niveau racine permettent d'écrire dans le fichier suidkey.* car le processus du serveur Web s'exécute en tant que «&nbsp;racine&nbsp;» pendant l'initialisation et n'utilisera un autre identificateur d'utilisateur (comme «&nbsp;www&nbsp;») que lorsque l'initialisation sera terminée. Le suffixe du fichier suidkey.* est l'identificateur de groupe du processus du serveur Web.</p>
+
+			<p>Le contenu de cette valeur de clé dynamique est généré pendant l'initialisation du serveur Web à partir d'une permutation du résultat de la commande d'état du processus (ps), et fait ensuite l'objet d'une opération XOR avec le contenu d'un fichier de clés personnalisées contrôlé par l'administrateur et stocké dans /usr/local/frontpage/version4.0/apache-fp/suidkey. Ce fichier doit exister, son propriétaire doit être défini au niveau racine, il ne doit pouvoir être lu qu'à ce niveau et doit contenir au moins 8&nbsp;octets de données.</p>
+
+			<p>Lors de la maintenance de votre serveur, changez régulièrement le contenu du fichier de clés personnalisées lorsque que vous redémarrez le serveur. Vous protégerez ainsi la valeur de la clé.</p>
+
+			<p>Quand une requête est traitée par le module Apache de FrontPage pour appeler les fichiers exécutables des extensions serveur FrontPage, le module effectue une validation préliminaire de la requête qu'il dirige sur le programme stub fpexe. La valeur de clé de 128&nbsp;octets générée lors de l'initialisation du serveur est transmise à fpexe via un canal de communication et n'est donc pas visible dans l'environnement du programme. Elle est lue par fpexe à partir du canal puis comparée au contenu du fichier suidkey.* généré dynamiquement lors de l'initialisation du serveur. L'identificateur d'utilisateur du programme fpexe étant «&nbsp;racine&nbsp;» il peut accéder au contenu du fichier suidkey.*. Si ce fichier est assorti des autorisations appropriées (lecture autorisée par «&nbsp;racine&nbsp;» seulement dans un répertoire accessible en lecture seule par «&nbsp;racine&nbsp;») et que la valeur de clé de 128&nbsp;correspond, fpexe effectue d'autres vérifications pour valider l'identificateur de l'utilisateur, l'identificateur du groupe et le propriétaire des fichiers exécutables des extensions serveur FrontPage cible.</p>
+
+			<p>Si toutes les vérifications sont effectuées avec succès, fpexe remplace l'identificateur d'utilisateur et l'identificateur de groupe du processus du serveur par ceux du propriétaire du contenu du site Web puis lance les fichiers exécutables des extensions serveur FrontPage. Si une des vérifications échoue, une erreur est consignée dans le journal du serveur Web et les extensions serveur ne s'exécutent pas.</p>
+
+			<p>Notez que les contrôles de sécurité du module Apache de FrontPage ne remplacent pas le système de sécurité du fichier .htaccess du serveur Web. Ces deux systèmes garantissent ensemble la sécurité du site Web FrontPage étendu. Le système .htaccess protège l'accès à distance au contenu du site Web en vérifiant que l'utilisateur des extensions serveur FrontPage est un visiteur, un auteur ou un administrateur enregistré du site. En plus de ces contrôles de sécurité normaux, ceux du module Apache de FrontPage vérifient que le programme fpexe n'est pas utilisé pour un accès racine non autorisé au serveur Web.</p>
+
+			<p>Les administrateurs de serveurs étant directement concernés par les programmes dont l'identificateur d'utilisateur est configuré à «&nbsp;racine&nbsp;», Microsoft leur permet d'accéder au code source du module Apache de FrontPage et du programme stub fpexe. Le code source le plus récent se trouve dans le kit de téléchargement des extensions serveur FrontPage&nbsp;2000. Il est commenté en détail, les vérifications effectuées sont expliquées ainsi que les actions à effectuer si une erreur indiquant une configuration non sûre est consignée par le module Apache de FrontPage ou par fpexe.</p>
+		</TD>
+
+		<!--FAR-RIGHT COLUMN SECTION ART START-->
+	
+		<TD rowspan="20" nowrap>
+			<img SRC="secart.gif" align="center" alt="Image de la section Sécurité">
+		</TD>
+
+		<!--FAR-RIGHT COLUMN SECTION ART END-->
+
+	</TR>
+
+	<!--LEFT-NAVIGATION MENUS START-->
+
+	<TR>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" href="scintro.htm"><font color="#000000">&nbsp;&nbsp;Introduction</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" href="scwin.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous <br>&nbsp;&nbsp;Windows NT</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="adoview.htm"><font color="#000000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+	<!--LAST ROW START-->
+
+	<TR>
+    	<TD height="1430" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+		
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_BEGIN-->
+
+<BR>
+
+<TABLE cellspacing="0" cellpadding="0" border=0>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD width="237" valign="top"><A HREF="scuni_7.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;8 sur 10&nbsp;</sup></b></font><A HREF="scuni_9.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    	<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+    </TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+   </TR>
+   
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,254 @@
+VIEW "Mensuel, vue en trois volets","Pleine page",,LANDSCAPE,3000,3000
+
+;=======================================================================
+; PAGE 1
+;=======================================================================
+
+;=======================================================================
+; Header - Username, Date
+;=======================================================================
+
+OBJECT  ,TEXT,1010,0,1990,130
+	STYLES			stySmallUserName
+	VALUE			"&USERNAME"
+
+OBJECT  ,TEXT,1010,100,1990,220
+	STYLES			styDate
+	VALUE			"&PRINTDATE"
+
+;=======================================================================
+; Left Pane - Timeframe and Schedule Box
+;=======================================================================
+
+OBJECT	,RECTANGLE,0,0,990,10
+	OPTIONS			BLACK
+
+OBJECT  ,TIMEFRAME,0,10,150,2935
+	STYLES			stySmallTime
+
+OBJECT  ,SCHEDULE,150,10,990,2935
+	STYLES			stySmallApptText, stySmallApptText, stySmallHeading
+	OPTIONS			3, 30, LOCATION, OVERFLOW, 10
+
+;=======================================================================
+; Right Pane - Other Appts, Events and To-Do Overflow
+;=======================================================================
+
+OBJECT	,RECTANGLE,2010,0,3000,10
+	OPTIONS		BLACK
+
+OBJECT  ,RECTANGLE,2010,10,3000,2935
+
+OBJECT	,APPTS,0,0,0,0
+	STYLES		stySmallApptText, stySmallTime, stySmallHeading
+	RANGE		BEFORE,STARTTIME,OR,AFTER,ENDTIME
+	OPTIONS		LOCATION, NONE, 1, 10, 0
+
+OBJECT	,EVENTS,0,0,0,0
+	STYLES		stySmallApptText, stySmallHeading
+	OPTIONS		10, 1
+
+OBJECT  ,TASKS,0,0,0,0
+	STYLES			stySmallApptText, stySmallTaskDue, stySmallTaskCompleted, stySmallProjectText, stySmallHeading
+	OPTIONS			NONE, 1, 10
+
+OBJECT  ,OVERFLOW,2010,0,3000,2935
+	OPTIONS			MINIMAL, CLEAR, 10
+	STYLES			stySmallApptText
+
+;=======================================================================
+; Center Pane - Calendars
+;=======================================================================
+
+; Row 1
+	
+OBJECT  ,TEXT,1010,190,1490,260
+	DELTAYMD		-2,MONTH
+	VALUE			"&PRINTDATE"
+	DATEFMT			"MMMM yyyy"
+	STYLES			stySmallDate
+	OPTIONS			HCENTER, VCENTER, NONE
+
+OBJECT  ,CALENDAR,1010,250,1490,560
+	STYLES			stySmallCalendar
+	DELTAYMD		-2,MONTH
+
+OBJECT  ,TEXT,1510,190,1980,260
+	DELTAYMD		-1,MONTH
+	VALUE			"&PRINTDATE"
+	DATEFMT			"MMMM yyyy"
+	STYLES			stySmallDate
+	OPTIONS			HCENTER, VCENTER, NONE
+
+OBJECT  ,CALENDAR,1510,250,1980,560
+	STYLES			stySmallCalendar
+	DELTAYMD		-1,MONTH
+
+; Row 2
+
+OBJECT  ,RECTANGLE,1010,640,1490,1070
+	OPTIONS			GRAY
+
+OBJECT  ,TEXT,1010,630,1490,700
+	VALUE			"&PRINTDATE"
+	DATEFMT			"MMMM yyyy"
+	STYLES			stySmallDate
+	OPTIONS			HCENTER, VCENTER, NONE
+
+OBJECT  ,CALENDAR,1010,690,1490,1000
+	STYLES			stySmallCalendar
+	OPTIONS			2
+
+OBJECT  ,TEXT,1510,630,1980,700
+	DELTAYMD		1,MONTH
+	VALUE			"&PRINTDATE"
+	DATEFMT			"MMMM yyyy"
+	STYLES			stySmallDate
+	OPTIONS			HCENTER, VCENTER, NONE
+
+OBJECT  ,CALENDAR,1510,690,1980,1000
+	STYLES			stySmallCalendar
+	DELTAYMD		1,MONTH
+
+; Row 3
+
+OBJECT  ,TEXT,1010,1070,1490,1140
+	VALUE			"&PRINTDATE"
+	DATEFMT			"MMMM yyyy"
+	STYLES			stySmallDate
+	DELTAYMD		2,MONTH
+	OPTIONS			HCENTER, VCENTER, NONE
+
+OBJECT  ,CALENDAR,1010,1130,1490,1440
+	STYLES			stySmallCalendar
+	DELTAYMD		2,MONTH
+
+OBJECT  ,TEXT,1510,1070,1980,1140
+	DELTAYMD		3,MONTH
+	VALUE			"&PRINTDATE"
+	DATEFMT			"MMMM yyyy"
+	STYLES			stySmallDate
+	OPTIONS			HCENTER, VCENTER, NONE
+
+OBJECT  ,CALENDAR,1510,1130,1980,1440
+	STYLES			stySmallCalendar
+	DELTAYMD		3,MONTH
+
+; Row 4
+
+OBJECT  ,TEXT,1070,1510,1490,1580
+	VALUE			"&PRINTDATE"
+	DATEFMT			"MMMM yyyy"
+	STYLES			stySmallDate
+	DELTAYMD		4,MONTH
+	OPTIONS			HCENTER, VCENTER, NONE
+
+OBJECT  ,CALENDAR,1010,1570,1490,1870
+	STYLES			stySmallCalendar
+	DELTAYMD		4,MONTH
+
+OBJECT  ,TEXT,1510,1510,1980,1580
+	DELTAYMD		5,MONTH
+	VALUE			"&PRINTDATE"
+	DATEFMT			"MMMM yyyy"
+	STYLES			stySmallDate
+	OPTIONS			HCENTER, VCENTER, NONE
+
+OBJECT  ,CALENDAR,1510,1570,1980,1870
+	STYLES			stySmallCalendar
+	DELTAYMD		5,MONTH
+
+; Row 5
+
+OBJECT  ,TEXT,1010,1950,1490,2020
+	VALUE			"&PRINTDATE"
+	DATEFMT			"MMMM yyyy"
+	STYLES			stySmallDate
+	DELTAYMD		6,MONTH
+	OPTIONS			HCENTER, VCENTER, NONE
+
+OBJECT  ,CALENDAR,1010,2010,1490,2320
+	STYLES			stySmallCalendar
+	DELTAYMD		6,MONTH
+
+OBJECT  ,TEXT,1510,1950,1980,2020
+	DELTAYMD		7,MONTH
+	VALUE			"&PRINTDATE"
+	DATEFMT			"MMMM yyyy"
+	STYLES			stySmallDate
+	OPTIONS			HCENTER, VCENTER, NONE
+
+OBJECT  ,CALENDAR,1510,2010,1980,2320
+	STYLES			stySmallCalendar
+	DELTAYMD		7,MONTH
+
+; Row 6
+
+OBJECT  ,TEXT,1010,2390,1490,2460
+	VALUE			"&PRINTDATE"
+	DATEFMT			"MMMM yyyy"
+	STYLES			stySmallDate
+	DELTAYMD		8,MONTH
+	OPTIONS			HCENTER, VCENTER, NONE
+
+OBJECT  ,CALENDAR,1010,2450,1490,2760
+	STYLES			stySmallCalendar
+	DELTAYMD		8,MONTH
+
+OBJECT  ,TEXT,1510,2390,1980,2460
+	DELTAYMD		9,MONTH
+	VALUE			"&PRINTDATE"
+	DATEFMT			"MMMM yyyy"
+	STYLES			stySmallDate
+	OPTIONS			HCENTER, VCENTER, NONE
+
+OBJECT  ,CALENDAR,1510,2450,1980,2760
+	STYLES			stySmallCalendar
+	DELTAYMD		9,MONTH
+
+;=======================================================================
+; Footer - Text and Page num.
+;=======================================================================
+
+OBJECT  ,TEXT,0,2940,2700,3000
+	VALUE			"Imprimé le &CURDATE à &CURTIME &TIMEZONE"
+	STYLES			stySmallFooter
+	OPTIONS		ELLIPSIS, NONE, NONE
+
+OBJECT  ,TEXT,2700,2940,3000,3000
+	VALUE			"Page &PAGENUM "
+	STYLES			stySmallFooter
+	OPTIONS			RIGHT, NONE, NONE
+
+;=======================================================================
+; PAGE 2 - Monthly view
+;=======================================================================
+
+NEWPAGE
+
+OBJECT  ,TEXT,0,0,3000,300
+	VALUE			"&PRINTDATE"
+	DATEFMT			"MMMM yyyy"
+	STYLES			styLargeDate
+	OPTIONS			HCENTER, VCENTER, NONE
+
+OBJECT	,RECTANGLE,0,290,3000,300
+	OPTIONS			BLACK
+
+OBJECT  ,MONTH,0,300,3000,2935
+	STYLES			stySmallApptText, stySmallApptTime, stySmallDate, stySmallTaskDue
+	OVOPTIONS       LOCATION | SINGLELINE | STARTONLY | NODATE
+	TIMEFMT         5
+
+OBJECT  ,TEXT,0,2940,3000,3000
+	VALUE			"Imprimé le &CURDATE à &CURTIME &TIMEZONE"
+	STYLES			stySmallFooter
+
+OBJECT  ,TEXT,0,2940,3000,3000
+	VALUE			"Page &PAGENUM "
+	STYLES			stySmallFooter
+	OPTIONS			RIGHT, NONE, NONE
+
+OBJECT  ,OVERFLOW
+	OPTIONS			MINIMAL, CLEAR, 0
+

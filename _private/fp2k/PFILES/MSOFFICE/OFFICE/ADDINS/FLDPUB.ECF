@@ -1,0 +1,53 @@
+; Localized	03/24/1999 04:01  (GMT)	4:4.1.211 	fldpub.ecf
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={5436FAE6-8269-11cf-89F2-00A0241606A9}
+Path=fldpub.dll
+Entry Point=1
+Client Version=4.0
+Extension Version=1.0
+Misc Flags=NoOptimizeInterfaceMap;OutlookChooseFolder;DllFromDarwin
+
+[Exchange Client Compatibility]
+Exchange Registry=0
+Exchange Extension Key=Folder Publishing
+Exchange Context Map=11100110000100
+Exchange Interface Map=1111010
+
+[Session]
+Events=OnDelivery;OnIdleStartup
+
+[Folder]
+Events=OnExtCommand
+Commands=SuppShare;SuppShareCalendar;SuppShareTasks;SuppShareContacts;SuppShareThisFolder
+Outlook Commands=ToolsShare;ShareCalendar;ShareTasks;ShareContacts;ShareThisFolder
+Extension Outlook Commands=50000;50011;50012;50013;50014
+
+[Item]
+Message Class=IPM.Note.FolderPub
+Events=OnReadFolderPub
+
+[Property Sheet]
+Events=AddPropSheetPages
+Property Sheet Dialogs=Folder
+
+[Command]
+SuppShare=50000;#M114/0;File After 1430 Enabled Scope Submenu Suppress
+SuppShareCalendar=50011;#M114:1000;50000 Suppress Scope
+SuppShareTasks=50012;#M114:1001;50000 Suppress Scope
+SuppShareContacts=50013;#M114:1002;50000 Suppress Scope
+SuppShareThisFolder=50014;#M114:1003;50000 Suppress Scope
+
+FolderPublishing=50000;S&hare...;File After 1430 Enabled Scope
+SuppFolderPublishing=50000;S&hare...;File After 1430 Enabled Scope Suppress
+
+[Strings]
+DisplayName=Dossiers personnels partagés
+Description=Dossiers personnels partagés
+; MENU 114:0 - Share=S&hare...
+; MENU 114:1000 - ShareCalendar=&Calendar...
+; MENU 114:1001 - ShareTasks=&Tasks...
+; MENU 114:1002 - ShareContacts=C&ontacts...
+; MENU 114:1003 - ShareThisFolder=T&his Folder...
+

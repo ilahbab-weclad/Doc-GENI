@@ -1,0 +1,41 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<%endif%>
+<title><!-- LOCALIZE this title --><%DiscussionTitle%>Formulaire de recherche de </title>
+</head>
+
+<body <%if DoTheme EQ False%> stylesrc="<%PageStyleSrc%>" <%endif%> >
+
+<!--webbot bot="EvaluateFirst" u-evaluate="<%PostPageUrl%>" -->
+
+<%if FramesOption LT 2%>
+<!--webbot bot="Include" tag="BODY" u-include="<%HeaderPageUrl%>" -->
+<%endif%>
+
+<h3><tt><!-- LOCALIZE this heading -->RECHERCHE D'ARTICLES</tt></h3>
+
+<p><!-- LOCALIZE this text -->Retrouvez les articles de cette discussion qui
+contiennent les mots ou expressions que vous spécifiez.
+</p>
+
+<!--webbot bot="Search" s-index="<%DiscussionIdx%>" s-dsn="<%SearchDSN%>"
+s-fields="<%SearchFields%>" 
+TAG="FORM"
+S-Text="<%SearchForLabel%>"
+I-Size="20"
+S-Submit="<%SearchStartLabel%>"
+S-Clear="<%SearchClearLabel%>"
+-->
+
+<%if FramesOption LT 2%>
+<!--webbot bot="Include" tag="BODY" u-include="<%FooterPageUrl%>" -->
+<%endif%>
+
+</body>
+</html>

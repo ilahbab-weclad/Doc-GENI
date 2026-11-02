@@ -1,0 +1,42 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<meta name="Microsoft Theme" content="<%Theme%>">
+<meta name="Microsoft Border" content="none">
+<title><!-- LOCALIZE this text -->Bordure supérieure</title>
+</head>
+
+<body>
+
+<%if DoTopLogo EQ True%>
+<p><!-- LOCALIZE the alt text in this image --><img src="../<%LogoImgUrl%>" 
+alt="[Logo de l'entreprise]" border="0" <%LogoImgSize%>> 
+<!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText" 
+preview="-- à remplacer par l'image de votre logo" --> </p>
+<%endif%>
+
+<%if DoTopLinks EQ True%>
+<p>
+<!--webbot bot="Navigation" s-type="global" b-include-home="T" b-include-up="T" -->
+</p>
+<p>
+<!--webbot bot="Navigation" s-type="banner" -->
+<br>
+<!--webbot bot="Navigation" s-type="siblings" -->
+</p>
+<%else%>
+<p>
+<!--webbot bot="Navigation" s-type="banner" -->
+</p>
+<%endif%>
+
+<p>&nbsp;</p>
+
+</body>
+</html>
+
+
+

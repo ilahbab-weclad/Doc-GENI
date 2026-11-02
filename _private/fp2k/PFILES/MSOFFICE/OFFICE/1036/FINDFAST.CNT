@@ -1,0 +1,17 @@
+:Base FINDFAST.HLP>REF
+:Title Microsoft Recherche accélérée
+:Index Aide de Microsoft Office=FINDFAST.HLP
+1 Obtention d'aide
+2 Fichier Lisezmoi de Microsoft Office=!EF("..\\OFREAD9.TXT","",5):Exit()
+2 Support technique=!EF("PSS9.CHM","",5):Exit()
+1 Recherche accélérée
+2 À propos de Microsoft Recherche accélérée=ofconAllAboutFindFast>Ref
+2 Affichage d'un journal de tâches d'indexation=cohowViewALogOfMyIndexingTasks>HowTo
+2 Annulation de tâches d'indexation=cohowCancelortemporarilystopFindFastindexingtasks>HowTo
+2 Arrêt temporaire des tâches d'indexation=ffhowTemporarilyStopIndexingTasks>HowTo
+2 Création d'un index=cohowCreateANewFindFastIndex>HowTo
+2 Mise à jour d'un index=cohowUpdateAFindFastIndex>HowTo
+2 Modification de l'emplacement ou du type des fichiers d'un index=ffhowChangeScopeOfIndex>HowTo
+2 Suppression d'un index=cohowDeleteAFindFastIndex>HowTo
+2 Modification de l'intervalle de mise à jour automatique des index=ffhowChangeAutomaticUpdateIntervalForFindFastIndex>HowTo
+2 Affichage des informations relatives à l'index=ffhowShowIndexInformation>HowTo

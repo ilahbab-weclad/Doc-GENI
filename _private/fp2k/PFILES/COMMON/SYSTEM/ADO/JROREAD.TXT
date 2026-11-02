@@ -1,0 +1,37 @@
+-------------------------------------------------------
+Fichier Lisezmoi pour Microsoft Jet et objets de réplication
+-------------------------------------------------------
+
+(c) 1998 Microsoft Corporation. Tous droits réservés.
+
+Ce document fournit des informations de dernière minute ou d'autres 
+indications en complément de la documentation de Microsoft JET et objets de réplication.
+
+------------------
+TABLE DES MATIÈRES
+------------------
+
+1. DESCRIPTION DU PRODUIT
+   
+2. NOTES TECHNIQUES
+
+3. ERREURS CONNUES, LIMITES ET SOLUTIONS
+
+-------------------------
+1. DESCRIPTION DU PRODUIT
+-------------------------
+Microsoft Jet et objets de réplication (JRO) vous permet d'ajouter à vos applications des fonctionnalités spécifiques au moteur de bases de données de Microsoft Jet. Les objets Jet et Réplication se basent sur Microsoft ActiveX Data Objects (ADO), car ils sont connectés à un objet de connexion ADO. Cependant, les objets Jet et Réplication fonctionnent uniquement avec des bases de données Microsoft Jet.
+
+-------------------
+2. NOTES TECHNIQUES
+-------------------
+Aucune note technique n'est disponible actuellement.
+
+----------------------------------------
+3. ERREURS CONNUES, LIMITES ET SOLUTIONS
+----------------------------------------
+
+La liste ci-dessous répertorie les erreurs des objets Jet et Réplication identifiées à ce jour.
+
+Les bases de données dont le code est rendu réplicable mais n'ayant jamais été ouvertes dans Microsoft Access comporteront toujours des projets locaux (formulaires, rapports, macros, modules) et ne peuvent pas être modifiées pour rendre le projet réplicable. Ceci est dû au fait que la table système qui contrôle cette fonctionnalité (mSysAccessObjects) n'existe pas si la base de données n'a jamais été ouverte dans Access avant d'être rendue réplicable. Une fois la base de données rendue réplicable, l'utilisateur ne peut pas modifier la réplicabilité du projet.
+

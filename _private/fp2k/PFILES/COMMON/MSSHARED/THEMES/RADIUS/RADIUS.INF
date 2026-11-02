@@ -1,0 +1,22 @@
+[info]
+title=Radius
+codepage=65001
+version=2.00
+format=2.00
+readonly=true
+
+[titles]
+1031 = Radius
+1036 = Cercles
+1040 = Cerchi
+3082 = Radio
+1043 = Straal
+1046 = Raio
+1053 = Radie
+1044 = Radius
+1030 = Radius
+1035 = Säde
+1041 = 円
+1042 = 방사형
+1028 = 輻射
+2052 = 幅射

@@ -1,0 +1,72 @@
+VIEW "Mensuel","Pleine page",MONTHLY,,1000,1000
+
+;=======================================================================
+; Header - Date & Calendars
+;=======================================================================
+
+OBJECT	,RECTANGLE,0,0,1000,4
+	OPTIONS		BLACK
+
+OBJECT  ,RECTANGLE,0,4,1000,210
+	OPTIONS		GRAY
+
+OBJECT  ,RECTANGLE,0,0,1000,210
+
+OBJECT	,TEXT,255,20,745,100
+	VALUE		"&USERNAME"
+ 	STYLES		styUserName
+	OPTIONS		HCENTER, NONE, NONE
+
+OBJECT	,TEXT,333,100,666,205
+	VALUE		"&PRINTDATE"
+ 	STYLES		styLargeDate
+	DATEFMT		"MMMM yyyy"
+	OPTIONS		HCENTER, NONE, NONE
+
+OBJECT	,TEXT,0,4,250,30
+	VALUE		"&PRINTDATE"
+ 	STYLES		stySmallDate
+	DATEFMT		"MMMM yyyy"
+	OPTIONS		HCENTER, VCENTER, NONE
+	DELTAYMD	-1,MONTH
+
+OBJECT	,CALENDAR,0,25,250,210
+	STYLES		styCalendar
+	DELTAYMD	-1,MONTH
+
+OBJECT	,TEXT,750,4,1000,30
+	VALUE		"&PRINTDATE"
+ 	STYLES		stySmallDate
+	DATEFMT		"MMMM yyyy"
+	OPTIONS		HCENTER, VCENTER, NONE
+	DELTAYMD	1,MONTH
+
+OBJECT	,CALENDAR,750,25,1000,210
+	STYLES		styCalendar
+	DELTAYMD	1,MONTH
+
+;=======================================================================
+; Month Object
+;=======================================================================
+
+OBJECT	,RECTANGLE,0,220,1000,223
+	OPTIONS		BLACK
+
+OBJECT	,MONTH,0,223,1000,978
+	STYLES		stySmallApptText, stySmallDate, stySmallApptTime, stySmallTaskDue
+	OVOPTIONS   LOCATION | SINGLELINE | STARTONLY | NODATE
+	TIMEFMT     5
+
+;=======================================================================
+; Footer - Text and Page num.
+;=======================================================================
+
+OBJECT	,TEXT,0,980,900,1000
+	VALUE		"Imprimé le &CURDATE à &CURTIME &TIMEZONE "
+ 	STYLES		stySmallFooter
+	OPTIONS		ELLIPSIS, NONE, NONE
+
+OBJECT	,TEXT,900,980,1000,1000 
+ 	VALUE		"Page &PAGENUM "
+	STYLES		stySmallFooter
+	OPTIONS		RIGHT, NONE, NONE

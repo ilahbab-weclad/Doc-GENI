@@ -1,0 +1,864 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+<!--TOPIC HEAD STARTS HERE-->
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Utilitaire Fpsrvadm</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+
+<!--TOPIC HEAD ENDS HERE-->
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+	
+	<TR>
+		<TD BGCOLOR="#000000">
+		<IMG SRC="home.gif" WIDTH=103 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0 hspace="0">
+		</TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH=100%>
+		<IMG SRC="1ptrans.gif" WIDTH=1 HEIGHT=1 ALT="" BORDER=0>
+		</TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+		<FONT FACE="Arial, Helvetica" SIZE=1>
+		<A HREF="/" TARGET="_top">
+		<IMG SRC="msft.gif" WIDTH=91 HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0>
+		</A>
+		</FONT>
+		</TD>
+	</TR>
+	
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+
+
+	<!--WEB SITE TITLE AND LOGO START-->
+
+	<TR>
+		<TD width="150" height="20" nowrap><img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+	    <TD width="20" nowrap></TD>
+	    <TD colspan="2" nowrap bgcolor="#666699" valign="center" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>&nbsp;Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+	
+	<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+	
+		<!--WEB SITE TITLE AND LOGO ENDS-->
+
+		<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
+	
+
+    	<TD rowspan="21" COLSPAN="2" width="460"><a name="top"></a><p><font color="#666699"><b><font size="+1">Utilitaire Fpsrvadm</font></b></font>
+
+
+
+<HR>
+			
+			
+			<H3><A NAME="fpsrvadmutility"></A>Commandes Fpsrvadm</H3>
+			
+			<A NAME="adfpsrva.doc-1114"></A>
+			
+			<TABLE WIDTH="460" CELLSPACING="0" CELLPADDING="0">
+			<TR>
+				<TD>
+					<UL>
+						<LI class=LB1><a href="#checkcmd">Check</A>
+						<LI class=LB1><a href="#chowncmd">Chown</A>
+						<LI class=LB1><a href="#createcmd">Create</A>
+						<LI class=LB1><a href="#deletecmd">Delete</A>
+						<LI class=LB1><a href="#disablecmd">Disable</A>
+						<LI class=LB1><a href="#enablecmd">Enable</A>
+					</UL>
+			
+				</TD>
+			    <TD>
+					<UL>
+						<LI class=LB1><a href="#fulluninstallcmd">Fulluninstall</A>
+						<LI class=LB1><a href="#installcmd">Install</A>
+						<LI class=LB1><a href="#mergecmd">Merge</A>
+						<LI class=LB1><a href="#putfilecmd">Putfile</A>
+						<LI class=LB1><a href="#recalccmd">Recalc</A>
+						<LI class=LB1><a href="#recalcfilecmd">Recalcfile</A>
+					</UL>
+				</TD>
+				<TD>
+					<UL>
+						<LI class=LB1><a href="#renamecmd">Rename</A>
+						<LI class=LB1><a href="#securitycmd">Security</A>
+						<LI class=LB1><a href="#setdirexeccmd">Setdirexec</A>
+						<LI class=LB1><a href="#setdirnoexeccmd">Setdirnoexec</A>
+						<LI class=LB1><a href="#uninstallcmd">Uninstall</A>
+						<LI class=LB1><a href="#upgradecmd">Upgrade</A>
+					</UL>
+				</TD>
+	
+			</TR>
+		</TABLE>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top">&nbsp;</TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+
+<H3><A NAME="installcmd"></A>Commande Install</H3>
+
+<p><A NAME="adfpsrva.doc-1021"></A>Cette commande installe les extensions serveur FrontPage sur le port spécifié d'un serveur virtuel en utilisant le nom d'administrateur et le mot de passe indiqués. Si <I>NomSite</I> est précisé, les extensions serveur sont installées sur le sous-site indiqué. Si aucun nom de site n'est spécifié, les extensions serveur sont installées sur le site racine du serveur virtuel indiqué. Pour tout type de serveur excepté <span class=L><B>website</B></span> et <span class=L><B>msiis</B></span>, vous devez préciser un fichier de configuration serveur.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o install -p</B> <I>nnnn</I><B> -m</B> <I>NomHôte</I> <B>-u</B> <I>NomUtilisateur</I><B> -pw</B> <I>motdepasse</I>
+    <B>-t</B> <I>TypeServeur</I><B> [-s</B> <I>FichierConfigServeur</I><B>] [ -xu</B> <I>NomUtilisateurUNIX</I><B>]
+</B>    <B>[ -xg </B><I>NomGroupeUNIX</I><B>] [ -n</B><i> yes</i><B>]</B>
+</CODE></PRE>
+
+<H4>Sous IIS</H4>
+
+<p><A NAME="adfpsrva.doc-1022"></A>Pour installer les extensions serveur sous Windows NT avec un serveur Web IIS, utilisez les arguments suivants.</P>
+
+<PRE class=CT><CODE>fpsrvadm.exe -o install -t msiis -p 80 -m sample.microsoft.com -u AdminAccount
+</CODE></PRE>
+
+<p>L'argument password n'est pas nécessaire car sous IIS, les mots de passe des comptes sont spécifiés dans les outils d'administration de la liste de comptes Windows NT, non pas sur le serveur Web ou dans les outils d'administration de FrontPage.</P>
+
+<H4>Sous UNIX</H4>
+
+<p><A NAME="adfpsrva.doc-1024"></A>Si l'argument <B>-<span class=L>xu</span></B> est spécifié, le contenu du site et le propriétaire des programmes de remplacement des extensions serveur FrontPage sont modifiés (commande chown) en <I>NomUtilisateurUNIX</I>.</P>
+
+<p>Si l'argument <B>-<span class=L>xg</span></B> est utilisé, le contenu du site et les programmes de remplacement des extensions serveur FrontPage changent de propriétaire pour devenir propriété de groupe du <I>NomGroupeUNIX</I> spécifié. Remarquez que vous pouvez utiliser l'argument <B>-<span class=L>xu</span></B> sans l'argument <B>-<span class=L>xg</span></B>.</P>
+
+<p>Si <B>-<span class=L>xu</span></B> ou <B>-<span class=L>xg</span></B> est précisé, les programmes de remplacement des extensions serveur sont accessibles en lecture/écriture et le bit de définition de l'identificateur d'utilisateur correspond au nom d'utilisateur et au nom de groupe indiqués. Remarquez que seuls les programmes de remplacement des extensions serveur font l'objet de modifications de leurs conditions d'accès (chmode), pas les fichiers de contenu de site.</P>
+
+<p>Si <span class=L><B>-xu</B></span> ou <span class=L><B>-xg</B></span> est précisé, vous pouvez utiliser l'argument <span class=L><b>-[n</B><i> yes</i><B>]</B></span> pour indiquer que seuls les répertoires et les programmes de remplacement des extensions serveur créés par FrontPage doivent changer de propriétaire (chown), et non pas les fichiers de contenu.</P>
+
+<H4>Avec le correctif logiciel Apache pour FrontPage</H4>
+
+<p><A NAME="adfpsrva.doc-1028"></A>Pour installer les extensions serveur sur un serveur Web Apache sur lequel le correctif logiciel FrontPage pour Apache est installé, utilisez la ligne de commande ci-après&nbsp;:</P>
+
+<PRE class=CT><CODE>fpsrvadm.exe -o install -t apache-fp -s /usr/local/apache/conf/httpd.conf -p 80 -m sample.microsoft.com -u AdminAccount -pw AdminPassword -xu www -xg www
+</CODE></PRE>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="upgradecmd"></A>Commande Upgrade</H3>
+
+<p><A NAME="adfpsrva.doc-1031"></A>Cette commande met à jour les extensions serveur FrontPage sur le port <I>nnnn</I> du serveur virtuel <I>NomHôte</I>. Les extensions serveur sont mises à jour sur le site racine du serveur virtuel spécifié, et les sous-sites du site racine sont également mis à jour.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o upgrade -p</B> <I>nnnn</I> <B>-m</B> <I>NomHôte</I>
+    <B>[ -xu</B> <I>NomUtilisateurUNIX</I><B>] [ -xg</B> <I>NomGroupeUNIX</I><B>] [ -n</B><i> yes</i><B>]</B>
+</CODE></PRE>
+
+<H4>Sous UNIX</H4>
+
+<p><A NAME="adfpsrva.doc-1033"></A>Si <B><span class=L>-xu</span> </B>et <span class=L><B>-xg</B></span> sont précisés, le propriétaire et le mode des répertoires et des fichiers d'extensions serveur créés par FrontPage sont modifiés en <I>NomUtilisateurUNIX</I> et <I>NomGroupeUNIX</I>. L'argument<B> <span class=L>-n</span></B> précise que ce changement de propriétaire et de mode ne concerne que les répertoires et les fichiers d'extension serveur créés par FrontPage.</P>
+
+<p><a href ="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="uninstallcmd"></A>Commande Uninstall</H3>
+
+<p><A NAME="adfpsrva.doc-1036"></A>Cette commande désinstalle les extensions serveur FrontPage sur le port <I>nnnn</I> du serveur virtuel <I>NomHôte</I>. Elle désinstalle également les extensions serveur des sous-sites du site racine.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o uninstall -p</B> <I>nnnn</I><B> -m</B> <I>NomHôte</I>
+</CODE></PRE>
+
+<H4>Remarques</H4>
+
+<p>Vous remarquerez que la désinstallation des extensions serveur FrontPage ne supprime pas le contenu, elle supprime seulement les programmes des fichiers d'extensions serveur et les fichiers d'extensions serveur accessoires.</P>
+
+<p>Cette opération laisse suffisamment de méta-information FrontPage dans le contenu de chaque site pour ramener chaque site à son état précédent si les extensions serveur sont réinstallées. À titre d'exemple, les sous-sites présents au moment de la désinstallation des extensions serveur seront restaurés lors de leur réinstallation.</P>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="fulluninstallcmd"></A>Commande Fulluninstall</H3>
+
+<p><A NAME="adfpsrva.doc-1041"></A>Cette commande désinstalle les extensions serveur FrontPage sur le port <span class=NTRM><I>nnnn</I></span> du serveur virtuel <I>NomHôte</I>. Elle désinstalle également les extensions serveur des sous-sites du site racine.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o fulluninstall -p</B> <I>nnnn</I> <B>-m</B> <I>NomHôte</I>
+</CODE></PRE>
+
+<H4>Remarque</H4>
+
+<p>Cette commande désinstalle les extensions serveur sur le port et le serveur virtuel spécifiés. Si le site racine comporte des sous-sites, les extensions serveur FrontPage sont également désinstallées sur les sous-sites. Contrairement à la commande <span class=ELN><B>Uninstall</B></span>, cette commande ne laisse pas d'informations spécifiques à FrontPage dans la zone de contenu du site. Lorsque <span class=ELN><B>Fulluninstall </B></span>a été utilisée sur un serveur virtuel, les sous-sites ne peuvent pas être recréés automatiquement au moment de la réinstallation des extensions serveur FrontPage.</P>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="createcmd"></A>Commande Create</H3>
+
+<p><A NAME="adfpsrva.doc-1045"></A>Cette commande crée un sous-site FrontPage étendu sur le répertoire spécifié au sein d'un site Web FrontPage étendu.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o create -p</B> <I>nnnn</I><B> -m</B> <I>NomHôte</I><B> -w</B> <I>NomSite</I><B> [-u</B> <I>NomUtilisateur</I><B>] [-pw</B> <I>motdepasse</I><B>]</B>
+ <B>[ -xu</B> <I>NomUtilisateurUNIX</I><B>] [ -xg </B><I>NomGroupeUNIX</I><B>] [ -n</B>><i> yes</i><B>]</B> 
+</CODE></PRE>
+
+<H4>Remarques</H4>
+
+<p>Pour <I>NomSite</I>, indiquez le chemin du répertoire racine de la zone de contenu au sous-site que vous créez. L'argument <B>-pw</B> <I>motdepasse</I> n'est pas nécessaire sur les serveurs IIS.</P>
+
+<p>Si les arguments <I>NomUtilisateur</I> et <I>motdepasse</I> ne sont pas fournis, les paramètres de sécurité des nouveaux sous-sites sont hérités du site racine. Si ces arguments sont précisés, le nouveau sous-site dispose d'autorisations uniques avec un compte administrateur initial basé sur <I>NomUtilisateur</I> et <I>motdepasse</I>.</P>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="mergecmd"></A>Commande Merge</H3>
+
+<p><A NAME="adfpsrva.doc-1050"></A>Cette commande désinstalle les extensions serveur sur le sous-site spécifié ainsi que sur tous ses sous-sites. Elle convertit le sous-site en dossier de son site FrontPage étendu parent.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o merge -w</B> <I>NomSite</I> <B>-p</B> <I>nnnn</I> <B>-m</B> <I>NomHôte</I>
+</CODE></PRE>
+
+<H4>Remarques</H4>
+
+<p>Pour <I>NomSite</I>, indiquez le chemin d'accès du répertoire racine de la zone de contenu au sous-site que vous fusionnez.</P>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="checkcmd"></A>Commande Check</H3>
+
+<p><A NAME="adfpsrva.doc-1055"></A>Cette commande contrôle et corrige l'installation des extensions serveur FrontPage sur le port <I>nnnn</I> du serveur virtuel <I>NomHôte</I>. Si <I>NomSite</I> est précisé, les extensions serveur sont contrôlées sur le sous-site indiqué. Sinon, les extensions serveur sont contrôlées sur le site racine du serveur virtuel spécifié. Si le site que vous contrôlez comporte des sous-sites, ces derniers sont également vérifiés.</P>
+
+<p>Le contrôle des extensions serveur FrontPage englobe les opérations suivantes&nbsp;:
+
+<UL>
+	<LI class=LB1>Contrôler les autorisations sur les DLL ou les exécutables des extensions serveur FrontPage.<BR><BR></LI>
+
+	<LI class=LB1>Vérifier l'existence et l'exactitude des répertoires _vti_bin , _vti_pvt, _vti_log, etc. créés par FrontPage.<BR><BR></LI>
+
+	<LI class=LB1>Vérifier que les racines du serveur virtuel sont correctes et à jour.<BR><BR></LI>
+
+	<LI class=LB1>Vérifier que les paramètres de métabase sont corrects et à jour. (Les métabases sont des structures de stockage pour les paramètres de configuration IIS.)<BR><BR></LI>
+
+	<LI class=LB1>Contrôler que les DLL ou exécutables de remplacement de _vti_bin ne sont pas corrompus.<BR><BR></LI>
+
+	<LI class=LB1>Contrôler que les autres DLL ou exécutables ne sont pas corrompus.
+<P class=4>
+</LI>
+</UL>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o check -p </B><I>nnnn</I><B> -m</B> <I>NomHôte</I><B> [ -w</B> <I>NomSite</I> <B>]</B>
+</CODE></PRE>
+
+<H4>Remarques</H4>
+
+<p>Le contrôle des extensions serveur englobe le remplacement des répertoires manquants et des fichiers créés par FrontPage ainsi que la vérification que tous les exécutables créés par FrontPage sont présents et configurés avec les autorisations adéquates.</P>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="securitycmd"></A>Commande Security</H3>
+
+<p><A NAME="adfpsrva.doc-1066"></A>Cette commande permet de définir les autorisations de site Web FrontPage étendu pour le site FrontPage étendu <span class=NTRM><I>NomSite</I></span>, sur le serveur virtuel et le port spécifiés, pour le nom d'utilisateur et le mot de passe indiqués. Si <span class=NTRM><I>NomSite</I></span> est le site racine, utilisez une barre oblique (<B>/</B>) pour le préciser.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o security -p</B> <I>nnnn</I> <B>-m</B> <I>NomHôte</I> <B>-w</B> <I>NomSite</I>
+    <B>-a</B> <I>TypeAccès</I> <B>-u</B> <I>NomUtilisateur</I> <B>-pw</B> <I>motdepasse</I><B> [-i </B><I>AdresseIP</I><B>]</B>
+</CODE></PRE>
+
+<H4>Remarques</H4>
+
+<p><A NAME="adfpsrva.doc-1067"></A>Pour ajouter un administrateur, précisez le type d'accès <span class=L><B>administrateurs</B></span>. Pour ajouter un auteur, indiquez le type d'accès <span class=L><B>auteurs</B></span>, et pour ajouter un visiteur de site, précisez le type d'accès <span class=L><B>utilisateurs</B></span>. Pour supprimer les autorisations de site, indiquez le type d'accès <span class=L><B>supprimer</B></span>. Pour réduire les autorisations octroyées à un compte, vous devez d'abord supprimer le compte puis l'ajouter à nouveau avec le nouveau niveau d'autorisations.</P>
+
+<p>Utilisez l'argument facultatif <B>-i </B>pour limiter les opérations d'auteur, l'administration ou l'accès des ordinateurs client au site en tant que visiteur, selon les adresses IP des ordinateurs. Vous pouvez utiliser un astérisque (*) comme caractère générique à n'importe quel emplacement des quatre sections d'adresse IP. Par exemple, le masque d'adresse IP 157.*.*.* désigne toute adresse IP commençant par 157. Notez que les limitations d'adresses IP ne sont pas gérées par certains types de serveurs pris en charge par les extensions serveur FrontPage.</P>
+
+<H4>Sous IIS</H4>
+
+<p><A NAME="adfpsrva.doc-1069"></A>Sur les serveurs Microsoft IIS, le nom d'utilisateur doit être un compte Windows NT. Le mot de passe est ignoré s'il est fourni.</P>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="chowncmd"></A>Commande Chown</H3>
+
+<p><A NAME="adfpsrva.doc-1072"></A>Sous UNIX seulement. Cette commande change le propriétaire des répertoires et des programmes de remplacement des extensions serveur créés par FrontPage, en même temps que le contenu du site. La commande <span class=L><B> chown</B></span> configure également le bit de définition de l'identificateur d'utilisateur dans les exécutables des extensions serveur FrontPage, au sein d'un site Web FrontPage étendu. Utilisez-la pour renforcer la sécurité.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o chown -p</B> <I>nnnn</I> <B>-m</B> <I>NomHôte</I> <B>[ -w</B> <I>NomSite</I><B> ]
+    [ -xu</B> <I>NomUtilisateurUNIX</I><B>] [ -xg</B> <I>NomGroupeUNIX</I><B>] [ -n</B><i> yes</i><B>]</B>
+</CODE></PRE>
+
+<H4>Sous UNIX</H4>
+
+<p><A NAME="adfpsrva.doc-1074"></A>Si <span class=NTRM><I>NomSite</I></span> est spécifié, les extensions serveur deviennent la propriété du sous-site nommé. Sinon, elles deviennent la propriété du site racine.</P>
+
+<p>Si <span class=L><B>-xu</B></span> est spécifié, le contenu du site Web étendu et les programmes de remplacement des extensions serveur FrontPage deviennent la propriété de <span class=NTRM><I>NomUtilisateurUNIX</I></span>.</P>
+
+<p>Si -xg est spécifié, le contenu du site Web étendu et les programmes de remplacement des extensions serveur FrontPage deviennent la propriété du groupe <span class=NTRM><I>NomGroupeUNIX</I></span>. </P>
+
+<p>Si <span class=L><B>-xu</B></span> ou <span class=L><B>-xg</B></span> est spécifié, les programmes de remplacement des extensions serveur sont configurés pour un accès en lecture/écriture et le bit de définition de l'identificateur utilisateur désigne le nom de l'utilisateur et le groupe indiqués. Notez que seuls les programmes de remplacement changent de mode, non pas les fichiers de contenu du site.</P>
+
+<p>L'argument <B><span class=L>-n</span> </B>indique que seuls les répertoires et les programmes de remplacement des extensions serveur créés par FrontPage peuvent changer de mode, pas les fichiers de contenu.</P>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+					
+				
+<H3><A NAME="enablecmd"></A>Commande Enable</H3>
+
+<p><A NAME="adfpsrva.doc-1081"></A>Cette commande autorise les opérations d'auteur et d'administration sur les sites Web FrontPage étendus par l'intermédiaire du client FrontPage sur le port <span class=NTRM><I>nnnn</I></span> du serveur virtuel <span class=NTRM><I>NomHôte</I></span>.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o enable -p</B> <I>nnnn</I> <B>-m</B> <I>NomHôte</I> 
+</CODE></PRE>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="disablecmd"></A>Commande Disable</H3>
+
+<p><A NAME="adfpsrva.doc-1083"></A>Cette commande interdit les opérations d'auteur et d'administration sur les sites Web FrontPage étendus par l'intermédiaire du client FrontPage sur le port <span class=NTRM><I>nnnn</I></span> du serveur virtuel <span class=NTRM><I>NomHôte</I></span>.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o disable -p</B> <span class=NTRM><I>nnnn</I></span> <B>-m</B> <span class=NTRM><I>NomHôte</I></span>
+</CODE></PRE>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="recalccmd"></A>Commande Recalc</H3>
+
+<p><A NAME="adfpsrva.doc-1085"></A>Cette commande synchronise les bases de données de contenu FrontPage avec l'état actuel du site. Elle recalcule et corrige tous les liens hypertexte du site FrontPage étendu sur le serveur virtuel et le port spécifiés. Elle réintègre les pages des composants Insertion de pages, recalcule d'autres composants (comme les formulaires de recherche et les barres de navigation), réapplique des bordures aux pages qui en utilisent, redéfinit les autorisations dans les pages de résultats du programme de traitement des formulaires FrontPage, réindexe les catégories et recalcule les index de texte.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><span class=L><B>fpsrvadm.exe -o recalc -p</B></span> <span class=NTRM><I>nnnn</I></span> <span class=L><B>-m</B></span> <span class=NTRM><I>NomHôte</I></span> <span class=NTRM><I>-w NomSite</I></span>
+</CODE></PRE>
+
+<H4>Remarques</H4>
+
+<p>Si <span class=NTRM><I>NomSite</I></span> est le site racine, utilisez une barre oblique (<B>/</B>) pour le préciser.</P>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="putfilecmd"></A>Commande Putfile</H3>
+
+<p><A NAME="adfpsrva.doc-1089"></A>Cette commande importe le fichier <span class=NTRM><I>nomfichier</I></span> comme fichier de <span class=NTRM><I>destination</I></span> dans le site Web FrontPage étendu <span class=NTRM><I>NomSite</I></span> sur le serveur et le port spécifiés.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o putfile -p</B> <I>nnnn</I> <B>-m</B> <I>NomHôte</I> <B>-w</B> <I>NomSite</I>
+    <B>-f</B> <I>nomfichier</I> <B>-d</B> <I>destination</I>
+</CODE></PRE>
+
+<H4>Remarques</H4>
+
+<p>L'argument <span class=NTRM><I>destination</I></span> doit être l'URL du fichier de destination, par rapport au dossier de premier niveau du site. Si <span class=NTRM><I>NomSite</I></span> est le site racine, utilisez une barre oblique (<B>/</B>) pour le préciser.</P>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="recalcfilecmd"></A>Commande Recalcfile</H3>
+
+<p><A NAME="adfpsrva.doc-1093"></A>Cette commande recalcule et répare tous les liens hypertexte internes de l'URL de <span class=NTRM><I>destination</I></span> spécifiée dans le site Web FrontPage étendu <span class=NTRM><I>NomSite</I></span> sur le serveur virtuel et le port spécifiés. Elle réintègre également les pages dans les composants Insertion de pages et recalcule les index de texte.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o recalcfile -p </B><I>nnnn</I> <B>-m</B> <I>NomHôte</I> <B>-w</B> <I>NomSite</I>
+    <B>-d</B> <I>destination</I>
+</CODE></PRE>
+
+<H4>Remarques</H4>
+
+<p>L'argument <span class=NTRM><I>destination</I></span> doit être l'URL du fichier de destination, par rapport au dossier de premier niveau du site. Si <span class=NTRM><I>NomSite</I></span> est le site racine, utilisez une barre oblique (<B>/</B>) pour le préciser.</P>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="deletecmd"></A>Commande Delete</H3>
+
+<p><A NAME="adfpsrva.doc-1097"></A>Cette commande supprime le sous-site <span class=NTRM><I>NomSite</I></span> sur le serveur virtuel et le port spécifiés. Elle ne permet pas de supprimer le site racine. Pour ce faire, utilisez la commande <B>Uninstall</B>.</P>
+
+<p>Cette commande supprime la totalité du contenu, y compris tous les sous-sites du sous-site spécifié.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o delete -p</B> <span class=NTRM><I>nnnn</I></span> <B>-w</B> <span class=NTRM><I>NomSite</I></span><B> [-m</B> <span class=NTRM><I>NomHôte</I></span><B>]</B>
+</CODE></PRE>
+
+<H4>Sous UNIX</H4>
+
+<p><A NAME="adfpsrva.doc-1100"></A>Cette commande est le seul moyen de supprimer des sous-sites sur les serveurs Web NCSA, Stronghold et Apache. Vous ne pouvez pas utiliser le client FrontPage pour supprimer des sous-sites sur ces serveurs.</P>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="renamecmd"></A>Commande Rename</H3>
+
+<p><A NAME="adfpsrva.doc-1101"></A>Cette commande renomme le sous-site <span class=NTRM><I>NomSite</I></span> sur le serveur virtuel et le port spécifiés et lui affecte le nouveau nom de site, <span class=NTRM><I>destination</I></span>.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o rename -p</B> <I>nnnn</I> <B>-w</B> <I>NomSite</I> <B>-d</B> <I>destination</I> <B>[-m</B> <I>NomHôte</I><B>]</B>
+</CODE></PRE>
+
+<H4>Sous UNIX</H4>
+
+<p><A NAME="adfpsrva.doc-1103"></A>Cette commande est le moyen de renommer des sous-sites sur des serveurs Web NCSA, Stronghold et Apache. Vous ne pouvez pas utiliser le client FrontPage pour renommer des sous-sites sur ces serveurs.</P>
+
+<H4>Remarques</H4>
+
+<p>L'argument <span class=NTRM><I>destination</I></span> doit désigner le nouvel URL du sous-site, par rapport au site racine.</P>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="setdirexeccmd"></A>Commande Setdirexec</H3>
+
+<p><A NAME="adfpsrva.doc-1105"></A>Cette commande précise que le répertoire <span class=NTRM><I>destination</I></span> peut contenir des programmes exécutables dans le site Web FrontPage étendu <span class=NTRM><I>NomSite</I></span> sur le serveur virtuel et le port spécifiés.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o setdirexec -p </B><I>nnnn</I> <B>-w</B> <I>NomSite</I> <B>-d</B> <I>destination</I>
+       <B> [-m</B> <I>NomHôte</I><B>]</B></CODE></PRE>
+
+<H4>Sous UNIX</H4>
+
+<p><A NAME="adfpsrva.doc-1106"></A>Cette commande est le seul moyen de rendre exécutable un répertoire sur les serveurs Web NCSA, Stronghold et Apache. Vous ne pouvez pas utiliser le client FrontPage pour rendre un répertoire exécutable sur ces serveurs.</P>
+
+<H4>Remarques</H4>
+
+<p>L'argument <span class=NTRM><I>destination</I></span> doit désigner l'URL du dossier de destination, par rapport au dossier de premier niveau du site. Si <I>NomSite</I> correspond au répertoire racine, utilisez une barre oblique (<B>/</B>) pour le préciser. </P>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+					<!--BACK TO TOP NAVIGATION_BEGIN-->
+					
+					<TABLE cellspacing="0" cellpadding="0" border=0 width="460">
+					<TR>
+					    <TD width="460" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+					</TR>
+					<TR>
+					    <TD width="460" valign="top"><HR></TD>
+					</TR>
+					
+					</TABLE>
+					
+					<!--BACK TO TOP NAVIGATION_END-->
+
+<H3><A NAME="setdirnoexeccmd"></A>Commande Setdirnoexec</H3>
+
+<p><A NAME="adfpsrva.doc-1109"></A>Cette commande précise que le répertoire <span class=NTRM><I>destination</I></span> ne peut pas contenir de programmes exécutables dans le site Web FrontPage étendu <span class=NTRM><I>NomSite</I></span> sur le serveur virtuel et le port spécifiés.</P>
+
+<H4>Syntaxe</H4>
+
+<PRE class=CT><CODE><B>fpsrvadm.exe -o setdirnoexec -p</B> <I>nnnn</I> <B>-w</B> <I>NomSite</I> <B>-d</B> <I>destination</I>
+        <B>[-m</B> <I>NomHôte</I><B>]</B></CODE></PRE>
+
+<H4>Sous UNIX</H4>
+
+<p><A NAME="adfpsrva.doc-1110"></A>Cette commande est le seul moyen de rendre un répertoire non exécutable sur des serveurs Web NCSA, Stronghold et Apache. Vous ne pouvez pas utiliser le client FrontPage pour rendre un répertoire non exécutable sur ces serveurs.</P>
+
+<H4>Remarques</H4>
+
+<p>L'argument <span class=NTRM><I>destination</I></span> doit désigner l'URL du dossier de destination, par rapport au dossier de premier niveau du site. Si <span class=NTRM><I>NomSite</I></span> est le site racine, utilisez une barre oblique (/) pour le préciser.</P>
+
+<p><a href="adfpsr_3.htm">Arguments de ligne de commande Fpsrvadm</A></P>
+
+</TD>
+    <!--FAR-RIGHT COLUMN SECTION ART STARTS-->
+
+<TD rowspan="15"><img SRC="admart.gif" align="top" alt="Illustration de la section Administration"></TD>
+
+<!--FAR-RIGHT COLUMN SECTION ART ENDS-->
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+		</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="scintro.htm"><font color="#000000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adoview.htm"><div class="table"><font color="#990000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    <TD width="20" nowrap></TD>
+</TR>
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+		</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" href="adoview.htm"><font color="#000000">&nbsp;&nbsp;Outils et techniques &nbsp;&nbsp;d'administration</font></A></TD>
+    <TD width="20" nowrap></TD>
+</TR>
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+		</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Fpsvradm</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" HREF="admmc.htm"><font color="#000000">&nbsp;&nbsp;Composant logiciel &nbsp;&nbsp;enfichable MMC</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" HREF="adhtm.htm"><font color="#000000">&nbsp;&nbsp;Formulaires &nbsp;&nbsp;d'administration &nbsp;&nbsp;HTML</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    <TD width="150" nowrap><A class="menulink" HREF="adfpre.htm"><font color="#000000">&nbsp;&nbsp;Administration à &nbsp;&nbsp;distance</font></A></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" HREF="adadv.htm"><font color="#000000">&nbsp;&nbsp;Tâches &nbsp;&nbsp;administratives<BR>&nbsp;&nbsp;avancées</font></A></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<!--LAST ROW STARTS-->
+
+	<TR>
+    <TD height="7300" width="150" nowrap></TD>
+    <TD width="20" nowrap></TD>
+    <TD></TD>
+</TR>
+
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_BEGIN-->
+<br>
+<TABLE cellspacing="0" cellpadding="0" border=0>
+	<TR>
+	    <TD width="170" valign="top">&nbsp;</TD>
+	    <TD width="237" valign="top"><A HREF="adfpsr.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></font></a></TD>
+	    <TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+	</TR>
+
+	<TR>
+	    <TD width="170" valign="top">&nbsp;</TD>
+	    <TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+	
+	<TR>
+	    <TD width="170" valign="top">&nbsp;</TD>
+	    <TD colspan="2" width="475" valign="top">Dernière mise à jour&nbsp;: novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+	    
+	</TR>
+	
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>

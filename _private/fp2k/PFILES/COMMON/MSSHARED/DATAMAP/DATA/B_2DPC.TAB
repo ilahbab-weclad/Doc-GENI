@@ -1,0 +1,15 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Description "Belgique - Codes postaux"
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 2
+    Code Char (2) Index 1 ;
+    Région Char (25) ;
+READONLY
+begin_metadata
+"\FIELDS\COL1\ISSEARCHED" = "TRUE"
+"\IsReadonly" = "FALSE"
+end_metadata

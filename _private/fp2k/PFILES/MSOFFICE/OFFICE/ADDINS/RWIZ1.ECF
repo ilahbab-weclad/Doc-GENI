@@ -1,0 +1,60 @@
+; Localized	03/24/1999 04:01  (GMT)	7:4.1.211 	RWIZ1.ECF
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={f86ed290-3a4a-11cf-b57e-524153480001}
+Path="OUTLLIB.DLL"
+Entry Point=ExchEntryPoint@0
+Client Version=4.0
+Extension Version=1.0
+Misc Flags=OutlookChooseFolder;InternalEntryPoint;WarnIfNoDLL;RemoteAlso;NoUserEdit
+
+[Exchange Client Compatibility]
+Exchange Registry=0
+Exchange Context Map=11000111111000
+Exchange Interface Map=1011000
+
+[Folder]
+;Folder Class=IPF.Note
+Views=Viewer;RemoteViewer
+;Events=InstallCommands;Install
+Events=OnExtCommand
+;Commands=Organizer;RemoveDupInboxAsst
+Commands=SuppOrganizer
+Outlook Commands=ToolsRulesWizard
+Extension Outlook Commands=50000
+
+[Item]
+Contexts=Read;Compose
+
+[Read]
+Message Class=IPM.Note
+Item States=Read
+;Events=InstallCommands;OnCommandAfterLoad;OnCommand;OnSubmit;OnWriteComplete
+Events=OnExtCommand;OnSubmit;OnWriteComplete
+;Commands=NewRule
+Commands=SuppNewRule
+Outlook Commands=ToolsCreateRule
+Extension Outlook Commands=50001
+
+[Compose]
+Message Class=IPM.Note
+;Events=InstallCommands;OnCommandAfterLoad;OnCommand;OnSubmit;OnWriteComplete
+Events=OnSubmit;OnWriteComplete
+
+;Note: Do Not change the "ruleswizard" strings in the following section!
+;This string must stay in sync with the g_szRulesWizardECF string defined in strconst.h
+[Command]
+Organizer=50000;ruleswizard;Tools After ToolsInboxAsst Separator Enabled;CreateMailRule
+SuppOrganizer=50000;ruleswizard;Tools Suppress
+NewRule=50001;createrule;Tools After ToolsAutoSignature Enabled;CreateMailRule
+SuppNewRule=50001;createrule;Tools Suppress
+; Removes "Inbox Assistant" from outex.dll.
+RemoveDupInboxAsst=50020;outex.dll.7;RemoveDuplicate
+
+[Strings]
+DisplayName = Assistant Gestion des messages
+Description = Assistant Gestion des messages
+RunRulesNow = Exécuter les règles &maintenant...
+
+

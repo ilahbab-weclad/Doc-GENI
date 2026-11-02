@@ -1,0 +1,189 @@
+; Localized	03/24/1999 04:56  (GMT)	7:4.1.211 	Olfext.inf
+; This is the Setup information file to install Symantec WinFax Starter Edition
+
+[version]
+signature="$CHICAGO$"
+;need to tell INFInstall to use ADVPACK.DLL-it implements CustomDestination
+AdvancedINF=2.5
+
+[DestinationDirs]
+;>49000 indicates custom LDID
+MFCCopyFiles     = 11  ;System directory
+OlfCopyFiles     = 49001
+OlfCopyCover     = 49003
+OlfCopyECF       = 49002
+OlfCopyQView     = 49001
+UninstCopyFiles  = 17  ;INF directory
+OlfDataDirCreate = 49001,data  ;create the data directory
+
+[DefaultInstall]
+CustomDestination = FileDest
+CopyFiles = MFCCopyFiles,OlfCopyFiles,OlfCopyCover,OlfCopyECF,OlfCopyQView,UninstCopyFiles
+CopyFiles = OlfDataDirCreate
+AddReg    = OlfReg,OlfECFReg,OlfQViewReg,OlfUninstReg
+
+
+;==============================================================================================
+; File Copy sections.
+;==============================================================================================
+[MFCCopyFiles]
+
+[OlfCopyFiles]
+Dccmodem.dat
+dccres32.dll
+dccutilc.dll
+dccutili.dll
+mime32.dll
+olfcover.dll
+olfext.dll
+filedb.dll
+wfxiif32.dll
+olfmod32.exe
+wfxmsrvr.exe
+olfsetup.exe
+reglib32.dll
+wfxres32.dll
+wfxrstrz.dll
+wfxut32i.dll
+wfxvw32i.dll
+olfext.hlp
+olfext.cnt
+
+[OlfCopyCover]
+cover1.cvp
+cover2.cvp
+cover3.cvp
+cover4.cvp
+cover5.cvp
+
+[OlfCopyECF]
+olfext.ecf
+
+[OlfCopyQView]
+fvfxs.dll
+wfqvw32.hlp
+wfqvw32.cnt
+
+[OlfDataDirCreate]
+mscreate.dir
+
+[UninstCopyFiles]
+olfext.inf
+
+
+;==============================================================================================
+; Register section
+;==============================================================================================
+[OlfReg]
+HKCU,"Software\Microsoft\Office\9.0\Outlook\OLFax"  ;uninstall
+HKLM,"Software\Microsoft\Office\9.0\Outlook\OLFax"  ;uninstall
+HKCU,"Software\Microsoft\Office\9.0\Outlook\OLFax\7.0\General","OutlookCoverPath",,"%49001%\cover\"
+HKCU,"Software\Microsoft\Office\9.0\Outlook\OLFax\7.0\General","OutlookDefaultCover",,"%49001%\cover\cover1.cvp"
+HKLM,"Software\Microsoft\Office\9.0\Outlook\OLFax\7.0\WinFax","Exepath",,"%49001%\"
+HKLM,"Software\Microsoft\Office\9.0\Outlook\OLFax\7.0\WinFax","Fax Path",,"%49001%\data\"
+HKLM,"Software\Microsoft\Office\9.0\Outlook\OLFax\7.0\WinFax","Cover Path",,"%49001%\cover\"
+HKLM,"Software\Microsoft\Office\9.0\Outlook\OLFax\7.0\WinFax","Version",,"8.0"
+
+[OlfECFReg]
+HKLM,"SOFTWARE\Microsoft\Exchange\Client\Extensions","Outlook Setup Extension",,"4.0;Outxxx.dll;7;000000000000000;0000000;OutXXX"
+
+[OlfQViewReg]
+HKCR,".fxo"  ;uninstall
+HKCR,".fxo",,,"FXOfile"
+HKCR,"FXOfile"  ;uninstall
+HKCR,"FXOfile",,,"FXO File"
+HKCR,"FXOfile","EditFlags",1,00,00,00,00
+HKCR,"FXOfile\DefaultIcon",,,"%49001%\fvfxs.dll"
+HKCR,"FXOfile\QuickView",,,"*"
+HKCR,"FXOfile\Shell\open\command",,,"%11%\viewers\quikview.exe -f:%1"  ;should get from reg.
+HKCR,"QuickView\.FXO"  ;uninstall
+HKCR,"QuickView\.FXO",,,"FXO File"
+HKCR,"QuickView\.FXO\{00021120-0000-0000-C000-000000000046}",,,"FXO Viewer"
+HKCR,"CLSID\{00021120-0000-0000-C000-000000000046}"
+HKCR,"CLSID\{00021120-0000-0000-C000-000000000046}",,,"FXO File Viewer"
+HKCR,"CLSID\{00021120-0000-0000-C000-000000000046}\InprocServer32",,,"%49001%\fvfxs.dll"
+HKCR,"CLSID\{00021120-0000-0000-C000-000000000046}\InprocServer32","ThreadingModel",,"Apartment"
+
+[OlfUninstReg]
+;Reg key that puts entry in Add/Remove files CPL applet dialog
+HKLM,%RegUninst%,"DisplayName",,"%UninstDesc%" 
+;call ADVPACK uninstaller
+HKLM,%RegUninst%,"UninstallString",,"RunDll32 advpack.dll,LaunchINFSection %17%\olfext.inf, Uninstall" 
+
+
+;==============================================================================================
+; Directory specifications.
+;==============================================================================================
+[FileDest]
+;path for template
+;7 means return path in Reg key && fail with message if Reg key doesn't exist
+49001 = TemplPathKey,7
+; we need to use a custom LDID that looks up a Reg key to append the Templates path and the LFN
+; of the subdir - 5 means return path in Reg key && don't prompt user
+49002 = DummyECFRegKey,5 
+49003 = DummyCoverRegKey,5 
+
+[TemplPathKey]
+"HKLM","SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\OUTLOOK.EXE","Path","",""
+"","","","%FailMsg%",""
+
+[DummyECFRegKey]
+"HKLM","SOFTWARE\DummyApp\DummyKey","","","%49001%\Addins"
+
+[DummyCoverRegKey]
+"HKLM","SOFTWARE\DummyApp\DummyKey","","","%49001%\Cover"
+
+
+;==============================================================================================
+; Uninstall section
+;==============================================================================================
+[Uninstall]
+BeginPrompt = BeginPromptSection
+EndPrompt = EndPromptSection
+CustomDestination = FileDest
+Delfiles = OlfCopyFiles,OlfCopyCover,OlfCopyECF,OlfCopyQView,UninstCopyFiles
+Deldirs = RemoveFolder
+;Clean up uninstall keys
+DelReg  = OlfReg,OlfQViewReg,OlfUninstReg,DelUninstallKey
+AddReg  = OlfECFReg
+Cleanup = 1
+
+[BeginPromptSection]
+Prompt = "%BeginPrompt%"
+ButtonType = YESNO
+Title = %PackageName%
+
+[EndPromptSection]
+Prompt = "%EndPrompt%"
+
+[RemoveFolder]
+%49002%
+%49003%
+
+[DelUninstallKey]
+HKLM,%RegUninst%
+
+
+;==============================================================================================
+; SourceDisksNames section
+;==============================================================================================
+[SourceDisksNames]
+1 = "Olfax",,0
+
+
+;==============================================================================================
+; Strings section
+;==============================================================================================
+[Strings]
+PackageName = "Extension Symantec DelrinaFax Starter Edition"
+RegUninst = "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Olfax"	;{Locked}
+UninstDesc = "Symantec DelrinaFax Starter Edition (Supprimer uniquement)"
+
+;Error Messages
+FailMsg = "Microsoft Outlook est requis. L'installation n'est pas terminée."
+FailMsgNoQView = "Microsoft QuickView est requis. L'installation n'est pas terminée."
+
+;Prompt for Uninstall
+BeginPrompt = "Êtes-vous sûr de vouloir supprimer Symantec DelrinaFax Starter Edition?"
+EndPrompt = "Symantec DelrinaFax Starter Edition a bien été supprimé."
+

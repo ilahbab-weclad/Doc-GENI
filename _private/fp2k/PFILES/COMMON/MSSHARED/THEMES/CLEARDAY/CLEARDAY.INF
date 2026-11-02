@@ -1,0 +1,22 @@
+[info]
+title=Clear Day
+codepage=65001
+version=2.00
+format=2.00
+readonly=true
+
+[titles]
+1031 = Schönwetter
+1036 = Cumulus
+1040 = Schiarita
+3082 = Día luminoso
+1043 = Wolkjes
+1046 = Dia claro
+1053 = Himmel
+1044 = Klar dag
+1030 = Himmel
+1035 = Poutapäivä
+1041 = 晴天
+1042 = 맑은 하늘
+1028 = 晴天
+2052 = 晴朗

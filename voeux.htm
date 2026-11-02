@@ -1,0 +1,158 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Voeux</title>
+<SCRIPT type="text/javascript">
+<!--
+// D'autres scripts et des tutoriaux sur http://www.toutjavascript.com
+function PopupImage(img) {
+	titre="Popup Image - Surprise";
+	w=open("",'image','width=400,height=400,toolbar=no,scrollbars=no,resizable=yes');	
+	w.document.write("<HTML><HEAD><TITLE>"+titre+"</TITLE></HEAD>");
+	w.document.write("<SCRIPT language=javascript>function checksize()  { if (document.images[0].complete) {  window.resizeTo(document.images[0].width+12,document.images[0].height+30); window.focus();} else { setTimeout('check()',250) } }</"+"SCRIPT>");
+	w.document.write("<BODY onload='checksize()' leftMargin=0 topMargin=0 marginwidth=0 marginheight=0><IMG src='"+img+"' border=0>");
+	w.document.write("");
+	w.document.write("</BODY></HTML>");
+	w.document.close();
+}
+//-->
+</SCRIPT>
+
+<link rel="stylesheet" type="text/css" href="geni_ie.css">
+<link rel="stylesheet" type="text/css" href="geni_impression.css">
+<meta name="Microsoft Border" content="none, default">
+</head>
+
+<body>
+<table border="0" width="100%">
+  <tr>
+    <td width="27%"><img border="0" src="images/rs_logo.jpg" width="117" height="52"><img border="0" src="images/credo_1.jpg" width="200" height="66"></td>
+    <td width="73%" align="center" valign="bottom">
+<!--webbot bot="Include" U-Include="GENI_news_js.htm" TAG="BODY" startspan --><table border="0" width="98%">
+  <tr>
+    <td width="1%" valign="middle" align="left">&nbsp;</td>
+    <td valign="middle" align="center"><font face="Arial" size="2" color="#993333"><b>
+<script language="JavaScript1.2">
+ejs_scroll_largeur = 500;
+ejs_scroll_hauteur = 30;
+ejs_scroll_bgcolor = '';
+/* Mettre ici le chemin de l'image de fond */
+ejs_scroll_background = "";
+/* Mettre ici le temps en secondes */
+ejs_scroll_pause_seconde = 3;
+
+ejs_scroll_message = new Array;
+ejs_scroll_message[0]='<a href="GENI_news_log.htm" target="_blank"><SPAN STYLE="color:#000000;">Nouveautés dans la documentation GENI...</SPAN></a>';
+ejs_scroll_message[1]='<a href="doc_ppt/flux_docs_matieres.pps" target="_blank"><SPAN STYLE="color:#993333;">Flux de documents et matières (pps)</SPAN></a>';
+ejs_scroll_message[2]='<a href="production/GENI_production_pad.htm" target="_blank"><SPAN STYLE="color:#993333;">Terminaux portables - lecteurs code barre</SPAN></a>';
+ejs_scroll_message[3]='<a href="GENI_news_log.htm" target="_blank"><SPAN STYLE="color:#993333;">Gestion Electronique de Documents (GED)</SPAN></a>';
+ejs_scroll_message[4]='<a href="FAQ2.htm" target="_blank"><SPAN STYLE="color:#993333;">Raccourcis clavier - code ascii</SPAN></A><font size="1" color="#000000"> ( 03-02-2011 )</font>';
+function d(texte)
+	{
+	document.write(texte);
+	}
+
+d('<DIV ID=ejs_scroll_relativ STYLE="position:relative;width:'+ejs_scroll_largeur+';height:'+ejs_scroll_hauteur+';background-color:'+ejs_scroll_bgcolor+';background-image:url('+ejs_scroll_background+')">');
+d('<DIV ID=ejs_scroll_cadre STYLE="position:absolute;width:'+(ejs_scroll_largeur-8)+';height:'+(ejs_scroll_hauteur-8)+';top:4;left:4;clip:rect(0 '+(ejs_scroll_largeur-8)+' '+(ejs_scroll_hauteur-8)+' 0)">');
+d('<div id=ejs_scroller_1 style="position:absolute;width:'+(ejs_scroll_largeur-8)+';left:0;top:0;" CLASS=ejs_scroll>'+ejs_scroll_message[0]+'</DIV>');
+d('<div id=ejs_scroller_2 style="position:absolute;width:'+(ejs_scroll_largeur-8)+';left:0;top:'+ejs_scroll_hauteur+';" CLASS=ejs_scroll>'+ejs_scroll_message[1]+'</DIV>');
+d('</DIV></DIV>');
+
+ejs_scroll_mode =1;
+ejs_scroll_actuel = 0;
+
+function ejs_scroll_start()
+	{
+	if(ejs_scroll_mode == 1)
+		{
+		ejs_scroller_haut = "ejs_scroller_1";
+		ejs_scroller_bas = "ejs_scroller_2";
+		ejs_scroll_mode = 0;
+		}
+	else
+		{
+		ejs_scroller_bas = "ejs_scroller_1";
+		ejs_scroller_haut = "ejs_scroller_2";
+		ejs_scroll_mode = 1;
+		}
+	ejs_scroll_nb_message = ejs_scroll_message.length-1;
+	if(ejs_scroll_actuel == ejs_scroll_nb_message)
+		ejs_scroll_suivant = 0;
+	else
+		ejs_scroll_suivant = ejs_scroll_actuel+1;
+	if(document.getElementById)
+		document.getElementById(ejs_scroller_bas).innerHTML = ejs_scroll_message[ejs_scroll_suivant];
+	ejs_scroll_top = 0;
+	if(document.getElementById)
+		setTimeout("ejs_scroll_action()",ejs_scroll_pause_seconde*1000)
+	}
+
+function ejs_scroll_action()
+	{
+	ejs_scroll_top -= 1;
+	document.getElementById(ejs_scroller_haut).style.top = ejs_scroll_top;
+	document.getElementById(ejs_scroller_bas).style.top = ejs_scroll_top+ejs_scroll_hauteur;
+	if((ejs_scroll_top+ejs_scroll_hauteur) > 0)
+		setTimeout("ejs_scroll_action()",10)
+	else
+		ejs_scroll_stop()
+	}
+
+function ejs_scroll_stop()
+	{
+	ejs_scroll_actuel = ejs_scroll_suivant;
+	ejs_scroll_start()
+	}
+
+window.onload = ejs_scroll_start;
+</SCRIPT>
+</b></font></td>
+    <td width="1%" valign="middle" align="right"><b><a href="GENI_news_log.htm"><img border="0" src="Images/Event/smallnew.gif" align="absmiddle" width="33" height="20"></a></b></td>
+  </tr>
+</table>&nbsp;<!--webbot bot="Include" endspan i-checksum="31758" --></td>
+  </tr>
+</table>
+<div align="left">&nbsp;</div>
+<div align="left"><a href="#2015">2015</a> - <a href="#2016">2016</a> - <a href="#2017">2017</a> - <a href="#2018">2018</a> - <a href="#2019">2019</a></div>
+<div align="left"><a href="#2020">2020</a> - <a href="#2021">2021</a> - <a href="#2022">2022</a></div>
+<div align="left"><a name="2023">2023</a></div>
+<div align="left"><img border="0" src="voeux2023_rinaldi_structal.jpg" width="100%" height="auto"></div>
+<div align="left"><a name="2022">2022</a></div>
+<div align="left"><img border="0" src="voeux2022_rinaldi_structal.jpg" width="100%" height=auto></div>
+
+<div align="left"><a name="2021">2021</a></div>
+<div align="left"><img border="0" src="voeux2021_rinaldi_structal.jpg" width="100%" height=auto></div>
+
+<div align="left"><a name="2020">2020</a></div>
+<div align="left"><img border="0" src="voeux2020_rinaldi_structal.jpg" width="100%" height=auto></div>
+
+<div align="left"><a name="2019">2019</a></div>
+<div align="left"><img border="0" src="voeux2019_rinaldi_structal.jpg" width="100%"></div>
+
+<div align="left" a name="2018">2018</div>$
+<div align="left"><img border="0" src="voeux2018_rinaldi_structal.jpg" width="100%" height=auto></div>
+
+<div align="left"><a name="2017">2017</a></div>
+<div align="left"><img border="0" src="voeux2017_rinaldi_structal.jpg" width="100%"></div>
+
+<div align="left"><a name="2016">2016</a></div>
+<div align="left"><img border="0" src="voeux2016_rinaldi_structal.jpg" width="100%"></div>
+
+<div align="left"><a name="2015">2015</a></div>
+<div align="left"><img border="0" src="voeux2015_rinaldi_structal.jpg" width="100%"></div>
+
+<div align="left">&nbsp;</div>
+
+<div align="left"><font face="Tahoma" color="#006699" size="1">
+	Auteur : <a href="mailto:jp.kuntz@rinaldi-structal.com"> Jean-Pierre KUNTZ</a>
+  -Sites Internet :&nbsp;<a href="http://www.rinaldi-structal.fr" target="_blank" style="text-decoration:none;">http://www.rinaldi-structal.fr</a>
+  &nbsp;-&nbsp;<a href="http://www.structal.co.uk" target="_blank" style="text-decoration:none;">http://www.structal.co.uk</a>
+  </font></div>
+
+&nbsp;
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+---------------------------------------------------------
+Fichier Lisezmoi du
+Fournisseur Microsoft® OLE DB pour SQL Server, version 7.00.459
+---------------------------------------------------------
+
+(c) 1998 Microsoft Corporation. Tous droits réservés.
+
+Ce document fournit des informations de dernière minute ou d'autres 
+indications en complément de la documentation du fournisseur 
+Microsoft OLE DB pour SQL Server.
+
+------------------
+TABLE DES MATIÈRES
+------------------
+
+1. DESCRIPTION DU PRODUIT
+   
+2. NOTES TECHNIQUES
+
+-------------------------
+1. DESCRIPTION DU PRODUIT
+-------------------------
+SQLOLEDB, le fournisseur OLE DB pour Microsoft SQL Server, 
+propose des interfaces à l'intention des consommateurs désireux 
+d'accéder aux données d'un ou plusieurs ordinateurs exécutant 
+SQL Server.
+
+-------------------
+2. NOTES TECHNIQUES
+-------------------
+
+2.1 Modifications des propriétés de SQLOLEDB
+
+Les propriétés de SQLOLEDB ont subi les modifications suivantes :
+
+* La propriété DBPROP_INIT_DATASOURCE est maintenant utilisée 
+  pour spécifier le nom d'un serveur exécutant SQL Server. 
+  Elle ne sert plus à spécifier un nom de base de données.
+
+* La propriété DBPROP_INIT_CATALOG est maintenant utilisée 
+  pour spécifier la base de données initiale.
+
+* La propriété DBPROP_INIT_LOCATION n'est plus prise en charge.
+
+* La propriété DBPROP_AUTH_INTEGRATED est maintenant prise en charge. 
+  Si DBPROP_AUTH_INTEGRATED a la valeur « SSPI », la sécurité intégrée 
+  est utilisée. Si cette propriété a comme valeur un pointeur BSTR nul,
+  c'est la sécurité SQL Server qui est utilisée.
+
+* La propriété SSPROP_AUTH_TRUSTEDCONNECTION n'est plus prise 
+  en charge.
+
+* La propriété spécifique au fournisseur DBPROP_INIT_MODE n'est plus 
+  prise en charge.
+
+2.2
+En cas de tentative d'exécution d'une commande sur une connexion 
+ayant déjà une commande en attente, SQLOLEDB crée une autre connexion 
+pour traiter la nouvelle commande si les conditions suivantes 
+sont réunies :
+
+*  DBPROP_MULTIPLECONNECTIONS a la valeur VARIANT_TRUE.
+*  La première commande n'a pas produit un ensemble de lignes, 
+   ou n'utilise pas de curseur du serveur.
+*  Aucune transaction active n'utilise la connexion.
+
+S'il y a une transaction active sur la connexion, la tentative 
+d'exécution d'une seconde commande renvoie E_FAIL. S'il n'y a pas 
+de transaction active, alors que DBPROP_MULTIPLECONNECTIONS 
+a la valeur VARIANT_FALSE, la tentative d'exécution d'une seconde 
+commande renvoie DB_E_OBJECTOPEN.
+
+Les transactions et le verrouillage sont gérés par SQL Server 
+connexion par connexion. Si une seconde connexion est créée, 
+les commandes exécutées sur ces connexions distinctes 
+ne partagent pas de verrous. Il faut donc veiller à éviter 
+qu'une commande n'en bloque une autre en conservant des verrous 
+sur des lignes demandées par l'autre commande.
+
+2.3
+Pour améliorer les performances en réduisant l'activité réseau, 
+SQLOLEDB ne dérive pas automatiquement les informations de paramètre, 
+sauf si ICommandWithParameters::GetParameterInfo 
+ou ICommandPrepare::Prepare est appelée avant l'exécution 
+d'une commande. En d'autres termes, SQLOLEDB n'effectue pas 
+automatiquement les opérations suivantes :
+
+* Vérification de l'exactitude du type de données spécifié 
+  avec ICommandWithParameters::SetParameterInfo.
+* Établissement d'une correspondance entre, d'une part, le DBTYPE 
+  spécifié dans les informations de liaison du mécanisme d'accès et, 
+  d'autre part, le type de données SQL correct pour le paramètre.
+
+Il est possible que les applications soient confrontées 
+à des erreurs ou à une perte de précision avec l'une ou l'autre 
+de ces méthodes si elles spécifient des types de données 
+qui ne sont pas compatibles avec le type de données SQL du paramètre.
+
+Pour éviter ces problèmes, l'application doit opérer de la manière 
+suivante :
+
+* Si vous utilisez ICommandWithParameters::SetParameterInfo 
+  dans un programme spécifique, vérifiez que pwszDataSourceType 
+  correspond au type de données SQL du paramètre.
+* Si vous programmez un mécanisme d'accès, vérifiez que le DBTYPE lié 
+  au paramètre correspond au type de données SQL du paramètre.
+* Programmez dans l'application un module appelant 
+  ICommandWithParameters::GetParameterInfo pour permettre 
+  au fournisseur d'obtenir dynamiquement les types de données SQL 
+  des paramètres. Ce dialogue nécessite un aller et retour de plus
+  sur le réseau entre le client et le serveur.
+
+2.4
+  DBPROP_CHANGEINSERTEDROWS ne peut être défini qu'avec la valeur 
+  VARIANT_TRUE si l'ensemble de lignes utilise un curseur de 
+  table de caractères.

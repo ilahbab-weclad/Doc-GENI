@@ -1,0 +1,9 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Description "Suisse - Villes"
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 1
+    Ville Char (25) ;

@@ -1,0 +1,31 @@
+; Localized	03/24/1999 04:01  (GMT)	7:4.1.211 	SCRPTXTN.ECF
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={B6CF8A0E-AE68-11d1-A423-00A0C90D2899}
+Path="scrptxtn.dll"
+Entry Point=1
+Client Version=4.0
+Extension Version=1.0
+Service Provider=MSEMS
+Misc Flags=Disabled;DllFromDarwin
+
+[Exchange Client Compatibility]
+Exchange Registry=0
+Exchange Extension Key=<RegKeyName>
+
+; Exchange Context Map is PROPERTYSHEETS
+Exchange Context Map=00000000000100
+
+; Exchange Interface Map is IExchExtPropertySheets.
+Exchange Interface Map=0000010
+
+[Property Sheet]
+Events="AddPropSheetPages"
+Property Sheet Dialogs=Folder
+
+[Strings]
+DisplayName = Server Scripting
+Description = Server Scripting
+RegKeyName = Server Scripting	;{Locked}
+

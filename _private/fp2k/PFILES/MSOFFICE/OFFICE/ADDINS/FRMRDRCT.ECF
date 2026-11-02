@@ -1,0 +1,11 @@
+[General]
+Display Name=Redirecteur des formulaires de Microsoft Outlook
+Description=Redirige les formulaires Exchange/Outlook vers celui des deux qui est exécuté
+Path=frmrdrct.dll
+Entry Point=1
+Client Version=4.0
+Misc Flags=Disabled;NoUserEdit
+
+[Exchange Client Compatibility]
+Exchange Registry=1
+Exchange Extension Key=Coexistence de formulaires Outlook/Exchange

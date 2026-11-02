@@ -1,0 +1,22 @@
+[info]
+title=Checkers
+codepage=65001
+version=2.00
+format=2.00
+readonly=true
+
+[titles]
+1036=Damier
+1031=Schachbrett
+3082=Tablero de damas
+1040=Dama
+1035=Ruudut
+1030=Terner
+1044=Ruter
+1053=Rutor
+1046=Quadriculado
+1043=Dambord
+2052=评判型
+1028=方格花紋
+1041=チェッカー
+1042=체크 무늬

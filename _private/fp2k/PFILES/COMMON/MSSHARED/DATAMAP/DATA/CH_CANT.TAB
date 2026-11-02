@@ -1,0 +1,12 @@
+!table
+!version 290
+DESCRIPTION "Suisse"
+FIELDS: 2
+    CANTON Char (40) Index 1
+    CODE Char (5) Index 2
+READONLY
+begin_metadata
+"\FIELDS\COL1\ISSEARCHED" = "TRUE"
+"\FIELDS\COL2\ISSEARCHED" = "TRUE"
+"\IsReadonly" = "FALSE"
+end_metadata

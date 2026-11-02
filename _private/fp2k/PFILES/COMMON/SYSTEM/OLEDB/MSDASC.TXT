@@ -1,0 +1,65 @@
+------------------------------------------------------------
+Fichier Lisezmoi de l'API Microsoft(R) Data Link version 2.1
+------------------------------------------------------------
+
+(c) 1998 Microsoft Corporation. Tous droits réservés.
+
+Ce document fournit des informations de dernière minute ou d'autres 
+indications en complément de la documentation de l'API Microsoft 
+Data Link.
+
+------------------
+TABLE DES MATIÈRES
+------------------
+
+1. DESCRIPTION DU PRODUIT
+   
+2. NOUVELLES FONCTIONNALITÉS
+   
+3. NOTES TECHNIQUES
+
+4. ERREURS CONNUES, LIMITATIONS ET SOLUTIONS
+
+-------------------------
+1. DESCRIPTION DU PRODUIT
+-------------------------
+L'API Microsoft Data Link fournit une interface utilisateur commune 
+pour la définition et la gestion des connexions à des sources de 
+données OLE DB. Cette interface utilisateur peut aussi être appelée 
+en utilisant une interface de programmation d'application, l'API 
+Data link.
+
+Vous pouvez enregistrer les informations de connexion dans un fichier 
+de liaison de données (à extension .udl). Ensuite, il est possible 
+de modifier ces fichiers dans la page de propriétés de Data Links 
+pour permettre aux applications de les utiliser en créant des 
+connexions à diverses sources de données OLE DB. L'API Data Link 
+fournit aux applications la possibilité de sélectionner, de charger 
+ou d'enregistrer des fichiers .udl.
+
+L'interface utilisateur employée pour gérer les informations 
+de connexion dans les fichiers .udl peut être utilisée par 
+des applications pour recueillir des informations de connexion 
+auprès des utilisateurs lors de l'établissement de connexions 
+ad hoc à des sources de données OLE DB. L'API Data Link permet 
+aux applications soit d'obtenir une version chaîne des informations 
+de connexion d'un objet source de données OLE DB existant, soit 
+de créer un objet source de données à partir d'une chaîne 
+de connexion existante, soit d'utiliser la boîte de dialogue 
+de Data Links pour modifier les propriétés de connexion d'un objet
+source de données OLE DB non initialisé.
+
+----------------------------
+2. NOUVELLES FONCTIONNALITÉS
+----------------------------
+IDBPromptInitialize::PromptDataSource supporte maintenant les fournisseurs et les filtres de type fournisseurs.
+
+-------------------
+3. NOTES TECHNIQUES
+-------------------
+Aucune
+
+--------------------------------------------
+4. ERREURS CONNUES, LIMITATIONS ET SOLUTIONS
+--------------------------------------------
+Limitation : La version 2.1 de l'API Data Link API ne supporet pas la création de fournisseurs distants. L'utilisation de IDataInitialize::CreateDBInstanceEx pour autre chose qu'un fournisseur local ne fonctionnera pas.

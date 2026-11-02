@@ -1,0 +1,25 @@
+:Base msfs.hlp>main
+:Title Aide de Microsoft Mail
+:Index Aide de Microsoft Mail=msfs.hlp
+1 Vue d'ensemble
+2 Vue d'ensemble=Overview
+2 Modification de vos paramètres Microsoft Mail=ChangeSettings
+1 Utilisation du courrier
+2 Modification de votre connexion au bureau de poste=PostofficeConnection
+2 Modification des options d'ouverture de session=ChangeLogonOptions
+2 Automatisation de l'ouverture de session=AutomatingLogon
+2 Modification de votre mot de passe=ChangePassword
+2 Activation de la notification immédiate=ImmediateNotification
+2 Modification de l'intervalle entre les remises de messages=SetDeliveryTime
+2 Définition des options permettant d'envoyer uniquement, ou de recevoir uniquement, des messages=ToOnlySendOrOnlyReceiveMail
+2 Envoi d'une télécopie avec Microsoft Mail=SendFaxByMSMail
+2 Utilisation en mode autonome=WorkingOffline
+1 Utilisation du courrier à distance
+2 Définition d'une connexion Accès réseau à distance=SetRASConnection
+2 Démarrage d'une session distante=StartRemoteSession
+2 Fin d'une session distante=EndRemoteSession
+2 Planification du démarrage et de la fin de sessions distantes=StartEndRemoteSessions
+2 Définition des options permettant d'envoyer uniquement, ou de recevoir uniquement, des messages=ToOnlySendOrOnlyReceiveMail
+2 Visualisation des en-têtes avant de télécharger des messages=ToPreviewMessageHeaders
+2 Enregistrement des événements de session dans un fichier journal=RecordingSessionsInLog
+2 Téléchargement d'un Carnet d'adresses local=DownloadingAddressBook

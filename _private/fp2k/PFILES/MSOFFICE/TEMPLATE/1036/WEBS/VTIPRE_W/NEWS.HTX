@@ -1,0 +1,150 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<meta name="Microsoft Border" content="<%Border%>">
+<%endif%>
+<title><%NewsPageTitle%></title>
+</head>
+
+<body <%if DoTheme EQ False%> stylesrc="<%PageStyleSrc%>" <%endif%> >
+
+<%if DoTheme EQ False%>
+<%if DoTopLogo EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%LogoUrl%>" -->
+<%endif%>
+<%if StyleOption EQ 0%>
+<h1><%NewsPageTitle%></h1>
+<%else%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%BannerImgUrl%>" 
+alt="[Bannière]" border="0" <%BannerImgSize%>> </p>
+<%endif%>
+<%if DoTopLinks EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%NavbarUrl%>" -->
+<%endif%>
+<%if UnderConstructionOption EQ 0%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%UnderconImgUrl%>" 
+alt="[En construction]" border="0" <%UnderconImgSize%>></p>
+<%endif%>
+<%endif%>
+
+<%if DoNewsWhatsNew EQ True%>
+<p> </p>
+<%if StyleOption EQ 0%>
+<hr>
+<%else%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%HRuleImgUrl%>" 
+alt="[Ligne séparatrice]" border="0" <%HRuleImgSize%>> </p>
+<%endif%>
+
+<p> </p>
+<h2><!-- LOCALIZE this heading -->Nouveautés du site Web</h2>
+
+<p><!-- LOCALIZE this paragraph -->Nous vous annoncerons ici les ajouts les plus récents. Si
+vous avez déjà visité notre site Web, cette section pourra
+vous être utile pour connaître ce qui a changé.</p>
+
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText"
+preview="tenez ces informations à jour en supprimant régulièrement les éléments les plus anciens. Chaque élément devrait disposer d'un lien hypertexte vers le document contenant de nouvelles informations. Insérez les nouveaux éléments au début de la liste, de façon à ce que les informations les plus récentes apparaîssent en premier." --> </p>
+
+<%if DoNewsPressReleases EQ True%>
+<!-- LOCALIZE the text in this definition list -->
+<dl>
+    <dt> <!-- LOCALIZE the alt text in this image --><img src="<%SmallNewImgUrl%>" 
+	alt="[Nouveau!]" border="0" <%SmallNewImgSize%>> 
+	<strong><!--webbot bot="Substitution" s-variable="<%WebVarLongName%>" --> 
+         s'établit sur Internet</strong></dt>
+    <dd>Voir les <a href="<%Press1Url%>">communiqués de presse</a>
+        pour plus de détails. </dd>
+<%if DoProductsPage EQ True%>
+<%if NumProducts GT 0%>
+    <dt><strong>Exemple d'annonce de produit</strong> </dt>
+    <dd>Voir les <a href="<%Prod1Url%>">informations sur les
+        produits</a> pour plus de détails. </dd>
+<%endif%>
+<%endif%>
+</dl>
+<%endif%>
+<%endif%>
+
+<%if DoNewsPressReleases EQ True%>
+<p> </p>
+<%if StyleOption EQ 0%>
+<hr>
+<%else%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%HRuleImgUrl%>" 
+alt="[Ligne séparatrice]" border="0" <%HRuleImgSize%>> </p>
+<%endif%>
+
+<p> </p>
+<h2><!-- LOCALIZE this heading -->Communiqués</h2>
+
+<p><!-- LOCALIZE this paragraph -->Ici se trouvent les communiqués que nous avons issus pendant
+cette année.
+<%if DoSearchPage EQ True%>
+Vous pouvez y effectuer une <a
+href="<%SearchPageUrl%>">recherche</a> par mots-clés.
+<%endif%>
+</p>
+
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText"
+preview="modifiez les liens hypertexte ci-dessous de façon à ce qu'ils se réfèrent à vos communiqués de presse, ou modifiez les documents fournis comme exemples. Insérez les nouveaux éléments au début de la liste, de façon à ce que les communiqués de presse les plus récents apparaîssent en premier. Pensez aussi à insérer un lien vers le nouvel élément dans la liste Nouveautés." --> </p>
+
+<!-- LOCALIZE the text in this list item -->
+<ul>
+    <li>Date -- <a href="<%Press1Url%>"><%Press1Title%></a> </li>
+    <li>Date -- <a href="<%Press2Url%>"><%Press2Title%> </a></li>
+    <li>Date -- <a href="<%Press3Url%>"><%Press3Title%> </a></li>
+</ul>
+<%endif%>
+
+<%if DoNewsArticles EQ True%>
+<p> </p>
+<%if StyleOption EQ 0%>
+<hr>
+<%else%>
+<p><!-- LOCALIZE the alt text in this image --><img src="<%HRuleImgUrl%>" 
+alt="[Ligne séparatrice]" border="0" <%HRuleImgSize%>> </p>
+<%endif%>
+<p> </p>
+<h2><!-- LOCALIZE this heading -->Couvertures média récentes de <!--webbot bot="Substitution"
+s-variable="<%WebVarLongName%>" --></h2>
+
+<p><!-- LOCALIZE this comment bot --><!--webbot bot="PurpleText"
+preview="faites connaître aux lecteurs ce que les médias disent de vous en ajoutant des articles à la liste ci-dessous. Chaque ligne devrait contenir le titre de l'article, le nom de la publication, et sa date de parution. Créez des liens hypertexte vers le texte complet de l'article si vous en avez obtenu l'autorisation par l'éditeur." --> </p>
+
+<!-- LOCALIZE the text in this bullet list -->
+<ul>
+    <li><em>Titre</em>, <strong>Publication</strong>, Date </li>
+    <li><em>Titre</em>, <strong>Publication</strong>, Date </li>
+    <li><em>Titre</em>, <strong>Publication</strong>, Date </li>
+</ul>
+<%endif%>
+
+<%if DoTheme EQ False%>
+<%if DoBottomLinks EQ True%>
+<!--webbot bot="Include" tag="BODY" u-include="<%NavbarUrl%>" -->
+<%endif%>
+<h5>
+<%if DoBottomWebmasterAddress EQ True%>
+<!-- LOCALIZE this line -->Envoyez un courrier électronique à <a href="<%WebmasterUrl%>"><!--webbot
+bot="Substitution" s-variable="<%WebVarWebmaster%>" --></a>pour toute question ou commentaire concernant ce site
+Web.<br>
+<%endif%>
+<%if DoBottomCopyright EQ True%>
+<!-- LOCALIZE this line -->Copyright © <%CurrentYear%> <!--webbot bot="Substitution"
+s-variable="<%WebVarLongName%>" --><br>
+<%endif%>
+<%if DoBottomDateModified EQ True%>
+<!-- LOCALIZE this line -->Dernière modification&nbsp;: <!--webbot bot="TimeStamp" s-type="EDITED"
+s-format="%d %B %Y" -->
+<%endif%>
+</h5>
+<%endif%>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr">
+<%if DoTheme EQ True%>
+<meta name="Microsoft Theme" content="<%Theme%>">
+<%endif%>
+<title><!-- LOCALIZE this title --> <%DiscussionTitle%>Confirmation de  </title>
+</head>
+
+<body <%if DoTheme EQ False%> stylesrc="<%PageStyleSrc%>" <%endif%> >
+
+<%if FramesOption LT 2%>
+<!--webbot bot="Include" tag="BODY" u-include="<%HeaderPageUrl%>" -->
+<%endif%>
+
+<h3><tt><!-- LOCALIZE this heading -->CONFIRMATION</tt></h3>
+
+<p><!-- LOCALIZE this text -->Votre article, intitulé <strong><!--webbot bot="ConfirmationField" s-field="<%SubjectField%>" --></strong>,
+a été envoyé au groupe de discussion <em><%DiscussionTitle%></em>.</p>
+
+<%if FramesOption GT 0%>
+<p><!-- LOCALIZE this text (but not the target) -->Pour faire apparaître votre nouvel article dans la liste, <a href="<%FramesetPageUrl%>" target="_top">actualisez la page principale.</a></p>
+<%else%>
+<%if DoTOC EQ True%>
+<p><!-- LOCALIZE this text --> Retournez au <a href="<%ContentsPageUrl%>">sommaire</a> 
+et actualisez la page pour voir apparaître votre nouvel article dans la liste.</p>
+<%endif%>
+<%endif%>
+
+<%if FramesOption LT 2%>
+<!--webbot bot="Include" tag="BODY" u-include="<%FooterPageUrl%>" -->
+<%endif%>
+
+</body>
+</html>

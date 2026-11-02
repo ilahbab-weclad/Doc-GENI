@@ -1,0 +1,10 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Description "France - Codes postaux"
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 2
+    Code Char (2) Index 1 ;
+    Pays Char (30) ;

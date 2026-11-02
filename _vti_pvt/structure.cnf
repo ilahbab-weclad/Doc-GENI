@@ -1,0 +1,179 @@
+3.0.0.507
+1170
+1000,index.htm,0,Doc GENI,0,1361954812,0
+1005,base/GENI_base.htm,0,Base,0,1361954812,1
+vti_globalpage:BW|true
+1141,doc/donnees_techniques.htm,0,Données techniques,0,1361954812,1
+vti_globalpage:BW|true
+1121,ag/index_ag.htm,0,GENI Agence - menu GPAO,0,1132224758,1
+vti_globalpage:BW|true
+1122,suk/index_en.htm,0,GENI UK,0,1048177084,1
+vti_globalpage:BW|true
+1148,avance/GENI_avance.htm,0,GEPLOG - Info admin,0,1536225084,1
+vti_globalpage:BW|true
+1158,2018_palettes.htm,0,Nouvelle interface 2018,1000,1531906773,0
+1001,generalites/GENI_prise_en_main.htm,0,Prise en main,1000,1047304638,0
+1002,dt/GENI_dt.htm,0,D.T,1000,1047304724,0
+1003,achats/GENI_achats.htm,0,Achats,1000,1047305416,0
+1004,article/GENI_article.htm,0,Article,1000,1047304724,0
+1006,structure/GENI_structure.htm,0,Structures,1000,1047304849,0
+1007,reservation/GENI_reservation.htm,0,Réservation,1000,1047304912,0
+1008,cde_usine/GENI_cde_usine.htm,0,Cde usine,1000,1047304949,0
+1009,production/GENI_production.htm,0,Production,1000,1047305006,0
+1010,expedition/GENI_Expedition.htm,0,Expédition,1000,1047305200,0
+1011,stock/GENI_stock.htm,0,Stock,1000,1047305278,0
+1012,pointage/Pointage.htm,0,Pointage,1000,1112696804,0
+1134,ged/GENI_ged.htm,0,GED,1000,1329123739,0
+1040,base/GENI_base_01_att_scenario.htm,0,Base - Att scénario,1005,1047304783,0
+1041,base/GENI_base_02_categorie.htm,0,Base - Catégorie,1005,1047304783,0
+1042,base/GENI_base_03_famille.htm,0,Base - Familles,1005,1558596674,0
+1043,base/GENI_base_04_sous_famille.htm,0,Base - Sous famille,1005,1047304783,0
+1044,base/GENI_base_05_operation.htm,0,Base - Opération,1005,1047304783,0
+1045,base/GENI_base_06_tache.htm,0,Base - Tâche,1005,1047304783,0
+1046,base/GENI_base_07_classes.htm,0,Base - Classes,1005,1047304783,0
+1047,base/GENI_base_08_options.htm,0,Base - Options,1005,1047304783,0
+1048,base/GENI_base_09_groupes_proprietes.htm,0,Base - Groupes propriétés,1005,1047304783,0
+1049,base/GENI_base_10_unites.htm,0,Base - Unités,1005,1047304783,0
+1050,base/GENI_base_11_hierarchie_site_magasin.htm,0,Base - Hiérarchie site - magasin,1005,1047304783,0
+1051,base/GENI_base_12_organisation_site_atelier.htm,0,Base - Organisation site - atelier,1005,1047304783,0
+1143,doc/GENI_liste_des_abreges_matieres.htm,0,Abrégés matières,1141,1353600406,0
+1142,doc/GENI_liste_des_abreges_frais_generaux.htm,0,Abrégés frais généraux,1141,1353600406,0
+1166,ag/cde_agence_double_num.htm,0,GENI Agence - saisie cde agence,1121,1668589627,0
+1123,ag/cde_modules.htm,0,GENI Agence - saisie cde modules,1121,1337703703,0
+1127,ged/ag_ged.htm,0,GENI Agence - Ajout d'un document dans une commande,1121,1390491865,0
+1155,ag/FAQ_agence_F2.htm,0,GENI Agence - Requêtes / Recherches,1121,1405501526,0
+1124,ag/FAQ_agence.htm,0,GENI Agence - FAQ,1121,1271949848,0
+1151,article/GENI_article.htm,1,Codes Article,1121,1394725009,0
+1125,suk/GENI_starting_with.htm,0,Starting with...,1122,1047454404,0
+1131,suk/GENI_menu_en.htm,0,Menu,1122,1323706319,0
+1146,suk/F0059U_purchase_open_orders.htm,0,Purchase - Open orders,1122,1378730259,0
+1138,suk/STAT01_Stats_achats_receptions.htm,0,Purchase - Stats purchased-Received,1122,1344001753,0
+1136,suk/F220_stock_par_chantiers.htm,0,Stock - Consult stock by Project,1122,1340872160,0
+1132,suk/F016C_cde_usine_suivi.htm,0,Factory Order - Follow up (suivi),1122,1326732026,0
+1149,avance/GENI_avance_pad.htm,0,GEPLOG admin - Scanner code barre,1148,1536225084,0
+1150,avance/GENI_avance_config.htm,0,GEPLOG admin - configuration,1148,1536225084,0
+1154,FAQ3_os.htm,0,FAQ Système d'exploitation,1148,1404203786,0
+1160,avance/GENI_avance_rdp.htm,0,GEPLOG - Connexion TSE - RDP,1148,1536225084,0
+1161,avance/GENI_avance_ameb.htm,0,GEPLOG - Ameb,1148,1544197764,0
+1162,avance/GENI_avance_param_listes.htm,0,GEPLOG admin - Listes,1148,1545041858,0
+1164,stock/GENI_contenants_admin.htm,0,Gestion des contenants,1148,1605694656,0
+1159,2018_double_numerotation.htm,0,Double numérotation,1158,1531753349,0
+1013,GENI_menu_principal.htm,0,Menu principal,1001,1047314692,0
+1014,generalites/GENI_edition.htm,0,Edition,1001,1047304638,0
+1015,generalites/GENI_fichier.htm,0,Fichier,1001,1047304638,0
+1016,generalites/GENI_liste_de_choix.htm,0,Liste de choix - F4,1001,1047304638,0
+1017,generalites/GENI_requetes.htm,0,Requêtes,1001,1047304638,0
+1018,doc_ppt/doc_ppt.htm,0,Diaporamas de présentation,1001,1055835883,0
+1019,dt/GENI_dt_01_tarif_standard.htm,0,DT - Tarif Standard,1002,1047304724,0
+1020,dt/GENI_dt_02_cout_horaire.htm,0,DT - Coût Horaire,1002,1047304724,0
+1021,dt/GENI_dt_03_nom_gamme.htm,0,DT - Nom. Gamme Fab - Liasse,1002,1047304724,0
+1022,dt/GENI_dt_04_creation_article.htm,0,DT - Création article,1002,1047304724,0
+1139,dt/GENI_dt_manuelle.htm,0,D.T manuelle,1002,1346164155,0
+1023,achats/GENI_achats_F0292B_tarif.htm,0,Achats - Tarif,1003,1389774724,0
+1024,achats/GENI_achats_F0055_cde_fournisseur.htm,0,Achats - Commande fournisseur,1003,1389774704,0
+1025,achats/GENI_achats_F056U_ar.htm,0,Achats - A.R.,1003,1389774690,0
+1026,achats/GENI_achats_F0059U_cde_en_cours.htm,0,Achats - Commande en cours,1003,1389774677,0
+1027,achats/GENI_achats_F257U_retard_fournisseur.htm,0,Achats - Retard fournisseur,1003,1389774666,0
+1028,achats/GENI_achats_F0058_reception.htm,0,Achats - Réception,1003,1389774650,0
+1029,achats/GENI_achats_F059U_historique_reception.htm,0,Achats - Historique réception,1003,1389774642,0
+1030,achats/GENI_achats_F0058B_suppression_br.htm,0,Achats - Suppression B.R.,1003,1389774632,0
+1031,achats/GENI_achats_F0058_FA_livre_non_facture.htm,0,Achats - Livré non facturé,1003,1389774618,0
+1032,achats/GENI_achats_F0055_T_cde_transfert_inter_site.htm,0,Achats - Commande transfert Inter-Site,1003,1389774602,0
+1033,achats/GENI_achats_F0056_T_expe_transfert_inter_site.htm,0,Achats - Expédition transfert inter site,1003,1389774592,0
+1034,achats/GENI_achats_F0058_T_recep_transfert_inter_site.htm,0,Achats - Réception transfert inter site,1003,1389774579,0
+1147,achats/GENI_achats_F0055_T2_cde_sous_traitance.htm,0,Achats - Commande sous-traitance,1003,1389774561,0
+1156,achats/GENI_achats_stat01.htm,0,Achats - Statistiques achats réceptions,1003,1444210461,0
+1035,achats/GENI_achats_faq.htm,0,Achats - FAQ,1003,1120815085,0
+1036,article/GENI_article_01_fiche.htm,0,Article - Fiche,1004,1047304724,0
+1037,article/GENI_article_02_liste.htm,0,Article - Liste,1004,1047304724,0
+1038,article/GENI_article_03_teinte.htm,0,Article - Teinte,1004,1047304724,0
+1129,ged/article_ged.htm,0,Article - GED,1004,1271146741,0
+1039,article/GENI_article_faq.htm,0,FAQ - Articles,1004,1047304849,0
+1052,structure/GENI_structure_01_fiche.htm,0,Fiche structure complète,1006,1047304849,0
+1053,structure/GENI_structure_02_liste.htm,0,Structures - Liste,1006,1047304849,0
+1054,structure/GENI_structure_faq.htm,0,FAQ - Structures,1006,1047304849,0
+1157,structure/typos.htm,0,Chantiers - Typologies / Produits,1006,1530707436,0
+1055,reservation/GENI_reservation_01_alias_ref_gp_liasse_articles.htm,0,Alias Réf. GP Liasse - Articles,1007,1047304912,0
+1056,reservation/GENI_reservation_02_integration_liasse.htm,0,Intégration Liasse,1007,1047304912,0
+1057,reservation/GENI_reservation_02b_nom_gamme_fab_liasse.htm,0,Nom. Gamme fab liasse,1007,1047304912,0
+1058,reservation/GENI_reservation_03_saisie_modif_reservation.htm,0,Saisie - Modif réservation,1007,1047304912,0
+1059,reservation/GENI_reservation_04_meb_de_reservation.htm,0,MEB de réservation,1007,1047304912,0
+1060,reservation/GENI_reservation_05_traitement_reservation.htm,0,Traitement réservation,1007,1047304912,0
+1061,reservation/GENI_reservation_06_bilan_reservation_commande.htm,0,Bilan Réservation - Commande,1007,1047304912,0
+1062,cde_usine/GENI_cde_usine_01_cde_usine.htm,0,Commande usine,1008,1047304950,0
+1063,cde_usine/GENI_cde_usine_02_dde_livraison.htm,0,Demande de Livraison,1008,1047304950,0
+1064,cde_usine/GENI_cde_usine_besoins.htm,0,Besoins cde usine,1008,1047313508,0
+1065,cde_usine/GENI_cde_usine_synthese.htm,0,Synthèse besoins commandes usine,1008,1133880948,0
+1130,cde_usine/GENI_cde_usine_suivi.htm,0,Commandes usine - Suivi,1008,1290603205,0
+1066,cde_usine/GENI_cde_usine_FAQ.htm,0,FAQ - Cde usine,1008,1047454899,0
+1067,production/GENI_production_01_lct_of_cde.htm,0,Lancement OF cde,1009,1047305006,0
+1068,production/GENI_production_02_lct_of_dl.htm,0,Lancement OF DL,1009,1047305006,0
+1069,production/GENI_production_03_of_manuel.htm,0,OF manuel,1009,1047305006,0
+1070,production/GENI_production_04_affichage_of.htm,0,Affichage d'un OF,1009,1047305006,0
+1168,production/GENI_production_15_modification_of.htm,0,Modifier ou Supprimer un OF,1009,1674668090,0
+1071,production/GENI_production_05_liste_a_servir.htm,0,Liste à servir,1009,1047305006,0
+1072,production/GENI_production_06_liste_of.htm,0,Liste OF,1009,1047305006,0
+1073,production/GENI_production_07_saisie_qte_of.htm,0,Saisie qté OF,1009,1047305006,0
+1133,production/GENI_production_pad.htm,0,Saisie qté OF Module avec lecteur code barre,1009,1329123489,0
+1074,production/GENI_production_08_collecte_tps_of.htm,0,Collecte Temps OF,1009,1047305006,0
+1075,production/GENI_production_09_realisation_of.htm,0,Réalisation OF,1009,1047305006,0
+1076,production/GENI_production_10_cloture_of.htm,0,Clôture OF,1009,1047305006,0
+1077,production/GENI_production_11_synthese_qte_of.htm,0,Synthèse Qté OF,1009,1047314187,1
+vti_nonnavpage:BW|true
+1078,production/GENI_production_12_tps_of.htm,0,Synthèse Tps OF,1009,1047314187,1
+vti_nonnavpage:BW|true
+1079,production/GENI_production_13_avancement_fabrication.htm,0,Avancement fabrication,1009,1047314187,1
+vti_nonnavpage:BW|true
+1080,production/GENI_production_14_cout_fabrication.htm,0,Coût fabrication,1009,1047314206,1
+vti_nonnavpage:BW|true
+1081,production/GENI_production_faq.htm,0,FAQ - Production,1009,1047990846,0
+1082,gepix/Modification_ordre_de_fabrication.doc,1,Modification_OF (word),1009,1048149144,0
+1083,expedition/GENI_Expedition_livraison.htm,0,Livraison usine,1010,1091632056,0
+1084,expedition/GENI_expedition_faq.htm,0,FAQ - Expédition,1010,1047305200,0
+1085,stock/GENI_stock_01_hierarchie_site_magasin.htm,0,Hiérarchie Site - Magasin,1011,1047305279,0
+1086,stock/GENI_stock_02_consult_stock.htm,0,Consult stock,1011,1047305279,0
+1087,stock/GENI_stock_03_consult_stock_par_generique.htm,0,Consult stock par générique,1011,1047305279,0
+1088,stock/GENI_stock_04_consult_emplacement_magasin.htm,0,Consult Emplacement / Magasin,1011,1047305279,0
+1089,stock/GENI_stock_05_consult_mvt_stock.htm,0,Consult Mouvement de stock,1011,1047305279,0
+1090,stock/GENI_stock_06_consult_stock_par_chantier.htm,0,Consult stock par chantier,1011,1047305279,0
+1091,stock/GENI_stock_07_saisie_entree_stock.htm,0,Saisie ENTREE de stock,1011,1047308451,0
+1092,stock/GENI_stock_08_saisie_sortie_stock.htm,0,Saisie SORTIE de stock,1011,1047308451,0
+1093,stock/GENI_stock_09_transfert_mag_empl.htm,0,Transfert Magasin / Emplacement,1011,1047305279,0
+1094,stock/GENI_stock_10_transfert_affectation.htm,0,Transfert par affectation,1011,1047305279,0
+1169,stock/GENI_stock_F218G_transferts_de_stocks.htm,0,Transferts de stocks,1011,1676883290,0
+1095,stock/GENI_stock_11_consult_pmp.htm,0,Consult PMP,1011,1048154542,1
+vti_nonnavpage:BW|true
+1096,stock/GENI_stock_12_synthese_pmp.htm,0,Synthèse PMP,1011,1048154552,1
+vti_nonnavpage:BW|true
+1097,stock/GENI_stock_13_creation_inventaire.htm,0,Création inventaire,1011,1047305279,0
+1098,stock/GENI_stock_14_saisie_inventaire.htm,0,Saisie inventaire,1011,1047305279,0
+1099,stock/GENI_stock_15_valorisation_detaillee_du_stock.htm,0,Valorisation détaillée du stock,1011,1047305279,0
+1100,stock/GENI_stock_16_edition_etat_stocks_valorises.htm,0,Edition Etat Stocks Valorisés,1011,1047305279,0
+1101,stock/GENI_stock_17_edition_mvt_stock_par_chantier.htm,0,Edition Mvt Stock par Chantier,1011,1048154589,1
+vti_nonnavpage:BW|true
+1102,stock/GENI_stock_pupitres.htm,0,Gestion des pupitres,1011,1047305279,0
+1103,stock/GENI_stock_FAQ.htm,0,Stocks - FAQ,1011,1057829508,0
+1163,stock/GENI_contenants_cn001.htm,0,Contenants,1011,1605689580,0
+1104,pointage/Pointage_creation_badge.htm,0,Création d'un badge,1012,1112696861,0
+1105,pointage/Pointage_agence.htm,0,Pointage agence,1012,1112696839,0
+1165,pointage/Pointage_calendrier_horaire.htm,0,Calendrier / Type horaire,1012,1641289839,0
+1144,base/GENI_base_13_visserie.htm,0,Base - Visserie,1040,1361954713,0
+1137,suk/GENI_F2_Queries.htm,0,F2 - Queries,1125,1343915148,0
+1106,generalites/CalculPrix.htm,0,Les Tarifs,1019,1047633844,0
+1107,dt/GENI_dt_03_nom_gamme_GA.htm,0,Gammes,1021,1047304724,0
+1108,generalites/CalculPrix.htm,1,Les Tarifs,1023,1047633844,0
+1109,article/articles_codif.htm,0,Catégorie - Acheté - Fabriqué ?,1036,1048154464,0
+1110,article/GENI_article_base_profile.htm,0,Nomenclature profilé,1036,1047304724,0
+1111,article/GENI_article_base_tole.htm,0,Nomenclature tôle,1036,1047304724,0
+1112,article/GENI_gestion_scenario.htm,0,Gestion scénario,1036,1047304724,0
+1113,generalites/CalculPrix.htm,1,Les Tarifs,1036,1047633877,0
+1167,structure/GENI_structure_chantier.htm,0,Structures - Chantier,1052,1674462125,0
+1114,reservation/GENI_reservation_02_integration_liasse_faq.htm,0,Intégration Liasse - FAQ,1056,1047304912,0
+1115,cde_usine/GENI_cde_usine_01_cde_usine_modif.htm,0,Modification d'une commande usine,1062,1047304950,0
+1116,cde_usine/GENI_saisie_cde_usine_liasse_sg.htm,0,Saisie de commande à partir d'une liasse Saisie Graphique,1062,1270632455,0
+1128,ged/us_ged.htm,0,Consultation d'un document attaché a une commande,1062,1390491780,0
+1117,production/GENI_production_etiquettes.htm,0,Etiquettes,1072,1047305187,0
+1118,production/GENI_production_MEB.htm,0,Mise en barre d'OF,1072,1047305187,0
+1119,production/GENI_production_MET.htm,0,Mise en format d'OF ( ou Mise en Tôle ),1072,1047305187,0
+1152,expedition/GENI_Expedition_incomplet.htm,0,Livraison pour compléter un module livré incomplet,1083,1395325363,0
+1120,production/prod_etiquettes.pdf,0,production/prod_etiquettes.pdf,1117,1047305187,0

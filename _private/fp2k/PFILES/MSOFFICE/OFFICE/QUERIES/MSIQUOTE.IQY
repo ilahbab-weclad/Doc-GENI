@@ -1,0 +1,9 @@
+WEB
+1
+http://investor.msn.com/external/excel/quotes.asp?SYMBOL=["QUOTE0","Entrez des valeurs boursières, des fonds ou autres symboles MS Investor, séparés par des virgules."]
+
+Selection=EntirePage
+Formatting=All
+PreFormattedTextToColumns=True
+ConsecutiveDelimitersAsOne=True
+SingleBlockTextImport=False

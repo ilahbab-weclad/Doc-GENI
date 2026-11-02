@@ -1,0 +1,88 @@
+        Fichier lisezmoi de Snapshot Viewer version 9.0 
+                         Avril 1999
+
+           (C) Copyright 1998 Microsoft Corporation
+
+Sommaire
+    Les fichiers d'instantanés d'état peuvent uniquement être lus sur 
+        des ordinateurs fonctionnant sous Windows 32 bits.
+    Le contrôle Snapshot Viewer requiert Service Pack 5 ou ultérieur 
+        sous Windows NT Version 3.51.
+    Méthodes pour réduire la taille d'un message électronique lors de 
+        l'incorporation d'un fichier d'instantané d'état sous Windows 95
+    Affichage de l'aide « Qu'est-ce que c'est ? » en plaçant le pointeur 
+        de la souris sur une commande de menu et en appuyant sur F1 
+    Liste des fichiers
+
+Les fichiers d'instantanés d'état peuvent uniquement être lus sur des 
+ordinateurs fonctionnant sous Windows 32 bits.
+---------------------------------------------------------------------
+
+Vous ne pouvez pas afficher un fichier d'instantané d'état sur un 
+ordinateur qui n'exécute pas Windows 32 bits. Par exemple, il se peut que 
+vous essayiez d'afficher un fichier d'instantané d'état à partir d'une page 
+Web sur un ordinateur Macintosh ou un ordinateur fonctionnant sous Unix. 
+Le format interne d'un instantané d'état est un métafichier Windows et il 
+ne peut être lu que sur un ordinateur exécutant Windows 95 ou Windows NT.
+
+Le contrôle Snapshot Viewer requiert Service Pack 5 ou ultérieur sous 
+Windows NT Version 3.51.
+---------------------------------------------------------------------
+
+Le contrôle Snapshot Viewer requiert Service Pack 5 ou ultérieur sous 
+Windows NT version 3.51. Ce problème ne se présente pas sous 
+Windows NT version 4.0 ou ultérieure.
+
+
+Méthodes pour réduire la taille d'un message électronique lors de 
+l'incorporation d'un fichier d'instantané d'état sous Windows 95 
+-----------------------------------------------------------------
+Vous pouvez incorporer un fichier d'instantané d'état dans un message 
+électronique à l'aide de la commande Destinataire du message (en tant 
+que pièce jointe) du sous-menu Envoyer vers du menu Fichier de Microsoft 
+Access 2000 ou de tout programme de messagerie électronique qui prend en 
+charge les objets OLE incorporés. Notez que l'incorporation d'un fichier 
+d'instantané d'état en suivant cette procédure génère un message 
+électronique plus volumineux sous Windows 95 que sous Windows NT et 
+peut donc vous empêcher d'envoyer ce dernier (en raison des limitations 
+de votre programme de messagerie électronique). La différence de taille 
+s'explique par les prises en charge différentes des métafichiers Windows 
+par les deux systèmes d'exploitation.
+
+Pour réduire la taille du message électronique, vous pouvez procéder comme 
+suit avant d'envoyer l'instantané d'état :
+
+1) Incorporez l'instantané d'état en tant qu'icône. Pour ce faire dans 
+   Access, sélectionnez Destinataire du message (en tant que pièce jointe) 
+   dans le sous-menu Envoyer vers du menu Fichier.
+2) Réduisez le nombre de couleurs dans la boîte de dialogue Propriétés 
+   de Affichage (double-cliquez sur l'icône Affichage du Panneau de 
+   configuration ; sous l'onglet Paramètres, changez la palette des couleurs). 
+3) Réduisez la taille du fichier d'instantané d'état incorporé (dans Microsoft 
+   Outlook, redimensionnez-le à l'aide de ses poignées de contrôle).
+4) Activez le fichier d'instantané d'état dans l'application et modifiez sa 
+   taille pour l'ajuster à la page (dans Outlook, double-cliquez sur 
+   l'instantané d'état, cliquez dessus avec le bouton droit, puis 
+   cliquez sur Ajuster dans le menu Zoom).
+
+Affichage de l'aide « Qu'est-ce que c'est ? » en plaçant le pointeur de 
+la souris sur une commande de menu et en appuyant sur F1 
+-----------------------------------------------------------------------
+
+Si vous appuyez sur F1 pendant que le pointeur de la souris est placé sur 
+une commande de menu, l'aide « Qu'est-ce que c'est ? » s'affiche au lieu de 
+la fenêtre Rubriques d'aide. Ce n'est pas le cas dans les autres 
+applications Microsoft Office 2000, telles que Microsoft Access 2000. 
+Si vous ne placez pas le pointeur sur la commande de menu et que vous 
+appuyez sur F1, la fenêtre Rubriques d'aide s'affiche.
+
+Liste des fichiers
+------------------
+
+Les fichiers suivants sont par défaut installés dans le dossier 
+Program Files\Snapshot Viewer :
+
+    Lisezmoi.txt
+    Snapview.cnt
+    Snapview.exe
+    Snapview.hlp

@@ -1,0 +1,248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+
+
+<!--TOPIC HEAD STARTS HERE-->
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>Le modèle de sécurité Windows NT</TITLE>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
+</HEAD>
+<!--TOPIC HEAD ENDS HERE-->
+
+
+
+<!--MAIN BODY TABLE STARTS HERE-->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE cellspacing="0" cellpadding="0" width="100%">
+
+	<!--MICROSOFT TOOLBAR STARTS HERE-->
+
+	<TR>
+		<TD BGCOLOR="#000000"><IMG SRC="home.gif" WIDTH=103 HEIGHT=21
+ALT="Page d'accueil Microsoft" BORDER=0 hspace="0"></TD>
+		<TD colspan="2" BGCOLOR="#000000" WIDTH="100%"><IMG 
+SRC="1ptrans.gif" WIDTH=1 
+HEIGHT=1 ALT="" BORDER=0></TD>
+		<TD BGCOLOR="#000000" WIDTH=91 ALIGN="RIGHT" VALIGN="TOP">
+<FONT FACE="Arial, Helvetica" SIZE=1><A HREF="http://www.microsoft.com/france" TARGET="_top"><IMG 
+SRC="msft.gif" WIDTH=91 
+HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
+	</TR>
+	
+	<!--MICROSOFT TOOLBAR ENDS HERE-->
+	
+	<!--WEB SITE TITLE AND LOGO START HERE-->
+
+	<TR>
+		<TD width="150" height="20" nowrap>
+	<img SRC="cnrat_1.gif" border="0" height="26" width="150" alt="Logo du kit de ressources des extensions serveur Microsoft FrontPage"></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD colspan="2" nowrap bgcolor="#666699" valign="middle" height="20" style="padding: 3pt; border: #666666 solid 1px;"><font color="#FFFFCC"><b>Kit de ressources des extensions serveur Microsoft FrontPage&nbsp;2000</b></font></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><img SRC="cnrat_2.gif" border="0" width="150" height="38"></TD>
+    	<TD width="20" nowrap></TD>
+		
+		<!--WEB SITE TITLE AND LOGO END HERE-->
+		
+		<!--TOPIC TITLE AND BODY TEXT START HERE-->
+		
+		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous Windows&nbsp;NT</font></b></font>
+
+<HR>
+
+			<A NAME="windowsntsecuritymodel"></A><b><font color="#000000" size="2"><sup>&nbsp;1 sur 9&nbsp;</sup></b></font><A HREF="scwin_2.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;Le modèle de sécurité Windows&nbsp;NT</FONT> <p><A NAME="scwinnt.doc-1005"></A>Sous Microsoft&#174; Windows&nbsp;NT&#174;, un administrateur ou un programme peut accorder aux utilisateurs et aux groupes des niveaux d'accès variables aux ressources système. Les utilisateurs disposant de comptes d'utilisateur sous Windows&nbsp;NT doivent présenter leurs informations d'identification (nom d'utilisateur et mot de passe) avant de pouvoir accéder à une ressource de Windows&nbsp;NT. Il existe aussi des comptes de groupe sous Windows&nbsp;NT. Ils n'ont pas de mots de passe mais sont pratiques pour accorder des privilèges à plusieurs comptes d'utilisateur en même temps.</p>
+
+			<p>Windows&nbsp;NT exécute des applications spéciales appelées <I>services</I>. Ces services sont des programmes démarrés en même temps que le système d'exploitation qui s'exécutent en arrière-plan, sans interface utilisateur. (Le serveur Web IIS est un service.) Les services, comme toutes les applications exploitées sous Windows&nbsp;NT, doivent s'exécuter dans le contexte d'un compte d'utilisateur, représenté par un jeton.</p>
+
+			<H4>Jetons et  identificateurs de sécurité</H4>
+
+			<p><A NAME="scwinnt.doc-1007"></A>Un <I>jeton</I> identifie un utilisateur et les groupes Windows&nbsp;NT auxquels l'utilisateur appartient. Il contient également l'identificateur de sécurité (SID) de l'utilisateur et les SID de tous les groupes auxquels l'utilisateur appartient. Un SID identifie sans équivoque chaque utilisateur et chaque groupe dans Windows&nbsp;NT. Les programmes sous Windows&nbsp;NT s'exécutent dans le contexte d'un jeton. Quand un programme en démarre un autre, il transmet son jeton au nouveau programme.</p>
+
+
+			<H4>Listes de contrôle d'accès</H4>
+
+			<p><A NAME="scwinnt.doc-1008"></A>Une <I>liste de contrôle d'accès</I> (ACL) est la liste des entrées associées à un fichier ou à un dossier qui spécifie quels utilisateurs et groupes ont accès à ce dossier ou fichier. Chaque entrée d'une ACL assigne à un utilisateur ou à un groupe un ou plusieurs des niveaux d'accès suivants aux fichiers&nbsp;:</p>
+
+				<UL>
+					<LI class=LB1><A NAME="scwinnt.doc-1009"></A><B>Aucun</B> n'accorde à l'utilisateur aucun accès aux fichiers.  
+
+					<LI class=LB1><B>Lire</B> (<B>Lire les données</B> sous Windows&nbsp;NT 5.0) autorise un utilisateur à afficher les données d'un fichier
+	<LI class=LB1><B>Écrire </B>(<B>Écrire des données</B> sous Windows&nbsp;NT 5.0) autorise un utilisateur à modifier les données d'un fichier
+
+					<LI class=LB1><B>Exécuter</B> (<B>Exécuter le fichier</B> sous Windows&nbsp;NT 5.0) autorise un utilisateur à exécuter un fichier programme.
+
+					<LI class=LB1><B>Supprimer</B> autorise un utilisateur à supprimer un fichier.
+	
+					<LI class=LB1><B>Modifier les autorisations</B>autorise un utilisateur à changer les autorisations sur un fichier.
+
+					<LI class=LB1><B>Appropriation</B> autorise un utilisateur à s'approprier un fichier.
+
+					<LI class=LB1>Un jeu de privilèges similaire est défini sur les dossiers&nbsp;:  
+
+					<LI class=LB1><B>Aucun</B> n'accorde à l'utilisateur aucun accès aux dossiers
+
+					<LI class=LB1><B>Lire</B> (<B>Lister le dossier</B>sous Windows&nbsp;NT 5.0) autorise un utilisateur à afficher des noms de fichier et de sous-dossier
+
+					<LI class=LB1><B>Écrire (Créer des fichiers </B>sous Windows&nbsp;NT 5.0) autorise un utilisateur à ajouter des fichiers et des sous-dossiers
+
+					<LI class=LB1><B>Exécuter</B> (<B>Passer sur le dossier </B>sous Windows&nbsp;NT 5.0) autorise un utilisateur à modifier des sous-dossiers
+					<LI class=LB1><<B>Supprimer (Suppression de sous-dossiers et de fichiers</B> sous Windows&nbsp;NT 5.0) autorise un utilisateur à supprimer un sous-dossier
+
+					<LI class=LB1><B>Modifier les autorisations</B> autorise un utilisateur à changer les autorisations sur un dossier.  
+					<LI class=LB1><B>Appropriation</B> autorise un utilisateur à s'approprier un dossier
+				</UL>
+				
+			<P class=4>&nbsp;</P>
+
+			<!--NOTE structure start-->
+			
+			
+<p><p class=art><img SRC="noterule.gif" width=475 height=15 border="0"></p>Windows&nbsp;NT prend en charge deux types de partitions de fichiers, les partitions NTFS et FAT. Seules les partitions NTFS prennent en charge les ACL. La sécurité des extensions serveur Microsoft&#174; FrontPage&#174; étant fondée sur les ACL, vous devez utiliser NTFS sur un système sur lequel vous hébergez des services du World Wide Web avec IIS et FrontPage<HR width=475></P>
+
+			<!--NOTE structure end-->
+			
+			
+
+			<H4>Emprunt de l'identité d'utilisateur</H4>
+
+			<p><A NAME="scwinnt.doc-1026"></A>Quand une application s'exécute, elle «&nbsp;emprunte l'identité&nbsp;» de l'utilisateur authentifié pour utiliser cette application. Lorsque cette dernière essaie d'appeler une autre application ou d'utiliser une ressource système comme le système de fichiers, l'accès à l'application ou à la ressource est accordé ou refusé en fonction des autorisations de l'utilisateur dont l'identité est empruntée. En forçant les applications à s'exécuter au nom d'un utilisateur, Windows&nbsp;NT garantit que celles-ci n'ont accès qu'aux ressources système auxquelles l'utilisateur qui exécute ces applications a accès. En outre, grâce à l'emprunt d'identité, l'utilisateur n'est pas obligé de fournir son mot de passe trop fréquemment&nbsp;; en effet, un grand nombre d'applications et de services système peuvent être appelés dès lors que l'utilisateur a été authentifié. </p>
+
+			<p>L'emprunt d'identité fonctionne également à distance. Si un utilisateur dispose des privilèges appropriés sur un ordinateur distant, il y sera représenté par l'application qu'il appelle à distance. Par exemple, quand un utilisateur disposant des privilèges d'opérations d'auteur sur un serveur Windows&nbsp;NT distant essaie de créer du contenu sur ce serveur, la bibliothèque de liens dynamiques des opérations d'auteur de FrontPage s'exécutera au nom de l'utilisateur représenté, garantissant que cet utilisateur n'aura accès qu'aux fichiers associés à son compte.</p>
+		</TD>
+		
+		<!--TOPIC TITLE AND BODY TEXT CELL ENDS-->
+		
+		<!--FAR-RIGHT COLUMN SECTION ART CELL STARTS HERE-->
+	
+		<TD rowspan="20" nowrap><!--Third-column art-->
+			<img SRC="secart.gif" align="center" alt="Image de la section Sécurité">
+		</TD>
+		
+		<!--FAR-RIGHT COLUMN SECTION ART CELL ENDS HERE-->
+		
+	</TR>
+	
+	<!--LEFT NAVIGATION MENUS STARTS HERE-->
+
+	<TR>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" href="scintro.htm"><font color="#000000">&nbsp;&nbsp;Introduction</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous<br>&nbsp;&nbsp;Windows&nbsp;NT</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><A class="menulink" HREF="scuni.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR><!--spacing row-->
+    	<TD height="10" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" style="border-top: #666666 solid 1px;" nowrap><div class="table"><A class="menulink" HREF="inintro.htm"><font color="#000000">Installation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="adoview.htm"><font color="#000000">Administration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="apndxtoc.htm"><font color="#000000">Annexes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+
+	<TR>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="serkindx.htm"><font color="#000000">Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+	<!--LAST ROW START-->
+	
+	<TR>
+    	<TD height="1320" width="150" nowrap></TD>
+    	<TD width="20" nowrap></TD>
+    	<TD></TD>
+	</TR>
+	
+		
+<!--LAST ROW ENDS-->
+
+</TABLE>
+
+<!--MAIN BODY TABLE ENDS HERE-->
+
+
+<!--FOOTER_BEGIN-->
+<BR>
+	<TABLE cellspacing="0" cellpadding="0" border=0>
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD width="237" valign="top"><b><font color="#000000" size="2"><sup>&nbsp;1 sur 9&nbsp;</sup></b></font><A HREF="scwin_2.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    	<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
+    </TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top"><HR></TD>
+	</TR>
+
+	<TR>
+    	<TD width="170" valign="top">&nbsp;</TD>
+    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+	<BR>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+   	</TR>
+	
+</TABLE>
+
+<!--FOOTER_END-->
+
+
+
+</BODY>
+</HTML>
