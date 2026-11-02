@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+ï»¿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <HTML>
 
 <!--START_TOPIC HEAD-->
@@ -161,25 +161,25 @@
 	
 		<!--END_SEPARATOR RULE-->
 
-			<p><A NAME="apndx03.doc-1006"></A>Vous pouvez configurer certaines caractéristiques des extensions serveur FrontPage en définissant les valeurs des variables de configuration des extensions serveur. Vous devez spécifier toutes les valeurs de configuration sous forme de chaînes, même si certaines sont interprétées de façon numérique. Les variables peuvent être définies à l'un des trois niveaux suivants&nbsp;:
+			<p><A NAME="apndx03.doc-1006"></A>Vous pouvez configurer certaines caractÃ©ristiques des extensions serveur FrontPage en dÃ©finissant les valeurs des variables de configuration des extensions serveur. Vous devez spÃ©cifier toutes les valeurs de configuration sous forme de chaÃ®nes, mÃªme si certaines sont interprÃ©tÃ©es de faÃ§on numÃ©rique. Les variables peuvent Ãªtre dÃ©finies Ã  l'un des trois niveaux suivants&nbsp;:
 
 				<UL>
-					<LI class=LB1><A NAME="apndx03.doc-1007"></A>Les variables globales s'appliquent à tous les serveurs virtuels et sous-sites de l'ordinateur serveur. Sous Windows, les variables globales sont définies dans le registre. Sous UNIX, elles sont définies dans le fichier /usr/local/frontpage/version4.0/frontpage.cnf.
+					<LI class=LB1><A NAME="apndx03.doc-1007"></A>Les variables globales s'appliquent Ã  tous les serveurs virtuels et sous-sites de l'ordinateur serveur. Sous Windows, les variables globales sont dÃ©finies dans le registre. Sous UNIX, elles sont dÃ©finies dans le fichier /usr/local/frontpage/version4.0/frontpage.cnf.
 				
-					<LI class=LB1><A NAME="apndx03.doc-1008"></A>Les variables de serveur virtuel ne s'appliquent qu'à un seul serveur virtuel. Sous Windows, les variables de serveur virtuel sont définies dans le registre. Sous UNIX, elles sont définies dans les fichiers de configuration des extensions serveur.
+					<LI class=LB1><A NAME="apndx03.doc-1008"></A>Les variables de serveur virtuel ne s'appliquent qu'Ã  un seul serveur virtuel. Sous Windows, les variables de serveur virtuel sont dÃ©finies dans le registre. Sous UNIX, elles sont dÃ©finies dans les fichiers de configuration des extensions serveur.
 				
-					<LI class=LB1><A NAME="apndx03.doc-1009"></A>Les variables de sous-site Web ne s'appliquent qu'à un seul site Web d'un serveur virtuel. Sous Windows et UNIX, les variables de site Web sont définies en modifiant le fichier texte _vti_pvt/Service.cnf dans le site Web racine ou le sous-site, ou en utilisant l'onglet <B>Paramètres</B> de la boîte de dialogue <B>Paramètres du site Web</B> pendant que le site Web est ouvert dans le client FrontPage.
+					<LI class=LB1><A NAME="apndx03.doc-1009"></A>Les variables de sous-site Web ne s'appliquent qu'Ã  un seul site Web d'un serveur virtuel. Sous Windows et UNIX, les variables de site Web sont dÃ©finies en modifiant le fichier texte _vti_pvt/Service.cnf dans le site Web racine ou le sous-site, ou en utilisant l'onglet <B>ParamÃ¨tres</B> de la boÃ®te de dialogue <B>ParamÃ¨tres du site Web</B> pendant que le site Web est ouvert dans le client FrontPage.
 
 
-					<P CLASS=LT1>La syntaxe de chaque variable de sous-site Web correspond au modèle suivant&nbsp;: <CODE><I>Nom de variable:état en écriture</I>|<B>valeur</B></code>, l'<code><I>état en écriture</I> </CODE> devant être défini avec l'une des valeurs suivantes&nbsp;: 
+					<P CLASS=LT1>La syntaxe de chaque variable de sous-site Web correspond au modÃ¨le suivant&nbsp;: <CODE><I>Nom de variable:Ã©tat en Ã©criture</I>|<B>valeur</B></code>, l'<code><I>Ã©tat en Ã©criture</I> </CODE> devant Ãªtre dÃ©fini avec l'une des valeurs suivantes&nbsp;: 
 
 
 						<UL>
-							<LI class=LB1><B>SX</B>&nbsp;: la variable n'est pas visible dans le client FrontPage et se trouve uniquement sur le serveur. Il s'agit de la configuration la plus sûre.
+							<LI class=LB1><B>SX</B>&nbsp;: la variable n'est pas visible dans le client FrontPage et se trouve uniquement sur le serveur. Il s'agit de la configuration la plus sÃ»re.
 						
-							<LI class=LB1><B>SR</B>&nbsp;: la variable est visible dans le client FrontPage et sur le serveur, mais ne peut pas être écrite à partir du client FrontPage à l'aide de l'onglet <B>Paramètres</B> de la boîte de dialogue <B>Paramètres du site Web</B>.
+							<LI class=LB1><B>SR</B>&nbsp;: la variable est visible dans le client FrontPage et sur le serveur, mais ne peut pas Ãªtre Ã©crite Ã  partir du client FrontPage Ã  l'aide de l'onglet <B>ParamÃ¨tres</B> de la boÃ®te de dialogue <B>ParamÃ¨tres du site Web</B>.
 						
-							<LI class=LB1><B>SW</B>&nbsp;: la variable est visible dans le client FrontPage et sur le serveur&nbsp;;&nbsp;elle peut être écrite à partir du client Frontpage à l'aide de l'onglet <B>Paramètres</B> de la boîte de dialogue <B>Paramètres du site Web</B>. Il s'agit de la configuration la moins fiable.
+							<LI class=LB1><B>SW</B>&nbsp;: la variable est visible dans le client FrontPage et sur le serveur&nbsp;;&nbsp;elle peut Ãªtre Ã©crite Ã  partir du client Frontpage Ã  l'aide de l'onglet <B>ParamÃ¨tres</B> de la boÃ®te de dialogue <B>ParamÃ¨tres du site Web</B>. Il s'agit de la configuration la moins fiable.
 						</UL>
 
 						<p class=4>&nbsp;</p>
@@ -188,19 +188,19 @@
 
 						<PRE class=CT><CODE>vti_accesscontrol:SR|1</CODE></PRE>
 
-					<p><A NAME="apndx03.doc-1014"></A>Si la même variable de configuration est définie à plus d'un niveau, le problème est résolu par les extensions serveur FrontPage en appliquant la hiérarchie suivante&nbsp;:
+					<p><A NAME="apndx03.doc-1014"></A>Si la mÃªme variable de configuration est dÃ©finie Ã  plus d'un niveau, le problÃ¨me est rÃ©solu par les extensions serveur FrontPage en appliquant la hiÃ©rarchie suivante&nbsp;:
 
 						<UL>
 							<LI class=LB1><A NAME="apndx03.doc-1015"></A>les variables de configuration de sous-site Web sont prioritaires&nbsp;;
 						
-							<LI class=LB1><A NAME="apndx03.doc-1016"></A>les variables de configuration de serveur virtuel viennent en deuxième priorité&nbsp;;
+							<LI class=LB1><A NAME="apndx03.doc-1016"></A>les variables de configuration de serveur virtuel viennent en deuxiÃ¨me prioritÃ©&nbsp;;
 						
-							<LI class=LB1><A NAME="apndx03.doc-1017"></A>les variables de configuration globales passent en dernière priorité.
+							<LI class=LB1><A NAME="apndx03.doc-1017"></A>les variables de configuration globales passent en derniÃ¨re prioritÃ©.
 						</UL>
 
 						<p class=4>&nbsp;</p>
 
-					<p><A NAME="apndx03.doc-1018"></A>Le tableau ci-dessous décrit les emplacements des variables de configuration des extensions serveur sous Windows et UNIX.
+					<p><A NAME="apndx03.doc-1018"></A>Le tableau ci-dessous dÃ©crit les emplacements des variables de configuration des extensions serveur sous Windows et UNIX.
 
 						<p class=4>&nbsp;</p>
 
@@ -220,8 +220,8 @@
 							<TR VALIGN="top">
 								<TD class=TT width=17%>Serveur virtuel</TD>
 								<TD class=TT width=83%>Dans le registre, sous<BR>
-							HKLM\Software\Microsoft\Shared Tools\Web Server Extensions\Ports\Port <I>nom de l'hôte</I>:<I>nnn</I><BR>
-							Dans la version IIS 4.0 ou ultérieure, vous pouvez utiliser un nombre, par exemple&nbsp;:<BR>
+							HKLM\Software\Microsoft\Shared Tools\Web Server Extensions\Ports\Port <I>nom de l'hÃ´te</I>:<I>nnn</I><BR>
+							Dans la version IIS 4.0 ou ultÃ©rieure, vous pouvez utiliser un nombre, par exemple&nbsp;:<BR>
 							HKLM\Software\Microsoft\Shared Tools\Web Server Extensions\Ports\Port /LM/W3SVC/<I>nnn</I></TD>
 							</TR>
 
@@ -248,14 +248,14 @@
 	
 							<TR VALIGN="top">
 								<TD class=TT width=17%>Serveur virtuel</TD>
-								<TD class=TT width=83%>Dans les systèmes multi-hôtes, sous<BR>
-							<I>nom de l'hôte</I>:<I>port</I>.cnf<BR>
-							le <I>nom de l'hôte</I> correspondant au nom de domaine qualifié du serveur.
-							<P class=TT>Dans un système d'hôte unique, sous<BR>
+								<TD class=TT width=83%>Dans les systÃ¨mes multi-hÃ´tes, sous<BR>
+							<I>nom de l'hÃ´te</I>:<I>port</I>.cnf<BR>
+							le <I>nom de l'hÃ´te</I> correspondant au nom de domaine qualifiÃ© du serveur.
+							<P class=TT>Dans un systÃ¨me d'hÃ´te unique, sous<BR>
 							we<I>nnn</I>.cnf<BR>
-							 <I>nnn</I> correspondant au numéro de port du serveur Web. </P>
+							 <I>nnn</I> correspondant au numÃ©ro de port du serveur Web. </P>
 							
-							<P class=TT>Dans les deux cas, l'emplacement par défaut du fichier se trouve sous /usr/local/frontpage.</P>
+							<P class=TT>Dans les deux cas, l'emplacement par dÃ©faut du fichier se trouve sous /usr/local/frontpage.</P>
 								</TD>
 							</TR>
 						
@@ -270,7 +270,7 @@
 						<!--START_NOTE STRUCTURE-->
 
 						<img SRC="noterule.gif" width=475 height=15 border="0">
-						<p><A NAME="apndx03.doc-1020"></A>FrontPage affecte à chaque variable de configuration une valeur par défaut interne. <BR>Elle est attribuée même si la variable ne se trouve pas dans le registre (sous Windows) <BR>ou dans le fichier frontpage.cnf (sous UNIX). <HR width=475 align="left"></P>
+						<p><A NAME="apndx03.doc-1020"></A>FrontPage affecte Ã  chaque variable de configuration une valeur par dÃ©faut interne. <BR>Elle est attribuÃ©e mÃªme si la variable ne se trouve pas dans le registre (sous Windows) <BR>ou dans le fichier frontpage.cnf (sous UNIX). <HR width=475 align="left"></P>
 
 						<!--END_NOTE STRUCTURE-->
 
@@ -279,15 +279,15 @@
 					<p>Cette annexe contient les informations suivantes pour chaque variable de configuration&nbsp;:
 
 						<UL>
-							<LI class=LB1>le nom de la variable de configuration (pour les sous-sites Web, ce nom est en minuscule et comporte le préfixe «&nbsp;vti_&nbsp;»)&nbsp;;
+							<LI class=LB1>le nom de la variable de configuration (pour les sous-sites Web, ce nom est en minuscule et comporte le prÃ©fixe Â«&nbsp;vti_&nbsp;Â»)&nbsp;;
 						
-							<LI class=LB1>sa définition&nbsp;;
+							<LI class=LB1>sa dÃ©finition&nbsp;;
 						
-							<LI class=LB1>sa valeur par défaut&nbsp;;
+							<LI class=LB1>sa valeur par dÃ©faut&nbsp;;
 						
-							<LI class=LB1>les niveaux de disponibilité de la variable&nbsp;: globale, serveur virtuel et sous-site&nbsp;;
+							<LI class=LB1>les niveaux de disponibilitÃ© de la variable&nbsp;: globale, serveur virtuel et sous-site&nbsp;;
 						
-							<LI class=LB1>toute différence d'utilisation d'une variable entre Windows et UNIX.
+							<LI class=LB1>toute diffÃ©rence d'utilisation d'une variable entre Windows et UNIX.
 						</UL>
 
 						<p class=4>&nbsp;</p>
@@ -310,30 +310,30 @@
 
 			<p><A NAME="apndx03.doc-1027"></A><A NAME="AccessControl"></A><B>AccessControl </B></P>
 
-			<p>Si la valeur de la variable <I>AccessControl</I> est définie à <B>0</B>, la vérification des autorisations FrontPage est entièrement désactivée. Si la valeur <I>AccessControl</I> est définie à <B>0</B>, un administrateur doit configurer manuellement le contrôle d'accès dans les répertoires _vti chaque fois qu'un sous-site Web est créé. Tout utilisateur peut effectuer des opérations d'auteur sur le sous-site Web tant que le contrôle d'accès n'a pas été défini manuellement. Si la valeur <I>AccessControl</I> est définie à <B>0</B>, les autorisations de contrôle d'accès personnalisées ne sont pas écrasées par FrontPage et le client FrontPage désactive la commande <B>Autorisations</B>.</P>
+			<p>Si la valeur de la variable <I>AccessControl</I> est dÃ©finie Ã  <B>0</B>, la vÃ©rification des autorisations FrontPage est entiÃ¨rement dÃ©sactivÃ©e. Si la valeur <I>AccessControl</I> est dÃ©finie Ã  <B>0</B>, un administrateur doit configurer manuellement le contrÃ´le d'accÃ¨s dans les rÃ©pertoires _vti chaque fois qu'un sous-site Web est crÃ©Ã©. Tout utilisateur peut effectuer des opÃ©rations d'auteur sur le sous-site Web tant que le contrÃ´le d'accÃ¨s n'a pas Ã©tÃ© dÃ©fini manuellement. Si la valeur <I>AccessControl</I> est dÃ©finie Ã  <B>0</B>, les autorisations de contrÃ´le d'accÃ¨s personnalisÃ©es ne sont pas Ã©crasÃ©es par FrontPage et le client FrontPage dÃ©sactive la commande <B>Autorisations</B>.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=328 border="1">
 				
 					<TR VALIGN="top">
-						<TD class=TT width=26%><B>Valeur par défaut</B></TD>
+						<TD class=TT width=26%><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=25% align="center"><B>1</B></TD>
-						<TD class=TT width=22%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=22%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=27% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=26%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=25% align="center">o</TD>
-						<TD class=TT width=22%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=22%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=27% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=26%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=25% align="center">o</TD>
-						<TD class=TT width=22%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=22%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=27% align="center">n</TD>
 					</TR>
 				</TABLE>
@@ -356,32 +356,32 @@
 
 			<p><A NAME="apndx03.doc-1029"></A><A NAME="AllowExecutableScripts"></A><B>AllowExecutableScripts </B>
 
-			<p>Si la variable <I>AllowExecutableScripts</I> est définie à une valeur autre que 0, FrontPage détermine les bits d'exécution des fichiers des répertoires exécutables. Lorsqu'un répertoire est marqué comme un exécutable, tous les fichiers de ce répertoire sont eux-aussi marqués comme des exécutables.</P>
+			<p>Si la variable <I>AllowExecutableScripts</I> est dÃ©finie Ã  une valeur autre que 0, FrontPage dÃ©termine les bits d'exÃ©cution des fichiers des rÃ©pertoires exÃ©cutables. Lorsqu'un rÃ©pertoire est marquÃ© comme un exÃ©cutable, tous les fichiers de ce rÃ©pertoire sont eux-aussi marquÃ©s comme des exÃ©cutables.</P>
 
-			<p>Si les auteurs sont autorisés à télécharger vers les répertoires exécutables (c'est-à-dire si <I>NoExecutableCgiUpload</I> est définie à <B>0</B>) et si la variable <I>AllowExecutableScripts</I> est définie à une valeur autre que 0, les auteurs peuvent exécuter les extensions ISAPI et les scripts CGI qui viennent d'être téléchargés. Si les variables <I>NoExecutableCgiUpload </I>et<B> </B><I>AllowExecutableScripts </I>sont toutes deux définies à <B>0</B>, les auteurs peuvent télécharger et utiliser les fichiers ASP et IDC, mais non les fichiers CGI et ISAPI.</P>
+			<p>Si les auteurs sont autorisÃ©s Ã  tÃ©lÃ©charger vers les rÃ©pertoires exÃ©cutables (c'est-Ã -dire si <I>NoExecutableCgiUpload</I> est dÃ©finie Ã  <B>0</B>) et si la variable <I>AllowExecutableScripts</I> est dÃ©finie Ã  une valeur autre que 0, les auteurs peuvent exÃ©cuter les extensions ISAPI et les scripts CGI qui viennent d'Ãªtre tÃ©lÃ©chargÃ©s. Si les variables <I>NoExecutableCgiUpload </I>et<B> </B><I>AllowExecutableScripts </I>sont toutes deux dÃ©finies Ã  <B>0</B>, les auteurs peuvent tÃ©lÃ©charger et utiliser les fichiers ASP et IDC, mais non les fichiers CGI et ISAPI.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=328 border="1">
 				
 					<TR VALIGN="top">
-						<TD class=TT width=26%><B>Valeur par défaut</B></TD>
+						<TD class=TT width=26%><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=25% align="center"><B>0</B></TD>
-						<TD class=TT width=22%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=22%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=27% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=26%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=25% align="center">Serveurs IIS uniquement</TD>
-						<TD class=TT width=22%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=22%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=27% align="center">o</TD>
 					</TR>
 				
 					<TR VALIGN="top">
 						<TD class=TT width=26%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=25% align="center">n</TD>
-						<TD class=TT width=22%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=22%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=27% align="center">n</TD>
 					</TR>
 					
@@ -405,30 +405,30 @@
 
 			<p><A NAME="apndx03.doc-1032"></A><A NAME="Authoring"></A><B>Authoring</B></P>
 
-			<p>Si la variable <I>Authoring</I> est <B>désactivée</B>, toutes les opérations d'auteur utilisant les extensions serveur sont désactivées du serveur virtuel. Vous pouvez également définir cette variable à l'aide du composant logiciel enfichable MMC Microsoft FrontPage.<B><I> </I></B>Si la variable est <B>activée</B>, les opérations d'auteur sont activées.</P>
+			<p>Si la variable <I>Authoring</I> est <B>dÃ©sactivÃ©e</B>, toutes les opÃ©rations d'auteur utilisant les extensions serveur sont dÃ©sactivÃ©es du serveur virtuel. Vous pouvez Ã©galement dÃ©finir cette variable Ã  l'aide du composant logiciel enfichable MMC Microsoft FrontPage.<B><I> </I></B>Si la variable est <B>activÃ©e</B>, les opÃ©rations d'auteur sont activÃ©es.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=328 border="1">
 				
 					<TR VALIGN="top">
-						<TD class=TT width=26%><B>Valeur par défaut</B></TD>
-						<TD class=TT width=25% align"center"><B>activée</B></TD>
-						<TD class=TT width=22%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=26%><B>Valeur par dÃ©faut</B></TD>
+						<TD class=TT width=25% align"center"><B>activÃ©e</B></TD>
+						<TD class=TT width=22%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=27% align"center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=26%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=25% align"center">o</TD>
-						<TD class=TT width=22%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=22%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=27% align"center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=26%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=25% align"center">o</TD>
-						<TD class=TT width=22%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=22%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=27% align"center">n</TD>
 					</TR>
 					
@@ -452,30 +452,30 @@
 
 			<p><A NAME="apndx03.doc-1034"></A><A NAME="CacheMaxDocMeta"></A><B>CacheMaxDocMeta </B>
 
-			<p>Cette variable permet de définir le nombre maximum de documents conservés dans le cache lorsque FrontPage effectue des opérations d'écriture. Il s'agit du nombre maximum de documents dont vous souhaitez conserver les informations de propriétés, telles que les paramètres du site Web, en mémoire active. Lorsqu'un auteur ouvre un document une fois le cache plein, le cache est effacé et démarre à nouveau avec le dernier document ouvert.
+			<p>Cette variable permet de dÃ©finir le nombre maximum de documents conservÃ©s dans le cache lorsque FrontPage effectue des opÃ©rations d'Ã©criture. Il s'agit du nombre maximum de documents dont vous souhaitez conserver les informations de propriÃ©tÃ©s, telles que les paramÃ¨tres du site Web, en mÃ©moire active. Lorsqu'un auteur ouvre un document une fois le cache plein, le cache est effacÃ© et dÃ©marre Ã  nouveau avec le dernier document ouvert.
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=368 border="1" border=1>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=22% align="center"><B>4096</B></TD>
-						<TD class=TT width=20%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=20%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=35% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=22% align="center">o</TD>
-						<TD class=TT width=20%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=20%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=35% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=22% align="center">o</TD>
-						<TD class=TT width=20%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=20%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=35% align="left">vti_cachemaxdocmeta</TD>
 					</TR>
 					
@@ -499,32 +499,32 @@
 
 			<p><A NAME="apndx03.doc-1036"></A><A NAME="CacheMaxImage"></A><B>CacheMaxImage </B></P>
 
-			<p>Par défaut, les extensions serveur FrontPage définissent les attributs HAUTEUR et LARGEUR dans toutes les balises IMG des pages enregistrées sur un site Web. Ceci permet d'améliorer l'apparence des pages lorsqu'un visiteur du site les télécharge avec une connexion lente. La variable <I>CacheMaxImage </I>permet de déterminer le nombre maximum d'images dont les attributs HAUTEUR et LARGEUR sont cachés par les extensions serveur lors du recalcul des liens hypertexte ou de l'enregistrement d'une page. </P>
+			<p>Par dÃ©faut, les extensions serveur FrontPage dÃ©finissent les attributs HAUTEUR et LARGEUR dans toutes les balises IMG des pages enregistrÃ©es sur un site Web. Ceci permet d'amÃ©liorer l'apparence des pages lorsqu'un visiteur du site les tÃ©lÃ©charge avec une connexion lente. La variable <I>CacheMaxImage </I>permet de dÃ©terminer le nombre maximum d'images dont les attributs HAUTEUR et LARGEUR sont cachÃ©s par les extensions serveur lors du recalcul des liens hypertexte ou de l'enregistrement d'une page. </P>
 
-			<p>Si vous définissez cette variable de façon globale ou par serveur virtuel et si les sites Web de votre serveur contiennent pour la plupart plus de 16 images, vous devez augmenter ce nombre. Si vous définissez cette variable pour un sous-site Web particulier, ne choisissez pas un nombre supérieur à celui des fichiers image du site Web. </P>
+			<p>Si vous dÃ©finissez cette variable de faÃ§on globale ou par serveur virtuel et si les sites Web de votre serveur contiennent pour la plupart plus de 16 images, vous devez augmenter ce nombre. Si vous dÃ©finissez cette variable pour un sous-site Web particulier, ne choisissez pas un nombre supÃ©rieur Ã  celui des fichiers image du site Web. </P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=368 border="1">
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=22% align="center"><B>16</B></TD>
-						<TD class=TT width=20%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=20%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=35% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=22% align="center">o</TD>
-						<TD class=TT width=20%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=20%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=35% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=22% align="center">o</TD>
-						<TD class=TT width=20%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=20%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=35% align="left">vti_cachemaximage</TD>
 					</TR>
 					
@@ -548,30 +548,30 @@
 
 			<p><A NAME="apndx03.doc-1039"></A><A NAME="CacheMaxInclude"></A><B>CacheMaxInclude </B></P>
 
-			<p>Cette variable permet de définir le nombre maximum de fichiers inclus dans une page (à savoir les fichiers inclus dans le composant Insertion de page) cachés par les extensions serveur FrontPage lors du recalcul des liens hypertexte ou de l'enregistrement d'une page. Vous devez définir la valeur de <I>CacheMaxInclude</I> au nombre le plus élevé de fichiers inclus dans toute page du site Web, si ce nombre est supérieur à la valeur par défaut (16).</P>
+			<p>Cette variable permet de dÃ©finir le nombre maximum de fichiers inclus dans une page (Ã  savoir les fichiers inclus dans le composant Insertion de page) cachÃ©s par les extensions serveur FrontPage lors du recalcul des liens hypertexte ou de l'enregistrement d'une page. Vous devez dÃ©finir la valeur de <I>CacheMaxInclude</I> au nombre le plus Ã©levÃ© de fichiers inclus dans toute page du site Web, si ce nombre est supÃ©rieur Ã  la valeur par dÃ©faut (16).</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=368 border="1">
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1040"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1040"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=22% align="center"><B>16</B></TD>
-						<TD class=TT width=20%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=20%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=35% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=22% align="center">o</TD>
-						<TD class=TT width=20%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=20%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=35% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=22% align="center">o</TD>
-						<TD class=TT width=20%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=20%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=35% align="left">vti_cachemaxinclude</TD>
 					</TR>
 					
@@ -598,31 +598,31 @@
 
 			<p><A NAME="apndx03.doc-1041"></A><A NAME="CacheMaxIncludeSize"></A><B>CacheMaxIncludeSize</B></P>
 
-			<p>Cette variable permet de définir la taille maximum du document, en Kilo-octets, que les extensions serveur FrontPage mettent en cache en interne.</P>
+			<p>Cette variable permet de dÃ©finir la taille maximum du document, en Kilo-octets, que les extensions serveur FrontPage mettent en cache en interne.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=392>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=22%><A NAME="apndx03.doc-1042"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=22%><A NAME="apndx03.doc-1042"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=24% align="left"><B>32K</B> sous Windows 95/98 et UNIX.<BR>
 						<B>256K</B> sous Windows NT.</TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=35% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=22%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=24% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=35% align="center">o</TD>
 					</TR>
 
 					<TR VALIGN="top">
 						<TD class=TT width=22%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=24% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=35% align="left">vti_cachemaxincludesize</TD>
 					</TR>
 					
@@ -646,30 +646,30 @@
 
 			<p><a name="apndx03.doc-1130"></a><a name="CacheMinDocMeta"></a><B>CacheMinDocMeta</B></P>
 
-			<p>Cette variable permet de définir le nombre maximum de documents conservés dans le cache lorsque FrontPage effectue des opérations de lecture.Il s'agit du nombre maximum de documents dont vous souhaitez conserver les informations de propriétés, telles que les paramètres du site Web, en mémoire active. Lorsqu'un auteur ouvre un document une fois le cache plein, le cache et effacé et démarre à nouveau avec le dernier document ouvert.</P>
+			<p>Cette variable permet de dÃ©finir le nombre maximum de documents conservÃ©s dans le cache lorsque FrontPage effectue des opÃ©rations de lecture.Il s'agit du nombre maximum de documents dont vous souhaitez conserver les informations de propriÃ©tÃ©s, telles que les paramÃ¨tres du site Web, en mÃ©moire active. Lorsqu'un auteur ouvre un document une fois le cache plein, le cache et effacÃ© et dÃ©marre Ã  nouveau avec le dernier document ouvert.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=392>
 				
 				<TR VALIGN="top">
-					<TD class=TT width=22%><B>Valeur par défaut</B></TD>
+					<TD class=TT width=22%><B>Valeur par dÃ©faut</B></TD>
 					<TD class=TT width=24% align="center"><B>8</B><BR></TD>
-					<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+					<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 					<TD class=TT width=35% align="center">o</TD>
 				</TR>
 				
 				<TR VALIGN="top">
 					<TD class=TT width=22%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 					<TD class=TT width=24% align="center">o</TD>
-					<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+					<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 					<TD class=TT width=35% align="center">o</TD>
 				</TR>
 
 				<TR VALIGN="top">
 					<TD class=TT width=22%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 					<TD class=TT width=24% align="center">o</TD>
-					<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+					<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 					<TD class=TT width=35% align="left">vti_cachemindocmeta</TD>
 				</TR>
 				
@@ -693,36 +693,36 @@
 
 			<p><A NAME="apndx03.doc-1043"></A><A NAME="ClientVerCutoff"></A><B>ClientVerCutoff</B></P>
 
-			<p>Cette variable permet de définir la plus ancienne version du client FrontPage pouvant être utilisée pour effectuer des opérations d'auteur sur un site Web. Activez cette variable si vous ne souhaitez pas qu'un site Web soit modifié par un auteur utilisant les versions antérieures du client FrontPage (lorsque, par exemple, le site Web contient des caractéristiques qui ne sont pas prises en charge par les versions antérieures du client FrontPage). Cette variable peut uniquement être activée pour un seul site Web, dans le fichier du site _vti_pvt/Service.cnf. Si ce paramètre n'existe pas, vous pouvez utiliser n'importe quelle version du client FrontPage pour modifier le site Web.</P>
+			<p>Cette variable permet de dÃ©finir la plus ancienne version du client FrontPage pouvant Ãªtre utilisÃ©e pour effectuer des opÃ©rations d'auteur sur un site Web. Activez cette variable si vous ne souhaitez pas qu'un site Web soit modifiÃ© par un auteur utilisant les versions antÃ©rieures du client FrontPage (lorsque, par exemple, le site Web contient des caractÃ©ristiques qui ne sont pas prises en charge par les versions antÃ©rieures du client FrontPage). Cette variable peut uniquement Ãªtre activÃ©e pour un seul site Web, dans le fichier du site _vti_pvt/Service.cnf. Si ce paramÃ¨tre n'existe pas, vous pouvez utiliser n'importe quelle version du client FrontPage pour modifier le site Web.</P>
 
-			<p><I>ClientVerCutoff</I><B> </B>doit être suivi par deux points, par la plus ancienne version de FrontPage pouvant être utilisée par les auteurs lors de la modification du site Web, par deux points à nouveau et par un message d'erreur qui s'affiche lorsqu'un auteur essaie d'ouvrir le site avec un client antérieur à cette version. Exemple&nbsp;:</P>
+			<p><I>ClientVerCutoff</I><B> </B>doit Ãªtre suivi par deux points, par la plus ancienne version de FrontPage pouvant Ãªtre utilisÃ©e par les auteurs lors de la modification du site Web, par deux points Ã  nouveau et par un message d'erreur qui s'affiche lorsqu'un auteur essaie d'ouvrir le site avec un client antÃ©rieur Ã  cette version. Exemple&nbsp;:</P>
 
-				<PRE class=CT><CODE>vti_clientvercutoff:SX|4.0.1.2000:Ce site peut uniquement être modifié avec FrontPage 2000.</CODE></PRE>
+				<PRE class=CT><CODE>vti_clientvercutoff:SX|4.0.1.2000:Ce site peut uniquement Ãªtre modifiÃ© avec FrontPage 2000.</CODE></PRE>
 
-			<p>Notez que l'état en écriture de la variable est défini à <B>SX</B>. Il est plus sûr de mettre en cache cette variable de façon à ce qu'elle ne puisse pas être affectée à une valeur à l'aide de la boîte de dialogue <B>Paramètres du site Web</B> du client FrontPage.</P>
+			<p>Notez que l'Ã©tat en Ã©criture de la variable est dÃ©fini Ã  <B>SX</B>. Il est plus sÃ»r de mettre en cache cette variable de faÃ§on Ã  ce qu'elle ne puisse pas Ãªtre affectÃ©e Ã  une valeur Ã  l'aide de la boÃ®te de dialogue <B>ParamÃ¨tres du site Web</B> du client FrontPage.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=392>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=22%><A NAME="apndx03.doc-1046"></A><B>Valeur par défaut</B></span></TD>
-						<TD class=TT width=24% align="left">Par défaut, vous pouvez utiliser toutes les versions du <BR>client FrontPage<BR> pour modifier un site Web.</TD>
-						<TD class=TT width=21%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=22%><A NAME="apndx03.doc-1046"></A><B>Valeur par dÃ©faut</B></span></TD>
+						<TD class=TT width=24% align="left">Par dÃ©faut, vous pouvez utiliser toutes les versions du <BR>client FrontPage<BR> pour modifier un site Web.</TD>
+						<TD class=TT width=21%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=33% align="center">n</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=22%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=24% align="center">o</TD>
-						<TD class=TT width=21%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=21%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=33% align="center">n</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=22%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=24% align="center">o</TD>
-						<TD class=TT width=21%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=21%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=33% align="left">vti_clientvercutoff</TD>
 					</TR>
 					
@@ -746,14 +746,14 @@
 
 			<p><A NAME="apndx03.doc-1047"></A><A NAME="ComplexPasswords"></A><B>ComplexPasswords</B></P>
 
-			<p>Sur tous les serveurs, à l'exception du serveur IIS, la variable <I>ComplexPasswords</I> renforce les restrictions concernant les chaînes de mot de passe créées dans FrontPage. Lorsque la variable <I>ComplexPasswords</I> est définie à une valeur autre que 0, vous devez appliquer aux mots de passe les règles suivantes&nbsp;:</P>
+			<p>Sur tous les serveurs, Ã  l'exception du serveur IIS, la variable <I>ComplexPasswords</I> renforce les restrictions concernant les chaÃ®nes de mot de passe crÃ©Ã©es dans FrontPage. Lorsque la variable <I>ComplexPasswords</I> est dÃ©finie Ã  une valeur autre que 0, vous devez appliquer aux mots de passe les rÃ¨gles suivantes&nbsp;:</P>
 
 				<UL>
-					<LI class=LB1>Le nom d'utilisateur ne peut pas être incorporé au mot de passe.
+					<LI class=LB1>Le nom d'utilisateur ne peut pas Ãªtre incorporÃ© au mot de passe.
 				
-					<LI class=LB1>Le mot de passe doit comprendre au moins un caractère alphabétique.
+					<LI class=LB1>Le mot de passe doit comprendre au moins un caractÃ¨re alphabÃ©tique.
 				
-					<LI class=LB1>La longueur du mot de passe doit dépasser 8 caractères.
+					<LI class=LB1>La longueur du mot de passe doit dÃ©passer 8 caractÃ¨res.
 				</UL>
 
 				<p class=4>&nbsp;</p>
@@ -761,23 +761,23 @@
 				<TABLE cols=4 border="1" width=384>
 
 					<TR VALIGN="top">
-						<TD class=TT width=22%><A NAME="apndx03.doc-1051"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=22%><A NAME="apndx03.doc-1051"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=25% align="center"><B>0</B></TD>
-						<TD class=TT width=21%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=21%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=32% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=22%><B>Disponible sur tous les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=25% align="left">serveurs autres que IIS uniquement</TD>
-						<TD class=TT width=21%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=21%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=32% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=22%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=25% align="center">o</TD>
-						<TD class=TT width=21%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=21%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=32% align="center">n</TD>
 					</TR>
 					
@@ -801,32 +801,32 @@
 
 			<p><A NAME="apndx03.doc-1052"></A><A NAME="DisableAutoImgSizeExts"></A><B>DisableAutoImgSizeExts</B></P>
 
-			<p>Les extensions serveur FrontPage réservent automatiquement la quantité d'espace exacte pour les images et autres fichiers incorporés à une page du site Web. Vous pouvez utiliser la variable <I>DisableAutoImgSizeExts</I> pour spécifier une liste d'une ou plusieurs extensions de fichiers. Pour les types de fichiers répertoriés dans cette variable, les extensions serveur ne réserveront pas automatiquement l'espace disponible exact sur la page.</P>
+			<p>Les extensions serveur FrontPage rÃ©servent automatiquement la quantitÃ© d'espace exacte pour les images et autres fichiers incorporÃ©s Ã  une page du site Web. Vous pouvez utiliser la variable <I>DisableAutoImgSizeExts</I> pour spÃ©cifier une liste d'une ou plusieurs extensions de fichiers. Pour les types de fichiers rÃ©pertoriÃ©s dans cette variable, les extensions serveur ne rÃ©serveront pas automatiquement l'espace disponible exact sur la page.</P>
 
-			<p>Pour spécifier les types de fichiers, concaténez les extensions de noms de fichiers (en les séparant par un point) et n'insérez pas d'espace. Exemple&nbsp;: <B>.ext1.ext2.ext3</B> </P>
+			<p>Pour spÃ©cifier les types de fichiers, concatÃ©nez les extensions de noms de fichiers (en les sÃ©parant par un point) et n'insÃ©rez pas d'espace. Exemple&nbsp;: <B>.ext1.ext2.ext3</B> </P>
 
 				<p class=4>&nbsp;</p>
 
 					<TABLE cols=4 border="1" width=400>
 					
 						<TR VALIGN="top">
-							<TD class=TT width=21%><A NAME="apndx03.doc-1054"></A><B>Valeur par défaut</B></TD>
+							<TD class=TT width=21%><A NAME="apndx03.doc-1054"></A><B>Valeur par dÃ©faut</B></TD>
 							<TD class=TT width=20% align="center"><B>.asp</B></TD>
-							<TD class=TT width=18%><B>Définition globale&nbsp;?</B></TD>
+							<TD class=TT width=18%><B>DÃ©finition globale&nbsp;?</B></TD>
 							<TD class=TT width=41% align="center">o</TD>
 						</TR>
 						
 						<TR VALIGN="top">
 							<TD class=TT width=21%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 							<TD class=TT width=20% align="center">o</TD>
-							<TD class=TT width=18%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+							<TD class=TT width=18%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 							<TD class=TT width=41% align="center">o</TD>
 						</TR>
 						
 						<TR VALIGN="top">
 							<TD class=TT width=21%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 							<TD class=TT width=20% align="center">o</TD>
-							<TD class=TT width=18%><B>Définition par sous-site Web&nbsp;?</B></TD>
+							<TD class=TT width=18%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 							<TD class=TT width=41% align="left">vti_disableautoimgsizeexts</TD>
 						</TR>
 						
@@ -850,30 +850,30 @@
 
 			<p><A NAME="apndx03.doc-1055"></A><A NAME="DisableMetaTagStore"></A><B>DisableMetaTagStore</B></P>
 
-			<p>FrontPage met en cache dans un fichier les données de la balise META pour toutes les pages de site Web. Ces données sont plus accessibles aux scripts et aux programmes utilisant le modèle d'objet FrontPage lorsqu'elles sont mises en cache à un même emplacement. La variable <I>DisableMetaTagStore </I>permet de désactiver cette fonction. Si vous n'accédez pas à un site Web par le modèle d'objet, définissez cette variable à une valeur autre que 0, afin de désactiver le stock de données de la balise META.</P>
+			<p>FrontPage met en cache dans un fichier les donnÃ©es de la balise META pour toutes les pages de site Web. Ces donnÃ©es sont plus accessibles aux scripts et aux programmes utilisant le modÃ¨le d'objet FrontPage lorsqu'elles sont mises en cache Ã  un mÃªme emplacement. La variable <I>DisableMetaTagStore </I>permet de dÃ©sactiver cette fonction. Si vous n'accÃ©dez pas Ã  un site Web par le modÃ¨le d'objet, dÃ©finissez cette variable Ã  une valeur autre que 0, afin de dÃ©sactiver le stock de donnÃ©es de la balise META.</P>
 
 			<p class=4>&nbsp;</p>
 
 			<TABLE cols=4 border="1" width=400>
 			
 				<TR VALIGN="top">
-					<TD class=TT width=21%><A NAME="apndx03.doc-1056"></A><B>Valeur par défaut</B></TD>
+					<TD class=TT width=21%><A NAME="apndx03.doc-1056"></A><B>Valeur par dÃ©faut</B></TD>
 					<TD class=TT width=20% align="center"><B>0</B></TD>
-					<TD class=TT width=18%><B>Définition globale&nbsp;?</B></TD>
+					<TD class=TT width=18%><B>DÃ©finition globale&nbsp;?</B></TD>
 					<TD class=TT width=41% align="center">o</TD>
 				</TR>
 				
 				<TR VALIGN="top">
 					<TD class=TT width=21%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 					<TD class=TT width=20% align="center">o</TD>
-					<TD class=TT width=18%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+					<TD class=TT width=18%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 					<TD class=TT width=41% align="center">o</TD>
 				</TR>
 				
 				<TR VALIGN="top">
 					<TD class=TT width=21%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 					<TD class=TT width=20% align="center">o</TD>
-					<TD class=TT width=18%><B>Définition par sous-site Web&nbsp;?</B></TD>
+					<TD class=TT width=18%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 					<TD class=TT width=41% align="left">vti_disablemetatagstore</TD>
 				</TR>
 				
@@ -897,30 +897,30 @@
 
 			<p><A NAME="apndx03.doc-1057"></A><A NAME="ImageMapFormat"></A><B>ImageMapFormat </B></P>
 
-			<p>Cette variable permet de définir le format d'URL utilisé par le gestionnaire d''images interactives côté serveur qui fonctionne avec les images interactives générées par FrontPage. Notez que FrontPage 2000 génère des images interactives côté client et que la plupart des navigateurs prennent en charge les images interactives côté client. Ce paramètre est donc utile uniquement avec les versions antérieures de FrontPage. Les paramètres valides sont les suivants&nbsp;: <B>NCSA</B>, <B>CERN</B>, <B>Netscape</B>, <B>aucun</B> ou <B>&quot;&quot;</B>. Si vous spécifiez le paramètre  <B>aucun</B>, FrontPage ne génère pas de code HTML prenant en charge la gestion des images interactives côté serveur. La chaîne vide <B>&quot;&quot;</B> permet de générer les images interactives FrontPage par défaut.</P>
+			<p>Cette variable permet de dÃ©finir le format d'URL utilisÃ© par le gestionnaire d''images interactives cÃ´tÃ© serveur qui fonctionne avec les images interactives gÃ©nÃ©rÃ©es par FrontPage. Notez que FrontPage 2000 gÃ©nÃ¨re des images interactives cÃ´tÃ© client et que la plupart des navigateurs prennent en charge les images interactives cÃ´tÃ© client. Ce paramÃ¨tre est donc utile uniquement avec les versions antÃ©rieures de FrontPage. Les paramÃ¨tres valides sont les suivants&nbsp;: <B>NCSA</B>, <B>CERN</B>, <B>Netscape</B>, <B>aucun</B> ou <B>&quot;&quot;</B>. Si vous spÃ©cifiez le paramÃ¨tre  <B>aucun</B>, FrontPage ne gÃ©nÃ¨re pas de code HTML prenant en charge la gestion des images interactives cÃ´tÃ© serveur. La chaÃ®ne vide <B>&quot;&quot;</B> permet de gÃ©nÃ©rer les images interactives FrontPage par dÃ©faut.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=400>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=21%><A NAME="apndx03.doc-1058"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=21%><A NAME="apndx03.doc-1058"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=20% align="center"><B>&quot;&quot;</B></TD>
-						<TD class=TT width=18%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=18%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=41% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=21%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=20% align="center">o</TD>
-						<TD class=TT width=18%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=18%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=41% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=21%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=20% align="center">o</TD>
-						<TD class=TT width=18%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=18%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=41% align="left">vti_imagemapformat</TD>
 					</TR>
 					
@@ -944,30 +944,30 @@
 
 			<p><A NAME="apndx03.doc-1059"></A><A NAME="ImageMapURLPrefix"></A><B>ImageMapURLPrefix </B></P>
 
-			<p>Cette variable permet de définir l'URL relative de serveur du gestionnaire d'images interactives côté serveur pour le format d'images interactives sélectionné. Si <I> ImageMapFormat</I> est défini à <B>&quot;&quot;</B>, les images interactives côté serveur sont traitées automatiquement par les extensions serveur FrontPage. Pour les autres formats, indiquez le nom et l'emplacement du gestionnaire d'images interactives. Afin de spécifier les images interactives côté client, sélectionnez <B>""</B> (aucun).</P>
+			<p>Cette variable permet de dÃ©finir l'URL relative de serveur du gestionnaire d'images interactives cÃ´tÃ© serveur pour le format d'images interactives sÃ©lectionnÃ©. Si <I> ImageMapFormat</I> est dÃ©fini Ã  <B>&quot;&quot;</B>, les images interactives cÃ´tÃ© serveur sont traitÃ©es automatiquement par les extensions serveur FrontPage. Pour les autres formats, indiquez le nom et l'emplacement du gestionnaire d'images interactives. Afin de spÃ©cifier les images interactives cÃ´tÃ© client, sÃ©lectionnez <B>""</B> (aucun).</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=400>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=21%><A NAME="apndx03.doc-1060"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=21%><A NAME="apndx03.doc-1060"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=20% align="center"><B>&quot;&quot;</B></TD>
-						<TD class=TT width=18%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=18%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=41% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=21%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=20% align="center">o</TD>
-						<TD class=TT width=18%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=18%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=41% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=21%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=20% align="center">o</TD>
-						<TD class=TT width=18%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=18%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=41% align="left">vti_imagemapurlprefix</TD>
 					</TR>
 					
@@ -991,32 +991,32 @@
 
 			<p><A NAME="apndx03.doc-1061"></A><A NAME="ListLockLatency"></A><B>ListLockLatency</B></P>
 
-			<p>Il est possible qu'un appel du client FrontPage vers les extensions serveur, destiné à répertorier les documents, prenne du temps. C'est le cas, par exemple, lorsque l'appel concerne une liste de l'ensemble du contenu d'un important site Web. Par défaut, la variable <I>ListLockLatency </I>est activée de sorte que la transaction se déverrouille et se verrouille à nouveau sur le site Web toutes les 5 secondes. Ce nombre est approximatif&nbsp;; le déverrouillage s'effectue à chaque nouveau répertoire rencontré lors de la transaction. Par exemple, la constitution d'une liste d'un répertoire comprenant 100&nbsp;000 fichiers peut prendre plusieurs dizaine de secondes, et le déverrouillage n'a pas lieu tant que le répertoire n'est pas entièrement listé.</P>
+			<p>Il est possible qu'un appel du client FrontPage vers les extensions serveur, destinÃ© Ã  rÃ©pertorier les documents, prenne du temps. C'est le cas, par exemple, lorsque l'appel concerne une liste de l'ensemble du contenu d'un important site Web. Par dÃ©faut, la variable <I>ListLockLatency </I>est activÃ©e de sorte que la transaction se dÃ©verrouille et se verrouille Ã  nouveau sur le site Web toutes les 5 secondes. Ce nombre est approximatif&nbsp;; le dÃ©verrouillage s'effectue Ã  chaque nouveau rÃ©pertoire rencontrÃ© lors de la transaction. Par exemple, la constitution d'une liste d'un rÃ©pertoire comprenant 100&nbsp;000 fichiers peut prendre plusieurs dizaine de secondes, et le dÃ©verrouillage n'a pas lieu tant que le rÃ©pertoire n'est pas entiÃ¨rement listÃ©.</P>
 
-			<p><A NAME="apndx03.doc-1062"></A>La variable <I>ListLockLatency</I> permet de contrôler l'intervalle de déverrouillage (en secondes). La valeur de cette variable correspond au nombre maximum de secondes entre chaque déverrouillage. La valeur <B>0</B> signifie que le déverrouillage doit s'effectuer à chaque nouveau sous-répertoire rencontré.</P>
+			<p><A NAME="apndx03.doc-1062"></A>La variable <I>ListLockLatency</I> permet de contrÃ´ler l'intervalle de dÃ©verrouillage (en secondes). La valeur de cette variable correspond au nombre maximum de secondes entre chaque dÃ©verrouillage. La valeur <B>0</B> signifie que le dÃ©verrouillage doit s'effectuer Ã  chaque nouveau sous-rÃ©pertoire rencontrÃ©.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=400>
 				
 					<TR VALIGN="top">
-					<TD class=TT width=21%><A NAME="apndx03.doc-1063"></A><B>Valeur par défaut</B></TD>
+					<TD class=TT width=21%><A NAME="apndx03.doc-1063"></A><B>Valeur par dÃ©faut</B></TD>
 					<TD class=TT width=20% align="center"><B>5</B></TD>
-					<TD class=TT width=18%><B>Définition globale&nbsp;?</B></TD>
+					<TD class=TT width=18%><B>DÃ©finition globale&nbsp;?</B></TD>
 					<TD class=TT width=41% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 					<TD class=TT width=21%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 					<TD class=TT width=20% align="center">o</TD>
-					<TD class=TT width=18%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+					<TD class=TT width=18%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 					<TD class=TT width=41% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 					<TD class=TT width=21%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 					<TD class=TT width=20% align="center">o</TD>
-					<TD class=TT width=18%><B>Définition par sous-site Web&nbsp;?</B></TD>
+					<TD class=TT width=18%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 					<TD class=TT width=41% align="left">vti_listlocklatency</TD>
 					</TR>
 					
@@ -1040,30 +1040,30 @@
 
 			<p><A NAME="apndx03.doc-1064"></A><A NAME="Logging"></A><B>Logging </B></P>
 
-			<p>Si la variable <I>Logging</I> est définie à une valeur autre que 0, les extensions serveur FrontPage enregistrent toutes les opérations d'auteur dans le fichier Author.log du répertoire _vti_log du site Web. L'heure, l'hôte distant, le nom d'utilisateur de l'auteur, le nom du site Web, l'opération effectuée et les données de l'opération sont indiqués pour chaque opération. En cas de problème de sécurité, ce fichier journal peut être consulté pour analyser les opérations d'auteur sur le site Web.</P>
+			<p>Si la variable <I>Logging</I> est dÃ©finie Ã  une valeur autre que 0, les extensions serveur FrontPage enregistrent toutes les opÃ©rations d'auteur dans le fichier Author.log du rÃ©pertoire _vti_log du site Web. L'heure, l'hÃ´te distant, le nom d'utilisateur de l'auteur, le nom du site Web, l'opÃ©ration effectuÃ©e et les donnÃ©es de l'opÃ©ration sont indiquÃ©s pour chaque opÃ©ration. En cas de problÃ¨me de sÃ©curitÃ©, ce fichier journal peut Ãªtre consultÃ© pour analyser les opÃ©rations d'auteur sur le site Web.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=400>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=21%><A NAME="apndx03.doc-1065"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=21%><A NAME="apndx03.doc-1065"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=20% align="center"><B>0</B></TD>
-						<TD class=TT width=18%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=18%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=41% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=21%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=20% align="center">o</TD>
-						<TD class=TT width=18%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=18%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=41% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=21%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=20% align="center">o</TD>
-						<TD class=TT width=18%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=18%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=41% align="center">vti_logging</TD>
 					</TR>
 					
@@ -1087,30 +1087,30 @@
 
 			<p><A NAME="apndx03.doc-1066"></A><A NAME="MailCharSet"></A><B>MailCharSet </B></P>
 
-			<p>Cette variable peut être utilisée pour écraser l'attribut de jeu de caractères de l'en-tête de type de contenu.
+			<p>Cette variable peut Ãªtre utilisÃ©e pour Ã©craser l'attribut de jeu de caractÃ¨res de l'en-tÃªte de type de contenu.
 
 				<p class=4>&nbsp;</p>
 
 					<TABLE cols=4 border="1" width=320>
 					
 						<TR VALIGN="top">
-							<TD class=TT width=27%><A NAME="apndx03.doc-1067"></A><B>Valeur par défaut</B></TD>
+							<TD class=TT width=27%><A NAME="apndx03.doc-1067"></A><B>Valeur par dÃ©faut</B></TD>
 							<TD class=TT width=25% align="center"><B>&quot;&quot;</B></TD>
-							<TD class=TT width=23%><B>Définition globale&nbsp;?</B></TD>
+							<TD class=TT width=23%><B>DÃ©finition globale&nbsp;?</B></TD>
 							<TD class=TT width=25% align="center">o</TD>
 						</TR>
 						
 						<TR VALIGN="top">
 							<TD class=TT width=27%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 							<TD class=TT width=25% align="center">o</TD>
-							<TD class=TT width=23%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+							<TD class=TT width=23%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 							<TD class=TT width=25% align="center">o</TD>
 						</TR>
 						
 						<TR VALIGN="top">
 							<TD class=TT width=27%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 							<TD class=TT width=25% align="center">o</TD>
-							<TD class=TT width=23%><B>Définition par sous-site Web&nbsp;?</B></TD>
+							<TD class=TT width=23%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 							<TD class=TT width=25% align="center">n</TD>
 						</TR>
 						
@@ -1134,30 +1134,30 @@
 
 			<p><A NAME="apndx03.doc-1068"></A><A NAME="MailEncoding"></A><B>MailEncoding</B></P>
 
-			<p>Cette variable peut être utilisée pour écraser l'attribut de codage du transfert de contenu de l'en-tête de type de contenu.</P>
+			<p>Cette variable peut Ãªtre utilisÃ©e pour Ã©craser l'attribut de codage du transfert de contenu de l'en-tÃªte de type de contenu.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=320>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=27%><A NAME="apndx03.doc-1069"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=27%><A NAME="apndx03.doc-1069"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=25% align="center"><B>&quot;&quot;</B></TD>
-						<TD class=TT width=23%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=23%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=25% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=27%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=25% align="center">o</TD>
-						<TD class=TT width=23%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=23%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=25% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=27%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=25% align="center">o</TD>
-						<TD class=TT width=23%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=23%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=25% align="center">n</TD>
 					</TR>
 					
@@ -1181,30 +1181,30 @@
 
 			<p><A NAME="apndx03.doc-1070"></A><A NAME="MailSender"></A><B>MailSender </B></P>
 
-			<p>Cette variable permet de définir le nom d'utilisateur à utiliser en tant que compte À partir de lors de l'envoi de courrier électronique. Il est précisément utilisé en tant qu'argument de la commande SEND FROM: dans SMTP. L'adresse SMTP par défaut est <I> utilisateur@hôte</I>, <I>utilisateur</I> représentant le compte utilisateur en cours et <I>hôte </I>le nom d'hôte en cours. </P>
+			<p>Cette variable permet de dÃ©finir le nom d'utilisateur Ã  utiliser en tant que compte Ã€ partir de lors de l'envoi de courrier Ã©lectronique. Il est prÃ©cisÃ©ment utilisÃ© en tant qu'argument de la commande SEND FROM: dans SMTP. L'adresse SMTP par dÃ©faut est <I> utilisateur@hÃ´te</I>, <I>utilisateur</I> reprÃ©sentant le compte utilisateur en cours et <I>hÃ´te </I>le nom d'hÃ´te en cours. </P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=320>
 				
 					<TR VALIGN="top">
-					<TD class=TT width=27%><A NAME="apndx03.doc-1071"></A><B>Valeur par défaut</B></TD>
+					<TD class=TT width=27%><A NAME="apndx03.doc-1071"></A><B>Valeur par dÃ©faut</B></TD>
 					<TD class=TT width=25% align="center"><B>&quot;&quot;</B></TD>
-					<TD class=TT width=28%><B>Définition globale&nbsp;?</B></TD>
+					<TD class=TT width=28%><B>DÃ©finition globale&nbsp;?</B></TD>
 					<TD class=TT width=20% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 					<TD class=TT width=27%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 					<TD class=TT width=25% align="center">o</TD>
-					<TD class=TT width=28%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+					<TD class=TT width=28%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 					<TD class=TT width=20% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 					<TD class=TT width=27%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 					<TD class=TT width=25% align="center">o</TD>
-					<TD class=TT width=28%><B>Définition par sous-site Web&nbsp;?</B></TD>
+					<TD class=TT width=28%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 					<TD class=TT width=20% align="center">n</TD>
 					</TR>
 				
@@ -1228,34 +1228,34 @@
 
 			<p><A NAME="apndx03.doc-1072"></A><A NAME="NoAbsoluteFileResults"></A><B>NoAbsoluteFileResults</B></P>
 
-			<p>(Il s'agit d'une variable obsolète, fournie pour des raisons de compatibilté&nbsp; utilisez plutôt la variable <I>NoSaveResultsToAbsoluteFile</I>.)</P>
+			<p>(Il s'agit d'une variable obsolÃ¨te, fournie pour des raisons de compatibiltÃ©&nbsp; utilisez plutÃ´t la variable <I>NoSaveResultsToAbsoluteFile</I>.)</P>
 
-			<p><A NAME="apndx03.doc-1073"></A>Lorsque la variable <I> NoAbsoluteFileResults</I> est définie à une valeur autre que 0, les programmes de traitement de formulaire par défaut (Enregistreur de résultats), d'inscription et de discussion peuvent uniquement écrire dans un fichier se trouvant dans la zone de contenu du site Web de l'auteur. Ainsi, ces programmes de traitement de formulaire ne peuvent pas écrire vers un chemin de fichier absolu.</P>
+			<p><A NAME="apndx03.doc-1073"></A>Lorsque la variable <I> NoAbsoluteFileResults</I> est dÃ©finie Ã  une valeur autre que 0, les programmes de traitement de formulaire par dÃ©faut (Enregistreur de rÃ©sultats), d'inscription et de discussion peuvent uniquement Ã©crire dans un fichier se trouvant dans la zone de contenu du site Web de l'auteur. Ainsi, ces programmes de traitement de formulaire ne peuvent pas Ã©crire vers un chemin de fichier absolu.</P>
 
-			<p>Bien que la valeur par défaut de la variable <I>NoAbsoluteFileResults </I>soit<B> 0</B>, vous devez entrer la valeur <B>1</B> lors de l'installation de FrontPage.</P>
+			<p>Bien que la valeur par dÃ©faut de la variable <I>NoAbsoluteFileResults </I>soit<B> 0</B>, vous devez entrer la valeur <B>1</B> lors de l'installation de FrontPage.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=320>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=27%><A NAME="apndx03.doc-1075"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=27%><A NAME="apndx03.doc-1075"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=25% align="center"><B>1</B></TD>
-						<TD class=TT width=23%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=23%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=25% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=27%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=25% align="center">o</TD>
-						<TD class=TT width=23%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=23%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=25% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=27%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=25% align="center">o</TD>
-						<TD class=TT width=23%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=23%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=25% align="center">n</TD>
 					</TR>
 					
@@ -1279,32 +1279,32 @@
 
 			<p><A NAME="apndx03.doc-1076"></A><A NAME="NoClientImageMaps"></A><B>NoClientImageMaps </B></P>
 
-			<p>Lorsque la valeur de la variable <I>NoClientImageMaps </I>est <B>1</B>, FrontPage n'est pas en mesure de générer de code HTML prenant en charge la gestion des images interactives côté client.</P>
+			<p>Lorsque la valeur de la variable <I>NoClientImageMaps </I>est <B>1</B>, FrontPage n'est pas en mesure de gÃ©nÃ©rer de code HTML prenant en charge la gestion des images interactives cÃ´tÃ© client.</P>
 
-			<p>Pour configurer FrontPage de façon à ce qu'il génère des images interactives côté client et côté serveur, conservez la valeur par défaut <B>0</B> de cette variable et sélectionnez un format d'images interactives côté serveur (voir <I>ImageMapFormat</I>).</P>
+			<p>Pour configurer FrontPage de faÃ§on Ã  ce qu'il gÃ©nÃ¨re des images interactives cÃ´tÃ© client et cÃ´tÃ© serveur, conservez la valeur par dÃ©faut <B>0</B> de cette variable et sÃ©lectionnez un format d'images interactives cÃ´tÃ© serveur (voir <I>ImageMapFormat</I>).</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1078"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1078"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=21% align="center"><B>0</B></TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=37% align="left">vti_noclientimagemaps</TD>
 					</TR>
 					
@@ -1328,30 +1328,30 @@
 
 			<p><A NAME="apndx03.doc-1079"></A><A NAME="NoExecutableCgiUpload"></A><B>NoExecutableCgiUpload </B></P>
 
-			<p>Lorsque la variable <I>NoExecutableCgiUpload</I> est définie à une valeur autre que 0, les extensions serveur FrontPage ne définissent les bits d'exécution sur aucun des scripts CGI téléchargés vers un site Web par un auteur à l'aide de FrontPage. Une société d'hébergement de sites Web peut définir manuellement l'autorisation d'exécution après analyse du script CGI. Lorsque la variable <I> NoExecutableCgiUpload </I>est définie à <B>0</B>, les extensions serveur définissent automatiquement les bits d'exécution sur les scripts CGI téléchargés vers le répertoire cgi-bin d'un auteur.</P>
+			<p>Lorsque la variable <I>NoExecutableCgiUpload</I> est dÃ©finie Ã  une valeur autre que 0, les extensions serveur FrontPage ne dÃ©finissent les bits d'exÃ©cution sur aucun des scripts CGI tÃ©lÃ©chargÃ©s vers un site Web par un auteur Ã  l'aide de FrontPage. Une sociÃ©tÃ© d'hÃ©bergement de sites Web peut dÃ©finir manuellement l'autorisation d'exÃ©cution aprÃ¨s analyse du script CGI. Lorsque la variable <I> NoExecutableCgiUpload </I>est dÃ©finie Ã  <B>0</B>, les extensions serveur dÃ©finissent automatiquement les bits d'exÃ©cution sur les scripts CGI tÃ©lÃ©chargÃ©s vers le rÃ©pertoire cgi-bin d'un auteur.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1080"></A><span class=L><B>Valeur par défaut</B></span></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1080"></A><span class=L><B>Valeur par dÃ©faut</B></span></TD>
 						<TD class=TT width=21% align="center"><span class=L><B>1</B></span></TD>
-						<TD class=TT width=19%><span class=L><B>Définition globale&nbsp;?</B></span></TD>
+						<TD class=TT width=19%><span class=L><B>DÃ©finition globale&nbsp;?</B></span></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><span class=L><B>Disponible sur les serveurs Windows&nbsp;?</B></span></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><span class=L><B>Définition par serveur virtuel&nbsp;?</B></span></TD>
+						<TD class=TT width=19%><span class=L><B>DÃ©finition par serveur virtuel&nbsp;?</B></span></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><span class=L><B>Disponible sur les serveurs UNIX&nbsp;?</B></span></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><span class=L><B>Définition par sous-site Web&nbsp;?</B></span></TD>
+						<TD class=TT width=19%><span class=L><B>DÃ©finition par sous-site Web&nbsp;?</B></span></TD>
 						<TD class=TT width=37% align="center">n</TD>
 					</TR>
 				</TABLE>
@@ -1374,30 +1374,30 @@
 
 			<p><A NAME="apndx03.doc-1081"></A><A NAME="NoIndexServer"></A><B>NoIndexServer</B></P>
 
-			<p>Lorsque la variable <I>NoIndexServer</I> est définie à <B>1</B>, FrontPage n'utilise pas le serveur d'index IIS pour créer l'index de texte intégral du site Web. FrontPage utilise à la place le système de recherche FreeWAIS fourni avec FrontPage 2000. Si FrontPage détecte le serveur d'index, il l'utilise par défaut pour créer l'index de texte intégral.</P>
+			<p>Lorsque la variable <I>NoIndexServer</I> est dÃ©finie Ã  <B>1</B>, FrontPage n'utilise pas le serveur d'index IIS pour crÃ©er l'index de texte intÃ©gral du site Web. FrontPage utilise Ã  la place le systÃ¨me de recherche FreeWAIS fourni avec FrontPage 2000. Si FrontPage dÃ©tecte le serveur d'index, il l'utilise par dÃ©faut pour crÃ©er l'index de texte intÃ©gral.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1082"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1082"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=21% align="center"><B>0</B></TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">n</TD>
 					</TR>
 				
@@ -1421,30 +1421,30 @@
 
 			<p><a name="apndx03.doc-1131"></a><a name="NoMarkScriptable"></a><B>NoMarkScriptable</B></p>
 
-			<p>(IIS version 4.0 ou ultérieure.) Lorsque la variable <I>NoMarkScriptable</I> est définie à une valeur autre que 0, les utilisateurs du client FrontPage ne peuvent modifier le bit de script dans aucun dossier d'un site Web. Lorsque cette valeur est configurée, un fournisseur de services Internet doit définir manuellement le bit de script dans les dossiers. Lorsque la variable <I>NoMarkScriptable</I> est définie à <B>0</B>, les utilisateurs du client FrontPage sont en mesure de modifier ce bit.</P>
+			<p>(IIS version 4.0 ou ultÃ©rieure.) Lorsque la variable <I>NoMarkScriptable</I> est dÃ©finie Ã  une valeur autre que 0, les utilisateurs du client FrontPage ne peuvent modifier le bit de script dans aucun dossier d'un site Web. Lorsque cette valeur est configurÃ©e, un fournisseur de services Internet doit dÃ©finir manuellement le bit de script dans les dossiers. Lorsque la variable <I>NoMarkScriptable</I> est dÃ©finie Ã  <B>0</B>, les utilisateurs du client FrontPage sont en mesure de modifier ce bit.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><span class=L><B>Valeur par défaut</B></span></TD>
+						<TD class=TT width=23%><span class=L><B>Valeur par dÃ©faut</B></span></TD>
 						<TD class=TT width=21% align="center"><span class=L><B>0</B></span></TD>
-						<TD class=TT width=19%><span class=L><B>Définition globale&nbsp;?</B></span></TD>
+						<TD class=TT width=19%><span class=L><B>DÃ©finition globale&nbsp;?</B></span></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><span class=L><B>Disponible sur les serveurs Windows&nbsp;?</B></span></TD>
-						<TD class=TT width=21% align="center">o<br>IIS version 4.0 ou ultérieure</TD>
-						<TD class=TT width=19%><span class=L><B>Définition par serveur virtuel&nbsp;?</B></span></TD>
+						<TD class=TT width=21% align="center">o<br>IIS version 4.0 ou ultÃ©rieure</TD>
+						<TD class=TT width=19%><span class=L><B>DÃ©finition par serveur virtuel&nbsp;?</B></span></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><span class=L><B>Disponible sur les serveurs UNIX&nbsp;?</B></span></TD>
 						<TD class=TT width=21% align="center">n</TD>
-						<TD class=TT width=19%><span class=L><B>Définition par sous-site Web&nbsp;?</B></span></TD>
+						<TD class=TT width=19%><span class=L><B>DÃ©finition par sous-site Web&nbsp;?</B></span></TD>
 						<TD class=TT width=37% align="left">vti_nomarkscriptable</TD>
 					</TR>
 					
@@ -1468,30 +1468,30 @@
 
 			<p><A NAME="apndx03.doc-1083"></A><A NAME="NoSaveResultsPipeTo"></A><B>NoSaveResultsPipeTo</B></P>
 
-			<p>Avec les versions antérieures de FrontPage, le programme de traitement de formulaire par défaut (enregistreur de résultats) peut rediriger les résultats du formulaire vers n'importe quel programme de son choix. Pour des raisons de compatibilité, la variable <I>NoSaveResultsPipeTo</I> désactive cette fonction lorsque sa valeur est différente de 0. Définissez cette variable à <B>0</B> pour permettre la redirection du contenu du formulaire vers un programme.</P>
+			<p>Avec les versions antÃ©rieures de FrontPage, le programme de traitement de formulaire par dÃ©faut (enregistreur de rÃ©sultats) peut rediriger les rÃ©sultats du formulaire vers n'importe quel programme de son choix. Pour des raisons de compatibilitÃ©, la variable <I>NoSaveResultsPipeTo</I> dÃ©sactive cette fonction lorsque sa valeur est diffÃ©rente de 0. DÃ©finissez cette variable Ã  <B>0</B> pour permettre la redirection du contenu du formulaire vers un programme.</P>
 
 			<p class=4>&nbsp;</p>
 
 			<TABLE cols=4 border="1" width=376>
 			
 				<TR VALIGN="top">
-					<TD class=TT width=23%><A NAME="apndx03.doc-1084"></A><B>Valeur par défaut</B></TD>
+					<TD class=TT width=23%><A NAME="apndx03.doc-1084"></A><B>Valeur par dÃ©faut</B></TD>
 					<TD class=TT width=21% align="center"><B>1</B></TD>
-					<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+					<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 					<TD class=TT width=37% align="center">o</TD>
 				</TR>
 				
 				<TR VALIGN="top">
 					<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 					<TD class=TT width=21% align="center">o</TD>
-					<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+					<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 					<TD class=TT width=37% align="center">o</TD>
 				</TR>
 				
 				<TR VALIGN="top">
 					<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 					<TD class=TT width=21% align="center">o</TD>
-					<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+					<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 					<TD class=TT width=37% align="center">n</TD>
 				</TR>
 				
@@ -1515,32 +1515,32 @@
 
 			<p><A NAME="apndx03.doc-1085"></A><A NAME="NoSaveResultsToAbsoluteFile"></A><B>NoSaveResultsToAbsoluteFile</B></P>
 
-			<p>Lorsque la variable <I>NoSaveResultsToAbsoluteFile</I> est définie à <B>1</B>, les programmes de traitement de formulaire par défaut (Enregistreur de résultats), d'inscription et de discussion ne sont pas en mesure d'écrire vers un chemin de fichier absolu, même si le compte de navigation possède les droits NTFS d'écrire vers ce chemin&nbsp;; ceux-ci peuvent uniquement écrire vers un fichier se trouvant dans la zone de contenu du site Web. Lorsque la variable <I>NoSaveResultsToAbsoluteFile</I> est définie à <B>0</B>, les programmes de traitement de formulaire FrontPage par défaut<B> </B>(Enregistreur de résultats), d'inscription et de discussion peuvent écrire vers un chemin de ficher absolu.</P>
+			<p>Lorsque la variable <I>NoSaveResultsToAbsoluteFile</I> est dÃ©finie Ã  <B>1</B>, les programmes de traitement de formulaire par dÃ©faut (Enregistreur de rÃ©sultats), d'inscription et de discussion ne sont pas en mesure d'Ã©crire vers un chemin de fichier absolu, mÃªme si le compte de navigation possÃ¨de les droits NTFS d'Ã©crire vers ce chemin&nbsp;; ceux-ci peuvent uniquement Ã©crire vers un fichier se trouvant dans la zone de contenu du site Web. Lorsque la variable <I>NoSaveResultsToAbsoluteFile</I> est dÃ©finie Ã  <B>0</B>, les programmes de traitement de formulaire FrontPage par dÃ©faut<B> </B>(Enregistreur de rÃ©sultats), d'inscription et de discussion peuvent Ã©crire vers un chemin de ficher absolu.</P>
 
-			<p>Utilisez la variable <I>NoSaveResultsToAbsoluteFile</I> plutôt que la variable obsolète <B> </B><I>NoAbsoluteFileResults</I>.</P>
+			<p>Utilisez la variable <I>NoSaveResultsToAbsoluteFile</I> plutÃ´t que la variable obsolÃ¨te <B> </B><I>NoAbsoluteFileResults</I>.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1087"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1087"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=21% align="center"><B>1</B></TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par sous-site&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">n</TD>
 					</TR>
 				
@@ -1564,32 +1564,32 @@
 
 			<p><A NAME="apndx03.doc-1088"></A><A NAME="NoSaveResultsToLogDir"></A><B>NoSaveResultsToLogDir</B></P>
 
-			<p>Si la variable <I>NoSaveResultsToLogDir</I> est définie à <B>1</B>, les programmes de traitement de formulaire par défaut<B> </B>(Enregistreur de résultats), d'inscription et de discussion n'écrivent pas dans le répertoire du site Web _vti_log. Si  <I>NoSaveResultsToLogDir</I> est définie à <B>0</B>, les programmes de traitement de formulaire écrivent dans le répertoire du site Web _vti_log.</P>
+			<p>Si la variable <I>NoSaveResultsToLogDir</I> est dÃ©finie Ã  <B>1</B>, les programmes de traitement de formulaire par dÃ©faut<B> </B>(Enregistreur de rÃ©sultats), d'inscription et de discussion n'Ã©crivent pas dans le rÃ©pertoire du site Web _vti_log. Si  <I>NoSaveResultsToLogDir</I> est dÃ©finie Ã  <B>0</B>, les programmes de traitement de formulaire Ã©crivent dans le rÃ©pertoire du site Web _vti_log.</P>
 
-			<p><A NAME="apndx03.doc-1089"></A>Utilisez la variable <I>NoSaveResultsToLogDir</I> plutôt que la variable obsolète <I>NoServerFileResults</I>.</P>
+			<p><A NAME="apndx03.doc-1089"></A>Utilisez la variable <I>NoSaveResultsToLogDir</I> plutÃ´t que la variable obsolÃ¨te <I>NoServerFileResults</I>.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1090"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1090"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=21% align="center"><B>1</B></TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">n</TD>
 					</TR>
 					
@@ -1613,32 +1613,32 @@
 
 			<p><A NAME="apndx03.doc-1091"></A><A NAME="NoServerFileResults"></A><B>NoServerFileResults</B></P>
 
-			<p>(Il s'agit d'une variable obsolète fournie pour raisons de compatibilité&nbsp;; utilisez plutôt la variable <I>NoSaveResultsToLogDir</I>.)</P>
+			<p>(Il s'agit d'une variable obsolÃ¨te fournie pour raisons de compatibilitÃ©&nbsp;; utilisez plutÃ´t la variable <I>NoSaveResultsToLogDir</I>.)</P>
 
-			<p><A NAME="apndx03.doc-1092"></A>Si la variable <I>NoServerFileResults</I> est définie à une valeur différente de 0, les programmes de traitement de formulaire par défaut (Enregistreur de résultats), d'inscription et de discussion ne peuvent pas écrire dans le répertoire _vti_log du site Web d'un auteur.</P>
+			<p><A NAME="apndx03.doc-1092"></A>Si la variable <I>NoServerFileResults</I> est dÃ©finie Ã  une valeur diffÃ©rente de 0, les programmes de traitement de formulaire par dÃ©faut (Enregistreur de rÃ©sultats), d'inscription et de discussion ne peuvent pas Ã©crire dans le rÃ©pertoire _vti_log du site Web d'un auteur.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1093"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1093"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=21% align="center"><B>1</B></TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">n</TD>
 					</TR>
 					
@@ -1662,32 +1662,32 @@
 
 			<p><A NAME="apndx03.doc-1094"></A><A NAME="PreserveTagCase"></A><B>PreserveTagCase </B></P>
 
-			<p>Lorsque la valeur de la variable <I>PreserveTagCase</I> est <B>Y</B> ou une valeur différente de 0, les extensions serveur conservent la casse des attributs de la balise HTML lors de la remise en forme des pages HTML. La variable <I>PreserveTagCase</I><B> </B>est prioritaire sur la variable <I>UpperCaseTags</I>.</P>
+			<p>Lorsque la valeur de la variable <I>PreserveTagCase</I> est <B>Y</B> ou une valeur diffÃ©rente de 0, les extensions serveur conservent la casse des attributs de la balise HTML lors de la remise en forme des pages HTML. La variable <I>PreserveTagCase</I><B> </B>est prioritaire sur la variable <I>UpperCaseTags</I>.</P>
 
-			<p>Notez que la casse des balises HTML est contrôlée par une variable séparée, <I>UpperCaseTags</I>.</P>
+			<p>Notez que la casse des balises HTML est contrÃ´lÃ©e par une variable sÃ©parÃ©e, <I>UpperCaseTags</I>.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1096"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1096"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=21% align="center"><B>0</B></TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=37% align="left">vti_preservetagcase</TD>
 					</TR>
 					
@@ -1711,30 +1711,30 @@
 
 			<p><A NAME="apndx03.doc-1097"></A><A NAME="PrivateBrowsable"></A><B>PrivateBrowsable</B></P>
 
-			<p>Sur les serveurs IIS uniquement, le répertoire _private d'un site Web est accessible aux navigateurs si vous définissez la variable <I>PrivateBrowsable</I> à <B>1</B>. Afin d'empêcher les visiteurs d'un site Web de naviguer sur le répertoire _private, définissez la valeur de la variable <I>PrivateBrowsable</I> à <B>0</B>. Une fois ce paramètre ajouté, il s'appliquera aux nouveaux sites Web que vous créerez. Ce paramètre n'affecte pas les sites Web créés antérieurement.</P>
+			<p>Sur les serveurs IIS uniquement, le rÃ©pertoire _private d'un site Web est accessible aux navigateurs si vous dÃ©finissez la variable <I>PrivateBrowsable</I> Ã  <B>1</B>. Afin d'empÃªcher les visiteurs d'un site Web de naviguer sur le rÃ©pertoire _private, dÃ©finissez la valeur de la variable <I>PrivateBrowsable</I> Ã  <B>0</B>. Une fois ce paramÃ¨tre ajoutÃ©, il s'appliquera aux nouveaux sites Web que vous crÃ©erez. Ce paramÃ¨tre n'affecte pas les sites Web crÃ©Ã©s antÃ©rieurement.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1098"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1098"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=21% align="center"><B>0</B></TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">IIS uniquement</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=21%>n</TD>
-						<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">n</TD>
 				</TR>
 				
@@ -1758,30 +1758,30 @@
 
 				<p><A NAME="apndx03.doc-1099"></A><A NAME="ReformatHtml"></A><B>ReformatHtml</B></P>
 
-				<p>Si la variable <I>ReformatHtml</I> a une valeur <B>Y</B> ou différente de 0, les extensions serveur FrontPage remettent en forme toutes les pages HTML lors de leur téléchargement vers le serveur Web. Si la valeur de la variable <I>ReformatHtml</I> est <B>0</B>, seules les pages aux composants FrontPage peuvent être remises en forme.</P>
+				<p>Si la variable <I>ReformatHtml</I> a une valeur <B>Y</B> ou diffÃ©rente de 0, les extensions serveur FrontPage remettent en forme toutes les pages HTML lors de leur tÃ©lÃ©chargement vers le serveur Web. Si la valeur de la variable <I>ReformatHtml</I> est <B>0</B>, seules les pages aux composants FrontPage peuvent Ãªtre remises en forme.</P>
 
 					<p class=4>&nbsp;</p>
 
 					<TABLE cols=4 border="1" width=376>
 					
 						<TR VALIGN="top">
-							<TD class=TT width=23%><A NAME="apndx03.doc-1100"></A><B>Valeur par défaut</B></TD>
+							<TD class=TT width=23%><A NAME="apndx03.doc-1100"></A><B>Valeur par dÃ©faut</B></TD>
 							<TD class=TT width=21% align="center"><B>0</B></TD>
-							<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+							<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 							<TD class=TT width=37% align="center">o</TD>
 						</TR>
 						
 						<TR VALIGN="top">
 							<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 							<TD class=TT width=21% align="center">o</TD>
-							<TD class=TT width=19% ><B>Définition par serveur virtuel&nbsp;?</B></TD>
+							<TD class=TT width=19% ><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 							<TD class=TT width=37% align="center">o</TD>
 						</TR>
 						
 						<TR VALIGN="top">
 							<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 							<TD class=TT width=21% align="center">o</TD>
-							<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+							<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 							<TD class=TT width=37% align="center">vti_reformathtml</TD>
 						</TR>
 						
@@ -1805,30 +1805,30 @@
 
 			<p><A NAME="apndx03.doc-1101"></A><A NAME="RequireSSL"></A><B>RequireSSL</B></P>
 
-			<p>Lorsque la variable <I> RequireSSL</I> est <B>enabled</B> (ou définie à toute autre valeur que <B>disabled</B>), les extensions serveur nécessitent une connexion Secure Sockets Layer (SSL) entre le client FrontPage et le serveur.</P>
+			<p>Lorsque la variable <I> RequireSSL</I> est <B>enabled</B> (ou dÃ©finie Ã  toute autre valeur que <B>disabled</B>), les extensions serveur nÃ©cessitent une connexion Secure Sockets Layer (SSL) entre le client FrontPage et le serveur.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1102"></A><B>Valeur par défaut</B></TD>
-						<TD class=TT width=21% align="center"><B>désactivée</B></TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1102"></A><B>Valeur par dÃ©faut</B></TD>
+						<TD class=TT width=21% align="center"><B>dÃ©sactivÃ©e</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">n</TD>
 					</TR>
 					
@@ -1852,21 +1852,21 @@
 
 			<p><A NAME="apndx03.doc-1103"></A><A NAME="RestrictIISUsersAndGroups"></A><B>RestrictIISUsersAndGroups</B></P>
 
-			<p>Si les restrictions d'utilisateurs ou de groupes sont activées (c'est-à-dire la variable <I>RestrictIISUsersAndGroups</I> est définie à <B>Y</B> ou à une valeur autre que 0) pour un site Web doté des extensions serveur FrontPage, les extensions serveur recherchent un groupe Windows NT nommé selon la convention suivante&nbsp;:</P>
+			<p>Si les restrictions d'utilisateurs ou de groupes sont activÃ©es (c'est-Ã -dire la variable <I>RestrictIISUsersAndGroups</I> est dÃ©finie Ã  <B>Y</B> ou Ã  une valeur autre que 0) pour un site Web dotÃ© des extensions serveur FrontPage, les extensions serveur recherchent un groupe Windows NT nommÃ© selon la convention suivante&nbsp;:</P>
 
 			<p>FP_[VirtualServer][_Directories][_Subweb]</P>
 
-			<p>Sur un serveur multi-hôtes IIS version 2.0/3.0, [VirtualServer] correspond à la combinaison du numéro de port et de l'adresse IP du service, [_Directories][_Subweb] correspondent à l'URL du sous-site Web. Un exemple pour le site racine est FP_172.17.123.255:80. Pour un sous-site Web, l'exemple est le suivant  FP_172.17.123.255:80_directory1_MySubWeb1_directory2_MySubWeb2. Il s'agit d'un sous-site Web imbriqué à l'URL suivante http://172.17.123.255:80/directory1/MySubWeb1/directory2/MySubWeb2. Sur un serveur à hôte unique, [VirtualServer] correspond au numéro de port. Par exemple, FP_80 est le serveur virtuel sur le port 80 lorsque ce port n'est pas spécifiquement lié à une adresse IP dans le Gestionnaire de service Internet.</p>
+			<p>Sur un serveur multi-hÃ´tes IIS version 2.0/3.0, [VirtualServer] correspond Ã  la combinaison du numÃ©ro de port et de l'adresse IP du service, [_Directories][_Subweb] correspondent Ã  l'URL du sous-site Web. Un exemple pour le site racine est FP_172.17.123.255:80. Pour un sous-site Web, l'exemple est le suivant  FP_172.17.123.255:80_directory1_MySubWeb1_directory2_MySubWeb2. Il s'agit d'un sous-site Web imbriquÃ© Ã  l'URL suivante http://172.17.123.255:80/directory1/MySubWeb1/directory2/MySubWeb2. Sur un serveur Ã  hÃ´te unique, [VirtualServer] correspond au numÃ©ro de port. Par exemple, FP_80 est le serveur virtuel sur le port 80 lorsque ce port n'est pas spÃ©cifiquement liÃ© Ã  une adresse IP dans le Gestionnaire de service Internet.</p>
 
-			<p>Sur les serveurs IIS versions 4.0 et ultérieures, [VirtualServer] peut exister sous la forme <B>/LM/W3SVC/</B><I>N</I>, <I>N</I> représentant un chiffre. Un exemple de ce formulaire pour un site racine est FP_/LM/W3SVC/1. L'exemple pour un sous-site Web de ce serveur virtuel est FP_/LM/W3SVC/1_MySubWeb. Vous pouvez également utiliser le nom d'hôte. Pour un site racine, l'exemple est FP_www.microsoft.com:80 et pour un sous-site Web, FP_www.microsoft.com:80_MySubWeb. Sur un serveur à hôte unique, [Virtual Server] peut être configuré en tant que numéro de port, commedans FP_80. Les autres options de IIS 4.0 fonctionneront dans ce cas également.</p>
+			<p>Sur les serveurs IIS versions 4.0 et ultÃ©rieures, [VirtualServer] peut exister sous la forme <B>/LM/W3SVC/</B><I>N</I>, <I>N</I> reprÃ©sentant un chiffre. Un exemple de ce formulaire pour un site racine est FP_/LM/W3SVC/1. L'exemple pour un sous-site Web de ce serveur virtuel est FP_/LM/W3SVC/1_MySubWeb. Vous pouvez Ã©galement utiliser le nom d'hÃ´te. Pour un site racine, l'exemple est FP_www.microsoft.com:80 et pour un sous-site Web, FP_www.microsoft.com:80_MySubWeb. Sur un serveur Ã  hÃ´te unique, [Virtual Server] peut Ãªtre configurÃ© en tant que numÃ©ro de port, commedans FP_80. Les autres options de IIS 4.0 fonctionneront dans ce cas Ã©galement.</p>
 
-			<p>Si les restrictions sont activées sur un sous-site Web mais aucun groupe local n'est défini, les extensions serveur FrontPage recherchent le groupe du site Web parent et, s'il existe, l'utilisent. Cette recherche se répète indéfiniment si le sous-site est imbriqué dans un autre sous-site. Si aucun des groupes nommés n'est trouvé, les autorisations ne font alors l'objet d'aucune restriction.</p>
+			<p>Si les restrictions sont activÃ©es sur un sous-site Web mais aucun groupe local n'est dÃ©fini, les extensions serveur FrontPage recherchent le groupe du site Web parent et, s'il existe, l'utilisent. Cette recherche se rÃ©pÃ¨te indÃ©finiment si le sous-site est imbriquÃ© dans un autre sous-site. Si aucun des groupes nommÃ©s n'est trouvÃ©, les autorisations ne font alors l'objet d'aucune restriction.</p>
 			
 			<p class=4>&nbsp;</p>
 
 				<!--START_NOTE STRUCTURE-->
 				
-				<P class=art><img SRC="noterule.gif" width=475 height=15 border="0"></p>La variable <I> RestrictIISUsersAndGroups </I>ne peut pas être définie au niveau du sous-site Web&nbsp;; cependant, <br>si elle est définie au niveau global ou du serveur virtuel, vous pouvez limiter le nombre d'utilisateurs et de <br>groupes par sous-site en appliquant la méthode décrite ci-dessus. <HR width=475 align="left"></P>
+				<P class=art><img SRC="noterule.gif" width=475 height=15 border="0"></p>La variable <I> RestrictIISUsersAndGroups </I>ne peut pas Ãªtre dÃ©finie au niveau du sous-site Web&nbsp;; cependant, <br>si elle est dÃ©finie au niveau global ou du serveur virtuel, vous pouvez limiter le nombre d'utilisateurs et de <br>groupes par sous-site en appliquant la mÃ©thode dÃ©crite ci-dessus. <HR width=475 align="left"></P>
 				
 				<!--END_NOTE STRUCTURE-->
 				
@@ -1876,23 +1876,23 @@
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1110"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1110"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=21% align="center"><B>0</B></TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">n</TD>
-						<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">n<BR>
 						</TD>
 					</TR>
@@ -1917,40 +1917,40 @@
 
 			<p><A NAME="apndx03.doc-1111"></A><A NAME="RunTimeFileExtensions"></A><B>RunTimeFileExtensions</B></P>
 
-			<p>Lorsque vous utilisez l'exécutable des extensions serveur FrontPage Shtml.exe, versions 3.0.2.1330 ou ultérieure, les composants d'exécution FrontPage tels que le programme de traitement de formulaire par défaut (Enregistreur de résultats) et le formulaire de recherche traitent uniquement les fichiers HTML ou à base de HTML qui ne contiennent pas de code ASP ni la balise SCRIPT RUNAT=server. Ceci permet d'éviter de dévoiler aux utilisateurs le contenu du code source, des mots de passe et autres informations privées. </P>
+			<p>Lorsque vous utilisez l'exÃ©cutable des extensions serveur FrontPage Shtml.exe, versions 3.0.2.1330 ou ultÃ©rieure, les composants d'exÃ©cution FrontPage tels que le programme de traitement de formulaire par dÃ©faut (Enregistreur de rÃ©sultats) et le formulaire de recherche traitent uniquement les fichiers HTML ou Ã  base de HTML qui ne contiennent pas de code ASP ni la balise SCRIPT RUNAT=server. Ceci permet d'Ã©viter de dÃ©voiler aux utilisateurs le contenu du code source, des mots de passe et autres informations privÃ©es. </P>
 
-			<p>Les fichiers HTML ou à base de HTML pouvant être traités par Shtml.exe sont identifiés par leur extension de nom de fichier&nbsp;: .htm, .html, .shtm, .shtml, .htx, .asp, .alx et .asa. Si le fichier de configuration du serveur Web connecte d'autres extensions de noms de fichiers sur un type de fichier HTML ou à base de HTML, ces fichiers sont également ajoutés à l'ensemble des fichiers pouvant être traités par Shtml.exe. Pour les serveurs Apache et NCSA , toutes les extensions de fichiers connectées pour avoir un type de «&nbsp;texte/html&nbsp;» MIME sont elles-aussi ajoutées aux fichiers pouvant être traités par Shtml.exe.</P>
+			<p>Les fichiers HTML ou Ã  base de HTML pouvant Ãªtre traitÃ©s par Shtml.exe sont identifiÃ©s par leur extension de nom de fichier&nbsp;: .htm, .html, .shtm, .shtml, .htx, .asp, .alx et .asa. Si le fichier de configuration du serveur Web connecte d'autres extensions de noms de fichiers sur un type de fichier HTML ou Ã  base de HTML, ces fichiers sont Ã©galement ajoutÃ©s Ã  l'ensemble des fichiers pouvant Ãªtre traitÃ©s par Shtml.exe. Pour les serveurs Apache et NCSA , toutes les extensions de fichiers connectÃ©es pour avoir un type de Â«&nbsp;texte/html&nbsp;Â» MIME sont elles-aussi ajoutÃ©es aux fichiers pouvant Ãªtre traitÃ©s par Shtml.exe.</P>
 
-			<p><A NAME="apndx03.doc-1113"></A>Utilisez la variable <I>RunTimeFileExtensions</I><B> </B>pour spécifier les types de fichiers pouvant être traités par Shtml.exe que vous souhaitez traiter. Cette opération limite davantage le nombre de types de fichiers HTML ou à base de HTML pouvant être traités par Shtml.exe.</P>
+			<p><A NAME="apndx03.doc-1113"></A>Utilisez la variable <I>RunTimeFileExtensions</I><B> </B>pour spÃ©cifier les types de fichiers pouvant Ãªtre traitÃ©s par Shtml.exe que vous souhaitez traiter. Cette opÃ©ration limite davantage le nombre de types de fichiers HTML ou Ã  base de HTML pouvant Ãªtre traitÃ©s par Shtml.exe.</P>
 
-			<p><I>RunTimeFileExtensions</I><B> </B>doit être suivie d'une liste des extensions de noms de fichiers autorisées. Chaque extension doit commencer par un point, les extensions ne doivent pas être séparées par un espace ou tout autre séparateur (exemple&nbsp;: <B>.htm.shtm.htz</B>). Notez que dans cet exemple, l'extension .htz doit être connectée à l'une des  extensions autorisées dans le fichier de configuration du serveur Web.</P>
+			<p><I>RunTimeFileExtensions</I><B> </B>doit Ãªtre suivie d'une liste des extensions de noms de fichiers autorisÃ©es. Chaque extension doit commencer par un point, les extensions ne doivent pas Ãªtre sÃ©parÃ©es par un espace ou tout autre sÃ©parateur (exemple&nbsp;: <B>.htm.shtm.htz</B>). Notez que dans cet exemple, l'extension .htz doit Ãªtre connectÃ©e Ã  l'une des  extensions autorisÃ©es dans le fichier de configuration du serveur Web.</P>
 
-			<p>Si la variable <I>RunTimeFileExtensions</I> n'est pas spécifiée, Shtml.exe traite uniquement les fichiers dont les extensions sont .htm et .html. La variable <I>RunTimeFileExtensions </I>n'existe pas dans les versions des extensions serveur FrontPage antérieures à 3.0.2.1330.</P>
+			<p>Si la variable <I>RunTimeFileExtensions</I> n'est pas spÃ©cifiÃ©e, Shtml.exe traite uniquement les fichiers dont les extensions sont .htm et .html. La variable <I>RunTimeFileExtensions </I>n'existe pas dans les versions des extensions serveur FrontPage antÃ©rieures Ã  3.0.2.1330.</P>
 
-			<p>Pour les serveurs IIS versions 4.0 et ultérieure, les extensions serveur FrontPage obtiennent les valeurs par défaut de la variable <I>RunTimeFileExtensions</I> à partir du ScriptMap global, et les paramètres de ScriptMap pour chaque serveur virtuel à partir de la métabase.</P>
+			<p>Pour les serveurs IIS versions 4.0 et ultÃ©rieure, les extensions serveur FrontPage obtiennent les valeurs par dÃ©faut de la variable <I>RunTimeFileExtensions</I> Ã  partir du ScriptMap global, et les paramÃ¨tres de ScriptMap pour chaque serveur virtuel Ã  partir de la mÃ©tabase.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1117"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1117"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=21% align="center"><B>.htm.html</B></TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">n</TD>
-						<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">n</TD>
 					</TR>
 					
@@ -1974,30 +1974,30 @@
 
 			<p><A NAME="apndx03.doc-1118"></A><A NAME="ScriptLanguage"></A><B>ScriptLanguage </B></P>
 
-			<p>Cette variable permet de définir le langage des scripts générés par les extensions serveur FrontPage pour mettre en oeuvre les paramètres de validation de données qu'un auteur a appliqués à des champs de formulaire. Les paramètres valides sont les suivants&nbsp;: <B>VBScript</B>, <B>JavaScript</B> ou <B>aucun</B>.</P>
+			<p>Cette variable permet de dÃ©finir le langage des scripts gÃ©nÃ©rÃ©s par les extensions serveur FrontPage pour mettre en oeuvre les paramÃ¨tres de validation de donnÃ©es qu'un auteur a appliquÃ©s Ã  des champs de formulaire. Les paramÃ¨tres valides sont les suivants&nbsp;: <B>VBScript</B>, <B>JavaScript</B> ou <B>aucun</B>.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1119"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1119"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=21% align="center"><B>aucun</B></TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=37% align="left">vti_scriptlanguage</TD>
 					</TR>
 					
@@ -2021,30 +2021,30 @@
 
 			<p><A NAME="apndx03.doc-1120"></A><A NAME="SendMailCommand"></A><B>SendMailCommand </B></P>
 
-			<p>Cette variable permet de définir le nom du programme vers lequel vous souhaitez rediriger un courrier électronique. En règle générale, il s'agit du programme sendmail, mais il peut s'agir de tout autre programme. Avant d'appeler la commande, toutes les occurrences de «&nbsp;%r&nbsp;» sont remplacées par le destinataire du message. Le signe de pourcentage suivi d'un autre caractère est remplacé par ce caractère.</P>
+			<p>Cette variable permet de dÃ©finir le nom du programme vers lequel vous souhaitez rediriger un courrier Ã©lectronique. En rÃ¨gle gÃ©nÃ©rale, il s'agit du programme sendmail, mais il peut s'agir de tout autre programme. Avant d'appeler la commande, toutes les occurrences de Â«&nbsp;%r&nbsp;Â» sont remplacÃ©es par le destinataire du message. Le signe de pourcentage suivi d'un autre caractÃ¨re est remplacÃ© par ce caractÃ¨re.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1121"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1121"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=21% align="center"><B>&quot;&quot;</B></TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">n</TD>
 					</TR>
 					
@@ -2068,7 +2068,7 @@
 
 			<p><A NAME="apndx03.doc-1122"></A><A NAME="SMTPHost"></A><B>SMTPHost</B></P>
 
-			<p>La variable <I>SMTPHost</I> correspond au nom ou à l'adresse IP d'un hôte exécutant un démon SMTP, tel que sendmail sous UNIX. Lorsqu'un visiteur de site soumet un formulaire dont les résultats doivent être envoyés par courrier électronique, les extensions serveur FrontPage se connectent au démon SMTP pour transmettre le message. Par défaut, FrontPage suppose que le démon est en relation avec le port 25 (port standard pour SMTP) mais vous pouvez écraser cette configuration en ajoutant «&nbsp;:xx&nbsp:» au nom, xx représentant le port à utiliser. En règle générale, vous devez définir l'une ou l'autre des variables <I>SMTPHost</I> et <I>SendmailCommand </I>, mais pas les deux, car la variable <I>SendmailCommand </I>est prioritaire sur <I>SMTPHost</I>. </P>
+			<p>La variable <I>SMTPHost</I> correspond au nom ou Ã  l'adresse IP d'un hÃ´te exÃ©cutant un dÃ©mon SMTP, tel que sendmail sous UNIX. Lorsqu'un visiteur de site soumet un formulaire dont les rÃ©sultats doivent Ãªtre envoyÃ©s par courrier Ã©lectronique, les extensions serveur FrontPage se connectent au dÃ©mon SMTP pour transmettre le message. Par dÃ©faut, FrontPage suppose que le dÃ©mon est en relation avec le port 25 (port standard pour SMTP) mais vous pouvez Ã©craser cette configuration en ajoutant Â«&nbsp;:xx&nbsp:Â» au nom, xx reprÃ©sentant le port Ã  utiliser. En rÃ¨gle gÃ©nÃ©rale, vous devez dÃ©finir l'une ou l'autre des variables <I>SMTPHost</I> et <I>SendmailCommand </I>, mais pas les deux, car la variable <I>SendmailCommand </I>est prioritaire sur <I>SMTPHost</I>. </P>
 
 			<p>Exemple&nbsp;: <B>mail.example.microsoft.com</B>, <B>test:10000</B>, <B>127.0.0.1</B></P>
 
@@ -2077,23 +2077,23 @@
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1124"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1124"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=21% align="center"><B>&quot;&quot;</B></TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">n</TD>
 					</TR>
 					
@@ -2117,32 +2117,32 @@
 
 			<p><A NAME="apndx03.doc-1125"></A><A NAME="TextMemory"></A><B>TextMemory</B></P>
 
-			<p>Si vous utilisez le système de recherche WAIS standard, la configuration de la variable <I>TextMemory</I> avec la valeur <B>0</B> désactive l'indexation du texte intégral du site Web. Une valeur de variable différente de 0 permet de spécifier le nombre de méga-octets de mémoire RAM utilisés par les extensions serveur lors de l'indexation du texte pour les tables de hachage et autres structures de données. </P>
+			<p>Si vous utilisez le systÃ¨me de recherche WAIS standard, la configuration de la variable <I>TextMemory</I> avec la valeur <B>0</B> dÃ©sactive l'indexation du texte intÃ©gral du site Web. Une valeur de variable diffÃ©rente de 0 permet de spÃ©cifier le nombre de mÃ©ga-octets de mÃ©moire RAM utilisÃ©s par les extensions serveur lors de l'indexation du texte pour les tables de hachage et autres structures de donnÃ©es. </P>
 
-			<p>Pour les sites Web de moins de 500 pages, définissez la valeur de la variable <I>TextMemory</I> à <B>1</B>. Pour les sites Web comprenant entre 500 et 5000 pages, choisissez la valeur <B>2</B>. Pour les sites Web de plus de 5000 pages, choisissez <B>4</B>.</P>
+			<p>Pour les sites Web de moins de 500 pages, dÃ©finissez la valeur de la variable <I>TextMemory</I> Ã  <B>1</B>. Pour les sites Web comprenant entre 500 et 5000 pages, choisissez la valeur <B>2</B>. Pour les sites Web de plus de 5000 pages, choisissez <B>4</B>.</P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1127"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1127"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=21% align="center"><B>1</B></TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">vti_textmemory</TD>
 					</TR>
 				
@@ -2166,30 +2166,30 @@
 
 			<p><A NAME="apndx03.doc-1128"></A><A NAME="UpperCaseTags"></A><B>UpperCaseTags </B></P>
 
-			<p>Lorsque la variable <I>UpperCaseTags</I> est définie à <B>Y</B> ou à une valeur autre que 0, les extensions serveur convertissent toutes les balises HTML en lettres majuscules lors de la remise en forme des pages HTML. </P>
+			<p>Lorsque la variable <I>UpperCaseTags</I> est dÃ©finie Ã  <B>Y</B> ou Ã  une valeur autre que 0, les extensions serveur convertissent toutes les balises HTML en lettres majuscules lors de la remise en forme des pages HTML. </P>
 
 				<p class=4>&nbsp;</p>
 
 				<TABLE cols=4 border="1" width=376>
 				
 					<TR VALIGN="top">
-						<TD class=TT width=23%><A NAME="apndx03.doc-1129"></A><B>Valeur par défaut</B></TD>
+						<TD class=TT width=23%><A NAME="apndx03.doc-1129"></A><B>Valeur par dÃ©faut</B></TD>
 						<TD class=TT width=21% align="center"><B>0</B></TD>
-						<TD class=TT width=19%><B>Définition globale&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition globale&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs Windows&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par serveur virtuel&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par serveur virtuel&nbsp;?</B></TD>
 						<TD class=TT width=37% align="center">o</TD>
 					</TR>
 					
 					<TR VALIGN="top">
 						<TD class=TT width=23%><B>Disponible sur les serveurs UNIX&nbsp;?</B></TD>
 						<TD class=TT width=21% align="center">o</TD>
-						<TD class=TT width=19%><B>Définition par sous-site Web&nbsp;?</B></TD>
+						<TD class=TT width=19%><B>DÃ©finition par sous-site Web&nbsp;?</B></TD>
 						<TD class=TT width=37% align="left">vti_uppercasetags</TD>
 					</TR>
 				
@@ -2209,7 +2209,7 @@
 
 	<TR>
 	    
-	    <TD width="325" valign="top"><A HREF="apndxtoc.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></A></font></TD>
+	    <TD width="325" valign="top"><A HREF="apndxtoc.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÃ‰CÃ‰DENT&nbsp;</b></A></font></TD>
 	    <TD width="325" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
 	   
 	</TR>
@@ -2222,9 +2222,9 @@
 	
 	<TR>
 	    
-	    <TD colspan="2" width="650" valign="top">Dernière mise à jour&nbsp;: novembre 1998
+	    <TD colspan="2" width="650" valign="top">DerniÃ¨re mise Ã  jour&nbsp;: novembre 1998
 		<BR>
-		<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+		<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits rÃ©servÃ©s. Conditions d'utilisation.</A></TD>
 	    
 	</TR>
 	

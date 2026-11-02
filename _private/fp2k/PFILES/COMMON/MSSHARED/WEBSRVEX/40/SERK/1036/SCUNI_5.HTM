@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+ï»¿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <HTML>
 
 
@@ -7,7 +7,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
 
-<TITLE>Paramètres des fichiers d'accès</TITLE>
+<TITLE>ParamÃ¨tres des fichiers d'accÃ¨s</TITLE>
 
 <LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
 </HEAD>
@@ -53,23 +53,23 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 
 		<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
 	
-		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous UNIX</font></b></font>
+		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">SÃ©curitÃ© sous UNIX</font></b></font>
 
 <HR>
 
-			<A NAME="accessfilesettings"></A><P><A HREF="scuni_4.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;5 sur 10&nbsp;</sup></b></font><A HREF="scuni_6.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;Paramètres des fichiers d'accès</FONT>  <p><A NAME="scunix.doc-1041"></A>FrontPage utilise les fichiers d'accès pour ajouter des administrateurs, des auteurs et des visiteurs de sites Web FrontPage étendus disposant des autorisations appropriées à la liste des comptes du serveur Web, et pour protéger le contenu et les programmes des sites FrontPage étendus.</p>
+			<A NAME="accessfilesettings"></A><P><A HREF="scuni_4.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;5 sur 10&nbsp;</sup></b></font><A HREF="scuni_6.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;ParamÃ¨tres des fichiers d'accÃ¨s</FONT>  <p><A NAME="scunix.doc-1041"></A>FrontPage utilise les fichiers d'accÃ¨s pour ajouter des administrateurs, des auteurs et des visiteurs de sites Web FrontPage Ã©tendus disposant des autorisations appropriÃ©es Ã  la liste des comptes du serveur Web, et pour protÃ©ger le contenu et les programmes des sites FrontPage Ã©tendus.</p>
 
-			<p>FrontPage crée le répertoire _vti_pvt pour le site Web racine et pour chaque sous-site Web. Sur chaque site Web FrontPage étendu disposant d'autorisations uniques, ce répertoire contient les deux fichiers suivants&nbsp;: 
+			<p>FrontPage crÃ©e le rÃ©pertoire _vti_pvt pour le site Web racine et pour chaque sous-site Web. Sur chaque site Web FrontPage Ã©tendu disposant d'autorisations uniques, ce rÃ©pertoire contient les deux fichiers suivants&nbsp;: 
 
 <UL>
-					<LI class=LB1>service.pwd contient la liste des utilisateurs et des mots de passe codés pour le site Web FrontPage étendu.
+					<LI class=LB1>service.pwd contient la liste des utilisateurs et des mots de passe codÃ©s pour le site Web FrontPage Ã©tendu.
 
 	<LI class=LB1>service.grp contient la liste des groupes (un groupe d'auteurs et un groupe d'administrateurs) et des utilisateurs qui les composent.
 </UL>
 				
 			<P class=4>&nbsp;</P>	
 
-			<p>Ces fichiers n'existent pas sur les serveurs Netscape, où vous trouverez les fichiers de mots de passe suivants&nbsp;: 
+			<p>Ces fichiers n'existent pas sur les serveurs Netscape, oÃ¹ vous trouverez les fichiers de mots de passe suivants&nbsp;: 
 
 <UL>
 					<LI class=LB1>administrators.pwd pour les administrateurs,
@@ -81,32 +81,32 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 				
 			<P class=4>&nbsp;</P>	
 
-			<p>Un fichier d'accès résidant dans le répertoire _vti_bin contrôle l'accès au programme de navigation de FrontPage, shtml.exe. Si tous les utilisateurs sont autorisés à naviguer sur le site, cela est indiqué dans le fichier d'accès. Sinon, le fichier d'accès pointe sur la liste des utilisateurs et des groupes disposant d'autorisations de navigation. Un fichier d'accès distinct se trouvant dans le répertoire _vti_adm définit les autorisations POST pour le programme d'administration admin.exe. Un troisième fichier d'accès dans le répertoire _vti_aut définit les autorisations POST sur le programme des opérations d'auteur, author.exe.</p>
+			<p>Un fichier d'accÃ¨s rÃ©sidant dans le rÃ©pertoire _vti_bin contrÃ´le l'accÃ¨s au programme de navigation de FrontPage, shtml.exe. Si tous les utilisateurs sont autorisÃ©s Ã  naviguer sur le site, cela est indiquÃ© dans le fichier d'accÃ¨s. Sinon, le fichier d'accÃ¨s pointe sur la liste des utilisateurs et des groupes disposant d'autorisations de navigation. Un fichier d'accÃ¨s distinct se trouvant dans le rÃ©pertoire _vti_adm dÃ©finit les autorisations POST pour le programme d'administration admin.exe. Un troisiÃ¨me fichier d'accÃ¨s dans le rÃ©pertoire _vti_aut dÃ©finit les autorisations POST sur le programme des opÃ©rations d'auteur, author.exe.</p>
 
-			<p><A NAME="scunix.doc-1050"></A>Quand vous utilisez la commande <B>Autorisations</B> ou <B>Sécurité</B> à partir du client FrontPage pour autoriser un utilisateur à naviguer sur un site Web FrontPage étendu, un compte est affecté à cet utilisateur sur le serveur Web. Cela implique l'ajout des nom et mot de passe de l'utilisateur au fichier service.pwd (qui s'appelle users.pwd sur les serveurs Netscape) sur lequel pointe le fichier d'accès du répertoire _vti_bin. Par ailleurs, lorsqu'une restriction d'adresse IP est définie sur une autorisation de navigation sur un site Web FrontPage étendu, elle est ajoutée au fichier d'accès du répertoire _vti_bin.</p>
+			<p><A NAME="scunix.doc-1050"></A>Quand vous utilisez la commande <B>Autorisations</B> ou <B>SÃ©curitÃ©</B> Ã  partir du client FrontPage pour autoriser un utilisateur Ã  naviguer sur un site Web FrontPage Ã©tendu, un compte est affectÃ© Ã  cet utilisateur sur le serveur Web. Cela implique l'ajout des nom et mot de passe de l'utilisateur au fichier service.pwd (qui s'appelle users.pwd sur les serveurs Netscape) sur lequel pointe le fichier d'accÃ¨s du rÃ©pertoire _vti_bin. Par ailleurs, lorsqu'une restriction d'adresse IP est dÃ©finie sur une autorisation de navigation sur un site Web FrontPage Ã©tendu, elle est ajoutÃ©e au fichier d'accÃ¨s du rÃ©pertoire _vti_bin.</p>
 
-			<p>Quand vous autorisez un utilisateur à effectuer des opérations d'auteur sur un site Web FrontPage étendu, un compte lui est affecté sur le serveur Web. Cela implique l'ajout des nom et mot de passe de l'utilisateur au fichier service.pwd et au groupe des auteurs du fichier service.grp sur lesquels pointent les fichiers d'accès stockés dans les répertoires _vti_bin et _vti_aut. L'utilisateur peut alors envoyer des requêtes HTTP POST à author.exe et utiliser le programme de navigation shtml.exe. (Le processus est identique sur les serveurs Netscape.)</p>
+			<p>Quand vous autorisez un utilisateur Ã  effectuer des opÃ©rations d'auteur sur un site Web FrontPage Ã©tendu, un compte lui est affectÃ© sur le serveur Web. Cela implique l'ajout des nom et mot de passe de l'utilisateur au fichier service.pwd et au groupe des auteurs du fichier service.grp sur lesquels pointent les fichiers d'accÃ¨s stockÃ©s dans les rÃ©pertoires _vti_bin et _vti_aut. L'utilisateur peut alors envoyer des requÃªtes HTTP POST Ã  author.exe et utiliser le programme de navigation shtml.exe. (Le processus est identique sur les serveurs Netscape.)</p>
 
-			<p>Quand vous autorisez un utilisateur à administrer un site Web FrontPage étendu, un compte lui est affecté sur le serveur Web. Cela implique l'ajout des nom et mot de passe de l'utilisateur au fichier service.pwd et au groupe des administrateurs du fichier service.grp sur lesquels pointent les fichiers d'accès stockés dans les répertoires _vti_bin , _vti_aut et _vti_adm. L'utilisateur peut alors envoyer des requêtes HTTP POST à admin.exe, author.exe et shtml.exe. (Le processus est identique sur les serveurs Netscape.)</p>
+			<p>Quand vous autorisez un utilisateur Ã  administrer un site Web FrontPage Ã©tendu, un compte lui est affectÃ© sur le serveur Web. Cela implique l'ajout des nom et mot de passe de l'utilisateur au fichier service.pwd et au groupe des administrateurs du fichier service.grp sur lesquels pointent les fichiers d'accÃ¨s stockÃ©s dans les rÃ©pertoires _vti_bin , _vti_aut et _vti_adm. L'utilisateur peut alors envoyer des requÃªtes HTTP POST Ã  admin.exe, author.exe et shtml.exe. (Le processus est identique sur les serveurs Netscape.)</p>
 
-			<p>Le jeu de fichiers d'accès d'un site Web FrontPage étendu est présenté dans les deux tableaux suivants.</P>
+			<p>Le jeu de fichiers d'accÃ¨s d'un site Web FrontPage Ã©tendu est prÃ©sentÃ© dans les deux tableaux suivants.</P>
 			
 			<P class=4>&nbsp;</P>	
 			
-			<P class=TTL>Tableau 1 Fichiers d'accès et autorisations de fichiers UNIX pour le contenu d'un site Web FrontPage étendu</P>
+			<P class=TTL>Tableau 1 Fichiers d'accÃ¨s et autorisations de fichiers UNIX pour le contenu d'un site Web FrontPage Ã©tendu</P>
 
 			<p><A NAME="scunix.doc-1054"></A></P>
 
 				<TABLE cellspacing="0" cellpadding="4" rules="rows" frame="void">
 
 					<TR VALIGN="top">
-						<TH>Répertoires ou contenu du site Web</TH>
-						<TH>Liste d'accès</TH>
+						<TH>RÃ©pertoires ou contenu du site Web</TH>
+						<TH>Liste d'accÃ¨s</TH>
 					</TR>
 
 					<TR VALIGN="top">
 						<TD class=TT>site Web racine <P class=4></P>Exemple :<BR> \ </TD>
-						<TD class=TT><B>Liste d'accès au site Web racine</B><BR>
+						<TD class=TT><B>Liste d'accÃ¨s au site Web racine</B><BR>
 visiteurs (GET, POST)<BR>
 auteurs (GET, POST)<BR>
 administrateurs (GET, POST)<BR>
@@ -114,8 +114,8 @@ UNIX : rwxr-xr-x uid/gid</TD>
 					</TR>
 
 					<TR VALIGN="top">
-						<TD class=TT>fichiers du site du répertoire racine<P class=4></P>Exemple : <BR>default.htm<BR> logo.gif<BR> guestbook.htm<BR> <I>etc.</I></TD>
-						<TD class=TT><B>Liste d'accès par défaut</B><BR>
+						<TD class=TT>fichiers du site du rÃ©pertoire racine<P class=4></P>Exemple : <BR>default.htm<BR> logo.gif<BR> guestbook.htm<BR> <I>etc.</I></TD>
+						<TD class=TT><B>Liste d'accÃ¨s par dÃ©faut</B><BR>
 visiteurs (GET, POST)<BR>
 auteurs (GET, POST)<BR>
 administrateurs (GET, POST)<BR>
@@ -123,8 +123,8 @@ UNIX : rwxr-xr-x uid/gid</TD>
 					</TR>
 
 					<TR VALIGN="top">
-						<TD class=TT>sous-répertoire et fichiers du site<P class=4></P>Exemple: <BR>\subdir1 <BR>&nbsp;&nbsp;&nbsp;content.htm <BR>&nbsp;&nbsp;&nbsp;other.gif <BR>&nbsp;&nbsp;&nbsp;<I>etc.</I></TD>
-						<TD class=TT><B>Liste d'accès par défaut</B><BR>
+						<TD class=TT>sous-rÃ©pertoire et fichiers du site<P class=4></P>Exemple: <BR>\subdir1 <BR>&nbsp;&nbsp;&nbsp;content.htm <BR>&nbsp;&nbsp;&nbsp;other.gif <BR>&nbsp;&nbsp;&nbsp;<I>etc.</I></TD>
+						<TD class=TT><B>Liste d'accÃ¨s par dÃ©faut</B><BR>
 visiteurs (GET, POST)<BR>
 auteurs (GET, POST)<BR>
 administrateurs (GET, POST)<BR>
@@ -132,10 +132,10 @@ UNIX : rwxr-xr-x uid/gid</TD>
 					</TR>
 
 					<TR VALIGN="top">
-						<TD class=TT>sous-répertoire exécutable et fichiers du site<P class=4></P>Exemple: <BR>\executable-subdir1<BR>
+						<TD class=TT>sous-rÃ©pertoire exÃ©cutable et fichiers du site<P class=4></P>Exemple: <BR>\executable-subdir1<BR>
   &nbsp;&nbsp;&nbsp;program.exe<BR>
    &nbsp;&nbsp;&nbsp;etc.</TD>
-						<TD class=TT><B>Liste d'accès aux exécutables<BR>
+						<TD class=TT><B>Liste d'accÃ¨s aux exÃ©cutables<BR>
 </B>visiteurs (GET, POST)<BR>
 auteurs (GET, POST)<BR>
 administrateurs (GET, POST)<BR>
@@ -143,9 +143,9 @@ UNIX : rwxr-xr-x uid/gid</TD>
 					</TR>
 
 					<TR VALIGN="top">
-						<TD class=TT>répertoire des résultats et fichiers du site<P class=4></P>Exemple :<BR> \guestbook_results <BR>
+						<TD class=TT>rÃ©pertoire des rÃ©sultats et fichiers du site<P class=4></P>Exemple :<BR> \guestbook_results <BR>
    form_results.htm</TD>
-						<TD class=TT><B>Liste d'accès au répertoire des résultats<BR>
+						<TD class=TT><B>Liste d'accÃ¨s au rÃ©pertoire des rÃ©sultats<BR>
 </B>visiteurs (GET, POST)<BR>
 auteurs (GET, POST)<BR>
 administrateurs (GET, POST)<BR>
@@ -155,7 +155,7 @@ UNIX : rwxr-xr-x uid/gid</TD>
 
 			<P class=6>&nbsp;</P>
 
-			<P class=TTL>Tableau 2 Fichiers d'accès et autorisations de fichiers UNIX pour les répertoires _vti créés par FrontPage</P>
+			<P class=TTL>Tableau 2 Fichiers d'accÃ¨s et autorisations de fichiers UNIX pour les rÃ©pertoires _vti crÃ©Ã©s par FrontPage</P>
 
 			<p><A NAME="scunix.doc-1055"></A></P>
 
@@ -164,14 +164,14 @@ UNIX : rwxr-xr-x uid/gid</TD>
 			<TABLE cellspacing="0" cellpadding="4" rules="rows" frame="void">
 
 					<TR VALIGN="top">
-						<TH>Répertoires ou contenu du site Web</TH>
-						<TH>Liste d'accès</TH>
+						<TH>RÃ©pertoires ou contenu du site Web</TH>
+						<TH>Liste d'accÃ¨s</TH>
 					</TR>
 
 									
 				<TR VALIGN="top">
 					<TD class=TT>site Web racine </TD>
-					<TD class=TT><B>Liste d'accès à l'exécution</B><BR>
+					<TD class=TT><B>Liste d'accÃ¨s Ã  l'exÃ©cution</B><BR>
 visiteurs (GET, POST)<BR>
 auteurs (GET, POST)<BR>
 administrateurs (GET, POST)<BR>
@@ -181,7 +181,7 @@ UNIX : rwxr-xr-x uid/gid</TD>
 				<TR VALIGN="top">
 					<TD class=TT>\_vti_bin<BR>&nbsp;
   					shtml.exe</TD>
-					<TD class=TT><B>Liste d'accès à l'exécution</B><BR>
+					<TD class=TT><B>Liste d'accÃ¨s Ã  l'exÃ©cution</B><BR>
 visiteurs (GET, POST)<BR>
 auteurs (GET, POST)<BR>
 administrateurs (GET, POST)<BR>
@@ -190,7 +190,7 @@ UNIX : rwxr-xr-x uid/gid</TD>
 
 				<TR VALIGN="top">
 					<TD class=TT>\_vti_bin\_vti_aut<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author.exe</TD>
-					<TD class=TT><B>Liste d'accès des auteurs</B><BR>
+					<TD class=TT><B>Liste d'accÃ¨s des auteurs</B><BR>
 <I>pas de visiteurs </I><BR>
 auteurs (GET, POST)<BR>
 administrateurs (GET, POST)<BR>
@@ -199,7 +199,7 @@ UNIX : rwxr-xr-x uid/gid</TD>
 
 				<TR VALIGN="top">
 					<TD class=TT>\_vti_bin\_vti_adm<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;admin.exe</TD>
-					<TD class=TT><B>Liste d'accès des administrateurs<BR>
+					<TD class=TT><B>Liste d'accÃ¨s des administrateurs<BR>
 </B><I>pas de visiteurs</I><BR>
 <I>pas d'auteurs</I><BR>
 administrateurs (GET, POST)<BR>
@@ -208,12 +208,12 @@ UNIX : rwxr-xr-x uid/gid</TD>
 
 				<TR VALIGN="top">
 					<TD class=TT>\_vti_log<BR>
- &nbsp;&nbsp;<I>journaux des opérations d'auteur<BR>
+ &nbsp;&nbsp;<I>journaux des opÃ©rations d'auteur<BR>
 </I>\_vti_txt<BR>
 &nbsp;&nbsp;<I>index de texte<BR>
 </I>\_vti_pvt<BR>
 &nbsp;&nbsp;<I>configuration</I></TD>
-					<TD class=TT><B>Liste d'accès divers<BR>
+					<TD class=TT><B>Liste d'accÃ¨s divers<BR>
 </B><I>pas de visiteurs</I><B><BR>
 </B>auteurs (GET, POST)<BR>
 administrateurs (GET, POST)<BR>
@@ -228,7 +228,7 @@ UNIX : rwxr-xr-x uid/gid</TD>
 		<!--FAR-RIGHT COLUMN SECTION ART START-->
 	
 		<TD rowspan="20" nowrap>
-			<img SRC="secart.gif" align="center" alt="Image de la section Sécurité">
+			<img SRC="secart.gif" align="center" alt="Image de la section SÃ©curitÃ©">
 		</TD>
 
 		<!--FAR-RIGHT COLUMN SECTION ART END-->
@@ -238,12 +238,12 @@ UNIX : rwxr-xr-x uid/gid</TD>
 	<!--LEFT-NAVIGATION MENUS START-->
 
 	<TR>
-		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">PrÃ©sentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
 		<TD width="20" nowrap></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">SÃ©curitÃ©&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -263,7 +263,7 @@ UNIX : rwxr-xr-x uid/gid</TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink" href="scwin.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous <br>&nbsp;&nbsp;Windows NT</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink" href="scwin.htm"><font color="#000000">&nbsp;&nbsp;SÃ©curitÃ© sous <br>&nbsp;&nbsp;Windows NT</font></A></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -273,7 +273,7 @@ UNIX : rwxr-xr-x uid/gid</TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;SÃ©curitÃ© sous UNIX</font></A></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -341,9 +341,9 @@ UNIX : rwxr-xr-x uid/gid</TD>
 
 	<TR>
     	<TD width="170" valign="top">&nbsp;</TD>
-    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+    	<TD colspan="2" width="475" valign="top">DerniÃ¨re mise Ã  jour : novembre 1998
 	<BR>
-	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits rÃ©servÃ©s. Informations lÃ©gales.</A></TD>
    	</TR>
 	
 </TABLE>

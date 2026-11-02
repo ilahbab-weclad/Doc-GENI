@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+ï»¿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <HTML>
 
 
@@ -10,7 +10,7 @@
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
 
 <TITLE>
-Activation de l'administration à distance sous IIS 4.0 et 5.0</TITLE>
+Activation de l'administration Ã  distance sous IIS 4.0 et 5.0</TITLE>
 
 <LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
 </HEAD>
@@ -54,101 +54,101 @@ Activation de l'administration à distance sous IIS 4.0 et 5.0</TITLE>
 	<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
 	
 
-    <TD rowspan="21" width="460"><a name="top"></a><p><font color="#666699"><b><font size="+1">Administration à distance</font></b></font>
+    <TD rowspan="21" width="460"><a name="top"></a><p><font color="#666699"><b><font size="+1">Administration Ã  distance</font></b></font>
 
 <HR>
 
-<H3><span class=FR><SUP><A NAME="activatingremoteadministrationiis4050"></A></SUP></span>Activation de l'administration à distance sous IIS&nbsp;4.0 et 5.0</H3>
+<H3><span class=FR><SUP><A NAME="activatingremoteadministrationiis4050"></A></SUP></span>Activation de l'administration Ã  distance sous IIS&nbsp;4.0 et 5.0</H3>
 
-	<p><A NAME="adfprema.doc-1035"></A>Que vous utilisiez l'utilitaire de ligne de commande d'administration à distance <B>Fpremadm</B> ou les formulaires d'administration HTML pour administrer à distance un serveur IIS&nbsp;4.0 ou ultérieur, vous devez activer les formulaires d'administration selon la méthode décrite dans cette rubrique. </P>
+	<p><A NAME="adfprema.doc-1035"></A>Que vous utilisiez l'utilitaire de ligne de commande d'administration Ã  distance <B>Fpremadm</B> ou les formulaires d'administration HTML pour administrer Ã  distance un serveur IIS&nbsp;4.0 ou ultÃ©rieur, vous devez activer les formulaires d'administration selon la mÃ©thode dÃ©crite dans cette rubrique. </P>
 
-	<p><A NAME="adfprema.doc-1036"></A>Vous devez exécuter les formulaires d'administration HTML sur un port sécurisé. L'utilisation d'un port sécurisé n'est possible que si un certificat de sécurité est installé. Si vous ne possédez pas un certificat de sécurité avant d'activer les formulaires d'administration, utilisez l'application Gestionnaire de clés, pour faire une demande de certificat de sécurité, soumettez la requête à un responsable de clés, puis utilisez le Gestionnaire de clés pour installer le certificat renvoyé par le responsable de clés. La documentation IIS contient plus de détails sur ce processus.</P>
+	<p><A NAME="adfprema.doc-1036"></A>Vous devez exÃ©cuter les formulaires d'administration HTML sur un port sÃ©curisÃ©. L'utilisation d'un port sÃ©curisÃ© n'est possible que si un certificat de sÃ©curitÃ© est installÃ©. Si vous ne possÃ©dez pas un certificat de sÃ©curitÃ© avant d'activer les formulaires d'administration, utilisez l'application Gestionnaire de clÃ©s, pour faire une demande de certificat de sÃ©curitÃ©, soumettez la requÃªte Ã  un responsable de clÃ©s, puis utilisez le Gestionnaire de clÃ©s pour installer le certificat renvoyÃ© par le responsable de clÃ©s. La documentation IIS contient plus de dÃ©tails sur ce processus.</P>
 
-	<p>Une fois que vous disposez d'un certificat de sécurité, vous pouvez activer les formulaires d'administration HTML sous forme de site Web IIS distinct ou sous forme de répertoire virtuel sur un site Web existant. L'avantage d'utiliser un site Web distinct est qu'une adresse IP séparée rend la découverte des formulaires beaucoup plus difficile. En outre, un site séparé permet l'activation d'autres paramètres de sécurité comme des numéros de port non standard distincts. L'inconvénient d'utiliser un site Web distinct est qu'une adresse IP supplémentaire est nécessaire pour la machine. </P>
+	<p>Une fois que vous disposez d'un certificat de sÃ©curitÃ©, vous pouvez activer les formulaires d'administration HTML sous forme de site Web IIS distinct ou sous forme de rÃ©pertoire virtuel sur un site Web existant. L'avantage d'utiliser un site Web distinct est qu'une adresse IP sÃ©parÃ©e rend la dÃ©couverte des formulaires beaucoup plus difficile. En outre, un site sÃ©parÃ© permet l'activation d'autres paramÃ¨tres de sÃ©curitÃ© comme des numÃ©ros de port non standard distincts. L'inconvÃ©nient d'utiliser un site Web distinct est qu'une adresse IP supplÃ©mentaire est nÃ©cessaire pour la machine. </P>
 
-	<P class=LPROCH><A NAME="adfprema.doc-1038"></A><B>Pour activer les formulaires d'administration HTML pour une utilisation à distance</B>
+	<P class=LPROCH><A NAME="adfprema.doc-1038"></A><B>Pour activer les formulaires d'administration HTML pour une utilisation Ã  distance</B>
 
 <OL>
-		<LI class=LN>Déterminez quel compte (ou groupe de comptes) de machine Windows&nbsp;NT aura accès aux formulaires d'administration HTML.
-<P class=LT1>Ce compte doit faire partie du groupe des administrateurs de la machine. Si nécessaire, créez un compte avec le Gestionnaire des utilisateurs Windows NT. Selon la configuration du compte de la machine, fournir un accès au groupe des administrateurs peut être une meilleure solution que donner un accès à plusieurs comptes individuels de la machine.
-<LI class=LN>Ouvrez Windows Explorer à l'emplacement des formulaires d'administration HTML sur le disque dur, par défaut C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\40\. Sélectionnez le dossier Admisapi, cliquez sur <B>Propriétés</B> dans le menu <B>Fichier</B>, puis cliquez sur <B>Permissions</B> dans l'onglet <B>Sécurité</B>.</LI>
+		<LI class=LN>DÃ©terminez quel compte (ou groupe de comptes) de machine Windows&nbsp;NT aura accÃ¨s aux formulaires d'administration HTML.
+<P class=LT1>Ce compte doit faire partie du groupe des administrateurs de la machine. Si nÃ©cessaire, crÃ©ez un compte avec le Gestionnaire des utilisateurs Windows NT. Selon la configuration du compte de la machine, fournir un accÃ¨s au groupe des administrateurs peut Ãªtre une meilleure solution que donner un accÃ¨s Ã  plusieurs comptes individuels de la machine.
+<LI class=LN>Ouvrez Windows Explorer Ã  l'emplacement des formulaires d'administration HTML sur le disque dur, par dÃ©faut C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\40\. SÃ©lectionnez le dossier Admisapi, cliquez sur <B>PropriÃ©tÃ©s</B> dans le menu <B>Fichier</B>, puis cliquez sur <B>Permissions</B> dans l'onglet <B>SÃ©curitÃ©</B>.</LI>
 
-		<LI class=LN>Dans la boîte de dialogue <B>Permissions - Répertoire</B>, mettez à jour la liste <B>Nom</B> des utilisateurs et groupes autorisés avec les  boutons <B>Ajouter</B> et <B>Supprimer</B>.
-<P class=LT1>Supprimez tous les utilisateurs et groupes non autorisés. Assurez-vous notamment qu'aucun groupe ajouté à la liste ne contient le compte d'accès anonyme  IUSR_<I>machinename</I> et que tous les compte à accès large tels que TOUT LE MONDE sont supprimés.
-<LI class=LN>Dans la liste <B>Nom</B>, tapez le compte SYSTÈME de la machine.
-<P class=LT1>Ce compte est obligatoire pour permettre à IIS d'accéder au fichier pendant le processus de validation de sécurité.
-<LI class=LN>Pour chaque utilisateur ou groupe de la liste <B>Nom</B>, changez <B>Type d'accès</B> en <B>Lecture</B>.</LI>
+		<LI class=LN>Dans la boÃ®te de dialogue <B>Permissions - RÃ©pertoire</B>, mettez Ã  jour la liste <B>Nom</B> des utilisateurs et groupes autorisÃ©s avec les  boutons <B>Ajouter</B> et <B>Supprimer</B>.
+<P class=LT1>Supprimez tous les utilisateurs et groupes non autorisÃ©s. Assurez-vous notamment qu'aucun groupe ajoutÃ© Ã  la liste ne contient le compte d'accÃ¨s anonyme  IUSR_<I>machinename</I> et que tous les compte Ã  accÃ¨s large tels que TOUT LE MONDE sont supprimÃ©s.
+<LI class=LN>Dans la liste <B>Nom</B>, tapez le compte SYSTÃˆME de la machine.
+<P class=LT1>Ce compte est obligatoire pour permettre Ã  IIS d'accÃ©der au fichier pendant le processus de validation de sÃ©curitÃ©.
+<LI class=LN>Pour chaque utilisateur ou groupe de la liste <B>Nom</B>, changez <B>Type d'accÃ¨s</B> en <B>Lecture</B>.</LI>
 
-		<LI class=LN>Cliquez sur  <B>Remplacer les permissions des sous-répertoires</B> et <B>Remplacer les permissions sur les fichiers existants</B>, puis sur <B>OK</B> pour accepter les modifications. Cliquez à nouveau sur <B>OK</B> pour fermer la boîte de dialogue <B>Propriétés</B> du dossier.</LI>
+		<LI class=LN>Cliquez sur  <B>Remplacer les permissions des sous-rÃ©pertoires</B> et <B>Remplacer les permissions sur les fichiers existants</B>, puis sur <B>OK</B> pour accepter les modifications. Cliquez Ã  nouveau sur <B>OK</B> pour fermer la boÃ®te de dialogue <B>PropriÃ©tÃ©s</B> du dossier.</LI>
 
-		<LI class=LN>Démarrez l'application IIS Internet Service Manager, puis ouvrez IIS et les dossiers de la machine.</LI>
+		<LI class=LN>DÃ©marrez l'application IIS Internet Service Manager, puis ouvrez IIS et les dossiers de la machine.</LI>
 
-		<LI class=LN>Cliquez avec le bouton droit de la souris sur le nom de la machine, puis sur <B>Créer un nouveau site</B>.</LI>
+		<LI class=LN>Cliquez avec le bouton droit de la souris sur le nom de la machine, puis sur <B>CrÃ©er un nouveau site</B>.</LI>
 
 		<LI class=LN>Dans le champ <B>Description</B> de l'assistant Nouveau site Web, tapez le nom du site, par exemple, <B>Formulaires d'administration des extensions serveur FrontPage</B>, puis cliquez sur <B>Suivant</B>.</LI>
 
-		<LI class=LN>Sélectionnez l'adresse IP à utiliser pour ce site. L'adresse  IP doit avoir été configurée avant l'exécution de l'assistant. N'utilisez pas le champ <B>Port TCP</B> car les formulaires d'administration HTML ne seront accessibles que par l'intermédiaire d'un port sécurisé. Cliquez sur <B>Suivant</B> pour continuer.</LI>
+		<LI class=LN>SÃ©lectionnez l'adresse IP Ã  utiliser pour ce site. L'adresse  IP doit avoir Ã©tÃ© configurÃ©e avant l'exÃ©cution de l'assistant. N'utilisez pas le champ <B>Port TCP</B> car les formulaires d'administration HTML ne seront accessibles que par l'intermÃ©diaire d'un port sÃ©curisÃ©. Cliquez sur <B>Suivant</B> pour continuer.</LI>
 
-		<LI class=LN>Tapez le chemin d'accès aux fichiers des formulaires d'administration HTML, généralement C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\40\Admisapi, et assurez-vous que la case à cocher <B>Autoriser l'accès anonyme au site</B> est désactivée. Cliquez sur <B>Suivant</B>.</LI>
+		<LI class=LN>Tapez le chemin d'accÃ¨s aux fichiers des formulaires d'administration HTML, gÃ©nÃ©ralement C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\40\Admisapi, et assurez-vous que la case Ã  cocher <B>Autoriser l'accÃ¨s anonyme au site</B> est dÃ©sactivÃ©e. Cliquez sur <B>Suivant</B>.</LI>
 
-		<LI class=LN>Cliquez sur <B>Autoriser l'accès en lecture</B> et <B>Autoriser l'accès en exécution</B> (qui inclut l'accès aux scripts), puis cliquez sur <B>Terminer</B>.</LI>
+		<LI class=LN>Cliquez sur <B>Autoriser l'accÃ¨s en lecture</B> et <B>Autoriser l'accÃ¨s en exÃ©cution</B> (qui inclut l'accÃ¨s aux scripts), puis cliquez sur <B>Terminer</B>.</LI>
 
-		<LI class=LN>Cliquez avec le bouton droit de la souris sur l'icône du nouveau site Web créée dans le volet de gauche.  Celle-ci porte  le nom que vous avez tapé à l'étape&nbsp;9. Cliquez sur <B>Propriétés</B>.</LI>
+		<LI class=LN>Cliquez avec le bouton droit de la souris sur l'icÃ´ne du nouveau site Web crÃ©Ã©e dans le volet de gauche.  Celle-ci porte  le nom que vous avez tapÃ© Ã  l'Ã©tape&nbsp;9. Cliquez sur <B>PropriÃ©tÃ©s</B>.</LI>
 
-		<LI class=LN>Dans l'onglet <B>Site Web</B>, tapez un numéro de port non standard dans le champ <B>Port SSL</B>, par exemple 8234.</LI>
+		<LI class=LN>Dans l'onglet <B>Site Web</B>, tapez un numÃ©ro de port non standard dans le champ <B>Port SSL</B>, par exemple 8234.</LI>
 
-		<LI class=LN>Dans l'onglet <B>Sécurité de l'annuaire</B>, cliquez sur le bouton <B>Communications sécurisées</B>. Activez la case à cocher <B>Requérir un canal sécurisé</B>, puis cliquez sur <B>OK</B>.</LI>
+		<LI class=LN>Dans l'onglet <B>SÃ©curitÃ© de l'annuaire</B>, cliquez sur le bouton <B>Communications sÃ©curisÃ©es</B>. Activez la case Ã  cocher <B>RequÃ©rir un canal sÃ©curisÃ©</B>, puis cliquez sur <B>OK</B>.</LI>
 
-		<LI class=LN>Ajoutez les restrictions d'accès TCP/IP de votre choix.</LI>
+		<LI class=LN>Ajoutez les restrictions d'accÃ¨s TCP/IP de votre choix.</LI>
 
 		<LI class=LN>Cliquez sur <B>OK</B> pour accepter les modifications.
 </OL>
 
 	<p class=4>&nbsp;</p>
 
-	<p>Les formulaires sont désormais utilisables pour une administration à distance avec un URL tel que https://machinename:8234/fpadmin.htm, ou <I>machinename</I> désigne l'adresse IP que vous avez tapée à l'étape&nbsp;5, et 8234 le numéro de port que vous avez entré.</P>
+	<p>Les formulaires sont dÃ©sormais utilisables pour une administration Ã  distance avec un URL tel que https://machinename:8234/fpadmin.htm, ou <I>machinename</I> dÃ©signe l'adresse IP que vous avez tapÃ©e Ã  l'Ã©tape&nbsp;5, et 8234 le numÃ©ro de port que vous avez entrÃ©.</P>
 
-	<p><A NAME="adfprema.doc-1040"></A><B>Pour créer un répertoire virtuel hébergeant les formulaires d'administration HTML sur un site Web existant&nbsp;:</B>
+	<p><A NAME="adfprema.doc-1040"></A><B>Pour crÃ©er un rÃ©pertoire virtuel hÃ©bergeant les formulaires d'administration HTML sur un site Web existant&nbsp;:</B>
 
 <OL>
-		<LI class=LN>Déterminez quel compte (ou groupe de comptes) de machine Windows NT aura accès aux formulaires d 'administration HTML.
-<P class=LT1>Ce compte doit faire partie du groupe des administrateurs de la machine. Si nécessaire, créez un compte avec le Gestionnaire des utilisateurs de Windows NT. Selon la configuration du compte de la machine, fournir un accès au groupe des administrateurs peut s'avérer une meilleure solution que donner accès à plusieurs comptes de machine individuels.
-<LI class=LN>Ouvrez Windows Explorer à l'emplacement des formulaires d'administration HTML sur le disque dur, par défaut C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\40\. Sélectionnez le dossier Admisapi, cliquez sur <B>Propriétés</B> dans le menu <B>Fichier</B>, puis cliquez sur  <B>Permissions</B> dans l'onglet <B>Sécurité</B>.</LI>
+		<LI class=LN>DÃ©terminez quel compte (ou groupe de comptes) de machine Windows NT aura accÃ¨s aux formulaires d 'administration HTML.
+<P class=LT1>Ce compte doit faire partie du groupe des administrateurs de la machine. Si nÃ©cessaire, crÃ©ez un compte avec le Gestionnaire des utilisateurs de Windows NT. Selon la configuration du compte de la machine, fournir un accÃ¨s au groupe des administrateurs peut s'avÃ©rer une meilleure solution que donner accÃ¨s Ã  plusieurs comptes de machine individuels.
+<LI class=LN>Ouvrez Windows Explorer Ã  l'emplacement des formulaires d'administration HTML sur le disque dur, par dÃ©faut C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\40\. SÃ©lectionnez le dossier Admisapi, cliquez sur <B>PropriÃ©tÃ©s</B> dans le menu <B>Fichier</B>, puis cliquez sur  <B>Permissions</B> dans l'onglet <B>SÃ©curitÃ©</B>.</LI>
 
-		<LI class=LN>Dans la boîte de dialogue <B>Permissions - Répertoire</B>, mettez à jour la liste <B>Nom</B> des utilisateurs et groupes autorisés avec les boutons <B>Ajouter</B> et <B>Supprimer</B>.
-<P class=LT1>Supprimez tous les utilisateurs et groupes non autorisés. En particulier, assurez-vous qu'aucun groupe ajouté à la liste ne contient le compte d'accès anonyme IUSR_<I>machinename</I> et que tous les comptes à accès large tels que TOUT LE MONDE sont supprimés.
-<LI class=LN>Dans la liste <B>Nom</B>, tapez le compte SYSTÈME de la machine.
-<P class=LT1>Ce compte est obligatoire pour permettre à IIS d'accéder au fichier pendant le processus de validation de sécurité.
-<LI class=LN>Pour chaque utilisateur ou groupe de la liste <B>Nom</B>, changez <B>Type d'accès</B> en <B>Lecture</B>.<LI class=LN>Cliquez sur <B>Remplacer les permissions des sous-répertoires</B> et <B>Remplacer les permissions sur les fichiers existants</B>, puis cliquez sur <B>OK</B> pour accepter les modifications. Cliquez à nouveau sur <B>OK</B> pour fermer la boîte de dialogue <B>Propriétés</B> du dossier.</LI>
+		<LI class=LN>Dans la boÃ®te de dialogue <B>Permissions - RÃ©pertoire</B>, mettez Ã  jour la liste <B>Nom</B> des utilisateurs et groupes autorisÃ©s avec les boutons <B>Ajouter</B> et <B>Supprimer</B>.
+<P class=LT1>Supprimez tous les utilisateurs et groupes non autorisÃ©s. En particulier, assurez-vous qu'aucun groupe ajoutÃ© Ã  la liste ne contient le compte d'accÃ¨s anonyme IUSR_<I>machinename</I> et que tous les comptes Ã  accÃ¨s large tels que TOUT LE MONDE sont supprimÃ©s.
+<LI class=LN>Dans la liste <B>Nom</B>, tapez le compte SYSTÃˆME de la machine.
+<P class=LT1>Ce compte est obligatoire pour permettre Ã  IIS d'accÃ©der au fichier pendant le processus de validation de sÃ©curitÃ©.
+<LI class=LN>Pour chaque utilisateur ou groupe de la liste <B>Nom</B>, changez <B>Type d'accÃ¨s</B> en <B>Lecture</B>.<LI class=LN>Cliquez sur <B>Remplacer les permissions des sous-rÃ©pertoires</B> et <B>Remplacer les permissions sur les fichiers existants</B>, puis cliquez sur <B>OK</B> pour accepter les modifications. Cliquez Ã  nouveau sur <B>OK</B> pour fermer la boÃ®te de dialogue <B>PropriÃ©tÃ©s</B> du dossier.</LI>
 
-		<LI class=LN>Démarrez l'application IIS Internet Service Manager et ouvrez le dossier IIS et le dossier de la machine.</LI>
+		<LI class=LN>DÃ©marrez l'application IIS Internet Service Manager et ouvrez le dossier IIS et le dossier de la machine.</LI>
 
-		<LI class=LN>Cliquez avec le bouton droit de la souris sur l'icône du site Web qui sera utilisé pour héberger les formulaires d'administration HTML, tel que Site Web par défaut. Cliquez sur <B>Créer un nouveau répertoire virtuel</B> dans le menu contextuel.</LI>
+		<LI class=LN>Cliquez avec le bouton droit de la souris sur l'icÃ´ne du site Web qui sera utilisÃ© pour hÃ©berger les formulaires d'administration HTML, tel que Site Web par dÃ©faut. Cliquez sur <B>CrÃ©er un nouveau rÃ©pertoire virtuel</B> dans le menu contextuel.</LI>
 
-		<LI class=LN>Dans le champ <B>Alias</B> de l'Assistant Nouveau répertoire virtuel, tapez le nom d'alias des formulaires d'administration HTML, comme  <B>fpadmin</B>, puis cliquez sur <B>Suivant</B>.</LI>
+		<LI class=LN>Dans le champ <B>Alias</B> de l'Assistant Nouveau rÃ©pertoire virtuel, tapez le nom d'alias des formulaires d'administration HTML, comme  <B>fpadmin</B>, puis cliquez sur <B>Suivant</B>.</LI>
 
-		<LI class=LN>Entrez le chemin d'accès aux fichiers des formulaires d'administration HTML, généralement C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\40\Admisapi, puis cliquez sur <B>Suivant</B>.</LI>
+		<LI class=LN>Entrez le chemin d'accÃ¨s aux fichiers des formulaires d'administration HTML, gÃ©nÃ©ralement C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\40\Admisapi, puis cliquez sur <B>Suivant</B>.</LI>
 
-		<LI class=LN>Sélectionnez les cases à cocher <B>Autoriser l'accès en lecture</B> et <B>Autoriser l'accès en exécution</B> (qui inclut l'accès aux scripts), puis cliquez sur <B>Terminer</B>.</LI>
+		<LI class=LN>SÃ©lectionnez les cases Ã  cocher <B>Autoriser l'accÃ¨s en lecture</B> et <B>Autoriser l'accÃ¨s en exÃ©cution</B> (qui inclut l'accÃ¨s aux scripts), puis cliquez sur <B>Terminer</B>.</LI>
 
-		<LI class=LN>Cliquez avec  le bouton droit de la souris sur l'icône du nouveau répertoire virtuel Fpadmin, puis cliquez sur <B>Propriétés</B> dans le menu contextuel.</LI>
+		<LI class=LN>Cliquez avec  le bouton droit de la souris sur l'icÃ´ne du nouveau rÃ©pertoire virtuel Fpadmin, puis cliquez sur <B>PropriÃ©tÃ©s</B> dans le menu contextuel.</LI>
 
-		<LI class=LN>Dans l'onglet <B>Sécurité du répertoire</B>, cliquez sur le bouton <B>Modifier</B> de la zone <B>Méthode d'authentification par mot de passe</B>.</LI>
+		<LI class=LN>Dans l'onglet <B>SÃ©curitÃ© du rÃ©pertoire</B>, cliquez sur le bouton <B>Modifier</B> de la zone <B>MÃ©thode d'authentification par mot de passe</B>.</LI>
 
-		<LI class=LN>Assurez-vous que la case à cocher <B>Autoriser les connexions anonymes</B> est désactivée et que l'une des deux cases à cocher <B>Authentification de base</B> ou <B>Stimulation/réponse de Windows</B> est activée, puis cliquez sur <B>OK</B>.</LI>
+		<LI class=LN>Assurez-vous que la case Ã  cocher <B>Autoriser les connexions anonymes</B> est dÃ©sactivÃ©e et que l'une des deux cases Ã  cocher <B>Authentification de base</B> ou <B>Stimulation/rÃ©ponse de Windows</B> est activÃ©e, puis cliquez sur <B>OK</B>.</LI>
 
-		<LI class=LN>Sous <B>Communications sécurisées</B>, cliquez sur <B>Modifier</B>.</LI>
+		<LI class=LN>Sous <B>Communications sÃ©curisÃ©es</B>, cliquez sur <B>Modifier</B>.</LI>
 
-		<LI class=LN>Cliquez sur <B>Exiger un canal sécurisé</B>, puis cliquez sur <B>OK</B>.</LI>
+		<LI class=LN>Cliquez sur <B>Exiger un canal sÃ©curisÃ©</B>, puis cliquez sur <B>OK</B>.</LI>
 
-		<LI class=LN>Ajoutez les restrictions d'accès TCP/IP de votre choix.</LI>
+		<LI class=LN>Ajoutez les restrictions d'accÃ¨s TCP/IP de votre choix.</LI>
 
 		<LI class=LN>Cliquez sur <B>OK</B> pour accepter les modifications.</LI>
 	</OL>
 
 	<p class=4>&nbsp;</p>
 
-	<p><A NAME="adfprema.doc-1041"></A>Les formulaires sont désormais activés pour l'administration à distance avec un URL tel que https://machinename/fpadmin/fpadmin.htm.</P></TD>
+	<p><A NAME="adfprema.doc-1041"></A>Les formulaires sont dÃ©sormais activÃ©s pour l'administration Ã  distance avec un URL tel que https://machinename/fpadmin/fpadmin.htm.</P></TD>
 
 	<!--TOPIC TITLE AND BODY TEXT CELL ENDS-->
 	
@@ -163,12 +163,12 @@ Activation de l'administration à distance sous IIS 4.0 et 5.0</TITLE>
 	<!--LEFT-NAVIGATION MENU STARTS-->
 
 	<TR>
-    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">PrÃ©sentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
     <TD width="20" nowrap></TD>
 	</TR>
 
 	<TR>
-    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="scintro.htm"><font color="#000000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="scintro.htm"><font color="#000000">SÃ©curitÃ©&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
     <TD width="20" nowrap></TD>
 	</TR>
 
@@ -234,7 +234,7 @@ Activation de l'administration à distance sous IIS 4.0 et 5.0</TITLE>
 	</TR>
 
 	<TR>
-    <TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Administration à &nbsp;&nbsp;distance</font></A></TD>
+    <TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Administration Ã  &nbsp;&nbsp;distance</font></A></TD>
     <TD width="20" nowrap></TD>
     <TD></TD>
 	</TR>
@@ -246,7 +246,7 @@ Activation de l'administration à distance sous IIS 4.0 et 5.0</TITLE>
 	</TR>
 
 	<TR>
-    <TD width="150" nowrap><A class="menulink" HREF="adadv.htm"><font color="#000000">&nbsp;&nbsp;Tâches &nbsp;&nbsp;administratives<BR>&nbsp;&nbsp;avancées</font></A></TD>
+    <TD width="150" nowrap><A class="menulink" HREF="adadv.htm"><font color="#000000">&nbsp;&nbsp;TÃ¢ches &nbsp;&nbsp;administratives<BR>&nbsp;&nbsp;avancÃ©es</font></A></TD>
     <TD width="20" nowrap></TD>
     <TD></TD>
 	</TR>
@@ -289,7 +289,7 @@ Activation de l'administration à distance sous IIS 4.0 et 5.0</TITLE>
 <TABLE cellspacing="0" cellpadding="0" border=0>
 	<TR>
 	<TD width="170" valign="top">&nbsp;</TD>
-	<TD width="237" valign="top"><A HREF="adfpre.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></font></a></TD>
+	<TD width="237" valign="top"><A HREF="adfpre.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÃ‰CÃ‰DENT&nbsp;</b></font></a></TD>
 	<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
 	</TR>
 
@@ -300,9 +300,9 @@ Activation de l'administration à distance sous IIS 4.0 et 5.0</TITLE>
 
 	<TR>
 	<TD width="170" valign="top">&nbsp;</TD>
-	<TD colspan="2" width="475" valign="top">Dernière mise à jour&nbsp;: novembre 1998
+	<TD colspan="2" width="475" valign="top">DerniÃ¨re mise Ã  jour&nbsp;: novembre 1998
 	<BR>
-	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits rÃ©servÃ©s. Conditions d'utilisation.</A></TD>
 	</TR>
 	
 </TABLE>

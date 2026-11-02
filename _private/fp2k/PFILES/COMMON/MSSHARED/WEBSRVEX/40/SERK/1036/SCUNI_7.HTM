@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+ï»¿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <HTML>
 
 
@@ -54,22 +54,22 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 
 		<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
 	
-		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous UNIX</font></b></font>
+		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">SÃ©curitÃ© sous UNIX</font></b></font>
 
 <HR>
 
 			<A NAME="frontpageapachepatch"></A><P><A HREF="scuni_6.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;7 sur 10&nbsp;</sup></b></font><A HREF="scuni_8.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=title>&nbsp;&nbsp;&nbsp;&nbsp;Correctif FrontPage pour les serveurs Web Apache</FONT>  <p><A NAME="scunix.doc-1062"></A>Sur certains serveurs Web comme les serveurs NCSA et
-Apache, les extensions serveur FrontPage doivent modifier le fichier de configuration du serveur pour faire des répertoires qui contiennent les extensions serveur des répertoires exécutables. (Les extensions lisent également ce fichier pour identifier les serveurs virtuels et localiser les racines du contenu et les répertoires exécutables.)</p>
+Apache, les extensions serveur FrontPage doivent modifier le fichier de configuration du serveur pour faire des rÃ©pertoires qui contiennent les extensions serveur des rÃ©pertoires exÃ©cutables. (Les extensions lisent Ã©galement ce fichier pour identifier les serveurs virtuels et localiser les racines du contenu et les rÃ©pertoires exÃ©cutables.)</p>
 
-			<p><A NAME="scunix.doc-1063"></A>La création d'un sous-site Web avec le client FrontPage imposant à ce dernier d'effectuer des opérations d'écriture dans le fichier de configuration des serveurs Web NCSA et Apache, les administrateurs ne peuvent pas créer de sous-sites Web FrontPage de cette manière. (Si FrontPage autorisait cette opération, le fichier de configuration du serveur Web devrait appartenir à «&nbsp;www&nbsp;» ou aux auteurs du site Web FrontPage étendu, ce qui menacerait la sécurité du système hôte.) Sur ces serveurs, l'utilitaire <B>Fpsrvadm</B> doit être exécuté manuellement en tant que «&nbsp;racine&nbsp;» sur l'ordinateur hôte pour modifier le fichier de configuration du serveur Web et créer des sous-sites Web.</p>
+			<p><A NAME="scunix.doc-1063"></A>La crÃ©ation d'un sous-site Web avec le client FrontPage imposant Ã  ce dernier d'effectuer des opÃ©rations d'Ã©criture dans le fichier de configuration des serveurs Web NCSA et Apache, les administrateurs ne peuvent pas crÃ©er de sous-sites Web FrontPage de cette maniÃ¨re. (Si FrontPage autorisait cette opÃ©ration, le fichier de configuration du serveur Web devrait appartenir Ã  Â«&nbsp;www&nbsp;Â» ou aux auteurs du site Web FrontPage Ã©tendu, ce qui menacerait la sÃ©curitÃ© du systÃ¨me hÃ´te.) Sur ces serveurs, l'utilitaire <B>Fpsrvadm</B> doit Ãªtre exÃ©cutÃ© manuellement en tant que Â«&nbsp;racine&nbsp;Â» sur l'ordinateur hÃ´te pour modifier le fichier de configuration du serveur Web et crÃ©er des sous-sites Web.</p>
 
-			<p>Pour le serveur Web Apache, FrontPage propose un correctif facultatif afin de surmonter cette limitation. Avec ce correctif, les copies des fichiers exécutables des extensions serveur FrontPage ne sont pas stockées sur chaque site Web FrontPage étendu, mais à un emplacement unique. Cela vous évite de devoir marquer les répertoires de chaque site Web comme étant exécutables, et permet au client FrontPage de créer des sites Web FrontPage étendus sans modifier les fichiers de configuration du serveur.</p>
+			<p>Pour le serveur Web Apache, FrontPage propose un correctif facultatif afin de surmonter cette limitation. Avec ce correctif, les copies des fichiers exÃ©cutables des extensions serveur FrontPage ne sont pas stockÃ©es sur chaque site Web FrontPage Ã©tendu, mais Ã  un emplacement unique. Cela vous Ã©vite de devoir marquer les rÃ©pertoires de chaque site Web comme Ã©tant exÃ©cutables, et permet au client FrontPage de crÃ©er des sites Web FrontPage Ã©tendus sans modifier les fichiers de configuration du serveur.</p>
 
-			<p>Le correctif du serveur Web Apache intercepte chaque appel des fichiers exécutables des extensions serveur émis par le client FrontPage. Il vérifie ensuite la sécurité, affecte à l'identificateur d'utilisateur le propriétaire du site Web (ce qui impose que SUID/SGID soit paramétré pour les extensions serveur et le contenu du site Web) et appelle une copie centralisée des fichiers exécutables des extensions serveur.</p>
+			<p>Le correctif du serveur Web Apache intercepte chaque appel des fichiers exÃ©cutables des extensions serveur Ã©mis par le client FrontPage. Il vÃ©rifie ensuite la sÃ©curitÃ©, affecte Ã  l'identificateur d'utilisateur le propriÃ©taire du site Web (ce qui impose que SUID/SGID soit paramÃ©trÃ© pour les extensions serveur et le contenu du site Web) et appelle une copie centralisÃ©e des fichiers exÃ©cutables des extensions serveur.</p>
 
-			<p>Notez que l'utilisation de ce correctif est facultative et que même sans lui, les extensions serveur FrontPage fonctionneront dans l'environnement Apache, mais les utilisateurs du client FrontPage ne pourront pas créer de sous-sites Web.</p>
+			<p>Notez que l'utilisation de ce correctif est facultative et que mÃªme sans lui, les extensions serveur FrontPage fonctionneront dans l'environnement Apache, mais les utilisateurs du client FrontPage ne pourront pas crÃ©er de sous-sites Web.</p>
 
-			<p>Le correctif Apache FrontPage&nbsp;2000 remplace le correctif FrontPage&nbsp;98. Les extensions serveur FrontPage&nbsp;2000 prennent toujours en charge le correctif Apache FrontPage&nbsp;98, mais celui de FrontPage&nbsp;2000 offre une sécurité accrue.</p>
+			<p>Le correctif Apache FrontPage&nbsp;2000 remplace le correctif FrontPage&nbsp;98. Les extensions serveur FrontPage&nbsp;2000 prennent toujours en charge le correctif Apache FrontPage&nbsp;98, mais celui de FrontPage&nbsp;2000 offre une sÃ©curitÃ© accrue.</p>
 
 			<p><A NAME="scunix.doc-1068"></A></P>
 
@@ -80,7 +80,7 @@ Apache, les extensions serveur FrontPage doivent modifier le fichier de configur
 		<!--FAR-RIGHT COLUMN SECTION ART START-->
 	
 		<TD rowspan="20" nowrap>
-			<img SRC="secart.gif" align="center" alt="Image de la section Sécurité">
+			<img SRC="secart.gif" align="center" alt="Image de la section SÃ©curitÃ©">
 		</TD>
 
 		<!--FAR-RIGHT COLUMN SECTION ART END-->
@@ -90,12 +90,12 @@ Apache, les extensions serveur FrontPage doivent modifier le fichier de configur
 	<!--LEFT-NAVIGATION MENUS START-->
 
 	<TR>
-		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">PrÃ©sentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
 		<TD width="20" nowrap></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">SÃ©curitÃ©&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -115,7 +115,7 @@ Apache, les extensions serveur FrontPage doivent modifier le fichier de configur
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink" href="scwin.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous <br>&nbsp;&nbsp;Windows NT</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink" href="scwin.htm"><font color="#000000">&nbsp;&nbsp;SÃ©curitÃ© sous <br>&nbsp;&nbsp;Windows NT</font></A></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -125,7 +125,7 @@ Apache, les extensions serveur FrontPage doivent modifier le fichier de configur
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;SÃ©curitÃ© sous UNIX</font></A></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -193,9 +193,9 @@ Apache, les extensions serveur FrontPage doivent modifier le fichier de configur
 
 	<TR>
     	<TD width="170" valign="top">&nbsp;</TD>
-    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+    	<TD colspan="2" width="475" valign="top">DerniÃ¨re mise Ã  jour : novembre 1998
 	<BR>
-	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits rÃ©servÃ©s. Informations lÃ©gales.</A></TD>
    </TR>
    
 </TABLE>

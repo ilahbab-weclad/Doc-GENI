@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+ï»¿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <HTML>
 
 
@@ -7,7 +7,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
 
-<TITLE>Paramétrage des extensions serveur sur SUID/SGID</TITLE>
+<TITLE>ParamÃ©trage des extensions serveur sur SUID/SGID</TITLE>
 
 <LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
 </HEAD>
@@ -53,22 +53,22 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 
 		<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
 	
-		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous UNIX</font></b></font>
+		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">SÃ©curitÃ© sous UNIX</font></b></font>
 
 <HR>
 
-			<A NAME="settingserverextensionssuid"></A><P><A HREF="scuni_5.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;6 sur 10&nbsp;</sup></b></font><A HREF="scuni_7.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;Paramétrage des extensions serveur sur SUID/SGID</FONT>  <p><A NAME="scunix.doc-1056"></A>Avec l'utilitaire <B>Fpsrvadm</B>, vous pouvez remplacer les autorisations d'exécution des fichiers exécutables des extensions serveur par SUID/SGID (Set User ID/Set Group ID). Cela force l'exécution des extensions serveur avec les autorisations de système de fichiers du propriétaire de shtml.exe, author.exe et admin.exe. Lorsque les autorisations appropriées sont appliquées à la zone de contenu de chaque client, les extensions serveur FrontPage (et les autres scripts CGI) d'un client ne peuvent pas écrire dans les zones de contenu d'autres clients.</p>
+			<A NAME="settingserverextensionssuid"></A><P><A HREF="scuni_5.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;6 sur 10&nbsp;</sup></b></font><A HREF="scuni_7.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;ParamÃ©trage des extensions serveur sur SUID/SGID</FONT>  <p><A NAME="scunix.doc-1056"></A>Avec l'utilitaire <B>Fpsrvadm</B>, vous pouvez remplacer les autorisations d'exÃ©cution des fichiers exÃ©cutables des extensions serveur par SUID/SGID (Set User ID/Set Group ID). Cela force l'exÃ©cution des extensions serveur avec les autorisations de systÃ¨me de fichiers du propriÃ©taire de shtml.exe, author.exe et admin.exe. Lorsque les autorisations appropriÃ©es sont appliquÃ©es Ã  la zone de contenu de chaque client, les extensions serveur FrontPage (et les autres scripts CGI) d'un client ne peuvent pas Ã©crire dans les zones de contenu d'autres clients.</p>
 
-			<p>Pour les extensions serveur FrontPage sur les serveurs UNIX, il est recommandé de paramétrer les extensions serveur sur SUID/SGID pour le propriétaire de chaque site Web FrontPage étendu. Les installations des extensions serveur FrontPage antérieures à la version&nbsp;3.0 doivent être mises à niveau pour pouvoir être paramétrées sur SUID/SGID et pour définir de façon unique la propriété du contenu du site Web. Les nouvelles installations effectuées avec l'utilitaire <B>Fpsrvadm</B> ou avec le script d'installation fp_install.sh vous demanderont de configurer les extensions serveur pour le fonctionnement de SUID/SGID.</p>
+			<p>Pour les extensions serveur FrontPage sur les serveurs UNIX, il est recommandÃ© de paramÃ©trer les extensions serveur sur SUID/SGID pour le propriÃ©taire de chaque site Web FrontPage Ã©tendu. Les installations des extensions serveur FrontPage antÃ©rieures Ã  la version&nbsp;3.0 doivent Ãªtre mises Ã  niveau pour pouvoir Ãªtre paramÃ©trÃ©es sur SUID/SGID et pour dÃ©finir de faÃ§on unique la propriÃ©tÃ© du contenu du site Web. Les nouvelles installations effectuÃ©es avec l'utilitaire <B>Fpsrvadm</B> ou avec le script d'installation fp_install.sh vous demanderont de configurer les extensions serveur pour le fonctionnement de SUID/SGID.</p>
 
-			<p>Les extensions serveur FrontPage ne requièrent jamais d'accès racine. Toutefois, l'utilitaire <B>Fpsrvadm</B> et le script d'installation fp_install.sh devraient être exécutés en tant que «&nbsp;racine&nbsp;» car ils affectent les privilèges d'exécution SUID aux extensions. fp_install.sh étant un script de shell, vous pouvez l'examiner avant de l'exécuter sur le serveur Web.</p>
+			<p>Les extensions serveur FrontPage ne requiÃ¨rent jamais d'accÃ¨s racine. Toutefois, l'utilitaire <B>Fpsrvadm</B> et le script d'installation fp_install.sh devraient Ãªtre exÃ©cutÃ©s en tant que Â«&nbsp;racine&nbsp;Â» car ils affectent les privilÃ¨ges d'exÃ©cution SUID aux extensions. fp_install.sh Ã©tant un script de shell, vous pouvez l'examiner avant de l'exÃ©cuter sur le serveur Web.</p>
 
-			<p>Sachez que les extensions serveur FrontPage restent sûres même si vous ne les forcez pas à exécuter SUID, car elles empêcheront tout de même les utilisateurs d'effectuer des opérations d'écriture sur les sites Web FrontPage étendus qu'ils ne sont pas autorisés à créer ou à administrer. SUID présente néanmoins les deux avantages suivants&nbsp;:
+			<p>Sachez que les extensions serveur FrontPage restent sÃ»res mÃªme si vous ne les forcez pas Ã  exÃ©cuter SUID, car elles empÃªcheront tout de mÃªme les utilisateurs d'effectuer des opÃ©rations d'Ã©criture sur les sites Web FrontPage Ã©tendus qu'ils ne sont pas autorisÃ©s Ã  crÃ©er ou Ã  administrer. SUID prÃ©sente nÃ©anmoins les deux avantages suivants&nbsp;:
 
 <UL>
-					<LI class=LB1>Il empêche les utilisateurs disposant d'un accès Telnet au serveur Web de modifier le contenu d'un site Web qui ne leur appartient pas.</LI>
+					<LI class=LB1>Il empÃªche les utilisateurs disposant d'un accÃ¨s Telnet au serveur Web de modifier le contenu d'un site Web qui ne leur appartient pas.</LI>
 
-					<LI class=LB1>Il fournit une sécurité supplémentaire au niveau du système d'exploitation, qui s'ajoute aux fonctions de sécurité standard de FrontPage.</LI>
+					<LI class=LB1>Il fournit une sÃ©curitÃ© supplÃ©mentaire au niveau du systÃ¨me d'exploitation, qui s'ajoute aux fonctions de sÃ©curitÃ© standard de FrontPage.</LI>
 				</UL>
 				
 				<P class=4>&nbsp;</P>
@@ -90,12 +90,12 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 	<!--LEFT-NAVIGATION MENUS START-->
 
 	<TR>
-		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">PrÃ©sentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
 		<TD width="20" nowrap></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">SÃ©curitÃ©&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -115,7 +115,7 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink" href="scwin.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous <br>&nbsp;&nbsp;Windows NT</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink" href="scwin.htm"><font color="#000000">&nbsp;&nbsp;SÃ©curitÃ© sous <br>&nbsp;&nbsp;Windows NT</font></A></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -125,7 +125,7 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;SÃ©curitÃ© sous UNIX</font></A></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -194,9 +194,9 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 
 	<TR>
     	<TD width="170" valign="top">&nbsp;</TD>
-    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+    	<TD colspan="2" width="475" valign="top">DerniÃ¨re mise Ã  jour : novembre 1998
 	<BR>
-	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits rÃ©servÃ©s. Informations lÃ©gales.</A></TD>
    </TR>
    
 </TABLE>

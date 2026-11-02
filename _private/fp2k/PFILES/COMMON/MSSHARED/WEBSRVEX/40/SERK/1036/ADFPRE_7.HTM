@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+ï»¿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <HTML>
 
 
@@ -10,7 +10,7 @@
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
 
 <TITLE>
-Activation de l'administration à distance sur d'autres serveurs</TITLE>
+Activation de l'administration Ã  distance sur d'autres serveurs</TITLE>
 
 <LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
 </HEAD>
@@ -54,26 +54,26 @@ Activation de l'administration à distance sur d'autres serveurs</TITLE>
 	<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
 	
 
-    <TD rowspan="21" width="460"><a name="top"></a><p><font color="#666699"><b><font size="+1">Administration à distance</font></b></font>
+    <TD rowspan="21" width="460"><a name="top"></a><p><font color="#666699"><b><font size="+1">Administration Ã  distance</font></b></font>
 
 <HR>
 
-<H3><span class=FR><SUP><A NAME="activatingremoteadministrationotherservers"></A></SUP></span>Activation de l'administration à distance sur d'autres serveurs</H3>
+<H3><span class=FR><SUP><A NAME="activatingremoteadministrationotherservers"></A></SUP></span>Activation de l'administration Ã  distance sur d'autres serveurs</H3>
 
-	<p><A NAME="adfprema.doc-1042"></A>Lorsque vous utilisez des serveurs autres que IIS, faites appel à l'outil d'administration ou aux fichiers de configuration du serveur pour configurer un nouveau répertoire virtuel pour les formulaires d'administration HTML, et définissez les paramètres de sécurité appropriés. Vous devez activer les formulaires d'administration HTML même si vous employez l'utilitaire de ligne de commande <B>Fpremadm</B> pour l'administration à distance. Vous devez exécuter les formulaires d'administration HTML sur un port sécurisé.</P>
+	<p><A NAME="adfprema.doc-1042"></A>Lorsque vous utilisez des serveurs autres que IIS, faites appel Ã  l'outil d'administration ou aux fichiers de configuration du serveur pour configurer un nouveau rÃ©pertoire virtuel pour les formulaires d'administration HTML, et dÃ©finissez les paramÃ¨tres de sÃ©curitÃ© appropriÃ©s. Vous devez activer les formulaires d'administration HTML mÃªme si vous employez l'utilitaire de ligne de commande <B>Fpremadm</B> pour l'administration Ã  distance. Vous devez exÃ©cuter les formulaires d'administration HTML sur un port sÃ©curisÃ©.</P>
 
-	<p><A NAME="adfprema.doc-1043"></A>Sur un serveur Windows autre que IIS, les formulaires d'administration HTML sont installés par défaut sur C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\40\Admincgi. Notez que le répertoire Admcgi n'est pas le répertoire utilisé pour les serveurs IIS, puisque les serveurs non IIS utilisent CGI et non l'interface ISAPI.</P>
+	<p><A NAME="adfprema.doc-1043"></A>Sur un serveur Windows autre que IIS, les formulaires d'administration HTML sont installÃ©s par dÃ©faut sur C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\40\Admincgi. Notez que le rÃ©pertoire Admcgi n'est pas le rÃ©pertoire utilisÃ© pour les serveurs IIS, puisque les serveurs non IIS utilisent CGI et non l'interface ISAPI.</P>
 
-	<p><A NAME="adfprema.doc-1044"></A>Sur un serveur UNIX, les formulaires d'administration HTML sont installés dans le répertoire  /usr/local/frontpage/version4.0/admcgi.</P>
+	<p><A NAME="adfprema.doc-1044"></A>Sur un serveur UNIX, les formulaires d'administration HTML sont installÃ©s dans le rÃ©pertoire  /usr/local/frontpage/version4.0/admcgi.</P>
 
-	<p>Outre la configuration d'une racine virtuelle et des contrôles d'accès appropriés, vous devez octroyer des autorisations d'exécution au sous-répertoire de scripts du répertoire de formulaires afin de lancer l'application CGI qui exécute la commande d'administration sur le serveur. </P>
+	<p>Outre la configuration d'une racine virtuelle et des contrÃ´les d'accÃ¨s appropriÃ©s, vous devez octroyer des autorisations d'exÃ©cution au sous-rÃ©pertoire de scripts du rÃ©pertoire de formulaires afin de lancer l'application CGI qui exÃ©cute la commande d'administration sur le serveur. </P>
 
-	<p>Pour garantir une connexion sécurisée, les précautions suivantes sont recommandées&nbsp;:
+	<p>Pour garantir une connexion sÃ©curisÃ©e, les prÃ©cautions suivantes sont recommandÃ©es&nbsp;:
 
 <UL>
-		<LI class=LB1>Exiger une connexion sécurisée (telle que SSL) pour communiquer avec Fpadmdll.dll ou Fpadmcgi.exe.<LI class=LB1>Fournir un accès à Fpadmdll.dll ou Fpadmcgi.exe avec le système de sécurité du serveur Web. Exiger qu'un utilisateur se connecte sur le serveur Web avec un compte d'administrateur sécurisé évite les accès non autorisés.</LI>
+		<LI class=LB1>Exiger une connexion sÃ©curisÃ©e (telle que SSL) pour communiquer avec Fpadmdll.dll ou Fpadmcgi.exe.<LI class=LB1>Fournir un accÃ¨s Ã  Fpadmdll.dll ou Fpadmcgi.exe avec le systÃ¨me de sÃ©curitÃ© du serveur Web. Exiger qu'un utilisateur se connecte sur le serveur Web avec un compte d'administrateur sÃ©curisÃ© Ã©vite les accÃ¨s non autorisÃ©s.</LI>
 
-		<LI class=LB1>Exiger l'utilisation d'un port HTTP non standard pour accéder à Fpadmdll.dll ou Fpadmcgi.exe.<LI class=LB1>Utiliser les restrictions de masque d'adresse IP pour éviter que des ordinateurs non autorisés n'accèdent aux formulaires d'administration HTML, Fpadmdll.dll ou Fpadmcgi.exe.
+		<LI class=LB1>Exiger l'utilisation d'un port HTTP non standard pour accÃ©der Ã  Fpadmdll.dll ou Fpadmcgi.exe.<LI class=LB1>Utiliser les restrictions de masque d'adresse IP pour Ã©viter que des ordinateurs non autorisÃ©s n'accÃ¨dent aux formulaires d'administration HTML, Fpadmdll.dll ou Fpadmcgi.exe.
 </UL>
 
 	<P class=4>&nbsp;</P></TD>
@@ -91,12 +91,12 @@ Activation de l'administration à distance sur d'autres serveurs</TITLE>
 	<!--LEFT-NAVIGATION MENU STARTS-->
 
 	<TR>
-    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">PrÃ©sentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
     <TD width="20" nowrap></TD>
 	</TR>
 
 	<TR>
-    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="scintro.htm"><font color="#000000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    <TD width="150" nowrap><div class="table"><A class="menulink" HREF="scintro.htm"><font color="#000000">SÃ©curitÃ©&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
     <TD width="20" nowrap></TD>
 	</TR>
 
@@ -162,7 +162,7 @@ Activation de l'administration à distance sur d'autres serveurs</TITLE>
 	</TR>
 
 	<TR>
-    <TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Administration à &nbsp;&nbsp;distance</font></A></TD>
+    <TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Administration Ã  &nbsp;&nbsp;distance</font></A></TD>
     <TD width="20" nowrap></TD>
     <TD></TD>
 	</TR>
@@ -174,7 +174,7 @@ Activation de l'administration à distance sur d'autres serveurs</TITLE>
 	</TR>
 
 	<TR>
-    <TD width="150" nowrap><A class="menulink" HREF="adadv.htm"><font color="#000000">&nbsp;&nbsp;Tâches &nbsp;&nbsp;administratives<BR>&nbsp;&nbsp;avancées</font></A></TD>
+    <TD width="150" nowrap><A class="menulink" HREF="adadv.htm"><font color="#000000">&nbsp;&nbsp;TÃ¢ches &nbsp;&nbsp;administratives<BR>&nbsp;&nbsp;avancÃ©es</font></A></TD>
     <TD width="20" nowrap></TD>
     <TD></TD>
 	</TR>
@@ -217,7 +217,7 @@ Activation de l'administration à distance sur d'autres serveurs</TITLE>
 <TABLE cellspacing="0" cellpadding="0" border=0>
 	<TR>
 	<TD width="170" valign="top">&nbsp;</TD>
-	<TD width="237" valign="top"><A HREF="adfpre.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></font></a></TD>
+	<TD width="237" valign="top"><A HREF="adfpre.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÃ‰CÃ‰DENT&nbsp;</b></font></a></TD>
 	<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
 	</TR>
 
@@ -228,9 +228,9 @@ Activation de l'administration à distance sur d'autres serveurs</TITLE>
 
 	<TR>
 	<TD width="170" valign="top">&nbsp;</TD>
-	<TD colspan="2" width="475" valign="top">Dernière mise à jour&nbsp;: novembre 1998
+	<TD colspan="2" width="475" valign="top">DerniÃ¨re mise Ã  jour&nbsp;: novembre 1998
 	<BR>
-	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits rÃ©servÃ©s. Conditions d'utilisation.</A></TD>
 	</TR>
 	
 </TABLE>

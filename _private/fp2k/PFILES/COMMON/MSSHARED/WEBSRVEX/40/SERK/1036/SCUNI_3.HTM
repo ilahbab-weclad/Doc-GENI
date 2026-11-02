@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+ï»¿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <HTML>
 
 
@@ -8,7 +8,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
 
-<TITLE>Définition d'autorisations UNIX sur le contenu d'un site Web</TITLE>
+<TITLE>DÃ©finition d'autorisations UNIX sur le contenu d'un site Web</TITLE>
 
 <LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
 </HEAD>
@@ -57,11 +57,11 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 		<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
 	
 		
-		<TD rowspan="23" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous UNIX</font></b></font>
+		<TD rowspan="23" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">SÃ©curitÃ© sous UNIX</font></b></font>
 
 <HR>
 
-			<A NAME="settingunixpermissionswebcontent"></A><P><A  HREF="scuni_2.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;3 sur 10&nbsp;</sup></b></font><A HREF="scuni_4.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;Définition d'autorisations UNIX sur le contenu d'un &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;site Web</FONT>  <p><A NAME="scunix.doc-1032"></A>Pour assurer la sécurité de votre serveur Web, il est essentiel de définir des modes d'accès sûrs aux fichiers et aux répertoires du dossier des sites Web d'un client. Ces fichiers et répertoires doivent appartenir à l'identificateur de groupe/d'utilisateur du client. Le tableau suivant suggère comment définir les autorisations UNIX.</p>
+			<A NAME="settingunixpermissionswebcontent"></A><P><A  HREF="scuni_2.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;3 sur 10&nbsp;</sup></b></font><A HREF="scuni_4.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;DÃ©finition d'autorisations UNIX sur le contenu d'un &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;site Web</FONT>  <p><A NAME="scunix.doc-1032"></A>Pour assurer la sÃ©curitÃ© de votre serveur Web, il est essentiel de dÃ©finir des modes d'accÃ¨s sÃ»rs aux fichiers et aux rÃ©pertoires du dossier des sites Web d'un client. Ces fichiers et rÃ©pertoires doivent appartenir Ã  l'identificateur de groupe/d'utilisateur du client. Le tableau suivant suggÃ¨re comment dÃ©finir les autorisations UNIX.</p>
 
 			<P class=4>&nbsp;</P>
 
@@ -75,7 +75,7 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 
 				<TR VALIGN="top">
 					<TD class=TT width=48%>&nbsp;</TD>
-					<TD class=TT width=25%>répertoires :</TD>
+					<TD class=TT width=25%>rÃ©pertoires :</TD>
 					<TD class=TT width=27%><span class=CTT><CODE>rw- r-x r-x</CODE></span></TD>
 				</TR>
 
@@ -93,7 +93,7 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 
 				<TR VALIGN="top">
 					<TD class=TT width=48%>&nbsp;</TD>
-					<TD class=TT width=25%>répertoires :</TD>
+					<TD class=TT width=25%>rÃ©pertoires :</TD>
 					<TD class=TT width=27%><span class=CTT><CODE>rwx rwx r-x</CODE></span></TD>
 				</TR>
 
@@ -107,13 +107,13 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 
 			<P class=6>&nbsp;</P>
 
-			<p>Les autorisations pour les clients disposant de plusieurs comptes UNIX client s'appliquent également à une organisation possédant plusieurs comptes UNIX qui appartiennent au même groupe UNIX. L'accès partagé en écriture permet à tout membre du groupe de faire des opérations d'écriture sur tous les documents Web partagés.</p>
+			<p>Les autorisations pour les clients disposant de plusieurs comptes UNIX client s'appliquent Ã©galement Ã  une organisation possÃ©dant plusieurs comptes UNIX qui appartiennent au mÃªme groupe UNIX. L'accÃ¨s partagÃ© en Ã©criture permet Ã  tout membre du groupe de faire des opÃ©rations d'Ã©criture sur tous les documents Web partagÃ©s.</p>
 
-			<p><A NAME="scunix.doc-1034"></A>L'utilitaire <B>Fpsrvadm</B> peut servir à lancer automatiquement les commandes chown et chmod sur les fichiers d'un site Web FrontPage étendu pour leur affecter un autre propriétaire. Ces commandes peuvent être exécutées automatiquement quand vous installez les extensions serveur (avec <B>fpsrvadm -operation install</B>) ou plus tard (avec <B>fpsrvadm -operation chown</B>). Elles établissent que le contenu appartiendra à l'utilisateur, et configurent les fichiers exécutables stub des extensions serveur FrontPage avec SUID.</p>
+			<p><A NAME="scunix.doc-1034"></A>L'utilitaire <B>Fpsrvadm</B> peut servir Ã  lancer automatiquement les commandes chown et chmod sur les fichiers d'un site Web FrontPage Ã©tendu pour leur affecter un autre propriÃ©taire. Ces commandes peuvent Ãªtre exÃ©cutÃ©es automatiquement quand vous installez les extensions serveur (avec <B>fpsrvadm -operation install</B>) ou plus tard (avec <B>fpsrvadm -operation chown</B>). Elles Ã©tablissent que le contenu appartiendra Ã  l'utilisateur, et configurent les fichiers exÃ©cutables stub des extensions serveur FrontPage avec SUID.</p>
 
-			<p>Par défaut, un umask 022 est utilisé lorsque les extensions serveur sont installées ou lors d'un changement de propriétaire. Pour définir un umask personnalisé, vous devez modifier et recompiler le fichier exécutable stub des extensions serveur FrontPage, /usr/local/frontpage/version4.0/srcs/fp.suid.c. Pour ce faire, ouvrez le fichier et modifiez la ligne <B>umask(022)</B>. Enregistrez-le ensuite en tant que chacun des fichiers exécutables stub, comme indiqué dans le fichier source fp.suid.c. (Ces fichiers stub sont diffusés dans chaque zone de contenu à mesure que des sites Web FrontPage étendus sont créés.) </p>
+			<p>Par dÃ©faut, un umask 022 est utilisÃ© lorsque les extensions serveur sont installÃ©es ou lors d'un changement de propriÃ©taire. Pour dÃ©finir un umask personnalisÃ©, vous devez modifier et recompiler le fichier exÃ©cutable stub des extensions serveur FrontPage, /usr/local/frontpage/version4.0/srcs/fp.suid.c. Pour ce faire, ouvrez le fichier et modifiez la ligne <B>umask(022)</B>. Enregistrez-le ensuite en tant que chacun des fichiers exÃ©cutables stub, comme indiquÃ© dans le fichier source fp.suid.c. (Ces fichiers stub sont diffusÃ©s dans chaque zone de contenu Ã  mesure que des sites Web FrontPage Ã©tendus sont crÃ©Ã©s.) </p>
 
-			<p>Par exemple, pour créer le fichier exécutable stub d'administration, copiez le fichier<BR>
+			<p>Par exemple, pour crÃ©er le fichier exÃ©cutable stub d'administration, copiez le fichier<BR>
 /usr/local/frontpage/version4.0/srcs/fp.suid.c <p>
 sur<BR>
 /usr/local/frontpage/version4.0/srcs/admin.exe<p>
@@ -123,7 +123,7 @@ Editez la ligne umask, puis compilez /usr/local/frontpage/version4.0/srcs/admin.
 		<!--FAR-RIGHT COLUMN SECTION ART START-->
 	
 		<TD rowspan="20" nowrap>
-			<img SRC="secart.gif" align="center" alt="Image de la section Sécurité">
+			<img SRC="secart.gif" align="center" alt="Image de la section SÃ©curitÃ©">
 		</TD>
 
 		<!--FAR-RIGHT COLUMN SECTION ART END-->
@@ -133,12 +133,12 @@ Editez la ligne umask, puis compilez /usr/local/frontpage/version4.0/srcs/admin.
 	<!--LEFT-NAVIGATION MENUS START-->
 
 	<TR>
-		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">PrÃ©sentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
 		<TD width="20" nowrap></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">SÃ©curitÃ©&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -158,7 +158,7 @@ Editez la ligne umask, puis compilez /usr/local/frontpage/version4.0/srcs/admin.
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink" href="scwin.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous <br>&nbsp;&nbsp;Windows NT</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink" href="scwin.htm"><font color="#000000">&nbsp;&nbsp;SÃ©curitÃ© sous <br>&nbsp;&nbsp;Windows NT</font></A></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -168,7 +168,7 @@ Editez la ligne umask, puis compilez /usr/local/frontpage/version4.0/srcs/admin.
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;SÃ©curitÃ© sous UNIX</font></A></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -236,9 +236,9 @@ Editez la ligne umask, puis compilez /usr/local/frontpage/version4.0/srcs/admin.
 
 	<TR>
     	<TD width="170" valign="top">&nbsp;</TD>
-    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+    	<TD colspan="2" width="475" valign="top">DerniÃ¨re mise Ã  jour : novembre 1998
 	<BR>
-	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits rÃ©servÃ©s. Informations lÃ©gales.</A></TD>
    </TR>
    
 </TABLE>

@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+ï»¿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <HTML>
 
 
@@ -7,7 +7,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
 
-<TITLE>À propos des fichiers d'accès</TITLE>
+<TITLE>Ã€ propos des fichiers d'accÃ¨s</TITLE>
 
 <LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
 </HEAD>
@@ -56,23 +56,23 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 		<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
 	
 		
-		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous UNIX</font></b></font>
+		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">SÃ©curitÃ© sous UNIX</font></b></font>
 
 <HR>
 
-			<A NAME="aboutaccessfiles"></A><P><A HREF="scuni_3.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;4 sur 10&nbsp;</sup></b></font><A HREF="scuni_5.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;À propos des fichiers d'accès</FONT>  <p><A NAME="scunix.doc-1037"></A>Sur les serveurs Web UNIX, l'accès au contenu, aux scripts et aux fichiers de configuration d'un serveur Web est contrôlé par des entrées dans un ou plusieurs fichiers d'accès. Un fichier d'accès contient des directives de sécurité qui contrôlent quels utilisateurs et groupes peuvent accéder au contenu d'un serveur. Il peut aussi contenir des directives au niveau domaine qui spécifient les adresses Internet pouvant accéder au contenu.</p>
+			<A NAME="aboutaccessfiles"></A><P><A HREF="scuni_3.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;4 sur 10&nbsp;</sup></b></font><A HREF="scuni_5.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;Ã€ propos des fichiers d'accÃ¨s</FONT>  <p><A NAME="scunix.doc-1037"></A>Sur les serveurs Web UNIX, l'accÃ¨s au contenu, aux scripts et aux fichiers de configuration d'un serveur Web est contrÃ´lÃ© par des entrÃ©es dans un ou plusieurs fichiers d'accÃ¨s. Un fichier d'accÃ¨s contient des directives de sÃ©curitÃ© qui contrÃ´lent quels utilisateurs et groupes peuvent accÃ©der au contenu d'un serveur. Il peut aussi contenir des directives au niveau domaine qui spÃ©cifient les adresses Internet pouvant accÃ©der au contenu.</p>
 
-			<p><A NAME="scunix.doc-1038"></A>Un fichier d'accès global, appelé access.conf sur la plupart des serveurs UNIX, contient les paramètres d'accès globaux pour le serveur Web. Il est possible de placer des fichiers d'accès dans les répertoires du serveur Web pour implémenter le contrôle d'accès par répertoire. Un fichier d'accès au niveau d'un répertoire contrôle l'accès au contenu du répertoire où il est installé. Il contrôle aussi l'accès au contenu des sous-répertoires de ce répertoire, à l'exception de ceux qui possèdent leur propre fichier d'accès. Quand vous créez des fichiers d'accès sur tout le contenu d'un site Web, des groupes d'utilisateurs différents disposant d'autorisations distinctes peuvent accéder à des zones différentes du serveur. Le contrôle d'accès sur des fichiers individuels n'est pas pris en charge. Cependant, en plaçant un seul fichier dans un répertoire, vous pouvez lui appliquer des paramètres de contrôle d'accès uniques.</p>
+			<p><A NAME="scunix.doc-1038"></A>Un fichier d'accÃ¨s global, appelÃ© access.conf sur la plupart des serveurs UNIX, contient les paramÃ¨tres d'accÃ¨s globaux pour le serveur Web. Il est possible de placer des fichiers d'accÃ¨s dans les rÃ©pertoires du serveur Web pour implÃ©menter le contrÃ´le d'accÃ¨s par rÃ©pertoire. Un fichier d'accÃ¨s au niveau d'un rÃ©pertoire contrÃ´le l'accÃ¨s au contenu du rÃ©pertoire oÃ¹ il est installÃ©. Il contrÃ´le aussi l'accÃ¨s au contenu des sous-rÃ©pertoires de ce rÃ©pertoire, Ã  l'exception de ceux qui possÃ¨dent leur propre fichier d'accÃ¨s. Quand vous crÃ©ez des fichiers d'accÃ¨s sur tout le contenu d'un site Web, des groupes d'utilisateurs diffÃ©rents disposant d'autorisations distinctes peuvent accÃ©der Ã  des zones diffÃ©rentes du serveur. Le contrÃ´le d'accÃ¨s sur des fichiers individuels n'est pas pris en charge. Cependant, en plaÃ§ant un seul fichier dans un rÃ©pertoire, vous pouvez lui appliquer des paramÃ¨tres de contrÃ´le d'accÃ¨s uniques.</p>
 
-			<p>Par défaut, un fichier d'accès pointe sur un fichier de mots de passe appelé .htpasswd. Ce fichier au format HTML contient la liste des utilisateurs qui ont accès au contenu, ainsi que le mot de passe de chaque utilisateur. Cette liste est différente de la liste des utilisateurs et des mots de passe qui ont accès au système de fichiers du serveur.</p>
+			<p>Par dÃ©faut, un fichier d'accÃ¨s pointe sur un fichier de mots de passe appelÃ© .htpasswd. Ce fichier au format HTML contient la liste des utilisateurs qui ont accÃ¨s au contenu, ainsi que le mot de passe de chaque utilisateur. Cette liste est diffÃ©rente de la liste des utilisateurs et des mots de passe qui ont accÃ¨s au systÃ¨me de fichiers du serveur.</p>
 
-			<p><A NAME="scunix.doc-1040"></A>Un fichier de groupe définit les groupes d'utilisateurs qui peuvent être authentifiés ensemble plutôt qu'individuellement. Les fichiers de groupe, appelés .htgroup par défaut, sont au format HTML. Tous les utilisateurs d'un fichier de groupe doivent figurer dans le fichier de mot de passe pour le même répertoire (ou dans le fichier de mot de passe global, s'il est désigné à partir du fichier access.conf). FrontPage crée des entrées dans les fichiers de groupe quand vous créez des groupes avec la commande <B>Autorisations</B> de FrontPage.</p>
+			<p><A NAME="scunix.doc-1040"></A>Un fichier de groupe dÃ©finit les groupes d'utilisateurs qui peuvent Ãªtre authentifiÃ©s ensemble plutÃ´t qu'individuellement. Les fichiers de groupe, appelÃ©s .htgroup par dÃ©faut, sont au format HTML. Tous les utilisateurs d'un fichier de groupe doivent figurer dans le fichier de mot de passe pour le mÃªme rÃ©pertoire (ou dans le fichier de mot de passe global, s'il est dÃ©signÃ© Ã  partir du fichier access.conf). FrontPage crÃ©e des entrÃ©es dans les fichiers de groupe quand vous crÃ©ez des groupes avec la commande <B>Autorisations</B> de FrontPage.</p>
 		</TD>
 
 		<!--FAR-RIGHT COLUMN SECTION ART START-->
 	
 		<TD rowspan="20" nowrap>
-			<img SRC="secart.gif" align="center" alt="Image de la section Sécurité">
+			<img SRC="secart.gif" align="center" alt="Image de la section SÃ©curitÃ©">
 		</TD>
 
 		<!--FAR-RIGHT COLUMN SECTION ART END-->
@@ -82,12 +82,12 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 	<!--LEFT-NAVIGATION MENUS START-->
 
 	<TR>
-		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">PrÃ©sentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
 		<TD width="20" nowrap></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">SÃ©curitÃ©&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -107,7 +107,7 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink" href="scwin.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous <br>&nbsp;&nbsp;Windows NT</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink" href="scwin.htm"><font color="#000000">&nbsp;&nbsp;SÃ©curitÃ© sous <br>&nbsp;&nbsp;Windows NT</font></A></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -117,7 +117,7 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;SÃ©curitÃ© sous UNIX</font></A></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -185,9 +185,9 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 
 <TR>
     <TD width="170" valign="top">&nbsp;</TD>
-    <TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+    <TD colspan="2" width="475" valign="top">DerniÃ¨re mise Ã  jour : novembre 1998
 	<BR>
-	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits rÃ©servÃ©s. Informations lÃ©gales.</A></TD>
    
 </TR>
 </TABLE>

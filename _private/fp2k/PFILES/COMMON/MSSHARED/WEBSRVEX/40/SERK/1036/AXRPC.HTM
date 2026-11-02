@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+ï»¿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <HTML>
 
 <!--START_TOPIC HEAD-->
@@ -6,7 +6,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
 
-<TITLE>Protocole d'appel de procédure à distance de FrontPage</TITLE>
+<TITLE>Protocole d'appel de procÃ©dure Ã  distance de FrontPage</TITLE>
 
 <LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
 </HEAD>
@@ -61,29 +61,29 @@
 
 	<HR>
 	
-	<H3><A NAME="fpremoteprocedurecallprotocol"></A>Protocole d'appel de procédure à distance de FrontPage</H3>
+	<H3><A NAME="fpremoteprocedurecallprotocol"></A>Protocole d'appel de procÃ©dure Ã  distance de FrontPage</H3>
 	
-	<p><A NAME="axrpc.doc-1006"></A>Le client FrontPage et les extensions serveur FrontPage communiquent à l'aide d'un protocole d'appel de procédure à distance (RPC, Remote Procedure Call) en amont de HTTP et HTML. Quand le client FrontPage veut que les extensions serveur effectuent une opération, il envoie une requête POST au serveur.</P>
+	<p><A NAME="axrpc.doc-1006"></A>Le client FrontPage et les extensions serveur FrontPage communiquent Ã  l'aide d'un protocole d'appel de procÃ©dure Ã  distance (RPC, Remote Procedure Call) en amont de HTTP et HTML. Quand le client FrontPage veut que les extensions serveur effectuent une opÃ©ration, il envoie une requÃªte POST au serveur.</P>
 
-<p>Cette requête est adressée à une des trois bibliothèques de liens dynamiques du site Web en cours de création. 
+<p>Cette requÃªte est adressÃ©e Ã  une des trois bibliothÃ¨ques de liens dynamiques du site Web en cours de crÃ©ation. 
 
 <UL>
-		<LI class=LB1>Les requêtes d'actions émises pendant la navigation sont adressées à shtml.dll ou à shtml.exe.
+		<LI class=LB1>Les requÃªtes d'actions Ã©mises pendant la navigation sont adressÃ©es Ã  shtml.dll ou Ã  shtml.exe.
 
-	<LI class=LB1>Les requêtes d'actions émises pendant la création du site Web sont adressées à author.dll.
+	<LI class=LB1>Les requÃªtes d'actions Ã©mises pendant la crÃ©ation du site Web sont adressÃ©es Ã  author.dll.
 
-	<LI class=LB1>Les requêtes d'actions administratives sont adressées à admin.dll.
+	<LI class=LB1>Les requÃªtes d'actions administratives sont adressÃ©es Ã  admin.dll.
 </UL>
 
 	<p class=4>&nbsp;</p>
 	
 	
-	<p>Le corps de la requête POST contient la commande sous la forme «&nbsp;méthode=commande&nbsp;», où «&nbsp;commande&nbsp;» est une chaîne indiquant l'opération que le client FrontPage demande au serveur d'exécuter.</P>
+	<p>Le corps de la requÃªte POST contient la commande sous la forme Â«&nbsp;mÃ©thode=commande&nbsp;Â», oÃ¹ Â«&nbsp;commande&nbsp;Â» est une chaÃ®ne indiquant l'opÃ©ration que le client FrontPage demande au serveur d'exÃ©cuter.</P>
 
-<p>Les extensions serveur répondent à la requête en exécutant la commande et en renvoyant la réponse «&nbsp;200 OK&nbsp;». Le corps du message de la réponse contient les informations renvoyées par la commande, sous forme de paires nom-valeur imbriquées.</P>
+<p>Les extensions serveur rÃ©pondent Ã  la requÃªte en exÃ©cutant la commande et en renvoyant la rÃ©ponse Â«&nbsp;200 OK&nbsp;Â». Le corps du message de la rÃ©ponse contient les informations renvoyÃ©es par la commande, sous forme de paires nom-valeur imbriquÃ©es.</P>
 
 
-<p>Le corps du message adopte la forme générale suivante&nbsp;:</P>
+<p>Le corps du message adopte la forme gÃ©nÃ©rale suivante&nbsp;:</P>
 
 <PRE class=CT><CODE>   &lt;html&gt;
    &lt;head&gt;&lt;/head&gt;
@@ -101,13 +101,13 @@
    &lt;/html&gt;
 </CODE></PRE>
 
-<p>Pour illustrer le fonctionnement du protocole RPC, nous allons examiner une partie d'une conversation entre un client FrontPage et les extensions serveur. Dans cet exemple, le client FrontPage établit une connexion avec un serveur qui exécute les extensions serveur et identifie la version de ces extensions. </P>
+<p>Pour illustrer le fonctionnement du protocole RPC, nous allons examiner une partie d'une conversation entre un client FrontPage et les extensions serveur. Dans cet exemple, le client FrontPage Ã©tablit une connexion avec un serveur qui exÃ©cute les extensions serveur et identifie la version de ces extensions. </P>
 
 	<p class=4>&nbsp;</p>
 	
 	<!--START_NOTE STRUCTURE-->
 
-	<P class=NT><p class=art><img SRC="noterule.gif" width=475 height=15 border="0"></p>Par souci de clarté, cette transcription a été modifiée et les <BR>éléments inutiles en ont été supprimés. <HR width=475 align=left></P>
+	<P class=NT><p class=art><img SRC="noterule.gif" width=475 height=15 border="0"></p>Par souci de clartÃ©, cette transcription a Ã©tÃ© modifiÃ©e et les <BR>Ã©lÃ©ments inutiles en ont Ã©tÃ© supprimÃ©s. <HR width=475 align=left></P>
 
 	<!--END_NOTE STRUCTURE-->
 	
@@ -118,7 +118,7 @@
     Host: fp4
 </CODE></PRE>
 
-	<p>Le serveur répond en renvoyant le fichier. Le client lit la réponse et trouve la valeur associée à «&nbsp;FPShtmlScriptUrl&nbsp;», qui lui indique où exécuter (POST) les requêtes pour exécuter les commandes de navigation. Il demande ensuite au serveur quelle version des extensions serveur il utilise&nbsp;:</P>
+	<p>Le serveur rÃ©pond en renvoyant le fichier. Le client lit la rÃ©ponse et trouve la valeur associÃ©e Ã  Â«&nbsp;FPShtmlScriptUrl&nbsp;Â», qui lui indique oÃ¹ exÃ©cuter (POST) les requÃªtes pour exÃ©cuter les commandes de navigation. Il demande ensuite au serveur quelle version des extensions serveur il utilise&nbsp;:</P>
 
 <PRE class=CT><CODE>    POST /_vti_bin/shtml.dll/_vti_rpc HTTP/1.0
     User-Agent: MSFrontPage/4.0
@@ -126,7 +126,7 @@
     method=server version
 </CODE></PRE>
 
-	<p>Les extensions serveur traitent la requête «&nbsp;méthode=version serveur&nbsp;» et renvoient les informations sur leur version&nbsp;:</P>
+	<p>Les extensions serveur traitent la requÃªte Â«&nbsp;mÃ©thode=version serveur&nbsp;Â» et renvoient les informations sur leur version&nbsp;:</P>
 
 <PRE class=CT><CODE>    HTTP/1.0 200 OK
     Server: Microsoft-IIS/3.0
@@ -161,7 +161,7 @@
 <BR>
 <TR>
     <TD width="20" valign="top">&nbsp;</TD>
-    <TD width="325" valign="top"><A HREF="apndxtoc.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></A></font></TD>
+    <TD width="325" valign="top"><A HREF="apndxtoc.htm"><img SRC="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÃ‰CÃ‰DENT&nbsp;</b></A></font></TD>
     <TD width="325" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img SRC="top.gif" border="0"></a></TD>
     <TD>&nbsp;</TD>
 </TR>
@@ -172,9 +172,9 @@
 </TR>
 <TR>
     <TD width="20" valign="top">&nbsp;</TD>
-    <TD colspan="2" width="650" valign="top">Dernière mise à jour : novembre 1998
+    <TD colspan="2" width="650" valign="top">DerniÃ¨re mise Ã  jour : novembre 1998
 	<BR>
-	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits rÃ©servÃ©s. Informations lÃ©gales.</A></TD>
     <TD></TD>
 </TR>
 </table>

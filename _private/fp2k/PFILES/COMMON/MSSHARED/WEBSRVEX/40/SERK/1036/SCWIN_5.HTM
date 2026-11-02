@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+ï»¿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <HTML>
 
 
@@ -55,34 +55,34 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 		
 		<!--TOPIC TITLE AND BODY TEXT START-->
 		
-		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous Windows&nbsp;NT</font></b></font>
+		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">SÃ©curitÃ© sous Windows&nbsp;NT</font></b></font>
 
 <HR>
 
-			<A NAME="howfrontpageauthenticatesoniis"></A><P><A HREF="scwin_4.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;5 sur 9&nbsp;</sup></b></font><A HREF="scwin_6.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"><FONT CLASS=TITLE></A>&nbsp;&nbsp;&nbsp;&nbsp;Authentification de FrontPage sur IIS</FONT>  <p><A NAME="scwinnt.doc-1056"></A>Quand un auteur ou un administrateur effectue sur le client FrontPage une opération qui requiert les extensions serveur FrontPage sur IIS, le client FrontPage et les extensions serveur communiquent en utilisant un protocole d'appel de procédure à distance (RPC) en amont de HTTP et HTML. Une requête POST est envoyée à partir du client FrontPage à une des trois bibliothèques de liens dynamiques des extensions serveur FrontPage&nbsp;: 
+			<A NAME="howfrontpageauthenticatesoniis"></A><P><A HREF="scwin_4.htm"><img SRC="previous.gif" align="left" vspace="1" hspace="0" border="0"></A><b><font color="#000000" size="2"><sup>&nbsp;5 sur 9&nbsp;</sup></b></font><A HREF="scwin_6.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"><FONT CLASS=TITLE></A>&nbsp;&nbsp;&nbsp;&nbsp;Authentification de FrontPage sur IIS</FONT>  <p><A NAME="scwinnt.doc-1056"></A>Quand un auteur ou un administrateur effectue sur le client FrontPage une opÃ©ration qui requiert les extensions serveur FrontPage sur IIS, le client FrontPage et les extensions serveur communiquent en utilisant un protocole d'appel de procÃ©dure Ã  distance (RPC) en amont de HTTP et HTML. Une requÃªte POST est envoyÃ©e Ã  partir du client FrontPage Ã  une des trois bibliothÃ¨ques de liens dynamiques des extensions serveur FrontPage&nbsp;: 
 
 <UL>
-					<LI class=LB1>Les requêtes d'actions administratives sont adressées à admin.dll.
+					<LI class=LB1>Les requÃªtes d'actions administratives sont adressÃ©es Ã  admin.dll.
 
-	<LI class=LB1>Les requêtes d'opérations d'auteur sont adressées à author.dll.
+	<LI class=LB1>Les requÃªtes d'opÃ©rations d'auteur sont adressÃ©es Ã  author.dll.
 
-	<LI class=LB1>Les requêtes d'actions de navigation sont adressées à shtml.dll.
+	<LI class=LB1>Les requÃªtes d'actions de navigation sont adressÃ©es Ã  shtml.dll.
 </UL>
 				
 			<P class=4>&nbsp;</P>
 
-			<p>Quand une action d'un visiteur d'un site Web FrontPage étendu nécessite les extensions serveur FrontPage, comme lorsque le visiteur envoie un formulaire de recherche, le navigateur Web envoie une requête POST au programme des extensions serveur FrontPage exécutables pendant la navigation, shtml.dll.</p>
+			<p>Quand une action d'un visiteur d'un site Web FrontPage Ã©tendu nÃ©cessite les extensions serveur FrontPage, comme lorsque le visiteur envoie un formulaire de recherche, le navigateur Web envoie une requÃªte POST au programme des extensions serveur FrontPage exÃ©cutables pendant la navigation, shtml.dll.</p>
 
-			<p><A NAME="scwinnt.doc-1061"></A>Quand IIS reçoit une requête pour les extensions serveur FrontPage, il se connecte au nom de l'utilisateur et transmet directement la requête à admin.dll, author.dll ou shtml.dll. La bibliothèque de liens dynamiques (DLL) des extensions serveur FrontPage vérifie ensuite les autorisations de l'administrateur, auteur ou visiteur représenté dans l'ACL stockée dans le dossier racine du site ou sous-site Web FrontPage étendu. (Si le sous-site Web a hérité de ses autorisations, la bibliothèque effectue cette vérification dans le site Web parent du sous-site.) Les extensions serveur FrontPage procèdent à cette vérification en utilisant des appels système standard de Windows&nbsp;NT. Si la vérification est effectuée avec succès, la DLL des extensions serveur FrontPage exécute l'action demandée. Si la vérification échoue, la DLL renvoie cette information à IIS, qui envoie le message «&nbsp;Autorisation refusée&nbsp;» au client FrontPage ou au navigateur Web.</p>
+			<p><A NAME="scwinnt.doc-1061"></A>Quand IIS reÃ§oit une requÃªte pour les extensions serveur FrontPage, il se connecte au nom de l'utilisateur et transmet directement la requÃªte Ã  admin.dll, author.dll ou shtml.dll. La bibliothÃ¨que de liens dynamiques (DLL) des extensions serveur FrontPage vÃ©rifie ensuite les autorisations de l'administrateur, auteur ou visiteur reprÃ©sentÃ© dans l'ACL stockÃ©e dans le dossier racine du site ou sous-site Web FrontPage Ã©tendu. (Si le sous-site Web a hÃ©ritÃ© de ses autorisations, la bibliothÃ¨que effectue cette vÃ©rification dans le site Web parent du sous-site.) Les extensions serveur FrontPage procÃ¨dent Ã  cette vÃ©rification en utilisant des appels systÃ¨me standard de Windows&nbsp;NT. Si la vÃ©rification est effectuÃ©e avec succÃ¨s, la DLL des extensions serveur FrontPage exÃ©cute l'action demandÃ©e. Si la vÃ©rification Ã©choue, la DLL renvoie cette information Ã  IIS, qui envoie le message Â«&nbsp;Autorisation refusÃ©e&nbsp;Â» au client FrontPage ou au navigateur Web.</p>
 
-			<p><A NAME="scwinnt.doc-1062"></A>Notez qu'un seul jeu de DLL des extensions serveur FrontPage est installé sur les serveurs IIS, dans le dossier<BR>C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\Version4.0. (Dans les précédentes versions des extensions serveur FrontPage, des stubs de ces programmes étaient stockés sur chaque site et sous-site Web FrontPage étendu.) Les DLL des extensions serveur FrontPage sont installées de sorte que chaque utilisateur, y compris le compte anonyme, disposent des autorisations appropriées pour y accéder. Cela vous permet de limiter les visiteurs, auteurs ou administrateurs pour chaque site Web FrontPage étendu. Vous pouvez aussi restreindre les autorisations sur ces DLL en utilisant le gestionnaire d'utilisateurs Windows&nbsp;NT. Dans ce cas, veillez cependant à ce qu'elles autorisent tous les visiteurs, auteurs et administrateurs légitimes à accéder au site Web FrontPage étendu.</p>
+			<p><A NAME="scwinnt.doc-1062"></A>Notez qu'un seul jeu de DLL des extensions serveur FrontPage est installÃ© sur les serveurs IIS, dans le dossier<BR>C:\Program&nbsp;Files\Common&nbsp;Files\Microsoft&nbsp;Shared\Web&nbsp;Server Extensions\Version4.0. (Dans les prÃ©cÃ©dentes versions des extensions serveur FrontPage, des stubs de ces programmes Ã©taient stockÃ©s sur chaque site et sous-site Web FrontPage Ã©tendu.) Les DLL des extensions serveur FrontPage sont installÃ©es de sorte que chaque utilisateur, y compris le compte anonyme, disposent des autorisations appropriÃ©es pour y accÃ©der. Cela vous permet de limiter les visiteurs, auteurs ou administrateurs pour chaque site Web FrontPage Ã©tendu. Vous pouvez aussi restreindre les autorisations sur ces DLL en utilisant le gestionnaire d'utilisateurs Windows&nbsp;NT. Dans ce cas, veillez cependant Ã  ce qu'elles autorisent tous les visiteurs, auteurs et administrateurs lÃ©gitimes Ã  accÃ©der au site Web FrontPage Ã©tendu.</p>
 
 			<!--NOTE structure start-->
 			
 			<P class=6>&nbsp;</P>
 <p><p class=art><img SRC="noterule.gif" width=475 height=15 border="0"></p>
 
-			<p>L'utilisation du composant logiciel enfichable MMC, vous permet de créer un répertoire virtuel sur un partage Universal Naming Convention (UNC). Lorsque vous faites ceci, vous êtes invité à donner un nom d'utilisateur et un mot de passe pour accéder au répertoire mapé. Vous n'avez pas à fournir un nom et un mot de passe à l'invite, et vous ne le devez pas. Si vous le faites néanmoins, chaque requête vers le répertoire virtuel sera exécutée comme le compte que vous avez donné, créant ainsi une brèche dans le système de sécurité. 
+			<p>L'utilisation du composant logiciel enfichable MMC, vous permet de crÃ©er un rÃ©pertoire virtuel sur un partage Universal Naming Convention (UNC). Lorsque vous faites ceci, vous Ãªtes invitÃ© Ã  donner un nom d'utilisateur et un mot de passe pour accÃ©der au rÃ©pertoire mapÃ©. Vous n'avez pas Ã  fournir un nom et un mot de passe Ã  l'invite, et vous ne le devez pas. Si vous le faites nÃ©anmoins, chaque requÃªte vers le rÃ©pertoire virtuel sera exÃ©cutÃ©e comme le compte que vous avez donnÃ©, crÃ©ant ainsi une brÃ¨che dans le systÃ¨me de sÃ©curitÃ©. 
 
 			<HR width=475></P>
 
@@ -97,7 +97,7 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 		<!--FAR-RIGHT COLUMN ART START-->
 
 		<TD rowspan="20" nowrap><!--Third-column art-->
-			<img SRC="secart.gif" align="center" alt="Image de la section Sécurité">
+			<img SRC="secart.gif" align="center" alt="Image de la section SÃ©curitÃ©">
 		</TD>
 		
 		<!--FAR-RIGHT COLUMN ART END-->
@@ -107,12 +107,12 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 	<!--LEFT-NAVIGATION MENU START-->
 
 	<TR>
-		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">PrÃ©sentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
 		<TD width="20" nowrap></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">SÃ©curitÃ©&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -132,7 +132,7 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous <br>&nbsp;&nbsp;Windows&nbsp;NT</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;SÃ©curitÃ© sous <br>&nbsp;&nbsp;Windows&nbsp;NT</font></A></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -142,7 +142,7 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink" HREF="scuni.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink" HREF="scuni.htm"><font color="#000000">&nbsp;&nbsp;SÃ©curitÃ© sous UNIX</font></A></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -210,9 +210,9 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 
 	<TR>
     	<TD width="170" valign="top">&nbsp;</TD>
-    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+    	<TD colspan="2" width="475" valign="top">DerniÃ¨re mise Ã  jour : novembre 1998
 	<BR>
-	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits rÃ©servÃ©s. Informations lÃ©gales.</A></TD>
    </TR>
    
 </TABLE>

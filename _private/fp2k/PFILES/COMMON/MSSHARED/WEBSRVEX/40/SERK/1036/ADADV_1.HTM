@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+ï»¿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <HTML>
 
 
@@ -55,29 +55,29 @@ Configuration des options de messagerie sous Windows</TITLE>
 		<!--TOPIC TITLE AND BODY TEXT CELL STARTS-->
 	
 
-    	<TD rowspan="45" width="460"><a name="top"></a><p><font color="#666699"><b><font size="+1">Tâches administratives avancées</font></b></font>
+    	<TD rowspan="45" width="460"><a name="top"></a><p><font color="#666699"><b><font size="+1">TÃ¢ches administratives avancÃ©es</font></b></font>
 
 <HR>
 
 		<H3><span class=FR><SUP><A NAME="settingupemailoptionswindows"></A></SUP></span>Configuration des options de messagerie sous Windows</H3>
 
-		<p><A NAME="adadvc02.doc-1001"></A>Le programme client Microsoft&#174; FrontPage&#174; permet de configurer un formulaire dont le contenu peut ensuite être envoyé sous forme de message électronique. Pour qu'un message puisse être envoyé à partir d'un serveur Web, un administrateur doit configurer les extensions serveur de façon à délivrer le courrier électronique à un transport de messagerie.</P>
+		<p><A NAME="adadvc02.doc-1001"></A>Le programme client Microsoft&#174; FrontPage&#174; permet de configurer un formulaire dont le contenu peut ensuite Ãªtre envoyÃ© sous forme de message Ã©lectronique. Pour qu'un message puisse Ãªtre envoyÃ© Ã  partir d'un serveur Web, un administrateur doit configurer les extensions serveur de faÃ§on Ã  dÃ©livrer le courrier Ã©lectronique Ã  un transport de messagerie.</P>
 
-		<p><A NAME="adadvc02.doc-1002"></A>Pour définir les paramètres des extensions serveur sur des serveurs Windows&#174;, procédez selon l'une des méthodes ci-dessous&nbsp;:</P>
+		<p><A NAME="adadvc02.doc-1002"></A>Pour dÃ©finir les paramÃ¨tres des extensions serveur sur des serveurs Windows&#174;, procÃ©dez selon l'une des mÃ©thodes ci-dessous&nbsp;:</P>
 
 			<UL>
-				<LI class=LB1><A NAME="adadvc02.doc-1003"></A>Si vous utilisez un transport de messagerie SMTP, faites appel au <a href="admmc.htm">composant logiciel enfichable MMC FrontPage</a> pour définir votre transport de messagerie.</LI>
+				<LI class=LB1><A NAME="adadvc02.doc-1003"></A>Si vous utilisez un transport de messagerie SMTP, faites appel au <a href="admmc.htm">composant logiciel enfichable MMC FrontPage</a> pour dÃ©finir votre transport de messagerie.</LI>
 			
-				<LI class=LB1>Si vous utilisez un transport de messagerie Sendmail, définissez les paramètres de messagerie dans l'Éditeur de registres. Vous pouvez également configurer un transport SMTP avec l'Éditeur de registres.</LI>
+				<LI class=LB1>Si vous utilisez un transport de messagerie Sendmail, dÃ©finissez les paramÃ¨tres de messagerie dans l'Ã‰diteur de registres. Vous pouvez Ã©galement configurer un transport SMTP avec l'Ã‰diteur de registres.</LI>
 			</UL>
 			
 			<p class=4>&nbsp;</p>
 
-		<p>Les paramètres de registre des extensions serveur d'un port figurent à la sous-clé \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\SHARED TOOLS\WEB SERVER EXTENSIONS\PORTS\<I>port</I>. Pour consulter un tableau des paramètres de registre configurés par les extensions serveur, reportez-vous à l'annexe <a href="apndx03.htm">Variables de configuration des extensions serveur FrontPage</a>. </P>
+		<p>Les paramÃ¨tres de registre des extensions serveur d'un port figurent Ã  la sous-clÃ© \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\SHARED TOOLS\WEB SERVER EXTENSIONS\PORTS\<I>port</I>. Pour consulter un tableau des paramÃ¨tres de registre configurÃ©s par les extensions serveur, reportez-vous Ã  l'annexe <a href="apndx03.htm">Variables de configuration des extensions serveur FrontPage</a>. </P>
 
-		<P class=T>FrontPage fournit cinq sous-clés de registre pour configurer votre transport de messagerie&nbsp;: <span class=L><B>SMTPHost</B></span>,<B> <span class=L>SendMailCommand</span></B>, <span class=L><B>MailSender</B></span>,<B> <span class=L>MailCharSet</span></B> et <span class=L><B>MailEncoding</B></span>. Vous devez configurer <B><span class=L>SMTPHost</span> </B>ou <span class=L><B>SendmailCommand</B></span>,<B> </B>mais pas les deux. </P> 
+		<P class=T>FrontPage fournit cinq sous-clÃ©s de registre pour configurer votre transport de messagerie&nbsp;: <span class=L><B>SMTPHost</B></span>,<B> <span class=L>SendMailCommand</span></B>, <span class=L><B>MailSender</B></span>,<B> <span class=L>MailCharSet</span></B> et <span class=L><B>MailEncoding</B></span>. Vous devez configurer <B><span class=L>SMTPHost</span> </B>ou <span class=L><B>SendmailCommand</B></span>,<B> </B>mais pas les deux. </P> 
 
-		<p>Le tableau suivant illustre comment configurer ces paramètres&nbsp;:</P>
+		<p>Le tableau suivant illustre comment configurer ces paramÃ¨tres&nbsp;:</P>
 
 			<p class=4>&nbsp;</p>
 
@@ -85,13 +85,13 @@ Configuration des options de messagerie sous Windows</TITLE>
 
 				<TR VALIGN="top">
 					<TH width=25%>Variable</TH>
-					<TH width=40%>Définition</TH>
+					<TH width=40%>DÃ©finition</TH>
 					<TH width=35%>Exemple</TH>
 				</TR>
 
 				<TR VALIGN="top">
 					<TD class=TT width=25%>SMTPHost</TD>
-					<TD class=TT width=40%>Nom ou adresse IP d'un hôte utilisant un serveur ou un démon SMTP. Lorsqu'un visiteur de site soumet un formulaire dont les résultats doivent être envoyés par courrier électronique, les extensions serveur établissent une connexion au serveur SMTP pour délivrer le message. Par défaut, FrontPage considère que le serveur est sur le port&nbsp;25 (standard pour SMTP), mais vous pouvez définir un autre port en ajoutant <B>:xx</B> à la suite du nom, où <I>xx</I> désigne le port à utiliser.</TD>
+					<TD class=TT width=40%>Nom ou adresse IP d'un hÃ´te utilisant un serveur ou un dÃ©mon SMTP. Lorsqu'un visiteur de site soumet un formulaire dont les rÃ©sultats doivent Ãªtre envoyÃ©s par courrier Ã©lectronique, les extensions serveur Ã©tablissent une connexion au serveur SMTP pour dÃ©livrer le message. Par dÃ©faut, FrontPage considÃ¨re que le serveur est sur le port&nbsp;25 (standard pour SMTP), mais vous pouvez dÃ©finir un autre port en ajoutant <B>:xx</B> Ã  la suite du nom, oÃ¹ <I>xx</I> dÃ©signe le port Ã  utiliser.</TD>
 					<TD class=TT width=35%>mail.example.microsoft.com,
 			<P class=TT>test:10000,</P>
 			
@@ -102,26 +102,26 @@ Configuration des options de messagerie sous Windows</TITLE>
 
 				<TR VALIGN="top">
 					<TD class=TT width=25%>SendMailCommand</TD>
-					<TD class=TT width=40%>Nom d'un programme sur la machine serveur vers laquelle le courrier électronique doit être acheminé. Si <span class=L><B>SendMailCommand</B></span> et <span class=L><B>SMTPHost</B></span> sont tous deux configurés, <span class=L><B>SendmailCommand</B></span> est prioritaire.
-<P class=TT>Lorsque les extensions serveur FrontPage reçoivent un formulaire traité sous forme de courrier électronique, elles lancent la commande en remplaçant toutes les occurrences de <B>%r</B> par le destinataire du courrier. Le caractère de pourcentage (%) suivi d'un caractère quelconque est remplacé par ce caractère.</P></TD>
+					<TD class=TT width=40%>Nom d'un programme sur la machine serveur vers laquelle le courrier Ã©lectronique doit Ãªtre acheminÃ©. Si <span class=L><B>SendMailCommand</B></span> et <span class=L><B>SMTPHost</B></span> sont tous deux configurÃ©s, <span class=L><B>SendmailCommand</B></span> est prioritaire.
+<P class=TT>Lorsque les extensions serveur FrontPage reÃ§oivent un formulaire traitÃ© sous forme de courrier Ã©lectronique, elles lancent la commande en remplaÃ§ant toutes les occurrences de <B>%r</B> par le destinataire du courrier. Le caractÃ¨re de pourcentage (%) suivi d'un caractÃ¨re quelconque est remplacÃ© par ce caractÃ¨re.</P></TD>
 					<TD class=TT width=35%>sendmail %r</TD>
 			</TR>
 
 			<TR VALIGN="top">
 				<TD class=TT width=25%>MailSender</TD>
-				<TD class=TT width=40%>Nom à utiliser comme compte «&nbsp;expéditeur&nbsp;» pour l'envoi de courrier électronique. Plus spécifiquement, il est utilisé comme argument de la commande SEND FROM: sous SMTP. Sous SMTP, le nom par défaut est utilisateur@hôte, où <I>utilisateur</I> désigne l'utilisateur actuel et <I>hôte</I> le nom de l'hôte en cours.</TD>
+				<TD class=TT width=40%>Nom Ã  utiliser comme compte Â«&nbsp;expÃ©diteur&nbsp;Â» pour l'envoi de courrier Ã©lectronique. Plus spÃ©cifiquement, il est utilisÃ© comme argument de la commande SEND FROM: sous SMTP. Sous SMTP, le nom par dÃ©faut est utilisateur@hÃ´te, oÃ¹ <I>utilisateur</I> dÃ©signe l'utilisateur actuel et <I>hÃ´te</I> le nom de l'hÃ´te en cours.</TD>
 				<TD class=TT width=35%>example@microsoft.com</TD>
 			</TR>
 		
 			<TR VALIGN="top">
 				<TD class=TT width=25%>MailCharSet</TD>
-				<TD class=TT width=40%>Pour annuler l'attribut de jeu de caractères de l'en-tête de type contenu, indiquez le jeu de caractères ici. </TD>
+				<TD class=TT width=40%>Pour annuler l'attribut de jeu de caractÃ¨res de l'en-tÃªte de type contenu, indiquez le jeu de caractÃ¨res ici. </TD>
 				<TD class=TT width=35%>&nbsp;</TD>
 			</TR>
 
 			<TR VALIGN="top">
 				<TD class=TT width=25%>MailEncoding</TD>
-				<TD class=TT width=40%>Permet d'annuler l'attribut de codage du transfert de contenu pour l'en-tête de type contenu. Vous pouvez changer de schéma de codage si vous savez qu'un destinataire de courrier électronique utilise un schéma de codage différent et ne peut pas interpréter vos messages.</TD>
+				<TD class=TT width=40%>Permet d'annuler l'attribut de codage du transfert de contenu pour l'en-tÃªte de type contenu. Vous pouvez changer de schÃ©ma de codage si vous savez qu'un destinataire de courrier Ã©lectronique utilise un schÃ©ma de codage diffÃ©rent et ne peut pas interprÃ©ter vos messages.</TD>
 				<TD class=TT width=35%>&nbsp;</TD>
 			</TR>
 			
@@ -144,12 +144,12 @@ Configuration des options de messagerie sous Windows</TITLE>
 	<!--LEFT-NAVIGATION MENU STARTS HERE-->
 
 	<TR>
-    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">PrÃ©sentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="scintro.htm"><font color="#000000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
+    	<TD width="150" nowrap><div class="table"><A class="menulink" HREF="scintro.htm"><font color="#000000">SÃ©curitÃ©&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img src="dwnarrow.gif" alt="" border="0"></A></div></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -215,7 +215,7 @@ Configuration des options de messagerie sous Windows</TITLE>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink" href="adfpre.htm"><font color="#000000">&nbsp;&nbsp;Administration à &nbsp;&nbsp;distance</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink" href="adfpre.htm"><font color="#000000">&nbsp;&nbsp;Administration Ã  &nbsp;&nbsp;distance</font></A></TD>
     	<TD width="20" nowrap></TD>
     	<TD></TD>
 	</TR>
@@ -227,7 +227,7 @@ Configuration des options de messagerie sous Windows</TITLE>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Tâches &nbsp;&nbsp;administratives <BR>&nbsp;&nbsp;avancées</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;TÃ¢ches &nbsp;&nbsp;administratives <BR>&nbsp;&nbsp;avancÃ©es</font></A></TD>
     	<TD width="20" nowrap></TD>
     	<TD></TD>
 	</TR>
@@ -273,7 +273,7 @@ Configuration des options de messagerie sous Windows</TITLE>
 
 	<TR>
     	<TD width="170" valign="top">&nbsp;</TD>
-    	<TD width="237" valign="top"><A HREF="adadv.htm"><img src="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÉCÉDENT&nbsp;</b></font></a></TD>
+    	<TD width="237" valign="top"><A HREF="adadv.htm"><img src="back.gif" border="0"><font color="#666699" style="text-decoration: none"><b>PRÃ‰CÃ‰DENT&nbsp;</b></font></a></TD>
     	<TD width="237" align="right" valign="top"><a href="#top"><font color="#666699" style="text-decoration: none"><b>HAUT</b></font><img src="top.gif" border="0"></a></TD>
     </TR>
 
@@ -284,9 +284,9 @@ Configuration des options de messagerie sous Windows</TITLE>
 
 	<TR>
     	<TD width="170" valign="top">&nbsp;</TD>
-    	<TD colspan="2" width="475" valign="top">Dernière mise à jour&nbsp;: novembre 1998
+    	<TD colspan="2" width="475" valign="top">DerniÃ¨re mise Ã  jour&nbsp;: novembre 1998
 	<BR>
-	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Conditions d'utilisation.</A></TD>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits rÃ©servÃ©s. Conditions d'utilisation.</A></TD>
   	</TR>
 
 </TABLE>

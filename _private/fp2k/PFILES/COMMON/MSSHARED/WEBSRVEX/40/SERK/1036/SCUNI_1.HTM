@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+ï»¿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <HTML>
 
 
@@ -8,7 +8,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
 
-<TITLE>Le modèle de sécurité UNIX</TITLE>
+<TITLE>Le modÃ¨le de sÃ©curitÃ© UNIX</TITLE>
 
 <LINK REL=STYLESHEET TYPE="text/css" HREF="SERK.css">
 </HEAD>
@@ -59,11 +59,11 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 
 		<!--TOPIC TITLE AND BODY TEXT CELL START-->
 	
-		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">Sécurité sous UNIX</font></b></font>
+		<TD rowspan="15" width="460"><a name="top"></a><P><font color="#666699"><b><font size="+1">SÃ©curitÃ© sous UNIX</font></b></font>
 
 <HR>
 
-			<A NAME="unixsecuritymodel"></A><P><b><font color="#000000" size="2"><sup>&nbsp;1 sur 10&nbsp;</sup></b></font><A HREF="scuni_2.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;Le modèle de sécurité UNIX</FONT><p><A NAME="scunix.doc-1005"></A>La plupart des serveurs Web UNIX gèrent une liste des utilisateurs autorisés à utiliser le serveur Web. Ce <I>fichier d'accès</I> est distinct de la liste des utilisateurs et des groupes qui peuvent se connecter à l'ordinateur de façon interactive.</P>
+			<A NAME="unixsecuritymodel"></A><P><b><font color="#000000" size="2"><sup>&nbsp;1 sur 10&nbsp;</sup></b></font><A HREF="scuni_2.htm"><img SRC="next.gif" vspace="1" hspace="0" border="0"></A><FONT CLASS=TITLE>&nbsp;&nbsp;&nbsp;&nbsp;Le modÃ¨le de sÃ©curitÃ© UNIX</FONT><p><A NAME="scunix.doc-1005"></A>La plupart des serveurs Web UNIX gÃ¨rent une liste des utilisateurs autorisÃ©s Ã  utiliser le serveur Web. Ce <I>fichier d'accÃ¨s</I> est distinct de la liste des utilisateurs et des groupes qui peuvent se connecter Ã  l'ordinateur de faÃ§on interactive.</P>
 
 			<!--NOTE structure start-->
 
@@ -71,7 +71,7 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 
 			<P class=NT><p class=art>
 <img SRC="noterule.gif" width=475 height=15 border="0"></p>
-<span class=EMS>De nombreux serveurs Web qui s'exécutent sous Microsoft&#174; Windows&#174 95/98 et sous Microsoft&#174; Windows NT&#174; utilisent également le modèle de sécurité UNIX. C'est le cas des serveurs Web suivants pour lesquels les extensions serveur Microsoft&#174; FrontPage&#174; sont disponibles&nbsp;: Serveur Web personnel FrontPage, Netscape FastTrack, Netscape Enterprise, Netscape Communications, Netscape Commerce et O'Reilly WebSite. La description du modèle de sécurité UNIX s'applique également à ces serveurs.</span>
+<span class=EMS>De nombreux serveurs Web qui s'exÃ©cutent sous Microsoft&#174; Windows&#174 95/98 et sous Microsoft&#174; Windows NT&#174; utilisent Ã©galement le modÃ¨le de sÃ©curitÃ© UNIX. C'est le cas des serveurs Web suivants pour lesquels les extensions serveur Microsoft&#174; FrontPage&#174; sont disponibles&nbsp;: Serveur Web personnel FrontPage, Netscape FastTrack, Netscape Enterprise, Netscape Communications, Netscape Commerce et O'Reilly WebSite. La description du modÃ¨le de sÃ©curitÃ© UNIX s'applique Ã©galement Ã  ces serveurs.</span>
 <HR width=475></P>
 
 			<P class=4>&nbsp;</P>
@@ -79,24 +79,24 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 			<!--NOTE structure end-->
 					
 
-			<p>Le fichier d'accès d'un serveur Web contient les noms et les mots de passe de chaque utilisateur et des informations détaillées sur le contenu, des scripts CGI et d'autres ressources auxquelles chaque utilisateur est autorisé à accéder. Sur les serveurs Web Apache et NCSA, ce fichier s'appelle .htaccess&nbsp;; sur les serveurs Netscape, il s'appelle .nsconfig. Le fichier d'accès associe des niveaux d'autorisation à des utilisateurs, des groupes et des adresses&nbsp;IP&nbsp;: GET (lecture), POST (exécution), PUT (écriture) et DELETE (suppression). Par exemple, un auteur exploitant FrontPage sera autorisé à utiliser les commandes HTTP POST (pour accéder aux extensions serveur FrontPage et enregistrer un nouveau contenu), et un visiteur de site Web disposant d'autorisations de navigation pourra utiliser les commandes HTTP GET (pour lire le contenu). Les listes qui définissent les membres de chaque groupe (les auteurs, par exemple) sont définies dans des fichiers distincts sur lesquels pointe le fichier d'accès.</P>
+			<p>Le fichier d'accÃ¨s d'un serveur Web contient les noms et les mots de passe de chaque utilisateur et des informations dÃ©taillÃ©es sur le contenu, des scripts CGI et d'autres ressources auxquelles chaque utilisateur est autorisÃ© Ã  accÃ©der. Sur les serveurs Web Apache et NCSA, ce fichier s'appelle .htaccess&nbsp;; sur les serveurs Netscape, il s'appelle .nsconfig. Le fichier d'accÃ¨s associe des niveaux d'autorisation Ã  des utilisateurs, des groupes et des adresses&nbsp;IP&nbsp;: GET (lecture), POST (exÃ©cution), PUT (Ã©criture) et DELETE (suppression). Par exemple, un auteur exploitant FrontPage sera autorisÃ© Ã  utiliser les commandes HTTP POST (pour accÃ©der aux extensions serveur FrontPage et enregistrer un nouveau contenu), et un visiteur de site Web disposant d'autorisations de navigation pourra utiliser les commandes HTTP GET (pour lire le contenu). Les listes qui dÃ©finissent les membres de chaque groupe (les auteurs, par exemple) sont dÃ©finies dans des fichiers distincts sur lesquels pointe le fichier d'accÃ¨s.</P>
 
-			<p>Il est fréquent que plusieurs fichiers d'accès soient stockés sur un serveur Web. Chaque fichier définit la sécurité du répertoire qui le contient et de ses sous-répertoires qui n'ont pas de fichier d'accès propre. En créant des fichiers d'accès pour tout le contenu d'un serveur Web, on permet à plusieurs groupes d'utilisateurs disposant de niveaux d'autorisation distincts d'accéder à des zones différentes du serveur.</P>
+			<p>Il est frÃ©quent que plusieurs fichiers d'accÃ¨s soient stockÃ©s sur un serveur Web. Chaque fichier dÃ©finit la sÃ©curitÃ© du rÃ©pertoire qui le contient et de ses sous-rÃ©pertoires qui n'ont pas de fichier d'accÃ¨s propre. En crÃ©ant des fichiers d'accÃ¨s pour tout le contenu d'un serveur Web, on permet Ã  plusieurs groupes d'utilisateurs disposant de niveaux d'autorisation distincts d'accÃ©der Ã  des zones diffÃ©rentes du serveur.</P>
 
-			<p>Pour accéder au système de fichiers de l'ordinateur hôte et exécuter des scripts et des programmes sur cet ordinateur, le serveur Web s'exécute en tant que compte UNIX («&nbsp;www&nbsp;» le plus souvent)&nbsp;; les traitements qu'il exécute et les fichiers auxquels il accède doivent donc être accessibles avec les autorisations de ce compte. Cela peut poser un problème de sécurité dans un environnement multi-hôtes, car le script CGI d'un utilisateur donné pourra lire les fichiers d'une zone de contenu du serveur appartenant à un autre utilisateur. Ce problème est encore plus aigu si l'accès en écriture est pris en charge, comme c'est le cas avec le client FrontPage. Si le script CGI d'un utilisateur dispose des autorisations suffisantes pour écrire des données dans un fichier appartenant à la zone de contenu de l'utilisateur, ce script pourra effectuer des opérations d'écriture dans des fichiers ou remplacer des fichiers se trouvant dans la zone de contenu d'autres utilisateurs.</P>
+			<p>Pour accÃ©der au systÃ¨me de fichiers de l'ordinateur hÃ´te et exÃ©cuter des scripts et des programmes sur cet ordinateur, le serveur Web s'exÃ©cute en tant que compte UNIX (Â«&nbsp;www&nbsp;Â» le plus souvent)&nbsp;; les traitements qu'il exÃ©cute et les fichiers auxquels il accÃ¨de doivent donc Ãªtre accessibles avec les autorisations de ce compte. Cela peut poser un problÃ¨me de sÃ©curitÃ© dans un environnement multi-hÃ´tes, car le script CGI d'un utilisateur donnÃ© pourra lire les fichiers d'une zone de contenu du serveur appartenant Ã  un autre utilisateur. Ce problÃ¨me est encore plus aigu si l'accÃ¨s en Ã©criture est pris en charge, comme c'est le cas avec le client FrontPage. Si le script CGI d'un utilisateur dispose des autorisations suffisantes pour Ã©crire des donnÃ©es dans un fichier appartenant Ã  la zone de contenu de l'utilisateur, ce script pourra effectuer des opÃ©rations d'Ã©criture dans des fichiers ou remplacer des fichiers se trouvant dans la zone de contenu d'autres utilisateurs.</P>
 
-			<p>Pour gérer ce problème (commun à tous les scripts CGI, y compris aux extensions serveur FrontPage), vous pouvez paramétrer le bit SUID (Set User ID : définir l'identificateur d'utilisateur) des autorisations d'exécution d'un script CGI. Cela force le serveur Web et le contenu en cours de création à basculer sur le compte utilisateur UNIX du propriétaire du traitement du script CGI lorsque ce script est exécuté. Ce dernier étant stocké dans une zone de contenu, et le compte du propriétaire du contenu n'étant vraisemblablement pas autorisé à effectuer des opérations d'écriture dans les zones de contenu d'autres utilisateurs, paramétrer le bit SUID du script empêche toute opération d'écriture non autorisée sur les fichiers. À l'aide des outils d'administration des extensions serveur FrontPage, vous pouvez configurer les fichiers exécutables des extensions serveur FrontPage de chaque zone de contenu pour qu'ils exécutent SUID.</P>
+			<p>Pour gÃ©rer ce problÃ¨me (commun Ã  tous les scripts CGI, y compris aux extensions serveur FrontPage), vous pouvez paramÃ©trer le bit SUID (Set User ID : dÃ©finir l'identificateur d'utilisateur) des autorisations d'exÃ©cution d'un script CGI. Cela force le serveur Web et le contenu en cours de crÃ©ation Ã  basculer sur le compte utilisateur UNIX du propriÃ©taire du traitement du script CGI lorsque ce script est exÃ©cutÃ©. Ce dernier Ã©tant stockÃ© dans une zone de contenu, et le compte du propriÃ©taire du contenu n'Ã©tant vraisemblablement pas autorisÃ© Ã  effectuer des opÃ©rations d'Ã©criture dans les zones de contenu d'autres utilisateurs, paramÃ©trer le bit SUID du script empÃªche toute opÃ©ration d'Ã©criture non autorisÃ©e sur les fichiers. Ã€ l'aide des outils d'administration des extensions serveur FrontPage, vous pouvez configurer les fichiers exÃ©cutables des extensions serveur FrontPage de chaque zone de contenu pour qu'ils exÃ©cutent SUID.</P>
 
 			<p><A NAME="scunix.doc-1010"></A>Lors de l'authentification sur un serveur Web UNIX, quand un visiteur parcourt une page d'un serveur Web&nbsp;:
 
 <OL>
-					<LI class=LN>Le serveur Web reçoit une requête HTTP GET assortie d'un nom d'utilisateur et d'un mot de passe.
+					<LI class=LN>Le serveur Web reÃ§oit une requÃªte HTTP GET assortie d'un nom d'utilisateur et d'un mot de passe.
 
-	<LI class=LN>Le serveur Web vérifie les autorisations de l'utilisateur dans le fichier d'accès approprié.
-	<P class=LT1>Si l'authentification de l'utilisateur conclut que la commande GET ne peut pas être exécutée, le serveur Web renvoie l'erreur&nbsp;401, qui indique que l'utilisateur ne dispose pas des autorisations suffisantes. Le navigateur Web vous invite à fournir d'autres nom d'utilisateur et mot de passe et soumet à nouveau la requête. 
+	<LI class=LN>Le serveur Web vÃ©rifie les autorisations de l'utilisateur dans le fichier d'accÃ¨s appropriÃ©.
+	<P class=LT1>Si l'authentification de l'utilisateur conclut que la commande GET ne peut pas Ãªtre exÃ©cutÃ©e, le serveur Web renvoie l'erreur&nbsp;401, qui indique que l'utilisateur ne dispose pas des autorisations suffisantes. Le navigateur Web vous invite Ã  fournir d'autres nom d'utilisateur et mot de passe et soumet Ã  nouveau la requÃªte. 
 
 
-	<LI class=LN>Une fois l'utilisateur authentifié, le serveur Web essaie d'extraire le contenu à partir du système de fichiers UNIX. Si ce dernier autorise le serveur à accéder au contenu, il est envoyé au navigateur Web via HTTP.</BR></OL>
+	<LI class=LN>Une fois l'utilisateur authentifiÃ©, le serveur Web essaie d'extraire le contenu Ã  partir du systÃ¨me de fichiers UNIX. Si ce dernier autorise le serveur Ã  accÃ©der au contenu, il est envoyÃ© au navigateur Web via HTTP.</BR></OL>
 				
 			<P class=4>&nbsp;</P>
 
@@ -108,17 +108,17 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 
 			<P class=4>&nbsp;</P>
 
-			<p>Les requêtes POST sont traitées de la même façon. Quand un serveur Web reçoit une requête HTTP POST, comme lorsqu'un auteur utilisant FrontPage envoie une requête aux extensions serveur FrontPage, le serveur Web vérifie les autorisations de l'utilisateur dans le fichier d'accès approprié. Une fois l'utilisateur authentifié, le serveur Web essaie d'exécuter le programme demandé par la requête POST. Si le bit SUID du programme est paramétré, le traitement s'exécute sous le compte utilisateur UNIX du propriétaire du fichier. Sinon, il s'exécute sous le compte UNIX du serveur Web.</P>
+			<p>Les requÃªtes POST sont traitÃ©es de la mÃªme faÃ§on. Quand un serveur Web reÃ§oit une requÃªte HTTP POST, comme lorsqu'un auteur utilisant FrontPage envoie une requÃªte aux extensions serveur FrontPage, le serveur Web vÃ©rifie les autorisations de l'utilisateur dans le fichier d'accÃ¨s appropriÃ©. Une fois l'utilisateur authentifiÃ©, le serveur Web essaie d'exÃ©cuter le programme demandÃ© par la requÃªte POST. Si le bit SUID du programme est paramÃ©trÃ©, le traitement s'exÃ©cute sous le compte utilisateur UNIX du propriÃ©taire du fichier. Sinon, il s'exÃ©cute sous le compte UNIX du serveur Web.</P>
 
-			<p><A NAME="scunix.doc-1013"></A>Les serveurs Web UNIX authentifient généralement les programmes clients avec l'authentification de base&nbsp;: le navigateur Web (ou le client FrontPage) demande son nom d'utilisateur et son mot de passe à l'utilisateur, informations qui sont ensuite transmises en clair. (Certains serveurs Web utilisent la technique de cryptage MD5, mais pas FrontPage.)</P>
+			<p><A NAME="scunix.doc-1013"></A>Les serveurs Web UNIX authentifient gÃ©nÃ©ralement les programmes clients avec l'authentification de base&nbsp;: le navigateur Web (ou le client FrontPage) demande son nom d'utilisateur et son mot de passe Ã  l'utilisateur, informations qui sont ensuite transmises en clair. (Certains serveurs Web utilisent la technique de cryptage MD5, mais pas FrontPage.)</P>
 
-			<p><A NAME="scunix.doc-1014"></A>FrontPage utilise l'authentification de base car c'est la seule technique d'authentification qui fonctionne avec tous les pare-feux et serveurs proxy. Cette technique transmettant les mots de passe sur le réseau sous un format facile à décoder, il est très simple de les voler. Si cela vous pose un problème de sécurité, nous vous conseillons d'utiliser Secure Sockets Layer (SSL) pour crypter toutes les communications impliquant votre serveur Web.</P>
+			<p><A NAME="scunix.doc-1014"></A>FrontPage utilise l'authentification de base car c'est la seule technique d'authentification qui fonctionne avec tous les pare-feux et serveurs proxy. Cette technique transmettant les mots de passe sur le rÃ©seau sous un format facile Ã  dÃ©coder, il est trÃ¨s simple de les voler. Si cela vous pose un problÃ¨me de sÃ©curitÃ©, nous vous conseillons d'utiliser Secure Sockets Layer (SSL) pour crypter toutes les communications impliquant votre serveur Web.</P>
 		</TD>
 		
 		<!--FAR-RIGHT COLUMN SECTION ART START-->
 
 		<TD rowspan="20" nowrap><!--Third-column art-->
-			<img SRC="secart.gif" align="center" alt="Image de la section Sécurité">
+			<img SRC="secart.gif" align="center" alt="Image de la section SÃ©curitÃ©">
 		</TD>
 		
 		<!--FAR-RIGHT COLUMN SECTION ART END-->
@@ -128,12 +128,12 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 	<!--LEFT-NAVIGATION MENUS START-->
 
 	<TR>
-		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">Présentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
+		<TD width="150" nowrap><div class="table"><A class="menulink" HREF="ovwhatar.htm"><font color="#000000">PrÃ©sentation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="dwnarrow.gif" alt="" border="0"></A></div></TD>
 		<TD width="20" nowrap></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">Sécurité&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
+    	<TD width="150" nowrap><div class="table"><A class="menulink"><font color="#990000">SÃ©curitÃ©&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img SRC="r_ydot.gif" alt="" border="0"></A></div></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -153,7 +153,7 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink" href="scwin.htm"><font color="#000000">&nbsp;&nbsp;Sécurité sous <br>&nbsp;&nbsp;Windows NT</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink" href="scwin.htm"><font color="#000000">&nbsp;&nbsp;SÃ©curitÃ© sous <br>&nbsp;&nbsp;Windows NT</font></A></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -163,7 +163,7 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 	</TR>
 
 	<TR>
-    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;Sécurité sous UNIX</font></A></TD>
+    	<TD width="150" nowrap><A class="menulink"><font color="#990000">&nbsp;&nbsp;SÃ©curitÃ© sous UNIX</font></A></TD>
     	<TD width="20" nowrap></TD>
 	</TR>
 
@@ -231,9 +231,9 @@ HEIGHT=21 ALT="Page d'accueil Microsoft" BORDER=0></A></FONT></TD>
 
 	<TR>
     	<TD width="170" valign="top">&nbsp;</TD>
-    	<TD colspan="2" width="475" valign="top">Dernière mise à jour : novembre 1998
+    	<TD colspan="2" width="475" valign="top">DerniÃ¨re mise Ã  jour : novembre 1998
 	<BR>
-	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits réservés. Informations légales.</A></TD>
+	<A HREF="cpyright.htm">&#169;1998 Microsoft Corporation. Tous droits rÃ©servÃ©s. Informations lÃ©gales.</A></TD>
    	</TR>
 	
 </TABLE>
